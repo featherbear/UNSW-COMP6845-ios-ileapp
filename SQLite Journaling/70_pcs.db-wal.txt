@@ -1,0 +1,64 @@
+eSQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+*-Uo
+com.apple.coredata.cloudkit.zone:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459=BCU$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+,MmEqG
+o(p~0G
+1
+ol
+1sMR
+O.{g
+]b4+
+)0'0%
+34,7.
+(366C3056CDA89265F3D79460760796F8198E29CA
+"#$YNS.string
++pMjWK1TRZUNBmW4zDMxFfv7FEcDMtDSnlf7sKUvCMvA
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+ com.apple.coredata.cloudkit.zone_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.dataO
+yhO9t
+Q
+['
+)#|9
+&'>?]NSMutableData
+@A,]NSMutableDataVNSDataD
+&'DE^CKDZonePCSData
+FG,^CKDZonePCSDataZCKDPCSData
+_com.apple.Avatar2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.coredata.cloudkit.zone:__defaultOwner__A
+o	com.apple.coredata.cloudkit.zone:__defaultOwner__
+	com.apple.coredata.cloudkit.zone:__defaultOwner__
+com.apple.Avatar2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+oU-	com.apple.coredata.cloudkit.zone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Avatar
+U-	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Avatar

@@ -1,0 +1,2 @@
+2023-07-09 14:41:33 Data container moved com.apple.stocks.detailintents /private/var/mobile/Containers/Data/PluginKitPlugin/5F22586A-46E3-4E80-B5D4-5CA2034A9946
+2023-07-08 23:20:27 Made container live com.apple.stocks.detailintents /private/var/mobile/Containers/Data/PluginKitPlugin/DC96698C-5C94-40CD-95A9-6FB434B496B4

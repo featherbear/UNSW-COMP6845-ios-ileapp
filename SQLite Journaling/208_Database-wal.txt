@@ -1,0 +1,120 @@
+	PolicyRegistration
+EffectivePolicy
+-D|j
+.dmf.policy.monitor.appbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+ZNS.objectsV$class
+Xwebsites\applicationsZcategories
+Z$classnameX$classesUNSSet
+XNSObject
+$)27ILQSZ`epw{}
+9	dmf.policy.monitor.app
+dmf.policy.monitor.appbplist00
+PolicyRegistration
+xX$+%
+
+dmf.policy.monitor.communicationbplist00
+\applicationsZcategories
+$)27ILQSY_dovy{}
+dmf.policy.monitor.communication
+ndmf.policy.monitor.appbplist00
+"dmf.policy.monitor.communicationbplist00
+Zcategories
+$)27ILQSX^cnuwy{
+SQLite format 3
+atableZ_MODELCACHEZ_MODELCACHE	CREATE TABLE Z_MODELCACHE (Z_CONTENT BLOB){
+AtableZ_METADATAZ_METADATA
+CREATE TABLE Z_METADATA (Z_VERSION INTEGER PRIMARY KEY, Z_UUID VARCHAR(255), Z_PLIST BLOB)
+
+WtableZ_PRIMARYKEYZ_PRIMARYKEY
+CREATE TABLE Z_PRIMARYKEY (Z_ENT INTEGER PRIMARY KEY, Z_NAME VARCHAR, Z_SUPER INTEGER, Z_MAX INTEGER)8
+qindexZ_PolicyRegistration_UNIQUE_identifierZPOLICYREGISTRATION
+CREATE UNIQUE INDEX Z_PolicyRegistration_UNIQUE_identifier ON ZPOLICYREGISTRATION (ZIDENTIFIER COLLATE BINARY ASC)C
+indexZ_EffectivePolicy_byTypeAndIdentifierZEFFECTIVEPOLICY
+CREATE INDEX Z_EffectivePolicy_byTypeAndIdentifier ON ZEFFECTIVEPOLICY (ZTYPE COLLATE BINARY ASC, ZIDENTIFIER COLLATE BINARY ASC)S
+MtableZPOLICYREGISTRATIONZPOLICYREGISTRATION
+CREATE TABLE ZPOLICYREGISTRATION ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZMODIFICATIONDATE TIMESTAMP, ZIDENTIFIER VARCHAR, ZPOLICYTYPES BLOB )
+OtableZEFFECTIVEPOLICYZEFFECTIVEPOLICY
+CREATE TABLE ZEFFECTIVEPOLICY ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZPOLICY INTEGER, ZPRIORITY INTEGER, ZDECLARATIONIDENTIFIER VARCHAR, ZIDENTIFIER VARCHAR, ZORGANIZATIONIDENTIFIER VARCHAR, ZTYPE VARCHAR )
+u$?l
+q~dmf.policy.monitor.appbplist00
+l
+dmf.policy.monitor.appbplist00
+-Ec^
+-Ec_
+-Eca$
+-Ecg
+-Ech
+Jdmf.policy.monitor.appbplist00
+dmf.policy.monitor.webbplist00
+dmf.policy.monitor.web
+9ok|
+Bt
+}Xg
+
+
+ dmf.policy.monitor.appbplist00
+Bt
+
+dmf.policy.monitor.icloud.account.logoutbplist00
+icloudaccountlogout
+dmf.policy.monitor.icloud.account.logout
+ 2dmf.policy.monitor.communicationbplist00
+N[
+t
+>6dmf.policy.monitor.webbplist00
+g/$2?
+t
+-e_-
+fdmf.policy.monitor.appbplist00
+{s
+t
+-e_H!
+e
+t
+-ea=k	dmf.policy.monitor.appbplist00
+Ib
+t
+m$*|
+B
+D
+B
+"
+B
+ydmf.policy.monitor.communicationbplist00
+-eu
+
+:9Lm
+
+
+B
+ZSQLite format 3
+Vn&
+B
+mEc
+B
+t.dmf.policy.monitor.communicationbplist00
+rW|
+B
+cdmf.policy.monitor.appbplist00
+{,Rdmf.policy.monitor.appbplist00
+rs.
+B
+-dmf.policy.monitor.appbplist00
+J1
+B
+Ydmf.policy.monitor.appbplist00
+i>
+B
+x
+B
+Jl}/
+B
+*$dmf.policy.monitor.communicationbplist00
+A
+B
+.e	

@@ -1,0 +1,6 @@
+2023-07-09 14:41:52 Data container moved com.apple.mobilecal /private/var/mobile/Containers/Data/Application/4FD0FC36-A480-478D-A4A2-1C0B302375FA
+2023-07-09 14:41:52 Made container live com.apple.mobilecal /private/var/containers/Bundle/Application/2C446020-076E-41D9-9FC5-BFA086263658
+2023-07-09 14:41:52 Install successful com.apple.mobilecal 
+2023-07-08 23:20:24 Made container live com.apple.mobilecal /private/var/mobile/Containers/Data/Application/5D5011FE-971C-4BDB-8826-4949361A7419
+2023-07-08 23:20:24 Made container live com.apple.mobilecal /private/var/containers/Bundle/Application/F152C390-B9C0-4D76-9B0D-9F31E2568A1D
+2023-07-08 23:20:24 Install successful com.apple.mobilecal 

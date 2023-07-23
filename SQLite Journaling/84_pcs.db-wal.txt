@@ -1,0 +1,113 @@
+`SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+X
+UE
+PrimarySync:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+ h)Ju
+$f7=f
+R1V[
+;xJ4
+sGF
+z60;
+)0'0%
+G[Hhi
+V^4L
+(7B0367B5C8B5A1FC6776C31B8201335B63DB0E57
+"#$YNS.string
++6JApL8vMRc2cfG9sZZtyqm5y918REXAyt1-JIYyHhMc
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	[PrimarySync_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5PrimarySync:__defaultOwner__A
+m(Be
+E	PrimarySync:__defaultOwner__
+	PrimarySync:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+EU
+	PrimarySync:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+p,>bY0
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+F
+UE
+ !%-3459=@U$null
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+PrimarySync:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+=UX
+
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+:SQLite format 3
+z_l
+
+SQLite format 3
+9E6387E7-2287-4D83-9C35-C4163C105D54:PrimarySync:__defaultOwner__
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L:PrimarySync:__defaultOwner__
+<
+UE
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+ G~"
+(55F26C89E59D633A32CBBAB672FE6ECF46932290
+*+,YNS.string
++MsOLlsynCNFPZfGtP6gD8VCNmYtjRluTIVQfDk0EGOc
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+?@AXZoneNameYownerName
+[PrimarySync_
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDYCPLMaster
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+H
+UE
+U2|B
+$U	'o{
+@
++H
+(D87993CDF5A7CC76A3D83CCB21A5E6E2631F98CB
++zkQtCfaeWQepRfSfvYF-w9HvNK9Ff12qe22lYWByH10
+$9E6387E7-2287-4D83-9C35-C4163C105D54
+K4ZCKRecordIDXCPLAsset

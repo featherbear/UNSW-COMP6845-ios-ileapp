@@ -1,0 +1,460 @@
+SQLite format 3
+^{Ws
+^{<I
+^{PE 
+^{d[
+H<
+:
+indexsqlite_autoindex_sort_map_2sort_map
+/
+indexsqlite_autoindex_sort_map_1sort_map
+tablesort_mapsort_mapCREATE TABLE "sort_map" (name TEXT NOT NULL UNIQUE, name_order INTEGER UNIQUE, name_section INTEGER,  sort_key BLOB NOT NULL)|	
+7tablebase_locationbase_location
+CREATE TABLE base_location (base_location_id INTEGER PRIMARY KEY, path TEXT NOT NULL)o
+)tablestore_linkstore_link	CREATE TABLE store_link (store_link_id INTEGER PRIMARY KEY, url TEXT NOT NULL)/
+indexsqlite_autoindex_category_1category
+9tablecategorycategory
+CREATE TABLE category (category_id INTEGER PRIMARY KEY, category TEXT NOT NULL UNIQUE)
+tablegenregenre
+CREATE TABLE genre (genre_id INTEGER PRIMARY KEY, genre TEXT NOT NULL DEFAULT '', grouping_key BLOB, cloud_status INTEGER NOT NULL DEFAULT 0, representative_item_pid INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, sync_id INTEGER NOT NULL DEFAULT 0)
+=tablecomposercomposer
+CREATE TABLE composer (composer_pid INTEGER PRIMARY KEY, composer TEXT NOT NULL DEFAULT '', sort_composer TEXT, grouping_key BLOB, cloud_status INTEGER NOT NULL DEFAULT 0, representative_item_pid INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, sync_id INTEGER NOT NULL DEFAULT 0)
+/tablealbum_artistalbum_artist
+CREATE TABLE album_artist (album_artist_pid INTEGER PRIMARY KEY, album_artist TEXT NOT NULL DEFAULT '', sort_album_artist TEXT, grouping_key BLOB, cloud_status INTEGER NOT NULL DEFAULT 0, store_id INTEGER NOT NULL DEFAULT 0, representative_item_pid INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, app_data BLOB, sync_id INTEGER NOT NULL DEFAULT 0, cloud_universal_library_id TEXT NOT NULL DEFAULT '')
+7tableitem_artistitem_artist
+CREATE TABLE item_artist (item_artist_pid INTEGER PRIMARY KEY, item_artist TEXT NOT NULL DEFAULT '', sort_item_artist TEXT, series_name TEXT NOT NULL DEFAULT '', sort_series_name TEXT, grouping_key BLOB, cloud_status INTEGER NOT NULL DEFAULT 0, store_id INTEGER NOT NULL DEFAULT 0, representative_item_pid INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, app_data BLOB, sync_id INTEGER NOT NULL DEFAULT 0)
+tablealbumalbum
+CREATE TABLE album (album_pid INTEGER PRIMARY KEY, album TEXT NOT NULL DEFAULT '', sort_album TEXT, album_artist_pid INTEGER NOT NULL DEFAULT 0, representative_item_pid INTEGER NOT NULL DEFAULT 0, grouping_key BLOB, cloud_status INTEGER NOT NULL DEFAULT 0, user_rating INTEGER NOT NULL DEFAULT 0, liked_state INTEGER NOT NULL DEFAULT 0, all_compilations INTEGER NOT NULL DEFAULT 0, feed_url TEXT, season_number INTEGER NOT NULL DEFAULT 0, album_year INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, app_data BLOB, contains_classical_work INTEGER NOT NULL DEFAULT 0, date_played_local INTEGER NOT NULL DEFAULT 0, user_rating_is_derived INTEGER NOT NULL DEFAULT 0, sync_id INTEGER NOT NULL DEFAULT 0)
+'tableitem_statsitem_stats
+CREATE TABLE item_stats (item_pid INTEGER PRIMARY KEY, user_rating INTEGER NOT NULL DEFAULT 0, needs_restore INTEGER NOT NULL DEFAULT 0, download_identifier TEXT, play_count_user INTEGER NOT NULL DEFAULT 0, play_count_recent INTEGER NOT NULL DEFAULT 0, has_been_played INTEGER NOT NULL DEFAULT 0, date_played INTEGER NOT NULL DEFAULT 0, date_skipped INTEGER NOT NULL DEFAULT 0, date_accessed INTEGER NOT NULL DEFAULT 0, is_alarm INTEGER NOT NULL DEFAULT 0, skip_count_user INTEGER NOT NULL DEFAULT 0, skip_count_recent INTEGER NOT NULL DEFAULT 0, remember_bookmark INTEGER NOT NULL DEFAULT 0, bookmark_time_ms REAL NOT NULL DEFAULT 0, hidden INTEGER NOT NULL DEFAULT 0, chosen_by_auto_fill INTEGER NOT NULL DEFAULT 0, liked_state INTEGER NOT NULL DEFAULT 0, liked_state_changed INTEGER NOT NULL DEFAULT 0, user_rating_is_derived INTEGER NOT NULL DEFAULT 0, liked_state_changed_date INTEGER NOT NULL DEFAULT 0)
+Atableitem_extraitem_extra
+CREATE TABLE item_extra (item_pid INTEGER PRIMARY KEY, title TEXT NOT NULL DEFAULT '', sort_title TEXT, disc_count INTEGER NOT NULL DEFAULT 0, track_count INTEGER NOT NULL DEFAULT 0, total_time_ms REAL NOT NULL DEFAULT 0, year INTEGER NOT NULL DEFAULT 0, location TEXT NOT NULL DEFAULT '', file_size INTEGER NOT NULL DEFAULT 0, integrity BLOB, is_audible_audio_book INTEGER NOT NULL DEFAULT 0, date_modified INTEGER NOT NULL DEFAULT 0, media_kind INTEGER NOT NULL DEFAULT 0, content_rating INTEGER NOT NULL DEFAULT 0, content_rating_level INTEGER NOT NULL DEFAULT 0, is_user_disabled INTEGER NOT NULL DEFAULT 0, bpm INTEGER NOT NULL DEFAULT 0, genius_id INTEGER NOT NULL DEFAULT 0, comment TEXT, grouping TEXT, description TEXT, description_long TEXT, collection_description TEXT, copyright TEXT, pending_genius_checksum INTEGER NOT NULL DEFAULT 0, category_id INTEGER NOT NULL DEFAULT 0, location_kind_id INTEGER NOT NULL DEFAULT 0, version TEXT NOT NULL DEFAULT '', display_version TEXT NOT NULL DEFAULT '', classical_work TEXT NOT NULL DEFAULT '', classical_movement TEXT NOT NULL DEFAULT '', classical_movement_count INTEGER NOT NULL DEFAULT 0, classical_movement_number INTEGER NOT NULL DEFAULT 0, is_preorder INTEGER NOT NULL DEFAULT 0)
+'tableitemitem
+CREATE TABLE item (item_pid INTEGER PRIMARY KEY, media_type INTEGER NOT NULL DEFAULT 0, title_order INTEGER NOT NULL DEFAULT 0, title_order_section INTEGER NOT NULL DEFAULT 0, item_artist_pid INTEGER NOT NULL DEFAULT 0, item_artist_order INTEGER NOT NULL DEFAULT 0, item_artist_order_section INTEGER NOT NULL DEFAULT 0, series_name_order INTEGER NOT NULL DEFAULT 0, series_name_order_section INTEGER NOT NULL DEFAULT 0, album_pid INTEGER NOT NULL DEFAULT 0, album_order INTEGER NOT NULL DEFAULT 0, album_order_section INTEGER NOT NULL DEFAULT 0, album_artist_pid INTEGER NOT NULL DEFAULT 0, album_artist_order INTEGER NOT NULL DEFAULT 0, album_artist_order_section INTEGER NOT NULL DEFAULT 0, composer_pid INTEGER NOT NULL DEFAULT 0, composer_order INTEGER NOT NULL DEFAULT 0, composer_order_section INTEGER NOT NULL DEFAULT 0, genre_id INTEGER NOT NULL DEFAULT 0, genre_order INTEGER NOT NULL DEFAULT 0, genre_order_section INTEGER NOT NULL DEFAULT 0, disc_number INTEGER NOT NULL DEFAULT 0, track_number INTEGER NOT NULL DEFAULT 0, episode_sort_id INTEGER NOT NULL DEFAULT 0, base_location_id INTEGER NOT NULL DEFAULT 0, remote_location_id INTEGER NOT NULL DEFAULT 0, exclude_from_shuffle INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, in_my_library INTEGER NOT NULL DEFAULT 0, is_compilation INTEGER NOT NULL DEFAULT 0, date_added INTEGER NOT NULL DEFAULT 0, show_composer INTEGER NOT NULL DEFAULT 0, is_music_show INTEGER NOT NULL DEFAULT 0, date_downloaded INTEGER NOT NULL DEFAULT 0, download_source_container_pid INTEGER NOT NULL DEFAULT 0)
+R4Qd
+tableitem_playbackitem_playback
+CREATE TABLE item_playback (item_pid INTEGER PRIMARY KEY, audio_format INTEGER NOT NULL DEFAULT 0, bit_rate INTEGER NOT NULL DEFAULT 0, codec_type INTEGER NOT NULL DEFAULT 0, codec_subtype INTEGER NOT NULL DEFAULT 0, data_kind INTEGER NOT NULL DEFAULT 0, data_url TEXT, duration INTEGER NOT NULL DEFAULT 0, eq_preset TEXT, format TEXT, gapless_heuristic_info INTEGER NOT NULL DEFAULT 0, gapless_encoding_delay INTEGER NOT NULL DEFAULT 0, gapless_encoding_drain INTEGER NOT NULL DEFAULT 0, gapless_last_frame_resynch INTEGER NOT NULL DEFAULT 0, has_video INTEGER NOT NULL DEFAULT 0, relative_volume INTEGER, sample_rate REAL NOT NULL DEFAULT 0, start_time_ms REAL NOT NULL DEFAULT 0, stop_time_ms REAL NOT NULL DEFAULT 0, volume_normalization_energy INTEGER NOT NULL DEFAULT 0, progression_direction INTEGER NOT NULL DEFAULT 0)
+/tableitem_storeitem_store
+CREATE TABLE item_store (item_pid INTEGER PRIMARY KEY, store_item_id INTEGER NOT NULL DEFAULT 0, store_composer_id INTEGER NOT NULL DEFAULT 0, store_genre_id INTEGER NOT NULL DEFAULT 0, store_playlist_id INTEGER NOT NULL DEFAULT 0, storefront_id INTEGER NOT NULL DEFAULT 0, purchase_history_id INTEGER NOT NULL DEFAULT 0, purchase_history_token INTEGER NOT NULL DEFAULT 0, purchase_history_redownload_params TEXT, store_saga_id INTEGER NOT NULL DEFAULT 0, match_redownload_params TEXT, cloud_status INTEGER NOT NULL DEFAULT 0, sync_id INTEGER NOT NULL DEFAULT 0, home_sharing_id INTEGER NOT NULL DEFAULT 0, is_ota_purchased INTEGER NOT NULL DEFAULT 0, store_kind INTEGER NOT NULL DEFAULT 0, account_id INTEGER NOT NULL DEFAULT 0, downloader_account_id INTEGER NOT NULL DEFAULT 0, family_account_id INTEGER NOT NULL DEFAULT 0, is_protected INTEGER NOT NULL DEFAULT 0, key_versions INTEGER NOT NULL DEFAULT 0, key_platform_id INTEGER NOT NULL DEFAULT 0, key_id INTEGER NOT NULL DEFAULT 0, key_id_2 INTEGER NOT NULL DEFAULT 0, date_purchased INTEGER NOT NULL DEFAULT 0, date_released INTEGER NOT NULL DEFAULT 0, external_guid TEXT, feed_url TEXT, artwork_url TEXT, store_xid TEXT, store_flavor TEXT, store_matched_status INTEGER NOT NULL DEFAULT 0, store_redownloaded_status INTEGER NOT NULL DEFAULT 0, store_link_id INTEGER NOT NULL DEFAULT 0, extras_url TEXT NOT NULL DEFAULT '', vpp_is_licensed INTEGER NOT NULL DEFAULT 0, vpp_org_id INTEGER NOT NULL DEFAULT 0, vpp_org_name TEXT NOT NULL DEFAULT '', sync_redownload_params TEXT NOT NULL DEFAULT '', needs_reporting INTEGER NOT NULL DEFAULT 0, subscription_store_item_id INTEGER NOT NULL DEFAULT 0, playback_endpoint_type INTEGER NOT NULL DEFAULT 0, is_mastered_for_itunes INTEGER NOT NULL DEFAULT 0, radio_station_id TEXT NOT NULL DEFAULT '', advertisement_unique_id TEXT NOT NULL DEFAULT '', advertisement_type INTEGER NOT NULL DEFAULT 0, is_artist_uploaded_content INTEGER NOT NULL DEFAULT 0, cloud_asset_available INTEGER NOT NULL DEFAULT 0, is_subscription INTEGER NOT NULL DEFAULT 0, sync_in_my_library INTEGER NOT NULL DEFAULT 0, cloud_in_my_library INTEGER NOT NULL DEFAULT 0, cloud_album_id TEXT NOT NULL DEFAULT '', cloud_playback_endpoint_type INTEGER NOT NULL DEFAULT 0, cloud_universal_library_id TEXT NOT NULL DEFAULT '', reporting_store_item_id INTEGER NOT NULL DEFAULT 0, asset_store_item_id INTEGER NOT NULL DEFAULT 0)
+^{]U
+1tableitem_kvsitem_kvs
+CREATE TABLE item_kvs (item_pid INTEGER PRIMARY KEY, key TEXT NOT NULL DEFAULT '')
++tableitem_searchitem_search
+CREATE TABLE item_search (item_pid INTEGER PRIMARY KEY, search_title INTEGER NOT NULL DEFAULT 0, search_album INTEGER NOT NULL DEFAULT 0, search_artist INTEGER NOT NULL DEFAULT 0, search_composer INTEGER NOT NULL DEFAULT 0, search_album_artist INTEGER NOT NULL DEFAULT 0)9
+=tableitem_videoitem_video
+CREATE TABLE item_video (item_pid INTEGER PRIMARY KEY, video_quality INTEGER NOT NULL DEFAULT 0, is_rental INTEGER NOT NULL DEFAULT 0, has_chapter_data INTEGER NOT NULL DEFAULT 0, season_number INTEGER NOT NULL DEFAULT 0, episode_id TEXT NOT NULL DEFAULT '', network_name TEXT NOT NULL DEFAULT '', extended_content_rating TEXT NOT NULL DEFAULT '', movie_info TEXT NOT NULL DEFAULT '', has_alternate_audio INTEGER NOT NULL DEFAULT 0, has_subtitles INTEGER NOT NULL DEFAULT 0, audio_language INTEGER NOT NULL DEFAULT 0, audio_track_index INTEGER NOT NULL DEFAULT 0, audio_track_id INTEGER NOT NULL DEFAULT 0, subtitle_language INTEGER NOT NULL DEFAULT 0, subtitle_track_index INTEGER NOT NULL DEFAULT 0, rental_duration INTEGER NOT NULL DEFAULT 0, rental_playback_duration INTEGER NOT NULL DEFAULT 0, rental_playback_date_started INTEGER NOT NULL DEFAULT 0, rental_date_started INTEGER NOT NULL DEFAULT 0, is_demo INTEGER NOT NULL DEFAULT 0, has_hls INTEGER NOT NULL DEFAULT 0, audio_track_locale TEXT NOT NULL DEFAULT '', show_sort_type INTEGER NOT NULL DEFAULT 0, episode_type INTEGER NOT NULL DEFAULT 0, episode_type_display_name TEXT NOT NULL DEFAULT '', episode_sub_sort_order INTEGER NOT NULL DEFAULT 0, hls_offline_playback_keys BLOB, is_premium INTEGER NOT NULL DEFAULT 0, color_capability INTEGER NOT NULL DEFAULT 0, hls_color_capability INTEGER NOT NULL DEFAULT 0, hls_video_quality INTEGER NOT NULL DEFAULT 0, hls_playlist_url TEXT NOT NULL DEFAULT '', audio_capability INTEGER NOT NULL DEFAULT 0, hls_audio_capability INTEGER NOT NULL DEFAULT 0, hls_asset_traits INTEGER NOT NULL DEFAULT 0, hls_key_server_url TEXT NOT NULL DEFAULT '', hls_key_cert_url TEXT NOT NULL DEFAULT '')
+	45 
+#tablecontainer_seedcontainer_seed
+CREATE TABLE container_seed (container_pid INTEGER PRIMARY KEY, item_pid INTEGER NOT NULL DEFAULT 0, seed_order INTEGER NOT NULL DEFAULT 0)
+tablecontainercontainer
+CREATE TABLE container (container_pid INTEGER PRIMARY KEY, distinguished_kind INTEGER NOT NULL DEFAULT 0, date_created INTEGER NOT NULL DEFAULT 0, date_modified INTEGER NOT NULL DEFAULT 0, date_played INTEGER NOT NULL DEFAULT 0, name TEXT NOT NULL DEFAULT '', name_order INTEGER NOT NULL DEFAULT 0, is_owner INTEGER NOT NULL DEFAULT 1, is_editable INTEGER NOT NULL DEFAULT 0, parent_pid INTEGER NOT NULL DEFAULT 0, contained_media_type INTEGER NOT NULL DEFAULT 0, workout_template_id INTEGER NOT NULL DEFAULT 0, is_hidden INTEGER NOT NULL DEFAULT 0, is_ignorable_itunes_playlist INTEGER NOT NULL DEFAULT 0, description TEXT, play_count_user INTEGER NOT NULL DEFAULT 0, play_count_recent INTEGER NOT NULL DEFAULT 0, liked_state INTEGER NOT NULL DEFAULT 0, smart_evaluation_order INTEGER NOT NULL DEFAULT 0, smart_is_folder INTEGER NOT NULL DEFAULT 0, smart_is_dynamic INTEGER NOT NULL DEFAULT 0, smart_is_filtered INTEGER NOT NULL DEFAULT 0, smart_is_genius INTEGER NOT NULL DEFAULT 0, smart_enabled_only INTEGER NOT NULL DEFAULT 0, smart_is_limited INTEGER NOT NULL DEFAULT 0, smart_limit_kind INTEGER NOT NULL DEFAULT 0, smart_limit_order INTEGER NOT NULL DEFAULT 0, smart_limit_value INTEGER NOT NULL DEFAULT 0, smart_reverse_limit_order INTEGER NOT NULL DEFAULT 0, smart_criteria BLOB, play_order INTEGER NOT NULL DEFAULT 0, is_reversed INTEGER NOT NULL DEFAULT 0, album_field_order INTEGER NOT NULL DEFAULT 0, repeat_mode INTEGER NOT NULL DEFAULT 0, shuffle_items INTEGER NOT NULL DEFAULT 0, has_been_shuffled INTEGER NOT NULL DEFAULT 0, filepath TEXT NOT NULL DEFAULT '', is_saveable INTEGER NOT NULL DEFAULT 0, is_src_remote INTEGER NOT NULL DEFAULT 0, is_ignored_syncing INTEGER NOT NULL DEFAULT 0, container_type INTEGER NOT NULL DEFAULT 0, is_container_type_active_target INTEGER NOT NULL DEFAULT 0, orig_date_modified INTEGER NOT NULL DEFAULT 0, store_cloud_id INTEGER NOT NULL DEFAULT 0, has_cloud_play_order INTEGER NOT NULL DEFAULT 0, cloud_global_id TEXT NOT NULL DEFAULT '', cloud_share_url TEXT NOT NULL DEFAULT '', cloud_is_public INTEGER NOT NULL DEFAULT 0, cloud_is_visible INTEGER NOT NULL DEFAULT 0, cloud_is_subscribed INTEGER NOT NULL DEFAULT 0, cloud_is_curator_playlist INTEGER NOT NULL DEFAULT 0, cloud_author_store_id INTEGER NOT NULL DEFAULT 0, cloud_author_display_name TEXT NOT NULL DEFAULT '', cloud_author_store_url TEXT NOT NULL DEFAULT '', cloud_min_refresh_interval INTEGER NOT NULL DEFAULT 0, cloud_last_update_time INTEGER NOT NULL DEFAULT 0, cloud_user_count INTEGER NOT NULL DEFAULT 0, cloud_global_play_count INTEGER NOT NULL DEFAULT 0, cloud_global_like_count INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, external_vendor_identifier TEXT NOT NULL DEFAULT '', external_vendor_display_name TEXT NOT NULL DEFAULT '', external_vendor_container_tag TEXT NOT NULL DEFAULT '', is_external_vendor_playlist INTEGER NOT NULL DEFAULT 0, sync_id INTEGER NOT NULL DEFAULT 0, cloud_is_sharing_disabled INTEGER NOT NULL DEFAULT 0, cloud_version_hash TEXT NOT NULL DEFAULT '', date_played_local NOT NULL DEFAULT 0, cloud_author_handle TEXT NOT NULL DEFAULT '', cloud_universal_library_id TEXT NOT NULL DEFAULT '', should_display_index INTEGER NOT NULL DEFAULT 0, date_downloaded INTEGER NOT NULL DEFAULT 0, category_type_mask INTEGER NOT NULL DEFAULT 0, grouping_sort_key TEXT NOT NULL DEFAULT '')
+b	.'
+S
+u
+
+indexsqlite_autoindex_container_item_media_type_1container_item_media_type
+{tablecontainer_item_media_typecontainer_item_media_type
+CREATE TABLE container_item_media_type (container_pid INTEGER PRIMARY KEY, media_type INTEGER NOT NULL DEFAULT 0, count INTEGER NOT NULL DEFAULT 0, UNIQUE (container_pid, media_type))
+tableartworkartwork0CREATE TABLE artwork (artwork_token TEXT NOT NULL DEFAULT '', artwork_source_type INTEGER NOT NULL DEFAULT 0, relative_path TEXT NOT NULL DEFAULT '', artwork_type INTEGER NOT NULL DEFAULT 0, interest_data BLOB, UNIQUE (artwork_token, artwork_source_type))C(
+indexsqlite_autoindex_best_artwork_token_1best_artwork_token/
+Ytablebest_artwork_tokenbest_artwork_token.CREATE TABLE best_artwork_token (entity_pid INTEGER NOT NULL DEFAULT 0, entity_type INTEGER NOT NULL DEFAULT 0, artwork_type INTEGER NOT NULL DEFAULT 0, available_artwork_token TEXT NOT NULL DEFAULT '', fetchable_artwork_token TEXT NOT NULL DEFAULT '', fetchable_artwork_source_type INTEGER NOT NULL DEFAULT 0, UNIQUE (entity_pid, entity_type, artwork_type))9&
+indexsqlite_autoindex_artwork_token_1artwork_token-
+mtableartwork_tokenartwork_token,CREATE TABLE artwork_token (artwork_token TEXT NOT NULL DEFAULT '', artwork_source_type INTEGER NOT NULL DEFAULT 0, artwork_type INTEGER NOT NULL DEFAULT 0, entity_pid INTEGER NOT NULL DEFAULT 0, entity_type INTEGER NOT NULL DEFAULT 0, UNIQUE (artwork_source_type, artwork_type, entity_pid, entity_type))~$
+#tablegenius_similaritiesgenius_similarities+CREATE TABLE genius_similarities (genius_id INTEGER PRIMARY KEY, data BLOB)f#
+tablegenius_metadatagenius_metadata*CREATE TABLE genius_metadata (genius_id INTEGER PRIMARY KEY, revision_level INTEGER NOT NULL DEFAULT 0, version INTEGER NOT NULL DEFAULT 0, checksum INTEGER NOT NULL DEFAULT 0, data BLOB)9"
+indexsqlite_autoindex_genius_config_1genius_config)Y!
+qtablegenius_configgenius_config(CREATE TABLE genius_config (id INTEGER PRIMARY KEY, version INTEGER UNIQUE, default_num_results INTEGER NOT NULL DEFAULT 0, min_num_results INTEGER NOT NULL DEFAULT 0, data BLOB)= 
+indexsqlite_autoindex_entity_revision_1entity_revision'
+ytableentity_revisionentity_revision&CREATE TABLE entity_revision (revision INTEGER PRIMARY KEY, entity_pid INTEGER NOT NULL DEFAULT 0, deleted INTEGER NOT NULL DEFAULT 0, class INTEGER NOT NULL DEFAULT 0, revision_type INTEGER NOT NULL DEFAULT 0, UNIQUE (entity_pid, revision_type))q
+=tablelyricslyrics%CREATE TABLE lyrics (item_pid INTEGER PRIMARY KEY, checksum INTEGER NOT NULL DEFAULT 0, pending_checksum INTEGER NOT NULL DEFAULT 0, lyrics TEXT NOT NULL DEFAULT '', store_lyrics_available INTEGER NOT NULL DEFAULT 0)a
+tablechapterchapter$CREATE TABLE chapter (item_pid INTEGER PRIMARY KEY, chapter_data BLOB)[
+
+tabledb_infodb_info#CREATE TABLE db_info (db_pid INTEGER PRIMARY KEY, primary_container_pid INTEGER, media_folder_url TEXT, audio_language INTEGER, subtitle_language INTEGER, genius_cuid TEXT, bib BLOB, rib BLOB)I
+indexsqlite_autoindex__MLDatabaseProperties_1_MLDatabaseProperties"|
+table_MLDatabaseProperties_MLDatabaseProperties!CREATE TABLE _MLDatabaseProperties (key TEXT PRIMARY KEY, value TEXT)a
+}tablecontainer_itemcontainer_item
+CREATE TABLE container_item (container_item_pid INTEGER PRIMARY KEY, container_pid INTEGER NOT NULL DEFAULT 0, item_pid INTEGER NOT NULL DEFAULT 0, position INTEGER NOT NULL DEFAULT 0)
+OrderingLanguageen
+-	OrderingLanguage
+^{-Gyk^
+^{wp
+lcB8w0
+
+1indexItemTitleInAlbumArtistitemDCREATE INDEX ItemTitleInAlbumArtist ON item (album_artist_pid ASC, media_type ASC)|;
+!indexArtworkTokenArtworkTokenartwork_tokenCCREATE INDEX ArtworkTokenArtworkToken ON artwork_token (artwork_token ASC)z:
+)indexGenreRepresentativeItemPIDgenreBCREATE INDEX GenreRepresentativeItemPID ON genre (representative_item_pid ASC)g9
+'indexItemGenreitemACREATE INDEX ItemGenre ON item (genre_order ASC, genre_id ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, genre_order_section ASC, in_my_library ASC) WHERE (in_my_library OR genre_order)f8
+indexItemTitleInAlbumitem@CREATE INDEX ItemTitleInAlbum ON item (album_pid ASC, media_type ASC)@7
+WindexItemSeriesitem?CREATE INDEX ItemSeries ON item (series_name_order ASC, album_order ASC, episode_sort_id ASC, title_order ASC, media_type ASC, in_my_library ASC) WHERE in_my_libraryP6
+sindexItemKeepLocalitem>CREATE INDEX ItemKeepLocal ON item (keep_local ASC)
+/tablecontainer_item_personcontainer_item_person<CREATE TABLE container_item_person (container_item_person_pid INTEGER PRIMARY KEY, container_item_pid INTEGER NOT NULL DEFAULT 0, person_pid INTEGER NOT NULL DEFAULT 0, UNIQUE (container_item_pid, person_pid))I5
+indexsqlite_autoindex_container_item_person_1container_item_person=z3
+Otablepersonperson;CREATE TABLE person (person_pid INTEGER PRIMARY KEY, cloud_id TEXT NOT NULL DEFAULT '', handle TEXT NOT NULL DEFAULT '', name TEXT NOT NULL DEFAULT '', image_url TEXT NOT NULL DEFAULT '', image_token TEXT NOT NULL DEFAULT '')
+wtableaccountaccount:CREATE TABLE account (dsid INTEGER PRIMARY KEY, apple_id TEXT NOT NULL DEFAULT '', alt_dsid TEXT NOT NULL DEFAULT '')11
+indexsqlite_autoindex_cloud_kvs_1cloud_kvs8
+9tablecloud_kvscloud_kvs7CREATE TABLE cloud_kvs (key TEXT PRIMARY KEY, play_count_user INTEGER NOT NULL DEFAULT 0, has_been_played INTEGER NOT NULL DEFAULT 0, bookmark_time_ms REAL NOT NULL DEFAULT 0, bookmark_sync_timestamp INTEGER NOT NULL DEFAULT 0, bookmark_sync_revision INTEGER NOT NULL DEFAULT 0)
+Stableentity_changesentity_changes2CREATE TABLE entity_changes (class INTEGER NOT NULL, entity_pid INTEGER NOT NULL, source_pid INTEGER NOT NULL, change_type INTEGER NOT NULL, changes TEXT NOT NULL DEFAULT '', UNIQUE (class, entity_pid, source_pid, change_type))-*
+indexsqlite_autoindex_artwork_1artwork1	@
+3indexContainerItemPersonscontainer_item_personHCREATE INDEX ContainerItemPersons ON container_item_person (container_item_pid ASC)Z?
+{indexSortMapSortKeyssort_mapGCREATE INDEX SortMapSortKeys ON sort_map (sort_key ASC)">
+mindexCloudKVSBookkeeperItemLookupcloud_kvsFCREATE INDEX CloudKVSBookkeeperItemLookup ON cloud_kvs (bookmark_sync_timestamp ASC, bookmark_sync_revision ASC)R=
+sindexPersonCloudIDpersonECREATE INDEX PersonCloudID ON person (cloud_id ASC)?/
+indexsqlite_autoindex_library_property_1library_property6/.
+tablelibrary_propertylibrary_property5CREATE TABLE library_property (property_pid INTEGER PRIMARY KEY, source_id INTEGER, key TEXT, value TEXT, UNIQUE (source_id, key))9-
+Mtablesourcesource4CREATE TABLE source (source_pid INTEGER PRIMARY KEY, source_name TEXT, last_sync_date INTEGER NOT NULL DEFAULT 0, last_sync_revision INTEGER NOT NULL DEFAULT 0)
+9indexContainerItemPositioncontainer_itemJCREATE INDEX ContainerItemPosition ON container_item (container_pid ASC, position ASC)
+]indexCloudKVSBookmarkSynccloud_kvsICREATE INDEX CloudKVSBookmarkSync ON cloud_kvs (bookmark_sync_timestamp ASC, bookmark_sync_revision ASC);,
+indexsqlite_autoindex_entity_changes_1entity_changes3
+^{#
+RtiQ
+sy-
+
+~EJY
+
+^{8~
+^{f5
+2}k
+
+j;i
+^{VdU
+^{f'
+8=
+L
+-	-
+[indexItemAlbumArtistitemKCREATE INDEX ItemAlbumArtist ON item (album_artist_order ASC, album_artist_pid ASC, album_pid ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_artist_order_section ASC, in_my_library ASC, is_compilation ASC) WHERE ((in_my_library OR album_artist_order) OR is_compilation)TS
+windexGenreKeepLocalgenre\CREATE INDEX GenreKeepLocal ON genre (keep_local ASC)eR
+indexContainerKeepLocalcontainer[CREATE INDEX ContainerKeepLocal ON container (keep_local ASC)~Q
+KindexAlbumGroupingalbumZCREATE INDEX AlbumGrouping ON album (grouping_key ASC, album_artist_pid ASC, season_number ASC)oP
+indexAlbumArtistKeepLocalalbum_artistYCREATE INDEX AlbumArtistKeepLocal ON album_artist (keep_local ASC)
+CindexAlbumArtistRepresentativeItemPIDalbum_artistXCREATE INDEX AlbumArtistRepresentativeItemPID ON album_artist (representative_item_pid ASC)
+5indexComposerRepresentativeItemPIDcomposerWCREATE INDEX ComposerRepresentativeItemPID ON composer (representative_item_pid ASC)kM
+indexItemArtistGroupingitem_artistVCREATE INDEX ItemArtistGrouping ON item_artist (grouping_key ASC)dL
+	indexItemStoreSagaIDitem_storeUCREATE INDEX ItemStoreSagaID ON item_store (store_saga_id ASC)*K
+]indexBestArtworkTokenEntityPIDEntityTypebest_artwork_tokenTCREATE INDEX BestArtworkTokenEntityPIDEntityType ON best_artwork_token (entity_pid ASC, entity_type ASC)
+indexItemAlbumitemSCREATE INDEX ItemAlbum ON item (album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_order_section ASC, in_my_library ASC) WHERE (in_my_library OR album_order)
+EindexItemStoreSubscriptionStoreItemIDitem_storeQCREATE INDEX ItemStoreSubscriptionStoreItemID ON item_store (subscription_store_item_id ASC)LH
+oindexPersonPIDpersonPCREATE INDEX PersonPID ON person (person_pid ASC)oG
+indexAlbumArtistGroupingalbum_artistOCREATE INDEX AlbumArtistGrouping ON album_artist (grouping_key ASC)
+indexItemComposeritemNCREATE INDEX ItemComposer ON item (composer_order ASC, composer_pid ASC, album_order ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, composer_order_section ASC, in_my_library ASC) WHERE (in_my_library OR composer_order)
+
+windexAlbumKeepLocalalbum`CREATE INDEX AlbumKeepLocal ON album (keep_local ASC)dV
+indexItemExtraGeniusIDitem_extra_CREATE INDEX ItemExtraGeniusID ON item_extra (genius_id ASC)kU
+
+indexItemArtistKeepLocalitem_artist^CREATE INDEX ItemArtistKeepLocal ON item_artist (keep_local ASC)TT
+yindexGenreGroupinggenre]CREATE INDEX GenreGrouping ON genre (grouping_key ASC)jE
+
+indexItemStatsUserRatingitem_statsMCREATE INDEX ItemStatsUserRating ON item_stats (user_rating ASC)|D
+EindexItemDateCreateditemLCREATE INDEX ItemDateCreated ON item (date_added DESC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC) WHERE in_my_library
+eindexItemAlbumByAlbumArtistitemaCREATE INDEX ItemAlbumByAlbumArtist ON item (album_artist_order ASC, album_artist_pid ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_artist_order_section ASC, in_my_library ASC, is_compilation ASC) WHERE ((in_my_library OR album_order) OR is_compilation)
+^{;,
+RU#/G
+
+^{bH
+'triggeron_insert_item_setRemoteLocationColumnitem_storeCREATE TRIGGER on_insert_item_setRemoteLocationColumn AFTER INSERT ON item_store BEGIN UPDATE item SET remote_location_id = ( CASE WHEN new.home_sharing_id != 0 THEN 300 ELSE ( CASE WHEN IFNULL(new.match_redownload_params, '') != '' THEN 200 ELSE ( CASE WHEN IFNULL(new.purchase_history_redownload_params, '') != '' AND new.purchase_history_id != 0 THEN 100 ELSE ( CASE WHEN new.subscription_store_item_id != 0 AND new.is_subscription AND new.cloud_asset_available THEN 50 ELSE ( CASE WHEN new.sync_redownload_params == 'redownload' AND new.sync_id != 0 THEN 20 ELSE ( CASE WHEN new.sync_redownload_params == 'local' AND new.sync_id != 0 THEN 10 ELSE 0 END) END) END) END) END) END) WHERE item_pid = new.item_pid; ENDoh
+#indexItemTitleInComposeritemrCREATE INDEX ItemTitleInComposer ON item (composer_pid ASC, media_type ASC)Kg
+gindexItemKVSKeyitem_kvsqCREATE INDEX ItemKVSKey ON item_kvs (key ASC)ef
+indexItemTitleInGenreitempCREATE INDEX ItemTitleInGenre ON item (genre_id ASC, media_type ASC)
+?indexItemTitleitemoCREATE INDEX ItemTitle ON item (title_order ASC, item_artist_order ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, title_order_section ASC, in_my_library ASC) WHERE (in_my_library OR title_order)
+?indexItemArtistRepresentativeItemPIDitem_artistnCREATE INDEX ItemArtistRepresentativeItemPID ON item_artist (representative_item_pid ASC)ac
+indexComposerGroupingcomposermCREATE INDEX ComposerGrouping ON composer (grouping_key ASC)lb
+indexItemStatsPlayCountitem_statslCREATE INDEX ItemStatsPlayCount ON item_stats (play_count_user ASC)|a
+%indexItemStatsRememberBookmarkitem_statsjCREATE INDEX ItemStatsRememberBookmark ON item_stats (remember_bookmark ASC)
+indexItemItemArtistitemiCREATE INDEX ItemItemArtist ON item (item_artist_order ASC, item_artist_pid ASC, album_pid ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, item_artist_order_section ASC, in_my_library ASC) WHERE (in_my_library OR item_artist_order)q_
+indexContainerItemItemPidcontainer_itemhCREATE INDEX ContainerItemItemPid ON container_item (item_pid ASC)
+KindexArtworkTokenEntityPIDEntityTypeartwork_tokengCREATE INDEX ArtworkTokenEntityPIDEntityType ON artwork_token (entity_pid ASC, entity_type ASC)a]
+indexComposerKeepLocalcomposerfCREATE INDEX ComposerKeepLocal ON composer (keep_local ASC)
+	indexItemStoreItemIDitem_storeeCREATE INDEX ItemStoreItemID ON item_store (store_item_id ASC)v[
+-indexItemTitleInItemArtistitemdCREATE INDEX ItemTitleInItemArtist ON item (item_artist_pid ASC, media_type ASC)fZ
+	indexItemStatsPlayDateitem_statscCREATE INDEX ItemStatsPlayDate ON item_stats (date_played ASC)zY
+)indexAlbumRepresentativeItemPIDalbumbCREATE INDEX AlbumRepresentativeItemPID ON album (representative_item_pid ASC)
+^{fj
+^{4R
+^{Ut
+E 
+9
+
+^{,/c=5
+^{y]G
+[tablesqlite_stat1sqlite_stat1tCREATE TABLE sqlite_stat1(tbl,idx,stat)
+'triggeron_remove_source_setPlaybackEndpointTypeitem_storeCREATE TRIGGER on_remove_source_setPlaybackEndpointType AFTER UPDATE OF playback_endpoint_type ON item_store BEGIN UPDATE item_store SET playback_endpoint_type = (CASE WHEN new.playback_endpoint_type >= 0 THEN new.playback_endpoint_type ELSE (CASE WHEN store_saga_id THEN cloud_playback_endpoint_type WHEN sync_id THEN 0 WHEN purchase_history_id THEN 1 WHEN is_ota_purchased THEN 0 WHEN is_subscription THEN 3 ELSE 0 END) END) WHERE item_pid = new.item_pid; END
+qtriggeron_update_item_setInMyLibraryColumnitem_storeCREATE TRIGGER on_update_item_setInMyLibraryColumn AFTER UPDATE OF purchase_history_id, home_sharing_id, sync_id, subscription_store_item_id, store_saga_id, is_ota_purchased, sync_in_my_library, cloud_in_my_library ON item_store BEGIN UPDATE item SET in_my_library = ( CASE WHEN new.home_sharing_id OR (new.store_saga_id AND new.cloud_in_my_library) OR new.purchase_history_id OR (new.sync_id AND new.sync_in_my_library) OR new.is_ota_purchased THEN 1 ELSE 0 END) WHERE item_pid = new.item_pid; END
+Ctriggeron_insert_item_setInMyLibraryColumnitem_storeCREATE TRIGGER on_insert_item_setInMyLibraryColumn AFTER INSERT ON item_store BEGIN UPDATE item SET in_my_library = ( CASE WHEN new.home_sharing_id OR (new.store_saga_id AND new.cloud_in_my_library) OR new.purchase_history_id OR (new.sync_id AND new.sync_in_my_library) OR new.is_ota_purchased THEN 1 ELSE 0 END) WHERE item_pid = new.item_pid; END
+Gtriggeron_update_item_setRemoteLocationColumnitem_storeCREATE TRIGGER on_update_item_setRemoteLocationColumn AFTER UPDATE OF match_redownload_params, purchase_history_redownload_params, purchase_history_id, home_sharing_id, sync_redownload_params, subscription_store_item_id, store_saga_id, is_subscription, cloud_asset_available ON item_store BEGIN UPDATE item SET remote_location_id = ( CASE WHEN new.home_sharing_id != 0 THEN 300 ELSE ( CASE WHEN IFNULL(new.match_redownload_params, '') != '' THEN 200 ELSE ( CASE WHEN IFNULL(new.purchase_history_redownload_params, '') != '' AND new.purchase_history_id != 0 THEN 100 ELSE ( CASE WHEN new.subscription_store_item_id != 0 AND new.is_subscription AND new.cloud_asset_available THEN 50 ELSE ( CASE WHEN new.sync_redownload_params == 'redownload' AND new.sync_id != 0 THEN 20 ELSE ( CASE WHEN new.sync_redownload_params == 'local' AND new.sync_id != 0 THEN 10 ELSE 0 END) END) END) END) END) END) WHERE item_pid = new.item_pid; END
+^{,\
+base_location1D
+_MLDatabasePropertiessqlite_autoindex__MLDatabaseProperties_11 1
+U_UUID1B8E9198-4F57-47FE-B5F1-84B22389C986
+^{E U
+_UUID
+WSQLite format 3
+^{Ap
+0H@*Z,*.>
+8:NPFLZ
+^{oD
+0HPV
+^{29XC
+W8q
+")Playback History?
+/var/mobile/Media/iTunes_Control/iTunes/OnTheGoPlaylist_3118360998405938516.plistA
+^{oa
+2}2
+
+MLSortMapUnicodeVersion
+c:9
+
+OrderingLanguage
+^{Sin
+)indexGenreRepresentativeItemPIDgenreBCREATE INDEX GenreRepresentativeItemPID ON genre (representative_item_pid ASC)
+3indexContainerItemPersonscontainer_item_personHCREATE INDEX ContainerItemPersons ON container_item_person (container_item_pid ASC)
+^{sa
+^{'q
+lWN
+
+'triggeron_insert_item_setRemoteLocationColumnitem_storeCREATE TRIGGER on_insert_item_setRemoteLocationColumn AFTER INSERT ON item_store BEGIN UPDATE item SET remote_location_id = ( CASE WHEN new.home_sharing_id != 0 THEN 300 ELSE ( CASE WHEN IFNULL(new.match_redownload_params, '') != '' THEN 200 ELSE ( CASE WHEN IFNULL(new.purchase_history_redownload_params, '') != '' AND new.purchase_history_id != 0 THEN 100 ELSE ( CASE WHEN new.subscription_store_item_id != 0 AND new.is_subscription AND new.cloud_asset_available THEN 50 ELSE ( CASE WHEN new.sync_redownload_params == 'redownload' AND new.sync_id != 0 THEN 20 ELSE ( CASE WHEN new.sync_redownload_params == 'local' AND new.sync_id != 0 THEN 10 ELSE 0 END) END) END) END) END) END) WHERE item_pid = new.item_pid; ENDKg
+gindexItemKVSKeyitem_kvsqCREATE INDEX ItemKVSKey ON item_kvs (key ASC)
+%indexItemStatsRememberBookmarkitem_statsjCREATE INDEX ItemStatsRememberBookmark ON item_stats (remember_bookmark ASC)q_
+indexComposerKeepLocalcomposerfCREATE INDEX ComposerKeepLocal ON composer (keep_local ASC)d\
+	indexItemStoreItemIDitem_storeeCREATE INDEX ItemStoreItemID ON item_store (store_item_id ASC)fZ
+)indexAlbumRepresentativeItemPIDalbumbCREATE INDEX AlbumRepresentativeItemPID ON album (representative_item_pid ASC)TW
+yindexGenreGroupinggenre]CREATE INDEX GenreGrouping ON genre (grouping_key ASC)TS
+indexAlbumArtistGroupingalbum_artistOCREATE INDEX AlbumArtistGrouping ON album_artist (grouping_key ASC)jE
+
+indexItemStatsUserRatingitem_statsMCREATE INDEX ItemStatsUserRating ON item_stats (user_rating ASC)
+^{5nB
+^{{D
+g7
+'	
+tablesort_mapsort_mapuCREATE TABLE "sort_map" (name TEXT NOT NULL UNIQUE, name_order INTEGER UNIQUE, name_section INTEGER, sort_key BLOB NOT NULL DEFAULT x'')Kn
+sindexItemKeepLocalitem@CREATE INDEX ItemKeepLocal ON item (keep_local ASC)@u
+WindexItemSeriesitem?CREATE INDEX ItemSeries ON item (series_name_order ASC, album_order ASC, episode_sort_id ASC, title_order ASC, media_type ASC, in_my_library ASC) WHERE in_my_libraryyt
+1indexItemTitleInAlbumArtistitem>CREATE INDEX ItemTitleInAlbumArtist ON item (album_artist_pid ASC, media_type ASC)es
+indexItemTitleInGenreitem
+CREATE INDEX ItemTitleInGenre ON item (genre_id ASC, media_type ASC)
++tableitemitemxCREATE TABLE "item" (item_pid INTEGER PRIMARY KEY, media_type INTEGER NOT NULL DEFAULT 0, title_order INTEGER NOT NULL DEFAULT 0, title_order_section INTEGER NOT NULL DEFAULT 0, item_artist_pid INTEGER NOT NULL DEFAULT 0, item_artist_order INTEGER NOT NULL DEFAULT 0, item_artist_order_section INTEGER NOT NULL DEFAULT 0, series_name_order INTEGER NOT NULL DEFAULT 0, series_name_order_section INTEGER NOT NULL DEFAULT 0, album_pid INTEGER NOT NULL DEFAULT 0, album_order INTEGER NOT NULL DEFAULT 0, album_order_section INTEGER NOT NULL DEFAULT 0, album_artist_pid INTEGER NOT NULL DEFAULT 0, album_artist_order INTEGER NOT NULL DEFAULT 0, album_artist_order_section INTEGER NOT NULL DEFAULT 0, composer_pid INTEGER NOT NULL DEFAULT 0, composer_order INTEGER NOT NULL DEFAULT 0, composer_order_section INTEGER NOT NULL DEFAULT 0, genre_id INTEGER NOT NULL DEFAULT 0, genre_order INTEGER NOT NULL DEFAULT 0, genre_order_section INTEGER NOT NULL DEFAULT 0, disc_number INTEGER NOT NULL DEFAULT 0, track_number INTEGER NOT NULL DEFAULT 0, episode_sort_id INTEGER NOT NULL DEFAULT 0, base_location_id INTEGER NOT NULL DEFAULT 0, remote_location_id INTEGER NOT NULL DEFAULT 0, exclude_from_shuffle INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, in_my_library INTEGER NOT NULL DEFAULT 0, is_compilation INTEGER NOT NULL DEFAULT 0, date_added INTEGER NOT NULL DEFAULT 0, show_composer INTEGER NOT NULL DEFAULT 0, is_music_show INTEGER NOT NULL DEFAULT 0, date_downloaded INTEGER NOT NULL DEFAULT 0, download_source_container_pid INTEGER NOT NULL DEFAULT 0)
+indexsqlite_autoindex_sort_map_2sort_mapw/p
+indexsqlite_autoindex_sort_map_1sort_mapv
+indexItemItemArtistitemACREATE INDEX ItemItemArtist ON item (item_artist_order ASC, item_artist_pid ASC, album_pid ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, item_artist_order_section ASC, in_my_library ASC) WHERE (in_my_library OR item_artist_order)
+{indexSortMapSortKeyssort_mapCREATE INDEX SortMapSortKeys ON sort_map (sort_key ASC)
+indexItemAlbumitemrCREATE INDEX ItemAlbum ON item (album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_order_section ASC, in_my_library ASC) WHERE (in_my_library OR album_order)g
+'indexItemGenreitempCREATE INDEX ItemGenre ON item (genre_order ASC, genre_id ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, genre_order_section ASC, in_my_library ASC) WHERE (in_my_library OR genre_order)
+eindexItemAlbumByAlbumArtistitemiCREATE INDEX ItemAlbumByAlbumArtist ON item (album_artist_order ASC, album_artist_pid ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_artist_order_section ASC, in_my_library ASC, is_compilation ASC) WHERE ((in_my_library OR album_order) OR is_compilation)o~
+#indexItemTitleInComposeritemdCREATE INDEX ItemTitleInComposer ON item (composer_pid ASC, media_type ASC)
+indexItemComposeritemaCREATE INDEX ItemComposer ON item (composer_order ASC, composer_pid ASC, album_order ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, composer_order_section ASC, in_my_library ASC) WHERE (in_my_library OR composer_order)v|
+-indexItemTitleInItemArtistitemSCREATE INDEX ItemTitleInItemArtist ON item (item_artist_pid ASC, media_type ASC)f{
+indexItemTitleInAlbumitemNCREATE INDEX ItemTitleInAlbum ON item (album_pid ASC, media_type ASC)
+?indexItemTitleitemLCREATE INDEX ItemTitle ON item (title_order ASC, item_artist_order ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, title_order_section ASC, in_my_library ASC) WHERE (in_my_library OR title_order)|y
+EindexItemDateCreateditemKCREATE INDEX ItemDateCreated ON item (date_added DESC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC) WHERE in_my_library
+[indexItemAlbumArtistitemDCREATE INDEX ItemAlbumArtist ON item (album_artist_order ASC, album_artist_pid ASC, album_pid ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_artist_order_section ASC, in_my_library ASC, is_compilation ASC) WHERE ((in_my_library OR album_artist_order) OR is_compilation)
+sort_mapsqlite_autoindex_sort_map_11 1*
+sort_mapsqlite_autoindex_sort_map_21 1
+sort_mapSortMapSortKeys1 1D
+_MLDatabasePropertiessqlite_autoindex__MLDatabaseProperties_13 1
+base_location1
+^{8D
+>Playback History?
+Playback History
+^{NS
+^{4O,l
+^{H]
+>Playback History
+")Playback History
+wzhc
+
+OrderingLanguageen-AU
+^{r8
+^{X
+	v*uc
+
+wq}
+
+Fj
+
++tableitemitemyCREATE TABLE "item" (item_pid INTEGER PRIMARY KEY, media_type INTEGER NOT NULL DEFAULT 0, title_order INTEGER NOT NULL DEFAULT 0, title_order_section INTEGER NOT NULL DEFAULT 0, item_artist_pid INTEGER NOT NULL DEFAULT 0, item_artist_order INTEGER NOT NULL DEFAULT 0, item_artist_order_section INTEGER NOT NULL DEFAULT 0, series_name_order INTEGER NOT NULL DEFAULT 0, series_name_order_section INTEGER NOT NULL DEFAULT 0, album_pid INTEGER NOT NULL DEFAULT 0, album_order INTEGER NOT NULL DEFAULT 0, album_order_section INTEGER NOT NULL DEFAULT 0, album_artist_pid INTEGER NOT NULL DEFAULT 0, album_artist_order INTEGER NOT NULL DEFAULT 0, album_artist_order_section INTEGER NOT NULL DEFAULT 0, composer_pid INTEGER NOT NULL DEFAULT 0, composer_order INTEGER NOT NULL DEFAULT 0, composer_order_section INTEGER NOT NULL DEFAULT 0, genre_id INTEGER NOT NULL DEFAULT 0, genre_order INTEGER NOT NULL DEFAULT 0, genre_order_section INTEGER NOT NULL DEFAULT 0, disc_number INTEGER NOT NULL DEFAULT 0, track_number INTEGER NOT NULL DEFAULT 0, episode_sort_id INTEGER NOT NULL DEFAULT 0, base_location_id INTEGER NOT NULL DEFAULT 0, remote_location_id INTEGER NOT NULL DEFAULT 0, exclude_from_shuffle INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, in_my_library INTEGER NOT NULL DEFAULT 0, is_compilation INTEGER NOT NULL DEFAULT 0, date_added INTEGER NOT NULL DEFAULT 0, show_composer INTEGER NOT NULL DEFAULT 0, is_music_show INTEGER NOT NULL DEFAULT 0, date_downloaded INTEGER NOT NULL DEFAULT 0, download_source_container_pid INTEGER NOT NULL DEFAULT 0)
+indexsqlite_autoindex_sort_map_2sort_mapG/
+indexsqlite_autoindex_sort_map_1sort_map
+%
+tablesort_mapsort_mapCREATE TABLE "sort_map" (name TEXT NOT NULL UNIQUE, name_order INTEGER UNIQUE, name_section INTEGER, sort_key BLOB NOT NULL DEFAULT x'')P
+
+sindexItemKeepLocalitem@CREATE INDEX ItemKeepLocal ON item (keep_local ASC)@	
+WindexItemSeriesitem?CREATE INDEX ItemSeries ON item (series_name_order ASC, album_order ASC, episode_sort_id ASC, title_order ASC, media_type ASC, in_my_library ASC) WHERE in_my_libraryy
+1indexItemTitleInAlbumArtistitem>CREATE INDEX ItemTitleInAlbumArtist ON item (album_artist_pid ASC, media_type ASC)e
+
+|
+
+
+indexItemAlbumitemxCREATE INDEX ItemAlbum ON item (album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_order_section ASC, in_my_library ASC) WHERE (in_my_library OR album_order)g
+'indexItemGenreitemrCREATE INDEX ItemGenre ON item (genre_order ASC, genre_id ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, genre_order_section ASC, in_my_library ASC) WHERE (in_my_library OR genre_order)
+eindexItemAlbumByAlbumArtistitemiCREATE INDEX ItemAlbumByAlbumArtist ON item (album_artist_order ASC, album_artist_pid ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, album_artist_order_section ASC, in_my_library ASC, is_compilation ASC) WHERE ((in_my_library OR album_order) OR is_compilation)o
+indexItemComposeritemaCREATE INDEX ItemComposer ON item (composer_order ASC, composer_pid ASC, album_order ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, composer_order_section ASC, in_my_library ASC) WHERE (in_my_library OR composer_order)v
+-indexItemTitleInItemArtistitemSCREATE INDEX ItemTitleInItemArtist ON item (item_artist_pid ASC, media_type ASC)f
+?indexItemTitleitemLCREATE INDEX ItemTitle ON item (title_order ASC, item_artist_order ASC, album_order ASC, album_pid ASC, disc_number ASC, track_number ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, title_order_section ASC, in_my_library ASC) WHERE (in_my_library OR title_order)|
+
+^{J~M%
+/tableitem_newitem_newyCREATE TABLE item_new (item_pid INTEGER PRIMARY KEY, media_type INTEGER NOT NULL DEFAULT 0, title_order INTEGER NOT NULL DEFAULT 0, title_order_section INTEGER NOT NULL DEFAULT 0, item_artist_pid INTEGER NOT NULL DEFAULT 0, item_artist_order INTEGER NOT NULL DEFAULT 0, item_artist_order_section INTEGER NOT NULL DEFAULT 0, series_name_order INTEGER NOT NULL DEFAULT 0, series_name_order_section INTEGER NOT NULL DEFAULT 0, album_pid INTEGER NOT NULL DEFAULT 0, album_order INTEGER NOT NULL DEFAULT 0, album_order_section INTEGER NOT NULL DEFAULT 0, album_artist_pid INTEGER NOT NULL DEFAULT 0, album_artist_order INTEGER NOT NULL DEFAULT 0, album_artist_order_section INTEGER NOT NULL DEFAULT 0, composer_pid INTEGER NOT NULL DEFAULT 0, composer_order INTEGER NOT NULL DEFAULT 0, composer_order_section INTEGER NOT NULL DEFAULT 0, genre_id INTEGER NOT NULL DEFAULT 0, genre_order INTEGER NOT NULL DEFAULT 0, genre_order_section INTEGER NOT NULL DEFAULT 0, disc_number INTEGER NOT NULL DEFAULT 0, track_number INTEGER NOT NULL DEFAULT 0, episode_sort_id INTEGER NOT NULL DEFAULT 0, base_location_id INTEGER NOT NULL DEFAULT 0, remote_location_id INTEGER NOT NULL DEFAULT 0, exclude_from_shuffle INTEGER NOT NULL DEFAULT 0, keep_local INTEGER NOT NULL DEFAULT 0, keep_local_status INTEGER NOT NULL DEFAULT 0, in_my_library INTEGER NOT NULL DEFAULT 0, is_compilation INTEGER NOT NULL DEFAULT 0, date_added INTEGER NOT NULL DEFAULT 0, show_composer INTEGER NOT NULL DEFAULT 0, is_music_show INTEGER NOT NULL DEFAULT 0, date_downloaded INTEGER NOT NULL DEFAULT 0, download_source_container_pid INTEGER NOT NULL DEFAULT 0)7
+indexsqlite_autoindex_sort_map_new_2sort_map_newG7
+indexsqlite_autoindex_sort_map_new_1sort_map_new
+1
+%tablesort_map_newsort_map_newCREATE TABLE "sort_map_new" (name TEXT NOT NULL UNIQUE, name_order INTEGER UNIQUE, name_section INTEGER, sort_key BLOB NOT NULL DEFAULT x'')Z
+indexItemComposeritemaCREATE INDEX ItemComposer ON item (composer_order ASC, composer_pid ASC, album_order ASC, title_order ASC, media_type ASC, remote_location_id ASC, base_location_id ASC, composer_order_section ASC, in_my_library ASC) WHERE (in_my_library OR composer_order)
+sort_mapsqlite_autoindex_sort_map_12 1*
+sort_mapsqlite_autoindex_sort_map_22 1
+sort_mapSortMapSortKeys2 1:
+entity_revisionsqlite_autoindex_entity_revision_11 1 1D
+_MLDatabasePropertiessqlite_autoindex__MLDatabaseProperties_13 1"
+containerContainerKeepLocal1 1
+^{N;
+u]+U
+
+K-MPDateToSyncWithUbiquitousStore710577284.162575
+MPDateToSyncWithUbiquitousStore
+K'MPDateToSyncWithUbiquitousStore63113904000.0
+MPUbiquitousBookmarkDomainVersionRemoteToken0#
+--MPDateLastSynced710577287.1418890
+
+MPUbiquitousBookmarkDomainVersionAnchorToken0,	
+MLUbiquitousBookmarkEntityRevisionAnchor1/
+MPUbiquitousBookmarkDomainVersionRemoteToken
+MPDateLastSynced0
+MPUbiquitousBookmarkDomainVersionAnchorToken
+,
+MLUbiquitousBookmarkEntityRevisionAnchor	#
+MLUbiquitousBookmarkEntityRevisionAnchor1/
+
+MPDateToSyncWithUbiquitousStore
+
+MLCloudDatabaseUserVersion3900500
+^{uCMj
+MLCloudDatabaseUserVersion
+^{e*
+1#MLJaliscoAccountID20977765650#
+MLJaliscoAccountID
+)%MLStorefrontID143460-27,29 
+MLStorefrontID
+MLJaliscoNeedsUpdateForTokens1
+^{?&Z
+MLJaliscoNeedsUpdateForTokens
+^{d0
+^{
+r
+^{XLw
+.-_
+
+^{q"x
+^{T+
+)%MLStorefrontID143460-27,29  
+^{Sr
+MLJaliscoAccountID 
+MLStorefrontID!
+^{*NT$>
+)%MLStorefrontID143460-27,29 "
+MLJaliscoAccountID"
+ XF&P
+
+MLStorefrontID#
+)%MLStorefrontID143460-27,29 $
+C/a
+
+MLJaliscoAccountID$
+MLStorefrontID%
+O&U
+
+)%MLStorefrontID143460-27,29 &
+MLJaliscoAccountID&
+MLStorefrontID'
+)%MLStorefrontID143460-27,29 (
+MLJaliscoAccountID(
+MLStorefrontID)
+)%MLStorefrontID143460-27,29 *
+MLJaliscoAccountID*
+^{dK
+MLStorefrontID+
+)%MLStorefrontID143460-27,29 ,
+MLJaliscoAccountID,
+^{~
+
+MLStorefrontID-
+(Xn
+)%MLStorefrontID143460-27,29 .
+MLJaliscoAccountID.
+MLStorefrontID/
+)%MLStorefrontID143460-27,29 0
+r*A
+
+MLJaliscoAccountID0
+"z/M\x
+
+MLStorefrontID1
+)%MLStorefrontID143460-27,29 2
+MLJaliscoAccountID2
+^{sp
+MLStorefrontID3
+)%MLStorefrontID143460-27,29 4
+MLJaliscoAccountID4
+"W&o8\
+
+MLStorefrontID5
+^{ds
+P q;
+)%MLStorefrontID143460-27,29 6
+MLJaliscoAccountID6
+95V
+
+MLStorefrontID7
+)%MLStorefrontID143460-27,29 8
+MLJaliscoAccountID8
+MLStorefrontID9
+)%MLStorefrontID143460-27,29 :
+MLJaliscoAccountID:
+Fdb
+
+MLStorefrontID;
+MLUbiquitousBookmarkEntityRevisionAnchor1/<
+MPDateToSyncWithUbiquitousStore<
+)%MLStorefrontID143460-27,29 =
+MLJaliscoAccountID=
+^{Nl
+MLStorefrontID>
+^{a5?=
+)%MLStorefrontID143460-27,29 ?
+^{$
+s
+MLJaliscoAccountID?
+MLStorefrontID@
+^{sU
+)%MLStorefrontID143460-27,29 A
+MLJaliscoAccountIDA
+w4,
+
+^{GG
+MLStorefrontIDB
+)%MLStorefrontID143460-27,29 C
+MLJaliscoAccountIDC
+8q}
+
+MLStorefrontIDD
+)%MLStorefrontID143460-27,29 E
+MLJaliscoAccountIDE
+MLStorefrontIDF
+
+Nt
+
+)%MLStorefrontID143460-27,29 G
+^{s-
+MLJaliscoAccountIDG
+MLStorefrontIDH
+)%MLStorefrontID143460-27,29 I
+MLJaliscoAccountIDI
+^{/\
+MLStorefrontIDJ
+)%MLStorefrontID143460-27,29 K
+MLJaliscoAccountIDK
+E2E
+
+MLStorefrontIDL
+^{7X3I
+)%MLStorefrontID143460-27,29 M
+MLJaliscoAccountIDM
+^{s #
+^{?
+7
+MLStorefrontIDN

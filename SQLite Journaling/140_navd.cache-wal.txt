@@ -1,0 +1,22 @@
+SQLite format 3
+Atableversionversion
+CREATE TABLE version (row int unique, version int, locale text, country text, region text)-
+indexsqlite_autoindex_version_1version
+_r.Y
+
+OrSQLite format 3
+tableeditionedition
+CREATE TABLE edition (tileset int, edition int, unique (tileset))-
+indexsqlite_autoindex_edition_1edition
+vSQLite format 3
+Otableimageimage
+CREATE TABLE image (a int, b int, c int, d int, tileset int, retrieved int, current bool, etag text, size int, data blob, UNIQUE(a, b, c, d) ON CONFLICT REPLACE))
+indexsqlite_autoindex_image_1image
+uindexindex_abcdimage
+CREATE UNIQUE INDEX index_abcd on image (a, b, c, d)8
+gindexindex_tilesetimage	CREATE INDEX index_tileset on image (tileset)O
+OSQLite format 3
+indexindex_retrieved_tilesetimage
+CREATE INDEX index_retrieved_tileset on image (retrieved, tileset)K
+tablecachecacheCREATE TABLE cache   ( id INTEGER PRIMARY KEY ASC  , hash INTEGER  , key BLOB  , value BLOB  , refresh_timestamp INTEGER  )k	
+:en-AU:en_AUAUAU

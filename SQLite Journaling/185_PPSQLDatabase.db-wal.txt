@@ -1,0 +1,618 @@
+?SQLite format 3
+indexne_ix_records_dk_event_idne_records
+CREATE INDEX ne_ix_records_dk_event_id ON ne_records (dk_event_id)l
+
+	indexne_ix_records_source_idne_records
+CREATE INDEX ne_ix_records_source_id ON ne_records (source_id)i
+indexne_ix_records_categoryne_records
+CREATE INDEX ne_ix_records_category ON ne_records (category)f
+indexne_ix_records_lc_namene_recordsCREATE INDEX ne_ix_records_lc_name ON ne_records (lc_name)
+tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB)x	
+indexix_sources_seconds_from_1970sources
+CREATE INDEX ix_sources_seconds_from_1970 ON sources (seconds_from_1970)
+Aindexix_sources_bundle_id_group_id_doc_idsources	CREATE INDEX ix_sources_bundle_id_group_id_doc_id ON sources (bundle_id, group_id, doc_id)|
+#indexix_sources_bundle_id_group_idsources
+CREATE INDEX ix_sources_bundle_id_group_id ON sources (bundle_id, group_id)_
+}indexix_sources_bundle_idsources
+CREATE INDEX ix_sources_bundle_id ON sources (bundle_id)_
+}indexix_sources_ref_countsources
+CREATE INDEX ix_sources_ref_count ON sources (ref_count)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+ktablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL)-
+indexsqlite_autoindex_sources_1sources
+utableintegrityCheckintegrityCheck
+CREATE TABLE integrityCheck (inconsequential STRING)
+n:`v{C
+I'!\6
+
+n:ia-F!
+gSQLite format 3
+itablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0)r
+indexne_ix_records_lc_namene_recordsCREATE INDEX ne_ix_records_lc_name ON ne_records (lc_name)
+{tablekv_blobskv_blobs
+CREATE TABLE kv_blobs (    id INTEGER PRIMARY KEY AUTOINCREMENT,     key TEXT UNIQUE NOT NULL,     value BLOB NOT NULL)/
+indexsqlite_autoindex_kv_blobs_1kv_blobs
+n:C[L
+.SQLite format 3
+9tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentimentScore REAL NOT NULL DEFAULT 0)r
+SQLite format 3
+indextp_ix_records_dk_event_idtp_records
+CREATE INDEX tp_ix_records_dk_event_id ON tp_records (dk_event_id)
+utabletp_recordstp_records
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     qid TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB)
+	indextp_ix_records_source_idtp_records
+CREATE INDEX tp_ix_records_source_id ON tp_records (source_id)Y
+qindextp_ix_records_qidtp_records
+CREATE INDEX tp_ix_records_qid ON tp_records (qid)
+n:e`;
+GSQLite format 3
+indexix_tp_records_dk_event_idtp_records
+CREATE INDEX ix_tp_records_dk_event_id ON tp_records (dk_event_id)
+9tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentimentScore REAL NOT NULL DEFAULT 0)
+indexix_ne_records_dk_event_idne_recordsCREATE INDEX ix_ne_records_dk_event_id ON ne_records (dk_event_id)l
+	indexix_ne_records_source_idne_records
+CREATE INDEX ix_ne_records_source_id ON ne_records (source_id)i
+indexix_ne_records_categoryne_records
+CREATE INDEX ix_ne_records_category ON ne_records (category)f
+indexix_ne_records_lc_namene_records
+CREATE INDEX ix_ne_records_lc_name ON ne_records (lc_name)l
+	indexix_tp_records_source_idtp_records
+CREATE INDEX ix_tp_records_source_id ON tp_records (source_id)Y
+qindexix_tp_records_qidtp_records
+CREATE INDEX ix_tp_records_qid ON tp_records (qid)
+n:va,
+n:K&
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     qid TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB)
+;tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentiment_score REAL NOT NULL DEFAULT 0)r
+wGhC
+
+n:t/Q
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     qid TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB)/
+CREATE TABLE kv_blobs (    id INTEGER PRIMARY KEY AUTOINCREMENT,     key TEXT UNIQUE NOT NULL,     value BLOB NOT NULL)
+;tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentiment_score REAL NOT NULL DEFAULT 0)x	
+CREATE TABLE sqlite_sequence(name,seq)-
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL)\
+dr*L
+9indexix_loc_records_contextual_ne_loc_idloc_records_contextual_ne CREATE INDEX ix_loc_records_contextual_ne_loc_id ON loc_records_contextual_ne (loc_id)a#
+Qtableloc_records_contextual_neloc_records_contextual_ne
+CREATE TABLE loc_records_contextual_ne (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES loc_records (id),     name TEXT NOT NULL)7"
+Qindexix_loc_records_clp_areasOfInterest_loc_idloc_records_clp_areasOfInterest
+CREATE INDEX ix_loc_records_clp_areasOfInterest_loc_id ON loc_records_clp_areasOfInterest (loc_id)s!
+]tableloc_records_clp_areasOfInterestloc_records_clp_areasOfInterest
+CREATE TABLE loc_records_clp_areasOfInterest (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES loc_records (id),     name TEXT NOT NULL)
+-indexix_loc_records_cll_longitudeloc_records
+CREATE INDEX ix_loc_records_cll_longitude ON loc_records (cll_longitude_degrees)
+)indexix_loc_records_cll_latitudeloc_records
+CREATE INDEX ix_loc_records_cll_latitude ON loc_records (cll_latitude_degrees)v
+indexix_loc_records_dk_event_idloc_records
+CREATE INDEX ix_loc_records_dk_event_id ON loc_records (dk_event_id)p
+
+indexix_loc_records_source_idloc_records
+CREATE INDEX ix_loc_records_source_id ON loc_records (source_id)
+[tableloc_recordsloc_records
+CREATE TABLE loc_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     clp_location BLOB,     cll_latitude_degrees REAL,     cll_longitude_degrees REAL,     clp_name TEXT,     clp_thoroughfare TEXT,     clp_subThoroughfare TEXT,     clp_locality TEXT,     clp_subLocality TEXT,     clp_administrativeArea TEXT,     clp_subAdministrativeArea TEXT,     clp_postalCode TEXT,     clp_ISOcountryCode TEXT,     clp_country TEXT,     clp_inlandWater TEXT,     clp_ocean TEXT,     uuid BLOB NOT NULL,     category INTEGER NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB)r
+CREATE INDEX ix_tp_records_dk_event_id ON tp_records (dk_event_id)l
+CREATE INDEX ix_tp_records_qid ON tp_records (qid)r
+indexix_ne_records_lc_namene_records
+CREATE INDEX ix_ne_records_lc_name ON ne_records (lc_name)
+:SQLite format 3
+tabletp_recordstp_records
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     topic_id TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB)/
+ZY
+
+
+{indexix_tp_records_qidtp_records
+CREATE INDEX ix_tp_records_qid ON tp_records (topic_id)
+CREATE INDEX ix_tp_records_source_id ON tp_records (source_id)
+n:}iGb
+Qtablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0)
+ytablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentiment_score REAL NOT NULL DEFAULT 0, impression_count INTEGER NOT NULL DEFAULT 1, occurrences_in_source INTEGER NOT NULL DEFAULT 1)
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     topic_id TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB, impression_count INTEGER NOT NULL DEFAULT 1, occurrences_in_source INTEGER NOT NULL DEFAULT 1, algorithm_result_position INTEGER NOT NULL DEFAULT 0, algorithm_result_count INTEGER NOT NULL DEFAULT 0)/
+ytablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentiment_score REAL NOT NULL DEFAULT 0, impression_count INTEGER NOT NULL DEFAULT 1, occurrences_in_source INTEGER NOT NULL DEFAULT 1)x	
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0)\
+q~SQLite format 3
+n:QQ
+_tabletp_dk_fixup_49995922tp_dk_fixup_49995922"CREATE TABLE tp_dk_fixup_49995922(id INT)]%
+_tablene_dk_fixup_49995922ne_dk_fixup_49995922!CREATE TABLE ne_dk_fixup_49995922(id INT)^
+n:{Q
+'l
+
+
+-indexix_fb_pending_records_store_typefb_pending_records$CREATE INDEX ix_fb_pending_records_store_type ON fb_pending_records (store_type)
+-tablefb_pending_recordsfb_pending_records#CREATE TABLE fb_pending_records (id INTEGER PRIMARY KEY AUTOINCREMENT, seconds_from_1970 REAL NOT NULL, store_type INTEGER NOT NULL, client_bundleid TEXT NOT NULL, client_identifier TEXT NOT NULL, item_string TEXT NOT NULL, feedback_type INTEGER NOT NULL, mapping_id TEXT)]&
+tablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0)
+?[X
+
+
+stablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL)
+WSQLite format 3
+~A-
+
+loc_records_contextual_ne"
+loc_records_clp_areasOfInterest
+loc_records
+indexix_ne_records_lc_namene_records
+CREATE INDEX ix_ne_records_lc_name ON ne_records (lc_name)\
+n:AE#
+!indexix_loc_records_lc_descriptionloc_records
+CREATE INDEX ix_loc_records_lc_description ON loc_records (lc_description)
+CREATE INDEX ix_loc_records_cll_latitude ON loc_records (cll_latitude_degrees)v/
+CREATE INDEX ix_loc_records_dk_event_id ON loc_records (dk_event_id)p.
+CREATE INDEX ix_loc_records_source_id ON loc_records (source_id)r
+CREATE INDEX ix_tp_records_source_id ON tp_records (source_id)^
+CREATE INDEX ix_tp_records_qid ON tp_records (topic_id)
+~
+9indexix_loc_records_contextual_ne_loc_idloc_records_contextual_ne
+CREATE INDEX ix_loc_records_contextual_ne_loc_id ON loc_records_contextual_ne (loc_id)
+~w*
+etableloc_records_clp_areasOfInterestloc_records_clp_areasOfInterest&CREATE TABLE "loc_records_clp_areasOfInterest" (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES "loc_records" (id),     name TEXT NOT NULL)
+_tablene_dk_fixup_49995922ne_dk_fixup_49995922!CREATE TABLE ne_dk_fixup_49995922(id INT)
+%tableloc_recordsloc_records%CREATE TABLE "loc_records" (     id INTEGER PRIMARY KEY AUTOINCREMENT,     clp_location BLOB,     cll_latitude_degrees REAL,     cll_longitude_degrees REAL,     clp_name TEXT,     clp_thoroughfare TEXT,     clp_subThoroughfare TEXT,     clp_locality TEXT,     clp_subLocality TEXT,     clp_administrativeArea TEXT,     clp_subAdministrativeArea TEXT,     clp_postalCode TEXT,     clp_ISOcountryCode TEXT,     clp_country TEXT,     clp_inlandWater TEXT,     clp_ocean TEXT,     uuid BLOB NOT NULL,     category INTEGER NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB,     lc_description TEXT NOT NULL)
+Ytableloc_records_contextual_neloc_records_contextual_ne
+CREATE TABLE "loc_records_contextual_ne" (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES "loc_records" (id),     name TEXT NOT NULL)7+
+CREATE INDEX ix_loc_records_clp_areasOfInterest_loc_id ON loc_records_clp_areasOfInterest (loc_id)
+N 7
+
+Mdt1
+
+mgT
+
+]tableloc_records_contextual_neloc_records_contextual_ne
+CREATE TABLE "loc_records_contextual_ne" (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES new_loc_records (id),     name TEXT NOT NULL)7+
+CREATE INDEX ix_loc_records_clp_areasOfInterest_loc_id ON loc_records_clp_areasOfInterest (loc_id)y*
+itableloc_records_clp_areasOfInterestloc_records_clp_areasOfInterest&CREATE TABLE "loc_records_clp_areasOfInterest" (    id INTEGER PRIMARY KEY AUTOINCREMENT,     loc_id INTEGER NOT NULL REFERENCES new_loc_records (id),     name TEXT NOT NULL)
+)tablenew_loc_recordsnew_loc_records%CREATE TABLE new_loc_records (     id INTEGER PRIMARY KEY AUTOINCREMENT,     clp_location BLOB,     cll_latitude_degrees REAL,     cll_longitude_degrees REAL,     clp_name TEXT,     clp_thoroughfare TEXT,     clp_subThoroughfare TEXT,     clp_locality TEXT,     clp_subLocality TEXT,     clp_administrativeArea TEXT,     clp_subAdministrativeArea TEXT,     clp_postalCode TEXT,     clp_ISOcountryCode TEXT,     clp_country TEXT,     clp_inlandWater TEXT,     clp_ocean TEXT,     uuid BLOB NOT NULL,     category INTEGER NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB,     lc_description TEXT NOT NULL)
+CREATE INDEX ix_loc_records_contextual_ne_loc_id ON loc_records_contextual_ne (loc_id)
+CSQLite format 3
+_tablene_dk_fixup_49995922ne_dk_fixup_49995922!CREATE TABLE ne_dk_fixup_49995922(id INT)r
+5indexix_cn_handles_sources_cn_handle_idcn_handles_sources)CREATE INDEX ix_cn_handles_sources_cn_handle_id ON cn_handles_sources (cn_handle_id)G5
+9tablecn_handles_sourcescn_handles_sources(CREATE TABLE cn_handles_sources (    cn_handle_id INTEGER NOT NULL REFERENCES cn_handles (id),     source_id INTEGER NOT NULL REFERENCES sources (id))g4
+indexix_cn_handles_valuecn_handles CREATE UNIQUE INDEX ix_cn_handles_value ON cn_handles (value)|3
+Ctablecn_handlescn_handles'CREATE TABLE cn_handles (    id INTEGER PRIMARY KEY AUTOINCREMENT,     value TEXT NOT NULL)
+CREATE INDEX ix_loc_records_source_id ON loc_records (source_id)
+
+)indexix_cn_handles_sources_source_idcn_handles_sources*CREATE INDEX ix_cn_handles_sources_source_id ON cn_handles_sources (source_id)
+_tabletp_dk_fixup_49995922tp_dk_fixup_49995922"CREATE TABLE tp_dk_fixup_49995922(id INT)
+crG
+
+n:+m
+
+l
+
++tablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL, language TEXT DEFAULT NULL)]%
+n:tA
+indexsqlite_autoindex_cn_history_tokens_1cn_history_tokens,
+;tablecn_history_tokenscn_history_tokens+CREATE TABLE cn_history_tokens (    client_identifier TEXT PRIMARY KEY,     token BLOB)
+n:&j
+lm	P
+n:Y5
+LSQLite format 3
+IGM
+
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL, language TEXT DEFAULT NULL)
+
+CREATE INDEX ix_tp_records_qid ON tp_records (topic_id)r
+CREATE INDEX ix_ne_records_source_id ON ne_records (source_id)
+~w*
+CREATE INDEX ix_ne_records_category ON ne_records (category)
+
+indexix_ft_record_dateft_records0CREATE INDEX ix_ft_record_date ON ft_records (seconds_from_1970)
+;
+7indexix_ft_record_bundle_group_nameft_records/CREATE INDEX ix_ft_record_bundle_group_name ON ft_records (bundle_id, group_id, name)
+tableft_recordsft_records-CREATE TABLE ft_records (     id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     group_id TEXT,     bundle_id TEXT NOT NULL,     category INTEGER NOT NULL,     seconds_from_1970 REAL NOT NULL,     state INTEGER NOT NULL,     value TEXT)A9
+;tablecn_history_tokenscn_history_tokens+CREATE TABLE cn_history_tokens (    client_identifier TEXT PRIMARY KEY,     token BLOB)7
+`9_
+
+CREATE INDEX ix_tp_records_qid ON tp_records (topic_id)f
+CREATE INDEX ix_loc_records_lc_description ON loc_records (lc_description)]%
+indexixiD
+indexix_ne_records_fb_pseudocounts_last_update_seconds_from_1970ne_records_fb_pseudocounts8CREATE INDEX ix_ne_records_fb_pseudocounts_last_update_seconds_from_1970 ON ne_records_fb_pseudocounts (last_update_seconds_from_1970)iC
+indexix_tp_records_fb_pseudocounts_last_update_seconds_from_1970tp_records_fb_pseudocounts7CREATE INDEX ix_tp_records_fb_pseudocounts_last_update_seconds_from_1970 ON tp_records_fb_pseudocounts (last_update_seconds_from_1970)
+Ctableloc_records_fb_pseudocountsloc_records_fb_pseudocounts5CREATE TABLE loc_records_fb_pseudocounts (     id INTEGER PRIMARY KEY AUTOINCREMENT,     item_string TEXT NOT NULL,     feedback_type INTEGER NOT NULL,     last_update_seconds_from_1970 REAL NOT NULL,     pseudocount REAL NOT NULL DEFAULT 1.0,     UNIQUE(item_string, feedback_type))UB
+indexsqlite_autoindex_loc_records_fb_pseudocounts_1loc_records_fb_pseudocounts6
+Atablene_records_fb_pseudocountsne_records_fb_pseudocounts3CREATE TABLE ne_records_fb_pseudocounts (     id INTEGER PRIMARY KEY AUTOINCREMENT,     item_string TEXT NOT NULL,     feedback_type INTEGER NOT NULL,     last_update_seconds_from_1970 REAL NOT NULL,     pseudocount REAL NOT NULL DEFAULT 1.0,     UNIQUE(item_string, feedback_type))S@
+indexsqlite_autoindex_ne_records_fb_pseudocounts_1ne_records_fb_pseudocounts4
+Atabletp_records_fb_pseudocountstp_records_fb_pseudocounts1CREATE TABLE tp_records_fb_pseudocounts (     id INTEGER PRIMARY KEY AUTOINCREMENT,     item_string TEXT NOT NULL,     feedback_type INTEGER NOT NULL,     last_update_seconds_from_1970 REAL NOT NULL,     pseudocount REAL NOT NULL DEFAULT 1.0,     UNIQUE(item_string, feedback_type))S>
+indexsqlite_autoindex_tp_records_fb_pseudocounts_1tp_records_fb_pseudocounts2h<
+5indexix_cn_handles_sources_cn_handle_idcn_handles_sources)CREATE INDEX ix_cn_handles_sources_cn_handle_id ON cn_handles_sources (cn_handle_id)
+indexix_loc_records_fb_pseudocounts_last_update_seconds_from_1970loc_records_fb_pseudocounts9CREATE INDEX ix_loc_records_fb_pseudocounts_last_update_seconds_from_1970 ON loc_records_fb_pseudocounts (last_update_seconds_from_1970)
+n:Ak
+n:^D
+FASQLite format 3
+n:s=Ou
+
+u
+F
+'tablene_recordsne_recordsCREATE TABLE ne_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     lc_name TEXT NOT NULL,     category INTEGER NOT NULL,     language TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     dk_event_id BLOB, is_sync_eligible INTEGER NOT NULL DEFAULT 0, sentiment_score REAL NOT NULL DEFAULT 0, impression_count INTEGER NOT NULL DEFAULT 1, occurrences_in_source INTEGER NOT NULL DEFAULT 1, dynamic_category TEXT)r
+CREATE TABLE kv_blobs (    id INTEGER PRIMARY KEY AUTOINCREMENT,     key TEXT UNIQUE NOT NULL,     value BLOB NOT NULL)x	
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL, language TEXT DEFAULT NULL)\
+Y	u	
+
+}tabletp_recordstp_records
+CREATE TABLE tp_records (    id INTEGER PRIMARY KEY AUTOINCREMENT,     topic_id TEXT NOT NULL,     algorithm INTEGER NOT NULL,     initial_score REAL NOT NULL,     decay_rate REAL NOT NULL,     sentiment_score REAL NOT NULL,     extraction_os_build TEXT,     extraction_asset_version INTEGER,     source_id INTEGER NOT NULL REFERENCES sources (id),     is_remote INTEGER NOT NULL,     is_sync_eligible INTEGER NOT NULL,     dk_event_id BLOB, impression_count INTEGER NOT NULL DEFAULT 1, occurrences_in_source INTEGER NOT NULL DEFAULT 1, algorithm_result_position INTEGER NOT NULL DEFAULT 0, algorithm_result_count INTEGER NOT NULL DEFAULT 0, exact_match_in_source_text INTEGER NOT NULL DEFAULT 0)
+indexix_ne_records_lc_namene_records
+CREATE INDEX ix_ne_records_lc_name ON ne_records (lc_name)/
+indexsqlite_autoindex_tp_records_fb_pseudocounts_1tp_records_fb_pseudocounts27
+n:U<D
+b;
+
+Wtablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL, language TEXT DEFAULT NULL, user_created INTEGER)
+r4vSQLite format 3
+9tablesourcessources
+CREATE TABLE sources (    id INTEGER PRIMARY KEY AUTOINCREMENT,     ref_count INTEGER NOT NULL,     bundle_id TEXT NOT NULL,     group_id TEXT,     doc_id TEXT NOT NULL,     seconds_from_1970 REAL NOT NULL,     sha256 BLOB UNIQUE NOT NULL, donation_count INTEGER NOT NULL DEFAULT 1, dwell_time_seconds INTEGER NOT NULL DEFAULT 0, length_seconds INTEGER NOT NULL DEFAULT 0, length_characters INTEGER NOT NULL DEFAULT 0, flags INTEGER NOT NULL DEFAULT 0, relevance_seconds_from_1970 REAL DEFAULT NULL, language TEXT DEFAULT NULL, user_created INTEGER, contact_handle_count INTEGER NOT NULL DEFAULT 0)
+n:*|
+>$NSQLite format 3
+n:!\
+&SQLite format 3
++CX
+
+Etablefb_pending_recordsfb_pending_records#CREATE TABLE fb_pending_records (id INTEGER PRIMARY KEY AUTOINCREMENT, seconds_from_1970 REAL NOT NULL, store_type INTEGER NOT NULL, client_bundleid TEXT NOT NULL, client_identifier TEXT NOT NULL, item_string TEXT NOT NULL, feedback_type INTEGER NOT NULL, mapping_id TEXT, build TEXT)G5
+n:49
+4com.apple.proactive.PersonalizationPortrait.PPContactsImporterbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+_sequenceNumber
+U$null
+$)27IL^`b
+		com.apple.proactive.PersonalizationPortrait.PPContactsImporter
+	kv_blobs
+Hx8=I5
+
+0trial_update_PERSONALIZATION_PORTRAIT_GLOBALbplist00
+	Troot
+U$null#A
+$)27ILQSV\
+e	trial_update_PERSONALIZATION_PORTRAIT_GLOBAL
+n:%j
+kv_blobs
+<trial_treatments_hash_PERSONALIZATION_PORTRAIT_GLOBALbplist00
+U$null^201210_control
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_GLOBAL
+0trial_update_PERSONALIZATION_PORTRAIT_TOPICSbplist00
+trial_update_PERSONALIZATION_PORTRAIT_TOPICS
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_TOPICSbplist00
+U$nullWcontrol
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_TOPICS
+0trial_update_PERSONALIZATION_PORTRAIT_NAMED_ENTITIESbplist00
+trial_update_PERSONALIZATION_PORTRAIT_NAMED_ENTITIES
+n:|R
+<trial_treatments_hash_PERSONALIZATION_PORTRAIT_NAMED_ENTITIESbplist00
+U$null^201105_control
+D/F'<
+
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_NAMED_ENTITIES
+%
+\
+0trial_update_PERSONALIZATION_PORTRAIT_LOCATIONSbplist00
+trial_update_PERSONALIZATION_PORTRAIT_LOCATIONS
+uY%P
+
+n:P1
+%
+\	
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_LOCATIONSbplist00
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_LOCATIONS
+n:a&
+kv_blobs	
+IN7j
+
+0trial_update_PERSONALIZATION_PORTRAIT_EVENTSbplist00
+trial_update_PERSONALIZATION_PORTRAIT_EVENTS	<
+n:Ly
+kv_blobs
+
+n:f'
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_EVENTSbplist00
+|U#&
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_EVENTS
+0
+n:.PV
+kv_blobs
+0trial_update_PERSONALIZATION_PORTRAIT_CONNECTIONSbplist00
+trial_update_PERSONALIZATION_PORTRAIT_CONNECTIONS9
+R'P%
+
+kv_blobs
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_CONNECTIONSbplist00
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_CONNECTIONS5
+0trial_update_PERSONALIZATION_PORTRAIT_QUICKTYPEbplist00
+trial_update_PERSONALIZATION_PORTRAIT_QUICKTYPE
+?
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_QUICKTYPEbplist00
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_QUICKTYPE
+0trial_update_PERSONALIZATION_PORTRAIT_CONTACTSbplist00
+trial_update_PERSONALIZATION_PORTRAIT_CONTACTS
+.trial_treatments_hash_PERSONALIZATION_PORTRAIT_CONTACTSbplist00
+
+]}
+
+trial_treatments_hash_PERSONALIZATION_PORTRAIT_CONTACTS
+com.apple.proactive.PersonalizationPortrait.PPContactsImporter
+4name_records_cachebplist00
+B|6
+
+name_records_cache
+4ICPortraitLexiconSourcebplist00
+ICPortraitLexiconSource
+n:!+p
+n:i.
+com.apple.proactive.PersonalizationPortrait.PPContactsImporter	
+ 8[F
+ICPortraitLexiconSource
+
+n:Xc
+ICPortraitLexiconSource
+n:(Akd
+<
+-4
+
+com.apple.proactive.PersonalizationPortrait.PPContactsImporter
+n:rx
+
+h'r
+com.apple.MobileAddressBook31C74829-6837-45C5-A980-62106D899938:ABPersonA
+n:FL
+NB'@
+L	XO
+n:+$
+!	ne_records
+
+	sources
+C	com.apple.MobileAddressBook
+	com.apple.MobileAddressBook
+n:%&)
+g	com.apple.MobileAddressBook31C74829-6837-45C5-A980-62106D899938:ABPerson
+n:c"b
+Kieth Jonkieth jonen
+iOS-18G82
+	kieth jon
+n:Y0
+n:o[#o
+com.apple.MobileAddressBookC031E512-4B7F-4ABF-8FA3-D09B193D8292:ABPersonA
+e]wCz
+sources
+ne_records
+com.apple.MobileAddressBook
+n:C'
+?o>%
+
+com.apple.MobileAddressBookC031E512-4B7F-4ABF-8FA3-D09B193D8292:ABPerson
+n:z7
+n:4h
+Rick Jonsrick jonsen
+n:(h"
+rick jons
+n:a
+V?6 (
+com.apple.MobileAddressBook09774907-408E-4565-9392-7D85261658BE:ABPersonA
+hZi7
+n:}x
+com.apple.MobileAddressBook09774907-408E-4565-9392-7D85261658BE:ABPerson
+Oq&'M
+n:L&R
+Lauren Joneslauren jonesen
+lauren jones
+OU|
+
+n:(U
+n:3]
+n:?un
+C;>(
+n:e0
+n:>h2
+n:Sr
+n:~r
+FhQ
+
+com.apple.Mapscom.apple.proactive.PersonalizationPortrait.Maps.Interactions3C89F435-3733-47AD-8D41-0FC0D282AF92A
+ne_records
+
+com.apple.Maps
+com.apple.Mapscom.apple.proactive.PersonalizationPortrait.Maps.Interactions
+com.apple.Mapscom.apple.proactive.PersonalizationPortrait.Maps.Interactions3C89F435-3733-47AD-8D41-0FC0D282AF92
+k
+
+\
+)
+Mt Hawthornmt hawthorn	en
+WAwa
+en
+Australiaaustraliaen
+Cnr Flinders Street And Scarborough Beach Road, Mt Hawthorn WA 6016, Australiacnr flinders street and scarborough beach road, mt hawthorn wa 6016, australiaen
+Woolworthswoolworths
+Cnr Flinders Street And Scarborough Beach Roadcnr flinders street and scarborough beach road
+O[WB
+
+mt hawthorn
+
+wa	
+
+australia
+cnr flinders street and scarborough beach road, mt hawthorn wa 6016, australia
+woolworths
+cnr flinders street and scarborough beach road
+n:C}
+!	tp_records
+Q408
+	Q408
+9{HX
+com.apple.Mapscom.apple.proactive.PersonalizationPortrait.Maps.InteractionsC93671BB-A5AB-44C3-A776-C913590E5BCEA
+n:mVYa
+.e/O
+com.apple.Mapscom.apple.proactive.PersonalizationPortrait.Maps.InteractionsC93671BB-A5AB-44C3-A776-C913590E5BCE
+mt hawthorn
+cnr flinders street and scarborough beach road, mt hawthorn wa 6016, australia
+
+woolworths2
+cnr flinders street and scarborough beach road
+tp_records
+hmx'V
+
+q:1
+
+fb_pending_records
+com.apple.MapsSuggestionsmaps108 St Georges Tce, Perth
+iOS-18G82O
+com.apple.MapsSuggestionsmaps100 St Georges Terrace
+com.apple.MobileAddressBook0B1C44A1-7E5B-41DE-962E-3BD31A59A1CA:ABPersonA
+D~20
+NI+)
+com.apple.MobileAddressBook0B1C44A1-7E5B-41DE-962E-3BD31A59A1CA:ABPerson
+ wG
+
+Jamie Smithjamie smithen
+jamie smith
+r
+8:
+n:xk
+n:a?IP"
+~Nz0
+n:b!
+	3;U
+com.apple.MobileSMSiMessage;-;+61448804154CB2F1679-ABE7-4637-A166-36A6ADFE12D4A
+NWWN
+cn_handles
+com.apple.MobileSMS
+com.apple.MobileSMSiMessage;-;+61448804154
+com.apple.MobileSMSiMessage;-;+61448804154CB2F1679-ABE7-4637-A166-36A6ADFE12D4
+
+
+Q
+
+Benbenen
++61 466 521 390
++	+61 448 804 154
+n:m-
+++61 466 521 390
+++61 448 804 154
+n:NA
+ddyY
+
+n:N&YG
+n:21
+Ben stokesben stokes
+en	?
+ben stokes
+XHa
+
+n:_[
+n:W^g
+Q4886521
+&~#
+
+n:{Hv
+
+
+Q	
+n:V|
+n:hA
+n:dF"
+n:
+}
+n:'R
+	9a
+
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonationC5920F8F79BF34C3039F58DA630B05D46FBCA4B864BE2E92FDA7E430B87D5023A
+n:KG
+n:C:
+sources	
+com.apple.mobilesafari	
+n:\p)-
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonation	 
+yo
+~
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonationC5920F8F79BF34C3039F58DA630B05D46FBCA4B864BE2E92FDA7E430B87D5023	N
+n:Q&M
+n:5(
+Ozbozb
+&>	:
+aO`
+
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonation6987E1A83DF5983E0C1421D3BC5112E4628930539322A3EB4FEEF40205612AB7A
+`#<en>	
+`#
+$
+sources
+
+n:G)
+com.apple.mobilesafari
+
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonation
+E
+com.apple.mobilesafaricom.apple.mobilesafari.PageContentDonation6987E1A83DF5983E0C1421D3BC5112E4628930539322A3EB4FEEF40205612AB7
+
+iSbF
+
+n::,
+Q296745?
+Q294721iOS-18G82
+Q296745
+Q294721
+~=M
+
+n:Uv
+n:cv
+n:$^
+ tp_records_DuetStreamFixedUpbplist00
+U$null	
+n:5g
+\
+]}
+
+tp_records_DuetStreamFixedUp
+n:N[.
+	,		
+	,			
+&>
+$
+O2SQLite format 3
+n:}yfG
+tp_recordsix_tp_records_qid4 2(
+tp_recordsix_tp_records_source_id4 2*
+tp_recordsix_tp_records_dk_event_id4 1
+[tablesqlite_stat1sqlite_stat1"CREATE TABLE sqlite_stat1(tbl,idx,stat)A9
+RSQLite format 3
+RGpW
+ ne_records_DuetStreamFixedUpbplist00
+n:SWo
+;\
+]}
+
+ne_records_DuetStreamFixedUp
+
+Q	;	
+&>	5(
+"BIw
+V*MH
+nkzLH
+$GMz
+n:Ue
+=}F0
+Jtp_records_fb_pseudocounts_lastDecayDatebplist00
+U$null
+WNS.timeV$class#A
+Z$classnameX$classesVNSDate
+XNSObject
+$)27ILQSW]bjqz|
+;\
+tp_records_fb_pseudocounts_lastDecayDate
+4SQLite format 3
+ne_records_fb_pseudocounts_lastDecayDate
+n:wl5l	
+n::<
+Jne_records_fb_pseudocounts_lastDecayDatebplist00
+loc_records_fb_pseudocounts_lastDecayDate
+Jloc_records_fb_pseudocounts_lastDecayDatebplist00
+namedEntityLastFilteredTime
+?'VN'
+
+JnamedEntityLastFilteredTimebplist00
+n:rY

@@ -1,0 +1,101 @@
+1_com.apple.news.tag2797.4-2797.4-(2023-07-09T14:42:18+08:00)A
+7_com.apple.news.widget2797.4-2797.4-(2023-07-09T14:42:19+08:00)N
+
+Mccom.apple.Maps.GeneralMapsWidget2608.36.6.2.2-1-(2023-07-09T14:42:08+08:00)@
+=Wcom.apple.weather.widget1756-1756-(2023-07-09T14:42:05+08:00)B
+=[com.apple.tips.TipsSwift568.8-568.8-(2023-07-09T14:42:02+08:00)I
+
+Eacom.apple.Music.MusicWidgets4018.700.8-1.0-(2023-07-09T14:41:53+08:00)O	
+cOcom.apple.mobilecal.CalendarWidgetExtension1.0-1-(2023-07-09T14:41:51+08:00)M
+WWcom.apple.mobilenotes.WidgetExtension1852-1852-(2023-07-09T14:41:43+08:00)K
+SWcom.apple.reminders.WidgetExtension2285-2285-(2023-07-09T14:41:41+08:00)F
+?acom.apple.podcasts.widget1575.2.2-1.0.1-(2023-07-09T14:41:38+08:00)@
+IKcom.apple.tv.TVWidgetExtension1-1-(2023-07-09T14:41:34+08:00)=
+;Scom.apple.stocks.widget772-772-(2023-07-09T14:41:32+08:00)J
+YOcom.apple.mobiletimer.WorldClockWidget1.0-1-(2020-01-01T16:00:00+08:00)^
+ekcom.apple.mobileslideshow.PhotosReliveWidget362.0.100-362.0.100-(2020-01-01T16:00:00+08:00)j
+[com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension497.6-497.6-(2020-01-01T16:00:00+08:00)
+com.apple.news.tag
+com.apple.news.widget $
+com.apple.Maps.GeneralMapsWidget
+com.apple.weather.widget
+com.apple.tips.TipsSwift
+com.apple.Music.MusicWidgets
+com.apple.mobilecal.CalendarWidgetExtension!)
+com.apple.mobilenotes.WidgetExtension
+com.apple.reminders.WidgetExtension
+com.apple.podcasts.widget
+com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension
+com.apple.tv.TVWidgetExtension
+com.apple.stocks.widget
+com.apple.mobiletimer.WorldClockWidget
+com.apple.mobileslideshow.PhotosReliveWidget
+com.apple.weather.widgetbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+&'()*+,-4U$null
+ZNS.objectsV$class
+ !"#$%[displayName_
+widgetDescription_
+containerBundleIdentifierZintentType_
+extensionBundleIdentifierTkind_
+supportedSizeClasses_
+widgetVisibility[localeToken
+com.apple.weather.widgetP_
+com.apple.weatherXForecast]WeatherIntent_
+?See the current weather conditions and forecast for a location.O
+./01Z$classnameX$classes_
+CHSAvocadoDescriptor
+CHSAvocadoDescriptorXNSObject
+./56WNSArray
+com.apple.Music.MusicWidgetsbplist00
+&'()*+,3U$null
+com.apple.Music.MusicWidgetsP_
+Music.RecentlyPlayedWidget_
+Recently Played_
+3Quickly access recently played albums or playlists.O
+-./0Z$classnameX$classes_
+-.45WNSArray
+com.apple.tips.TipsSwiftbplist00
+com.apple.tips.TipsSwiftP^com.apple.tipsTTips_
+HGet the most from your Apple devices with helpful hints and hidden gems.O
+com.apple.tv.TVWidgetExtensionbplist00
+com.apple.tv.TVWidgetExtensionP\com.apple.tvWUp Next_
+7Keep watching where you left off or see what's on next.O
+com.apple.mobilecal.CalendarWidgetExtensionbplist00
++com.apple.mobilecal.CalendarWidgetExtensionP_
+'com.apple.CalendarWidget.CalendarWidgetWUp Next_
+EKUICalendarsIntent_
+0Keep track of your upcoming events and meetings.O
+com.apple.news.widgetbplist00
+com.apple.news.widgetPUtodayUToday[TodayIntento
+com.apple.news.tagbplist00
+com.apple.news.tagPUtopicUTopicYTagIntento
+com.apple.stocks.widgetbplist00
+'()*+,-.5?@ABCDEU$null
+ !"#$%&[displayName_
+com.apple.stocks.widgetPXoverviewYWatchlist_
+StocksOverviewIntent_
+MView price quotes and track performance of your watchlist throughout the day.O
+/012Z$classnameX$classes_
+8 :;<=%>
+com.apple.stocks.widgetVdetailVSymbol[StockIntent_
+GView price quotes and track performance of a symbol throughout the day.O
+/0FGWNSArray
+com.apple.mobilenotes.WidgetExtensionbplist00
+%com.apple.mobilenotes.WidgetExtensionP_
+"com.apple.mobilenotes.FolderWidgetVFolder_
+ICNotesFolderIntent_
+.Get quick access to one of your Notes folders.O
+%com.apple.mobilenotes.WidgetExtension_
+ com.apple.mobilenotes.NoteWidgetTNote\ICNoteIntent_
+&Get quick access to one of your notes.O
+com.apple.podcasts.widgetbplist00
+com.apple.podcasts.widgetP_
+ com.apple.podcasts.widget.upnextWUp Nexto
+com.apple.Maps.GeneralMapsWidgetbplist00
+ com.apple.Maps.GeneralMapsWidgetP^com.apple.MapsTMaps_
+@Get suggested destinations and track your ETA during navigation.O
+./01Z$classnameX

@@ -1,0 +1,18 @@
+﻿Last Modified Timestamp	Bundle ID	Service	Access
+2023-07-10 10:52:23	com.apple.BusinessChatService	Liverpool	Allowed
+2023-07-09 06:42:18	com.apple.DocumentsApp	Ubiquity	Allowed
+2023-07-09 06:20:22	com.apple.Health	Motion	Allowed
+2023-07-09 06:34:27	com.apple.Health	Liverpool	Allowed
+2023-07-09 06:34:30	com.apple.MailCompositionService	Ubiquity	Allowed
+2023-07-09 06:45:23	com.apple.Maps	Liverpool	Allowed
+2023-07-10 10:50:18	com.apple.MobileBackup.framework	Liverpool	Allowed
+2023-07-09 06:34:31	com.apple.Passbook	Ubiquity	Allowed
+2023-07-10 10:45:39	com.apple.SafariBookmarksSyncAgent	Liverpool	Allowed
+2023-07-09 06:42:48	com.apple.iBooks	Ubiquity	Allowed
+2023-07-09 06:46:07	com.apple.mobilemail	Ubiquity	Allowed
+2023-07-09 06:44:00	com.apple.mobilenotes	Liverpool	Allowed
+2023-07-09 06:34:31	com.apple.mobilesafari	Ubiquity	Allowed
+2023-07-09 06:46:43	com.apple.mobilesafari	WebKitIntelligentTrackingPrevention	Allowed
+2023-07-09 06:35:36	com.apple.shortcuts	Liverpool	Allowed
+2023-07-09 06:42:19	com.apple.shortcuts	Ubiquity	Allowed
+2023-07-10 10:43:10	com.apple.upload-request-proxy.com.apple.photos.cloud	Liverpool	Allowed

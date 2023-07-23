@@ -1,0 +1,1 @@
+2023-07-08 23:19:45 Made container live com.apple.FunCamera.EmojiStickers.MessagesExtension /private/var/mobile/Containers/Data/PluginKitPlugin/10BECB03-562D-44B2-807A-6FF627E4BA77

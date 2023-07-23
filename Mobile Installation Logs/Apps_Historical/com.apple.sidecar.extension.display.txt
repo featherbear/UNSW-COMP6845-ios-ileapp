@@ -1,0 +1,1 @@
+2023-07-08 23:19:42 Made container live com.apple.sidecar.extension.display /private/var/mobile/Containers/Data/PluginKitPlugin/84D3D549-EC42-4CFC-90DA-83432ED95B45

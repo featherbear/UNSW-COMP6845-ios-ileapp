@@ -1,0 +1,2 @@
+2023-07-09 14:41:46 Data container moved com.apple.mobilenotes.SpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/1ACDD7B1-4516-40E2-8DE6-8A86A0736289
+2023-07-08 23:20:28 Made container live com.apple.mobilenotes.SpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/78D45CC5-A91F-43D3-AAB4-E4B9E2D2E4D3

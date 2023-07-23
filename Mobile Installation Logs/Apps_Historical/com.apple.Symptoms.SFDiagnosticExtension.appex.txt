@@ -1,0 +1,1 @@
+2023-07-08 23:19:58 Made container live com.apple.Symptoms.SFDiagnosticExtension.appex /private/var/mobile/Containers/Data/PluginKitPlugin/5CF43649-401A-401B-A907-300F4102CA32

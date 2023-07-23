@@ -1,0 +1,564 @@
+SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+tablealarm_eventsalarm_events
+CREATE TABLE alarm_events (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, client_identifier TEXT NOT NULL, due_date REAL, due_date_components BLOB, event_identifier TEXT NOT NULL, event_options INTEGER NOT NULL DEFAULT 0, UNIQUE(client_identifier, event_identifier), CHECK((due_date IS NULL AND due_date_components IS NOT NULL) OR (due_date IS NOT NULL AND due_date_components IS NULL)))7
+indexsqlite_autoindex_alarm_events_1alarm_events
+EA,
+
+S71t
+tablesubscription_app_launchsubscription_app_launch
+CREATE TABLE subscription_app_launch (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, bundle_id TEXT UNIQUE, last_launch_time INTEGER)M
+indexsqlite_autoindex_subscription_app_launch_1subscription_app_launch
+(cEo
+
+y{
+Mtablesubscriptionsubscription
+CREATE TABLE subscription (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, bundle_id TEXT, code INTEGER, update_frequency INTEGER, last_anchor INTEGER, last_ack_time INTEGER, launch_time_hysteresis INTEGER, UNIQUE(bundle_id, code))7
+indexsqlite_autoindex_subscription_1subscription	:
+5qSQLite format 3
+	$@
+qtableauthorizationauthorization
+CREATE TABLE authorization (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, source_id INTEGER NOT NULL REFERENCES sources (ROWID) ON DELETE CASCADE, object_type INTEGER NOT NULL, status INTEGER NOT NULL, request INTEGER NOT NULL, mode INTEGER NOT NULL, date_modified REAL NOT NULL, modification_epoch INTEGER NOT NULL, provenance INTEGER NOT NULL, deleted_object_anchor INTEGER NOT NULL DEFAULT 0, object_limit_anchor INTEGER NOT NULL DEFAULT 0, object_limit_modified REAL, UNIQUE(source_id, object_type))9	
+indexsqlite_autoindex_authorization_1authorization
+:4SQLite format 3
+atablecloud_sync_storescloud_sync_storesCREATE TABLE cloud_sync_stores (sync_store INTEGER PRIMARY KEY REFERENCES sync_stores (ROWID) ON DELETE CASCADE, server_change_token BLOB, baseline_epoch INTEGER NOT NULL, rebase_deadline REAL, last_sync REAL, empty_zones BLOB, last_check REAL, owner_id TEXT NOT NULL, container_id TEXT NOT NULL, has_gap INTEGER NOT NULL, sync_protocol_version INTEGER NOT NULL)
+'tabledatatype_source_orderdatatype_source_order
+CREATE TABLE datatype_source_order (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, data_type INTEGER NOT NULL, source INTEGER NOT NULL REFERENCES sources (ROWID) ON DELETE CASCADE, user_preferred INTEGER NOT NULL, provenance INTEGER NOT NULL, modification_date REAL NOT NULL)
+Mr(n
+=indexdatatype_source_order_data_typedatatype_source_order
+CREATE INDEX datatype_source_order_data_type ON datatype_source_order (data_type, ROWID)
+eSQLite format 3
+1tablesource_devicessource_devices
+CREATE TABLE source_devices (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, manufacturer TEXT NOT NULL, model TEXT NOT NULL, hardware TEXT NOT NULL, firmware TEXT NOT NULL, software TEXT NOT NULL, localIdentifier TEXT NOT NULL, FDAUDI TEXT NOT NULL, creation_date REAL NOT NULL, sync_provenance INTEGER NOT NULL, uuid BLOB UNIQUE NOT NULL, UNIQUE(name, manufacturer, model, hardware, firmware, software, localIdentifier, FDAUDI, sync_provenance, uuid));
+indexsqlite_autoindex_source_devices_2source_devices
+indexsqlite_autoindex_source_devices_1source_devices
+A4/3
+Otablenano_pairingnano_pairing
+CREATE TABLE nano_pairing (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, registry_uuid BLOB UNIQUE NOT NULL, persistent_uuid BLOB, health_uuid BLOB, sync_provenance INTEGER NOT NULL REFERENCES sync_stores (ROWID) ON DELETE CASCADE, restored INTEGER NOT NULL, source_bundle_id TEXT, ids_id TEXT)7
+indexsqlite_autoindex_nano_pairing_1nano_pairing
+
+\
+#
+indexsqlite_autoindex_onboarding_completions_1onboarding_completions
+utableonboarding_completionsonboarding_completions
+CREATE TABLE onboarding_completions (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB NOT NULL UNIQUE, feature_identifier TEXT NOT NULL, version INTEGER NOT NULL, completion_date REAL NOT NULL, country_code TEXT, mod_date REAL NOT NULL, deleted INTEGER NOT NULL DEFAULT 0, sync_provenance INTEGER NOT NULL)7
+CREATE TABLE nano_pairing (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, registry_uuid BLOB UNIQUE NOT NULL, persistent_uuid BLOB, health_uuid BLOB, sync_provenance INTEGER NOT NULL REFERENCES sync_stores (ROWID) ON DELETE CASCADE, restored INTEGER NOT NULL, source_bundle_id TEXT, ids_id TEXT);
+CREATE TABLE source_devices (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, manufacturer TEXT NOT NULL, model TEXT NOT NULL, hardware TEXT NOT NULL, firmware TEXT NOT NULL, software TEXT NOT NULL, localIdentifier TEXT NOT NULL, FDAUDI TEXT NOT NULL, creation_date REAL NOT NULL, sync_provenance INTEGER NOT NULL, uuid BLOB UNIQUE NOT NULL, UNIQUE(name, manufacturer, model, hardware, firmware, software, localIdentifier, FDAUDI, sync_provenance, uuid))
+`SQLite format 3
+W2oA
+Ytableseries_buildersseries_builders
+CREATE TABLE series_builders (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB UNIQUE NOT NULL, state INTEGER NOT NULL, metadata BLOB, series_type INTEGER NOT NULL)=
+indexsqlite_autoindex_series_builders_1series_builders
+*LSQLite format 3
+	;U.
+`97^
+etablesourcessources
+CREATE TABLE sources (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB UNIQUE NOT NULL, bundle_id TEXT NOT NULL, name TEXT NOT NULL, source_options INTEGER NOT NULL, local_device INTEGER NOT NULL, product_type TEXT NOT NULL, deleted INTEGER NOT NULL, mod_date REAL NOT NULL, provenance INTEGER NOT NULL, sync_anchor INTEGER NOT NULL UNIQUE, owner_bundle_id TEXT)-
+indexsqlite_autoindex_sources_2sources
+indexsqlite_autoindex_sources_1sources
+>?w
+
+
+indexsources_bundle_id_uuidsources
+CREATE INDEX sources_bundle_id_uuid ON sources (bundle_id, uuid)
+VSQLite format 3
+qtablesync_anchorssync_anchors
+CREATE TABLE sync_anchors (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, next INTEGER NOT NULL, next_updated_date REAL NOT NULL, acked INTEGER NOT NULL, acked_updated_date REAL NOT NULL, frozen INTEGER NOT NULL, frozen_updated_date REAL NOT NULL, received INTEGER NOT NULL, received_updated_date REAL NOT NULL, expected INTEGER NOT NULL, expected_updated_date REAL NOT NULL, schema TEXT NOT NULL, type INTEGER NOT NULL, store INTEGER NOT NULL, epoch INTEGER NOT NULL, UNIQUE(store, epoch, type, schema))7
+indexsqlite_autoindex_sync_anchors_1sync_anchors
+1SQLite format 3
+EMje
+/tablesync_storessync_stores
+CREATE TABLE sync_stores (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB UNIQUE NOT NULL, type INTEGER NOT NULL, creation_date REAL NOT NULL)5
+indexsqlite_autoindex_sync_stores_1sync_stores
+"s0i
+
+Ktablekey_valuekey_value CREATE TABLE key_value (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, category INTEGER NOT NULL, domain TEXT NOT NULL, key TEXT NOT NULL, value, provenance INTEGER NOT NULL, mod_date REAL NOT NULL, UNIQUE(category, domain, key))1
+indexsqlite_autoindex_key_value_1key_value!4
+%SQLite format 3
+indexsqlite_autoindex_workout_builders_1workout_builders#~
+Wtableworkout_buildersworkout_builders"CREATE TABLE workout_builders (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB UNIQUE NOT NULL, workout_configuration BLOB NOT NULL, metadata BLOB, source_id INTEGER NOT NULL REFERENCES sources (ROWID) ON DELETE CASCADE, source_version TEXT, device_id INTEGER REFERENCES source_devices (ROWID) ON DELETE CASCADE, session BLOB, start_date REAL, end_date REAL, data_interval BLOB, goal_type INTEGER NOT NULL, goal BLOB, types_while_paused BLOB, should_collect_events INTEGER NOT NULL)
+Ac
+
++tableworkout_builder_associated_objectsworkout_builder_associated_objects$CREATE TABLE workout_builder_associated_objects (workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, object_uuid BLOB NOT NULL, UNIQUE(workout_builder_id, object_uuid))c#
+indexsqlite_autoindex_workout_builder_associated_objects_1workout_builder_associated_objects%
+zp}
+
+tableworkout_builder_associated_seriesworkout_builder_associated_series&CREATE TABLE workout_builder_associated_series (workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, series_uuid BLOB NOT NULL, series_type INTEGER NOT NULL, UNIQUE(workout_builder_id, series_uuid, series_type))a%
+indexsqlite_autoindex_workout_builder_associated_series_1workout_builder_associated_series'
+PSQLite format 3
+Ytableworkout_builder_data_sourcesworkout_builder_data_sources(CREATE TABLE workout_builder_data_sources (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, recovery_identifier TEXT NOT NULL, archived_state BLOB)
+}SQLite format 3
+
+t	F
++tableworkout_builder_eventsworkout_builder_events)CREATE TABLE workout_builder_events (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, owner_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, date REAL NOT NULL, type INTEGER NOT NULL, duration REAL NOT NULL, metadata BLOB, session_uuid BLOB, error BLOB)
+Ytableworkout_builder_data_sourcesworkout_builder_data_sources(CREATE TABLE workout_builder_data_sources (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, recovery_identifier TEXT NOT NULL, archived_state BLOB)a%
+tableworkout_builder_associated_seriesworkout_builder_associated_series&CREATE TABLE workout_builder_associated_series (workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, series_uuid BLOB NOT NULL, series_type INTEGER NOT NULL, UNIQUE(workout_builder_id, series_uuid, series_type))c#
++tableworkout_builder_associated_objectsworkout_builder_associated_objects$CREATE TABLE workout_builder_associated_objects (workout_builder_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, object_uuid BLOB NOT NULL, UNIQUE(workout_builder_id, object_uuid))?!
+indexsqlite_autoindex_workout_builders_1workout_builders#
+7tableworkout_builder_statisticsworkout_builder_statistics*CREATE TABLE workout_builder_statistics (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, owner_id INTEGER NOT NULL REFERENCES workout_builders (ROWID) ON DELETE CASCADE, quantity_type INTEGER NOT NULL, anchor INTEGER, statistics BLOB, calculator BLOB, UNIQUE(owner_id, quantity_type))S)
+indexsqlite_autoindex_workout_builder_statistics_1workout_builder_statistics+
+=tableworkout_sessionsworkout_sessions,CREATE TABLE workout_sessions (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, uuid BLOB UNIQUE NOT NULL, workout_configuration BLOB NOT NULL, state INTEGER NOT NULL, requested_target_state INTEGER NOT NULL DEFAULT 1, has_failed INTEGER NOT NULL DEFAULT 0, source_id INTEGER REFERENCES sources (ROWID) ON DELETE CASCADE, builder_id INTEGER REFERENCES workout_builders (ROWID) ON DELETE SET NULL, creation_date REAL NOT NULL, start_date REAL, end_date REAL, client_bundle_id TEXT, client_application_id TEXT, latest_activity_date REAL NOT NULL)?+
+indexsqlite_autoindex_workout_sessions_1workout_sessions-
+_SQLite format 3
+9tableworkout_session_controllersworkout_session_controllers.CREATE TABLE workout_session_controllers (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, workout_session_id INTEGER NOT NULL REFERENCES workout_sessions (ROWID) ON DELETE CASCADE, recovery_identifier TEXT NOT NULL, archived_state BLOB, UNIQUE(workout_session_id, recovery_identifier))U-
+indexsqlite_autoindex_workout_session_controllers_1workout_session_controllers/
++tableworkout_session_eventsworkout_session_events0CREATE TABLE workout_session_events (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, owner_id INTEGER NOT NULL REFERENCES workout_sessions (ROWID) ON DELETE CASCADE, date REAL NOT NULL, type INTEGER NOT NULL, duration REAL NOT NULL, metadata BLOB, session_uuid BLOB, error BLOB)
+8VNB
+x`SQLite format 3
+`g*?
+(5L%
+indexsqlite_autoindex_schema_user_versions_1schema_user_versions2
+indexsqlite_autoindex_workout_builder_statistics_1workout_builder_statistics+
+
+tableschema_user_versionsschema_user_versions1CREATE TABLE schema_user_versions (schema TEXT NOT NULL PRIMARY KEY, version INTEGER NOT NULL, modification_date DOUBLE NOT NULL)
+HealthRecordsPlugin.
+-D}+A
+3	HealthRecordsPlugin
+lOjV
+
+9tableHealthRecordsPlugin_api_remindersHealthRecordsPlugin_api_reminders3CREATE TABLE HealthRecordsPlugin_api_reminders (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, source_id INTEGER NOT NULL UNIQUE REFERENCES sources (ROWID) ON DELETE CASCADE, date_created REAL NOT NULL, date_posted REAL)a2
+indexsqlite_autoindex_HealthRecordsPlugin_api_reminders_1HealthRecordsPlugin_api_reminders46/
+7
+8V
+hearing	A
+-D}+y
+hearing
+~KQ
+
+sU;
+
+yindexhearing_headphone_audio_exposure_statistics_endhearing_headphone_audio_exposure_statistics7CREATE INDEX hearing_headphone_audio_exposure_statistics_end ON hearing_headphone_audio_exposure_statistics (end_date)c4
+indexhearing_headphone_audio_exposure_statistics_starthearing_headphone_audio_exposure_statistics6CREATE INDEX hearing_headphone_audio_exposure_statistics_start ON hearing_headphone_audio_exposure_statistics (start_date)
+{tablehearing_headphone_audio_exposure_statisticshearing_headphone_audio_exposure_statistics5CREATE TABLE hearing_headphone_audio_exposure_statistics (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, start_date REAL NOT NULL, end_date REAL NOT NULL, archived_statistics BLOB NOT NULL)
+xG&
+
+ACHAchievementsPlugin
+-D}+
+activitysharingA
+"A.
+
+activitysharing
+	key_value
+`M>
+
+DATABASE_CREATIONIDENTIFIER
+-D}7.b
+/!	DATABASE_CREATIONIDENTIFIER
+key_value
+Hearing_PreviousSevenDayHeadphoneExposureNotificationFireDateA
+Hearing_PreviousSevenDayHeadphoneExposureNotificationFireDate
+	A:u
+Hearing_ShouldRebuildPreviousSevenDayHeadphoneExposureNotificationA
+Hearing_ShouldRebuildPreviousSevenDayHeadphoneExposureNotification
+\SQLite format 3
+hearing_headphone_audio_exposure_statistics
+bplist00
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	
+
+
+includesPrunableDataVanchorYstartDate_
+boundedInterval_
+primaryCalculator
+)-6>BEHM%U$null
+
+!"#$%&'(V$class\needs_config_
+hdsce_archived_representation_
+interval_collection_
+merge_granularity_
+computation_method^merge_strategy]quantity_type]date_intervalWoptions
+>K
+#	
++,TCode
+./01Z$classnameX$classes^HKQuantityType
+2345^HKQuantityType\HKSampleType\HKObjectTypeXNSObject
+789:;
+=ZNS.endDate\NS.startDate[NS.duration
+@AWNS.time#A
+./CDVNSDate
+FA#A
+./IJ_
+_NSConcreteDateInterval
+KL5_
+_NSConcreteDateInterval^NSDateInterval
+./NO_
+ HDStatisticsCollectionCalculator
+ q4y6
+FA#B-c
+Hearing_ShouldRebuildSevenDayHeadphoneExposureStatisticsA
+:siS
+Hearing_ShouldRebuildSevenDayHeadphoneExposureStatistics
+CloudSyncCloudSyncRestoreSyncStartDateA
+CloudSyncCloudSyncRestoreSyncStartDate
+CloudSyncHDCloudSyncDatabaseIdentifier
+CloudSyncHDCloudSyncKeyErrorRequiringUserActionbplist00
+
+X$versionY$archiverT$topX$objects
+	Troot
+ !"#()=>?@ABCDEKLRSTXY\]^_bgU$null
+VNSCodeZNSUserInfoXNSDomainV$class
+com.apple.healthkit
+WNS.keysZNS.objects
+NSLocalizedDescription_
+NSUnderlyingError_
++Network failure during Cloud Sync Operation
+$%&'
+NSURLErrorDomain
++,-./012
+4567896;
+NSErrorFailingURLKey_
+(_NSURLErrorFailingURLSessionTaskErrorKey_
+%NSURLErrorNetworkUnavailableReasonKey_
+(_NSURLErrorRelatedURLSessionTaskErrorKey_
+NSErrorFailingURLStringKey_
+_kCFStreamErrorDomainKey_
+_kCFStreamErrorCodeKey
+GHIJWNS.base[NS.relative
+]https://gateway.icloud.com/setup/setup/ck/v1/ckAppInit?container=com.apple.health.sync.secure
+MNOPZ$classnameX$classesUNSURL
+OQXNSObject_
+8LocalDataTask <F10EC43B-8DEB-48C6-9916-8E04D8B547AC>.<1>
+MNZ[WNSArray
+.The Internet connection appears to be offline._
+MN`a\NSDictionary
+MNcdZNSURLError
+efQZNSURLErrorWNSError
+MNfh
+CloudSyncHDCloudSyncKeyErrorRequiringUserAction
+CloudSyncHDBackstopSyncLastConsiderationDateKeyA
+CloudSyncHDBackstopSyncLastConsiderationDateKey
+)	source_devices
+
+	sources/
+,iPhoneApple Inc.iPhoneiPhone10,114.7.1A
+-K%ll
+Ldg6G
+,	iPhoneApple Inc.iPhoneiPhone10,114.7.1
+C"GD
+com.apple.health.7186D524-C7D1-49EA-A412-D93911A648B2Tom
+s iPhone
+iPhone10,1A
+-K%k
+_SD~ZZs
+,	,
+w,	com.apple.health.7186D524-C7D1-49EA-A412-D93911A648B2,
+source_devices
+
+
+
+
+
+
+,__NONE____NONE__A
+-K%l
+__NONE____NONE__4
+7	datatype_source_order
+-K%sS
+
+key_value	
+DATA_AGGREGATION-HKQuantityTypeIdentifierStepCountHDPedometerDataCollector.HKQuantityTypeIdentifierStepCount	5
+DATA_AGGREGATION-HKQuantityTypeIdentifierStepCountHDPedometerDataCollector.HKQuantityTypeIdentifierStepCountbplist00
+	\sensor_datum
+#+/25:>CIMNTXU$null
+Whdqd_qtV$classYHDDCR_ctxWhdqd_mdXHDDCR_idXHDDCR_ts
+\NS.uuidbytesO
+ !Z$classnameX$classesVNSUUID
+ "XNSObject
+$%&'()*ZNS.endDate\NS.startDate[NS.duration
+-.WNS.time#A
+01VNSDate
+3.#A
+89"_
+<=WNS.dataO
+bbplist00
+59?@ABCFGKNOPQRSU$null
+ !"#$$&'())!,-.'0)234_
+kCMPedometerDataCodingKeyPace_
+kCMPedometerDatacodingKeyUUIDV$class_
+'kCMPedometerDataCodingKeyIsOdometerPace_
++kCMPedometerDataCodingKeyIsOdometerDistance_
++kCMPedometerDataCodingKeyElevationDescended_
+ kCMPedometerDataCodingKeyEndDate_
+&kCMPedometerDataCodingKeyNumberOfSteps_
+&kCMPedometerDataCodingKeyFloorAscended_
+'kCMPedometerDataCodingKeyNumberOfPushes_
+'kCMPedometerDataCodingKeyCurrentCadence_
+&kCMPedometerDataCodingKeyFirstStepTime_
+$kCMPedometerDataCodingKeyWorkoutType_
+!kCMPedometerDataCodingKeyRecordId_
+"kCMPedometerDataCodingKeyStartDate_
+!kCMPedometerDataCodingKeyDistance_
+'kCMPedometerDataCodingKeyFloorDescended_
+*kCMPedometerDataCodingKeyElevationAscended_
+#kCMPedometerDataCodingKeyActiveTime_
+'kCMPedometerDataCodingKeyDistanceSource
+78WNS.time#A
+:;<=Z$classnameX$classesVNSDate
+<>XNSObject
+5#@@
+D8#A
+IJ\NS.uuidbytesO
+:;LMVNSUUID
+:;TU_
+CMPedometerData
+?@]NSMutableData
+AB"]NSMutableDataVNSData
+EFGHWUnitKeyXValueKey
+JKL_
+HKUnitStringKey
+
+Ucount
+OP\HKScalarUnit
+QRS"\HKScalarUnitZHKBaseUnitVHKUnit
+UVZHKQuantity
+W"ZHKQuantity
+HDQuantityDatum
+[\"_
+HDQuantityDatum_
+HDDataCollectorSensorDatum
+-K%so
+datatype_source_order
+-K%w
+7j/N
+key_value
+
+DATA_AGGREGATION-HKQuantityTypeIdentifierDistanceWalkingRunningHDPedometerDataCollector.HKQuantityTypeIdentifierDistanceWalkingRunning
+s
+DATA_AGGREGATION-HKQuantityTypeIdentifierDistanceWalkingRunningHDPedometerDataCollector.HKQuantityTypeIdentifierDistanceWalkingRunningbplist00
+fffffd
+OP\HKLengthUnit
+QRS"\HKLengthUnitZHKBaseUnitVHKUnit
+key_value
+HDMaxObjectPersistentID
+HDMaxObjectPersistentID
+*qSQLite format 3
+'mLu
+DATA_AGGREGATION-HKQuantityTypeIdentifierStepCountHDPedometerDataCollector.HKQuantityTypeIdentifierStepCount
+-V/8R
+zbplist00
+59?@ABCDEHIMPQRSTUU$null
+ !"#$$&'())+,-.'0)234_
+F8#A
+KL\NS.uuidbytesO
+:;NOVNSUUID
+:;VW_
+F08SQLite format 3
+	5'q$
+
+DATA_AGGREGATION-HKQuantityTypeIdentifierDistanceWalkingRunningHDPedometerDataCollector.HKQuantityTypeIdentifierDistanceWalkingRunning
+#@\*
+-Z<X)
+#@oJv
+Mt#,
+|!
+
+
+#@bNfffff
+#@s
+\ 
+msRy
+pOI
+
+N[%y
+dbplist00
+p#@l;
+M<SQLite format 3
+-]T"
+d1JZ
+33333
+L!XLU
+-_A5(=
+-_B}
+|bplist00
+IZ:
+
+-cG?f
+-cG?
+PBR
+
+-cG@
+key_value 
+HDMaxObjectPersistentID 
+-cG@M
+key_value!
+HDMaxObjectPersistentID!
+-cGA
+#	sync_stores
+2(W
+
+0233DEA254DF738B8E2DDE7BF1D710124923E34833B1016D80D9E9B145F0C4DF:8D0808E0-3F04-4712-AADD-9FFCF46BD12Fcom.apple.health.sync.secure
+1Uh" 
+sync_anchors#
+
+j
+C
+
+Y
+o!
+
+	{	T
+main
+com.apple.healthd.hearing.sync-schema
+com.apple.healthd.healthrecords.sync-schema
+com.apple.healthd.healthrecords.sync-schemaL
+main
+%
+main	%
+main5%
+main4%
+main7$
+
+main%	
+main8%
+main6%
+main,%
+main0%
+main
+main#
+main"-
+com.apple.healthd.hearing.sync-schema!3
+com.apple.healthd.healthrecords.sync-schema 3
+
+main
+	main
+5main
+4main
+main
+
+main
+7main
+8main	
+6main
+,main
+0main
+	main
+key_value"
+CloudSyncHDCloudSyncPrimaryLastPushForwardProgressDate"
+CloudSyncHDCloudSyncPrimaryLastPushForwardProgressDateA
+-cK	
+SA
+
+-cKK
+main
+%#
+main
+
+main8
+O
+?
+
++
+
+
+~
+(	
+-cKM
+pcom.apple.healthd.healthrecords.sync-schema
+pmain
+pmain	T
+pcom.apple.healthd.hearing.sync-schema
+pcom.apple.healthd.healthrecords.sync-schemaT
+pmain
+-
+pmain	-
+pmain5-
+pmain4-
+pmain7,
+
+pmain-	
+pmain8.
+pmain6-
+pmain,-
+pmain0
+key_value#
+CloudSyncHDCloudSyncPrimaryLastPushForwardProgressDate#
+-cLv
+-cLw
+h0233DEA254DF738B8E2DDE7BF1D710124923E34833B1016D80D9E9B145F0C4DF:8D0808E0-3F04-4712-AADD-9FFCF46BD12Fcom.apple.health.sync.secure
+key_value$
+CloudSyncCloudSyncRestoreSyncEndDate$<
+CloudSyncCloudSyncRestoreSyncEndDateA
+-cLw{
+key_value%
+CloudSyncLastSuccessfulPull-com.apple.health.sync.secure%*
+CloudSyncLastSuccessfulPull-com.apple.health.sync.secureA
+hSQLite format 3
+key_value)
+HDMaxObjectPersistentID(
+DATA_AGGREGATION-HKQuantityTypeIdentifierDistanceWalkingRunningHDPedometerDataCollector.HKQuantityTypeIdentifierDistanceWalkingRunning)s
+DATA_AGGREGATION-HKQuantityTypeIdentifierStepCountHDPedometerDataCollector.HKQuantityTypeIdentifierStepCount'5
+
+v
+$
+`dEU
+#@~$Q
+-cSZ3i
+72rP%
+HuSQLite format 3
+-cLV
+main	T
+com.apple.healthd.healthrecords.sync-schemaT
+main
+-
+main	-
+main5-
+main4-
+main7,
+
+main-	
+main8.
+main6-
+main,-
+main0
+main
+T
+main	
+main,
+key_value*
+CloudSyncHDCloudSyncPrimaryLastPushForwardProgressDate*
+key_value+
+CloudSyncLastSuccessfulPull-com.apple.health.sync.secure+*
+72r
+
+|SQLite format 3
+#i.}
+key_value/
+HDMaxObjectPersistentID.
+DATA_AGGREGATION-HKQuantityTypeIdentifierDistanceWalkingRunningHDPedometerDataCollector.HKQuantityTypeIdentifierDistanceWalkingRunning-s
+DATA_AGGREGATION-HKQuantityTypeIdentifierStepCountHDPedometerDataCollector.HKQuantityTypeIdentifierStepCount/5
+#@~`z
+s	pS
+key_value1
+DATABASE_SIZELAST_MONTH_DATABASE_SIZE1>
+DATABASE_SIZELAST_MONTH_DATABASE_SIZE_DATE0,
+DATABASE_SIZELAST_MONTH_DATABASE_SIZE
+DATABASE_SIZELAST_MONTH_DATABASE_SIZE_DATEA
+key_value3
+'
+H
+
+DATABASE_SIZELAST_WEEK_DATABASE_SIZE3/
+DATABASE_SIZELAST_WEEK_DATABASE_SIZE_DATE2+
+DFj
+
+DATABASE_SIZELAST_WEEK_DATABASE_SIZE
+LQA2
+DATABASE_SIZELAST_WEEK_DATABASE_SIZE_DATEA
+LQ61
+key_value5
+DATABASE_SIZELAST_MONTH_HFD_DATABASE_SIZE_DATE5/
+DATABASE_SIZELAST_MONTH_HFD_DATABASE_SIZE4*
+DATABASE_SIZELAST_MONTH_HFD_DATABASE_SIZE_DATEA
+DATABASE_SIZELAST_MONTH_HFD_DATABASE_SIZEA
+zab	
+
+key_value7
+'h4
+H
+
+DATABASE_SIZELAST_WEEK_HFD_DATABASE_SIZE_DATE7.
+DATABASE_SIZELAST_WEEK_HFD_DATABASE_SIZE64
+DATABASE_SIZELAST_WEEK_HFD_DATABASE_SIZE_DATEA
+DATABASE_SIZELAST_WEEK_HFD_DATABASE_SIZEA

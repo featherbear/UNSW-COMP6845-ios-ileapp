@@ -1,0 +1,334 @@
+8xB2
+
+%HomeDataInfo	
+<NULL>
+zone_share
+
+zone_group
+	zone
+%	HomeDataInfo	
+!	zone_group
+DONOTUPLOAD__HomeKit_Default_Owner__HomeDataInfo
+<NULL><NULL>
+?#		__HomeKit_Default_Owner__DONOTUPLOAD
+-HomeDataBlobZone
+zone
+HomeDataBlobZone
+zone_share
+DONOTUPLOAD__HomeKit_Default_Owner__HomeDataBlobSubscription8
+__HomeKit_Default_Owner__DONOTUPLOAD
+UCCF7D3D1-0C20-4207-97D0-9E565EB5E323
+CCF7D3D1-0C20-4207-97D0-9E565EB5E323
+C67B4CFE-EAC3-463D-B4CE-E61F5C6CE005__HomeKit_Default_Owner__E5E36C6B-A621-4F46-A593-E7EE5E6BC437E
+__HomeKit_Default_Owner__C67B4CFE-EAC3-463D-B4CE-E61F5C6CE005
+U1411CE6C-B4DE-4622-A49D-F66FE296D6B5'
+1411CE6C-B4DE-4622-A49D-F66FE296D6B5
+14730983-0D6D-4F74-8076-4F5953FD83EB__HomeKit_Default_Owner__089DAA62-C6FD-4BB1-9EDE-17126F6076F7j
+__HomeKit_Default_Owner__14730983-0D6D-4F74-8076-4F5953FD83EB
+	xact
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252Ebplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !"#$(012U$null
+WNS.keysZNS.objectsV$class
+
+R_PR_VZidentifierR_uR_t_
+$1CAEDC10-E3E5-41A4-BB17-A9EEBA14A938S7.3
+&'WNS.dataO
+bplist00
+!"(U$null
+V$class[HM.internal
+YHM.string]HM.identifier
+\NS.uuidbytesO
+Z$classnameX$classesVNSUUID
+ XNSObject[20977765650
+_HMDAppleAccountIdentifier
+%&' _
+_HMDAppleAccountIdentifier_
+_HMDAccountIdentifierYHMFObject
+HMDAccountIdentifier
++' _
+)*+,Z$classnameX$classes]NSMutableData
+-./]NSMutableDataVNSDataXNSObject_
+$E7AC7241-F8AF-55E1-85C6-9103EBF5EB8B_
+HMDAccountModel
+)*34_
+NSMutableDictionary
+35/\NSDictionary
+Tbplist00
+$%U$null
+]HM.mustReplayV$classXHM.label^HM.destinationWHM.date[HM.mustPushYHM.source
+WNS.time#A
+ !"Z$classnameX$classesVNSDate
+!#XNSObject[Add Account
+ &'_
+!HMDBackingStoreTransactionOptions
+()#_
+!HMDBackingStoreTransactionOptionsYHMFObject
+		__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E
+			__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E
+DONOTUPLOAD__HomeKit_Default_Owner__bplist00
+U$null
+V$class_
+ChangeTokenData
+Z$classnameX$classes_
+CKServerChangeToken
+CKServerChangeTokenXNSObject
+$)27ILQSX^cj|~
+HomeDataBlobSubscriptionj
+C67B4CFE-EAC3-463D-B4CE-E61F5C6CE005__HomeKit_Default_Owner__E5E36C6B-A621-4F46-A593-E7EE5E6BC437
+HomeDataBlobSubscriptionbplist00
+ !")U$null
+subscriptionTypeXserverID_
+notificationInfoVZoneIDZrecordType
+HomeDataBlobSubscription
+XZoneNameYownerName
+HomeDataBlobZone_
+__defaultOwner__
+#$%&Z$classnameX$classes^CKRecordZoneID
+'(^CKRecordZoneIDXNSObject
+#$*+_
+CKRecordZoneSubscription
+,-(_
+CKRecordZoneSubscription^CKSubscription
+*+BlF
+14730983-0D6D-4F74-8076-4F5953FD83EB__HomeKit_Default_Owner__089DAA62-C6FD-4BB1-9EDE-17126F6076F7bplist00
+$089DAA62-C6FD-4BB1-9EDE-17126F6076F7
+$1411CE6C-B4DE-4622-A49D-F66FE296D6B5_
+=N#
+
+xact
+ !"#$%&'()*.6U$null
+R_tR_PR_VR_uUlocalVidsURI_
+HMDAccountHandleModel_
+$E7AC7241-F8AF-55E1-85C6-9103EBF5EB8BS7.3_
+$C04B5679-2ED6-52EF-93E3-C145E0647460
+,-WNS.dataO
+[prefixedURIV$class
+mailto:tom.jonsey91@gmail.com
+Z$classnameX$classesVIDSURI
+XNSObject
+$)27ILQSX^covxz
+/012Z$classnameX$classes]NSMutableData
+345]NSMutableDataVNSDataXNSObject
+/078_
+795\NSDictionary
+Zbplist00
+-Fz
+!#XNSObject^Update Handles
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E
+SQLite format 3
+itablearchivearchive
+CREATE TABLE archive (identifier string primary key, controller_username string not null, value blob not null)-
+indexsqlite_autoindex_archive_1archive
+windexxact_pushed2xact
+CREATE INDEX xact_pushed2 ON xact (root, xact_id, id)S
+}indexxact_pushedxact
+CREATE INDEX xact_pushed ON xact (root, pushed, xact_id)
+Cindexrecord_group_id_share_id_name_ukeyrecord
+CREATE UNIQUE INDEX record_group_id_share_id_name_ukey ON record (group_id, share_id, name)z
+#indexshare_root_group_id_ukeyzone_share
+CREATE UNIQUE INDEX share_root_group_id_ukey ON zone_share (root, group_id)
+
+9indexgroup_owner_root_zone_id_ukeyzone_groupCREATE UNIQUE INDEX group_owner_root_zone_id_ukey ON zone_group (owner, root, zone_id)I
+
+iindexstore_namestoreCREATE UNIQUE INDEX store_name ON store (name)E	
+eindexzone_namezone
+CREATE UNIQUE INDEX zone_name ON zone (name)e
+tablexact_blockxact_block	CREATE TABLE xact_block (id INTEGER PRIMARY KEY, data BLOB NOT NULL)M
+}tablexactxact
+CREATE TABLE xact (id INTEGER PRIMARY KEY AUTOINCREMENT, xact_id INTEGER NOT NULL, pushed INTEGER, root TEXT NOT NULL, type INT NOT NULL, encoding INTEGER NOT NULL, data BLOB NOT NULL)
+Atablerecordrecord
+CREATE TABLE record (group_id INTEGER NOT NULL CONSTRAINT record_group_id_fkey REFERENCES zone_group (id) ON DELETE RESTRICT, share_id INTEGER NOT NULL CONSTRAINT record_share_id_fkey REFERENCES zone_share (id) ON DELETE RESTRICT, store_id INTEGER NOT NULL CONSTRAINT record_store_id_fkey REFERENCES store (id) ON DELETE RESTRICT, name TEXT NOT NULL, type TEXT, uuid TEXT, parent_uuid TEXT, encoding INTEGER NOT NULL, record BLOB NOT NULL, data BLOB NOT NULL, schema STRING)
+Itablezone_sharezone_share
+CREATE TABLE zone_share (id INTEGER PRIMARY KEY AUTOINCREMENT, group_id INTEGER NOT NULL CONSTRAINT group_zone_id_fkey REFERENCES zone_group (id) ON DELETE RESTRICT, root TEXT NOT NULL, target TEXT, share BLOB, users BLOB)
+	tablezone_groupzone_group
+CREATE TABLE zone_group (id INTEGER PRIMARY KEY AUTOINCREMENT, zone_id INTEGER NOT NULL CONSTRAINT group_zone_id_fkey REFERENCES zone (id) ON DELETE RESTRICT, root TEXT NOT NULL, owner TEXT NOT NULL, token BLOB, subscription TEXT, subscription_data BLOB)f
++tablestorestore
+CREATE TABLE store (id INTEGER PRIMARY KEY AUTOINCREMENT, name STRING NOT NULL)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)c
+)tablezonezone
+CREATE TABLE zone (id INTEGER PRIMARY KEY AUTOINCREMENT, name STRING NOT NULL)
+'
+2
+hbplist00
+!#XNSObject_
+Object registration
+nK99~
+'()*+,-./0123459ADGJKPSVYU$null
+&WNS.keysZNS.objectsV$class
+ !"#$%
+R_tR_PR_uR_V[productInfoZidentifierWversionZrpIdentityTnameWhandles^HMDDeviceModel_
+$5203BDE6-98E1-57E1-8F43-A34F53552567S7.3
+78WNS.dataO
+Abplist00
+#$-U$null
+HMF.softwareVersion_
+HMF.patchVersion\HMF.platform_
+HMF.majorVersion_
+HMF.minorVersionYHMF.class[HMF.variant
+"XHM.minorXHM.buildXHM.majorYHM.update
+U18G82
+%&'(Z$classnameX$classes_
+HMFSoftwareVersion
+)*+,_
+HMFSoftwareVersionZHMFVersionYHMFObjectXNSObject
+%&./^HMFProductInfo
+0+,^HMFProductInfo
+:;<=Z$classnameX$classes]NSMutableData
+>?@]NSMutableDataVNSDataXNSObject
+\NS.uuidbytesV$classO
+$)27ILQSW]bov
+3bplist00
+XHM.minorXHM.majorYHM.updateV$class
+HMDHomeKitVersion
+HMDHomeKitVersionZHMFVersionYHMFObjectXNSObject
+$)27ILQSW]fox
+"U$null
+^HM.rpDeviceIRKV$class
+XHAP.dataVHMF.ksVHMF.kt
+SIRKO
+Z$classnameX$classesVHMFKey
+ !YHMFObjectXNSObject
+#$]HMDRPIdentity
+% !]HMDRPIdentity
+!$*U$null
+[HM.deviceID]HM.identifier
+adh@
+ XNSObject
+_HMDLocalDeviceHandle
+'() _
+_HMDLocalDeviceHandle_
+_HMDDeviceHandleYHMFObject
+HMDDeviceHandle
+-) _
+#$*./27<U$null
+ZHM.account]HM.identifierXHM.token
+ !Z$classnameX$classesVNSUUID
+ "XNSObjectO
+%&
+'()WHMD.URIYHMD.local
++
+,-[prefixedURI
+01VIDSURI
+HMDAccountHandle
+56"_
+HMDAccountHandleYHMFObject
+_HMDGlobalDeviceHandle
+:;6"_
+_HMDGlobalDeviceHandle_
+_HMDDeviceHandle
+?6"_
+:;WXWNSArray
+:;Z[_
+Z\@\NSDictionary
+
+#
+%
+*
+
+
+ 
+#
+(
+>
+B
++WXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+3VWNS.keysZNS.objectsV$class
+ !"#$%&'()*+,-./012
+"4447494;<<<444<4<444<44<L4<4<44444
+supportsCameraRecording_
+supportsThreadBorderRouter_
+"supportsIDSActivityMonitorPresenceR_V_
+supportsFaceClassificationR_t_
+supportsMusicAlarmR_u_
+supportsAnnounce_
+supportsStandaloneMode_
+supportsKeyTransferClient_
++supportsCameraSignificantEventNotifications_
+supportsRouterManagement_
+0supportsCameraRecordingReachabilityNotifications_
+supportsMediaActions_
+supportsThirdPartyMusic_
+supportsKeychainSync_
+!supportsCompanionInitiatedRestart_
+supportsTargetControl_
+residentCapable_
+supportsFirmwareUpdate_
+supportsDeviceSetup_
+supportsPreferredMediaUser_
+supportsHomeInvitationR_P_
+supportsAssistantAccessControl_
+supportsCloudDataSync_
+supportsWholeHouseAudio_
+supportsShortcutActions_
+remoteGatewayCapable_
+supportsMultiUser_
+supportsNaturalLighting_
+supportsKeyTransferServer_
+supportsCameraActivityZones
+S7.3_
+HMDDeviceCapabilitiesModel_
+$458FABBD-59BE-5C28-B4E1-C59ED6B901DC	_
+$5203BDE6-98E1-57E1-8F43-A34F53552567
+\NSDictionaryXNSObject
+-U}D
+S"P8
+
+$A8C91FCD-CB23-514D-9BF0-B59286F5F69D
+tel:+61466521390
+-eb$0
+RR}
+
+>Kl#n
+xact
+
+\bplist00
+%&U$null
+-eb%I
+ !"#Z$classnameX$classesVNSDate
+"$XNSObject[Add Account
+ !'(_
+)*$_
+TjE
+
+W
+
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E	
+
+K
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E			K
+%&'()*+,-./0126>ADEJMPSU$null
+$WNS.keysZNS.objectsV$class
+ !"#
+R_tR_PR_uR_V[productInfoZidentifierWversionTnameWhandles^HMDDeviceModel_
+45WNS.dataO
+789:Z$classnameX$classes]NSMutableData
+;<=]NSMutableDataVNSDataXNSObject
+78QRWNSArray
+78TU_
+TV=\NSDictionary
+lns{~
+
+W
+
+s'
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252E
+
+K
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252EK
+__defaultOwner__/_defaultZone/030440CB-974B-44F3-8786-7191F302252EK
+		0
+Fb>
+
+x%
+s'
+x%
+
+C
+
+`bplist00
+"$XNSObject]Update Device

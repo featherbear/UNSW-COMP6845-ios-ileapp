@@ -1,0 +1,1 @@
+2023-07-08 23:19:53 Made container live com.apple.Search.framework.SpotlightDiagnostic /private/var/mobile/Containers/Data/PluginKitPlugin/DB5ECB0D-D481-4A37-A304-6CB93C47676E

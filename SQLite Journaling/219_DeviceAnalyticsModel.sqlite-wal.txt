@@ -1,0 +1,30 @@
+cSQLite format 3
+`B>SQLite format 3
+Roam
+	Network
+
+Leave	
+	Join
+GeoTag
+	BSS
+Blacklist
+7e:25:41:c9:d7:a1
+&={X
+
+s iPhone
+.3@M
+
+/	7e:25:41:c9:d7:a1
+)	wes
+s iPhonebplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+WNS.keysZNS.objectsV$class
+NetworkSummaryNetworkFlags
+Z$classnameX$classes_
+NSMutableDictionary
+\NSDictionaryXNSObject
+$)27ILQSY_fny

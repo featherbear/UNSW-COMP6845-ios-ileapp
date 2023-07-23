@@ -1,0 +1,6 @@
+2023-07-09 14:42:14 Data container moved com.apple.Maps /private/var/mobile/Containers/Data/Application/96F29E82-BE24-4873-A3EE-7BB8DBD04FA9
+2023-07-09 14:42:14 Made container live com.apple.Maps /private/var/containers/Bundle/Application/84A0F136-FECF-4B0F-9A2B-D07B4C9432A4
+2023-07-09 14:42:14 Install successful com.apple.Maps 
+2023-07-08 23:20:24 Made container live com.apple.Maps /private/var/mobile/Containers/Data/Application/10E68889-DFA7-4F6C-8841-D363CB534550
+2023-07-08 23:20:24 Made container live com.apple.Maps /private/var/containers/Bundle/Application/1C2E27EE-6CB5-4907-A51F-B5EDA59CF259
+2023-07-08 23:20:24 Install successful com.apple.Maps 

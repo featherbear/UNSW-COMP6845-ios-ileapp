@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Cellular Wireless report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Cellular Wireless report</h1>
+                    <h6 class="animated fadeIn mb-3"></h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 53</h6><p class="lead">Cellular Wireless located at: see source field</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Key</th><th class="th-sm">Values</th><th class="th-sm">Source</th></tr></thead><tbody><tr><td>ReportedSubscriberIdentity</td><td>89610182001195906452</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>ne_config_state</td><td>False</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>meid</td><td>35670108263946</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_Subscriber_Mnc</td><td>01</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>imeis</td><td>[{&#x27;second&#x27;: &#x27;356701082639462&#x27;, &#x27;first&#x27;: &#x27;1:kOne&#x27;}]</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kCarrierSpaceLastRefreshStatusKey</td><td>6000</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kLastUploadTimestamp</td><td>2023-07-09 08:45:14.542985</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>user_default_voice_slot</td><td>1:kOne</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_Subscriber_CarrierBundleID</td><td>com.apple.Telstra_au</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kPostponementActivationPushTokenRegRetryCount</td><td>0</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kAllowsMultiplePDNConnectionsToSameAPNConfiguration</td><td>{&#x27;AllowsMultiplePDNConnectionsToSameAPN&#x27;: False}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>imei_svns</td><td>[{&#x27;second&#x27;: &#x27;25&#x27;, &#x27;first&#x27;: &#x27;1:kOne&#x27;}]</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kPostponementActivationPushToken</td><td>cd67ccb01bfe1c53e018ff14c62bd587b23336b80291bcf7b8bf027312c83049</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kCKUploadCount</td><td>3</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_3GPP_NetworkMnc</td><td>01</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kPRIFileConfiguration</td><td>{&#x27;kPRIFileVersion&#x27;: &#x27;0.1.167&#x27;, &#x27;kPRIFileBundleID&#x27;: &#x27;com.apple.Telstra_au&#x27;, &#x27;kPRIFileBundleVersion&#x27;: &#x27;46.0&#x27;, &#x27;kPRIFileName&#x27;: &#x27;overrides_D20_D21_D22.der.pri&#x27;, &#x27;kPRIBundleDir&#x27;: &#x27;/System/Library/Carrier Bundles/iPhone/Telstra_au.bundle&#x27;}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>activation_gemini_support</td><td>1:kFalse</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_3GPP_RAT</td><td>7</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_3GPP_NetworkMcc</td><td>505</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kEnableIMSISwitchConfiguration</td><td>{&#x27;EnableIMSISwitch&#x27;: False}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kNextCarrierBundleUpdateCheck</td><td>2023-07-22 10:46:27.252009</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>PersonalWallet</td><td>{&#x27;89610182001195906452&#x27;: {&#x27;CarrierEntitlements&#x27;: {&#x27;phone-number-prefetched&#x27;: True}}}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_3GPP_CurrentOperatorBundleId</td><td>com.apple.Telstra_au</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kPostponementTicketLock</td><td>False</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kGRIFileConfiguration</td><td>{&#x27;kGRIBundleDir&#x27;: &#x27;/System/Library/Carrier Bundles/iPhone/Default.bundle&#x27;, &#x27;kGRIFileName&#x27;: &#x27;global_setting_A.gri&#x27;, &#x27;kGRIFileBundleVersion&#x27;: &#x27;46.0.1&#x27;, &#x27;kGRIFileVersion&#x27;: &#x27;7.3.10&#x27;, &#x27;kGRIFileBundleID&#x27;: &#x27;com.apple.Default&#x27;}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kPostponementTicket</td><td>{&#x27;ActivityURL&#x27;: &#x27;https://albert.apple.com/deviceservices/activity&#x27;, &#x27;ActivationTicket&#x27;: &#x27;MIICogIBATALBgkqhkiG9w0BAQsxaJ8/BHeCHq+fQAThsAMAn0sUYDhIZzoZHzC46DMWLCPqY7xTIbOfh20HNWcBCCY5Rp+XPQwAAAAA7u7u7u7u7u+flz4EAAAAAJ+XPwQBAAAAn5dABAEAAACfl0EEAQAAAJ+XTAQAAAAABIIBAHADtBEZqVmZToD/9fVrBIjAh5RmCM8gQdyQ2HGDvrOoXUD7zbpyOnDZfODQuPgkw/ZJqcdFiUVK4oiuVj16I8iEKGPFeX98W+zgi3cHh5cEIjyOW6ovlPNbJrdiEY0qLG82NNOqforiSUiIT49ABVUazFmEJwjoCIpyTLvV3CTVZZIHtIlVqcWSvJUlGoAF2CQl2Eu6ik9AllS7buNviEQMOsqK7ZTe3rQArYMJmIm0lfmsu3SKkRNkybXzymqrC9z0EGL0B2lFHzEB3u9muLt2wuN+ahCgY0bqiEpuAoUY2rbzm6ruobp+XrQQt3D64LmAD5GcQnXRVAgKipugJACjggEgMAsGCSqGSIb3DQEBAQOCAQ8AMIIBCgKCAQEArJFPRdnc/E7Vgatg/AHbKnGEudR+ug8WZghxMOlPad3fL42hHAXReVRcBE5liQXEyaP0ojy3s3QJhuNEXwLMYOLCKJNAj4SrE6dZqJ9CQamouvEnZjdC/gLBG5jSuAI4zF+hjObe8OZnV6YGcooEbRkA51dj+x5zmY+vT0va/w+EOdAiTWi6xiWdVFQTXCpCTUzA9qcax58XUi04+dcVSEwVO9U3ZeyoIUrJD/FmoDjjZOidCHDgsCGlnLfQP/gLKOMpOfzw4dWFIW1IiDvs9Uy+U3YhyyE4HPDVx2oAf8ojhBMzsdqXGVV148H0mZSkR4+ulZVlR4E/mxB2ZdP7HQIDAQAB&#x27;, &#x27;PhoneNumberNotificationURL&#x27;: &#x27;https://albert.apple.com/deviceservices/phoneHome&#x27;, &#x27;ActivationState&#x27;: &#x27;Activated&#x27;}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_Subscriber_Mcc</td><td>505</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>is_activation_policy_locked</td><td>1:kFalse</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>ReportedPhoneNumber</td><td>61466521390</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kOperatorRoamingInfo_3GPP_Roaming</td><td>False</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>kCKUploadDate</td><td>19547</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>activation_5g_support</td><td>1:kFalse</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>subscriber_account_ids</td><td>[{&#x27;second&#x27;: &#x27;&#x27;, &#x27;first&#x27;: &#x27;1:kOne&#x27;}]</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist</td></tr><tr><td>SIMPhoneNumber</td><td>+61466521390</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>LteDbHasDeploymentTypeKey</td><td>1</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnableLTEAfterUpgrade</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>PersonalWallet</td><td>{&#x27;89610182001195906452&#x27;: {&#x27;SimPin&#x27;: {&#x27;InitialActiveState&#x27;: False}, &#x27;Capabilities&#x27;: {&#x27;SimCallAndDataCurrentlySupported&#x27;: True, &#x27;NetworkSupportsVoPS&#x27;: True, &#x27;SimCallAndDataSupported&#x27;: True}, &#x27;CarrierEntitlements&#x27;: {&#x27;kEntitlementsSelfRegistrationUpdateImei&#x27;: &#x27;356701082639462&#x27;, &#x27;lastGoodImsi&#x27;: &#x27;505013543711669&#x27;, &#x27;kEntitlementsSelfRegistrationUpdateImsi&#x27;: &#x27;505013543711669&#x27;}, &#x27;RegistrationController&#x27;: {&#x27;lastKnownIMSFeatureState&#x27;: 2}, &#x27;VoiceMail&#x27;: {&#x27;VVMSubscribed&#x27;: True}, &#x27;PhoneServices&#x27;: {&#x27;VoLTENetworkSeen&#x27;: True}, &#x27;SMSControllerWalletDomain&#x27;: {&#x27;TPMR&#x27;: 135}}}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>PhoneNumber</td><td>61466521390</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMDataTransferTimeRegistration</td><td>False</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>com.apple.carrier_1</td><td>50501</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMDataStallRegistration</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMLinkStateRegistration</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMLinkQualityFingerPrintRegistration</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMLinkPowerCostRegistration</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>LastKnownICCID</td><td>89610182001195906452</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>PhoneNumberChangeReport</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>LastKnownServingMcc</td><td>505</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>NetworkPhoneNumberICCID</td><td>89610182001195906452</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>LastKnownServingMnc</td><td>1</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>NetworkPhoneNumber</td><td>+61466521390</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>LASDNextUpdate</td><td>2023-07-20 06:29:34.708648</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>EnhancedLQMTrafficClassRegistration</td><td>True</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr><tr><td>PhoneServices</td><td>{&#x27;Version&#x27;: 1}</td><td>\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist</td></tr></tbody><tfoot><tr><th>Key</th><th>Values</th><th>Source</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

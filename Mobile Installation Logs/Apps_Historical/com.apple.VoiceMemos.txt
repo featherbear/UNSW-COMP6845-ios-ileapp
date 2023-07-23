@@ -1,0 +1,6 @@
+2023-07-09 14:41:55 Data container moved com.apple.VoiceMemos /private/var/mobile/Containers/Data/Application/4ABF0F08-5BD0-4D42-9B6D-935A82D6A135
+2023-07-09 14:41:55 Made container live com.apple.VoiceMemos /private/var/containers/Bundle/Application/317A047B-A980-4F3D-BF8B-B92207C1CB92
+2023-07-09 14:41:55 Install successful com.apple.VoiceMemos 
+2023-07-08 23:20:23 Made container live com.apple.VoiceMemos /private/var/mobile/Containers/Data/Application/90F52588-7AB5-4AAF-A1CC-242A00CD6205
+2023-07-08 23:20:23 Made container live com.apple.VoiceMemos /private/var/containers/Bundle/Application/3EF7B9BB-EDF7-4463-A048-5BE16A307B3B
+2023-07-08 23:20:23 Install successful com.apple.VoiceMemos 

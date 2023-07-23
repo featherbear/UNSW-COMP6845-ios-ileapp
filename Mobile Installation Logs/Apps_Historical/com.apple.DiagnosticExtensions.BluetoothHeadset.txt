@@ -1,0 +1,1 @@
+2023-07-08 23:20:03 Made container live com.apple.DiagnosticExtensions.BluetoothHeadset /private/var/mobile/Containers/Data/PluginKitPlugin/70F5C97E-65E5-4954-A33C-5E47244B16B8

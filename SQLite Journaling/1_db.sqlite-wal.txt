@@ -1,0 +1,42 @@
+jgs/
+)/	"SQLite format 3
+9tablestatestate
+CREATE TABLE state (v)E
+
+indexgenerations_storage_id_name_client_idgenerationsCREATE UNIQUE INDEX generations_storage_id_name_client_id  ON generations (generation_storage_id, generation_name, generation_client_id)}	
+)indexgenerations_addtime_idxgenerationsCREATE INDEX generations_addtime_idx ON generations (generation_add_time desc)t
+indexgenerations_status_idxgenerations
+CREATE INDEX generations_status_idx ON generations (generation_status)w
+indexgenerations_options_idxgenerations	CREATE INDEX generations_options_idx ON generations (generation_options)
+]tablegenerationsgenerations
+CREATE TABLE generations (generation_id INTEGER PRIMARY KEY ASC,generation_storage_id INTEGER NOT NULL,generation_name TEXT NOT NULL,generation_client_id TEXT NOT NULL,generation_path TEXT UNIQUE,generation_options INTEGER NOT NULL DEFAULT 1,generation_status INTEGER NOT NULL DEFAULT 1,generation_add_time INTEGER NOT NULL DEFAULT 0,generation_size INTEGER NOT NULL DEFAULT 0,generation_prunable INTEGER NOT NULL DEFAULT 0)5
+indexsqlite_autoindex_generations_1generations
+qindexfiles_inode_idxfiles
+CREATE INDEX files_inode_idx ON files (file_inode)U
+uindexfiles_status_idxfiles
+CREATE INDEX files_status_idx ON files (file_status)e
+)tablefilesfiles
+CREATE TABLE files (file_row_id INTEGER PRIMARY KEY ASC,file_inode INTEGER,file_last_seen INTEGER NOT NULL DEFAULT 0,file_status INTEGER NOT NULL DEFAULT 1,file_document_id INTEGER,UNIQUE(file_document_id)))
+indexsqlite_autoindex_files_1files
+4oM
+
+Bt]:
+XfZ#[^
+
+5UT
+
+8bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+V$classUstate^lastFeatureSetYfseventID
+Z$classnameX$classes^GSLibraryState
+^GSLibraryStateXNSObject
+$)27ILQSW]fms
+E5			
+:501:QLThumbnailAdditionNamecom.apple.thumbnailsPerUID/501/4/com.apple.thumbnails/:501:QLThumbnailAdditionNamed
+		PerUID/501/4/com.apple.thumbnails/:501:QLThumbnailAdditionName
+:501:QLThumbnailAdditionNamecom.apple.thumbnails
+SQLite format 3

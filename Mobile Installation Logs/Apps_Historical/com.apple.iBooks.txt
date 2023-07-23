@@ -1,0 +1,6 @@
+2023-07-09 14:42:16 Data container moved com.apple.iBooks /private/var/mobile/Containers/Data/Application/BD833737-FB38-47FC-A98D-C74F75DE976A
+2023-07-09 14:42:16 Made container live com.apple.iBooks /private/var/containers/Bundle/Application/442EADB9-DFC0-4525-8B70-076DF9EF39DF
+2023-07-09 14:42:16 Install successful com.apple.iBooks 
+2023-07-08 23:20:25 Made container live com.apple.iBooks /private/var/mobile/Containers/Data/Application/D545A0D2-C28E-4FDB-BFA7-DDDFEFED8F77
+2023-07-08 23:20:25 Made container live com.apple.iBooks /private/var/containers/Bundle/Application/9D2F1102-C0BD-46E9-AEE3-09A612D73550
+2023-07-08 23:20:25 Install successful com.apple.iBooks 

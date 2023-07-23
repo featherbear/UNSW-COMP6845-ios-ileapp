@@ -1,0 +1,28 @@
+SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)x
+?tablewhitelistwhitelist
+CREATE TABLE whitelist (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL UNIQUE)1
+indexsqlite_autoindex_whitelist_1whitelist
+c
+b-6
+KH&l
+7tablehostshosts
+CREATE TABLE hosts (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL UNIQUE))
+indexsqlite_autoindex_hosts_1hosts
+Gtablevisited_hostsvisited_hosts
+CREATE TABLE visited_hosts (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL UNIQUE)9
+indexsqlite_autoindex_visited_hosts_1visited_hosts
+gtablecorrectionscorrections	CREATE TABLE corrections (id INTEGER PRIMARY KEY AUTOINCREMENT,host_id INTEGER NOT NULL REFERENCES hosts(id) ON DELETE CASCADE,fingerprint TEXT NOT NULL,classification TEXT)
+LSQLite format 3
+Itableuser_correctionsuser_corrections
+CREATE TABLE user_corrections (id INTEGER PRIMARY KEY AUTOINCREMENT,host_id INTEGER NOT NULL REFERENCES visited_hosts(id) ON DELETE CASCADE,fingerprint TEXT NOT NULL,classification TEXT,first_correction_time REAL NOT NULL)P
+{tablemetadatametadataCREATE TABLE metadata (key TEXT NOT NULL UNIQUE, value)/
+indexsqlite_autoindex_metadata_1metadata
+hhSQLite format 3
+Itableuser_correctionsuser_corrections
+CREATE TABLE user_corrections (id INTEGER PRIMARY KEY AUTOINCREMENT,host_id INTEGER NOT NULL REFERENCES visited_hosts(id) ON DELETE CASCADE,fingerprint TEXT NOT NULL,classification TEXT,first_correction_time REAL NOT NULL)
+Utablecorrectionscorrections	CREATE TABLE corrections (id INTEGER PRIMARY KEY AUTOINCREMENT,host_id INTEGER REFERENCES hosts(id) ON DELETE CASCADE,fingerprint TEXT NOT NULL,classification TEXT)
+CREATE TABLE sqlite_sequence(name,seq)
+Nw1{
+SSQLite format 3

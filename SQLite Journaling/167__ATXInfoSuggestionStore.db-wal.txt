@@ -1,0 +1,461 @@
+SQLite format 3
+}tabledismissRecordsdismissRecords
+CREATE TABLE dismissRecords (widgetBundleId TEXT, criterion TEXT, blockWidgetUntil INTEGER, blockCriterionUntil INTEGER)
+7tablesuggestionssuggestions
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID!
+	tablesuggestionssuggestions
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID!
+hSQLite format 3
+KtableproactiveStackRotationsproactiveStackRotations
+CREATE TABLE proactiveStackRotations (suggestionId TEXT PRIMARY KEY, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL) WITHOUT ROWID
+\#
+1tablesuggestionssuggestions
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, clientModelId TEXT, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID
+\#
+
+}tableproactiveStackRotationsproactiveStackRotations
+CREATE TABLE proactiveStackRotations (suggestionId TEXT PRIMARY KEY, criterion TEXT NOT NULL, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL) WITHOUT ROWID!
+qindexendDateIndexsuggestions
+CREATE INDEX endDateIndex ON suggestions (endDate)[
+yindexstartDateIndexsuggestions
+CREATE INDEX startDateIndex ON suggestions (startDate)
+FT+
+
+[tablesuggestionssuggestions
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, clientModelId TEXT, relevanceScore REAL, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWIDU
+uSQLite format 3
+AtabletimelineDonationstimelineDonations
+CREATE TABLE timelineDonations (timelineId TEXT NOT NULL, timestamp INTEGER NOT NULL, score REAL, duration REAL, PRIMARY KEY (timelineId, timestamp DESC))A
+indexsqlite_autoindex_timelineDonations_1timelineDonations
+ItableproactiveStackRotationsproactiveStackRotations
+CREATE TABLE proactiveStackRotations (suggestionId TEXT PRIMARY KEY, criterion TEXT NOT NULL, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, isStalenessRotation INTEGER NOT NULL, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL) WITHOUT ROWIDI
+:C?USQLite format 3
+tabletimelineDonationstimelineDonations
+CREATE TABLE timelineDonations (timelineId TEXT NOT NULL, timestamp INTEGER NOT NULL, score REAL, duration REAL, extensionBundleId TEXT, widgetKind TEXT, PRIMARY KEY (timelineId, timestamp DESC))
+CREATE TABLE proactiveStackRotations (suggestionId TEXT PRIMARY KEY, criterion TEXT NOT NULL, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, isStalenessRotation INTEGER NOT NULL, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL) WITHOUT ROWID
+QindexfuzzyLookUpIndextimelineDonationsCREATE INDEX fuzzyLookUpIndex ON timelineDonations (extensionBundleId, widgetKind, timestamp DESC)A
+otablewidgetEngagementswidgetEngagements	CREATE TABLE widgetEngagements (widgetUniqueId TEXT NOT NULL, extensionBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, size INTEGER NOT NULL, intentHash INTEGER, mostRecentDwell INTEGER, mostRecentTap INTEGER, PRIMARY KEY (widgetUniqueId))A
+
+indexsqlite_autoindex_widgetEngagements_1widgetEngagements
+!
+77|8
+
+CREATE TABLE timelineDonations (timelineId TEXT NOT NULL, timestamp INTEGER NOT NULL, score REAL, duration REAL, extensionBundleId TEXT, widgetKind TEXT, PRIMARY KEY (timelineId, timestamp DESC))
+qtableproactiveStackRotationsproactiveStackRotations
+CREATE TABLE proactiveStackRotations (suggestionId TEXT PRIMARY KEY, criterion TEXT NOT NULL, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, isStalenessRotation INTEGER NOT NULL, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL, clientModelId TEXT) WITHOUT ROWID
+3JSQLite format 3
+CREATE TABLE timelineDonations (timelineId TEXT NOT NULL, timestamp INTEGER NOT NULL, score REAL, duration REAL, extensionBundleId TEXT, widgetKind TEXT, widgetFamily INTEGER, containerBundleIdentifier TEXT, PRIMARY KEY (timelineId, timestamp DESC))
+'BskzySQLite format 3
+#tablesuggestionssuggestions
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, clientModelId TEXT, relevanceScore REAL, firstPassOfTimelineFilters INTEGER, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID
+ USQLite format 3
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, clientModelId TEXT, relevanceScore REAL, firstPassOfTimelineFilters INTEGER, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID
+gtabletimelineDonationstimelineDonations
+CREATE TABLE timelineDonations (timelineId TEXT NOT NULL, timestamp INTEGER NOT NULL, score REAL, duration REAL, extensionBundleId TEXT, widgetKind TEXT, widgetFamily INTEGER, containerBundleIdentifier TEXT, suggestionId TEXT, suggestionMappingReason INTEGER, PRIMARY KEY (timelineId, timestamp DESC))U
+gSQLite format 3
+WtableabuseControlOutcomesabuseControlOutcomesCREATE TABLE abuseControlOutcomes (suggestionId TEXT NOT NULL, timestamp INTEGER NOT NULL, outcome INTEGER, PRIMARY KEY (suggestionId, timestamp DESC)) WITHOUT ROWID
+]tablestackConfigurationHistorystackConfigurationHistory
+CREATE TABLE stackConfigurationHistory (widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, widgetFamily INTEGER NOT NULL, containerBundleIdentifier TEXT, timestamp INTEGER NOT NULL, countOfSmartStacksWithWidget INTEGER, countOfNonSmartStacksWithWidget INTEGER, countOfStandaloneWidgets INTEGER, countOfWidgetsWithUnknownStackKind INTEGER, PRIMARY KEY (widgetBundleId, widgetKind, widgetFamily, timestamp)) WITHOUT ROWID
+}SQLite format 3
+?tableproactiveStackRotationsproactiveStackRotations
+CREATE TABLE "proactiveStackRotations" (suggestionId TEXT, criterion TEXT NOT NULL, widgetBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, intentHash INTEGER, intent BLOB, isStalenessRotation INTEGER NOT NULL, rotationTimestamp INTEGER NOT NULL, relevancyDurationLimit INTEGER NOT NULL, coolDownTimeInterval INTEGER NOT NULL, clientModelId TEXT, PRIMARY KEY (suggestionId, isStalenessRotation)) WITHOUT ROWID
+CREATE TABLE suggestions (suggestionId TEXT NOT NULL, sourceId TEXT NOT NULL, data BLOB NOT NULL, criterion TEXT, appBundleIdentifier TEXT, widgetBundleIdentifier TEXT, widgetKind TEXT, layouts TEXT, intentIdentifier INT, startDate INT, endDate INT, lastUpdated INT, clientModelId TEXT, relevanceScore REAL, firstPassOfTimelineFilters INTEGER, PRIMARY KEY (suggestionId, sourceId)) WITHOUT ROWID	
+WtableabuseControlOutcomesabuseControlOutcomesCREATE TABLE abuseControlOutcomes (suggestionId TEXT NOT NULL, timestamp INTEGER NOT NULL, outcome INTEGER, PRIMARY KEY (suggestionId, timestamp DESC)) WITHOUT ROWID
+M\3
+
+M
+g%SQLite format 3
+5tablewidgetEngagementswidgetEngagements
+CREATE TABLE "widgetEngagements" (widgetUniqueId TEXT NOT NULL, date INTEGER NOT NULL, extensionBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, size INTEGER NOT NULL, intentHash INTEGER, engagementType INTEGER)
+tablewidgetSuggestionDismisswidgetSuggestionDismiss	CREATE TABLE widgetSuggestionDismiss (extensionBundleId TEXT NOT NULL, kind TEXT NOT NULL, intentHash INTEGER, date REAL)!
+WtableabuseControlOutcomesabuseControlOutcomesCREATE TABLE abuseControlOutcomes (suggestionId TEXT NOT NULL, timestamp INTEGER NOT NULL, outcome INTEGER, PRIMARY KEY (suggestionId, timestamp DESC)) WITHOUT ROWID
+
+mindexfuzzyLookUpIndextimelineDonations
+CREATE INDEX fuzzyLookUpIndex ON timelineDonations (extensionBundleId, widgetKind, widgetFamily, timestamp DESC)
+CREATE TABLE "widgetEngagements" (widgetUniqueId TEXT NOT NULL, date INTEGER NOT NULL, extensionBundleId TEXT NOT NULL, widgetKind TEXT NOT NULL, size INTEGER NOT NULL, intentHash INTEGER, engagementType INTEGER)
+
+tabletimelineDonationstimelineDonations
+CREATE TABLE "timelineDonations" (timestamp INTEGER NOT NULL, score REAL, duration REAL, containerBundleIdentifier TEXT, extensionBundleId TEXT, widgetKind TEXT, widgetFamily INTEGER, intentHash INTEGER, suggestionId TEXT, suggestionMappingReason INTEGER)U
+com.apple.proactive.info.fallback.com.apple.news.widget.todaycom.apple.proactive.FallbackInfoHeuristicbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+\protobufDataV$class
+WNS.dataO
+com.apple.news
+com.apple.news.widget
+today X*=com.apple.proactive.info.fallback.com.apple.news.widget.today2
+atx_glanceable_informationJ)com.apple.proactive.FallbackInfoHeuristicP
+ATXFallbackInfoNews
+Z$classnameX$classes]NSMutableData
+]NSMutableDataVNSDataXNSObject
+ATXInfoSuggestion
+ATXFallbackInfoNewscom.apple.newscom.apple.news.widgettoday88*YA
+:atx_glanceable_information
+f9/=/
+com.apple.proactive.info.fallback.com.apple.weather.widget.com.apple.weathercom.apple.proactive.FallbackInfoHeuristicbplist00
+com.apple.weather
+com.apple.weather.widget
+com.apple.weather X*Lcom.apple.proactive.info.fallback.com.apple.weather.widget.com.apple.weather2
+ATXFallbackInfoWeather
+ATXFallbackInfoWeathercom.apple.weathercom.apple.weather.widgetcom.apple.weather88*YA
+_*YA
+com.apple.proactive.info.fallback.com.apple.news.widget.todaycom.apple.proactive.FallbackInfoHeuristic~
+%_*YA
+com.apple.proactive.info.fallback.com.apple.weather.widget.com.apple.weathercom.apple.proactive.FallbackInfoHeuristic
+%_*Z
+	com.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+Zcom.apple.mobileslideshowcom.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+Zcom.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+com.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+com.apple.mobileslideshowcom.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+ycom.apple.mobileslideshowcom.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+@WI@
+
+
+<!m
+ycom.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+Q!~
+
+ATXFallbackInfoNewscom.apple.newscom.apple.news.widgettoday88*Y
+atx_glanceable_information
+ATXFallbackInfoWeathercom.apple.weathercom.apple.weather.widgetcom.apple.weather88*Y
+|zi
+
+%_*Y
+%_*[
+w."Q
+
+
+:
+
+|
+
+*3
+
+fHVm
+
+.L
+
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*]Q
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*\
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*\b
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*[
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*Z
+3c[	
+	*]Qcom.apple.mobilecalcom.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+ com.apple.mobilecalcom.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+	*\b
+com.apple.mobilecalcom.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+1com.apple.mobilecalcom.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+com.apple.tips.TipsSwiftcom.apple.tips*Z
+)=)	
+<com.apple.tipscom.apple.tips.TipsSwiftcom.apple.tips
+com.apple.weather.widgetcom.apple.weather*Z
+/=/	
+com.apple.weathercom.apple.weather.widgetcom.apple.weather"
+pcom.apple.weathercom.apple.weather.widgetcom.apple.weather"
+Bcom.apple.weathercom.apple.weather.widgetcom.apple.weather"
+com.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+Icom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+9DCA2852-7CD7-45B1-9829-9714BCEF4D35*Z
+0B321DDC-73C9-4A5E-AA02-E7DD9E2D7109*Z
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+D53F4793-698E-4F75-A899-42F4EF98447F*Z
+com.apple.weather.widgetcom.apple.weather"
+0CB93924-4D05-4BEB-888F-3D19B9115A36*Z
+com.apple.news.widgettoday
+T~z8@
+
+C4F8B54E-5C4A-4615-B5BB-9CB5BBBB4D0E*Z
+35F1196C-81F5-4CAF-8726-DE75B055BFC4*Z
+com.apple.tips.TipsSwiftcom.apple.tips
+2A928C21-0A3A-4E2E-9108-4BAF349952E1*Z
+com.apple.BatteryCenter.BatteryAvocadocom.apple.BatteryCenter.BatteryAvocado
+CD62CDB9-4687-4F42-A6F7-22413A3A089E*Z
+com.apple.stocks.widgetoverview
+F96337FA-0E51-4892-AE45-3D9964A30893*Z
+<
+|
+
+*ZPcom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+5E8935EA-F7AF-414A-AE14-5A50AF17272D
+\[)M)
+5E8935EA-F7AF-414A-AE14-5A50AF17272Dcom.apple.Maps.GeneralMapsWidget.com.apple.Maps.mediumbplist00
+com.apple.Maps
+ com.apple.Maps.GeneralMapsWidget
+com.apple.Maps 
+*$5E8935EA-F7AF-414A-AE14-5A50AF17272D2
+atx_timeline_donationJ6com.apple.Maps.GeneralMapsWidget.com.apple.Maps.mediumP
+Ar'ATXTimelineEntryImportantTimelineUpdate
+ATXTimelineEntryImportantTimelineUpdatecom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps16*ZP
+*ZQatx_timeline_donation
+Uy*ZP5E8935EA-F7AF-414A-AE14-5A50AF17272Dcom.apple.Maps.GeneralMapsWidget.com.apple.Maps.mediumo
+5E8935EA-F7AF-414A-AE14-5A50AF17272Dcom.apple.Maps.GeneralMapsWidget.com.apple.Maps.mediumo
+5E8935EA-F7AF-414A-AE14-5A50AF17272D*ZR
+ATXTimelineEntryImportantTimelineUpdatecom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps16*ZP*[
+*ZRatx_timeline_donation
+Uy*[
+Tcom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+AiQ-b*I-
+ATXTimelineEntryImportantTimelineUpdatecom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps16*ZP*Z
+Uatx_timeline_donation
+Uy*Z
+T5E8935EA-F7AF-414A-AE14-5A50AF17272Dcom.apple.Maps.GeneralMapsWidget.com.apple.Maps.mediumo
+5E8935EA-F7AF-414A-AE14-5A50AF17272D*Z
+`com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+h
+|
+
+s2|f
+
+^=^Y
+)com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+*com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+6H-
+
+y*2
+
+*BP
+
+-ed
+
+h9"<
+	9DCA2852-7CD7-45B1-9829-9714BCEF4D35*Z
+
+u
+"	
+	|	)
+
+
+2
+	V	!
+F&
+ucom.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+2com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+Bcom.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+Bcom.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget"W
+Bcom.apple.weather.widgetcom.apple.weather"
+Bcom.apple.news.widgettoday
+Bcom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+Bcom.apple.tips.TipsSwiftcom.apple.tips
+JSQLite format 3
+_vJY
+
+Bcom.apple.BatteryCenter.BatteryAvocadocom.apple.BatteryCenter.BatteryAvocado
+Bcom.apple.stocks.widgetoverview
+Bcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+(com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+AuD
+
+xYSQLite format 3
+AhmV
+
+	
+{
+
+AsvY
+K.gm
+9?O
+
+O\>73
+
+IU
+
+[2prJ
+e[
+Kd
+hv
+
+2
+
+
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*]QVd
+F&
+|
+
+F&
+
+gU
+
+	v
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*]Qfd
+3	V	!
+(&)X@C
+F&
+R\!
+
+Bb?l
+'dSQLite format 3
+
+w
+<
+
+$'c
+
+&com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+&0s
+
+/com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+-{SQLite format 3
+/'
+U
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*]Qf
+9com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+Y$
+
+	|	G	
+7com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+`com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+$]^
+L9:
+ATXFallbackInfoNewscom.apple.newscom.apple.news.widgettoday88*[
+ATXFallbackInfoWeathercom.apple.weathercom.apple.weather.widgetcom.apple.weather88*[
+_*\b
+%_*\b
+	
+'	
+	*[.
+*[3@com.apple.ScreenTimeWidgetApplication
+H
+=/	
+com.apple.weather.widgetcom.apple.weather*[3@com.apple.weather
+f-!
+B
+=)	
+com.apple.tips.TipsSwiftcom.apple.tips*[3@com.apple.tipsH
+=/	
+s
+c[	
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*[3@com.apple.mobilecalB
+=)	
+?T[
+
+*[3@com.apple.newss
+c[	
+*[3@com.apple.mobileslideshow7
+7
+[
+YY
+*[3@
+Z
+YY	
+com.apple.BatteryCenter.BatteryAvocadocom.apple.BatteryCenter.BatteryAvocado*[3@[
+YY
+*[3@com.apple.stocksZ
+YY	
+
+Oi
+K
+M)
+*[3@com.apple.Maps>
+;
+	*[Jccom.apple.mobileslideshowcom.apple.mobileslideshow.PhotosReliveWidgetcom.apple.mobileslideshow.PhotosReliveWidget
+*[Jc
+*[f'
+*[f'com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+	*[j
+"-/=/
+com.apple.proactive.info.weather.wakeUpcom.apple.proactive.ViewWeatherAfterWakeupHeuristicbplist00
+com.apple.weather X*'com.apple.proactive.info.weather.wakeUp2
+atx_glanceable_informationJ3com.apple.proactive.ViewWeatherAfterWakeupHeuristicP
+ATXWeatherWakeUp
+ATXWeatherWakeUpcom.apple.weathercom.apple.weather.widgetcom.apple.weather88*[l
+[s*[l
+com.apple.proactive.info.weather.wakeUpcom.apple.proactive.ViewWeatherAfterWakeupHeuristico
+[s*[z
+; %9
+*[n:
+*[n:com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+*[ok
+	*[okcom.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+*[ou
+*[oucom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+2!!7
+	*[r
+Oj=
+
+com.apple.mobilecal.CalendarWidgetExtensioncom.apple.CalendarWidget.CalendarWidget*]Qfq
+W^Oo
+
+
+G
+*[tA
+*[tAcom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+*[v@
+*[v@com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+	*[w
+oa%
+
+9EB
+
+com.apple.proactive.info.weather.wakeUp*[z
+
+m
+2
+F
+
+n
+3	
+	G	
+pqs+
+
++
+T
+	*[{
+*[|9
+*[|9com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+*[}s
+*[}scom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+Jcom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+`+ }
+
+com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.Scq
+~r<s
+
+Ai5B
+ATXWeatherWakeUpcom.apple.weathercom.apple.weather.widgetcom.apple.weather88*[
+[s*[
+8uV
+
+ com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+
+l
+0
+|@
+
+d
+)	
+	x	=	
+com.apple.ScreenTimeWidgetApplication.ScreenTr
+tL;
+
+	com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+E$5G
+
+com.apple.proactive.info.weather.wakeUp*[
+b%SQLite format 3
+
+}
+H
+
+	t	?	
+
+<com.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+TL/)
+ncom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+rp{f
+
+fcom.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+cN,:
+Acom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+*\ y
+*\ ycom.apple.Mapscom.apple.Maps.GeneralMapsWidgetcom.apple.Maps
+	*\"com.apple.ScreenTimeWidgetApplicationcom.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtensioncom.apple.ScreenTimeWidgetApplication
+1]6M

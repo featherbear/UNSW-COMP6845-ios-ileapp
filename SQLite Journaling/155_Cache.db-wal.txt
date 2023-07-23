@@ -1,0 +1,158 @@
+
+R9http://captive.apple.com/2023-07-09 11:04:08
+?	http://captive.apple.com/
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+&'
+_CFURLStringType\_CFURLString
+http://captive.apple.com/#A
+ !"#$%\Content-Type_
+Access-Control-Allow-Origin]Last-ModifiedSAgeSViaWCDNUUID]Cache-ControlTDate^Content-LengthZConnectionX__hhaa__WX-CacheYtext/htmlQ*_
+Tue, 25 Oct 2022 18:02:05 GMTX22179723_
+8http/1.0 aupor1-edge-bx-004.ts.apple.com (acdn/87.14301)_
+0e1613ca3-61f8-4744-a2e3-7117cec03bfe-14158963474_
+max-age=31536000_
+Tue, 25 Oct 2022 18:02:05 GMTR69Zkeep-alive_
+
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIFpDb25uZWN0aW9uXENvbnRlbnQtVHlwZVdYLUNhY2hlXUxhc3QtTW9kaWZpZWRTQWdlU1ZpYVREYXRlV0NETlVVSUReQ29udGVudC1MZW5ndGhdQ2FjaGUtQ29udHJvbF8QG0FjY2Vzcy1Db250cm9sLUFsbG93LU9yaWdpbqENWmtlZXAtYWxpdmWhD1l0ZXh0L2h0bWyhEVloaXQtZnJlc2ihE18QHVR1ZSwgMjUgT2N0IDIwMjIgMTg6MDI6MDUgR01UoRVYMjIxNzk3MjOhF18QOGh0dHAvMS4wIGF1cG9yMS1lZGdlLWJ4LTAwNC50cy5hcHBsZS5jb20gKGFjZG4vODcuMTQzMDEpoRlfEB1UdWUsIDI1IE9jdCAyMDIyIDE4OjAyOjA1IEdNVKEbXxAwZTE2MTNjYTMtNjFmOC00NzQ0LWEyZTMtNzExN2NlYzAzYmZlLTE0MTU4OTYzNDc0oR1SNjmhH18QEG1heC1hZ2U9MzE1MzYwMDChIVEqAAgAHwAqADcAPwBNAFEAVQBaAGIAcQB/AJ0AnwCqAKwAtgC4AMIAxADkAOYA7wDxASwBLgFOAVABgwGFAYgBigGdAZ8AAAAAAAACAQAAAAAAAAAiAAAAAAAAAAAAAAAAAAABoQ==Yhit-fresh_
+ __CFURLResponseNullTokenString__Ytext/html
+http://captive.apple.com/#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au]gzip, deflate_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXWd6aXAsIGRlZmxhdGWhB1MqLyqhCVVlbi1hdQgPISg6PEpMUFIAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAWA==
+<HTML><HEAD><TITLE>Success</TITLE></HEAD><BODY>Success</BODY></HTML>
+
+3	2023-07-09 11:04:08
+https://assets.checkra.in/loader/config.json2023-07-09 11:04:10<
+https://assets.checkra.in/loader/config.json
++]63X
+cfurl_cache_response
+
+
+ !
+,https://assets.checkra.in/loader/config.json#A
+VServer\Content-TypeZConnection]Last-ModifiedX__hhaa__TDate]Accept-Ranges^Content-LengthTEtag_
+nginx/1.14.0 (Ubuntu)_
+application/jsonZkeep-alive_
+Thu, 29 Apr 2021 19:50:43 GMT_
+
+
+YnBsaXN0MDDYAQIDBAUGBwgJCw0PERMVF1ZTZXJ2ZXJcQ29udGVudC1UeXBlVEV0YWddTGFzdC1Nb2RpZmllZFREYXRlXUFjY2VwdC1SYW5nZXNeQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvbqEKXxAVbmdpbngvMS4xNC4wIChVYnVudHUpoQxfEBBhcHBsaWNhdGlvbi9qc29uoQ5eIjYwOGIwZTEzLTdkYSKhEF8QHVRodSwgMjkgQXByIDIwMjEgMTk6NTA6NDMgR01UoRJfEB1TdW4sIDA5IEp1bCAyMDIzIDExOjA0OjEwIEdNVKEUVWJ5dGVzoRZUMjAxMKEYWmtlZXAtYWxpdmUACAAZACAALQAyAEAARQBTAGIAbQBvAIcAiQCcAJ4ArQCvAM8A0QDxAPMA+QD7AQABAgAAAAAAAAIBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAEN_
+Sun, 09 Jul 2023 11:04:10 GMTUbytesT2010^"608b0e13-7da"_
+ __CFURLResponseNullTokenString___
+application/json
+,https://assets.checkra.in/loader/config.json#@>
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+@{
+   "version" : 1,
+   "footer_notice" : null,
+   "bootstraps" : [
+      {
+         "bootstrap_signature" : {
+            "data" : "btQgqn4fp87BlfTp8XZpnFNMgQ4jHa4dOkDIipxJsLKXc2jfTv8vxmzH0C1ayCXq9NB+pra6Ro+oC11jGtx6AatwJvDnb2WMjNJPRDANAR1DHBpNDdQC7kD+EHJnhCXkTeVzRc0LtIC9nvhbI7riYOudWiIUzWi//OjGg3Po+djUc88qTONGB9wZrGZPDnUU1oM8uCDJMZP/7/bn39jsfg+Zr1JvAe0GI/CqDXzYD7aH6yittZn7zM7g+EANId1YT659K7lIDMKSbpcMaXHeYHZO6b/xGkOADbzxkojBPhCwB79gfEG9wlNFe7sPO+SvICmeVSZGNB0yWKK0qvYGEQ==",
+            "hash" : "4n/88EIz/bBNA03/dScC6499KIkhIghWa/MxwbYXt1JuqV0bU62kLsbBP7e+YdFk6HQzI18s0W+2X9rUtL7QYA=="
+         },
+         "install_repo" : "https://apt.bingner.com/",
+         "min_cf_version" : 1443,
+         "icon" : "https://assets.checkra.in/loader/cydia.png",
+         "install_package" : "cydia",
+         "bundle_identifier" : "com.saurik.Cydia",
+         "bootstrap_apps" : [
+            "/Applications/Cydia.app"
+         ],
+         "bootstrap_tar" : "https://assets.checkra.in/loader/ios/cydia/0d1e4d2daec4c4b528e918df6c20281d24a90950/cydia.tar.lzma",
+         "install_from_repo_uri" : "cydia://url/https://cydia.saurik.com/api/share#?source=${REPO}&package=${PACKAGE}",
+         "bootstrap_status" : "https://assets.checkra.in/loader/ios/cydia/0d1e4d2daec4c4b528e918df6c20281d24a90950/cydia.status",
+         "label" : "Cydia"
+      }
+   ],
+   "min_loader_version" : 1,
+   "core_bootstrap_signature" : {
+      "data" : "ii5x87M8nYPG9FjGmg/6ABSx/WDT1F8ji8XQFpsVd6I9bzvjHD1Ifr+5b+QgVL5fLBoOY+Qyo6EGG6iqZlylFMLxDQXaT2c10gh9rbrX1Vs9y1hh7BUw1EOlXeGmdz5XbSVhRUaIOXYAEn1/HCPy11OBeqLqvkXJ9CIU5MJtr8BHw9+41d//8vUjDKc0+tYzkQDkj/S4wx6pTkZG8IGAHHZQFYteqlgrj1LzuuBuCYaXe4NxpLqg2GeyguGPRONYCvZcyTLDY2inhFuEkxxWujfZsk3rF1H9A4JMqsaqMwVTk39Jm+OWV6FmMRPJt7ysi16QvLcDAWxyWm00mvAJEg==",
+      "hash" : "dlZcAdjWSrBUWe0JQ2Zig8TCMODzGVTKa6I1kC1weOerpGS5/QqQizW18eseqKtroipzjumYqvZ6eSm2PSLiaw=="
+   },
+   "core_bootstrap_tar" : "https://assets.checkra.in/loader/ios/core/3bda4c4ddb50d7c89eec6260f42f7ba91535de64/strap.tar.lzma"
+}
+J
+2023-07-09 11:04:10
++`|H
++ksh
+TncSQLite format 3
+
+#u
+indexreceiver_data_indexcfurl_cache_receiver_dataCREATE INDEX receiver_data_index ON cfurl_cache_receiver_data(entry_ID)t	
+indexproto_props_indexcfurl_cache_blob_dataCREATE INDEX proto_props_index ON cfurl_cache_blob_data(entry_ID)r
+indextime_stamp_indexcfurl_cache_response
+CREATE INDEX time_stamp_index ON cfurl_cache_response(time_stamp)u
+indexrequest_key_indexcfurl_cache_response	CREATE INDEX request_key_index ON cfurl_cache_response(request_key)+
+etablecfurl_cache_receiver_datacfurl_cache_receiver_data
+CREATE TABLE cfurl_cache_receiver_data(entry_ID INTEGER PRIMARY KEY, isDataOnFS INTEGER, receiver_data BLOB)I
+1tablecfurl_cache_blob_datacfurl_cache_blob_data
+CREATE TABLE cfurl_cache_blob_data(entry_ID INTEGER PRIMARY KEY, response_object BLOB, request_object BLOB, 			  proto_props BLOB, user_info BLOB)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+gtablecfurl_cache_responsecfurl_cache_response
+CREATE TABLE cfurl_cache_response(entry_ID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 	 version INTEGER, hash_value INTEGER, storage_policy INTEGER, request_key TEXT UNIQUE, 	 time_stamp NOT NULL DEFAULT CURRENT_TIMESTAMP, partition TEXT)G
+indexsqlite_autoindex_cfurl_cache_response_2cfurl_cache_response
+indexsqlite_autoindex_cfurl_cache_response_1cfurl_cache_response
+https://assets.checkra.in/loader/cydia.png2023-07-09 11:04:10O
+https://assets.checkra.in/loader/cydia.png
+\jhx
+
+H0V`
+p<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.14.0 (Ubuntu)</center>
+</body>
+</html>
+_
+
+
+
+*https://assets.checkra.in/loader/cydia.png#A
+ZConnection\Content-TypeVServerX__hhaa__TDate_
+Content-Encoding_
+Transfer-EncodingZkeep-aliveYtext/html_
+T
+
+YnBsaXN0MDDWAQIDBAUGBwkLDQ8RXxAQQ29udGVudC1FbmNvZGluZ18QEVRyYW5zZmVyLUVuY29kaW5nXENvbnRlbnQtVHlwZVpDb25uZWN0aW9uVlNlcnZlclREYXRloQhUZ3ppcKEKWElkZW50aXR5oQxZdGV4dC9odG1soQ5aa2VlcC1hbGl2ZaEQXxAVbmdpbngvMS4xNC4wIChVYnVudHUpoRJfEB1TdW4sIDA5IEp1bCAyMDIzIDExOjA0OjEwIEdNVAgVKDxJVFtgYmdpcnR+gIuNpacAAAAAAAABAQAAAAAAAAATAAAAAAAAAAAAAAAAAAAAxw==_
+Sun, 09 Jul 2023 11:04:10 GMTTgzipXIdentity
+Ytext/html
+*https://assets.checkra.in/loader/cydia.png#@>
+https://assets.checkra.in/loader/config.json2023-07-09 11:04:10
+
+
+&
+ !"#$%\Content-Type]Last-Modified_
+Access-Control-Allow-OriginSAgeSViaWCDNUUID]Cache-ControlTDate^Content-LengthZConnectionX__hhaa__WX-CacheYtext/html_
+Tue, 25 Oct 2022 18:02:05 GMTQ*X22179723_
+
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIF8QG0FjY2Vzcy1Db250cm9sLUFsbG93LU9yaWdpblxDb250ZW50LVR5cGVXWC1DYWNoZV1MYXN0LU1vZGlmaWVkU1ZpYVNBZ2VURGF0ZVdDRE5VVUlEXkNvbnRlbnQtTGVuZ3RoXUNhY2hlLUNvbnRyb2xaQ29ubmVjdGlvbqENUSqhD1l0ZXh0L2h0bWyhEVloaXQtZnJlc2ihE18QHVR1ZSwgMjUgT2N0IDIwMjIgMTg6MDI6MDUgR01UoRVfEDhodHRwLzEuMCBhdXBvcjEtZWRnZS1ieC0wMDQudHMuYXBwbGUuY29tIChhY2RuLzg3LjE0MzAxKaEXWDIyMTc5NzIzoRlfEB1UdWUsIDI1IE9jdCAyMDIyIDE4OjAyOjA1IEdNVKEbXxAwZTE2MTNjYTMtNjFmOC00NzQ0LWEyZTMtNzExN2NlYzAzYmZlLTE0MTU4OTYzNDc0oR1SNjmhH18QEG1heC1hZ2U9MzE1MzYwMDChIVprZWVwLWFsaXZlAAgAHwA9AEoAUgBgAGQAaABtAHUAhACSAJ0AnwChAKMArQCvALkAuwDbAN0BGAEaASMBJQFFAUcBegF8AX8BgQGUAZYAAAAAAAACAQAAAAAAAAAiAAAAAAAAAAAAAAAAAAABoQ==Yhit-fresh_
+ __CFURLResponseNullTokenString__
+https://assets.checkra.in/loader/cydia.png2023-07-09 11:04:10
+https://assets.checkra.in/loader/config.json2023-07-09 11:04:108
+
+
+YnBsaXN0MDDYAQIDBAUGBwgJCw0PERMVF1ZTZXJ2ZXJcQ29udGVudC1UeXBlVEV0YWddTGFzdC1Nb2RpZmllZFREYXRlXUFjY2VwdC1SYW5nZXNeQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvbqEKXxAVbmdpbngvMS4xNC4wIChVYnVudHUpoQxfEBBhcHBsaWNhdGlvbi9qc29uoQ5eIjYwOGIwZTEzLTdkYSKhEF8QHVRodSwgMjkgQXByIDIwMjEgMTk6NTA6NDMgR01UoRJfEB1Nb24sIDEwIEp1bCAyMDIzIDEwOjQ3OjA2IEdNVKEUVWJ5dGVzoRZUMjAxMKEYWmtlZXAtYWxpdmUACAAZACAALQAyAEAARQBTAGIAbQBvAIcAiQCcAJ4ArQCvAM8A0QDxAPMA+QD7AQABAgAAAAAAAAIBAAAAAAAAABkAAAAAAAAAAAAAAAAAAAEN_
+Mon, 10 Jul 2023 10:47:06 GMTUbytesT2010^"608b0e13-7da"_
+https://assets.checkra.in/loader/cydia.png2023-07-09 11:04:10K
+T
+
+YnBsaXN0MDDWAQIDBAUGBwkLDQ8RXxAQQ29udGVudC1FbmNvZGluZ18QEVRyYW5zZmVyLUVuY29kaW5nXENvbnRlbnQtVHlwZVpDb25uZWN0aW9uVlNlcnZlclREYXRloQhUZ3ppcKEKWElkZW50aXR5oQxZdGV4dC9odG1soQ5aa2VlcC1hbGl2ZaEQXxAVbmdpbngvMS4xNC4wIChVYnVudHUpoRJfEB1Nb24sIDEwIEp1bCAyMDIzIDEwOjQ3OjA2IEdNVAgVKDxJVFtgYmdpcnR+gIuNpacAAAAAAAABAQAAAAAAAAATAAAAAAAAAAAAAAAAAAAAxw==_
+Mon, 10 Jul 2023 10:47:06 GMTTgzipXIdentity

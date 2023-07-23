@@ -1,0 +1,765 @@
+StepCountHistory
+)	MobilityWalkingBoutHistory
+StepC
+MobilityWalkingBoutHistory
+NatalieHistory/
+
+|
+n
+`
+R
+D
+6
+(
+
+rdVH:,
+vhZL>0"
+
+z
+l
+^
+P
+B
+4
+&
+
+	~	p	b	T	F	8	*	
+"/
+
+.\U1
+.W5
+Z)
+
+.8z!
+.3Z
+E&
+
+..:
+A%
+
+,C"
+
+.[Fhk
+.V%
+#
+
+
+#
+
+#
+
+#	
+
+5C\
+
+Bn	A
+
+T1r
+
+JP<
+
+=8`k
+
+}M
+
+
+B0'^
+
+h 
+
+
+bj
+
+
+%
+y
+
+X
+x
+
+
+
+c
+7
+
+[/
+S'
+
+
+w
+K
+
+	n	B	
+.[Fhk?
+-f,A
+-f#6
+-f!!K
+-doV8
+-dds
+-dY>F
+-dR	Wz
+-d61
+-cIN
+-cEw
+-c<-
+-c9uBI
+-c)"
+-c
+okh
+-bb!
+-b`^
+-b,[E
+-aXl
+-aJ,
+-`z!
+-`vI,<
+-`iz
+-`Jml
+-`H/
+-`8.7a
+-_tm
+-_fXD
+-_ZV
+-_PjCt
+-^}9~
+-^y7
+-^pBEI
+-^n,;
+-^m
+mr
+-^`@
+-^T<
+-^-U
+-^%~
+-^ 
+
+-]{yc
+-]w&
+-]f-
+-]Z~r`
+.nk
+.a":
+.V?$~
+.<(
+.0&5Z
+
+^
+<
+
+rP.
+
+eD"
+
+{
+Y
+8
+
+		o	M	,	
+
+.V?$~@
+.0&5Z@
+[QzG
+QQJ%
+bH-@
+\	mL3
+X@~hyzQF
+^n@x
+-G@w
+@l*HXy=
+@VR=!
+-dR	Wz@
+3tableWorkloadCalibratorHistoryWorkloadCal
+3tableWorkloadCalibratorHistoryWorkloadCalibratorHistory
+CREATE TABLE WorkloadCalibratorHistory (id INTEGER PRIMARY KEY, activityType INTEGER, valueAverage FLOAT, standardDeviation FLOAT, startTime FLOAT)-
+CindexVO2MaxCloudKitSyncEngineMetadataIndexVO2MaxCloudKitSyncEngineMetadata
+CREATE INDEX VO2MaxCloudKitSyncEngineMetadataIndex ON VO2MaxCloudKitSyncEngineMetadata (id)W
+!tableVO2MaxCloudKitSyncEngineMetadataVO2MaxCloudKitSyncEngineMetadata
+CREATE TABLE VO2MaxCloudKitSyncEngineMetadata (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, lastUpdateTime FLOAT, metadata BLOB)
+1indexMaxMetsProcessingHistoryIndexMaxMetsProcessingHistory
+CREATE INDEX MaxMetsProcessingHistoryIndex ON MaxMetsProcessingHistory (startTime)N
+/tableMaxMetsProcessingHistoryMaxMetsProcessingHistory
+CREATE TABLE MaxMetsProcessingHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, endTime FLOAT, maxMets FLOAT, lastUpdateTime FLOAT)
+%indexExerciseMinuteHistoryIndexExerciseMinuteHistory
+CREATE INDEX ExerciseMinuteHistoryIndex ON ExerciseMinuteHistory (startTime)
+AtableExerciseMinuteHistoryExerciseMinuteHistory
+CREATE TABLE ExerciseMinuteHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT)l
+	indexNatalieHistoryIndexNatalieHistory
+CREATE INDEX NatalieHistoryIndex ON NatalieHistory (startTime)
+atableNatalieHistoryNatalieHistory
+CREATE TABLE NatalieHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, activityType INTEGER, isStanding INTEGER, mets FLOAT, natalies INTEGER, basalNatalies INTEGER, overrideSet INTEGER, truthMets FLOAT, sessionUUID TEXT)|
+
+indexMotionStateHistoryIndexMotionStateHistory
+CREATE INDEX MotionStateHistoryIndex ON MotionStateHistory (startTime)
+3tableMotionStateHistoryMotionStateHistory
+CREATE TABLE MotionStateHistory (id INTEGER PRIMARY KEY, startTime FLOAT, timestamp FLOAT, type INTEGER, confidence INTEGER, mounted INTEGER, mountedConfidence INTEGER, turn INTEGER, isVehicular INTEGER, isMoving INTEGER, vehicleExitState INTEGER, vehicularFlagsData INTEGER)t
+indexStrideCalHistoryIndexStrideCalHistory
+CREATE INDEX StrideCalHistoryIndex ON StrideCalHistory (startTime)
+tableStrideCalHistoryStrideCalHistoryCREATE TABLE StrideCalHistory (id INTEGER PRIMARY KEY, startTime FLOAT, pacebin INTEGER, kvalue FLOAT, kvalueTrack FLOAT, score FLOAT, endTime FLOAT, distance FLOAT, steps INTEGER, session INTEGER, speed FLOAT, percentGrade FLOAT, gpsSource INTEGER)t	
+indexStepCountHistoryIndexStepCountHistoryCREATE INDEX StepCountHistoryIndex ON StepCountHistory (startTime)
+tableStepCountHistoryStepCountHistory
+CREATE TABLE StepCountHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, timestamp FLOAT, count INTEGER, distance FLOAT, rawdistance FLOAT, floorsAscended INTEGER, floorsDescended INTEGER, pace FLOAT, activeTime FLOAT, firstStepTime FLOAT, pushCount INTEGER, workoutType INTEGER, elevationAscended INTEGER, elevationDescended INTEGER, distanceSource INTEGER, currentCadence FLOAT)t
+indexElevationHistoryIndexElevationHistory	CREATE INDEX ElevationHistoryIndex ON ElevationHistory (startTime)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)H
+CtableElevationHistoryElevationHistory
+CREATE TABLE ElevationHistory (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, endTime FLOAT, elevationAscended INTEGER, elevationDescended INTEGER)w
+indexDatabaseIdentifierIndexDatabaseIdentifier
+CREATE INDEX DatabaseIdentifierIndex ON DatabaseIdentifier (uuid)t
+tableDatabaseIdentifierDatabaseIdentifier
+CREATE TABLE DatabaseIdentifier (id INTEGER PRIMARY KEY, uuid TEXT){
+EtableTableInfoTableInfo
+CREATE TABLE TableInfo (TableName TEXT PRIMARY KEY, SoftwareVersion TEXT, SerialNumber TEXT)1
+indexsqlite_autoindex_TableInfo_1Table
+NatalieHistory1
+w1
+
+NatalieHistory2
+2n
+
+<.l
+NatalieHistory4
+[y
+
+NatalieHistory6
+(6
+
+lpF,
+NatalieHistory8
+NatalieHistory:
+4:
+
+m9
+
+NatalieHistory<
+3;
+
+NatalieHistory>
+w>
+
+NatalieHistory@
+EzH'
+
+NatalieHistoryB
+NatalieHistoryD
+yC
+
+*^Px|
+NatalieHistoryF
+y~F
+
+P6E
+
+{h{7
+NatalieHistoryH
+NatalieHistoryJ
+smI
+
+]?X
+
+NatalieHistoryL
+NatalieHistoryM
+)M
+
+NatalieHistoryN
+\kF>
+
+NatalieHistoryP
+a]]
+
+NatalieHistoryR
+pQ
+
+NatalieHistoryT
+cT
+
+NatalieHistoryV
+NatalieHistoryW
+zG|
+
+NatalieHistoryY
+[^m
+NatalieHistoryZ
+PZ
+
+SQLite format 3
+indexsqlite_autoindex_TableInfo_1TableInfo
+NatalieHistory\
+A
+W
+.
+
+	^	5	
+-W*6
+-Wy
+-VA%
+@
+
+
+-Up]
+-Uk=
+-UA#.
+-U:if
+-U)r
+-Ti0
+-R3.
+-K+.
+-G_K
+-GZ+
+-GU
+-G;l
+-G6Mj
+-G1-q
+3Z2c@
+-G,
+
+1h1h?
+n6K?
+$M$M?
+p[q?
+Q]0?
+-FEeYf
+-F@I
+	j	j?
+=		c	6	
+
+-aF
+-`frDo
+-`8W
+-`39
+-_Hh
+-_(9
+-_"w
+-_
+-^q%
+-^}9~?
+-^m6
+-^PgW)
+-^KG
+-]bW
+-]""
+d\
+
+C[
+
+NatalieHistory^
+NatalieHistory`
+cGH(
+NatalieHistoryb
+.x*Hc
+
+NatalieHistoryd
+M	{?
+M	{d
+
+NatalieHistoryf
+
+e
+
+NatalieHistoryg
+'n(
+
+NatalieHistoryh
+iDi
+
+&c2?
+&c2h
+
+NatalieHistoryj
+.j
+
+NatalieHistoryl
+
+l
+@
+
+NatalieHistoryn
+NatalieHistoryp
+u||c
+
+EC\
+
+}Y3
+
+NatalieHistoryr
+
+w
+j
+]
+P
+C
+6
+)
+
+sfYL?2%
+|obUH;.!
+
+x
+k
+^
+Q
+D
+7
+*
+
+	r	d	V	H	:	,	
+-\y5:
+-\YW:x
+-\A|
+-[`]
+-[ZqV
+-Z@iR
+-Z;J
+-Z-2
+-Yi8o
+-YJy
+%$~
+-Y!|
+E
+y
+-X|I
+-Xw*jLp
+-X]W
+Usjk
+o2e
+-W]q
+-WXRu
+-WS3Jv`
+-W/VN
+`"P
+KoeK
+shH
+ih-
+)e$+
+m+#)
+*9
+!
+<wh|
+d8
+nf?	
+10>	
+Q	{
+
+>b	y
+
+R8	x
+
+l	v
+
+=	u
+
+.	s
+
+|	r
+
+l	o
+
+t	n
+
+w1	m
+
+"@Df	h
+
+J	g
+
++I	^
+
+&	\
+
+E	Z
+
+`	T
+
+aG	R
+
+W	Q
+
+je	N
+
+T	M
+
+!	I
+
+P	H
+
+ )	G
+
+Sd	A
+
+H8	=
+
+@	;
+
+s&4	:
+
+		9
+
+w	8
+
+~N	6
+
+]	5
+
+?ik	0
+
+ '7	/
+
+"X	-
+
+#	,
+
+!	$
+
+N	!
+
+?
+5	
+II+	
+vix	
+"fs	
+C,B	
+e)*	
+>	
+
+
+dBYi
+iLMw
+Es4'
+O
+q
+
+}
+p
+
+r
+n
+
+6
+l
+
+p
+j
+
+E
+f
+
+&
+e
+
+W0
+c
+
+zU@:
+a
+
+u6Fd
+`
+
+>|
+_
+
+J_
+^
+
+T
+\
+
+F
+[
+
+N
+Z
+
+,4
+S
+
+>
+N
+
+$~
+M
+
+[G
+L
+
+$
+J
+
+c" 
+H
+
+	
+G
+
+3
+B
+
+s
+?
+
+{
+=
+
+PW
+;
+
+r
+7
+
+)
+6
+
+ 
+4
+
+Cv
+2
+
+F\
+1
+
+}
+0
+
+7
+/
+
+"j
++
+
+#~
+)
+
+JD
+'
+
+.I
+$
+
+s
+"
+
+k
+ 
+
+2sCy
+
+-T.}
+
+(5 o
+
+9
+
+
+
+39|	
+-CZ+	
+F
+r
+
+	h[6	
+[Bp
+	
+] V	
+`J(S	
++t"	
+l
+
+R
+
+D
+6
+(
+
+x q
+
+Vu;
+NatalieHistoryt
+d8
+dP5?
+Ec}?
+dP5t
+
+Ec}s
+
+1PB{
+NatalieHistoryv
+NatalieHistoryx
+\0
+|tq?
+*
+
+R
+|tqx
+
+?P#
+
+NatalieHistoryz
+Hz
+
++;~*
+NatalieHistory|
+.
+
+R
+{7{
+
+NatalieHistory~
+
+T
+(	
+W
+
+R
+rT?T
+NatalieHistory
+6T
+
+R
+	x	L
+	x	L	 
+a#B?
+a#B
+i
+
+R
+\Q
+
+R
+bV}B
+]E45
+Nn
+
+3h&	
+<
+
+R
+Wj}Ed
+^DYLyl
+Cn$&?
+g<) W
+Cn$&
+
+|
+n
+<)-
+
+
+|
+n
+`
+R
+'C|U
+
+ZL>0"
+_B4[
+
+|
+n
+`
+R
+D
+6
+sIA?
+sIA
+Snh#k
+

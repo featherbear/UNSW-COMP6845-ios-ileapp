@@ -1,0 +1,55 @@
+vEFE8A843-D31C-4DC2-B86F-0733ACE72E6Dbplist00
+	
+
+NSStoreModelVersionIdentifiers[NSStoreType_
+_NSAutoVacuumLevel_
+NSStoreModelVersionHashesDigest_
+8DMDEngineDatabaseFixedDigitalHealthUsageEventMetadataKey_
+NSStoreModelVersionHashes_
+NSPersistenceFrameworkVersion_
+ NSStoreModelVersionHashesVersion
+
+PVSQLiteQ2_
+Xa2oIDBLDhfag4EyVUw3VzME9MxpaWjN1nikJyqYbXp4cj6Sb+0dOCqcEgjgevX2XDivLlP2XKuwNTn10y+/Efg==	
+ !"#$%_
+DMDActivationPayloadMetadata_
+DMDAssetPayloadMetadata_
+DMDConfigurationPayloadMetadata_
+DMDCommandPayloadMetadata_
+DMDConfigurationSource_
+DMDDeclarationPayloadMetadata_
+DMDConfigurationOrganization_
+ DMDEventSubscriptionRegistration_
+DMDPayloadMetadataZDMDPayload_
+DMDSubscriptionEventO
+$UBK
+vS*Ze
+B<f:
+ [Jq
+^#co
+'4R\
+]fg3ow
+MUj2
+DMDSubscriptionEvent%
+
+DMDConfigurationPayloadMetadata
+DMDAssetPayloadMetadata
+DMDActivationPayloadMetadata
+DMDDeclarationPayloadMetadata
+DMDCommandPayloadMetadata
+DMDPayloadMetadata
+DMDPayload%
+DMDEventSubscriptionRegistration
+DMDConfigurationSource!
+	DMDConfigurationOrganization
+			7!!ScreenTime Managementscreentimescreentime
+	DMDConfigurationSource!
+W6wC
+	7!!
+ScreenTime Managementscreentimescreentime
+		7Ug
+ScreenTime Managementscreentime:com.apple.ScreenTimeAgentcom.apple.ScreenTimeAgent.organization-status
+Tl[S/
+SQLite format 3
+	7Ug
+SSQLite format 3

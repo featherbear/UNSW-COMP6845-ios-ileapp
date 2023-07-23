@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Bluetooth Other LE report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Bluetooth Other LE report</h1>
+                    <h6 class="animated fadeIn mb-3"></h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 65</h6><p class="lead">Bluetooth Other LE located at: R:\temp\private\var\containers\Shared\SystemGroup\50B7C3A7-0600-4177-9EE3-B21B2CA23CE4\Library\Database\com.apple.MobileBluetooth.ledevices.other.db</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Name</th><th class="th-sm">Address</th><th class="th-sm">UUID</th></tr></thead><tbody><tr><td></td><td>Random E2:38:8D:5C:45:EA</td><td>466E860E-5754-E275-E7C3-7879D535BAD4</td></tr><tr><td></td><td>Random E0:01:F7:54:78:08</td><td>4CF7645D-D2D6-D016-17D4-2F3359D4195D</td></tr><tr><td></td><td>Random CD:C5:B2:03:1A:2A</td><td>9848705F-4F52-A0EB-F062-73AD051D318D</td></tr><tr><td></td><td>Random EB:8D:BB:A6:D4:12</td><td>AE88C8E7-5A00-056F-5AEF-713906559BAF</td></tr><tr><td></td><td>Random DA:27:BE:BB:04:88</td><td>B77308A4-B274-8F5B-106E-830A7DA0DD66</td></tr><tr><td></td><td>Random E9:99:70:89:8B:0F</td><td>D7713DC3-BE0B-C9C8-A83D-B547343C2417</td></tr><tr><td></td><td>Random F2:85:27:C0:17:8E</td><td>0B50944B-9171-E0C4-ADDE-59DF4B0E81D0</td></tr><tr><td></td><td>Random CA:70:A1:09:98:45</td><td>22878F3E-297F-2C6B-6B5D-7F7F3BA08E01</td></tr><tr><td></td><td>Random F5:B5:C1:DC:D8:CA</td><td>4BF180B6-A81C-8860-0463-3CAA51E1E787</td></tr><tr><td></td><td>Random F3:16:55:8C:AF:06</td><td>67DC11BF-9899-E2B6-A06C-D479E61B9A42</td></tr><tr><td></td><td>Random E9:1F:7E:58:1D:19</td><td>6AD6FCE0-C5CE-81E2-B82D-AB594DD51843</td></tr><tr><td></td><td>Public CC:03:7B:58:77:E5</td><td>75A06D4A-8811-1527-CB3B-56950EF5E21A</td></tr><tr><td></td><td>Public 14:22:3B:21:93:29</td><td>7C6514F5-4425-DF70-7E58-88AA7BE91019</td></tr><tr><td></td><td>Random F6:34:AF:B1:E3:CD</td><td>90793979-F470-87FA-99E5-BE440A3A8D8D</td></tr><tr><td></td><td>Random EE:A1:93:A6:D7:C7</td><td>979BD667-CE4A-99F5-ED0A-C38547407A11</td></tr><tr><td></td><td>Random D1:1B:A9:4F:99:50</td><td>9F7E7749-07B7-11DF-4D31-7F38D4D37AB5</td></tr><tr><td></td><td>Random FB:3E:36:AE:3D:33</td><td>A2AD819D-695E-85AE-07BA-4764E012584D</td></tr><tr><td></td><td>Random CA:AA:72:4D:88:B9</td><td>BA5CDF23-B522-DF26-381D-E77C561C3AC1</td></tr><tr><td></td><td>Random D4:25:91:2A:58:C1</td><td>D7527086-944D-F1A5-4427-6856197E7AC2</td></tr><tr><td></td><td>Random FC:0D:BA:4F:A6:AC</td><td>FB9D5FC7-88D6-3356-8F6F-2008B75A8503</td></tr><tr><td></td><td>Random E5:7E:78:D9:21:0D</td><td>C6FD1E14-6109-DEA8-ED36-7BA1C239E08D</td></tr><tr><td></td><td>Random F8:0F:04:A5:AB:98</td><td>17D7C9CD-7AEB-C1EA-604C-1B201B453A79</td></tr><tr><td></td><td>Random C1:5A:C3:E1:2C:1F</td><td>E22B6D35-9D95-522D-A01B-A17B7E10D20E</td></tr><tr><td></td><td>Random FC:A6:DE:3B:08:0B</td><td>1F1222C0-9292-B924-6C68-04FC71C609D8</td></tr><tr><td></td><td>Random CD:2B:5F:21:FB:3E</td><td>38D57B86-3891-0ED8-1AED-FDE2BD62E19E</td></tr><tr><td></td><td>Random D9:DB:C9:3E:C0:FF</td><td>3BC3F696-498E-BEFC-3071-B3F115884047</td></tr><tr><td></td><td>Random C0:D8:30:28:4A:AB</td><td>5B63ABA0-6C10-FF09-0378-244D482DD6E5</td></tr><tr><td></td><td>Random FB:2A:C9:2E:ED:B5</td><td>B2825B4C-8878-015A-99DB-D6C78EC7FA83</td></tr><tr><td></td><td>Random E8:B8:61:D4:A6:9A</td><td>DD17E2C4-AF45-F07F-16A4-6A6CBCF302FB</td></tr><tr><td></td><td>Random DF:EB:BE:EF:04:0D</td><td>08D46FA5-7334-472E-D3E9-4EA8082B466A</td></tr><tr><td></td><td>Random CC:D2:83:06:C9:94</td><td>544ADC1F-46BA-D71E-5F21-8DE3D424B0E8</td></tr><tr><td></td><td>Random E2:42:D4:73:8E:48</td><td>DF5D9070-4C5D-48F5-15AC-355E47C5C294</td></tr><tr><td></td><td>Random E5:0B:AA:C2:5B:CD</td><td>F2DDD88B-82E4-92E9-B684-4A61BC8C19F7</td></tr><tr><td></td><td>Random EC:C6:D8:D9:85:A4</td><td>649BBF54-D866-4860-2D26-C81BC9ED3C71</td></tr><tr><td></td><td>Random D7:31:DF:4A:FA:E8</td><td>885AC4BA-E6F6-25C1-9009-F04DB25C6677</td></tr><tr><td></td><td>Random DB:A6:AD:3B:F6:A4</td><td>DE9DEEEF-A9E8-413D-64DE-32250100EE08</td></tr><tr><td></td><td>Random CE:51:57:11:2C:D7</td><td>463B0F15-0E43-AF97-D003-F5CFB7EBB7AD</td></tr><tr><td></td><td>Random E2:0D:0C:A5:EA:57</td><td>4C792718-EF6C-D54D-0F51-7FD110F1679F</td></tr><tr><td></td><td>Random D6:7F:7E:BB:A3:D4</td><td>5B014DC5-C062-F644-E4CB-08F149EABBBE</td></tr><tr><td></td><td>Random DE:C3:69:44:52:5F</td><td>87E9B078-146B-76C2-C386-FE592323FFB0</td></tr><tr><td></td><td>Random CB:90:25:C3:94:41</td><td>5563AA13-A16D-A6ED-E416-7AED5223883F</td></tr><tr><td></td><td>Random D3:83:5E:C9:A0:81</td><td>582AFE1F-2CBD-E0A3-6A7F-7EDD7FEC9587</td></tr><tr><td></td><td>Random E8:E8:28:4F:47:B2</td><td>E0C1A7DE-2430-7244-10BD-BF3D0A37DC0A</td></tr><tr><td></td><td>Random C3:9A:EC:8E:79:E5</td><td>11426D04-755A-A9FD-3727-9778C283408A</td></tr><tr><td></td><td>Random FA:29:A5:C8:28:8D</td><td>1C9E8B57-306F-389C-21D9-A285B1210C6F</td></tr><tr><td></td><td>Random DD:84:B6:C8:C9:6E</td><td>AEE706DD-ED8F-BBFF-FD5D-172D63F52B3B</td></tr><tr><td></td><td>Random D4:77:81:A8:7B:7B</td><td>747FBBA6-1BFE-009C-F49B-2B36E9F7CCDF</td></tr><tr><td></td><td>Random CA:E6:8C:5B:49:16</td><td>A159DBBA-79FF-D3F8-DA2E-5BBEAF15CABB</td></tr><tr><td></td><td>Random D9:B7:84:FD:F7:5E</td><td>293A15A1-423F-B68D-F7B9-AA46D34E0F9D</td></tr><tr><td></td><td>Random C5:CB:DD:13:9A:15</td><td>999D7CA6-EFFA-A0F1-F1F7-2E7336D4B5C3</td></tr><tr><td></td><td>Random CE:CD:18:9E:70:F1</td><td>BBF5ED92-BC5F-B6E2-7930-F0F7B8909B72</td></tr><tr><td></td><td>Random E1:44:3E:5E:12:18</td><td>072EE7A0-E574-3CE9-6F8E-85A6DB4ABEF3</td></tr><tr><td></td><td>Random DA:28:26:07:77:1F</td><td>1959CAE0-F31D-FA01-A529-7D0C3D88BAF5</td></tr><tr><td></td><td>Random FD:75:F5:F9:49:ED</td><td>3EBB5AD2-733F-AAA9-E115-4A4D93A36909</td></tr><tr><td></td><td>Random FC:7C:EB:B8:60:CA</td><td>6C1733D6-F898-3A24-937B-699EB9C8BC9C</td></tr><tr><td></td><td>Random E2:E9:BE:7C:77:D9</td><td>50FD5D2E-58D2-F07B-5532-3A4E431A48C6</td></tr><tr><td></td><td>Random E7:20:E0:FD:52:C0</td><td>5C3F82A9-590F-F63D-509F-8BCCA9F5CD8E</td></tr><tr><td></td><td>Random C5:BA:64:A6:C3:17</td><td>10112C70-C5E8-FA7A-1FF0-522F3F0FF188</td></tr><tr><td></td><td>Random F2:61:6B:DB:86:7D</td><td>A9F71FB6-48CF-0887-6717-369E9EF1A0C1</td></tr><tr><td></td><td>Random EE:30:06:C7:12:3D</td><td>C4583BD8-340B-02FC-972C-147D81B46356</td></tr><tr><td></td><td>Random F7:86:B6:0B:F7:FF</td><td>31255B3D-AED7-7E9C-4ECC-8BDAF80BB26F</td></tr><tr><td></td><td>Random D0:AE:2C:94:10:D2</td><td>476C28B9-1B36-E02C-F5F5-E2CB0D90B633</td></tr><tr><td></td><td>Random E3:D7:76:59:86:4F</td><td>51C5F939-A706-3E59-7BDD-0F925B80A3F1</td></tr><tr><td></td><td>Random CC:C0:A9:03:E3:37</td><td>5B580006-DFE2-B549-328A-34BA9D6CBBE1</td></tr><tr><td></td><td>Random E7:D7:0C:86:0A:72</td><td>D4576E58-9FD0-5933-3968-D8A98E60FFB6</td></tr></tbody><tfoot><tr><th>Name</th><th>Address</th><th>UUID</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

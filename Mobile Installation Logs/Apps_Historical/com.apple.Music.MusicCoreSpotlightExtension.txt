@@ -1,0 +1,2 @@
+2023-07-09 14:41:58 Data container moved com.apple.Music.MusicCoreSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/8DF51F2F-AF8D-43E6-800C-364A93F11746
+2023-07-08 23:20:25 Made container live com.apple.Music.MusicCoreSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/47C1659C-F221-4079-9E8D-5F0BD1E01DC2

@@ -1,0 +1,73 @@
+SQLite format 3
+Qindexix_lastFeaturizations_sessionDescriptorIdlastFeaturizations
+CREATE INDEX ix_lastFeaturizations_sessionDescriptorId ON lastFeaturizations (sessionDescriptorId)
+QtablelastFeaturizationslastFeaturizations
+CREATE TABLE lastFeaturizations ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, sessionDescriptorId integer NOT NULL, transformer blob, FOREIGN KEY (sessionDescriptorId) REFERENCES sessionsDescriptors (id) ON DELETE CASCADE )
+%indexix_sessionsDomainIds_sessionIdsessionsDomainIds
+CREATE INDEX ix_sessionsDomainIds_sessionId ON sessionsDomainIds (sessionId)1
+
+gindexix_sessionsDomainIds_bundleId_domainIdsessionsDomainIds
+CREATE INDEX ix_sessionsDomainIds_bundleId_domainId ON sessionsDomainIds (bundleIdentifier, domainIdentifier)
+indexix_sessionsItemIds_sessionIdsessionsItemIds
+CREATE INDEX ix_sessionsItemIds_sessionId ON sessionsItemIds (sessionId)#
+Windexix_sessionsItemIds_bundleId_itemIdsessionsItemIdsCREATE INDEX ix_sessionsItemIds_bundleId_itemId ON sessionsItemIds (bundleIdentifier, itemIdentifier)
+1indexix_sessions_sessionDescriptorIdsessionsCREATE INDEX ix_sessions_sessionDescriptorId ON sessions (sessionDescriptorId ASC)
+'tablesessionssessions
+CREATE TABLE sessions ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, creationTimestamp real NOT NULL, sessionDescriptorId integer NOT NULL, label integer NOT NULL, covariatesLength integer NOT NULL, covariatesIndices blob, covariatesValues blob, isAppleInternal integer(1) NOT NULL DEFAULT 0, source blob, FOREIGN KEY (sessionDescriptorId) REFERENCES sessionsDescriptors (id) ON DELETE CASCADE )7
+gindexix_sessionsDescriptors_name_version_localesessionsDescriptors	CREATE UNIQUE INDEX ix_sessionsDescriptors_name_version_locale ON sessionsDescriptors (name, version, locale)S
+MtablesessionsDescriptorssessionsDescriptors
+CREATE TABLE sessionsDescriptors ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, name char(128) NOT NULL, version char(128) NOT NULL, locale char(5) NOT NULL ).
+tablereceivedPlansreceivedPlans
+CREATE TABLE receivedPlans ( planId char(128) PRIMARY KEY NOT NULL, modificationTimestamp real NOT NULL, serializedPlan blob NOT NULL )9
+indexsqlite_autoindex_receivedPlans_1receivedPlans
+tablesessionsItemIdssessionsItemIds
+CREATE TABLE sessionsItemIds ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, sessionId integer NOT NULL, itemIdentifier char(128) NOT NULL, bundleIdentifier char(128), lastUsed real NOT NULL DEFAULT 0, timesAccessed integer NOT NULL DEFAULT 0, FOREIGN KEY (sessionId) REFERENCES sessions (id) ON DELETE CASCADE )P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+otablesessionsDomainIdssessionsDomainIds
+CREATE TABLE sessionsDomainIds ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, sessionId integer NOT NULL, domainIdentifier char(128) NOT NULL, bundleIdentifier char(128), FOREIGN KEY (sessionId) REFERENCES sessions (id) ON DELETE CASCADE )\
+utableintegrityCheckintegrityCheck
+CREATE TABLE integrityCheck (inconsequential STRING)
+#
+]R
+#
+]e
+*]	
+
+#
+][}
+#
+]8
+#
+]#o
+#
+],
+CREATE INDEX ix_sessionsDomainIds_sessionId ON sessionsDomainIds (sessionId)1
+indexix_sessionsItemIds_sessionIdsessionsItemIds
+CREATE INDEX ix_sessionsItemIds_sessionId ON sessionsItemIds (sessionId)#
+Windexix_sessionsItemIds_bundleId_itemIdsessionsItemIds
+CREATE INDEX ix_sessionsItemIds_bundleId_itemId ON sessionsItemIds (bundleIdentifier, itemIdentifier)
+1indexix_sessions_sessionDescriptorIdsessionsCREATE INDEX ix_sessions_sessionDescriptorId ON sessions (sessionDescriptorId ASC)7
+
+gindexix_sessionsDescriptors_name_version_localesessionsDescriptorsCREATE UNIQUE INDEX ix_sessionsDescriptors_name_version_locale ON sessionsDescriptors (name, version, locale)
+QtablelastFeaturizationslastFeaturizations
+CREATE TABLE lastFeaturizations ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, sessionDescriptorId integer NOT NULL, transformer blob, FOREIGN KEY (sessionDescriptorId) REFERENCES sessionsDescriptors (id) ON DELETE CASCADE )
+'tablesessionssessions	CREATE TABLE sessions ( id integer PRIMARY KEY AUTOINCREMENT NOT NULL, creationTimestamp real NOT NULL, sessionDescriptorId integer NOT NULL, label integer NOT NULL, covariatesLength integer NOT NULL, covariatesIndices blob, covariatesValues blob, isAppleInternal integer(1) NOT NULL DEFAULT 0, source blob, FOREIGN KEY (sessionDescriptorId) REFERENCES sessionsDescriptors (id) ON DELETE CASCADE )S
+#
+]Z
+#
+]B
+dP-
+
+#
+]lA<
+#
+]^}
+#
+]@
+#
+]Qig
+#
+]7
+#
+]|ZS+

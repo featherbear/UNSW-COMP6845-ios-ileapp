@@ -1,0 +1,81 @@
+6rB
+https://configuration.apple.com/configurations/internetservices/cloudkit/textinput/textinput-1.0.plist2023-07-09 06:36:02
+`[X+
+6r 
+Y	https://configuration.apple.com/configurations/internetservices/cloudkit/textinput/textinput-1.0.plist
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+()
+_CFURLStringType\_CFURLString
+fhttps://configuration.apple.com/configurations/internetservices/cloudkit/textinput/textinput-1.0.plist#A
+ !"#$%&'\Content-TypeXUnused62VServer_
+Content-LanguageWExpires]Cache-ControlTDate^Content-LengthZConnectionX__hhaa__]Accept-RangesTEtag]Last-ModifiedXtext/xmlW8096267VApacheUen-us_
+Sun, 09 Jul 2023 06:37:01 GMTZmax-age=59_
+Sun, 09 Jul 2023 06:36:02 GMTT1083Zkeep-alive_
+
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVhVbnVzZWQ2MlZTZXJ2ZXJfEBBDb250ZW50LUxhbmd1YWdlV0V4cGlyZXNdQ2FjaGUtQ29udHJvbFREYXRlXkNvbnRlbnQtTGVuZ3RoWkNvbm5lY3Rpb25dQWNjZXB0LVJhbmdlc1RFdGFnXUxhc3QtTW9kaWZpZWShDlh0ZXh0L3htbKEQVzgwOTYyNjehElZBcGFjaGWhFFVlbi11c6EWXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjozNzowMSBHTVShGFptYXgtYWdlPTU5oRpfEB1TdW4sIDA5IEp1bCAyMDIzIDA2OjM2OjAyIEdNVKEcVDEwODOhHlprZWVwLWFsaXZloSBVYnl0ZXOhIl8QEyI0M2ItNTVmODliMzliMjIwMCKhJF8QHU1vbiwgMDQgRGVjIDIwMTcgMjA6Mzg6NTkgR01UAAgAIQAuADcAPgBRAFkAZwBsAHsAhgCUAJkApwCpALIAtAC8AL4AxQDHAM0AzwDvAPEA/AD+AR4BIAElAScBMgE0AToBPAFSAVQAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAABdA==Ubytes_
+"43b-55f89b39b2200"_
+Mon, 04 Dec 2017 20:38:59 GMT
+;Xtext/xml
+fhttps://configuration.apple.com/configurations/internetservices/cloudkit/textinput/textinput-1.0.plist#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>seedMigrationPercent</key>
+	<integer>0</integer>
+	<key>gmMigrationPercent</key>
+	<integer>0</integer>
+	<key>internalMigrationPercent</key>
+	<integer>0</integer>
+	<key>seedMigrationPercent1</key>
+	<integer>999</integer>
+	<key>gmMigrationPercent1</key>
+	<integer>999</integer>
+	<key>internalMigrationPercent1</key>
+	<integer>999</integer>
+	<key>whitelistedMigrationAccounts</key>
+	<array>
+		<string>_25c1c71d1223953f6ffbbfa4e219254d</string>
+	</array>
+	<key>osxMajorVersForCloudKitSync</key>
+	<integer>10</integer>
+	<key>osxMinorVersForCloudKitSync</key>
+	<integer>13</integer>
+	<key>osxMinorSubversionForCloudKitSync</key>
+	<integer>0</integer>
+	<key>iOSMajorVersForCloudKitSync</key>
+	<integer>11</integer>
+	<key>iOSMinorVersForCloudKitSync</key>
+	<integer>0</integer>
+	<key>TRCKSyncCountHalflifeInHours</key>
+	<real>10</real>
+	<key>TRCKSyncMaxCountThreshold</key>
+	<integer>200</integer>
+</dict>
+</plist>
+
+6r,ID
+6rj
+3	2023-07-09 06:36:02
+Q:]%
+6rC9E
+6rIJ
+Mon, 10 Jul 2023 10:48:53 GMTZmax-age=43_
+Mon, 10 Jul 2023 10:48:10 GMTT1083Zkeep-alive_
+
+
+YnBsaXN0MDDcAQIDBAUGBwgJCgsMDQ8RExUXGRsdHyEjXENvbnRlbnQtVHlwZVhVbnVzZWQ2MlZTZXJ2ZXJfEBBDb250ZW50LUxhbmd1YWdlV0V4cGlyZXNdQ2FjaGUtQ29udHJvbFREYXRlXkNvbnRlbnQtTGVuZ3RoWkNvbm5lY3Rpb25dQWNjZXB0LVJhbmdlc1RFdGFnXUxhc3QtTW9kaWZpZWShDlh0ZXh0L3htbKEQVzgwOTYyNjehElZBcGFjaGWhFFVlbi11c6EWXxAdTW9uLCAxMCBKdWwgMjAyMyAxMDo0ODo1MyBHTVShGFptYXgtYWdlPTQzoRpfEB1Nb24sIDEwIEp1bCAyMDIzIDEwOjQ4OjEwIEdNVKEcVDEwODOhHlprZWVwLWFsaXZloSBVYnl0ZXOhIl8QEyI0M2ItNTVmODliMzliMjIwMCKhJF8QHU1vbiwgMDQgRGVjIDIwMTcgMjA6Mzg6NTkgR01UAAgAIQAuADcAPgBRAFkAZwBsAHsAhgCUAJkApwCpALIAtAC8AL4AxQDHAM0AzwDvAPEA/AD+AR4BIAElAScBMgE0AToBPAFSAVQAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAABdA==Ubytes_

@@ -1,0 +1,6 @@
+2023-07-09 14:46:14 Data container moved com.jdtech.CalculatorVault /private/var/mobile/Containers/Data/Application/CAA7293C-3F46-41A3-8048-456903DC2B0F
+2023-07-09 14:46:14 Made container live com.jdtech.CalculatorVault /private/var/containers/Bundle/Application/EE9116C8-1606-43F6-B42A-A8B2F4DC3053
+2023-07-09 14:46:14 Install successful com.jdtech.CalculatorVault 
+2023-07-09 14:46:12 Made container live com.jdtech.CalculatorVault /private/var/mobile/Containers/Data/Application/D5BA425C-F6A1-4E42-B9A8-1E6F8D53D524
+2023-07-09 14:46:12 Made container live com.jdtech.CalculatorVault /private/var/containers/Bundle/Application/3F74AF2A-7E6E-4D66-A1C4-820D1D0507E7
+2023-07-09 14:46:12 Install successful com.jdtech.CalculatorVault 

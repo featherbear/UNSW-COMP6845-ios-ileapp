@@ -1,0 +1,7 @@
+_<b(
+_SQLite format 3
+QtableItemTableItemTable
+CREATE TABLE ItemTable (key TEXT UNIQUE ON CONFLICT REPLACE, value BLOB NOT NULL ON CONFLICT FAIL)1
+indexsqlite_autoindex_ItemTable_1ItemTable
+8v0:cydia_token2
+)	v0:cydia_token

@@ -1,0 +1,312 @@
+Fk[f?ySQLite format 3
+SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+gtablecfurl_cache_responsecfurl_cache_response
+CREATE TABLE cfurl_cache_response(entry_ID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 	 version INTEGER, hash_value INTEGER, storage_policy INTEGER, request_key TEXT UNIQUE, 	 time_stamp NOT NULL DEFAULT CURRENT_TIMESTAMP, partition TEXT)G
+indexsqlite_autoindex_cfurl_cache_response_2cfurl_cache_response
+indexsqlite_autoindex_cfurl_cache_response_1cfurl_cache_response
+/l$0
+HNG;hc*k
+nKSHmSQLite format 3
+1tablecfurl_cache_blob_datacfurl_cache_blob_data
+CREATE TABLE cfurl_cache_blob_data(entry_ID INTEGER PRIMARY KEY, response_object BLOB, request_object BLOB, 			  proto_props BLOB, user_info BLOB)P
++SQLite format 3
+
+#u
+etablecfurl_cache_receiver_datacfurl_cache_receiver_data
+CREATE TABLE cfurl_cache_receiver_data(entry_ID INTEGER PRIMARY KEY, isDataOnFS INTEGER, receiver_data BLOB)I
+HN/U
+
+#u
+indexrequest_key_indexcfurl_cache_response	CREATE INDEX request_key_index ON cfurl_cache_response(request_key)+
+HNGNU
+indextime_stamp_indexcfurl_cache_response
+CREATE INDEX time_stamp_index ON cfurl_cache_response(time_stamp)u
+indexproto_props_indexcfurl_cache_blob_dataCREATE INDEX proto_props_index ON cfurl_cache_blob_data(entry_ID)r
+HN;ie
+indexreceiver_data_indexcfurl_cache_receiver_dataCREATE INDEX receiver_data_index ON cfurl_cache_receiver_data(entry_ID)t	
+CF{`Lt
+HNB(
+ZSQLite format 3
+https://smp-device-content.apple.com/static/di/platform/v3/bootstrap-prod.json2023-07-09 06:29:44
+HNb,
+)	https://smp-device-content.apple.com/static/di/platform/v3/bootstrap-prod.json
+5	cfurl_cache_response
+hbplist00
+WVersionUArray
+
+
+./
+_CFURLStringType\_CFURLString
+Nhttps://smp-device-content.apple.com/static/di/platform/v3/bootstrap-prod.json#A
+ !"#$%&'()*+,-\Content-TypeWX-CacheSAgeSViaVServerWExpiresWCDNUUID]Cache-ControlTDate^Content-Length_
+X-Apple-IDV-Cache-ControlZConnectionX__hhaa__]Accept-RangesTEtag]Last-Modified_
+application/json_
+hit-fresh, hit-freshT1600_
+rhttp/1.1 ausyd2-edge-lx-007.ts.apple.com (acdn/87.14301), http/1.1 ausyd2-edge-bx-024.ts.apple.com (acdn/87.14301)Unginx_
+Sun, 09 Jul 2023 06:03:03 GMT_
+0800e00dd-f559-4f78-824b-029b727b5138-14627782579_
+max-age=14400, public_
+Sun, 09 Jul 2023 06:03:03 GMTT7836^max-age=259200Zkeep-alive_
+
+
+YnBsaXN0MDDfEA8BAgMEBQYHCAkKCwwNDg8QEhQWGBocHiAiJCYoKixcQ29udGVudC1UeXBlXUxhc3QtTW9kaWZpZWRTQWdlU1ZpYVZTZXJ2ZXJXRXhwaXJlc1dDRE5VVUlEXUNhY2hlLUNvbnRyb2xURGF0ZV5Db250ZW50LUxlbmd0aF8QGVgtQXBwbGUtSURWLUNhY2hlLUNvbnRyb2xaQ29ubmVjdGlvbl1BY2NlcHQtUmFuZ2VzVEV0YWdXWC1DYWNoZaERXxAQYXBwbGljYXRpb24vanNvbqETXxAdVGh1LCAwNiBKdWwgMjAyMyAyMzo0ODowNSBHTVShFVQxNjAwoRdfEHJodHRwLzEuMSBhdXN5ZDItZWRnZS1seC0wMDcudHMuYXBwbGUuY29tIChhY2RuLzg3LjE0MzAxKSwgaHR0cC8xLjEgYXVzeWQyLWVkZ2UtYngtMDI0LnRzLmFwcGxlLmNvbSAoYWNkbi84Ny4xNDMwMSmhGVVuZ2lueKEbXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjowMzowMyBHTVShHV8QMDgwMGUwMGRkLWY1NTktNGY3OC04MjRiLTAyOWI3MjdiNTEzOC0xNDYyNzc4MjU3OaEfXxAVbWF4LWFnZT0xNDQwMCwgcHVibGljoSFfEB1TdW4sIDA5IEp1bCAyMDIzIDA2OjAzOjAzIEdNVKEjVDc4MzahJV5tYXgtYWdlPTI1OTIwMKEnWmtlZXAtYWxpdmWhKVVieXRlc6ErXxAPIjY0YTc1MmI1LTFlOWMioS1fEBRoaXQtZnJlc2gsIGhpdC1mcmVzaAAIACkANgBEAEgATABTAFsAYwBxAHYAhQChAKwAugC/AMcAyQDcAN4A/gEAAQUBBwF8AX4BhAGGAaYBqAHbAd0B9QH3AhcCGQIeAiACLwIxAjwCPgJEAkYCWAJaAAAAAAAAAgEAAAAAAAAALgAAAAAAAAAAAAAAAAAAAnE=Ubytes_
+"64a752b5-1e9c"_
+Thu, 06 Jul 2023 23:48:05 GMT_
+ __CFURLResponseNullTokenString___
+application/json
+&bplist00
+Nhttps://smp-device-content.apple.com/static/di/platform/v3/bootstrap-prod.json#@N
+__CFURLRequestNullTokenString__	
+SGET
+X__hhaa___
+<
+
+YnBsaXN0MDDQCAAAAAAAAAEBAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAJ
+F<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-12T06:29:44Z</date>
+	<key>storedAt</key>
+	<date>2023-07-09T06:29:44Z</date>
+</dict>
+</plist>
+
+	U794748D5-8ACB-4559-AD71-284B2B98F270
+\Q<
+
+3	2023-07-09 06:29:44
+HN14d
+HN)@
+HNuFf
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 06:34:29>
+;https://cstat.apple.com/sts2023-07-09 06:34:29r
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1
+https://cstat.apple.com/sts
+HN+A 
+cfurl_cache_response
+	U4483196D-4B42-4759-AC56-3CD49900D2A04
+l{"stime":"b490b520-ce20-4372-bd03-542d99a501ed"}(
+HNR\
+2023-07-09 06:34:29
+
+
+01
+https://cstat.apple.com/sts#A
+ !"#$%&'()*+,-./\Content-TypeYapple-seqX__hhaa___
+x-apple-request-uuid_
+x-xss-protectionVServer_
+x-apple-jingle-correlation-key]Cache-ControlTDate_
+Strict-Transport-Security_
+x-envoy-upstream-service-time_
+x-apple-idv-cache-control^Content-Length_
+x-content-type-options_
+apple-originating-systemXapple-tk_
+x-frame-options_
+application/jsonQ0_
+
+
+YnBsaXN0MDDfEBABAgMEBQYHCAkKCwwNDg8QERMVFxkbHR8hIyUnKSstL1xDb250ZW50LVR5cGVfEBZ4LWNvbnRlbnQtdHlwZS1vcHRpb25zXxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QHngtYXBwbGUtamluZ2xlLWNvcnJlbGF0aW9uLWtleV1DYWNoZS1Db250cm9sVERhdGVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XxAdeC1lbnZveS11cHN0cmVhbS1zZXJ2aWNlLXRpbWVfEBl4LWFwcGxlLWlkdi1jYWNoZS1jb250cm9sXkNvbnRlbnQtTGVuZ3RoXxAYYXBwbGUtb3JpZ2luYXRpbmctc3lzdGVtWGFwcGxlLXRrXxAPeC1mcmFtZS1vcHRpb25zWWFwcGxlLXNlcaESXxAQYXBwbGljYXRpb24vanNvbqEUV25vc25pZmahFl8QJDk0MDk1ODY2LTMxMWEtZWY2NC1lYjA2LTYzYzJkYjllYzQ0ZqEYXTE7IG1vZGU9YmxvY2uhGlVBcHBsZaEcXxAaU1FFVlFaUlJETFhXSjJZR01QQk5YSFdFSjShHl1tYXgtYWdlPTI0ODQ0oSBfEB1TdW4sIDA5IEp1bCAyMDIzIDA2OjM0OjI4IEdNVKEiXxAjbWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnOhJFE0oSZdbWF4LWFnZT04NjQwMKEoUjQ4oSpfEBhVbmtub3duT3JpZ2luYXRpbmdTeXN0ZW2hLFVmYWxzZaEuWlNBTUVPUklHSU6hMFEwAAgAKwA4AFEAaAB7AIIAowCxALYA0gDyAQ4BHQE4AUEBUwFdAV8BcgF0AXwBfgGlAacBtQG3Ab0BvwHcAd4B7AHuAg4CEAI2AjgCOgI8AkoCTAJPAlECbAJuAnQCdgKBAoMAAAAAAAACAQAAAAAAAAAxAAAAAAAAAAAAAAAAAAAChQ==_
+$94095866-311a-ef64-eb06-63c2db9ec44f]1; mode=blockUApple_
+SQEVQZRRDLXWJ2YGMPBNXHWEJ4]max-age=24844_
+Sun, 09 Jul 2023 06:34:28 GMT_
+#max-age=31536000; includeSubdomainsQ4]max-age=86400R48Wnosniff_
+UnknownOriginatingSystemUfalseZSAMEORIGIN_
+)bplist00
+https://cstat.apple.com/sts#@N
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-10T06:34:27Z</date>
+	<key>storedAt</key>
+	<date>2023-07-09T06:34:27Z</date>
+</dict>
+</plist>
+
+
+
+23
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#A
+ !"#$%&'()*+,-./01\Content-TypeYapple-seqX__hhaa___
+Content-Encoding_
+x-apple-idv-cache-control_
+apple-originating-system_
+x-content-type-optionsXapple-tkTVary_
+D
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJDg5YTg3ZDM1LWRmNTQtYWU1Yy1hN2Y0LWJmMGVkNzg0YWFiOKEZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGlJHVUgyTk83S1NYRlpKN1VYNEhOUEJGS1hBoSFdbWF4LWFnZT0xMDM0NqEjXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjozNDoyNyBHTVShJV8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSddbWF4LWFnZT04NjQwMKEpXxAYVW5rbm93bk9yaWdpbmF0aW5nU3lzdGVtoStSMTChLVdub3NuaWZmoS9VZmFsc2WhMVpTQU1FT1JJR0lOoTNRMAAIAC0AOgA/AFYAaQBwAIMApACyALcA0wDvAQoBKgFDAUwBXgFoAWoBfQF/AZEBkwG6AbwBygHMAdIB1AHZAdsB+AH6AggCCgIqAiwCUgJUAmICZAJ/AoEChAKGAo4CkAKWApgCowKlAAAAAAAAAgEAAAAAAAAANAAAAAAAAAAAAAAAAAAAAqc=_
+$89a87d35-df54-ae5c-a7f4-bf0ed784aab8]1; mode=blockUAppleTgzip_
+RGUH2NO7KSXFZJ7UX4HNPBFKXA]max-age=10346_
+Sun, 09 Jul 2023 06:34:27 GMT_
+#max-age=31536000; includeSubdomains]max-age=86400_
+UnknownOriginatingSystemR10WnosniffUfalse_
+Accept-EncodingZSAMEORIGIN
+bplist00
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#@N
+Accept-Encoding
+Accept-Encoding]gzip, deflate
+@<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-10T06:34:27Z</date>
+	<key>storedAt</key>
+	<date>2023-07-09T06:34:27Z</date>
+</dict>
+</plist>
+
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 10:49:599
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1
+.Jy+
+	U86DBFBEF-CB24-4670-982D-FDC4BF91337C(
+HNRr
+2023-07-09 10:49:59
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#A
+D
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJGM2NTdjN2IzLTU3NTAtZGJkYS1iN2IyLWZhNzZjNmQ0ZDI1MaEZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGllaTDRQTTJYS0RONVZONVM3SjNNTlZHU0tFoSFdbWF4LWFnZT0xNjM5NqEjXxAdU3VuLCAwOSBKdWwgMjAyMyAxMDo0OTo1OSBHTVShJV8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSddbWF4LWFnZT04NjQwMKEpXxAYVW5rbm93bk9yaWdpbmF0aW5nU3lzdGVtoStRMqEtV25vc25pZmahL1VmYWxzZaExWlNBTUVPUklHSU6hM1EwAAgALQA6AD8AVgBpAHAAgwCkALIAtwDTAO8BCgEqAUMBTAFeAWgBagF9AX8BkQGTAboBvAHKAcwB0gHUAdkB2wH4AfoCCAIKAioCLAJSAlQCYgJkAn8CgQKDAoUCjQKPApUClwKiAqQAAAAAAAACAQAAAAAAAAA0AAAAAAAAAAAAAAAAAAACpg==_
+$c657c7b3-5750-dbda-b7b2-fa76c6d4d251]1; mode=blockUAppleTgzip_
+YZL4PM2XKDN5VN5S7J3MNVGSKE]max-age=16396_
+Sun, 09 Jul 2023 10:49:59 GMT_
+UnknownOriginatingSystemQ2WnosniffUfalse_
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#@N
+@<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-10T10:49:59Z</date>
+	<key>storedAt</key>
+	<date>2023-07-09T10:49:59Z</date>
+</dict>
+</plist>
+
+HN
+vKF
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=02023-07-09 11:03:523
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=0
+HN5Y
+	UF6533606-0DDD-446E-A13D-E6C29F4C4C43(
+HNI,0G1d
+2023-07-09 11:03:52
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=0#A
+D
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJDc0M2IzMDI2LTgyMTgtZjVhNy05YTQyLTYxMzY5NjY2MGEzM6EZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGk9RNVRBSlVDREQyMlBHU0NNRTNKTVpRS0dNoSFdbWF4LWFnZT0xMzE2M6EjXxAdU3VuLCAwOSBKdWwgMjAyMyAxMTowMzo1MiBHTVShJV8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSddbWF4LWFnZT04NjQwMKEpXxAYVW5rbm93bk9yaWdpbmF0aW5nU3lzdGVtoStRMqEtV25vc25pZmahL1VmYWxzZaExWlNBTUVPUklHSU6hM1EwAAgALQA6AD8AVgBpAHAAgwCkALIAtwDTAO8BCgEqAUMBTAFeAWgBagF9AX8BkQGTAboBvAHKAcwB0gHUAdkB2wH4AfoCCAIKAioCLAJSAlQCYgJkAn8CgQKDAoUCjQKPApUClwKiAqQAAAAAAAACAQAAAAAAAAA0AAAAAAAAAAAAAAAAAAACpg==_
+$743b3026-8218-f5a7-9a42-613696660a33]1; mode=blockUAppleTgzip_
+OQ5TAJUCDD22PGSCME3JMZQKGM]max-age=13163_
+Sun, 09 Jul 2023 11:03:52 GMT_
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=0#@N
+@<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-10T11:03:52Z</date>
+	<key>storedAt</key>
+	<date>2023-07-09T11:03:52Z</date>
+</dict>
+</plist>
+
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 06:34:29
+l{"stime":"87bf490d-17cb-4fa0-b705-cba4fda611b3"}(
+
+
+YnBsaXN0MDDfEBABAgMEBQYHCAkKCwwNDg8QERMVFxkbHR8hIyUnKSstL1xDb250ZW50LVR5cGVfEBZ4LWNvbnRlbnQtdHlwZS1vcHRpb25zXxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QHngtYXBwbGUtamluZ2xlLWNvcnJlbGF0aW9uLWtleV1DYWNoZS1Db250cm9sVERhdGVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XxAdeC1lbnZveS11cHN0cmVhbS1zZXJ2aWNlLXRpbWVfEBl4LWFwcGxlLWlkdi1jYWNoZS1jb250cm9sXkNvbnRlbnQtTGVuZ3RoXxAYYXBwbGUtb3JpZ2luYXRpbmctc3lzdGVtWGFwcGxlLXRrXxAPeC1mcmFtZS1vcHRpb25zWWFwcGxlLXNlcaESXxAQYXBwbGljYXRpb24vanNvbqEUV25vc25pZmahFl8QJDE1OWNlODg1LTUwOGItMmNkYS1mMTdhLTFlOWMwZGI4OTM3MaEYXTE7IG1vZGU9YmxvY2uhGlVBcHBsZaEcXxAaQ1dPT1JCS1FSTVdOVjRMMkQyT0EzT0VUT0WhHl1tYXgtYWdlPTI3MDI3oSBfEB1Nb24sIDEwIEp1bCAyMDIzIDEwOjQ3OjU3IEdNVKEiXxAjbWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnOhJFE0oSZdbWF4LWFnZT04NjQwMKEoUjQ4oSpfEBhVbmtub3duT3JpZ2luYXRpbmdTeXN0ZW2hLFVmYWxzZaEuWlNBTUVPUklHSU6hMFEwAAgAKwA4AFEAaAB7AIIAowCxALYA0gDyAQ4BHQE4AUEBUwFdAV8BcgF0AXwBfgGlAacBtQG3Ab0BvwHcAd4B7AHuAg4CEAI2AjgCOgI8AkoCTAJPAlECbAJuAnQCdgKBAoMAAAAAAAACAQAAAAAAAAAxAAAAAAAAAAAAAAAAAAAChQ==_
+$159ce885-508b-2cda-f17a-1e9c0db89371]1; mode=blockUApple_
+CWOORBKQRMWNV4L2D2OA3OETOE]max-age=27027_
+Mon, 10 Jul 2023 10:47:57 GMT_
+If-Modified-Since_
+
+
+YnBsaXN0MDDRAQJfEBFJZi1Nb2RpZmllZC1TaW5jZaEDXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjozNDoyNyBHTVQICx8hAAAAAAAAAQEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEE=_
+Sun, 09 Jul 2023 06:34:27 GMT
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-11T10:47:57Z</date>
+	<key>storedAt</key>
+	<date>2023-07-10T10:47:57Z</date>
+</dict>
+</plist>
+
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 10:49:59
+https://cstat.apple.com/profile?workflow_id=com.apple.amp.all.sp.paidBuyV2.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 06:34:29:
+D
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJDBiNmI2NmIyLTNiMmUtZDkzNi1lZTYwLWNhN2UzNjVmOTFlMqEZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGkJOVldOTVIzRjNNVE4zVEFaSjdETVg0UjRJoSFdbWF4LWFnZT0xMjUzNqEjXxAdTW9uLCAxMCBKdWwgMjAyMyAxMDo0ODowMCBHTVShJV8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSddbWF4LWFnZT04NjQwMKEpXxAYVW5rbm93bk9yaWdpbmF0aW5nU3lzdGVtoStRNaEtV25vc25pZmahL1VmYWxzZaExWlNBTUVPUklHSU6hM1EwAAgALQA6AD8AVgBpAHAAgwCkALIAtwDTAO8BCgEqAUMBTAFeAWgBagF9AX8BkQGTAboBvAHKAcwB0gHUAdkB2wH4AfoCCAIKAioCLAJSAlQCYgJkAn8CgQKDAoUCjQKPApUClwKiAqQAAAAAAAACAQAAAAAAAAA0AAAAAAAAAAAAAAAAAAACpg==_
+$0b6b66b2-3b2e-d936-ee60-ca7e365f91e2]1; mode=blockUAppleTgzip_
+BNVWNMR3F3MTN3TAZJ7DMX4R4I]max-age=12536_
+Mon, 10 Jul 2023 10:48:00 GMT_
+UnknownOriginatingSystemQ5WnosniffUfalse_
+@<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-11T10:48:00Z</date>
+	<key>storedAt</key>
+	<date>2023-07-10T10:48:00Z</date>
+</dict>
+</plist>
+
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=02023-07-09 11:03:52
+https://cstat.apple.com/profile?workflow_id=com.tiburon.all.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-09 10:49:595
+sT-
+
+.
+P&zS
+@
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJDNlYzg2NmNhLTliNWYtMmMwNS0xN2E1LTA1OTI0ZjczYTgxZKEZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGkgzRUdOU1UzTDRXQUtGNUZBV0pFNjQ1SURVoSFcbWF4LWFnZT03NTYyoSNfEB1Nb24sIDEwIEp1bCAyMDIzIDEwOjUzOjIwIEdNVKElXxAjbWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnOhJ11tYXgtYWdlPTg2NDAwoSlfEBhVbmtub3duT3JpZ2luYXRpbmdTeXN0ZW2hK1EzoS1Xbm9zbmlmZqEvVWZhbHNloTFaU0FNRU9SSUdJTqEzUTAACAAtADoAPwBWAGkAcACDAKQAsgC3ANMA7wEKASoBQwFMAV4BaAFqAX0BfwGRAZMBugG8AcoBzAHSAdQB2QHbAfgB+gIHAgkCKQIrAlECUwJhAmMCfgKAAoIChAKMAo4ClAKWAqECowAAAAAAAAIBAAAAAAAAADQAAAAAAAAAAAAAAAAAAAKl_
+$3ec866ca-9b5f-2c05-17a5-05924f73a81d]1; mode=blockUAppleTgzip_
+H3EGNSU3L4WAKF5FAWJE645IDU\max-age=7562_
+Mon, 10 Jul 2023 10:53:20 GMT_
+UnknownOriginatingSystemQ3WnosniffUfalse_
+
+
+YnBsaXN0MDDRAQJfEBFJZi1Nb2RpZmllZC1TaW5jZaEDXxAdU3VuLCAwOSBKdWwgMjAyMyAxMDo0OTo1OSBHTVQICx8hAAAAAAAAAQEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEE=_
+Sun, 09 Jul 2023 10:49:59 GMT
+
+bplist00
+@<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>expiresAt</key>
+	<date>2023-07-11T10:53:20Z</date>
+	<key>storedAt</key>
+	<date>2023-07-10T10:53:20Z</date>
+</dict>
+</plist>
+
+HNv3
+
+$k
+https://cstat.apple.com/profile?workflow_id=com.bloomfield.usa.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=12023-07-10 10:53:203
+https://cstat.apple.com/profile?workflow_id=com.bloomfield.usa.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1
+HN3t
+	U250B7572-6AB9-4B1D-B2DE-96618A2E7E50(
+HN^d
+6jn
+
+2023-07-10 10:53:20
+;<?F
+https://cstat.apple.com/profile?workflow_id=com.bloomfield.usa.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#A
+.
+PP`
+D
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXENvbnRlbnQtVHlwZVRWYXJ5XxAUeC1hcHBsZS1yZXF1ZXN0LXV1aWRfEBB4LXhzcy1wcm90ZWN0aW9uVlNlcnZlcl8QEENvbnRlbnQtRW5jb2RpbmdfEB54LWFwcGxlLWppbmdsZS1jb3JyZWxhdGlvbi1rZXldQ2FjaGUtQ29udHJvbFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QGXgtYXBwbGUtaWR2LWNhY2hlLWNvbnRyb2xfEBhhcHBsZS1vcmlnaW5hdGluZy1zeXN0ZW1fEB14LWVudm95LXVwc3RyZWFtLXNlcnZpY2UtdGltZV8QFngtY29udGVudC10eXBlLW9wdGlvbnNYYXBwbGUtdGtfEA94LWZyYW1lLW9wdGlvbnNZYXBwbGUtc2VxoRNfEBBhcHBsaWNhdGlvbi9qc29uoRVfEA9BY2NlcHQtRW5jb2RpbmehF18QJGI5NjRhNGVhLTMyNTktMjU3My1jMjE5LWU2NjJmY2FjOTg2NKEZXTE7IG1vZGU9YmxvY2uhG1VBcHBsZaEdVGd6aXChH18QGlhGU0tKMlJTTEVTWEhRUVo0WlJQWkxFWU1RoSFdbWF4LWFnZT0yMTE1NaEjXxAdTW9uLCAxMCBKdWwgMjAyMyAxMDo1MzoyMCBHTVShJV8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSddbWF4LWFnZT04NjQwMKEpXxAYVW5rbm93bk9yaWdpbmF0aW5nU3lzdGVtoStROaEtV25vc25pZmahL1VmYWxzZaExWlNBTUVPUklHSU6hM1EwAAgALQA6AD8AVgBpAHAAgwCkALIAtwDTAO8BCgEqAUMBTAFeAWgBagF9AX8BkQGTAboBvAHKAcwB0gHUAdkB2wH4AfoCCAIKAioCLAJSAlQCYgJkAn8CgQKDAoUCjQKPApUClwKiAqQAAAAAAAACAQAAAAAAAAA0AAAAAAAAAAAAAAAAAAACpg==_
+$b964a4ea-3259-2573-c219-e662fcac9864]1; mode=blockUAppleTgzip_
+XFSKJ2RSLESXHQQZ4ZRPZLEYMQ]max-age=21155_
+UnknownOriginatingSystemQ9WnosniffUfalse_
+https://cstat.apple.com/profile?workflow_id=com.bloomfield.usa.sp.tier1.full.v_0.01&os_version=14.7&bd_version=3.62&region=AU&language=en&bucket=1#@N

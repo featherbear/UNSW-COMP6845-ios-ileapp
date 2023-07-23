@@ -1,0 +1,108 @@
+cSQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+,gV
+
+h
+UQ
+com.apple.shoebox:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+]>6r
+#<8;)^
+S *q
+yK!9
+%?L.
+5_*5
+!'0N
+l`{y
+)0'0%
+u%I$
+(454A4D93FDC6F3D18CD58B080093AD4C8B635DBB
+"#$YNS.string
++oQsAOk0kTCgPLvlA11ihkkc4q6Vqxlu-u4gDyk-_bmI
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+com.apple.shoebox_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.shoebox:__defaultOwner__A
+Q	com.apple.shoebox:__defaultOwner__
+	com.apple.shoebox:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+QU
+	com.apple.shoebox:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+SQLite format 3
+JZ{g+d
+
+directory/CF1E8E6B-4EF1-4E7B-902B-E8278C89AF5F:com.apple.shoebox:__defaultOwner__
+directory/root:com.apple.shoebox:__defaultOwner__
+com.apple.shoebox:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+.
+UQ
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+0o	`{
+Kni^
+yliu:
+%Z</
+z;*f
+$si/
+(39B143C7F4812C44BDB9DE32F1307F1159EC9DAE
+*+,YNS.string
++JJF2DX2o_iJj95xkzDx7N6pvf2PMN8kl_Sd6ibXSl_c
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+^directory/root
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDYstructure
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+n
+UQ
+1`k[V
+qDU\q
+ ]-(&
+t7[b
+(92778081DEF006C58B255F5FD5970A96A00CF4C8
++zos12Cc36Huohrsz1Ijok_VYgYEVQZYEa-mEoPhAo_I
+.directory/CF1E8E6B-4EF1-4E7B-902B-E8278C89AF5F
+TSQLite format 3

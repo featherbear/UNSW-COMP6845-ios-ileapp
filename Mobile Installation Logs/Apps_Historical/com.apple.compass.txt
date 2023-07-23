@@ -1,0 +1,6 @@
+2023-07-09 14:42:18 Data container moved com.apple.compass /private/var/mobile/Containers/Data/Application/308BA953-CA4D-47A7-839E-053D5CA2A513
+2023-07-09 14:42:18 Made container live com.apple.compass /private/var/containers/Bundle/Application/2C34BBF4-2D5B-482F-A84B-6776B788E995
+2023-07-09 14:42:18 Install successful com.apple.compass 
+2023-07-08 23:20:27 Made container live com.apple.compass /private/var/mobile/Containers/Data/Application/FF45CA74-55A2-41CE-A586-109DAD1CDBB9
+2023-07-08 23:20:27 Made container live com.apple.compass /private/var/containers/Bundle/Application/5EAC6315-9CC7-424A-9F05-3D8388D43461
+2023-07-08 23:20:27 Install successful com.apple.compass 

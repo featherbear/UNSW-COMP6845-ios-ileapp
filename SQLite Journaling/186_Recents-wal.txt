@@ -1,0 +1,114 @@
+eSQLite format 3
+Atablepropertiesproperties
+CREATE TABLE properties (ROWID INTEGER PRIMARY KEY,
+    key,
+    value,
+    UNIQUE (key)
+)3
+indexsqlite_autoindex_properties_1properties
+uindexmetadata_recentsmetadataCREATE INDEX metadata_recents ON metadata(recent_id)m	
+!indexrecents_expungerecentsCREATE INDEX recents_expunge ON recents(bundle_identifier, last_date DESC)^
+}indexrecents_record_hashrecents
+CREATE INDEX recents_record_hash ON recents(record_hash)k
+indexcontacts_addresscontacts	CREATE INDEX contacts_address ON contacts(kind, display_name, address)^
+{indexcontacts_recentsidxcontacts
+CREATE INDEX contacts_recentsidx ON contacts(recent_id)
+Ytablemetadatametadata
+CREATE TABLE metadata (
+    ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    recent_id INTEGER,
+    key TEXT,
+    value,
+    
+    FOREIGN KEY (recent_id) REFERENCES recents (ROWID) ON DELETE CASCADE,
+    UNIQUE (recent_id, key)
+)/
+indexsqlite_autoindex_metadata_1metadata
+_tablecontactscontacts
+CREATE TABLE contacts (
+    ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+    
+    recent_id INTEGER,
+
+    display_name TEXT,
+    kind TEXT,
+    address TEXT,
+    
+    FOREIGN KEY (recent_id) REFERENCES recents (ROWID) ON DELETE CASCADE
+)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+-tablerecentsrecents
+CREATE TABLE recents (
+    ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+    display_name TEXT,
+    bundle_identifier TEXT,
+    sending_address TEXT,
+    original_source TEXT,
+
+    dates TEXT NOT NULL,
+    last_date INTEGER,
+    weight FLOAT,
+    
+    /* A compounded hash of all contacts belonging to this recent record. */
+    record_hash TEXT NOT NULL,
+    
+    count INTEGER,
+
+    group_kind INTEGER
+)
+
+A6
+
+A	uD
+version
+h&aiu
+	version
+
+A/W
+max-recent-age:com.apple.maps<
+
+AAe
+max-recent-age:com.apple.maps
+QT\^)
+373'
+com.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688892931262
+9302128E8692AF23E3811E3077812650
+O_V
+
+	contacts
+
+	recents
+%phone+61448804154
+%	phone+61448804154
+M	9302128E8692AF23E3811E3077812650
+	com.apple.MobileSMS
+#373C
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688892931926:1688892931262
+V9302128E8692AF23E3811E3077812650
+
+A?%Pj
+%Jamie Smithphone+61448804154
+#%	phoneJamie Smith+61448804154
+
+A$yZ_
+#373_
+Jamie Smithcom.apple.MobileSMSiMessage:+61448804154com.apple.MobileSMS1688893085234:1688892931926:1688892931262
+V29302128E8692AF23E3811E3077812650
+#373{
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893137863:1688893085234:1688892931926:1688892931262
+#373
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893138235:1688893137863:1688893085234:1688892931926:1688892931262
+%;9302128E8692AF23E3811E3077812650
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893192591:1688893138235:1688893137863:1688893085234:1688892931926
+
+A@!Va7
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893192967:1688893192591:1688893138235:1688893137863:1688893085234
+Jamie Smithcom.apple.MobileSMSiMessage:+61448804154com.apple.MobileSMS1688893398881:1688893192967:1688893192591:1688893138235:1688893137863
+a9302128E8692AF23E3811E3077812650
+
+ARM^/
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893791164:1688893398881:1688893192967:1688893192591:1688893138235
+Jamie Smithcom.apple.MobileSMSiMessage:+61466521390com.apple.MobileSMS1688893791496:1688893791164:1688893398881:1688893192967:1688893192591
+Jamie Smithcom.apple.MobileSMSiMessage:+61448804154com.apple.MobileSMS1688894072005:1688893791496:1688893791164:1688893398881:1688893192967

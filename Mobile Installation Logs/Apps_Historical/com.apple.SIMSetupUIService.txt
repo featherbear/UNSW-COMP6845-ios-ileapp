@@ -1,0 +1,1 @@
+2023-07-08 23:19:47 Made container live com.apple.SIMSetupUIService /private/var/mobile/Containers/Data/Application/7563A5B4-6807-487F-B4A8-68428FE7003C

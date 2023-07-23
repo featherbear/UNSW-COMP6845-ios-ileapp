@@ -1,0 +1,6 @@
+2023-07-09 14:41:37 Data container moved com.apple.Home /private/var/mobile/Containers/Data/Application/ACC03A5C-2A31-4958-9167-43237813C9F9
+2023-07-09 14:41:37 Made container live com.apple.Home /private/var/containers/Bundle/Application/05DCC0B0-2E53-4326-91D6-C0D776A17D89
+2023-07-09 14:41:37 Install successful com.apple.Home 
+2023-07-08 23:20:26 Made container live com.apple.Home /private/var/mobile/Containers/Data/Application/04BE8A44-2D58-49B9-8B7C-41F6C11C4023
+2023-07-08 23:20:26 Made container live com.apple.Home /private/var/containers/Bundle/Application/4E66ECBB-5AFF-4E92-BCF5-B6E86A75E0A7
+2023-07-08 23:20:26 Install successful com.apple.Home 

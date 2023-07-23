@@ -1,0 +1,1 @@
+2023-07-08 23:20:06 Made container live com.apple.CarKit.CarPlayDiagnosticsExtension /private/var/mobile/Containers/Data/PluginKitPlugin/A7B7D594-19D6-4B2A-B01F-1A9CFB9E0792

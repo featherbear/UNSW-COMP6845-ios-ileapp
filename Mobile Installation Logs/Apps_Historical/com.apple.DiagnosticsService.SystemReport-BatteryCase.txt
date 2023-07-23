@@ -1,0 +1,1 @@
+2023-07-08 23:19:44 Made container live com.apple.DiagnosticsService.SystemReport-BatteryCase /private/var/mobile/Containers/Data/PluginKitPlugin/697024CD-0105-46FE-AC1F-404B3B76BCD0

@@ -1,0 +1,134 @@
+PTRecord
+	PrivacyBudgetRecord
+PrioRecord
+PCCRecord
+OBHSequence
+
+OBHRecord
+NumericDataRecord
+ModelInfoRecord
+HCMSSequence
+HCMSWord
+CMSWord
+CMSSequence
+CMSRecord
+BSSFPRecord
+BitValueRecord
+com.apple.differentialprivacy.ContextKit
+o1ra?(
+]	com.apple.differentialprivacy.ContextKit
+7C1u[
+PrivacyBudgetRecord
+com.apple.mail.SenderDomainA
+com.apple.mail.SenderDomain
+mcom.apple.differentialprivacy.EN.KeysUploaded4
+com.apple.differentialprivacy.EN.KeysUploaded
+com.apple.differentialprivacy.PersonalizationPortrait.TopicsF
+*6$
+
+com.apple.differentialprivacy.PersonalizationPortrait.Topics
+R3com.apple.differentialprivacy.EN.DiagnosedVaccineStatusV
+com.apple.differentialprivacy.EN.DiagnosedVaccineStatus
+com.apple.avatar.MemojiAssetUsedP
+com.apple.avatar.MemojiAssetUsed
+com.apple.keyboard.NamedEntityAndWords9
+com.apple.keyboard.NamedEntityAndWords
+com.apple.differentialprivacy.EN.UserRisk?
+com.apple.differentialprivacy.EN.UserRisk
+J&|
+
+PrivacyBudgetRecord	
+
+Acom.apple.differentialprivacy.PersonalizationPortraitB
+com.apple.differentialprivacy.PersonalizationPortrait	-
+PrivacyBudgetRecord
+
+
+com.apple.differentialprivacy.testBudgetN	
+com.apple.differentialprivacy.testBudget
+9
+T`L
+
+PrivacyBudgetRecord
+
+com.apple.differentialprivacy.PersonalizationPortrait.NamedEntityB
+
+com.apple.differentialprivacy.PersonalizationPortrait.NamedEntity,
+PrivacyBudgetRecord
+
+com.apple.keyboard.RevisedWords[	
+com.apple.keyboard.RevisedWordsF
+com.apple.differentialprivacy.EN.BeaconCount8
+com.apple.differentialprivacy.EN.BeaconCount
+#
+c
+1com.apple.differentialprivacy.EN.UserNotificationInteractionE
+
+[<Cg
+com.apple.differentialprivacy.EN.UserNotificationInteraction
+c
+com.apple.parsec.SearchV
+com.apple.parsec.Search
+com.apple.differentialprivacy.EN.UserRiskParameters1
+com.apple.differentialprivacy.EN.UserRiskParameters
+|Fcom.apple.DifferentialPrivacy.defaultL
+com.apple.DifferentialPrivacy.default
+hwcF
+com.apple.keyboard.Emoji>
+com.apple.keyboard.Emoji
+com.apple.differentialprivacy.EN.UserNotification1
+p
+A
+com.apple.differentialprivacy.EN.UserNotification
+com.apple.screentime.usagetracking.UnknownDomainJ
+
+%;
+com.apple.screentime.usagetracking.UnknownDomain
+com.apple.differentialprivacy.EN.DateExposureI
+com.apple.differentialprivacy.EN.DateExposure
+N;
+
+com.apple.suggestions.remindersTitleF
+
+%;
+com.apple.suggestions.remindersTitle
+?com.apple.keyboard.WordNgrams=
+com.apple.keyboard.WordNgrams
+Ycom.apple.avatar.MemojiCategoryUsed6
+com.apple.avatar.MemojiCategoryUsed
+Vcom.apple.differentialprivacy.Reminders<
+com.apple.differentialprivacy.Reminders
+\com.apple.health@
+com.apple.health
+mR*
+
+PDcom.apple.differentialprivacy.EN.CodeVerified)
+#	
+com.apple.differentialprivacy.EN.CodeVerified
+cak
+
+com.apple.suggestdF
+
+%;
+com.apple.suggestd
+3com.apple.wallet.suggestions+
+QZz[
+
+com.apple.wallet.suggestions
+kcom.apple.maps5
+fg'D
+com.apple.maps
+"j``C
+
+com.apple.differentialprivacy.Safari(
+@j
+
+com.apple.differentialprivacy.Safari
+PrivacyBudgetRecord 
+
+U"com.apple.keyboard.NewWords=
+U" 
+com.apple.keyboard.NewWords (
+
+MWm-s
+SQLite format 3

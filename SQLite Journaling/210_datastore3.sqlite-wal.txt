@@ -1,0 +1,188 @@
+;SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)/
+1tablestore_v2store_v2
+CREATE TABLE store_v2 ( id INTEGER PRIMARY KEY AUTOINCREMENT, label STRING NOT NULL, identifier_data BLOB UNIQUE NOT NULL, replication_data BLOB )/
+indexsqlite_autoindex_store_v2_1store_v2
+3wX{
+c|SQLite format 3
+5tableblock_v2block_v2
+CREATE TABLE block_v2 ( id INTEGER PRIMARY KEY AUTOINCREMENT, store_v2_id INTEGER NOT NULL CONSTRAINT fetch_store_v2_id_fkey REFERENCES store_v2 (id) ON DELETE RESTRICT, type INTEGER NOT NULL, options_data BLOB )P
+SQLite format 3
+Atabletransaction_v2transaction_v2
+CREATE TABLE transaction_v2 ( id INTEGER PRIMARY KEY AUTOINCREMENT, store_v2_id INTEGER NOT NULL CONSTRAINT fetch_store_v2_id_fkey REFERENCES store_v2 (id) ON DELETE RESTRICT, block_id INTEGER NOT NULL CONSTRAINT transaction_v2_block_v2_id_fkey REFERENCES block_v2 (id) ON DELETE RESTRICT, type INTEGER NOT NULL, external_id BLOB NOT NULL, external_data BLOB, model_encoding INTEGER NOT NULL, model_data BLOB )q
+$,)9L
+qSQLite format 3
+[tablerecord_v2record_v2
+CREATE TABLE record_v2 ( id INTEGER PRIMARY KEY AUTOINCREMENT, store_v2_id INTEGER NOT NULL CONSTRAINT record_v2_group_id_fkey REFERENCES store_v2 (id) ON DELETE RESTRICT, uuid BLOB NOT NULL, parent_uuid BLOB NOT NULL, type TEXT, model_schema BLOB, external_id BLOB, external_data BLOB, model_encoding INTEGER NOT NULL, model_data BLOB, push_encoding INTEGER NOT NULL, push_data BLOB, push_block_id INTEGER CONSTRAINT record_v2_block_v2_fkey REFERENCES block_v2 (id) ON DELETE RESTRICT )
+VdSQLite format 3
+etableindex_sentinelindex_sentinel
+CREATE TABLE index_sentinel ( store_id INTEGER NOT NULL, type TEXT NOT NULL, CONSTRAINT fk_index_sentinel FOREIGN KEY (store_id) REFERENCES store_v2 (id) ON DELETE CASCADE)
+Aindextransaction_v2_ukeytransaction_v2	CREATE UNIQUE INDEX transaction_v2_ukey ON transaction_v2 (store_v2_id, type, external_id)U
+	-/r
+Kindexrecord_v2_external_store_v2_id_ukeyrecord_v2
+CREATE UNIQUE INDEX record_v2_external_store_v2_id_ukey ON record_v2 (store_v2_id, external_id)
+
+-/r
+JiSQLite format 3
+5indexrecord_v2_uuid_store_v2_id_ukeyrecord_v2CREATE UNIQUE INDEX record_v2_uuid_store_v2_id_ukey ON record_v2 (store_v2_id, uuid)
+-/r
+indexblock_v2_store_typeblock_v2CREATE INDEX block_v2_store_type ON block_v2 (store_v2_id, type, id)	
+
+-/r
+36/>=(Psp
+
+indextransaction_v2_block_idtransaction_v2
+CREATE INDEX transaction_v2_block_id ON transaction_v2 (block_id, id)l
+>GB~
+indexrecord_v2_push_idrecord_v2
+CREATE INDEX record_v2_push_id ON record_v2 (push_block_id, id)w
+{indexrecord_v2_storerecord_v2
+CREATE INDEX record_v2_store ON record_v2 (store_v2_id)f
+
+indexrecord_v2_store_uuidrecord_v2
+CREATE INDEX record_v2_store_uuid ON record_v2 (store_v2_id, uuid)[
+
+NSQLite format 3
+-indexrecord_v2_store_parent_uuidrecord_v2
+CREATE INDEX record_v2_store_parent_uuid ON record_v2 (store_v2_id, parent_uuid)l
+Cindexrecord_v2_store_type_parent_uuidrecord_v2
+CREATE INDEX record_v2_store_type_parent_uuid ON record_v2 (store_v2_id, parent_uuid, type)
+0SQLite format 3
+'indexrecord_v2_store_externalrecord_v2
+CREATE INDEX record_v2_store_external ON record_v2 (store_v2_id, external_id)
+%indexindex_sentinel_uniqueindex_sentinel
+CREATE UNIQUE INDEX index_sentinel_unique ON index_sentinel (store_id, type){
+>hdT
+_tablequeryable_HMDFaceCropModelqueryable_HMDFaceCropModel
+CREATE TABLE queryable_HMDFaceCropModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, unassociatedFaceCropUUID BLOB, person BLOB, CONSTRAINT fk_queryable_HMDFaceCropModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)|
+Gindexqu_HMDFaceCropModelqueryable_HMDFaceCropModel
+CREATE UNIQUE INDEX qu_HMDFaceCropModel ON queryable_HMDFaceCropModel (_store_id, _record_id)
+?indexqf_HMDFaceCropModel_personqueryable_HMDFaceCropModel
+CREATE INDEX qf_HMDFaceCropModel_person ON queryable_HMDFaceCropModel (_store_id, person)
+?yA	!|
+CREATE INDEX qf_HMD
+indexqf_HMDFaceCropModel_unassociatedFaceCropUUIDqueryable_HMDFaceCropModel
+CREATE INDEX qf_HMDFaceCropModel_unassociatedFaceCropUUID ON queryable_HMDFaceCropModel (_store_id, unassociatedFaceCropUUID)
+indexblock_v2_store_typeblock_v2CREATE INDEX block_v2_store_type ON block_v2 (store_v2_id, type, id)
+tablequeryable_HMDCameraSignificantEventNotificationModelqueryable_HMDCameraSignificantEventNotificationModel
+CREATE TABLE queryable_HMDCameraSignificantEventNotificationModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, dateOfOccurrence BLOB, CONSTRAINT fk_queryable_HMDCameraSignificantEventNotificationModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)P
+3(79E8[>M
+
+-@SQLite format 3
+/indexqu_HMDCameraSignificantEventNotificationModelqueryable_HMDCameraSignificantEventNotificationModel
+CREATE UNIQUE INDEX qu_HMDCameraSignificantEventNotificationModel ON queryable_HMDCameraSignificantEventNotificationModel (_store_id, _record_id)
+DSQLite format 3
+Oindexqf_HMDCameraSignificantEventNotificationModel_dateOfOccurrencequeryable_HMDCameraSignificantEventNotificationModel
+CREATE INDEX qf_HMDCameraSignificantEventNotificationModel_dateOfOccurrence ON queryable_HMDCameraSignificantEventNotificationModel (_store_id, dateOfOccurrence)
+tablequeryable_HMDIDSActivityRegistrationModelqueryable_HMDIDSActivityRegistrationModel
+CREATE TABLE queryable_HMDIDSActivityRegistrationModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, subjectDeviceIdentifier BLOB, CONSTRAINT fk_queryable_HMDIDSActivityRegistrationModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)
+indexqu_HMDIDSActivityRegistrationModelqueryable_HMDIDSActivityRegistrationModel
+CREATE UNIQUE INDEX qu_HMDIDSActivityRegistrationModel ON queryable_HMDIDSActivityRegistrationModel (_store_id, _record_id)
+$Bi
+
+?indexqf_HMDIDSActivityRegistrationModel_subjectDeviceIdentifierqueryable_HMDIDSActivityRegistrationModel CREATE INDEX qf_HMDIDSActivityRegistrationModel_subjectDeviceIdentifier ON queryable_HMDIDSActivityRegistrationModel (_store_id, subjectDeviceIdentifier)S
+ -/r
+CREATE TABLE queryable_HMDFaceCropModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, unassociatedFaceCropUUID BLOB, person BLOB, CONSTRAINT fk_queryable_HMDFaceCropModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)
+tablequeryable_HMDCameraClipModelqueryable_HMDCameraClipModel!CREATE TABLE queryable_HMDCameraClipModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, feedbackStatusField BLOB, startDate BLOB, isComplete BLOB, CONSTRAINT fk_queryable_HMDCameraClipModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)
+!-/r
+$]$r
+Oindexqu_HMDCameraClipModelqueryable_HMDCameraClipModel"CREATE UNIQUE INDEX qu_HMDCameraClipModel ON queryable_HMDCameraClipModel (_store_id, _record_id)
+"-/r
+3-,2
+TvRI
+z{
+
+indexqf_HMDCameraClipModel_isComplete_startDatequeryable_HMDCameraClipModel#CREATE INDEX qf_HMDCameraClipModel_isComplete_startDate ON queryable_HMDCameraClipModel (_store_id, isComplete, startDate)
+#-/r
+{indexqf_HMDCameraClipModel_feedbackStatusFieldqueryable_HMDCameraClipModel$CREATE INDEX qf_HMDCameraClipModel_feedbackStatusField ON queryable_HMDCameraClipModel (_store_id, feedbackStatusField)M 
+$-/r
+Sindexqf_HMDCameraClipModel_startDatequeryable_HMDCameraClipModel%CREATE INDEX qf_HMDCameraClipModel_startDate ON queryable_HMDCameraClipModel (_store_id, startDate)
+%-/r
+[tablequeryable_HMDUnassociatedFaceCropModelqueryable_HMDUnassociatedFaceCropModel&CREATE TABLE queryable_HMDUnassociatedFaceCropModel (_store_id  INTEGER NOT NULL REFERENCES store_v2 (id) ON DELETE RESTRICT, _record_id INTEGER NOT NULL, dateCreated BLOB, CONSTRAINT fk_queryable_HMDUnassociatedFaceCropModel FOREIGN KEY (_record_id) REFERENCES record_v2 (id) ON DELETE CASCADE)I!
+&-/r
+DUSQLite format 3
+windexqu_HMDUnassociatedFaceCropModelqueryable_HMDUnassociatedFaceCropModel'CREATE UNIQUE INDEX qu_HMDUnassociatedFaceCropModel ON queryable_HMDUnassociatedFaceCropModel (_store_id, _record_id)
+'-/r
+h2ddg
+indexqf_HMDUnassociatedFaceCropModel_dateCreatedqueryable_HMDUnassociatedFaceCropModel(CREATE INDEX qf_HMDUnassociatedFaceCropModel_dateCreated ON queryable_HMDUnassociatedFaceCropModel (_store_id, dateCreated)+"
+CREATE INDEX qf_HMDFaceCropModel_unassociatedFaceCropUUID ON queryable_HMDFaceCropModel (_store_id, unassociatedFaceCropUUID)G$
+(-/r
+com.apple.homekit.camera.clips
+	store_v2
+record_v2
+	,,A
+HMBCloudDatabaseStateModel
+B_Pa$A089A5B9-6D32-4A0E-B611-0492B7D9F3D5WlastAdministrativeFetch
+B_ua$0CB8C587-A5BF-5F2F-BEC9-0BC38DF14883B_VC7.3QsubscriptionsData
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+ZNS.objectsV$class
+Z$classnameX$classesUNSSet
+XNSObject
+$)27ILQSW]bmtuw|
+B_TZHMBCloudDatabaseStateModelGcloudID
+%&*-U$null
+V$classXHMBCID.nXHMBCID.cXHMBCID.mXHMBCID.s
+ContainerIdentifier[Environment
+com.apple.homekit.camera.clips
+ !"Z$classnameX$classes]CKContainerID
+#$]CKContainerIDXNSObject_
+0Production.Shared.com.apple.homekit.camera.clips
+'
+()\NS.uuidbytesO
+ +,VNSUUID
+ ./ZHMBCloudID
+01$ZHMBCloudIDYHMFObject
+B_ua$B1D7F585-D97D-59CA-86D7-D0EFD83602D1B_VC7.3QsubscriptionsData
+1Production.Private.com.apple.homekit.camera.clips
+B_ua$772D8E09-93A4-5EDF-9C24-172820055F5AB_VC7.3QsubscriptionsData
+$%),U$null
+ !Z$classnameX$classes]CKContainerID
+"#]CKContainerIDXNSObject_
+0Production.Public.com.apple.homekit.camera.clips
+&
+'(\NS.uuidbytesO
+*+VNSUUID
+-.ZHMBCloudID
+/0#ZHMBCloudIDYHMFObject
+	,	w-
+,o\s
+
+NBgZ
+	,A	
+PshF-
+AB_ua$0CB8C587-A5BF-5F2F-BEC9-0BC38DF14883B_VC7.3QsubscriptionsData
+Z$classnameX$classes\NSMutableSet
+\NSMutableSetUNSSetXNSObject
+3
+v
+HMBCloudZoneStateModel
+oh~=
+*-/r
+	,,9
+FzoneID
+ '(,/567;U$null
+YHMBCZID.zV$classXHMBCID.nXHMBCID.cXHMBCID.mXHMBCID.s
+!"#$Z$classnameX$classes]CKContainerID
+%&]CKContainerIDXNSObject_
+>Production.Private.com.apple.homekit.camera.clips/_defaultZone
+*+\NS.uuidbytesO
+!"-.VNSUUID
+234XZoneNameYownerName
+\_defaultZone_
+__defaultOwner__
+!"89^CKRecordZoneID
+:&^CKRecordZoneID
+!"<=^HMBCloudZoneID
+>?@&^HMBCloudZoneIDZHMBCloudIDYHMFObject
+`B_U
+B_Pa$B1D7F585-D97D-59CA-86D7-D0EFD83602D1B_tVHMBCloudZoneStateModelB_ua$2E6C2DA8-E1EA-5C84-BB88-09FB1F21F80AB_VC7.3QneedsZoneDeletion
+QsubscriptionsData
+QneedsZoneCreation
+.q<jF-
+AB_ua$B1D7F585-D97D-59CA-86D7-D0EFD83602D1B_VC7.3QsubscriptionsData

@@ -1,0 +1,100 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+^
+5X
+
+Uw
+1411CE6C-B4DE-4622-A49D-F66FE296D6B5:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+?	H3`K
+8n%$
+bzM
+w2E
+eB6G/
+egW7
+lwU
+
+?7lN
+ `h?qpZ
+)0'0%
+(15309664E24E837773417DAE189E368FAD067F35
+"#$YNS.string
++lHFm82g8xc1Ezq4Sktisr4XQSMA85iB4teP0sRssgmM
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+$1411CE6C-B4DE-4622-A49D-F66FE296D6B5_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD51411CE6C-B4DE-4622-A49D-F66FE296D6B5:__defaultOwner__A
+w	1411CE6C-B4DE-4622-A49D-F66FE296D6B5:__defaultOwner__
+	1411CE6C-B4DE-4622-A49D-F66FE296D6B5:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+wU
+	1411CE6C-B4DE-4622-A49D-F66FE296D6B5:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+CCF7D3D1-0C20-4207-97D0-9E565EB5E323:__defaultOwner__
+LcV:
+'O.os^e
+
+"e#
+sdZt~
+0,Q5
+tGc[
+~X,
+x	`'
+p
+Py
+
+(ACDBEF8317C54BE7B3925F10021366ACE72CA8EF
++miKS7f2AxSO72P2gdakcDoYk_6QBD83XXI45RJlB6Gc
+$CCF7D3D1-0C20-4207-97D0-9E565EB5E323_
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5CCF7D3D1-0C20-4207-97D0-9E565EB5E323:__defaultOwner__A
+.fy/
+CCF7D3D1-0C20-4207-97D0-9E565EB5E323:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+%tsSQLite format 3
+HomeDataBlobZone:__defaultOwner__
+HomeDataBlobZone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+d
+UO
+
+w|[
+5EEl
+T6cnoA
+N1HX4
+ o'u_
+OJvvr
+(FCED4118A16ACE18DEA355189111F33CF4A1C326
++wPRHkBIGsdJheACmPgfbdPXjWT2ZQnjMsuNFHv3o_Ls
+HomeDataBlobZone_
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5HomeDataBlobZone:__defaultOwner__A

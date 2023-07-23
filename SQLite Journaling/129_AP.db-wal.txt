@@ -1,0 +1,306 @@
+YSQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)j
+#tableanalyticsanalytics
+CREATE TABLE analytics (msgid INTEGER PRIMARY KEY AUTOINCREMENT, expiretime DATETIME, createtime DATETIME DEFAULT CURRENT_TIMESTAMP, msgtype INT NOT NULL, handlingid INT NOT NULL, analytic BLOB NOT NULL)
+D
+0}X
+%>
+SQLite format 3
+Otableinflightinflight
+CREATE TABLE inflight (fk_msgid INTEGER PRIMARY KEY, up_time DATETIME DEFAULT CURRENT_TIMESTAMP )P
+D
+vE,
+;tableshadowshadow
+CREATE TABLE shadow (expiretime DATETIME, msgtype INT NOT NULL, analytic BLOB NOT NULL)~
+D
+jG
+.SQLite format 3
+tablemkcountmkcount
+CREATE TABLE mkcount (msgid INTEGER PRIMARY KEY AUTOINCREMENT, count_type INT NOT NULL, app_id TEXT, createtime DATETIME )p
+<2Qcs
+oSQLite format 3
+tablecurcollviewscurcollviews
+CREATE TABLE curcollviews (msgid INTEGER PRIMARY KEY AUTOINCREMENT, cur_coll_id INTEGER NOT NULL, viewed_time DATETIME NOT NULL )
+tablecurcollsessioncurcollsession	CREATE TABLE curcollsession (cur_coll_id INTEGER PRIMARY KEY UNIQUE, first_view_time DATETIME NOT NULL, session_id STRING NOT NULL );
+indexsqlite_autoindex_curcollsession_1curcollsession
+
+0]6w
+O&SQLite format 3
+KtablecurcollsavedcurcollsavedCREATE TABLE curcollsaved (cur_coll_id INTEGER PRIMARY KEY NOT NULL UNIQUE ON CONFLICT IGNORE )7
+
+indexsqlite_autoindex_curcollsaved_1curcollsaved-
+`
+M
+Qtabledailysettingsdailysettings
+CREATE TABLE dailysettings (msgid INTEGER PRIMARY KEY AUTOINCREMENT, settings_data BLOB NOT NULL )
+dSQLite format 3
+`
+M	
+Wtabledailycountsdailycounts
+CREATE TABLE dailycounts (msgid INTEGER PRIMARY KEY AUTOINCREMENT, count_type INT NOT NULL, app_id TEXT, usage_string TEXT, usage_bool BOOLEAN, createtime DATETIME )	
+D
+s7
+t=SQLite format 3
+dailycounts
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:42:17;
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:42:17
+D
+ng
+9 c4
+m":]
+3<com.apple.corelocation.CoreLocationTemporaryPreciseAuthPromptPlugin2023-07-09 06:43:13;
+Y;W`
+
+s
+H
+
+qF
+3Acom.apple.Maps2023-07-09 06:45:54)
+3%com.apple.Maps2023-07-09 06:45:52)
+3#com.apple.Maps2023-07-09 06:45:51)
+3Jcom.apple.Maps2023-07-09 06:45:41)
+3#com.apple.Maps2023-07-09 06:45:41)
+3Mcom.apple.Maps2023-07-09 06:45:40)
+
+3_com.apple.Maps2023-07-09 06:45:40)
+3Xcom.apple.Maps2023-07-09 06:45:34)
+3_com.apple.Maps2023-07-09 06:45:34;
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:45:27;	
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:45:27_
+3<com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin2023-07-09 06:45:25)
+3icom.apple.Maps2023-07-09 06:45:24)
+3<com.apple.Maps2023-07-09 06:45:23)
+3<com.apple.Maps2023-07-09 06:45:23_
+@y|
+
+3<com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin2023-07-09 06:49:31)
+R
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:50:56;
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:50:56_
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 06:59:32;
+Vu
+
+
+^
+!
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 07:16:36;
+
+^
+!	
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 07:30:56;
+	j	-
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 07:50:56;
+dailycounts!
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:36:58; 
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:36:58;
+_>M}%
+
+dailycounts#
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:42:53;"
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:42:53;!
+[,b
+
+dailycounts$
+3<com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin2023-07-09 08:44:21;#
+dailycounts&
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:48:06;%
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 08:48:06_$
+dailycounts(
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 09:09:25;'
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 09:09:25;&
+dailycounts*
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 09:49:28;)
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 09:49:28;(
+dailycounts,
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:16:45;+
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:16:45;*
+dailycounts.
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:42:27;-
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:42:27;,
+dailycounts0
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:47:40;/
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 10:47:40;.
+
+TH
+
+dailycounts2
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 11:19:02;1
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 11:19:02;0
+dailycounts4
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 11:49:13;3
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 11:49:13;2
+D
+X,
+dailycounts6
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 12:18:09;5
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 12:18:09;4
+dailycounts8
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 12:48:03;7
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 12:48:03;6
+dailycounts:
+[NW:
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:17:48;9
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:17:48;8
+dailycounts<
+D
+	$
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:23:03;;
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:23:03;:
+H?3C
+dailycounts>
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:52:12;=
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 13:52:12;<
+dailycounts@
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 17:58:02;?
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 17:58:02;>
+dailycountsB
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:03:19;A
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:03:19;@
+D
+t!
+'UB2
+
+dailycountsD
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:32:23;C
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:32:23
+dailycountsF
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:37:46;E
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:37:46;D
+D
+d}
+dailycountsH
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:43:01;G
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:43:01;F
+dailycountsJ
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:48:19;I
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:48:19;H
+D
+1>
+dailycountsL
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:58:02;K
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 22:58:02;J
+dailycountsN
+D
+S&
+
+a
+$
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:03:29;M
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:03:29;L
+dailycountsP
+
+a
+$
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:12:00;O
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:12:00;N
+D!"3
+dailycountsR
+m0
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:18:03;Q
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:18:03;P
+dailycountsT
+m0
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:26:28;S
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:26:28;R
+dailycountsV
+y<
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:32:18;U
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:32:18;T
+dailycountsX
+y<
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:37:29;W
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:37:29;V
+dailycountsZ
+J]N
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:42:43;Y
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:42:43;X
+dailycounts\
+
+H
+	
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:48:02;[
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:48:02;Z
+D
+xa\
+dailycounts^
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:53:16;]
+3icom.apple.Maps.GeneralMapsWidget2023-07-09 23:53:16;\
+8$s
+
+dailycounts`
+|:5
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:03:03;_
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:03:03;^
+D
+h2[
+dailycountsb
+N(U
+
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:13:03;a
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:13:03;`
+dailycountsd
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:18:18;c
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:18:18;b
+odWK
+dailycountsf
+D
+[H
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:24:42;e
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 00:24:42;d
+dailycountsh
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 03:53:14;g
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 03:53:14;f
+dailycountsj
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 04:18:37;i
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 04:18:37;h
+dailycountsl
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 04:48:09;k
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 04:48:09;j
+6^4
+
+dailycountsn
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 05:18:21;m
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 05:18:21;l
+dailycountsp
+D
+Mc*;
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 05:31:08;o
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 05:31:08;n
+dailycountsr
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 06:18:36;q
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 06:18:36;p
+dailycountst
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 08:17:33;s
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 08:17:33;r
+dailycountsv
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:37:27;u
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:37:27;t
+D
+K_z$
+dailycountsx
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:43:58;w
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:43:58;v
+dailycountsz
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:50:30;y
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:50:30;x
+dailycounts|
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:57:22;{
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 10:57:22;z
+dailycounts~
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:02:40;}
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:02:39;|
+D
+;>
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:07:51;
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:07:51;~
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:13:05;
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:18:17;
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:18:17
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:27:35;
+3icom.apple.Maps.GeneralMapsWidget2023-07-10 11:37:21;

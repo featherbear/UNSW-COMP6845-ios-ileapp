@@ -1,0 +1,1 @@
+2023-07-08 23:19:48 Made container live com.apple.springboard.SpringBoardDiagnosticExtension /private/var/mobile/Containers/Data/PluginKitPlugin/8D473EA7-35E0-429D-A7F8-654A794FAA3D

@@ -1,0 +1,606 @@
+{
+  "cards": [
+    {
+      "identifier": "AmEx",
+      "credentialType": 1,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "b351b34f1dd78a474d4505d82b288fca3e74198d",
+            "url": "https://smp-device-content.apple.com/static/hero/1/base/AmEx@3x.png"
+          },
+          "2x": {
+            "sha1": "7483b513b751689da7d2efa81bb1281d08f95ecc",
+            "url": "https://smp-device-content.apple.com/static/hero/1/base/AmEx@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Discover",
+      "credentialType": 2,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "a56e2b0ba5f6b840df5f0d37e174c5917f0cf813",
+            "url": "https://smp-device-content.apple.com/static/hero/2/base/Discover@3x.png"
+          },
+          "2x": {
+            "sha1": "170e5ce3897885624918cc4f0ce336e98525a485",
+            "url": "https://smp-device-content.apple.com/static/hero/2/base/Discover@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "MasterCard",
+      "credentialType": 3,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "82d3ca5c222fcdfabe40cae59aa3eeadc531a4ec",
+            "url": "https://smp-device-content.apple.com/static/hero/3/base/MasterCard@3x.png"
+          },
+          "2x": {
+            "sha1": "23a2025c0afb515400446b8cc988e5aa61e4be81",
+            "url": "https://smp-device-content.apple.com/static/hero/3/base/MasterCard@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Visa",
+      "credentialType": 4,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "03d693698e0b2dd6fe114f362274a1a36e132a0e",
+            "url": "https://smp-device-content.apple.com/static/hero/4/base/Visa@3x.png"
+          },
+          "2x": {
+            "sha1": "cb20a81f9d764081d33bd6c752cbb02fbc90f2bc",
+            "url": "https://smp-device-content.apple.com/static/hero/4/base/Visa@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "JCB",
+      "credentialType": 6,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "190cc96cb4112dfc5ec596b0fa6c5ab71e223dc4",
+            "url": "https://smp-device-content.apple.com/static/hero/6/base/JCB@3x.png"
+          },
+          "2x": {
+            "sha1": "52569cbc8cd75a16c91972f379b2b94940b373a6",
+            "url": "https://smp-device-content.apple.com/static/hero/6/base/JCB@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "CartesBancaires",
+      "credentialType": 9,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "9770ce17c3bea8b149130e6b14d25b653a8ec78e",
+            "url": "https://smp-device-content.apple.com/static/hero/9/base/CartesBancaires@3x.png"
+          },
+          "2x": {
+            "sha1": "a356414590af452a393fcc7069aec80f80763177",
+            "url": "https://smp-device-content.apple.com/static/hero/9/base/CartesBancaires@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Dankort",
+      "credentialType": 10,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "8cdd1e925fa93dc523135782ec646b44a3a10918",
+            "url": "https://smp-device-content.apple.com/static/hero/10/base/Dankort-Card@3x.png"
+          },
+          "2x": {
+            "sha1": "f996241075011efc52c618bb33dab5b2082e0352",
+            "url": "https://smp-device-content.apple.com/static/hero/10/base/Dankort-Card@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "ChinaUnionPay",
+      "credentialType": 11,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "4f045fda6d55d7b773d5b34372e6e900a385d694",
+            "url": "https://smp-device-content.apple.com/static/hero/11/base/ChinaUnionPay@3x.png"
+          },
+          "2x": {
+            "sha1": "3ce6e779365c6cb1174660883ec985b6200d35b5",
+            "url": "https://smp-device-content.apple.com/static/hero/11/base/ChinaUnionPay@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Eftpos",
+      "credentialType": 12,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "2df35674af363678b8c4ae67a90d14df4e592f0e",
+            "url": "https://smp-device-content.apple.com/static/hero/12/base/Eftpos@3x.png"
+          },
+          "2x": {
+            "sha1": "206e80c5b44aada90c28d15ff18859de4cf9a58c",
+            "url": "https://smp-device-content.apple.com/static/hero/12/base/Eftpos@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Interac",
+      "credentialType": 13,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "aa23e69a1053f2ccb90146ec55a6ead45c19cbf8",
+            "url": "https://smp-device-content.apple.com/static/hero/13/base/Interac@3x.png"
+          },
+          "2x": {
+            "sha1": "b5d2df60d054044fa8f88e10ecac9188f08f67a8",
+            "url": "https://smp-device-content.apple.com/static/hero/13/base/Interac@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Mada",
+      "credentialType": 14,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "6c3cc1f1aa331831c2453fe617b1152c375ea300",
+            "url": "https://smp-device-content.apple.com/static/hero/14/base/Mada@3x.png"
+          },
+          "2x": {
+            "sha1": "94e193082d1197de66917435f0f6e4cd0a594b77",
+            "url": "https://smp-device-content.apple.com/static/hero/14/base/Mada@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Maestro",
+      "credentialType": 15,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "3a568ba9c4f61045acb68a41c42e3282a9831698",
+            "url": "https://smp-device-content.apple.com/static/hero/15/base/Maestro@3x.png"
+          },
+          "2x": {
+            "sha1": "cd871f04a773a91b007e2ed3800e945518cd211d",
+            "url": "https://smp-device-content.apple.com/static/hero/15/base/Maestro@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Girocard",
+      "credentialType": 18,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "13a3cea154c7cc51f2f697f4fbba1e998bba8d5f",
+            "url": "https://smp-device-content.apple.com/static/hero/18/base/Girocard@3x.png"
+          },
+          "2x": {
+            "sha1": "0fcad9e408b8c7c95ab17eb06d633ac297bac792",
+            "url": "https://smp-device-content.apple.com/static/hero/18/base/Girocard@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Mir",
+      "credentialType": 19,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "70cf085e18c14821fadd3b63580e2992a3a0f878",
+            "url": "https://smp-device-content.apple.com/static/hero/19/base/MIR@3x.png"
+          },
+          "2x": {
+            "sha1": "8d77bbad86a3025ebb1e17be57a0c2e586da2d7e",
+            "url": "https://smp-device-content.apple.com/static/hero/19/base/MIR@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Bancontact",
+      "credentialType": 21,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "2e023008031f077203f0e50b7d61f4cab84e6eb4",
+            "url": "https://smp-device-content.apple.com/static/hero/21/base/Bancontact@3x.png"
+          },
+          "2x": {
+            "sha1": "83cf84003cb13ca5b42730ac8834d643c58b1e0a",
+            "url": "https://smp-device-content.apple.com/static/hero/21/base/Bancontact@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "PostFinanceAG",
+      "credentialType": 22,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "fd67bc6a29b2e5d35e94733c8cdcb8256b572877",
+            "url": "https://smp-device-content.apple.com/static/hero/22/base/Postfinance@3x.png"
+          },
+          "2x": {
+            "sha1": "d48b4cbd709e8edcc1aedc91d306e677b8777158",
+            "url": "https://smp-device-content.apple.com/static/hero/22/base/Postfinance@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Suica",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "10.1",
+          "WatchOS": {
+            "Watch": "3.1",
+            "iPhone": "10.1"
+          }
+        }
+      },
+      "requiredDeviceFeatures": [
+        "type_f"
+      ],
+      "credentialType": 103,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "762029aa9c8b28970c34ee9849cf409a828172b8",
+            "url": "https://smp-device-content.apple.com/static/hero/103/base/Suica@3x.png"
+          },
+          "2x": {
+            "sha1": "7ebd05ca2ad02a7aa7c2536a27f967a5aa24a4de",
+            "url": "https://smp-device-content.apple.com/static/hero/103/base/Suica@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "PASMO",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "14.0",
+          "WatchOS": {
+            "Watch": "7.0",
+            "iPhone": "14.0"
+          }
+        }
+      },
+      "requiredDeviceFeatures": [
+        "type_f"
+      ],
+      "credentialType": 103,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "954353cefa2d1b53827ec524197b4cc5413358fd",
+            "url": "https://smp-device-content.apple.com/static/hero/103/base/PASMO@3x.png"
+          },
+          "2x": {
+            "sha1": "a10b137a990618551fb41f623586cd3563043145",
+            "url": "https://smp-device-content.apple.com/static/hero/103/base/PASMO@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "WAON",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "15.0",
+          "WatchOS": {
+            "Watch": "8.0",
+            "iPhone": "15.0"
+          }
+        }
+      },
+      "requiredDeviceFeatures": [
+        "type_f"
+      ],
+      "credentialType": 127,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "1b85f8078631092e3b1dae05c99ef36c77b70cc5",
+            "url": "https://smp-device-content.apple.com/static/hero/127/base/WAON@3x.png"
+          },
+          "2x": {
+            "sha1": "90f18b4152a53ab9e8ca757e359083858dd437d8",
+            "url": "https://smp-device-content.apple.com/static/hero/127/base/WAON@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "nanaco",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "15.0",
+          "WatchOS": {
+            "Watch": "8.0",
+            "iPhone": "15.0"
+          }
+        }
+      },
+      "requiredDeviceFeatures": [
+        "type_f"
+      ],
+      "credentialType": 128,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "115fd5cf41a3330452cc6c0bc4e5c3c3a2f4df2c",
+            "url": "https://smp-device-content.apple.com/static/hero/128/base/nanaco@3x.png"
+          },
+          "2x": {
+            "sha1": "c6403347cb7b2074efbcc5dae4030b1d2b249dee",
+            "url": "https://smp-device-content.apple.com/static/hero/128/base/nanaco@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "BMAC",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "11.3",
+          "WatchOS": {
+            "Watch": "4.3",
+            "iPhone": "11.3"
+          }
+        }
+      },
+      "credentialType": 108,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "b576f122c0bf8ba8294cf4ab1dfdb201fe37368b",
+            "url": "https://smp-device-content.apple.com/static/hero/108/base/BeijingTransit@3x.png"
+          },
+          "2x": {
+            "sha1": "022506be92638c44de96163ee41a470a1d775d96",
+            "url": "https://smp-device-content.apple.com/static/hero/108/base/BeijingTransit@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "SPTCC",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "11.3",
+          "WatchOS": {
+            "Watch": "4.3",
+            "iPhone": "11.3"
+          }
+        }
+      },
+      "credentialType": 109,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "22a606b3cd0b8c678564082da717ad4563762f2e",
+            "url": "https://smp-device-content.apple.com/static/hero/109/base/SPTC@3x.png"
+          },
+          "2x": {
+            "sha1": "0c0fd9d07c35d795ff928a6374731f53d8675adb",
+            "url": "https://smp-device-content.apple.com/static/hero/109/base/SPTC@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "ELO",
+      "credentialType": 112,
+      "cardType": "payment",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "4a106e2082af30dddc0a2c848f886a5f2ddcb680",
+            "url": "https://smp-device-content.apple.com/static/hero/112/base/ELO@3x.png"
+          },
+          "2x": {
+            "sha1": "e857f750f695d52d132b9d7b9badf43e0d42c159",
+            "url": "https://smp-device-content.apple.com/static/hero/112/base/ELO@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "MOT",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "13.5",
+          "WatchOS": {
+            "Watch": "6.2.5",
+            "iPhone": "13.5"
+          }
+        }
+      },
+
+      "credentialType": 116,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "89c7ba9040cbb29ec46d34e70b0ca0cc73084045",
+            "url": "https://smp-device-content.apple.com/static/hero/116/base/MOT@3x.png"
+          },
+          "2x": {
+            "sha1": "18fcd34f063b7caeb6f0b3afdc45623fe8086a70",
+            "url": "https://smp-device-content.apple.com/static/hero/116/base/MOT@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "Octopus",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "13.5",
+          "WatchOS": {
+            "Watch": "6.2.5",
+            "iPhone": "13.5"
+          }
+        }
+      },
+      "requiredDeviceFeatures": [
+        "type_f"
+      ],
+      "credentialType": 117,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "d62b76347adb2d0ea7b995f09fff1cd679e2d999",
+            "url": "https://smp-device-content.apple.com/static/hero/117/base/Octopus@3x.png"
+          },
+          "2x": {
+            "sha1": "edde5b1a60d3f75670a95ae2c33e80c0f2bd31b6",
+            "url": "https://smp-device-content.apple.com/static/hero/117/base/Octopus@2x.png"
+          }
+        }
+      }
+    },
+    {
+      "identifier": "FudanMicro",
+      "deviceVersionRequirement": {
+        "maximum": {
+          "iPhone": "15.4",
+          "WatchOS": {
+            "Watch": "8.5",
+            "iPhone": "15.4"
+          }
+        },
+        "minimum": {
+          "iPhone": "14.2",
+          "WatchOS": {
+            "Watch": "7.1",
+            "iPhone": "14.2"
+          }
+        }
+      },
+      "credentialType": 132,
+      "cardType": "transit",
+      "images": {
+        "base": {
+          "3x": {
+            "sha1": "d07b75e3c5ae771bbda61697000123d29fbc4bf8",
+            "url": "https://smp-device-content.apple.com/static/hero/132/base/RuubyPay@3x.png"
+          },
+          "2x": {
+            "sha1": "51636136dde095ca1c1eb12e4203d741cbecef85",
+            "url": "https://smp-device-content.apple.com/static/hero/132/base/RuubyPay@2x.png"
+          }
+        }
+      }
+    }
+  ]
+}

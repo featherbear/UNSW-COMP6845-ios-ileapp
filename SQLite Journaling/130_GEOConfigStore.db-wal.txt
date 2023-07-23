@@ -1,0 +1,1065 @@
+SQLite format 3
+Utabledefaultsdefaults
+CREATE TABLE defaults (    rowid INTEGER PRIMARY KEY NOT NULL,    key TEXT NOT NULL,    parent INT REFERENCES defaults(rowid) ON UPDATE CASCADE ON DELETE CASCADE,    type TEXT NOT NULL,    value TEXT,    UNIQUE(key, parent)    )/
+indexsqlite_autoindex_defaults_1defaults
+4M
+
+
+izL]
+SSQLite format 3
+tabledefaults_from_companiondefaults_from_companion
+CREATE TABLE defaults_from_companion (    rowid INTEGER PRIMARY KEY NOT NULL,    key TEXT NOT NULL,    parent INT REFERENCES defaults_from_companion(rowid) ON UPDATE CASCADE ON DELETE CASCADE,    type TEXT NOT NULL,    value TEXT,    UNIQUE(key, parent)    )M
+indexsqlite_autoindex_defaults_from_companion_1defaults_from_companion
+rootdict
+root
+repeat
+int1
+launch
+int1!
+com.apple.geo.analyticsdict
+int1.
+com.apple.geod.updateNetworkDefaultsdict)
+GEOXPCActivities.com.apple.geoddict
+com.apple.geo.analytics
+com.apple.geod.updateNetworkDefaults
+	GEOXPCActivities.com.apple.geod
+?CountsAggregationLastRunTimedate2023.07.09 04:00:00 -0700
+CountsAggregationLastRunTime
+repeat	int0
+launch	int02	
+requestCountPowerLogger.dispatchActivitydict?
+repeat	
+launch	
+-
+requestCountPowerLogger.dispatchActivity	!
+repeatint0
+launchint02
+repeat
+launch
+-
+requestCountPowerLogger.dispatchActivity!
+
+|
+C
+
+aGEOLastNetworkDefaultsETagstr"52db07b31a038f871f57e0e17851a1e2da2323f0"
+KGEOLastNetworkDefaultsURLstrhttps://configuration.ls.apple.com/config/defaults?os=ios&os_version=14.7.1&hardware=iPhone10,17
+MapsFirstUseDateRemediationCompletedDataSetIdint1
+NeedsFallbackRegionsint15
+-FifteenMonthSessionIDGenTimedbl710576954.681033<
+EFifteenMonthSessionIDbytesCIXA6ufXw8mjYxCE+7Dkyrat8poB7
++GEOUsageSessionIDGenerationTimedbl710490554.680498
+EGEOUsageSessionIDbytesCP2kgtnW0eKiARCsx9z7gMO2nBM=R
+iGEOLastResourceManifestURLstrhttps://gspe35-ssl.ls.apple.com/geo_manifest/dynamic/config?application=geod&application_version=1&country_code=AU&hardware=iPhone10,1&os=ios&os_build=18G82&os_version=14.7.1
+?/@
+
+
+GEOLastNetworkDefaultsETag
+GEOLastNetworkDefaultsURL
+MapsFirstUseDateRemediationCompletedDataSetId
+NeedsFallbackRegions
+FifteenMonthSessionIDGenTime
+FifteenMonthSessionID
+GEOUsageSessionIDGenerationTime
+GEOUsageSessionID
+GEOLastResourceManifestURL
+}SC.
+source
+int260
+strAU(
+?date
+date2023.07.08 23:29:19 -0700"
+DeviceCountryCodeSourceddictM
+date
+DeviceCountryCodeSourced
+}SC.
+
+FifteenMonthSessionDeviceRemediationEpochint20210416
+FifteenMonthSessionDeviceRemediationEpoch
+TF7Cd
+MapsSuggestionsRoutineAllowedKeyint1:
+MapsSuggestionsRoutineAllowedKey
+
+Q
+8
+&
+
+	d	A
+)lastReset%dbl1369.120419458
+)expires%dbl2269.120447708
+type%int32
+currentCount%int10%
+app:com.apple.weather.widget_all_long
+dict!$
+)lastReset dbl1369.120283791
+)expires dbl2269.120438916
+type int32
+currentCount int14 
+app:com.apple.weather.widget_0x20304_long
+dict#
+)savedAtTime
+dbl1399.184143208
+ThrottlerStatedict*
+;
+!
+lastReset%)
+
+expires%(
+
+type%'
+currentCount%&+
+lastReset $
+
+expires #
+
+type "
+currentCount !/
+savedAtTime
+ThrottlerState
+int261
+date2023.07.09 14:43:13 +0800"
+NC64C
++F3ex
+#lastReset/dbl1434.172919
+)expires/dbl2334.173019958
+type/int32
+currentCount/int1`/
+app:com.apple.corelocation.CoreLocationTemporaryPreciseAuthPromptPlugin_0x20318_long
+dict!.
+)lastReset*dbl1434.173004041
+)expires*dbl2334.173028416
+type*int32
+currentCount*int1\*
+app:com.apple.corelocation.CoreLocationTemporaryPreciseAuthPromptPlugin_all_long
+dict!)
+dict
+#savedAtTime
+dbl1459.197144
+;
+!K
+lastReset/3
+
+expires/2
+
+type/1
+currentCount/0[
+lastReset*.
+
+expires*-
+
+type*,
+currentCount*+W
+15int06
+05int175
+LocalizationCapabilitiesSupportedPhoneticTypesarr
+UGCUserConsentStateint0
+date2023.07.09 14:45:23 +0800"
+;
+!
+
+0563
+LocalizationCapabilitiesSupportedPhoneticTypes5
+UGCUserConsentState4
+MapsSyncHasMigratedLocalDataInitialKeyint1
+MeCountrystrUNKNOWN 8
+-MeMetrostrMISSING_LOCATION7
+
+5
+j
+
+MapsSyncHasMigratedLocalDataInitialKey:
+MeCountry9
+MeMetro8
+date2023.07.09 14:45:25 +0800"
+FallbackCountrystrAU&=
+-FallbackMetrostrMISSING_LOCATION%<
+-CurrentMetrostrMISSING_LOCATION';
+MapsSyncHasMigratedInitialKeyint10:
+NeedsFallbackRegionsint05
+6
+5
+
+
+
+"
+[
+
+5
+G
+j
+
+FallbackCountry>
+FallbackMetro=
+CurrentMetro<"
+MapsSyncHasMigratedInitialKey;+
+lastResetlp
+
+expireslo
+
+typeln
+currentCountlmW
+app:com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin_all_long
+lastResetgk
+
+expiresgj
+
+typegi
+currentCountgh%
+app:com.apple.Maps_0x20301_long
+lastResetbf
+
+expiresbe
+
+typebd
+currentCountbc%
+app:com.apple.Maps_0x2030a_long
+lastReset]a
+
+expires]`
+
+type]_
+currentCount]^%
+app:com.apple.Maps_0x2030f_long
+lastResetX\
+
+expiresX[
+
+typeXZ
+currentCountXY%
+app:com.apple.Maps_0x20304_long
+lastResetSW
+
+expiresSV
+
+typeSU
+currentCountST[
+app:com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin_0x20318_long
+lastResetNR
+
+expiresNQ
+
+typeNP
+currentCountNO!
+app:com.apple.Maps_all_long
+lastResetIM
+
+expiresIL
+
+typeIK
+currentCountIJ%
+app:com.apple.Maps_0x20333_long
+lastResetDH
+
+expiresDG
+
+typeDF
+currentCountDE%
+app:com.apple.Maps_0x2032c_long
+lastReset?C
+
+expires?B
+
+type?A
+currentCount?@%
+app:com.apple.Maps_0x20318_long
+
+s
+Z
+H
+'
+
+dbl1579.125624625
+currentCountgint1*g
+dict!f
+)lastResetbdbl1572.571109291
+)expiresbdbl2474.537921666
+typebint32
+currentCountbint6*b
+dict!a
+)lastReset]dbl1564.744548791
+)expires]dbl2464.744631541
+type]int32
+currentCount]int1*]
+dict!\
+)lastResetXdbl1576.374489166
+%expiresXdbl2476.3746155
+typeXint32
+currentCountXint1*X
+dict!W
+)lastResetSdbl1566.597706041
+'expiresSdbl2466.59792975
+typeSint32
+currentCountSint1`S
+dict!R
+)lastResetNdbl1564.502735958
+)expiresNdbl2476.374640125
+typeNint32
+currentCountNint13&N
+dict!M
+)lastResetIdbl1564.741679666
+)expiresIdbl2464.741717916
+typeIint32
+currentCountIint1*I
+dict!H
+)lastResetDdbl1569.685086958
+)expiresDdbl2473.179277791
+typeDint32
+currentCountDint2*D
+dict!C
+)lastReset?dbl1564.502658916
+)expires?dbl2464.502752375
+type?int32
+currentCount?int1*?
+B
+cpV
+)lastResetldbl1566.597883125
+)expiresldbl2466.597946916
+typelint32
+currentCountlint1\l
+#lastResetgdbl1575.103393
+)expiresgdbl2475.103434666
+typegint32
+lastResetvz
+
+expiresvy
+
+typevx
+currentCountvw%
+app:com.apple.Maps_0x20200_long
+lastResetqu
+
+expiresqt
+
+typeqs
+currentCountqr%
+app:com.apple.Maps_0x20317_long
+dbl1609.121300625
+
+m
+;
+
+{b
+W>,
+
+
+v
+S	
+	W	>	,	
+'expiresgdbl2492.68125325
+currentCountgint2*g
+)expiresbdbl2490.348790625
+currentCountbint9*b
+)expiresXdbl2494.333418875
+currentCountXint2*X
+#expiresNdbl2494.333434
+currentCountNint20&N
+-MeMetrostrMISSING_LOCATION!z
+)lastResetvdbl1592.893430166
+)expiresvdbl2492.893532791
+typevint32
+currentCountvint1*v
+dict!u
+)lastResetqdbl1580.963364458
+)expiresqdbl2480.963401625
+typeqint32
+currentCountqint1*q
+dict!p
+type?int327
+15int0
+dbl1819.114969708
+?VR
+)expiresSdbl2712.121465375
+currentCountlint2
+currentCountSint2`S
+)expiresldbl2712.121511208
+Y<
+lastReset
+expires
+type
+currentCount
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_long
+app:com.apple.wifid_0x20b28_long
+app:com.apple.wifid_all_long
+lastReset{
+expires{~
+
+type{}
+currentCount{|3
+app:com.apple.Maps.GeneralMapsWidget_all_long
+currentCount*int1
+dbl1969.992160375
+)lastReset
+dbl1896.035371166 
+
+)expires
+dbl2796.035823083
+int32
+int1<
+
+dict!	
+'lastReset
+dbl1963.33077525 
+dbl2863.331075958
+int1+
+dict"
+dbl1963.331037125 
+dbl2863.331092916
+int1'
+dict!
+)lastReset{dbl1896.035766666
+)expires{dbl2796.035850333
+type{int328{
+currentCount{int1\l
+
+n
+`
+R
+0
+
+	k	O
+UGCUserConsentStateint0*
+Y$
+
+date2023.07.09 16:44:17 +0800"
+Z>Ag
+UGCUserConsentState4
+
+	k	O	4	
+
+/lastReset
+dbl8701.966045749999#
+/expires
+dbl9601.966085583001
+int1]
+dict%
+dbl8701.962658791001 
+dbl9601.966077375
+int1a
+dict'
+/savedAtTime
+dbl8708.186829583001
+ThrottlerStatedict
+
+S
+dbl9014.196152041
+UGCUserConsentState4
+	k	O	
+/ExperimentBucketGUIDTimestampdbl710593212.3441941A?
+UExperimentBucketGUIDstrC87DEF49-CABA-45F4-B623-7C08AC6B87AD
+com.apple.geo.analyticsdict.
+com.apple.geod.updateNetworkDefaultsdict?
+d
+
+"
+[
+ExperimentBucketGUIDTimestamp@
+ExperimentBucketGUID?
+	GEOXPCActivities.com.apple.geod
+
+q>p
+
+repeatDint02D
+requestCountPowerLogger.dispatchActivitydict8A
+com.apple.GeoServices.UpdateExperiment.Executedict7@
+launchAint0
+launchDint0
+repeatAint0)
+?Y
+UGCUserConsentState4@
+repeatDF
+launchDE-
+requestCountPowerLogger.dispatchActivityD#
+repeatAC
+launchAB3
+com.apple.GeoServices.UpdateExperiment.ExecuteA)
+ExperimentBucketGUID?
+
+":
+
+UGCUserConsentState4
+	GEOXPCActivities.com.apple.geod
+com.apple.GeoServices.UpdateExperiment.ExecuteA
+rSQLite format 3
+]
+
+launchGint0
+repeatGint0)
+:?
+]
+UGCUserConsentState4)
+	GEOXPCActivities.com.apple.geod
+repeatGI
+launchGH
+com.apple.GeoServices.UpdateExperiment.ExecuteG"
+repeatJint02J
+requestCountPowerLogger.dispatchActivitydict8G
+launchJint0
+ez<
+Xm
+launchJK#
+launchGH3
+com.apple.GeoServices.UpdateExperiment.ExecuteG
+repeatJL-
+requestCountPowerLogger.dispatchActivityJ
+UGCUserConsentState4m
+launchMint0
+repeatMint0)
+&:`|
+
+UGCUserConsentState4G
+repeatMO
+launchMN3
+com.apple.GeoServices.UpdateExperiment.ExecuteM)
+repeatPint02P
+requestCountPowerLogger.dispatchActivitydict8M
+launchPint0
+:
+
+"<
+repeatPR
+launchPQ-
+requestCountPowerLogger.dispatchActivityP#
+com.apple.GeoServices.UpdateExperiment.ExecuteM
+M#
+
+repeatVint02V
+requestCountPowerLogger.dispatchActivitydict8S
+launchSint0
+launchVint0
+repeatSint0)
+}`
+
+0Y/
+
+UGCUserConsentState4#
+launchST
+repeatVX
+launchVW-
+requestCountPowerLogger.dispatchActivityV#
+	GEOXPCActivities.com.apple.geod
+repeatSU
+com.apple.GeoServices.UpdateExperiment.ExecuteS"
++g<_./6
+date2023.07.09 19:03:50 +0800"
+6
+5
+0Y/$
+launchST
+
+VPZ
+
+/savedAtTimeYdbl70.47452712499999
+%lastReset_dbl40.378423333
+'expires_dbl940.378712833
+type_int32
+currentCount_int1%_
+app:<unknown>_0x20b22_longYdict
+%lastResetZdbl40.378672416"]
+/expiresZdbl940.3787274159999
+typeZint32
+currentCountZint1!Z
+app:<unknown>_all_longYdict
+0Y/
+
+ThrottlerStateY
+currentCount_` 
+app:<unknown>_0x20b22_longY_
+lastResetZ^
+
+expiresZ]
+
+typeZ\
+currentCountZ[
+app:<unknown>_all_longYZ%
+lastReset_c
+
+expires_b
+
+type_a
+savedAtTimeYd!
+'savedAtTimeYdbl370.475013416
+Zo
+
+'savedAtTimeedbl985.002647833 o
+'lastResetkdbl965.447892583
+)expireskdbl1865.447954583
+typekint32
+currentCountkint18k
+app:com.apple.Maps.GeneralMapsWidget_all_longedict j
+'lastResetfdbl965.447578916
+)expiresfdbl1865.447934125
+typefint32
+currentCountfint1<f
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_longedict
+0Y/
+ThrottlerStatee
+repeatSU
+
+typekm
+currentCountkl
+lastResetfj
+
+expiresfi
+
+typefh
+currentCountfg7
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_longef%
+lastResetko
+
+expireskn
+savedAtTimeep3
+app:com.apple.Maps.GeneralMapsWidget_all_longek!
+)savedAtTimeedbl1315.076748583 o
+QWoyG
+)savedAtTimeqdbl2785.002550583!{
+)lastResetwdbl2776.439109625
+)expireswdbl3676.439259583
+typewint32
+currentCountwint18w
+app:com.apple.Maps.GeneralMapsWidget_all_longqdict!v
+)lastResetrdbl2776.438424583
+)expiresrdbl3676.439220708
+typerint32
+currentCountrint1<r
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_longqdict
+ThrottlerStateq
+typewy
+currentCountwx
+lastResetrv
+
+expiresru
+
+typert
+currentCountrs7
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_longqr%
+lastResetw{
+
+expireswz
+savedAtTimeq|3
+app:com.apple.Maps.GeneralMapsWidget_all_longqw!
+)savedAtTimeqdbl3085.002554916!{
+tyS
+4UN
+
+>V.D
+)savedAtTime}dbl4525.002523291"
+dbl4512.883622875 
+dbl5412.883687625
+int18
+app:com.apple.Maps.GeneralMapsWidget_all_long}dict!
+)lastReset~dbl4512.883293625
+)expires~dbl5412.883670875
+type~int32
+currentCount~int1<~
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_long}dict
+ThrottlerState}
+lastReset~
+expires~
+type~
+currentCount~
+app:com.apple.Maps.GeneralMapsWidget_0x2030b_long}~%
+app:com.apple.Maps.GeneralMapsWidget_all_long}
+savedAtTime}
+)savedAtTime}dbl4825.002602875"
+wDA
+
+dbl6325.002643458 
+%lastReset
+dbl6306.3170915 
+dbl7206.317158583
+int19
+#lastReset
+dbl6306.316762 
+
+dbl7206.317142083
+int1=
+
+dbl6625.002649208 
+Peo
+
+dbl8095.002468708"
+dbl8091.303072375#
+dbl8991.303114999999
+dbl8091.302614291 
+dbl8991.303106416
+int1=
+PT& 
+
+dbl8395.002707833"
+D,],
+
+dbl8425.002627665999#
+dbl9306.256806916001
+dbl9306.256844957999
+int29
+dbl8091.302614291
+int2=
+n~8
+
++savedAtTime
+dbl10165.002589083#+
++lastReset
+dbl10155.317475958!*
++expires
+dbl11055.317542791
+int19'
+dict#&
+dbl10155.317020625!%
+dbl11055.317525958
+int1="
+dbl10465.002640458#+
+A;Q
+
+-1
+
+#;
+
+UGCUserConsentState4/
+com.apple.GeoServices.UpdateExperiment.ExecuteS
+repeatSU0
+dbl24925.002510916#:
+dbl24906.071658708!9
+dbl25806.071697458
+int196
+dict#5
+dbl24906.066458166 4
+dbl25806.07168425
+int1=1
+dict8S
+4
+
+	
+
+;o
+
+$?
+52
+repeatSU
+dbl25225.002602583#:
+(
+
+	
+
+222222222
+repeatSU2
+dbl39625.002481791 F
+dbl39622.715948
+%expires
+dbl40522.715981
+int19B
+dict#A
+dbl39622.715789041!@
+dbl40522.715972625
+int1==
+dbl39925.023956125 F
+dbl41395.002619208#R
+dbl41366.796758166!Q
+dbl42266.796833791
+int19N
+dict#M
+dbl41366.796412375 L
+dbl42266.79681125
+int1=I
+xK:G
+dbl42589.896573666%S
+dbl41695.002561916#R
+dbl42589.896611541
+int29N
+dbl41366.796412375
+int2=I
+dbl42025.002615041#^
+dbl42005.058956041!]
+dbl42905.058956041
+int19Z
+dict#Y
+dbl42005.058943125!X
+dbl42905.058943125
+int1=U
+g7
+
+dbl42325.002487583#^
+dbl43222.738030791
+int29Z
+dbl43222.737974166
+int2=U
+dbl42925.002562333#j
+dbl42906.138123416!i
+dbl43806.138123416
+int19f
+dict#e
+dbl42906.138084541!d
+dbl43806.138084541
+int1=a
+dbl43225.016335208#j
+&Qsz3!^
+ps^
+
+dbl43255.032891041#j
+dbl44133.037127708
+int29f
+dbl42906.138084541
+dbl44133.03708925
+int2=a
+ho
+
+4
+
+
+
+52222
+(
+
+
+
+222222222222
+'savedAtTime
+dbl43765.0026585#y
+dbl43743.577919875!x
+dbl44643.577919875
+int19u
+dict#t
+dbl43743.577881541!s
+dbl44643.577881541
+int1=p
+;6
+
+$G
+
+222
+dbl44065.002693583#y
+s	1
+
+dbl44125.002622708#y
+dbl45006.189858958
+int29u
+dbl45006.189819583
+int2=p
+yfh
+
+repeatSU5
+dbl44635.002594708#
+dbl44611.730085208!
+dbl45511.730085208
+dbl44611.730046625!
+dbl45511.730046625
+int1=|
+dbl44935.00263175#
+dbl44965.002472583#
+dbl45861.362635541
+dbl44611.730046625
+dbl45861.36261875
+int2=|
+tz
+
+]&N
+
+dbl45295.002457041#
+
+dbl45273.010825875!
+
+dbl46173.010825875
+
+int32
+
+int19
+dbl45273.010799166!
+dbl46173.010799166
+dbl45595.002468875#
+
+dbl46486.443560625
+
+int29
+dbl46486.443543833
+dbl45925.0025705#
+dbl45905.604305916!
+dbl46805.604305916
+dbl45905.604289458!
+dbl46805.604289458
+~*1b
+dbl46225.002511875#
+dbl47119.173844041
+dbl45905.604289458
+dbl47119.173817
+dbl46825.002574875#
+%dbl46806.186450041!
+%dbl47706.186450041
+%int32
+%int19
+ dbl46806.186411583!
+ dbl47706.186411583
+ int32
+ int1=
+dbl47125.002605958#
+dbl47425.002583333#
+%dbl47406.239052208!
+%dbl48306.239052208
+ dbl47406.239014583!
+ dbl48306.239014583
+dbl47725.002543125#
+%dbl48621.381459916
+%int29
+ dbl48621.381402958
+ int2=
+!`
+
++dbl48115.002553541!
+1dbl48105.3789225
+'expires
+1dbl49005.3789225
+1int32
+1int19
++dict#
+,dbl48105.378888583!
+,dbl49005.378888583
+,int32
+,int1=
++dict8S
++dbl48445.002626375!
+0`w=
+5z5
+
+>dbl84860.682780916#
+>dbl85760.75333279101
+>int32
+>int21
+7dict#
+9dbl84860.682622041!
+9dbl85760.753316666
+9int32
+9int25
+7dict%
+7dbl84868.5170549168S
+B5222
+Hdbl84870.719363583 
+Hdbl85770.71945875
+Hint32
+Hint19
+Cdbl84870.719085708#
+Cdbl85770.71943241599
+Cint32
+Cint1=
+7dbl84898.5172586668S
+5`j5
+
+B5
+7dbl85228.5170128758S
+cS
+
+7dbl85288.51711554101#
+Hdbl84870.719363583
+Hint29
+Cdbl84870.719085708
+Cdbl86161.701114333
+Cint2=
+9int2
+Hdbl86161.701131541015
+7dict8S
+Zint0
+Zint14
+com.apple.geod.OpportunisticTileDownloaderdict#
+Udbl85437.674319083!
+Udbl86337.674583125
+Uint32
+Uint1,
+Pdbl85437.674536291#
+Pdbl86337.67460391601
+Pint32(
+7dict
+7dbl85438.58631775#
+>dbl84860.682780916
+>dbl86322.6378105
+>int41
+9dbl84860.682622041
+9dbl86322.63780225
+9int4
+Pint1
+com.apple.geod.OpportunisticTileDownloader
+date2023.07.10 18:47:00 +0800"
+C2Zj
+UGCUserConsentState4$
+launchST
+ Qp%]'
+com.apple.geo.analyticsdict7@
+com.apple.GeoServices.UpdateExperimentdict
+]int0!
+]int1.
+com.apple.GeoServices.UpdateExperiment
+app:<unknown>_all_long
+Cint2
+edbl86348.33863579101
+eint32
+eint1&
+app:<unknown>_0x20b22_long
+`dbl85448.33856541599#
+`dbl86348.33866012499
+`int32
+`int1%
+7dbl85468.527139791=
+Hdbl86161.70113154101
+edbl85448.3380375
+W|4[}
+p
+7dbl85498.530722083
+eint1
+`int1
++	Q
+5	?
+	GEOXPCActivities.com.apple.geod
+countPerDay
+jint1
+countPerHour
+jint12
+?lastHourReset
+jdate2023.07.10 18:48:07 +08001
+?lastDayReset
+jdate2023.07.10 18:48:07 +0800
+POIBusynessStatedict&
+;M6
+
+
+	n	
+	GEOXPCActivities.com.apple.geodE
+POIBusynessState
+lastDayReset
+lastHourReset
+tdbl85653.358245375!
+tdbl86553.358245375=
+7dict0
+7dbl85678.527944125
+oint1%
+odbl85653.35826162501#
+odbl86553.35826162501
+oint329
+7dict!
+tint32
+tint1
+z
+p
+A+	Q
+Qp
+2]So
+
+7dbl86008.51704599999#
+7dict"
+POIBusynessStatedict
+f 
+p
+com.apple.geod.OpportunisticTileDownloaderdict
+7dbl86038.5170988759
+oint32
+
+v
+A+
+op
+7dbl86068.516956833
+oint1
+HO(e
+
+;M	
+UGCUserConsentState46
+A7TaW(
+
+;M
+
+
++

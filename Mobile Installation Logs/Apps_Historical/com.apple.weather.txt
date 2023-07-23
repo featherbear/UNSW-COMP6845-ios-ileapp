@@ -1,0 +1,6 @@
+2023-07-09 14:42:07 Data container moved com.apple.weather /private/var/mobile/Containers/Data/Application/775A6E5E-9026-4C6E-B32D-B229E27B9771
+2023-07-09 14:42:07 Made container live com.apple.weather /private/var/containers/Bundle/Application/9D90FBD3-8F83-4B0F-A613-EA3F68A6F3A3
+2023-07-09 14:42:07 Install successful com.apple.weather 
+2023-07-08 23:20:23 Made container live com.apple.weather /private/var/mobile/Containers/Data/Application/96CC5B91-E641-41FA-AE25-6C5155D28C68
+2023-07-08 23:20:23 Made container live com.apple.weather /private/var/containers/Bundle/Application/BA8207BC-D3FA-4FE5-964E-7C8AA7B9F7A3
+2023-07-08 23:20:23 Install successful com.apple.weather 

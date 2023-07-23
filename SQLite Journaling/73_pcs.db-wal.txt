@@ -1,0 +1,94 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+@U19
+@?q-
+iCloud.is.workflow.my.workflows:com.apple.CloudDocs.container-metadata:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+1~0|0%
+u3j)
+@E{
+`5m4E
+t0H2
+
+GGhw
+ -l#l_
+(F25E8181E58E7E643A4E085DC06D4B3BC46CF25E
+*+,YNS.string
++YX4oifXUDNQ1QIzwY_7gmgoMelCVfmPbbXKlWGsY9gM
+./01Z$classnameX$classes_
+NSMutableString
+234_
+NSMutableStringXNSStringXNSObject
+6789$ZRecordNameVZoneID
+iCloud.is.workflow.my.workflows
+?@AXZoneNameYownerName
+&com.apple.CloudDocs.container-metadata_
+__defaultOwner__
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordID\AppContainer
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.CloudDocs.container-metadata:__defaultOwner__A
+~
+U{
+com.apple.CloudDocs.container-metadata:__defaultOwner__
+ !%-3459=@U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+]>6r
+Xc2}Q
+*qpg
+5c!
+ q#
+ TRx
+)0'0%
+P
+ko
+(77023AE924E84C56A8A00018AE10B309CD82C313
+"#$YNS.string
++qDnRXlF7wHwMQ1vXQOaTQG_9NxPbfA5dbpJquLOLPRo
+&'()Z$classnameX$classes_
+*+,_
+012XZoneNameYownerName
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+{	com.apple.CloudDocs.container-metadata:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+	com.apple.CloudDocs.container-metadata:__defaultOwner__
+com.apple.CloudDocs.container-metadata:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+{U
+	com.apple.CloudDocs.container-metadata:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5

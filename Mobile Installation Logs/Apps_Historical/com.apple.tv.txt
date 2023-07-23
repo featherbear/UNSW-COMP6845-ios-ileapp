@@ -1,0 +1,6 @@
+2023-07-09 14:41:36 Data container moved com.apple.tv /private/var/mobile/Containers/Data/Application/93254656-641B-45ED-A929-279EE3B73A8A
+2023-07-09 14:41:36 Made container live com.apple.tv /private/var/containers/Bundle/Application/B017F728-5E6C-4842-99AE-07FEC406CF1B
+2023-07-09 14:41:36 Install successful com.apple.tv 
+2023-07-08 23:20:28 Made container live com.apple.tv /private/var/mobile/Containers/Data/Application/729BF181-908F-47E7-A2FD-9568D32F0E44
+2023-07-08 23:20:28 Made container live com.apple.tv /private/var/containers/Bundle/Application/50E4DD72-37B2-4BFE-9CB1-4BF7688FFFE7
+2023-07-08 23:20:28 Install successful com.apple.tv 

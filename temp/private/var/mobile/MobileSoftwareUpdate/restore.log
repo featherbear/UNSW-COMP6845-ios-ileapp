@@ -1,0 +1,142 @@
+04e0b880 : initializing new event recorder with options: (null)
+04e0b880 : start
+04e0b880 : Using NVRAM dictionary from IODeviceTree since there is no key for ota-uuid in there
+
+04e0b880 : Permanent update volume present..supportDir will be placed there
+04e0b880 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+04e0b880 : NVRAM variable ota-uuid has unexpected value '(null)'
+04e0b880 : NVRAM variable ota-submission-url has unexpected value '(null)'
+04e0b880 : NVRAM variable ota-os-version has unexpected value '(null)'
+04e0b880 : NVRAM variable ota-context has unexpected value '(null)'
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with systemMountPoint: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with dataMountPoint: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with updateMountPoint: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with nvramPath: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with targetOSVersion: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with context: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with baseServerURL: (null)
+04e0b880 : <UMEventRecorder: 0x104c09640>: initializing event recorder with uuid: (null)
+04e0b880 : InstallInProgressAfterApply is false
+
+04e0b880 : ignoring call to recordPostUpdateEvent when no install is in progress or we haven't performed the apply operation
+6b45f000 : submitEventsInBackground running
+6b45f000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+6b45f000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: unable to create support directory at path:file:///var/db/UpdateMetrics error:Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “UpdateMetrics” in the folder “db”." UserInfo={NSFilePath=/var/db/UpdateMetrics, NSUnderlyingError=0x104c05f10 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6b45f000 : unable to create directory for update events: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “Events” in the folder “UpdateMetrics”." UserInfo={NSFilePath=/var/db/UpdateMetrics/Events, NSUnderlyingError=0x104c09920 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6b45f000 : -[UMEventRecorder submitEventsInBackground:withOptions:]_block_invoke: Previously submitted events will NOT BE resubmitted
+
+6b45f000 : failed to create enumerator of path: /var/db/UpdateMetrics/Events
+6b45f000 : [-[UMEventRecorder _recordEvent:information:callback:]] (purge) - (null)
+
+6b45f000 : event reporting is not enabled, discarding event
+6b4eb000 : submitEventsInBackground running
+6b4eb000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+6b4eb000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: unable to create support directory at path:file:///var/db/UpdateMetrics error:Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “UpdateMetrics” in the folder “db”." UserInfo={NSFilePath=/var/db/UpdateMetrics, NSUnderlyingError=0x106804870 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6b4eb000 : unable to create directory for update events: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “Events” in the folder “UpdateMetrics”." UserInfo={NSFilePath=/var/db/UpdateMetrics/Events, NSUnderlyingError=0x10680f450 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6b4eb000 : -[UMEventRecorder submitEventsInBackground:withOptions:]_block_invoke: Previously submitted events will NOT BE resubmitted
+
+6b4eb000 : failed to create enumerator of path: /var/db/UpdateMetrics/Events
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-uuid not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-result not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-failure-reason not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-breadcrumbs not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-submission-url not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-os-version not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-original-os-version not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-install-tonight not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-context not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-brain-version not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM OTA-pre-conversion not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM OTA-post-conversion not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-conv-panic-indicator not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM OTA-fsck-metrics not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM OTA-sealvolume-metrics not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-forced-reset-uptime not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-initial-forced-reset-uptime not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ramrod-nvram-sequence not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-snapshot-update not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM pre-recovery-ota-failure-uuid not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM recoveryos-initiated-update not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-controllerVersion not found..Nothing to do
+
+6b4eb000 : msu_delete_nvram_variable_if_exists: NVRAM ota-updateType not found..Nothing to do
+
+6b4eb000 : Permanent update volume present..supportDir will be placed there
+6b4eb000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+6b4eb000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: unable to create support directory at path:file:///var/db/UpdateMetrics error:Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “UpdateMetrics” in the folder “db”." UserInfo={NSFilePath=/var/db/UpdateMetrics, NSUnderlyingError=0x104b061f0 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6b45f000 : Returning non-snapshot preparation size
+6b45f000 : nonsnapshot preparation size : 147845120 (140 MB)
+6b45f000 : Returning non-snapshot apply size
+6b45f000 : Sealing requires 178 MiB overhead
+6b45f000 : Minimum system partition is 4829741056 (4606 MB)
+6b45f000 : System partition padding is 671088640 (640 MB)
+6b45f000 : System partition firmware is 126877696 (121 MB)
+6b45f000 : APFS system volume is using 6640128000 (6332 MB)
+6b45f000 : nand already over-provisioned
+6b45f000 : software update bundle is multi-pass enabled
+6b45f000 : free space required is 654311424 (624 MB)
+6b45f000 : Returning non-snapshot preparation size
+6b45f000 : nonsnapshot preparation size : 0 (0 MB)
+6b45f000 : Returning non-snapshot apply size
+6b45f000 : Sealing requires 178 MiB overhead
+6b45f000 : Minimum system partition is 5114953728 (4878 MB)
+6b45f000 : System partition padding is 671088640 (640 MB)
+6b45f000 : System partition firmware is 126877696 (121 MB)
+6b45f000 : APFS system volume is using 6640128000 (6332 MB)
+6b45f000 : nand already over-provisioned
+6b45f000 : software update bundle is multi-pass enabled
+6b45f000 : free space required is 654311424 (624 MB)
+00cb7880 : initializing new event recorder with options: (null)
+00cb7880 : start
+0097b880 : initializing new event recorder with options: (null)
+0097b880 : start
+049cf880 : initializing new event recorder with options: (null)
+0106f880 : initializing new event recorder with options: (null)
+0106f880 : start
+0106f880 : Using NVRAM dictionary from IODeviceTree since there is no key for ota-uuid in there
+
+0106f880 : Permanent update volume present..supportDir will be placed there
+0106f880 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+0106f880 : NVRAM variable ota-uuid has unexpected value '(null)'
+0106f880 : NVRAM variable ota-submission-url has unexpected value '(null)'
+0106f880 : NVRAM variable ota-os-version has unexpected value '(null)'
+0106f880 : NVRAM variable ota-context has unexpected value '(null)'
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with systemMountPoint: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with dataMountPoint: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with updateMountPoint: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with nvramPath: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with targetOSVersion: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with context: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with baseServerURL: (null)
+0106f880 : <UMEventRecorder: 0x1012048b0>: initializing event recorder with uuid: (null)
+0106f880 : InstallInProgressAfterApply is false
+
+0106f880 : ignoring call to recordPostUpdateEvent when no install is in progress or we haven't performed the apply operation
+6f267000 : submitEventsInBackground running
+6f267000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: mountPoint is nil...Using /var/MobileSoftwareUpdate as the mountPoint
+6f267000 : -[UMEventRecorder _supportDirectoryWithMountPoint:]: unable to create support directory at path:file:///var/db/UpdateMetrics error:Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “UpdateMetrics” in the folder “db”." UserInfo={NSFilePath=/var/db/UpdateMetrics, NSUnderlyingError=0x101209ba0 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6f267000 : unable to create directory for update events: Error Domain=NSCocoaErrorDomain Code=513 "You don’t have permission to save the file “Events” in the folder “UpdateMetrics”." UserInfo={NSFilePath=/var/db/UpdateMetrics/Events, NSUnderlyingError=0x10121a140 {Error Domain=NSPOSIXErrorDomain Code=13 "Permission denied"}}
+6f267000 : -[UMEventRecorder submitEventsInBackground:withOptions:]_block_invoke: Previously submitted events will NOT BE resubmitted
+
+6f267000 : failed to create enumerator of path: /var/db/UpdateMetrics/Events

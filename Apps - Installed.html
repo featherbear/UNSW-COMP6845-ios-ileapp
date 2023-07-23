@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Apps - Installed report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Apps - Installed report</h1>
+                    <h6 class="animated fadeIn mb-3">List of Installed apps.</h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 469</h6><p class="lead">Apps - Installed located at: R:\temp\private\var\installd\Library\Logs\MobileInstallation\mobile_installation.log.1</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Last Installed</th><th class="th-sm">Bundle ID</th></tr></thead><tbody><tr><td>2023-07-09 14:41:36</td><td>com.apple.tv</td></tr><tr><td>2023-07-09 14:41:36</td><td>com.apple.tv.TVCoreSpotlightExtension</td></tr><tr><td>2023-07-09 14:41:36</td><td>com.apple.tv.TVNotificationContentExtension</td></tr><tr><td>2023-07-09 14:41:36</td><td>com.apple.tv.TVIntentsExtension</td></tr><tr><td>2023-07-09 14:41:36</td><td>com.apple.tv.TVWidgetExtension</td></tr><tr><td>2023-07-09 14:41:37</td><td>com.apple.Home</td></tr><tr><td>2023-07-09 14:41:37</td><td>com.apple.Home.HomeNotification</td></tr><tr><td>2023-07-09 14:41:37</td><td>com.apple.Home.HomeIntentExtension</td></tr><tr><td>2023-07-09 14:41:37</td><td>com.apple.Home.HomeUtilNotification</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.DiagnosticExtension</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.PodcastsNotificationExtension</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.PodcastsClassKitExtension</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.widget</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.SpotlightIndexExtension</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.PodcastsProductPageExtension</td></tr><tr><td>2023-07-09 14:41:42</td><td>com.apple.podcasts.PodcastsAnnouncementsNotificationExtension</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders.IntentsUIExtension</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders.WidgetExtension</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders.sharingextension</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders.IntentsExtension</td></tr><tr><td>2023-07-09 14:41:44</td><td>com.apple.reminders.spotlightindexextension</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes.QuickLookExtension</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes.IntentsExtension</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes.SpotlightIndexExtension</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes.SharingExtension</td></tr><tr><td>2023-07-09 14:41:46</td><td>com.apple.mobilenotes.WidgetExtension</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.facetime</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.MobileStore</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.MobileStore.MusicStoreNotificationContentPlugin</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.mobilecal</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.mobilecal.diagnosticextension</td></tr><tr><td>2023-07-09 14:41:52</td><td>com.apple.mobilecal.CalendarWidgetExtension</td></tr><tr><td>2023-07-09 14:41:55</td><td>com.apple.VoiceMemos</td></tr><tr><td>2023-07-09 14:41:55</td><td>com.apple.VoiceMemos.VoiceMemosIntentsExtension</td></tr><tr><td>2023-07-09 14:41:55</td><td>com.apple.VoiceMemos.VoiceMemosShareExtension</td></tr><tr><td>2023-07-09 14:41:55</td><td>com.apple.VoiceMemos.SpotlightIndexExtension</td></tr><tr><td>2023-07-09 14:41:56</td><td>com.apple.DocumentsApp</td></tr><tr><td>2023-07-09 14:41:57</td><td>com.apple.MobileAddressBook</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.MusicNotificationContentExtension</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.Messages</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.MusicCoreSpotlightExtension</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.MusicWidgets</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.MediaPicker</td></tr><tr><td>2023-07-09 14:41:58</td><td>com.apple.Music.StoreFlowExtension</td></tr><tr><td>2023-07-09 14:42:00</td><td>com.apple.Translate</td></tr><tr><td>2023-07-09 14:42:00</td><td>com.apple.Translate.CacheDeleteExtension</td></tr><tr><td>2023-07-09 14:42:02</td><td>com.apple.shortcuts</td></tr><tr><td>2023-07-09 14:42:02</td><td>com.apple.shortcuts.Run-Workflow</td></tr><tr><td>2023-07-09 14:42:02</td><td>com.apple.shortcuts.AutomationNotificationContent</td></tr><tr><td>2023-07-09 14:42:03</td><td>com.apple.tips</td></tr><tr><td>2023-07-09 14:42:03</td><td>com.apple.tips.TipsSwift</td></tr><tr><td>2023-07-09 14:42:03</td><td>com.apple.tips.TipsNotificationExtension</td></tr><tr><td>2023-07-09 14:42:07</td><td>com.apple.weather</td></tr><tr><td>2023-07-09 14:42:07</td><td>com.apple.weather.widget</td></tr><tr><td>2023-07-09 14:42:07</td><td>com.apple.weather.WeatherIntents</td></tr><tr><td>2023-07-09 14:42:08</td><td>com.apple.Bridge.GreenfieldThumbnailExtension</td></tr><tr><td>2023-07-09 14:42:08</td><td>com.apple.Bridge</td></tr><tr><td>2023-07-09 14:42:14</td><td>com.apple.Maps</td></tr><tr><td>2023-07-09 14:42:14</td><td>com.apple.Maps.MapsSpotlightIndexExtension</td></tr><tr><td>2023-07-09 14:42:14</td><td>com.apple.Maps.SiriTrafficIncidents</td></tr><tr><td>2023-07-09 14:42:14</td><td>com.apple.Maps.GeneralMapsWidget</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.calculator</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.iBooks</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.iBooks.BooksIntentHandler</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.iBooks.iBooksProductPageExtension</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.iBooks.iBooksSpotlightExtension</td></tr><tr><td>2023-07-09 14:42:16</td><td>com.apple.iBooks.BooksNotificationContentExtension</td></tr><tr><td>2023-07-09 14:42:17</td><td>com.apple.measure</td></tr><tr><td>2023-07-09 14:42:18</td><td>com.apple.compass</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.openinnews</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.NewsArticleQuickLook</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.tag</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.widgetintents</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.marketingnotificationextension</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.NewsAudioExtension</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.widget</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.articlenotificationextension</td></tr><tr><td>2023-07-09 14:42:21</td><td>com.apple.news.articlenotificationserviceextension</td></tr><tr><td>2023-07-09 14:46:07</td><td>com.apple.mobilemail</td></tr><tr><td>2023-07-09 14:46:06</td><td>com.apple.mobilemail.MailQuickLookExtension</td></tr><tr><td>2023-07-09 14:46:06</td><td>com.apple.mobilemail.MailIntentsExtension</td></tr><tr><td>2023-07-09 14:46:06</td><td>com.apple.mobilemail.DiagnosticExtension</td></tr><tr><td>2023-07-09 14:46:06</td><td>com.apple.mobilemail.MailSpotlightIndexExtension</td></tr><tr><td>2023-07-09 14:46:06</td><td>com.apple.mobilemail.MailNotificationContentExtension</td></tr><tr><td>2023-07-09 14:46:14</td><td>com.jdtech.CalculatorVault</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.DemoApp</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.MobileSMS</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.MobileSMS.MessagesAssistantExtension</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.MobileSMS.MessagesAssistantUIExtension</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.MobileSMS.MessagesNotificationExtension</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.MobileSMS.spotlight</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.AccountAuthenticationDialog</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.ctkui</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.ScreenTimeWidgetApplication</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.FontInstallViewService</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.Animoji.StickersApp</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.Animoji.StickersApp.MessagesExtension</td></tr><tr><td>2023-07-08 23:19:41</td><td>com.apple.AppSSOUIService</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.Diagnostics</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.Diagnostics.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.Photos.PhotosUIService</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.CTNotifyUIService</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.dt.XcodePreviews</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.siri.parsec.HashtagImagesApp</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.siri.parsec.HashtagImagesApp.HashtagImagesExtension</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.FunCamera.ShapesPicker</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.FunCamera.ShapesPicker.MessagesExtension</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.Health</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.Health.ShareExtension</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.CloudKit.ShareBear</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar.extension.signature</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar.extension.display</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar.extension.camera</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar.extension.markup</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.sidecar.extension.sketch</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.datadetectors.DDActionsService</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.PassbookBanner</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.family.FAFollowupExtension</td></tr><tr><td>2023-07-08 23:19:42</td><td>com.apple.iMessageAppsViewService</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.icloud.apps.messages.business</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.icloud.apps.messages.business.extension</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.TVRemoteUIService</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.TVRemoteUIService.TVRemoteIntentExtension</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-4003</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-3939</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-3904</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-3732</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-4182</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-8201</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-4180</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-4615</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-8246</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-8187</td></tr><tr><td>2023-07-08 23:19:43</td><td>com.apple.DiagnosticsService.Diagnostic-3906</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3734</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4005</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4184</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8238</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3985</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4007</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4492</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4181</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3942</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3907</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3905</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4002</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4183</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8079</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4006</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4004</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3903</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4359</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.SystemReport</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3741</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4008</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3743</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8134</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.SystemReport-BatteryCase</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8068</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8290</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3909</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8217</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4154</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3745</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4351</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8276</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4153</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-8209</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4276</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-4009</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3738</td></tr><tr><td>2023-07-08 23:19:44</td><td>com.apple.DiagnosticsService.Diagnostic-3744</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.DiagnosticsService.Diagnostic-4579</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.DiagnosticsService.Diagnostic-8253</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.DiagnosticsService.Diagnostic-8288</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.DiagnosticsService.Diagnostic-8035</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.Preferences.indexSettingsManifests</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.CarPlaySettings</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.icloud.FindMyDevice.FindMyExtensionContainer</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.icloud.FindMyDevice.FindMyExtensionContainer.FindMyDeviceBluetoothExtension</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.Magnifier</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.HealthENLauncher</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.CoreAuthUI</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.PrintKit.Print-Center</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.BarcodeScanner</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.Passbook</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.Passbook.NotificationContentExtension</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.Passbook.QuicklookPreviewExtension</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.SafariViewService</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.AMSEngagementViewService</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.FunCamera.EmojiStickers</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.FunCamera.EmojiStickers.MessagesExtension</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.siri</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.PublicHealthRemoteUI</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.FTMInternal</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.SleepLockScreen</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.CompassCalibrationViewService</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.ios.StoreKitUIService</td></tr><tr><td>2023-07-08 23:19:45</td><td>com.apple.CarPlaySplashScreen</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.AppStore</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.AppStore.ProductPageExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.AppStore.SubscribePageExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.SubcredentialUIService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.SubcredentialUIService.SubcredentialInvitationMessagesExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.social.SLYahooAuth.SLYahooAuthService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.FunCamera.TextPicker</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.FunCamera.TextPicker.MessagesExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.ScreenTimeUnlock</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.susuiservice.SUSUInstallAlertCFUserNotificationUIExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.susuiservice.SUSUIVerifyingAlertCFUserNotificationUIExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.TVAccessViewService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.mobiletimer.WorldClockWidget</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.mobiletimer.MobileTimerNotificationExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.iad.iAdOptOut</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.shortcuts.runtime</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.gamecenter.GameCenterUIService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.gamecenter.GameCenterUIService.GameCenterMessageExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.mobilephone</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.mobilephone.extension.VoicemailMessageNotificationExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.SharingViewService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.AXUIViewService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.RemoteiCloudQuotaUI</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.PassbookUIService</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.PassbookUIService.PeerPaymentMessagesExtension</td></tr><tr><td>2023-07-08 23:19:46</td><td>com.apple.findmy</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.findmy.FindMyNotificationsContentExtension</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.findmy.FindMySiriIntents</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.findmy.FindMyNotificationsServiceExtension</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.mobilesafari.SafariDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.WebContentFilter.remoteUI.WebContentAnalysisUI</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.WebSheet</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.VSViewService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.PassbookSecureUIService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.AuthKitUIService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.StoreDemoViewService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.smsFilter</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.smsFilter.extension</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.MailCompositionService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.CTCarrierSpaceAuth</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.ScreenshotServicesService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.SIMSetupUIService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.carkit.DNDBuddy</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.InCallService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.InCallService.IntentsUI</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.appleseed.FeedbackAssistant</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.CredentialSharingService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.CredentialSharingService.ShareableCredentialsMessagesExtension</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.Home.HomeControlService</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.icq</td></tr><tr><td>2023-07-08 23:19:47</td><td>com.apple.ScreenSharingViewService</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.DestructiveChangeConfirmation</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.photosmemoriesnotificationupdates</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.photospicker</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.PhotosFileProvider</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.photo-picker</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.PhotosSiriExtension</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.PhotosMessagesApp</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.photosnotifications-updates</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.PhotosReliveWidget</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.mobileslideshow.StreamShareService</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.HealthPrivacyService</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.ActivityMessagesApp</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.ActivityMessagesApp.MessagesExtension</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.ClipViewService</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.HealthENBuddy</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.BusinessChatViewService</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.camera.CameraMessagesApp</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.webapp</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.AuthenticationServicesUI</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.springboard.SpringBoardDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.fullkeyboardaccess</td></tr><tr><td>2023-07-08 23:19:48</td><td>com.apple.VoiceOverTouch</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.eventkitui.spotlight</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.PassKit.PassKitIntentsExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.PassKit.applepay.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.PassKit.PassKitIntentsUIExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.PassKit.PassKitSpotlightIndexExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.PassKit.PassKitThumbnailExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.SensorKit.SensorKitViewService</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.audio.toolbox.AudioToolbox.DiagnosticExtensions</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.ScreenTime.ScreenTimeWebExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.ReplayKit.RPBroadcastActivityViewControllerExtension</td></tr><tr><td>2023-07-08 23:19:49</td><td>com.apple.ReplayKit.RPVideoEditorExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.HealthKit.HealthDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.CoreTelephony.CTFollowUpExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.NetworkExtension.IKEv2Provider</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.ExternalAccessory.WACUI</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.CFNetwork.DiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.contacts.ContactsCoreSpotlightExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.FileProviderUI.ServerAuthUIExtension</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.FileProvider.FPSpotlightIndexer</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.FileProvider.LocalStorage</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.CryptoTokenKit.secelemtoken</td></tr><tr><td>2023-07-08 23:19:50</td><td>com.apple.CryptoTokenKit.setoken</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.ContactsUI.ContactsViewService</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.ContactsUI.ContactViewViewService</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.UIKit.FontPicker</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.UIKit.ShareUI</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.UIKit.screenpicker</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.UIKit.ColorPicker</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.MediaPlayer.DiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.HomeKit.HomeKitIntentExtension</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.HomeKit.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.AuthenticationServices.AccountAuthenticationModificationExtensionHelper</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.PDFKit.PDFExtensionView</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.quicklook.extension.previewUI</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.corelocation.CoreLocationTemporaryPreciseAuthPromptPlugin</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.corelocation.CoreLocationRepromptAlwaysAuthPromptPlugin</td></tr><tr><td>2023-07-08 23:19:51</td><td>com.apple.ClassKit.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.AccountExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.AppManagementExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.LegacyProfilesExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.PasscodeSettingsExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.ManagementTestExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.RemoteManagement.InteractiveLegacyProfilesExtension</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.NanoTimeKitCompanion.NTKDiagnosticExtensionCompanion</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.NanoTimeKitCompanion.CreateWatchFace</td></tr><tr><td>2023-07-08 23:19:52</td><td>com.apple.DiskSpaceDiagnostics.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.iCloudQuotaDaemon.ICQFollowup</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.HangTracer.PerformanceLoggingDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.Search.framework.SpotlightDiagnostic</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.DocumentCamera.ViewService</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.AppSSOKerberos.KerberosExtension</td></tr><tr><td>2023-07-08 23:19:53</td><td>com.apple.ibooks.BookLibrary.BooksDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.framework.WiFiKit.WiFiPickerExtension</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.accessibility.RTTUI.RTTNotifications</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.AssistantServices.SiriDE</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.PowerlogCore.DEPowerlogEPL</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.PowerlogCore.diagnosticextension</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.CoreRoutine.RTDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:54</td><td>com.apple.newsservices.NewsArticleViewer</td></tr><tr><td>2023-07-08 23:19:55</td><td>com.apple.ActionKit.BundledIntentHandler</td></tr><tr><td>2023-07-08 23:19:55</td><td>com.apple.ClassKitUI.PrivacyDisclosure</td></tr><tr><td>2023-07-08 23:19:56</td><td>com.apple.DoNotDisturb.Intents</td></tr><tr><td>2023-07-08 23:19:56</td><td>com.apple.SMBClientProvider.FileProvider</td></tr><tr><td>2023-07-08 23:19:56</td><td>com.apple.siri.SiriSettingsIntents.SettingsIntentExtension</td></tr><tr><td>2023-07-08 23:19:56</td><td>com.apple.reminderkit.NotificationContentExtension</td></tr><tr><td>2023-07-08 23:19:56</td><td>com.apple.GameCenterUI.GameCenterDashboardExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.GameCenterUI.GameCenterAuthenticateExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.GameCenterUI.GameCenterChallengeIssueExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.GameCenterUI.GameCenterMatchmakerExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.GameCenterUI.GameCenterTurnBasedMatchmakerExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.TelephonyUtilities.PhoneIntentHandler</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.coreaudio.haenotifications.HAENotificationContentExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.MobileBackup.framework.FollowUpUIExtension</td></tr><tr><td>2023-07-08 23:19:57</td><td>com.apple.MobileBackup.framework.DiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:58</td><td>com.apple.Symptoms.SFDiagnosticExtension.appex</td></tr><tr><td>2023-07-08 23:19:58</td><td>com.apple.NetworkRelay.NRDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:58</td><td>com.apple.BiometricKit.BioLogDiagnostic</td></tr><tr><td>2023-07-08 23:19:58</td><td>com.apple.CloudDocsUI.DocumentPicker</td></tr><tr><td>2023-07-08 23:19:58</td><td>com.apple.CloudDocsUI.CloudSharing</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.WorkflowUI.AddShortcutExtension</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.WorkflowUI.WidgetConfigurationExtension</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.AuthKitUI.AKAppSSOExtension</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.AuthKitUI.AKFollowUpServerUIExtension</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.AuthKitUI.AKLocationSignInAlert</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.AuthKitUI.AKSecondFactorAlert</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.AuthKitUI.AKSecondFactorEntryAlert</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.awd.AWDDiagnosticExtension</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.filesystems.UserFS.FileProvider</td></tr><tr><td>2023-07-08 23:19:59</td><td>com.apple.CalendarWidget.IntentsExtension</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.CoreBluetoothUI.BTDevicePickerUI</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.CalendarNotification.CalendarContentExtension</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.SleepHealthUI.SleepNotificationContentExtension</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.SoftwareUpdateServices.SUSFollowUpExtension</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.voiceservices.diagnosticextension</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.mobiletimer-framework.MobileTimerIntents</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.AssetViewer.ASVAssetThumbnail</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.AssetViewer.ASVAssetViewer</td></tr><tr><td>2023-07-08 23:20:00</td><td>com.apple.VideoSubscriberAccount.VideoSubscriberAccountUIFramework.AuthenticationExtension</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.siri.SiriAnnounceExtensions.AnnounceIntentExtension</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.Sharing.AirDropAlertUI</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.Sharing.AirDrop</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.Sharing.continuityRemote</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.itunesstore.AskPermissionExtension</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.PBBridgeSupport.BridgeIntents</td></tr><tr><td>2023-07-08 23:20:01</td><td>com.apple.exchangesyncexpress.framework.EASOAuthService</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.UserActivity.UASharedPasteboardiOSUI</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.DocumentManagerUICore.RecentsAppPopover</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.DocumentManagerUICore.Service</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.DocumentManagerUICore.SaveToFiles</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.DocumentManagerUICore.AddTagsActionExtension</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.DocumentManagerUICore.RecentsAvocado</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.AppStoreDaemon.AppStoreEventServiceExtension</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.AppStoreDaemon.ASDFollowUpExtension</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.AppStoreDaemon.ASDAskPermissionExtension</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.AppStoreDaemon.ASDUserNotificationExtension</td></tr><tr><td>2023-07-08 23:20:02</td><td>com.apple.HealthMenstrualCyclesUI.NotificationContentExtension</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.HangTracer</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.StackShot</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Siri</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Panic</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.B389</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Cellular</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Sandbox</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Messages</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.BluetoothHeadset</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Syslog</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.BluetoothABCDE</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Contacts</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.BackgroundAppRefresh</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.CrashLogs</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.LowMemory</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Phone</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Microstackshot</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.VoiceMemos</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.CoreLocation</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.VPN</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.sysdiagnose</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.WiFi</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.VisualVoiceMail</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.BasebandFBA</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.WirelessCharging</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.tailspin</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.FaceTime</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.Keyboard</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.DataAccess</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.DiagnosticExtensions.HIDSensingDiagnosticExtension</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.mediaservicesbroker.ViewService</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.CloudDocs.MobileDocumentsFileProvider</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.CloudDocs.MobileDocumentsFileProviderUI</td></tr><tr><td>2023-07-08 23:20:03</td><td>com.apple.ReminderKitUI.ReminderCreationViewService</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.CoreCDPUI.localSecretPrompt</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.CoreCDPUI.CDPFollowUpExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.siri.SiriContactsIntents.ContactsIntentExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.AppStoreOverlays.ViewService</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.IOAccessoryManagerFramework.WetNotification</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.CoreFollowUpUI.FollowUpSampleExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.AccessibilityUtilities.AXSettingsShortcuts</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.MarkupUI.MarkupPhotoExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.MarkupUI.MarkupPrivateExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.das.DASDaemon.DuetDiagnosticExtension</td></tr><tr><td>2023-07-08 23:20:04</td><td>com.apple.HomeAI.HomeAIDESExtension</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.AppleMediaServices.FollowUpExtension</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.WorkflowKit.BackgroundShortcutRunner</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.WorkflowKit.ShortcutsIntents</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.NewDeviceOutreach.Extension</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.UserNotificationsUIKit.DefaultUIExtension</td></tr><tr><td>2023-07-08 23:20:05</td><td>com.apple.UserNotificationsUIKit.ThumbnailProvider</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.ShazamKit.ShazamNotificationContentExtension</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.siri.SiriGeo.SiriGeoIntentExtension</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.CarKit.CarDNDDiagnosticsExtension</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.CarKit.CarPlayDiagnosticsExtension</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.NLPLearner.QuickTypePFLExtension</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.PhotoLibraryServices.PhotosDiagnostics</td></tr><tr><td>2023-07-08 23:20:06</td><td>com.apple.DataDetectorsUI.ActionsExtension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.AppPredictionWidget.DiagnosticExtension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.AppPredictionWidget.Siri.ActionPredictionNotificationContent</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.AppPredictionWidget.Siri.ActionPredictionNotificationContentIntents</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.BarcodeSupport.BarcodeNotificationExtension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.BarcodeSupport.BarcodeNotificationExtension2</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.ScreenTimeUI.ScreenTimeNotificationContentExtension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.AppleAccountUI.AAUIFollowUpExtension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.SeymourServices.diagnosticextension</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.SeymourServices.SeymourNotifications</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.CloudDocsDaemon.diagnostic</td></tr><tr><td>2023-07-08 23:20:07</td><td>com.apple.AVConference.Diagnostic</td></tr><tr><td>2023-07-09 14:41:33</td><td>com.apple.stocks</td></tr><tr><td>2023-07-09 14:41:33</td><td>com.apple.stocks.widget</td></tr><tr><td>2023-07-09 14:41:33</td><td>com.apple.stocks.detailintents</td></tr></tbody><tfoot><tr><th>Last Installed</th><th>Bundle ID</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

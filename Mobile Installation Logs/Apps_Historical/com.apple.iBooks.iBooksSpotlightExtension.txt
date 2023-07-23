@@ -1,0 +1,2 @@
+2023-07-09 14:42:16 Data container moved com.apple.iBooks.iBooksSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/569CFBD8-2555-4018-A6EE-6842E4908A69
+2023-07-08 23:20:25 Made container live com.apple.iBooks.iBooksSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/11C822A0-6DAE-4070-94CD-1DB7643941FD

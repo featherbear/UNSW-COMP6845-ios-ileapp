@@ -1,0 +1,54 @@
+﻿Key	Values	Source
+ReportedSubscriberIdentity	89610182001195906452	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+ne_config_state	False	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+meid	35670108263946	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_Subscriber_Mnc	01	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+imeis	[{'second': '356701082639462', 'first': '1:kOne'}]	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kCarrierSpaceLastRefreshStatusKey	6000	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kLastUploadTimestamp	2023-07-09 08:45:14.542985	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+user_default_voice_slot	1:kOne	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_Subscriber_CarrierBundleID	com.apple.Telstra_au	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kPostponementActivationPushTokenRegRetryCount	0	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kAllowsMultiplePDNConnectionsToSameAPNConfiguration	{'AllowsMultiplePDNConnectionsToSameAPN': False}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+imei_svns	[{'second': '25', 'first': '1:kOne'}]	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kPostponementActivationPushToken	cd67ccb01bfe1c53e018ff14c62bd587b23336b80291bcf7b8bf027312c83049	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kCKUploadCount	3	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_3GPP_NetworkMnc	01	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kPRIFileConfiguration	{'kPRIFileVersion': '0.1.167', 'kPRIFileBundleID': 'com.apple.Telstra_au', 'kPRIFileBundleVersion': '46.0', 'kPRIFileName': 'overrides_D20_D21_D22.der.pri', 'kPRIBundleDir': '/System/Library/Carrier Bundles/iPhone/Telstra_au.bundle'}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+activation_gemini_support	1:kFalse	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_3GPP_RAT	7	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_3GPP_NetworkMcc	505	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kEnableIMSISwitchConfiguration	{'EnableIMSISwitch': False}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kNextCarrierBundleUpdateCheck	2023-07-22 10:46:27.252009	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+PersonalWallet	{'89610182001195906452': {'CarrierEntitlements': {'phone-number-prefetched': True}}}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_3GPP_CurrentOperatorBundleId	com.apple.Telstra_au	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kPostponementTicketLock	False	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kGRIFileConfiguration	{'kGRIBundleDir': '/System/Library/Carrier Bundles/iPhone/Default.bundle', 'kGRIFileName': 'global_setting_A.gri', 'kGRIFileBundleVersion': '46.0.1', 'kGRIFileVersion': '7.3.10', 'kGRIFileBundleID': 'com.apple.Default'}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kPostponementTicket	{'ActivityURL': 'https://albert.apple.com/deviceservices/activity', 'ActivationTicket': 'MIICogIBATALBgkqhkiG9w0BAQsxaJ8/BHeCHq+fQAThsAMAn0sUYDhIZzoZHzC46DMWLCPqY7xTIbOfh20HNWcBCCY5Rp+XPQwAAAAA7u7u7u7u7u+flz4EAAAAAJ+XPwQBAAAAn5dABAEAAACfl0EEAQAAAJ+XTAQAAAAABIIBAHADtBEZqVmZToD/9fVrBIjAh5RmCM8gQdyQ2HGDvrOoXUD7zbpyOnDZfODQuPgkw/ZJqcdFiUVK4oiuVj16I8iEKGPFeX98W+zgi3cHh5cEIjyOW6ovlPNbJrdiEY0qLG82NNOqforiSUiIT49ABVUazFmEJwjoCIpyTLvV3CTVZZIHtIlVqcWSvJUlGoAF2CQl2Eu6ik9AllS7buNviEQMOsqK7ZTe3rQArYMJmIm0lfmsu3SKkRNkybXzymqrC9z0EGL0B2lFHzEB3u9muLt2wuN+ahCgY0bqiEpuAoUY2rbzm6ruobp+XrQQt3D64LmAD5GcQnXRVAgKipugJACjggEgMAsGCSqGSIb3DQEBAQOCAQ8AMIIBCgKCAQEArJFPRdnc/E7Vgatg/AHbKnGEudR+ug8WZghxMOlPad3fL42hHAXReVRcBE5liQXEyaP0ojy3s3QJhuNEXwLMYOLCKJNAj4SrE6dZqJ9CQamouvEnZjdC/gLBG5jSuAI4zF+hjObe8OZnV6YGcooEbRkA51dj+x5zmY+vT0va/w+EOdAiTWi6xiWdVFQTXCpCTUzA9qcax58XUi04+dcVSEwVO9U3ZeyoIUrJD/FmoDjjZOidCHDgsCGlnLfQP/gLKOMpOfzw4dWFIW1IiDvs9Uy+U3YhyyE4HPDVx2oAf8ojhBMzsdqXGVV148H0mZSkR4+ulZVlR4E/mxB2ZdP7HQIDAQAB', 'PhoneNumberNotificationURL': 'https://albert.apple.com/deviceservices/phoneHome', 'ActivationState': 'Activated'}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_Subscriber_Mcc	505	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+is_activation_policy_locked	1:kFalse	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+ReportedPhoneNumber	61466521390	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kOperatorRoamingInfo_3GPP_Roaming	False	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+kCKUploadDate	19547	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+activation_5g_support	1:kFalse	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+subscriber_account_ids	[{'second': '', 'first': '1:kOne'}]	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.device_specific_nobackup.plist
+SIMPhoneNumber	+61466521390	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+LteDbHasDeploymentTypeKey	1	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnableLTEAfterUpgrade	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+PersonalWallet	{'89610182001195906452': {'SimPin': {'InitialActiveState': False}, 'Capabilities': {'SimCallAndDataCurrentlySupported': True, 'NetworkSupportsVoPS': True, 'SimCallAndDataSupported': True}, 'CarrierEntitlements': {'kEntitlementsSelfRegistrationUpdateImei': '356701082639462', 'lastGoodImsi': '505013543711669', 'kEntitlementsSelfRegistrationUpdateImsi': '505013543711669'}, 'RegistrationController': {'lastKnownIMSFeatureState': 2}, 'VoiceMail': {'VVMSubscribed': True}, 'PhoneServices': {'VoLTENetworkSeen': True}, 'SMSControllerWalletDomain': {'TPMR': 135}}}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+PhoneNumber	61466521390	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMDataTransferTimeRegistration	False	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+com.apple.carrier_1	50501	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMDataStallRegistration	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMLinkStateRegistration	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMLinkQualityFingerPrintRegistration	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMLinkPowerCostRegistration	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+LastKnownICCID	89610182001195906452	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+PhoneNumberChangeReport	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+LastKnownServingMcc	505	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+NetworkPhoneNumberICCID	89610182001195906452	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+LastKnownServingMnc	1	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+NetworkPhoneNumber	+61466521390	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+LASDNextUpdate	2023-07-20 06:29:34.708648	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+EnhancedLQMTrafficClassRegistration	True	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist
+PhoneServices	{'Version': 1}	\\?\R:\temp\private\var\wireless\Library\Preferences\com.apple.commcenter.plist

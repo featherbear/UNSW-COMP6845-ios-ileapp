@@ -1,0 +1,49 @@
+7^ynY
+SaChttps://setup.icloud.com/configurations/init?context=settings2023-07-09 06:43:12
+Djek
+
+	https://setup.icloud.com/configurations/init?context=settings
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+,-
+_CFURLStringType\_CFURLString
+=https://setup.icloud.com/configurations/init?context=settings#A
+-G@3Z
+ !"#$%&'()*+\Content-Type_
+X-Apple-Request-UUIDSViaVServer_
+x-apple-user-partition_
+Content-Encoding_
+access-control-expose-headers_
+X-Responding-InstanceTDate]Cache-Control_
+Strict-Transport-Security^Content-LengthZConnection_
+X-Apple-Edge-Response-TimeX__hhaa___
+application/x-plist_
+$bfaafb3f-7b74-48f7-bc9e-514e5bcdd8b9_
+H631194250daa17e24277dea86cf30319:421ec9eed322d8aaef039962122bb878:ausyd2_
+AppleHttpServer/3faf4ee9434bR24Tgzip_
+X-Apple-Request-UUID,Via_
+Gsetupservice:32400303:mr11p24ic-quav08180502:8003:2319B553:4e8744ed4456_
+Sun, 09 Jul 2023 06:43:12 GMT^max-age=107557_
+#max-age=31536000; includeSubDomainsT2394Zkeep-aliveS188_
+@
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHR8hIyUnKVxDb250ZW50LVR5cGVfEBRYLUFwcGxlLVJlcXVlc3QtVVVJRFNWaWFWU2VydmVyXxAWeC1hcHBsZS11c2VyLXBhcnRpdGlvbl8QEENvbnRlbnQtRW5jb2RpbmdfEB1hY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyc18QFVgtUmVzcG9uZGluZy1JbnN0YW5jZVREYXRlXUNhY2hlLUNvbnRyb2xfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XkNvbnRlbnQtTGVuZ3RoWkNvbm5lY3Rpb25fEBpYLUFwcGxlLUVkZ2UtUmVzcG9uc2UtVGltZaEQXxATYXBwbGljYXRpb24veC1wbGlzdKESXxAkYmZhYWZiM2YtN2I3NC00OGY3LWJjOWUtNTE0ZTViY2RkOGI5oRRfEEg2MzExOTQyNTBkYWExN2UyNDI3N2RlYTg2Y2YzMDMxOTo0MjFlYzllZWQzMjJkOGFhZWYwMzk5NjIxMjJiYjg3ODphdXN5ZDKhFl8QHEFwcGxlSHR0cFNlcnZlci8zZmFmNGVlOTQzNGKhGFIyNKEaVGd6aXChHF8QGFgtQXBwbGUtUmVxdWVzdC1VVUlELFZpYaEeXxBHc2V0dXBzZXJ2aWNlOjMyNDAwMzAzOm1yMTFwMjRpYy1xdWF2MDgxODA1MDI6ODAwMzoyMzE5QjU1Mzo0ZTg3NDRlZDQ0NTahIF8QHVN1biwgMDkgSnVsIDIwMjMgMDY6NDM6MTIgR01UoSJebWF4LWFnZT0xMDc1NTehJF8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJEb21haW5zoSZUMjM5NKEoWmtlZXAtYWxpdmWhKlMxODgACAAlADIASQBNAFQAbQCAAKAAuAC9AMsA5wD2AQEBHgEgATYBOAFfAWEBrAGuAc0BzwHSAdQB2QHbAfYB+AJCAkQCZAJmAnUCdwKdAp8CpAKmArECswAAAAAAAAIBAAAAAAAAACsAAAAAAAAAAAAAAAAAAAK3
+application/x-plist
+=https://setup.icloud.com/configurations/init?context=settings#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+	U1891230A-245F-4BFD-B0A6-90DA3A99EA11
+3	2023-07-09 06:43:12
+@V,
+7^/ 
+

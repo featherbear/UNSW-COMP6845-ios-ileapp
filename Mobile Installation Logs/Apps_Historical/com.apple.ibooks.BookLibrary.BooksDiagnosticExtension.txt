@@ -1,0 +1,1 @@
+2023-07-08 23:19:53 Made container live com.apple.ibooks.BookLibrary.BooksDiagnosticExtension /private/var/mobile/Containers/Data/PluginKitPlugin/077F4259-9CB9-456B-ACA6-D0937E839BB7

@@ -1,0 +1,2 @@
+2023-07-09 14:42:21 Data container moved com.apple.news.openinnews /private/var/mobile/Containers/Data/PluginKitPlugin/9A7F9ACF-30E7-4D29-A83E-4B38EF7CE854
+2023-07-08 23:20:27 Made container live com.apple.news.openinnews /private/var/mobile/Containers/Data/PluginKitPlugin/D699BE12-41A1-4D03-BC1F-3973EE3B91C8

@@ -1,0 +1,2 @@
+2023-07-09 14:41:36 Data container moved com.apple.tv.TVCoreSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/F3F4C4E0-DCC8-45A5-BBEA-C238B72A8331
+2023-07-08 23:20:28 Made container live com.apple.tv.TVCoreSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/88C0DF2D-1BD8-4D70-9334-91EDDF0FACF3

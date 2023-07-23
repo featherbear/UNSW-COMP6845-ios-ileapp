@@ -1,0 +1,6 @@
+ESQLite format 3
+5hSQLite format 3
+tablereviewedplacereviewedplace
+CREATE TABLE reviewedplace (    muid INT NOT NULL,    recommendstate INT NOT NULL,    photosadded INT NOT NULL,    UNIQUE(muid)    )9
+indexsqlite_autoindex_reviewedplace_1reviewedplace
+CR1X

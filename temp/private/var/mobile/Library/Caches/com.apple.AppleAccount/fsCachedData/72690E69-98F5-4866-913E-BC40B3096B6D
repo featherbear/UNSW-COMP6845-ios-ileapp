@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>doQualification</key>
+		<false/>
+
+		<key>urls</key>
+		<dict>
+			<key>childAccountCutOffAge</key>
+			<string>https://setup.icloud.com/setup/familykit/childAccountCutOffAge</string>
+
+			<key>initiateFamily.v2</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/launchFamilyFlow</string>
+
+			<key>qualifyDevice</key>
+			<string>https://setup.icloud.com/setup/qualify/qualifyDevice</string>
+
+			<key>genericTermsUI</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/genericTermsUI</string>
+
+			<key>getFamilyDetails</key>
+			<string>https://setup.icloud.com/setup/familykit/getFamilyDetails</string>
+
+			<key>qualifySession</key>
+			<string>https://setup.icloud.com/setup/qualify/session</string>
+
+			<key>getDeviceList</key>
+			<string>https://setup.icloud.com/setup/account/getDevices</string>
+
+			<key>md-sync-machine</key>
+			<string>https://setup.icloud.com/setup/qualify/syncMachine</string>
+
+			<key>about</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/about?page=</string>
+
+			<key>stackableAllowUserConsent</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/stackableAllowUserConsent</string>
+
+			<key>familyRepair</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/familyRepair</string>
+
+			<key>familyPicker</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/familyPicker</string>
+
+			<key>qualifyCert</key>
+			<string>https://setup.icloud.com/setup/qualify/cert?ver=P1.36.0</string>
+
+			<key>displayFamilyJourney</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/launchFamilyFlow</string>
+
+			<key>stackableViewDetails</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/stackableViewDetails</string>
+
+			<key>getFamilyDetails.v2</key>
+			<string>https://setup.icloud.com/setup/familykit/getFamilyDetails</string>
+
+			<key>loginDelegates</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/loginDelegates</string>
+
+			<key>createAndRegisterAppleIdBaseUrl</key>
+			<string>https://setup.icloud.com/setup/web/create_apple_id_and_account/</string>
+
+			<key>loadTransferRequestsUI</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/loadTransferRequestsUI</string>
+
+			<key>loadInvitationsUI</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/acceptInvite</string>
+
+			<key>fetchFamilyFollowups</key>
+			<string>https://setup.icloud.com/setup/familykit/fetchFamilyFollowups</string>
+
+			<key>fmipIdentityV3Session</key>
+			<string>https://fmip.icloud.com/fmipservice/findme/${dsid}/${udid}/identityV3Session</string>
+
+			<key>upgradeStatus</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/upgradeStatus</string>
+
+			<key>createAppleID</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/createAppleID</string>
+
+			<key>md-finish-provisioning</key>
+			<string>https://setup.icloud.com/setup/qualify/finishProvisioningMachine</string>
+
+			<key>emailTosUrl</key>
+			<string>https://setup.icloud.com/setup/web/mailtos/</string>
+
+			<key>unifiedLoginAccount</key>
+			<string>https://setup.icloud.com/setup/signin/v2/login</string>
+
+			<key>checkMeEmailAvailabilityUrl</key>
+			<string>https://setup.icloud.com/setup/web/check_availability/</string>
+
+			<key>repairCloudAccountUI</key>
+			<string>https://setup.icloud.com/setup/device/ui/repairCloudAccountUI</string>
+
+			<key>icloud_ba_gateway_url</key>
+			<string>https://gateway.icloud.com:443//baservice</string>
+
+			<key>getFamilySubscriptions</key>
+			<string>https://setup.icloud.com/setup/familykit/getFamilySubscriptions</string>
+
+			<key>activateMeEmailUrl</key>
+			<string>https://setup.icloud.com/setup/web/activate_email</string>
+
+			<key>updateFamilyMemberFlags</key>
+			<string>https://setup.icloud.com/setup/familykit/updateFamilyMemberFlags</string>
+
+			<key>icloud_acsn_gateway_url</key>
+			<string>https://gateway.icloud.com:443//acsnservice</string>
+
+			<key>registerWebToken</key>
+			<string>https://setup.icloud.com/setup/web/basic/token_auth_update_account</string>
+
+			<key>ckAppInit</key>
+			<string>https://setup.icloud.com/setup/ck/v1/ckAppInit</string>
+
+			<key>upgradeIOSTermsUI</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/upgradeIOSTermsUI</string>
+
+			<key>getRecoverySettings</key>
+			<string>https://setup.icloud.com/setup/get_recovery_settings</string>
+
+			<key>authenticate</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/authenticate</string>
+
+			<key>iForgotBuddyML</key>
+			<string>https://iforgot.apple.com/iForgot/iForgotBML.html</string>
+
+			<key>termsReportUserAction</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/reportTermsUIUserAction</string>
+
+			<key>addFamilyMember</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/addFamilyMember</string>
+
+			<key>iForgot</key>
+			<string>https://iforgot.apple.com</string>
+
+			<key>checkAppleIdAvailabilityUrl</key>
+			<string>https://setup.icloud.com/setup/web/check_availability/</string>
+
+			<key>updateAppleID</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/updateAppleID</string>
+
+			<key>mbRepairCloudAccountUI</key>
+			<string>https://setup.icloud.com/setup/device/ui/macbuddy/repairCloudAccountUI</string>
+
+			<key>deleteFamily</key>
+			<string>https://setup.icloud.com/setup/family/v2/ios/deleteFamily</string>
+
+			<key>existingAppleIdTermsUI</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/existingAppleIdTermsUI</string>
+
+			<key>acseGatewayV3DeviceFeature</key>
+			<string>https://acsegateway.icloud.com:443/v3/devices/{udId}/subscriptions/features/{featureKey}</string>
+
+			<key>loadUI</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/ui/loadUI</string>
+
+			<key>agePresets</key>
+			<string>https://setup.icloud.com/setup/familykit/agePresets</string>
+
+			<key>finishSettingUpFamily</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/finishSettingUpFamily</string>
+
+			<key>viewMemberDetailsUI</key>
+			<string>https://setup.icloud.com/setup/family/v2/ios/viewMemberDetails</string>
+
+			<key>familyHeartbeat</key>
+			<string>https://setup.icloud.com/setup/familykit/familyHeartbeat</string>
+
+			<key>icloud_fmip_al_service</key>
+			<string>https://fmipalservice.icloud.com/alservice</string>
+
+			<key>createDelegateAccounts</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/createDelegateAccounts</string>
+
+			<key>acseGatewayV3DeviceAllFeatures</key>
+			<string>https://acsegateway.icloud.com:443/v3/devices/{udId}/subscriptions/features</string>
+
+			<key>registerWebBasic</key>
+			<string>https://setup.icloud.com/setup/web/basic_auth_update_account</string>
+
+			<key>acceptFamilyInvite.v2</key>
+			<string>https://setup.icloud.com/setup/familykit/ios/familyFlow/acceptInvite</string>
+
+			<key>validateAppleID</key>
+			<string>https://setup.icloud.com/setup/iosbuddy/validateAppleID</string>
+
+		</dict>
+
+		<key>configuration</key>
+		<dict>
+			<key>abs-enable</key>
+			<integer>1</integer>
+
+		</dict>
+
+		<key>about-ids</key>
+		<array>
+			<string>appleId</string>
+			<string>icloud</string>
+			<string>icloudPrivacy</string>
+			<string>icloudBackup</string>
+			<string>icloudBackupPrivacy</string>
+			<string>findMyIphone</string>
+			<string>findMyIphonePrivacy</string>
+			<string>securityQuestions</string>
+		</array>
+
+		<key>activeEmailDomain</key>
+		<string>icloud.com</string>
+
+		<key>setupAssistantServerEnabled</key>
+		<true/>
+
+	</dict>
+</plist>
+
+<!-- IOSBuddy -->

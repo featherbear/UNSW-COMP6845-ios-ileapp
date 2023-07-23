@@ -1,0 +1,58 @@
+SQLite format 3
+tablepreferencespreferences
+CREATE TABLE preferences (key TEXT UNIQUE PRIMARY KEY, value TEXT)5
+indexsqlite_autoindex_preferences_1preferences
+jb(\
+
+^SQLite format 3
+Windexkeypreferences
+CREATE INDEX key ON preferences (key)e
+version10
+	version
+/tablebasic_filesbasic_files
+CREATE TABLE basic_files (fileId INTEGER PRIMARY KEY, fsid INTEGER, version BLOB)?
+oSQLite format 3
+%tableprovider_filesprovider_files
+CREATE TABLE provider_files (fileProviderId TEXT, itemId TEXT, version BLOB)t
+3indexfileProviderIdItemIdprovider_files
+CREATE UNIQUE INDEX fileProviderIdItemId ON provider_files (fileProviderId, itemId)u
+DSQLite format 3
+Ktablethumbnailsthumbnails
+CREATE TABLE thumbnails (file_id INTEGER, size REAL, icon_mode INTEGER, hit_count INTEGER, last_hit_date REAL, width INTEGER, height INTEGER, bitspercomponent INTEGER, bitsperpixel INTEGER, bytesperrow INTEGER, bitmapinfo INTEGER, bitmapdata_location INTEGER, bitmapdata_length INTEGER, plistbuffer_location INTEGER, plistbuffer_length INTEGER, flavor INTEGER, content_rect BLOB, badge_type INTEGER, icon_variant INTEGER, interpolation INTEGER, externalGeneratorDataHash INTEGER)
+indexsizethumbnails	CREATE UNIQUE INDEX size ON thumbnails (file_id, size, icon_mode, badge_type, icon_variant, interpolation, externalGeneratorDataHash)
+	TF	
+}indexlast_hit_datethumbnails
+CREATE INDEX last_hit_date ON thumbnails (last_hit_date) 
+
+TF	
+lJh'
+tablereserved_bufferreserved_bufferCREATE TABLE reserved_buffer (location INTEGER, length INTEGER)[	
+TF	
+wSQLite format 3
+!indexlocation_reserved_bufferreserved_bufferCREATE UNIQUE INDEX location_reserved_buffer ON reserved_buffer (location)j
+
+TF	
+Y~C^
+ '2m2u
+Qtablemissing_remote_thumbnailsmissing_remote_thumbnails
+CREATE TABLE missing_remote_thumbnails (fileProviderId TEXT, itemId TEXT, version BLOB, date REAL)~
+,SQLite format 3
+_indexmissing_remote_thumbnails_indexmissing_remote_thumbnails
+CREATE UNIQUE INDEX missing_remote_thumbnails_index ON missing_remote_thumbnails (fileProviderId, itemId)!
+w!h637\
+Vcom.apple.CloudDocs.MobileDocumentsFileProviderif612bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+!'U$null
+V$classQgRviQmQiQvQs
+com.apple.MobileQuickLookQ1I
+ WNS.time#A
+"#$%Z$classnameX$classesVNSDate
+$&XNSObject
+"#()_
+QLThumbnailVersion
+	com.apple.CloudDocs.MobileDocumentsFileProviderif612
+h4
+

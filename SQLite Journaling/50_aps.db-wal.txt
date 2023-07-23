@@ -1,0 +1,12 @@
+SQLite format 3
+tableoutgoing_messageoutgoing_message
+CREATE TABLE outgoing_message (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, guid TEXT UNIQUE NOT NULL, sender_token_name TEXT, topic TEXT NOT NULL, environment TEXT NOT NULL, payload BLOB, is_sent INTEGER DEFAULT 0, message_id INTEGER, identifier INTEGER, priority INTEGER, payload_format INTEGER, timeout INTEGER, date INTEGER)?
+indexsqlite_autoindex_outgoing_message_1outgoing_message	P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+7tableincoming_messageincoming_message
+CREATE TABLE incoming_message (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, guid TEXT UNIQUE NOT NULL, token BLOB, topic TEXT NOT NULL, environment TEXT NOT NULL, correlation_identifier TEXT, payload BLOB, from_storage INTEGER DEFAULT 0, last_from_storage INTEGER DEFAULT 0, message_id INTEGER, priority INTEGER, date INTEGER, tracing_enabled INTEGER, tracing_uuid BLOB, push_type INTEGER, push_flags INTEGER)?
+indexsqlite_autoindex_incoming_message_1incoming_message
+!table_SqliteDatabaseProperties_SqliteDatabaseProperties
+CREATE TABLE _SqliteDatabaseProperties (key TEXT, value TEXT, UNIQUE(key))Q
+indexsqlite_autoindex__SqliteDatabaseProperties_1_SqliteDatabaseProperties

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Strings - SQLite Journal & WAL report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Strings - SQLite Journal & WAL report</h1>
+                    <h6 class="animated fadeIn mb-3">ASCII strings extracted from SQLite journal and WAL files.</h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 230</h6><p class="lead">Strings - SQLite Journal & WAL located at: </p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Report</th><th class="th-sm">Location</th></tr></thead><tbody><tr><td><a href="SQLite Journaling/1_db.sqlite-wal.txt" style = "color:blue" target="_blank">db.sqlite-wal</a></td><td>\\?\R:\temp\private\var\.DocumentRevisions-V100\db-V1\db.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/2_com.apple.security.keychain-defaultContext.TrustedPeersHelper.db-wal.txt" style = "color:blue" target="_blank">com.apple.security.keychain-defaultContext.TrustedPeersHelper.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\com.apple.security.keychain-defaultContext.TrustedPeersHelper.db-wal</td></tr><tr><td><a href="SQLite Journaling/3_keychain-2.db-wal.txt" style = "color:blue" target="_blank">keychain-2.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\keychain-2.db-wal</td></tr><tr><td><a href="SQLite Journaling/4_CloudServicesAnalytics.db-wal.txt" style = "color:blue" target="_blank">CloudServicesAnalytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\CloudServicesAnalytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/5_TransparencyAnalytics.db-wal.txt" style = "color:blue" target="_blank">TransparencyAnalytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\TransparencyAnalytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/6_ckks_analytics.db-wal.txt" style = "color:blue" target="_blank">ckks_analytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\ckks_analytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/7_localkeychain.db-wal.txt" style = "color:blue" target="_blank">localkeychain.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\localkeychain.db-wal</td></tr><tr><td><a href="SQLite Journaling/8_networking_analytics.db-wal.txt" style = "color:blue" target="_blank">networking_analytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\networking_analytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/9_sos_analytics.db-wal.txt" style = "color:blue" target="_blank">sos_analytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\sos_analytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/10_trust_analytics.db-wal.txt" style = "color:blue" target="_blank">trust_analytics.db-wal</a></td><td>\\?\R:\temp\private\var\Keychains\Analytics\trust_analytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/11_storeSystem.db-wal.txt" style = "color:blue" target="_blank">storeSystem.db-wal</a></td><td>\\?\R:\temp\private\var\containers\Data\System\276355C5-68CB-4182-A20A-F8E129E198BE\Documents\Persistence\storeSystem.db-wal</td></tr><tr><td><a href="SQLite Journaling/12_BLDatabaseManager.sqlite-wal.txt" style = "color:blue" target="_blank">BLDatabaseManager.sqlite-wal</a></td><td>\\?\R:\temp\private\var\containers\Shared\SystemGroup\3D688537-3AD6-4D97-897F-E3AB51761869\Documents\BLDatabaseManager\BLDatabaseManager.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/13_com.apple.MobileBluetooth.ledevices.other.db-wal.txt" style = "color:blue" target="_blank">com.apple.MobileBluetooth.ledevices.other.db-wal</a></td><td>\\?\R:\temp\private\var\containers\Shared\SystemGroup\50B7C3A7-0600-4177-9EE3-B21B2CA23CE4\Library\Database\com.apple.MobileBluetooth.ledevices.other.db-wal</td></tr><tr><td><a href="SQLite Journaling/14_CurrentPowerlog.PLSQL-wal.txt" style = "color:blue" target="_blank">CurrentPowerlog.PLSQL-wal</a></td><td>\\?\R:\temp\private\var\containers\Shared\SystemGroup\65E8D835-1C78-4FDD-AAD0-CD10C69522F2\Library\BatteryLife\CurrentPowerlog.PLSQL-wal</td></tr><tr><td><a href="SQLite Journaling/15_config.sqlite-wal.txt" style = "color:blue" target="_blank">config.sqlite-wal</a></td><td>\\?\R:\temp\private\var\db\analyticsd\config.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/16_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\00BC1A50-697E-48A1-A057-B48D3FB65912\Library\Caches\com.apple.AppStore\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/17_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\00BC1A50-697E-48A1-A057-B48D3FB65912\Library\Caches\com.apple.AppleAccount\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/18_ReviewedPlaceCache-wal.txt" style = "color:blue" target="_blank">ReviewedPlaceCache-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\96F29E82-BE24-4873-A3EE-7BB8DBD04FA9\Library\Caches\com.apple.Maps\ReviewedPlaceCache-wal</td></tr><tr><td><a href="SQLite Journaling/19_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\C66B36C2-65CF-49B4-93AD-646476311AA9\Library\Caches\com.apple.AppleAccount\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/20_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\C66B36C2-65CF-49B4-93AD-646476311AA9\Library\Caches\com.apple.mobilenotes\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/21_Store.sqlite-wal.txt" style = "color:blue" target="_blank">Store.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\CAA7293C-3F46-41A3-8048-456903DC2B0F\Library\Application Support\Stores\Store.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/22_https_googleads.g.doubleclick.net_0.localstorage-wal.txt" style = "color:blue" target="_blank">https_googleads.g.doubleclick.net_0.localstorage-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\CAA7293C-3F46-41A3-8048-456903DC2B0F\Library\Caches\https_googleads.g.doubleclick.net_0.localstorage-wal</td></tr><tr><td><a href="SQLite Journaling/23_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\CAA7293C-3F46-41A3-8048-456903DC2B0F\Library\Caches\com.jdtech.CalculatorVault\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/24_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\CloudKit\2f499a61d18492de6bd996804e7fa35f3f2b5869\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/25_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\CloudKit\84a93005d19a5ed6ddcd1564a09c5ea398107def\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/26_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\CloudKit\bf597ca5949b365ff9ac52a5db7b5a3637fd34f1\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/27_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Caches\com.apple.Safari.PasswordBreachAgent\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/28_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Caches\com.apple.mobilesafari\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/29_Favicons.db-wal.txt" style = "color:blue" target="_blank">Favicons.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Image Cache\Favicons\Favicons.db-wal</td></tr><tr><td><a href="SQLite Journaling/30_TouchIconCacheSettings.db-wal.txt" style = "color:blue" target="_blank">TouchIconCacheSettings.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Image Cache\Touch Icons\TouchIconCacheSettings.db-wal</td></tr><tr><td><a href="SQLite Journaling/31_AutoFillCorrections.db-wal.txt" style = "color:blue" target="_blank">AutoFillCorrections.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Safari\AutoFillCorrections.db-wal</td></tr><tr><td><a href="SQLite Journaling/32_CloudAutoFillCorrections.db-wal.txt" style = "color:blue" target="_blank">CloudAutoFillCorrections.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Safari\CloudAutoFillCorrections.db-wal</td></tr><tr><td><a href="SQLite Journaling/33_PerSitePreferences.db-wal.txt" style = "color:blue" target="_blank">PerSitePreferences.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\Safari\PerSitePreferences.db-wal</td></tr><tr><td><a href="SQLite Journaling/34_https_starbuy.com.au_0.localstorage-wal.txt" style = "color:blue" target="_blank">https_starbuy.com.au_0.localstorage-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\WebKit\WebsiteData\LocalStorage\https_starbuy.com.au_0.localstorage-wal</td></tr><tr><td><a href="SQLite Journaling/35_https_www.ozbargain.com.au_0.localstorage-wal.txt" style = "color:blue" target="_blank">https_www.ozbargain.com.au_0.localstorage-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\WebKit\WebsiteData\LocalStorage\https_www.ozbargain.com.au_0.localstorage-wal</td></tr><tr><td><a href="SQLite Journaling/36_observations.db-wal.txt" style = "color:blue" target="_blank">observations.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\Application\EF9AB533-69C0-482E-9E0B-9C90E37EE377\Library\WebKit\WebsiteData\ResourceLoadStatistics\observations.db-wal</td></tr><tr><td><a href="SQLite Journaling/37_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\PluginKitPlugin\4AFF1085-4A68-43F4-8BED-2471C46AB8B2\Library\Caches\com.apple.news.widget\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/38_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\PluginKitPlugin\4AFF1085-4A68-43F4-8BED-2471C46AB8B2\Library\Caches\com.apple.news.widget\CK-at-Edge-URL-Cache\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/39_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\PluginKitPlugin\6D5C4221-5D93-49F8-AED2-68B242268A26\Library\Caches\com.apple.news.tag\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/40_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Data\PluginKitPlugin\B78E420B-E529-455C-8328-664982EE6905\Library\Caches\com.apple.weather.widget\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/41_MapsSync_0.0.1-wal.txt" style = "color:blue" target="_blank">MapsSync_0.0.1-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Shared\AppGroup\656040C0-597E-4642-B1E4-279BEA84B237\Maps\MapsSync_0.0.1-wal</td></tr><tr><td><a href="SQLite Journaling/42_MapsSync_0.0.1_deviceLocalCache.db-wal.txt" style = "color:blue" target="_blank">MapsSync_0.0.1_deviceLocalCache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Shared\AppGroup\656040C0-597E-4642-B1E4-279BEA84B237\Maps\MapsSync_0.0.1_deviceLocalCache.db-wal</td></tr><tr><td><a href="SQLite Journaling/43_NoteStore.sqlite-wal.txt" style = "color:blue" target="_blank">NoteStore.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Containers\Shared\AppGroup\FDC75CDD-B492-4C46-ABB7-9C0CACBDE1BC\NoteStore.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/44_com.apple.RTTTranscripts.sqlite-wal.txt" style = "color:blue" target="_blank">com.apple.RTTTranscripts.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Accessibility\com.apple.RTTTranscripts.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/45_com.apple.personalaudio.sqlite-wal.txt" style = "color:blue" target="_blank">com.apple.personalaudio.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Accessibility\com.apple.personalaudio.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/46_AXSSPunctuation.sqlite-wal.txt" style = "color:blue" target="_blank">AXSSPunctuation.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Accessibility\AXSSPunctuation\AXSSPunctuation.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/47_Accounts3.sqlite-wal.txt" style = "color:blue" target="_blank">Accounts3.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Accounts\Accounts3.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/48_AddressBook.sqlitedb-wal.txt" style = "color:blue" target="_blank">AddressBook.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\AddressBook\AddressBook.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/49_AddressBookImages.sqlitedb-wal.txt" style = "color:blue" target="_blank">AddressBookImages.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\AddressBook\AddressBookImages.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/50_aps.db-wal.txt" style = "color:blue" target="_blank">aps.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\ApplePushService\aps.db-wal</td></tr><tr><td><a href="SQLite Journaling/51_client.db-wal.txt" style = "color:blue" target="_blank">client.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\CloudDocs\session\db\client.db-wal</td></tr><tr><td><a href="SQLite Journaling/52_server.db-wal.txt" style = "color:blue" target="_blank">server.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\CloudDocs\session\db\server.db-wal</td></tr><tr><td><a href="SQLite Journaling/53_CloudKitMirroringDataModel-wal.txt" style = "color:blue" target="_blank">CloudKitMirroringDataModel-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\CloudKitMailConversationsFlags\CloudKitMirroringDataModel-wal</td></tr><tr><td><a href="SQLite Journaling/54_KeysSyncingVersion3-(null)-ProtectedCloudStorage.db-wal.txt" style = "color:blue" target="_blank">KeysSyncingVersion3-(null)-ProtectedCloudStorage.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\com.apple.ProtectedCloudStorage\KeysSyncingVersion3-(null)-ProtectedCloudStorage.db-wal</td></tr><tr><td><a href="SQLite Journaling/55_KeysSyncingVersion3-20977765650-ProtectedCloudStorage.db-wal.txt" style = "color:blue" target="_blank">KeysSyncingVersion3-20977765650-ProtectedCloudStorage.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\com.apple.ProtectedCloudStorage\KeysSyncingVersion3-20977765650-ProtectedCloudStorage.db-wal</td></tr><tr><td><a href="SQLite Journaling/56_PCSAnalytics.db-wal.txt" style = "color:blue" target="_blank">PCSAnalytics.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\com.apple.ProtectedCloudStorage\PCSAnalytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/57_RMAdminStore-Local.sqlite-wal.txt" style = "color:blue" target="_blank">RMAdminStore-Local.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\com.apple.remotemanagementd\RMAdminStore-Local.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/58_RemoteManagement.sqlite-wal.txt" style = "color:blue" target="_blank">RemoteManagement.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Application Support\com.apple.remotemanagementd\Database\RemoteManagement.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/59_SiriAnalytics.db-wal.txt" style = "color:blue" target="_blank">SiriAnalytics.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Assistant\SiriAnalytics.db-wal</td></tr><tr><td><a href="SQLite Journaling/60_avatars.db-wal.txt" style = "color:blue" target="_blank">avatars.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Avatar\CoreDataBackend\avatars.db-wal</td></tr><tr><td><a href="SQLite Journaling/61_CloudKitMetadata-wal.txt" style = "color:blue" target="_blank">CloudKitMetadata-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\CloudKitMetadata-wal</td></tr><tr><td><a href="SQLite Journaling/62_CloudKitOperationInfo-wal.txt" style = "color:blue" target="_blank">CloudKitOperationInfo-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\CloudKitOperationInfo-wal</td></tr><tr><td><a href="SQLite Journaling/63_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.CommCenterMobileHelper\e4c6277d43fc5b922d8fcf955d90772c98e84d63\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/64_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.accessibility.AccessibilityUIServer\e3ef713a17f01b98667b63ad80d9cb50a3db5444\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/65_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.accessibility.heard\3e031bf2a95b07fd69c95818ba52ad5ba8f7e582\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/66_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.accessibility.heard\43b583d0abf117789d1ecc37f64647cb5de62084\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/67_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.amsengagementd\ad52faf2852d42c8232ddb5f0cf7484974489173\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/68_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.assistant.assistantd\745028c72683801e45d882b9b76307c0b258408a\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/69_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.assistant.assistantd\a92c1979f845b2e8f8ddc95c6d864e84626f61f2\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/70_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.avatarsd\e3218955454ddfc3c690909bd6d691c9f2d0b139\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/71_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.backupd\32e95e402d965071c4748db5ec0cdb0a05271933\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/72_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\495ca00354c4d66c9152fd84c120c685b6176ca8\ca7a898f7b8bf12541584d32a8d0f91029e02709\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/73_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\7630364a2c49fa3d5bca30c7cabe73ffa3543026\9fadf220be21a0ed291ebfea5f836e034473cd93\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/74_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\88585fb4b68b0fca99f3e61d495433790782818c\a01b5e4b978729e91260c871501bcbb82e93af92\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/75_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\ccab438e68c720da6f9622967aba7948f33948f6\097dccf4b34c341b176e5fde948947816fa19c75\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/76_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\ccab438e68c720da6f9622967aba7948f33948f6\097dccf4b34c341b176e5fde948947816fa19c75\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/77_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\cdff11c4ac98e1882518a564b8010bc35006a261\e78eed5bc943154ff96e1c4a02c4ad72b67cd93e\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/78_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\f1669d8586531e84a606fcdab28c2f34e40b9d4b\f4e2b8c76fcf9282b073e083e9f7759e4f66b73e\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/79_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.bird\f1669d8586531e84a606fcdab28c2f34e40b9d4b\f4e2b8c76fcf9282b073e083e9f7759e4f66b73e\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/80_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.callhistory.sync-helper\7be4885e5a6519e9dfae052b9df74edada351480\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/81_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.cloudpaird\04eb7aea94c82deee15583facddc9d9a8c235c16\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/82_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.cloudpaird\ce49f3500a597aa2dca9af15112d99e9363cd778\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/83_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.cloudphotod\39accd3621390c988c0d1d338ef31976ec189347\4d4df0a526653b9317b428548a9695da13fa5b0c\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/84_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.cloudphotod\39accd3621390c988c0d1d338ef31976ec189347\4d4df0a526653b9317b428548a9695da13fa5b0c\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/85_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.coreduetd\c71f032347d6cae25a3164e9ffda52413530d895\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/86_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.coreidv.coreidvd\8b89bdf9fe4fbce9cd9451f4c9cabd402eae3ca2\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/87_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.dprivacyd\e7d201a9b55b12d60183abf68267536f40823008\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/88_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.healthd\6e3408f6e49ff6302bcd82a11b889e324420e343\7105c4dcb3f4bf7144b695fc15d54680bf7eb146\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/89_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.healthd\6e3408f6e49ff6302bcd82a11b889e324420e343\7105c4dcb3f4bf7144b695fc15d54680bf7eb146\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/90_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.icloud.fmfd\13f631a3598f936e415e0dce3963008159ae2a66\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/91_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.icloud.searchpartyd\d02bbec87a6e8ec2bdfcb5a2c9a331b4d4e8d3fc\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/92_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.identityservicesd\849759fb8eb7a3da707532c88ed982ae01375646\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/93_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.kbd\311a531705247df238534aabbd6d7375446a9fe5\01d2b77e2217653ff116263997931d3a8a167d0d\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/94_ChunkStoreDatabase-wal.txt" style = "color:blue" target="_blank">ChunkStoreDatabase-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.kbd\311a531705247df238534aabbd6d7375446a9fe5\0f54f506be94aeb1e042961a5a50fca814b1ae77\MMCS\.cs\ChunkStoreDatabase-wal</td></tr><tr><td><a href="SQLite Journaling/95_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.kbd\311a531705247df238534aabbd6d7375446a9fe5\0f54f506be94aeb1e042961a5a50fca814b1ae77\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/96_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.passd\3c9243e9598b2040d83f86987d721d1e609c4cd2\f58a02c66bd9ef3b13348709cef20caa40c44595\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/97_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.protectedcloudstorage.protectedcloudkeysyncing\aa73de30954c5cf0c85ed82c798fc05ce34a64b6\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/98_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.securityd\444b262b252686c99622264f1d476ced07a32cb1\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/99_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.siriactionsd\752b282b2a08852f7604be4c1fef56ec6f7ab0ef\1030ad9be4d3adf238f8445f41d7e8919d5d3849\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/100_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.siriknowledged\1d1d269aa1a55c0df94e36ae92330a874db6b566\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/101_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.suggestd\9689277fc800e022bb77d1141f289a17802a0e5b\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/102_pcs.db-wal.txt" style = "color:blue" target="_blank">pcs.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\CloudKit\com.apple.willowd\48d29333d4b68ae86e8e9f7bb095a0fc3515e47f\Records\pcs.db-wal</td></tr><tr><td><a href="SQLite Journaling/103_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleAccount\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/104_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServices\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/105_metrics.sqlitedb-wal.txt" style = "color:blue" target="_blank">metrics.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServices\Metrics\AppStore\metrics.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/106_metrics.sqlitedb-wal.txt" style = "color:blue" target="_blank">metrics.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServices\Metrics\amsengagementd\metrics.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/107_metrics.sqlitedb-wal.txt" style = "color:blue" target="_blank">metrics.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServices\Metrics\com.apple.AppleMediaServices\metrics.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/108_metrics.sqlitedb-wal.txt" style = "color:blue" target="_blank">metrics.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServices\Metrics\com.apple.appstored\metrics.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/109_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.AppleMediaServicesUI\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/110_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.NewDeviceOutreach\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/111_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.Preferences\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/112_cloudthumbnails.db-wal.txt" style = "color:blue" target="_blank">cloudthumbnails.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.QuickLook.thumbnailcache\cloudthumbnails.db-wal</td></tr><tr><td><a href="SQLite Journaling/113_index.sqlite-wal.txt" style = "color:blue" target="_blank">index.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.QuickLook.thumbnailcache\index.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/114_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.Safari.SafeBrowsing\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/115_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.accountsd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/116_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.akd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/117_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.akd\private\var\containers\Data\System\0A365E39-F34D-405C-8BA3-FC0553920739\Library\Caches\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/118_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.ap.adprivacyd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/119_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.ap.promotedcontentd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/120_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.appstored\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/121_storeUser.db-wal.txt" style = "color:blue" target="_blank">storeUser.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.appstored\storeUser.db-wal</td></tr><tr><td><a href="SQLite Journaling/122_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.atc\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/123_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.bookassetd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/124_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.coreidv.coreidvd\url\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/125_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.dataaccess.dataaccessd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/126_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.exchangesyncd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/127_data.sqlite-wal.txt" style = "color:blue" target="_blank">data.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.feedbacklogger\com.apple.assistantd\data.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/128_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.fitcored\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/129_AP.db-wal.txt" style = "color:blue" target="_blank">AP.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.geod\AP.db-wal</td></tr><tr><td><a href="SQLite Journaling/130_GEOConfigStore.db-wal.txt" style = "color:blue" target="_blank">GEOConfigStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.geod\GEOConfigStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/131_PDPlaceCache.db-wal.txt" style = "color:blue" target="_blank">PDPlaceCache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.geod\PDPlaceCache.db-wal</td></tr><tr><td><a href="SQLite Journaling/132_MapTiles.sqlitedb-wal.txt" style = "color:blue" target="_blank">MapTiles.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.geod\MapTiles\MapTiles.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/133_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.healthappd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/134_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.icloud.fmfd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/135_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.ind\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/136_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.itunescloudd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/137_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.kbd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/138_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.mediastream.mstreamd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/139_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.mobileactivationd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/140_navd.cache-wal.txt" style = "color:blue" target="_blank">navd.cache-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.navd\navd.cache-wal</td></tr><tr><td><a href="SQLite Journaling/141_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.passd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/142_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.purplebuddy\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/143_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.remindd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/144_Cache.sqlite-wal.txt" style = "color:blue" target="_blank">Cache.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.routined\Cache.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/145_Cloud-V2.sqlite-wal.txt" style = "color:blue" target="_blank">Cloud-V2.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.routined\Cloud-V2.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/146_Local.sqlite-wal.txt" style = "color:blue" target="_blank">Local.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.routined\Local.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/147_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.siri.parsec.CoreParsec\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/148_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.softwareupdateservicesd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/149_eventsTable_v1.db-wal.txt" style = "color:blue" target="_blank">eventsTable_v1.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.storeServices.analytics\eventsTable_v1\eventsTable_v1.db-wal</td></tr><tr><td><a href="SQLite Journaling/150_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.voiced\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/151_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.apple.watchlistd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/152_ApplicationCache.db-wal.txt" style = "color:blue" target="_blank">ApplicationCache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.saurik.Cydia\ApplicationCache.db-wal</td></tr><tr><td><a href="SQLite Journaling/153_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.saurik.Cydia\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/154_https_cydia.saurik.com_0.localstorage-wal.txt" style = "color:blue" target="_blank">https_cydia.saurik.com_0.localstorage-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\com.saurik.Cydia\LocalStorage\https_cydia.saurik.com_0.localstorage-wal</td></tr><tr><td><a href="SQLite Journaling/155_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\kjc.loader\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/156_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\rtcreportingd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/157_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Caches\sharedCaches\com.apple.iTunesStore.NSURLCache\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/158_Calendar.sqlitedb-wal.txt" style = "color:blue" target="_blank">Calendar.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Calendar\Calendar.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/159_CallHistory.storedata-wal.txt" style = "color:blue" target="_blank">CallHistory.storedata-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\CallHistoryDB\CallHistory.storedata-wal</td></tr><tr><td><a href="SQLite Journaling/160_Model56902430.sqlite-wal.txt" style = "color:blue" target="_blank">Model56902430.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\CoreAS\Model56902430.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/161_BehaviorMiner.sqlite-wal.txt" style = "color:blue" target="_blank">BehaviorMiner.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\CoreBehavior\BehaviorMiner.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/162_knowledgeC.db-wal.txt" style = "color:blue" target="_blank">knowledgeC.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\CoreDuet\Knowledge\knowledgeC.db-wal</td></tr><tr><td><a href="SQLite Journaling/163_interactionC.db-wal.txt" style = "color:blue" target="_blank">interactionC.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\CoreDuet\People\interactionC.db-wal</td></tr><tr><td><a href="SQLite Journaling/164_DifferentialPrivacyClassC.db-wal.txt" style = "color:blue" target="_blank">DifferentialPrivacyClassC.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DifferentialPrivacy\DifferentialPrivacyClassC.db-wal</td></tr><tr><td><a href="SQLite Journaling/165_DuetActivitySchedulerClassC.db-wal.txt" style = "color:blue" target="_blank">DuetActivitySchedulerClassC.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DuetActivityScheduler\DuetActivitySchedulerClassC.db-wal</td></tr><tr><td><a href="SQLite Journaling/166__ATXDataStore.db-wal.txt" style = "color:blue" target="_blank">_ATXDataStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DuetExpertCenter\_ATXDataStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/167__ATXInfoSuggestionStore.db-wal.txt" style = "color:blue" target="_blank">_ATXInfoSuggestionStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DuetExpertCenter\_ATXInfoSuggestionStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/168__ATXLoggerStore.db-wal.txt" style = "color:blue" target="_blank">_ATXLoggerStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DuetExpertCenter\_ATXLoggerStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/169__ATXNotificationStore.db-wal.txt" style = "color:blue" target="_blank">_ATXNotificationStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\DuetExpertCenter\_ATXNotificationStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/170_applicationState.db-wal.txt" style = "color:blue" target="_blank">applicationState.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\FrontBoard\applicationState.db-wal</td></tr><tr><td><a href="SQLite Journaling/171_healthdb.sqlite-wal.txt" style = "color:blue" target="_blank">healthdb.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Health\healthdb.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/172_healthdb_secure.hfd-wal.txt" style = "color:blue" target="_blank">healthdb_secure.hfd-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Health\healthdb_secure.hfd-wal</td></tr><tr><td><a href="SQLite Journaling/173_healthdb_secure.sqlite-wal.txt" style = "color:blue" target="_blank">healthdb_secure.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Health\healthdb_secure.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/174_HealthApp.sqlite-wal.txt" style = "color:blue" target="_blank">HealthApp.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Health\Client\HealthApp.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/175_com.apple.private.alloy.health.sync.db-wal.txt" style = "color:blue" target="_blank">com.apple.private.alloy.health.sync.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Health\NanoSync\com.apple.private.alloy.health.sync.db-wal</td></tr><tr><td><a href="SQLite Journaling/176_NGMTrustStore-identityservicesd.db-wal.txt" style = "color:blue" target="_blank">NGMTrustStore-identityservicesd.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\IdentityServices\NGMTrustStore-identityservicesd.db-wal</td></tr><tr><td><a href="SQLite Journaling/177_ids-hashes-identityservicesd.db-wal.txt" style = "color:blue" target="_blank">ids-hashes-identityservicesd.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\IdentityServices\ids-hashes-identityservicesd.db-wal</td></tr><tr><td><a href="SQLite Journaling/178_PDSCDCache-wal.txt" style = "color:blue" target="_blank">PDSCDCache-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\IdentityServices\PDS\PDSCDCache-wal</td></tr><tr><td><a href="SQLite Journaling/179_user_model_database.sqlite-wal.txt" style = "color:blue" target="_blank">user_model_database.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Keyboard\user_model_database.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/180_Envelope Index-wal.txt" style = "color:blue" target="_blank">Envelope Index-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Mail\Envelope Index-wal</td></tr><tr><td><a href="SQLite Journaling/181_Protected Index-wal.txt" style = "color:blue" target="_blank">Protected Index-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Mail\Protected Index-wal</td></tr><tr><td><a href="SQLite Journaling/182_Daemon.sqlite-wal.txt" style = "color:blue" target="_blank">Daemon.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\MediaStream\albumshare\Daemon.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/183_PersonID.sqlite-wal.txt" style = "color:blue" target="_blank">PersonID.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\MediaStream\albumshare\20977765650+17810856960805070161\PersonID.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/184_notes.sqlite-wal.txt" style = "color:blue" target="_blank">notes.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Notes\notes.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/185_PPSQLDatabase.db-wal.txt" style = "color:blue" target="_blank">PPSQLDatabase.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\PersonalizationPortrait\PPSQLDatabase.db-wal</td></tr><tr><td><a href="SQLite Journaling/186_Recents-wal.txt" style = "color:blue" target="_blank">Recents-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Recents\Recents-wal</td></tr><tr><td><a href="SQLite Journaling/187_Data-3A0CF2C8-3837-4D20-920E-0E982185A3B5.sqlite-wal.txt" style = "color:blue" target="_blank">Data-3A0CF2C8-3837-4D20-920E-0E982185A3B5.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Reminders\Container_v1\Stores\Data-3A0CF2C8-3837-4D20-920E-0E982185A3B5.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/188_Data-5713D154-9237-4DFD-9450-DF2DA2824BCF.sqlite-wal.txt" style = "color:blue" target="_blank">Data-5713D154-9237-4DFD-9450-DF2DA2824BCF.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Reminders\Container_v1\Stores\Data-5713D154-9237-4DFD-9450-DF2DA2824BCF.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/189_Data-C4B35608-8A03-43D7-9709-5681ADDEE6AC.sqlite-wal.txt" style = "color:blue" target="_blank">Data-C4B35608-8A03-43D7-9709-5681ADDEE6AC.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Reminders\Container_v1\Stores\Data-C4B35608-8A03-43D7-9709-5681ADDEE6AC.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/190_Data-E72B7281-A652-47EF-A863-DFAF64FF2354.sqlite-wal.txt" style = "color:blue" target="_blank">Data-E72B7281-A652-47EF-A863-DFAF64FF2354.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Reminders\Container_v1\Stores\Data-E72B7281-A652-47EF-A863-DFAF64FF2354.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/191_Data-local.sqlite-wal.txt" style = "color:blue" target="_blank">Data-local.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Reminders\Container_v1\Stores\Data-local.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/192_sms.db-wal.txt" style = "color:blue" target="_blank">sms.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\SMS\sms.db-wal</td></tr><tr><td><a href="SQLite Journaling/193_BrowserState.db-wal.txt" style = "color:blue" target="_blank">BrowserState.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Safari\BrowserState.db-wal</td></tr><tr><td><a href="SQLite Journaling/194_History.db-wal.txt" style = "color:blue" target="_blank">History.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Safari\History.db-wal</td></tr><tr><td><a href="SQLite Journaling/195_SESStorageV001.sqlite-wal.txt" style = "color:blue" target="_blank">SESStorageV001.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\SecureElementService\SESStorageV001.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/196_Shortcuts.sqlite-wal.txt" style = "color:blue" target="_blank">Shortcuts.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Shortcuts\Shortcuts.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/197_entities.db-wal.txt" style = "color:blue" target="_blank">entities.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Suggestions\entities.db-wal</td></tr><tr><td><a href="SQLite Journaling/198_snippets.db-wal.txt" style = "color:blue" target="_blank">snippets.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Suggestions\snippets.db-wal</td></tr><tr><td><a href="SQLite Journaling/199_training.db-wal.txt" style = "color:blue" target="_blank">training.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Suggestions\training.db-wal</td></tr><tr><td><a href="SQLite Journaling/200_queue.db-wal.txt" style = "color:blue" target="_blank">queue.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Suggestions\pending\queue.db-wal</td></tr><tr><td><a href="SQLite Journaling/201_com.apple.KeyValueService.EndToEndEncrypted-Production.sqlite-wal.txt" style = "color:blue" target="_blank">com.apple.KeyValueService.EndToEndEncrypted-Production.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\SyncedPreferences\com.apple.kvs\com.apple.KeyValueService.EndToEndEncrypted-Production.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/202_TCC.db-wal.txt" style = "color:blue" target="_blank">TCC.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\TCC\TCC.db-wal</td></tr><tr><td><a href="SQLite Journaling/203_triald.db-wal.txt" style = "color:blue" target="_blank">triald.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\Trial\v5\Database\triald.db-wal</td></tr><tr><td><a href="SQLite Journaling/204_chrono.sql-wal.txt" style = "color:blue" target="_blank">chrono.sql-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\chronod\chrono.sql-wal</td></tr><tr><td><a href="SQLite Journaling/205_ICDelegateAccountStore.db-wal.txt" style = "color:blue" target="_blank">ICDelegateAccountStore.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\com.apple.iTunesCloud\ICDelegateAccountStore.db-wal</td></tr><tr><td><a href="SQLite Journaling/206_itunesstored_private.sqlitedb-wal.txt" style = "color:blue" target="_blank">itunesstored_private.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\com.apple.itunesstored\itunesstored_private.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/207_Database-wal.txt" style = "color:blue" target="_blank">Database-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\dmd\ConfigurationEngine\Database-wal</td></tr><tr><td><a href="SQLite Journaling/208_Database-wal.txt" style = "color:blue" target="_blank">Database-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\dmd\Policies\Database-wal</td></tr><tr><td><a href="SQLite Journaling/209_datastore.sqlite-wal.txt" style = "color:blue" target="_blank">datastore.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\homed\datastore.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/210_datastore3.sqlite-wal.txt" style = "color:blue" target="_blank">datastore3.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Library\homed\datastore3.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/211_downloads.28.sqlitedb-wal.txt" style = "color:blue" target="_blank">downloads.28.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Media\Downloads\downloads.28.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/212_Photos.sqlite-wal.txt" style = "color:blue" target="_blank">Photos.sqlite-wal</a></td><td>\\?\R:\temp\private\var\mobile\Media\PhotoData\Photos.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/213_store.cloudphotodb-wal.txt" style = "color:blue" target="_blank">store.cloudphotodb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Media\PhotoData\CPL\storage\store.cloudphotodb-wal</td></tr><tr><td><a href="SQLite Journaling/214_CloudRecordings.db-wal.txt" style = "color:blue" target="_blank">CloudRecordings.db-wal</a></td><td>\\?\R:\temp\private\var\mobile\Media\Recordings\CloudRecordings.db-wal</td></tr><tr><td><a href="SQLite Journaling/215_MediaLibrary.sqlitedb-wal.txt" style = "color:blue" target="_blank">MediaLibrary.sqlitedb-wal</a></td><td>\\?\R:\temp\private\var\mobile\Media\iTunes_Control\iTunes\MediaLibrary.sqlitedb-wal</td></tr><tr><td><a href="SQLite Journaling/216_netusage.sqlite-wal.txt" style = "color:blue" target="_blank">netusage.sqlite-wal</a></td><td>\\?\R:\temp\private\var\networkd\db\netusage.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/217_valid.sqlite3-wal.txt" style = "color:blue" target="_blank">valid.sqlite3-wal</a></td><td>\\?\R:\temp\private\var\protected\trustd\valid.sqlite3-wal</td></tr><tr><td><a href="SQLite Journaling/218_ocspcache.sqlite3-wal.txt" style = "color:blue" target="_blank">ocspcache.sqlite3-wal</a></td><td>\\?\R:\temp\private\var\protected\trustd\private\ocspcache.sqlite3-wal</td></tr><tr><td><a href="SQLite Journaling/219_DeviceAnalyticsModel.sqlite-wal.txt" style = "color:blue" target="_blank">DeviceAnalyticsModel.sqlite-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Application Support\com.apple.wifianalyticsd\DeviceAnalyticsModel.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/220_cloudkit_cache.db-wal.txt" style = "color:blue" target="_blank">cloudkit_cache.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\Backup\cloudkit_cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/221_Cache.db-wal.txt" style = "color:blue" target="_blank">Cache.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\com.apple.mobileassetd\Cache.db-wal</td></tr><tr><td><a href="SQLite Journaling/222_ThreeBars.sqlite-wal.txt" style = "color:blue" target="_blank">ThreeBars.sqlite-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\com.apple.wifid\ThreeBars.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/223_cache_encryptedB.db-wal.txt" style = "color:blue" target="_blank">cache_encryptedB.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\locationd\cache_encryptedB.db-wal</td></tr><tr><td><a href="SQLite Journaling/224_cache_encryptedC.db-wal.txt" style = "color:blue" target="_blank">cache_encryptedC.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\locationd\cache_encryptedC.db-wal</td></tr><tr><td><a href="SQLite Journaling/225_consolidated.db-wal.txt" style = "color:blue" target="_blank">consolidated.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\locationd\consolidated.db-wal</td></tr><tr><td><a href="SQLite Journaling/226_gyroCal.db-wal.txt" style = "color:blue" target="_blank">gyroCal.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\locationd\gyroCal.db-wal</td></tr><tr><td><a href="SQLite Journaling/227_sensorRecorder_encryptedC.db-wal.txt" style = "color:blue" target="_blank">sensorRecorder_encryptedC.db-wal</a></td><td>\\?\R:\temp\private\var\root\Library\Caches\locationd\sensorRecorder_encryptedC.db-wal</td></tr><tr><td><a href="SQLite Journaling/228_containers.sqlite3-wal.txt" style = "color:blue" target="_blank">containers.sqlite3-wal</a></td><td>\\?\R:\temp\private\var\root\Library\MobileContainerManager\containers.sqlite3-wal</td></tr><tr><td><a href="SQLite Journaling/229_DataUsage.sqlite-wal.txt" style = "color:blue" target="_blank">DataUsage.sqlite-wal</a></td><td>\\?\R:\temp\private\var\wireless\Library\Databases\DataUsage.sqlite-wal</td></tr><tr><td><a href="SQLite Journaling/230_persistent.db-wal.txt" style = "color:blue" target="_blank">persistent.db-wal</a></td><td>\\?\R:\temp\private\var\wireless\awdd\persistent.db-wal</td></tr></tbody><tfoot><tr><th>Report</th><th>Location</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

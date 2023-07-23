@@ -1,0 +1,281 @@
+__CSDBRecordSequenceNumber157
+_ClientVersion14006
+counter_last_reset0
+counter_out_lifetime0
+counter_in_lifetime0
+counter_out_all0
+counter_in_all0
+counter_out_lifetime
+counter_out_all
+counter_last_reset
+counter_in_lifetime
+)	counter_in_all
+__CSDBRecordSequenceNumber
+_ClientVersion
+__CSDBRecordSequenceNumber158
+U4795710C-30F8-4212-A2CA-8D1DD649D42D
+-	deleted_messages
+7	sync_deleted_messages
+sync_deleted_attachments
+message
+	handle
+	chat
+U
+4795710C-30F8-4212-A2CA-8D1DD649D42D
+<(r%
+	vU
+
+D79DF7B2-037A-4D75-9B67-00EA3526EE44
+U	D50A8FD0-7CCB-413D-9D12-C289DAA7660C(
+CB2F1679-ABE7-4637-A166-36A6ADFE12D4
+C5C44973-34E8-48DC-ABB3-D37358F79A85
+2C8561B9-D2EC-4922-9476-97D346DCAE84
+03A0C4AF-EBCD-46F3-AF75-059AA7BDA0CF
+69)2
+
+				
+Wy&I
+2C8561B9-D2EC-4922-9476-97D346DCAE84Yeah same standard Sunday.
+streamtyped
+NSMutableAttributedString
+NSAttributedString
+NSObject
+NSMutableString
+NSString
+Yeah same standard Sunday.
+NSDictionary
+__kIMMessagePartAttributeName
+NSNumber
+NSValue
+__kIMCalendarEventAttributeName
+
+NSMutableData
+NSData
+[770c]bplist00
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	
+WversionYdd-result
+%&'-./4:>?CKOPSWX\U$null
+RMSV$classRARQTQPRSRRVN
+!"#$_
+NS.rangeval.length_
+NS.rangeval.locationZNS.special
+()*+Z$classnameX$classesWNSValue
+*,XNSObjectVSundayTDate
+13ZNS.objects
+!"#$
+RelativeDayOfWeek
+YDayOfWeek
+()TU^NSMutableArray
+TV,WNSArrayQ0
+()YZ_
+DDScannerResult
+
+iMessageP:+614665213906E7C08DB-E0E1-4550-BCF7-78E2E4C41D5A	
+bplist00
+Sust	
++61466521390D79DF7B2-037A-4D75-9B67-00EA3526EE44
+D79DF7B2-037A-4D75-9B67-00EA3526EE44Not too bad, glad it
+s almost over! How
+s yours? 
++5Not too bad, glad it
+SamcSust
++61466521390D50A8FD0-7CCB-413D-9D12-C289DAA7660C
+D50A8FD0-7CCB-413D-9D12-C289DAA7660CHi honey how was your day ? 
+Hi honey how was your day ? 
++61466521390
+CB2F1679-ABE7-4637-A166-36A6ADFE12D4Only if our bowlers can pull together and not let Ben stokes get another century 
+ I like our chances though 
++tOnly if our bowlers can pull together and not let Ben stokes get another century 
++61466521390C5C44973-34E8-48DC-ABB3-D37358F79A85
+C5C44973-34E8-48DC-ABB3-D37358F79A85I hear the Aussies have a good shot at retaining the ashes 
++;I hear the Aussies have a good shot at retaining the ashes 
+Mtr`
++614665213902C8561B9-D2EC-4922-9476-97D346DCAE84
+03A0C4AF-EBCD-46F3-AF75-059AA7BDA0CFIt
+s been a long time since we won over there. I also just love seeing those sooky poms lose
++^It
++614665213904795710C-30F8-4212-A2CA-8D1DD649D42D
+__CSDBRecordSequenceNumber159
+'UP
+
+SQLite format 3
+r/\u
+
+
+(V:9
+^%)N
+S^*7
++61448804154auiMessage0448804154
+	+61448804154iMessage
+6j:Sm
+>_`H2
+indexsqlite_autoindex_chat_message_join_1chat_message_join
+Itablechat_message_joinchat_message_join
+CREATE TABLE chat_message_join (chat_id INTEGER REFERENCES chat (ROWID) ON DELETE CASCADE, message_id INTEGER REFERENCES message (ROWID) ON DELETE CASCADE, message_date INTEGER DEFAULT 0, PRIMARY KEY (chat_id, message_id))
+utablekvtablekvtable
+CREATE TABLE kvtable (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, key TEXT UNIQUE NOT NULL, value BLOB NOT NULL)-
+indexsqlite_autoindex_kvtable_2kvtable
+indexsqlite_autoindex_kvtable_1kvtable
+tablesync_deleted_attachmentssync_deleted_attachments
+CREATE TABLE sync_deleted_attachments (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, guid TEXT NOT NULL, recordID TEXT )O
+indexsqlite_autoindex_sync_deleted_attachments_1sync_deleted_attachments
+-tablemessage_attachment_joinmessage_attachment_join
+CREATE TABLE message_attachment_join (message_id INTEGER REFERENCES message (ROWID) ON DELETE CASCADE, attachment_id INTEGER REFERENCES attachment (ROWID) ON DELETE CASCADE, UNIQUE(message_id, attachment_id))M
+indexsqlite_autoindex_message_attachment_join_1message_attachment_join
+tablesync_deleted_chatssync_deleted_chats
+CREATE TABLE sync_deleted_chats (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, guid TEXT NOT NULL, recordID TEXT,timestamp INTEGER)C
+indexsqlite_autoindex_sync_deleted_chats_1sync_deleted_chats
+tablehandlehandle
+CREATE TABLE handle (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, id TEXT NOT NULL, country TEXT, service TEXT NOT NULL, uncanonicalized_id TEXT, person_centric_id TEXT, UNIQUE (id, service) )+
+indexsqlite_autoindex_handle_2handle
+indexsqlite_autoindex_handle_1handle
+tablemessage_processing_taskmessage_processing_taskCREATE TABLE message_processing_task (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, guid TEXT NOT NULL, task_flags INTEGER NOT NULL )M
+indexsqlite_autoindex_message_processing_task_1message_processing_task.
+{tablesync_deleted_messagessync_deleted_messages	CREATE TABLE sync_deleted_messages (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, guid TEXT NOT NULL, recordID TEXT )I	
+indexsqlite_autoindex_sync_deleted_messages_1sync_deleted_messages
+a
+utablechat_handle_joinchat_handle_join
+CREATE TABLE chat_handle_join (chat_id INTEGER REFERENCES chat (ROWID) ON DELETE CASCADE, handle_id INTEGER REFERENCES handle (ROWID) ON DELETE CASCADE, UNIQUE(chat_id, handle_id))?
+indexsqlite_autoindex_chat_handle_join_1chat_handle_join
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Qtabledeleted_messagesdeleted_messages
+CREATE TABLE deleted_messages (ROWID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, guid TEXT NOT NULL)?
+indexsqlite_autoindex_deleted_messages_1deleted_messages
+!table_SqliteDatabaseProperties_SqliteDatabaseProperties
+CREATE TABLE _SqliteDatabaseProperties (key TEXT, value TEXT, UNIQUE(key))Q
+indexsqlite_autoindex__SqliteDatabaseProperties_1_SqliteDatabaseProperties
+-tableattachmentattachment!CREATE TABLE attachment (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, guid TEXT UNIQUE NOT NULL, created_date INTEGER DEFAULT 0, start_date INTEGER DEFAULT 0, filename TEXT, uti TEXT, mime_type TEXT, transfer_state INTEGER DEFAULT 0, is_outgoing INTEGER DEFAULT 0, user_info BLOB, transfer_name TEXT, total_bytes INTEGER DEFAULT 0, is_sticker INTEGER DEFAULT 0, sticker_user_info BLOB, attribution_info BLOB, hide_attachment INTEGER DEFAULT 0, ck_sync_state INTEGER DEFAULT 0, ck_server_change_token_blob BLOB, ck_record_id TEXT, original_guid TEXT UNIQUE NOT NULL, sr_ck_sync_state INTEGER DEFAULT 0, sr_ck_server_change_token_blob BLOB, sr_ck_record_id TEXT)'
+indexsqlite_autoindex_chat_1chat 
+utablechatchat
+CREATE TABLE chat (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, guid TEXT UNIQUE NOT NULL, style INTEGER, state INTEGER, account_id TEXT, properties BLOB, chat_identifier TEXT, service_name TEXT, room_name TEXT, account_login TEXT, is_archived INTEGER DEFAULT 0, last_addressed_handle TEXT, display_name TEXT, group_id TEXT, is_filtered INTEGER, successful_query INTEGER, engram_id TEXT, server_change_token TEXT, ck_sync_state INTEGER DEFAULT 0, original_group_id TEXT, last_read_message_timestamp INTEGER DEFAULT 0, sr_server_change_token TEXT, sr_ck_sync_state INTEGER DEFAULT 0, cloudkit_record_id TEXT, sr_cloudkit_record_id TEXT, last_addressed_sim_id TEXT, is_blackholed INTEGER DEFAULT 0)-
+indexsqlite_autoindex_message_1message
+Utablemessagemessage
+CREATE TABLE message (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, guid TEXT UNIQUE NOT NULL, text TEXT, replace INTEGER DEFAULT 0, service_center TEXT, handle_id INTEGER DEFAULT 0, subject TEXT, country TEXT, attributedBody BLOB, version INTEGER DEFAULT 0, type INTEGER DEFAULT 0, service TEXT, account TEXT, account_guid TEXT, error INTEGER DEFAULT 0, date INTEGER, date_read INTEGER, date_delivered INTEGER, is_delivered INTEGER DEFAULT 0, is_finished INTEGER DEFAULT 0, is_emote INTEGER DEFAULT 0, is_from_me INTEGER DEFAULT 0, is_empty INTEGER DEFAULT 0, is_delayed INTEGER DEFAULT 0, is_auto_reply INTEGER DEFAULT 0, is_prepared INTEGER DEFAULT 0, is_read INTEGER DEFAULT 0, is_system_message INTEGER DEFAULT 0, is_sent INTEGER DEFAULT 0, has_dd_results INTEGER DEFAULT 0, is_service_message INTEGER DEFAULT 0, is_forward INTEGER DEFAULT 0, was_downgraded INTEGER DEFAULT 0, is_archive INTEGER DEFAULT 0, cache_has_attachments INTEGER DEFAULT 0, cache_roomnames TEXT, was_data_detected INTEGER DEFAULT 0, was_deduplicated INTEGER DEFAULT 0, is_audio_message INTEGER DEFAULT 0, is_played INTEGER DEFAULT 0, date_played INTEGER, item_type INTEGER DEFAULT 0, other_handle INTEGER DEFAULT 0, group_title TEXT, group_action_type INTEGER DEFAULT 0, share_status INTEGER DEFAULT 0, share_direction INTEGER DEFAULT 0, is_expirable INTEGER DEFAULT 0, expire_state INTEGER DEFAULT 0, message_action_type INTEGER DEFAULT 0, message_source INTEGER DEFAULT 0, associated_message_guid TEXT, associated_message_type INTEGER DEFAULT 0, balloon_bundle_id TEXT, payload_data BLOB, expressive_send_style_id TEXT, associated_message_range_location INTEGER DEFAULT 0, associated_message_range_length INTEGER DEFAULT 0, time_expressive_send_played INTEGER, message_summary_info BLOB, ck_sync_state INTEGER DEFAULT 0, ck_record_id TEXT, ck_record_change_tag TEXT, destination_caller_id TEXT, sr_ck_sync_state INTEGER DEFAULT 0, sr_ck_record_id TEXT, sr_ck_record_change_tag TEXT, is_corrupt INTEGER DEFAULT 0, reply_to_guid TEXT, sort_id INTEGER, is_spam INTEGER DEFAULT 0, has_unseen_mention INTEGER DEFAULT 0, thread_originator_guid TEXT, thread_originator_part TEXT)
+iMessage;-;+61448804154-
+A10FDC6A-2365-4C39-B00F-DE5F12E9577Bbplist00
+	
+
+
+Rpv_
+numberOfTimesRespondedtoThread_
+shouldForceToSMS_
+messageHandshakeState_
+CKChatWatermarkTime_
+CKChatWatermarkMessageIDTLSMD
+;Nf|
++61448804154iMessageE:tom.jonsey91@gmail.com+61466521390C8FFAB03-15DB-4F4D-BBF3-5D2D6C99018694AFF2DC-9C6A-45EB-98AA-646FBA409505	
+;	iMessage;-;+61448804154
+
+t
+P
+
+handlesqlite_autoindex_handle_11 1(
+handlesqlite_autoindex_handle_21 1 1<
+chat_handle_joinsqlite_autoindex_chat_handle_join_11 1 15
+chat_handle_joinchat_handle_join_idx_handle_id1 1L
+_SqliteDatabasePropertiessqlite_autoindex__SqliteDatabaseProperties_17 1>
+chat_message_joinsqlite_autoindex_chat_message_join_17 7 1=
+chat_message_joinchat_message_join_idx_message_id_only7 15
+chat_message_joinchat_message_join_idx_chat_id7 7I
+chat_message_joinchat_message_join_idx_message_date_id_chat_id7 7 1 1(
+messagesqlite_autoindex_message_17 1
+messagemessage_idx_date7 10
+messagemessage_idx_thread_originator_guid7 7"
+messagemessage_idx_handle7 7 1#
+messagemessage_idx_handle_id7 76
+messagemessage_idx_is_sent_is_from_me_error7 4 4 4,
+
+messagemessage_idx_associated_message7 7/
+messagemessage_idx_cache_has_attachments7 7&
+messagemessage_idx_other_handle7 7(
+
+messagemessage_idx_was_downgraded7 7&	
+messagemessage_idx_expire_state7 7%
+messagemessage_idx_is_read7 4 3 36
+messagemessage_idx_isRead_isFromMe_itemType7 4 3 3$
+messagemessage_idx_failed7 7 4 4"
+chatsqlite_autoindex_chat_11 12
+chatchat_idx_chat_identifier_service_name1 1 1#
+chatchat_idx_chat_identifier1 11
+chatchat_idx_chat_room_name_service_name1 1 1
+chatchat_idx_is_archived1 1
+p
+
+
+U
+ 
+-indexmessage_idx_undelivered_one_to_one_imessagemessage4CREATE INDEX message_idx_undelivered_one_to_one_imessage ON message(cache_roomnames,service,is_sent,is_delivered,was_downgraded,item_type) where cache_roomnames IS NULL AND service = 'iMessage' AND is_sent = 1 AND is_delivered = 0 AND was_downgraded = 0 AND item_type == 04/
+Windexmessage_processing_task_idx_guid_task_flagsmessage_processing_task3CREATE INDEX message_processing_task_idx_guid_task_flags ON message_processing_task(guid, task_flags)g.
+	indexchat_idx_chat_identifierchat2CREATE INDEX chat_idx_chat_identifier ON chat(chat_identifier)
++indexmessage_idx_associated_messagemessage1CREATE INDEX message_idx_associated_message ON message(associated_message_guid)
+3indexchat_message_join_idx_message_id_onlychat_message_join0CREATE INDEX chat_message_join_idx_message_id_only ON chat_message_join(message_id)
+=indexmessage_idx_is_sent_is_from_me_errormessage/CREATE INDEX message_idx_is_sent_is_from_me_error ON message(is_sent, is_from_me, error)`*
+}indexmessage_idx_handle_idmessage.CREATE INDEX message_idx_handle_id ON message(handle_id)a)
+indexmessage_idx_handlemessage-CREATE INDEX message_idx_handle ON message(handle_id, date)
+1indexmessage_idx_thread_originator_guidmessage,CREATE INDEX message_idx_thread_originator_guid ON message(thread_originator_guid)~'
+indexattachment_idx_purged_attachments_v2attachment+CREATE INDEX attachment_idx_purged_attachments_v2 ON attachment(hide_attachment,ck_sync_state,transfer_state) WHERE hide_attachment=0 AND (ck_sync_state=1 OR ck_sync_state=4) AND transfer_state=0Q&
+iindexmessage_idx_datemessage*CREATE INDEX message_idx_date ON message(date)-%
+Mindexmessage_attachment_join_idx_attachment_idmessage_attachment_join)CREATE INDEX message_attachment_join_idx_attachment_id ON message_attachment_join(attachment_id)
+!indexchat_handle_join_idx_handle_idchat_handle_join(CREATE INDEX chat_handle_join_idx_handle_id ON chat_handle_join(handle_id)
+?indexchat_idx_chat_identifier_service_namechat&CREATE INDEX chat_idx_chat_identifier_service_name ON chat(chat_identifier, service_name)$"
+Aindexmessage_attachment_join_idx_message_idmessage_attachment_join%CREATE INDEX message_attachment_join_idx_message_id ON message_attachment_join(message_id)
+[tablesqlite_stat1sqlite_stat1$CREATE TABLE sqlite_stat1(tbl,idx,stat)3 
+indexsqlite_autoindex_attachment_2attachment#3
+indexsqlite_autoindex_attachment_1attachment"p5
+indexmessage_idx_was_downgradedmessage9CREATE INDEX message_idx_was_downgraded ON message(was_downgraded)j4
+	indexmessage_idx_other_handlemessage8CREATE INDEX message_idx_other_handle ON message(other_handle)
+1indexchat_idx_chat_room_name_service_namechat7CREATE INDEX chat_idx_chat_room_name_service_name ON chat(room_name, service_name)
+-indexmessage_idx_cache_has_attachmentsmessage6CREATE INDEX message_idx_cache_has_attachments ON message(cache_has_attachments)
+indexchat_message_join_idx_chat_idchat_message_join5CREATE INDEX chat_message_join_idx_chat_id ON chat_message_join(chat_id)
+VB<6r
+yW_'o
+%	+61448804154
+c;	
+
+ zv9h
+q1qj
+
+	iMessage
+triggerafter_insert_on_chat_message_joinchat_message_joinCREATE TRIGGER after_insert_on_chat_message_join  AFTER INSERT ON chat_message_join BEGIN     UPDATE message       SET cache_roomnames = (         SELECT group_concat(c.room_name)         FROM chat c         INNER JOIN chat_message_join j ON c.ROWID = j.chat_id         WHERE           j.message_id = NEW.message_id       )       WHERE         message.ROWID = NEW.message_id; END
+otriggerafter_delete_on_chat_handle_joinchat_handle_joinCREATE TRIGGER after_delete_on_chat_handle_join AFTER DELETE ON chat_handle_join BEGIN     DELETE FROM handle         WHERE handle.ROWID = OLD.handle_id     AND         (SELECT 1 from chat_handle_join WHERE handle_id = OLD.handle_id LIMIT 1) IS NULL     AND         (SELECT 1 from message WHERE handle_id = OLD.handle_id LIMIT 1) IS NULL     AND         (SELECT 1 from message WHERE other_handle = OLD.handle_id LIMIT 1) IS NULL; END
++triggerafter_insert_on_message_attachment_joinmessage_attachment_joinCREATE TRIGGER after_insert_on_message_attachment_join AFTER INSERT ON message_attachment_join BEGIN     UPDATE message       SET cache_has_attachments = 1     WHERE       message.ROWID = NEW.message_id; END/=
+triggerafter_delete_on_attachmentattachmentCREATE TRIGGER after_delete_on_attachment AFTER DELETE ON attachment BEGIN   SELECT delete_attachment_path(OLD.filename); END
+triggerafter_delete_on_chat_message_joinchat_message_joinCREATE TRIGGER after_delete_on_chat_message_join AFTER DELETE ON chat_message_join BEGIN     UPDATE message       SET cache_roomnames = (         SELECT group_concat(c.room_name)         FROM chat c         INNER JOIN chat_message_join j ON c.ROWID = j.chat_id         WHERE           j.message_id = OLD.message_id       )       WHERE         message.ROWID = OLD.message_id;  DELETE FROM message WHERE message.ROWID = OLD.message_id AND OLD.message_id NOT IN (SELECT chat_message_join.message_id from chat_message_join WHERE chat_message_join.message_id = OLD.message_id LIMIT 1); END
+!indexmessage_idx_failedmessage?CREATE INDEX message_idx_failed ON message(is_finished, is_from_me, error)
+Eindexmessage_idx_isRead_isFromMe_itemTypemessage>CREATE INDEX message_idx_isRead_isFromMe_itemType ON message(is_read, is_from_me, item_type)t9
+'indexmessage_idx_is_readmessage=CREATE INDEX message_idx_is_read ON message(is_read, is_from_me, is_finished)=8
+qindexchat_message_join_idx_message_date_id_chat_idchat_message_join<CREATE INDEX chat_message_join_idx_message_date_id_chat_id ON chat_message_join(chat_id, message_date, message_id)j7
+	indexmessage_idx_expire_statemessage;CREATE INDEX message_idx_expire_state ON message(expire_state)Z6
+yindexchat_idx_is_archivedchat:CREATE INDEX chat_idx_is_archived ON chat(is_archived)
+[triggerafter_delete_on_message_attachment_joinmessage_attachment_joinCREATE TRIGGER after_delete_on_message_attachment_join AFTER DELETE ON message_attachment_join BEGIN     DELETE FROM attachment         WHERE attachment.ROWID = OLD.attachment_id     AND         (SELECT 1 from message_attachment_join WHERE attachment_id = OLD.attachment_id LIMIT 1) IS NULL; END/H
+triggeradd_to_deleted_messagesmessageCREATE TRIGGER add_to_deleted_messages AFTER DELETE ON message BEGIN     INSERT INTO deleted_messages (guid) VALUES (OLD.guid); ENDiG
+qtriggeradd_to_sync_deleted_attachmentsattachmentCREATE TRIGGER add_to_sync_deleted_attachments AFTER DELETE ON attachment BEGIN     INSERT INTO sync_deleted_attachments (guid, recordID) VALUES (OLD.guid, OLD.ck_record_id); END@F
+'triggerbefore_delete_on_attachmentattachmentCREATE TRIGGER before_delete_on_attachment BEFORE DELETE ON attachment BEGIN   SELECT before_delete_attachment_path(OLD.ROWID, OLD.guid); END
+striggerdelete_associated_messages_after_delete_on_messagemessageCREATE TRIGGER delete_associated_messages_after_delete_on_message AFTER DELETE ON message BEGIN DELETE FROM message WHERE (OLD.associated_message_guid IS NULL AND associated_message_guid IS NOT NULL AND guid = OLD.associated_message_guid); END!D
+triggerafter_delete_on_chatchatCREATE TRIGGER after_delete_on_chat AFTER DELETE ON chat BEGIN DELETE FROM chat_message_join WHERE chat_id = OLD.ROWID; ENDZC
+_triggeradd_to_sync_deleted_messagesmessageCREATE TRIGGER add_to_sync_deleted_messages AFTER DELETE ON message BEGIN     INSERT INTO sync_deleted_messages (guid, recordID) VALUES (OLD.guid, OLD.ck_record_id); END
+5triggerupdate_message_date_after_update_on_messagemessageCREATE TRIGGER update_message_date_after_update_on_message AFTER UPDATE OF date ON message BEGIN UPDATE chat_message_join SET message_date = NEW.date WHERE message_id = NEW.ROWID AND message_date != NEW.date; END
+Ktriggerafter_delete_on_messagemessageCREATE TRIGGER after_delete_on_message AFTER DELETE ON message BEGIN     DELETE FROM handle         WHERE handle.ROWID = OLD.handle_id     AND         (SELECT 1 from chat_handle_join WHERE handle_id = OLD.handle_id LIMIT 1) IS NULL     AND         (SELECT 1 from message WHERE handle_id = OLD.handle_id LIMIT 1) IS NULL     AND         (SELECT 1 from message WHERE other_handle = OLD.handle_id LIMIT 1) IS NULL; END
+chat_message_joinsqlite_autoindex_chat_message_join_16 6 1=
+chat_message_joinchat_message_join_idx_message_id_only6 15
+chat_message_joinchat_message_join_idx_chat_id6 6I
+chat_message_joinchat_message_join_idx_message_date_id_chat_id6 6 1 1(
+messagesqlite_autoindex_message_16 1
+messagemessage_idx_date6 10
+messagemessage_idx_thread_originator_guid6 6"
+messagemessage_idx_handle6 6 1#
+messagemessage_idx_handle_id6 66
+messagemessage_idx_is_sent_is_from_me_error6 3 3 3,
+
+messagemessage_idx_associated_message6 6/
+messagemessage_idx_cache_has_attachments6 6&
+messagemessage_idx_other_handle6 6(
+
+messagemessage_idx_was_downgraded6 6&	
+messagemessage_idx_expire_state6 6%
+messagemessage_idx_is_read6 3 2 26
+messagemessage_idx_isRead_isFromMe_itemType6 3 2 2$
+messagemessage_idx_failed6 6 3 3"

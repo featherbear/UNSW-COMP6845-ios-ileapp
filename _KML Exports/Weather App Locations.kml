@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="5">
+        <open>1</open>
+        <Placemark id="7">
+            <name>N/A</name>
+            <description>Timestamp: N/A - Weather App Locations</description>
+            <Point id="6">
+                <coordinates>151.2166748046875,-33.86666488647461,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>N/A</name>
+            <description>Timestamp: N/A - Weather App Locations</description>
+            <Point id="8">
+                <coordinates>149.13333129882812,-35.25,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>N/A</name>
+            <description>Timestamp: N/A - Weather App Locations</description>
+            <Point id="10">
+                <coordinates>145.0,-37.83333206176758,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

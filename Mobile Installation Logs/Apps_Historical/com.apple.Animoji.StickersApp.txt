@@ -1,0 +1,1 @@
+2023-07-08 23:19:41 Made container live com.apple.Animoji.StickersApp /private/var/mobile/Containers/Data/Application/58976C87-B10B-4F97-8B9F-C12697EFF59A

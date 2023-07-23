@@ -1,0 +1,2 @@
+2023-07-09 14:42:14 Data container moved com.apple.Maps.MapsSpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/8AD85ACB-419D-416F-8C55-195F8B755764
+2023-07-08 23:20:24 Made container live com.apple.Maps.MapsSpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/D8549C6B-17BB-4F8A-B34C-B115B1F73133

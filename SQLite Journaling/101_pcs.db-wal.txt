@@ -1,0 +1,106 @@
+[DSQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+G@I
+
+gaNG
+
+6EU;
+events:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+10db
+gk#Q
+J|6g
+U5gl
+)0'0%
++9u,32r
+(F5B714D643615391586ECD1604B7CDD68033AA5A
+"#$YNS.string
++Z1wVTJPukv5IXR1LfC4Yso5A-S9WLlod47VvcNjEoUo
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	Vevents_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+CoreSuggestionsPseudoEvents22757441C-D046-4C70-A8DC-D7FA5FD91FD5events:__defaultOwner__A
+;	events:__defaultOwner__
+	events:__defaultOwner__
+CoreSuggestionsPseudoEvents22757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+;UE	events:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5CoreSuggestionsPseudoEvents2
+UE	2757441C-D046-4C70-A8DC-D7FA5FD91FD5CoreSuggestionsPseudoEvents2
+>EU;
+salt-manatee:events:__defaultOwner__
+'()-5;<BCDHLMQRU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+~p<	
+aR64
+@nW3
+[hCZ
+(D3F63D3EBAEF03ADF3FBB0485FE625E942E2D182
+*+,YNS.string
++n2MxGvcGXxpZc5uq3ZipHWk6_vVytgQrvfvQ1olvK6w
+./01Z$classnameX$classes_
+234_
+6789:ZRecordNameVZoneID
+\salt-manatee
+?@AXZoneNameYownerName
+Vevents_
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDTsalt
+./ST_
+CKDRecordPCSData
+UV4_
+CKDRecordPCSDataZCKDPCSData
+CoreSuggestionsPseudoEvents22757441C-D046-4C70-A8DC-D7FA5FD91FD5events:__defaultOwner__A
+vPL
+
+events:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5CoreSuggestionsPseudoEvents2
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5CoreSuggestionsPseudoEvents2
+,O0ySQLite format 3
+{^2{
+$EU;
+ !%-3459=@U$null
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+"CoreSuggestionsPseudoEvents22757441C-D046-4C70-A8DC-D7FA5FD91FD5events:__defaultOwner__A
+fEU;
+'()-5;<BCDHLMU$null
+6789$ZRecordNameVZoneID
+./NO_
+PQ4_
+r70
+

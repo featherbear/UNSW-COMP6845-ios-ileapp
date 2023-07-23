@@ -1,0 +1,67 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+,,bo
+6KkR
+
+IdentifierZone:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459=BCU$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+l:@R
+OAd~jc
+K+1	
+BhmY 
+$dmXQ
+^	^\
+)0'0%
+=<w5Ykj
+(88FF9A1D19C714E8966BDB75E0768FB2629F1E30
+"#$YNS.string
++HTQjbflAhL8dWtPxcOLO24LQxbyKqOX_noEGuDfosQg
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	^IdentifierZone_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.dataO
+xv
+	
+zDc5
+&'>?]NSMutableData
+@A,]NSMutableDataVNSDataD
+&'DE^CKDZonePCSData
+FG,^CKDZonePCSDataZCKDPCSData
+Kcom.apple.applemediaservices.metrics2757441C-D046-4C70-A8DC-D7FA5FD91FD5IdentifierZone:__defaultOwner__A
+K	IdentifierZone:__defaultOwner__
+Z,^^o
+	IdentifierZone:__defaultOwner__
+com.apple.applemediaservices.metrics2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+KUU	IdentifierZone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.applemediaservices.metrics
+UU	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.applemediaservices.metrics
+vhv
+

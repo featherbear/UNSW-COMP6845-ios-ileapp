@@ -1,0 +1,94 @@
+OSQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+4IU=
+History:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+g"yb>7
+Q0nx)
+`$2\
+/XVqN
+wm<&1
+)0'0%
+8N>i'
+(657F2676977F7A5AD316B1230085895EE1B45977
+"#$YNS.string
++ZnK3X7U6ftyLDqmGRhFob5A0ynhVgt1GSPsg5hcK4wQ
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	WHistory_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+com.apple.SafariShared.History2757441C-D046-4C70-A8DC-D7FA5FD91FD5History:__defaultOwner__A
+=	History:__defaultOwner__
+	History:__defaultOwner__
+com.apple.SafariShared.History2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+=UI	History:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.SafariShared.History
+UI	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.SafariShared.History
+qNh
+
+"IU=
+ !%-3459=@U$null
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+!com.apple.SafariShared.History2757441C-D046-4C70-A8DC-D7FA5FD91FD5History:__defaultOwner__A
+History:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.SafariShared.History
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.SafariShared.History
+zIU=
+043F55E3-7116-4CC2-93FB-372C7457C301:History:__defaultOwner__
+'()-5;<BCDHLMQRU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+,Yc+|q
+Vo#M
+a
+ar
+(C2E57CEE2B2C27687A3A9340E21ED0FF5B28A642
+*+,YNS.string
++FLJ6z7ivk-vJiazMpG2ZLI7JaGfdnkCCEAajlf4NU_4
+./01Z$classnameX$classes_
+234_
+6789:ZRecordNameVZoneID
+$043F55E3-7116-4CC2-93FB-372C7457C301
+?@AXZoneNameYownerName
+WHistory_
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDVVisits
+./ST_
+CKDRecordPCSData
+UV4_
+CKDRecordPCSDataZCKDPCSData
+)com.apple.SafariShared.History2757441C-D046-4C70-A8DC-D7FA5FD91FD5History:__defaultOwner__A

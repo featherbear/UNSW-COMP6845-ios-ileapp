@@ -1,0 +1,196 @@
+SQLite format 3
+atableZ_MODELCACHEZ_MODELCACHE
+CREATE TABLE Z_MODELCACHE (Z_CONTENT BLOB){
+AtableZ_METADATAZ_METADATA	CREATE TABLE Z_METADATA (Z_VERSION INTEGER PRIMARY KEY, Z_UUID VARCHAR(255), Z_PLIST BLOB)
+
+WtableZ_PRIMARYKEYZ_PRIMARYKEY
+CREATE TABLE Z_PRIMARYKEY (Z_ENT INTEGER PRIMARY KEY, Z_NAME VARCHAR, Z_SUPER INTEGER, Z_MAX INTEGER)
+indexZPDSCDREGISTRATION_ZUSER_INDEXZPDSCDREGISTRATION
+CREATE INDEX ZPDSCDREGISTRATION_ZUSER_INDEX ON ZPDSCDREGISTRATION (ZUSER)w
+)indexZ_PDSCDKV_UNIQUE_keyZPDSCDKV
+CREATE UNIQUE INDEX Z_PDSCDKV_UNIQUE_key ON ZPDSCDKV (ZKEY COLLATE BINARY ASC)
+ytableZPDSCDUSERZPDSCDUSER
+CREATE TABLE ZPDSCDUSER ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZUSERTYPE INTEGER, ZUSERID VARCHAR )|
+#tableZPDSCDREGISTRATIONZPDSCDREGISTRATION
+CREATE TABLE ZPDSCDREGISTRATION ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZENTRYSTATE INTEGER, ZENVIRONMENT INTEGER, ZUSER INTEGER, ZCLIENTID VARCHAR, ZQUALIFIER VARCHAR, ZTOPIC VARCHAR )5
+=tableZPDSCDKVZPDSCDKV
+CREATE TABLE ZPDSCDKV ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZNUMVALUE INTEGER, ZKEY VARCHAR, ZSTRINGVALUE VARCHAR, ZDATAVALUE BLOB )
+$cJTe
+PDSCDRegistration=
+	PDSCDUser
+PDSCDKV
+=20977765650
+u+
+	?Ic
+com.apple.cloudkit.clouddcom.apple.health.sync.secure_Pcom.apple.icloud-container.com.apple.Healthh<
+
+	?;c
+com.apple.cloudkit.clouddcom.apple.health.sync_Pcom.apple.icloud-container.com.apple.Health
+w
+	?;i
+com.apple.cloudkit.clouddcom.apple.siriactions_Pcom.apple.icloud-container.com.apple.shortcutsw:
+
+	?Mo
+com.apple.cloudkit.clouddcom.apple.SafariShared.History_Pcom.apple.icloud-container.com.apple.mobilesafari
+	?]}
+com.apple.cloudkit.clouddcom.apple.accessibility.RTTTranscripts_Pcom.apple.icloud-container.com.apple.accessibility.heard
+	?7_
+com.apple.cloudkit.clouddcom.apple.Maps.Sync_Pcom.apple.icloud-container.com.apple.Maps7
+
+	?i}
+com.apple.cloudkit.clouddcom.apple.accessibility.PersonalAudioTunings_Pcom.apple.icloud-container.com.apple.accessibility.heardx4
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.com.apple.iBooks
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.com.apple.iBooks.iTunesU
+	?E_
+com.apple.cloudkit.clouddcom.apple.Maps.Sync.secure_Pcom.apple.icloud-container.com.apple.Maps
+c'i+
+
+kPDSLastRequestHash
+kPDSNextCheckpointTime9
+LkPDSLastPushToken\
+	?7k
+com.apple.cloudkit.clouddcom.apple.bluetooth_Pcom.apple.icloud-container.com.apple.cloudpaird
+	?7i
+com.apple.cloudkit.clouddcom.apple.shortcuts_Pcom.apple.icloud-container.com.apple.shortcutss
+
+	?Ik
+com.apple.cloudkit.clouddcom.apple.bluetooth.services_Pcom.apple.icloud-container.com.apple.cloudpairdg
+
+	?7e
+com.apple.cloudkit.clouddcom.apple.reminders_Pcom.apple.icloud-container.com.apple.reminddl	
+
+		?Ae
+com.apple.cloudkit.clouddcom.apple.messages.cloud_Pcom.apple.icloud-container.com.apple.imagent
+com.apple.cloudkit.clouddcom.apple.homekit.camera.clips_Pcom.apple.icloud-container.com.apple.willowd.homekit.camera.clips
+com.apple.cloudkit.clouddcom.apple.iCloud.CommCenter_Pcom.apple.icloud-container.com.apple.CommCenterMobileHelper
+com.apple.cloudkit.clouddcom.apple.SafariShared.CloudTabs_Pcom.apple.icloud-container.com.apple.SafariBookmarksSyncAgento
+	?Ci
+com.apple.cloudkit.clouddcom.apple.knowledgestore4_Pcom.apple.icloud-container.com.apple.coreduetd
+	?7#
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.CloudDocs.container-metadata
+
+com.apple.cloudkit.clouddcom.apple.SafariShared.WBSCloudBookmarksStore_Pcom.apple.icloud-container.com.apple.SafariBookmarksSyncAgent
+
+	??e
+com.apple.cloudkit.clouddcom.apple.willow.config_Pcom.apple.icloud-container.com.apple.willowd
+com.apple.cloudkit.clouddcom.apple.siri.data_Pcom.apple.icloud-container.com.apple.assistant.assistantdh
+	?9e
+com.apple.cloudkit.clouddcom.apple.backup.ios_Pcom.apple.icloud-container.com.apple.backupd{
+	?G}
+com.apple.cloudkit.clouddcom.apple.security.keychain_Pcom.apple.icloud-container.com.apple.security.cuttlefishb
+	?1a
+com.apple.cloudkit.clouddcom.apple.passes_Pcom.apple.icloud-container.com.apple.passdw
+com.apple.cloudkit.clouddcom.apple.siri.profile_Pcom.apple.icloud-container.com.apple.assistant.assistantd
+	?gq
+com.apple.cloudkit.clouddcom.apple.KeyValueService.EndToEndEncrypted_Pcom.apple.icloud-container.com.apple.syncdefaultsdq
+	?Gi
+com.apple.cloudkit.clouddcom.apple.security.keychain_Pcom.apple.icloud-container.com.apple.securityd
+$cJ1#xG
+	?7
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.iBooks.cloudDatat,
+
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.SharedDocs
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.is.workflow.my.workflows~1
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.com.apple.DocumentsApp
+com.apple.cloudkit.clouddcom.apple.accessibility.VoiceOverPunctuation_Pcom.apple.icloud-container.com.apple.accessibility.AccessibilityUIServert/
+
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.mobilemailw.
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.com.apple.passd~-
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.iCloud.com.apple.mobilesafari{+
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.CloudDocs.health
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.SafariShared.History})
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.CloudDocs-metadatao(
+
+	?=o
+com.apple.cloudkit.clouddcom.apple.photos.cloud_Pcom.apple.icloud-container.com.apple.photos.clouds'
+
+	?7}
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.TextInput
+	?]o
+com.apple.cloudkit.clouddcom.apple.applemediaservices.multiuser_Pcom.apple.icloud-container.com.apple.amsaccountsd	%
+com.apple.cloudkit.clouddcom.apple.callhistory.cloud-storage2_Pcom.apple.icloud-container.com.apple.callhistory.sync-helperf$
+
+	?3g
+com.apple.cloudkit.clouddcom.apple.Avatars_Pcom.apple.icloud-container.com.apple.avatarsdv#
+
+	?Ay
+com.apple.cloudkit.clouddcom.apple.private.ids.kt_Pcom.apple.icloud-container.com.apple.identityservicesdl"
+
+	??g
+com.apple.cloudkit.clouddcom.apple.CoreRoutine-3_Pcom.apple.icloud-container.com.apple.routined !
+	?Y3
+com.apple.cloudkit.clouddcom.apple.security.PCSIdentityBackup_Pcom.apple.icloud-container.com.apple.protectedcloudstorage.protectedcloudkeysyncing+ 
+	?u-
+com.apple.cloudkit.clouddcom.apple.cloudkit.metadata-com.apple.photos.cloud_Pcom.apple.icloud-container.com.apple.upload-request-proxy.com.apple.photos.cloudr
+	?Em
+com.apple.cloudkit.clouddcom.apple.findmy.container_Pcom.apple.icloud-container.com.apple.icloud.fmfdi
+com.apple.cloudkit.clouddcom.apple.reminders_Pcom.apple.icloud-container.com.apple.remindersr
+com.apple.cloudkit.clouddcom.apple.mail.preferences_Pcom.apple.icloud-container.com.apple.email.maildv
+	?Ko
+com.apple.cloudkit.clouddcom.apple.iad-cloudkit-secure_Pcom.apple.icloud-container.com.apple.AdSheetPhone{
+	?]g
+com.apple.cloudkit.clouddcom.apple.CoreSuggestions.PseudoEvents_Pcom.apple.icloud-container.com.apple.suggestd{
+	?g]
+com.apple.cloudkit.clouddcom.apple.textinput.KeyboardServices.Secure_Pcom.apple.icloud-container.com.apple.kbds
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.CloudDocst
+	?Y]
+com.apple.cloudkit.clouddcom.apple.textinput.KeyboardServices_Pcom.apple.icloud-container.com.apple.kbds
+	?As
+com.apple.cloudkit.clouddcom.apple.siri.knowledge_Pcom.apple.icloud-container.com.apple.siriknowledgedg
+	?/m
+com.apple.cloudkit.clouddcom.apple.notes_Pcom.apple.icloud-container.com.apple.mobilenotesq
+	?7y
+com.apple.cloudkit.clouddcom.apple.clouddocs_Pcom.apple.icloud-container.clouddocs.com.apple.shoebox|
+	?I}
+com.apple.cloudkit.clouddcom.apple.icloud.searchparty_Pcom.apple.icloud-container.com.apple.icloud.searchpartyd
+com.apple.cloudkit.clouddcom.apple.health.sync_Pcom.apple.icloud-container.com.apple.Health
+wk=
+
+$cJ=
+$cJ5
+PDSCDRegistration>
+$cJl
+>20977765650
+$cJ!7
+	?Ys
+com.apple.cloudkit.clouddcom.apple.applemediaservices.metrics_Pcom.apple.icloud-container.com.apple.amsengagementdo;
+
+$cJU4p
+$cJ1
+PDSCDRegistration?
+$cJ9
+?20977765650
+	?Cy
+com.apple.cloudkit.clouddcom.apple.icloud-bcassets_Pcom.apple.icloud-container.com.apple.businessservicesd
+_zkPDSLastRequestHash
+$cJBZJ
+$cJZ
+$cJ
+!jt
+
+PDSCDRegistration@
+$cJ\
+@20977765650
+^[
+
+w
+	?Sw
+com.apple.cloudkit.clouddcom.apple.coreidv.server-messages_Pcom.apple.icloud-container.com.apple.coreidv.coreidvdw?
+
+$cJ{5
+PDSCDRegistrationA
+$cJhi	
+A20977765650
+$cJn
+$cJ"E
+com.apple.cloudkit.clouddcom.apple.DPBlacklist_Pcom.apple.icloud-container.com.apple.dprivacyd|@
+
+$cJ)q
+G[k1
+	H
+com.apple.cloudkit.clouddcom.apple.coreidv.server-messages_Pcom.apple.icloud-container.com.apple.coreidv.coreidvd
+w
+com.apple.cloudkit.clouddcom.apple.DPBlacklist_Pcom.apple.icloud-container.com.apple.dprivacydw?
+
+$cJ)!g(
+DkPDSNextCheckpointTime9

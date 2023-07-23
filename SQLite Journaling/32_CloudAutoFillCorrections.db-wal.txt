@@ -1,0 +1,21 @@
+LOSQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)x
+?tablewhitelistwhitelist
+CREATE TABLE whitelist (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL UNIQUE)1
+indexsqlite_autoindex_whitelist_1whitelist
+4SQLite format 3
+7tablehostshosts
+CREATE TABLE hosts (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL UNIQUE))
+indexsqlite_autoindex_hosts_1hosts
+Y%S
+
+SQLite format 3
+Utablecorrectionscorrections
+CREATE TABLE corrections (id INTEGER PRIMARY KEY AUTOINCREMENT,host_id INTEGER REFERENCES hosts(id) ON DELETE CASCADE,fingerprint TEXT NOT NULL,classification TEXT)l
+ISQLite format 3
+{tablemetadatametadata
+CREATE TABLE metadata (key TEXT NOT NULL UNIQUE, value)/
+indexsqlite_autoindex_metadata_1metadata	G
+Dn\
+

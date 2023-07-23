@@ -1,0 +1,2 @@
+2023-07-09 14:41:55 Data container moved com.apple.VoiceMemos.SpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/B366DCA7-C291-4356-AB5C-DE8FEDCC23A5
+2023-07-08 23:20:23 Made container live com.apple.VoiceMemos.SpotlightIndexExtension /private/var/mobile/Containers/Data/PluginKitPlugin/BD2AADAF-6102-45D9-B94E-373E709988B2

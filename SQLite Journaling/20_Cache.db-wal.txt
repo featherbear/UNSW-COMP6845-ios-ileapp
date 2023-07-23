@@ -1,0 +1,68 @@
+eJDG
+
+-y]https://configuration.apple.com/configurations/internetservices/cloudkit/notes-1.3.plist2023-07-09 06:44:00
+=	https://configuration.apple.com/configurations/internetservices/cloudkit/notes-1.3.plist
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+&'
+_CFURLStringType\_CFURLString
+Xhttps://configuration.apple.com/configurations/internetservices/cloudkit/notes-1.3.plist#A
+ !"#$%\Content-TypeVServer_
+Content-LanguageWExpires]Cache-ControlTDate^Content-LengthZConnectionX__hhaa__TEtag]Accept-Ranges]Last-Modified_
+application/x-troff-manVApacheUen-us_
+Sun, 09 Jul 2023 06:44:38 GMTZmax-age=38_
+Sun, 09 Jul 2023 06:44:00 GMTS871Zkeep-alive_
+t
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIFZTZXJ2ZXJcQ29udGVudC1UeXBlV0V4cGlyZXNdTGFzdC1Nb2RpZmllZF8QEENvbnRlbnQtTGFuZ3VhZ2VaQ29ubmVjdGlvbl1BY2NlcHQtUmFuZ2VzVERhdGVeQ29udGVudC1MZW5ndGhdQ2FjaGUtQ29udHJvbFRFdGFnoQ1WQXBhY2hloQ9fEBdhcHBsaWNhdGlvbi94LXRyb2ZmLW1hbqERXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjo0NDozOCBHTVShE18QHUZyaSwgMTQgRmViIDIwMjAgMDA6MTc6MjEgR01UoRVVZW4tdXOhF1prZWVwLWFsaXZloRlVYnl0ZXOhG18QHVN1biwgMDkgSnVsIDIwMjMgMDY6NDQ6MDAgR01UoR1TODcxoR9abWF4LWFnZT0zOKEhXxATIjM2Ny01OWU3ZTIwYWY5OGMwIgAIAB8AJgAzADsASQBcAGcAdQB6AIkAlwCcAJ4ApQCnAMEAwwDjAOUBBQEHAQ0BDwEaARwBIgEkAUQBRgFKAUwBVwFZAAAAAAAAAgEAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAW8=_
+"367-59e7e20af98c0"Ubytes_
+Fri, 14 Feb 2020 00:17:21 GMT_
+ __CFURLResponseNullTokenString___
+application/x-troff-man
+Xhttps://configuration.apple.com/configurations/internetservices/cloudkit/notes-1.3.plist#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+Zbplist00
+	
+
+
+configurationVersion_
+resultsLimitPerSyncOperation_
+maximumAttachmentSizeMB_
+$throttlingPolicyResetIntervalSeconds_
+maxSubAttachmentsPerAttachment_
+ shouldSyncWhenEnteringForeground_
+syncIntervalSeconds_
+maxInlineAssetSizeBytes_
+minimumClientVersions_
+throttlingPolicy_
+maxAttachmentsPerNote_
+shouldPerformTopHit
+U86400
+SiOSUmacOS		#@^
+U9,0,0W10,11,0
+"%),/258<
+ !Ucount_
+intervalSeconds
+# $_
+&'(_
+*'+_
+0(1_
+3(4_
+6(7_
+9:;_
+=!>_
+intervalSeconds#@
+
+MX&J^
+3	2023-07-09 06:44:00

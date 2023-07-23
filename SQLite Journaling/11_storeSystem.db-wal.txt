@@ -1,0 +1,631 @@
+c$qy
+SQLite format 3
+atableschema_versionschema_version
+CREATE TABLE schema_version (schema_name TEXT, schema_version INTEGER DEFAULT 0, PRIMARY KEY(schema_name));
+indexsqlite_autoindex_schema_version_1schema_version
+HnZ
+
+x(RYb-
+
+w
+
+5tableodr_tagodr_tagCREATE TABLE odr_tag (pid INTEGER, always_preserved INTEGER DEFAULT 0, bundle_id TEXT, bundle_key TEXT, name TEXT, preservation_priority REAL DEFAULT 0, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY(pid))
+etableodr_manifestodr_manifest	CREATE TABLE odr_manifest (pid INTEGER, bundle_id TEXT, evid INTEGER, is_store_based INTEGER, item_id TEXT, last_modification_date DATETIME DEFAULT (timestamp()), local_cache_allowed INTEGER, thinning_variant TEXT, storage_id TEXT, version TEXT, PRIMARY KEY(pid), UNIQUE(item_id) ON CONFLICT REPLACE)7	
+indexsqlite_autoindex_odr_manifest_1odr_manifest
+x
+indexodr_asset_pack_bundle_keyodr_asset_pack
+CREATE INDEX odr_asset_pack_bundle_key ON odr_asset_pack(bundle_key)
+tableodr_asset_packodr_asset_pack
+CREATE TABLE odr_asset_pack (pid INTEGER, bundle_key TEXT, bundle_id TEXT, chunk_size INTEGER, download_identifier INTEGER DEFAULT 0, download_priority REAL, download_request_uuids JSON, effective_always_preserve INTEGER DEFAULT 0, effective_preservation_priority INTEGER DEFAULT 0, hash_array JSON, known_content_hashes JSON, file_size INTEGER, last_used_date DATETIME, local_url TEXT, manifest_id INTEGER, md5 TEXT, pin_count INTEGER DEFAULT 0, primary_content_hash JSON, purgeable INTEGER DEFAULT 1, purge_reason INTEGER, sha TEXT, streamable INTEGER DEFAULT 0, source_url TEXT, timestamp DATETIME DEFAULT (timestamp()), uncompressed_size INTEGER, PRIMARY KEY(pid), UNIQUE (bundle_key) ON CONFLICT REPLACE);
+indexsqlite_autoindex_odr_asset_pack_1odr_asset_pack
+}tableodr_asset_downloadodr_asset_download
+CREATE TABLE odr_asset_download (pid INTEGER, bundle_id TEXT, bundle_key TEXT, coordinator_id UUID, download_size INTEGER, is_paused INTEGER, source_url TEXT, type INTEGER, unique_key TEXT, PRIMARY KEY(pid), UNIQUE (unique_key) ON CONFLICT REPLACE)C
+indexsqlite_autoindex_odr_asset_download_1odr_asset_download
+on_demand_resources6
+3	on_demand_resources
+v^'7
+
+XSQLite format 3
+,7SQLite format 3
+xQat
+app_installs9m
+
+^
+
+app_installs
+B{d
+
+atableapp_doneapp_doneCREATE TABLE app_done (pid INTEGER, account_id INTEGER, item_id INTEGER, machine_based INTEGER NOT NULL DEFAULT 0, request_url URL, transaction_id TEXT, PRIMARY KEY(pid))o
+
+5tableapp_packageapp_package
+CREATE TABLE app_package (pid INTEGER, archive_type INTEGER NOT NULL DEFAULT 0, blocked INTEGER NOT NULL DEFAULT 0, bytes_offset INTEGER, bytes_remaining INTEGER, bytes_total INTEGER, clear_hash_array JSON, compression INTEGER NOT NULL DEFAULT 0, data_promise_id UUID, disk_usage INTEGER, dp_info BLOB, hash_array JSON, hash_size INTEGER, hash_type INTEGER, initial_odr_size INTEGER, locate_asset_cache INTEGER, odr_manifest_url URL, package_type INTEGER, package_url URL, parent_id UUID, provisioning_profiles JSON, request_count INTEGER DEFAULT 0, sinf BLOB, streaming_zip INTEGER, timestamp DATETIME DEFAULT (timestamp()), variant_id TEXT, PRIMARY KEY(pid))&
+
+wtableapp_install_remoteapp_install_remote
+CREATE TABLE app_install_remote (pid INTEGER, destination_id TEXT, external_id UUID, metadata BLOB, PRIMARY KEY(pid))D
+Otableapp_installapp_install
+CREATE TABLE app_install (pid INTEGER, account_id INTEGER, apple_id TEXT, arcade INTEGER NOT NULL DEFAULT 0, alt_dsid TEXT, approved INTEGER NOT NULL DEFAULT 0, artwork_url URL, auto_install_override INTEGER NOT NULL DEFAULT 0, automatic_type INTEGER NOT NULL DEFAULT 0, bundle_id TEXT, bundle_name TEXT, bundle_url URL, bundle_version TEXT, bootstrapped INTEGER NOT NULL DEFAULT 2, cancel_download_url URL, cancel_if_duplicate INTEGER NOT NULL DEFAULT 0, companion_bundle_id TEXT, client_id TEXT, client_type INTEGER NOT NULL DEFAULT 0, coordinator_id UUID, coordinator_intent INTEGER NOT NULL DEFAULT 1, device_based_vpp INTEGER, downloader_id INTEGER, download_path TEXT, external_id UUID, external_order INTEGER, evid INTEGER, failure_error BLOB, gizmo_pairing_id UUID, has_messages_extension INTEGER NOT NULL DEFAULT 0, item_id INTEGER, last_start_date DATETIME, launch_prohibited INTEGER NOT NULL DEFAULT 0, log_code TEXT, messages_artwork_url URL, optimal_download_start INTEGER, metrics_install_type INTEGER NOT NULL DEFAULT 0, order_index INTEGER, phase INTEGER NOT NULL DEFAULT 10, policy JSON, post_metrics INTEGER NOT NULL DEFAULT 0, placeholder_entitlements BLOB, priority INTEGER NOT NULL DEFAULT 0, quarantine INTEGER NOT NULL DEFAULT 0, receipt BLOB, recovery_count INTEGER NOT NULL DEFAULT 0, redownload INTEGER NOT NULL DEFAULT 0, remote_install INTEGER NOT NULL DEFAULT 0, requires_rosetta INTEGER NOT NULL DEFAULT 0, restore_state INTEGER NOT NULL DEFAULT 0, restore_retry_count INTEGER NOT NULL DEFAULT 0, restore_type INTEGER NOT NULL DEFAULT 0, runs_on_apple_silicon INTEGER NOT NULL DEFAULT 1, runs_on_intel INTEGER NOT NULL DEFAULT 1,software_platform INTEGER NOT NULL DEFAULT 0, source_type INTEGER NOT NULL DEFAULT 0, storefront TEXT, store_cohort TEXT, store_metadata BLOB, supports_32bit_only INTEGER NOT NULL DEFAULT 0, supress_dialogs INTEGER NOT NULL DEFAULT 0, timestamp DATETIME DEFAULT (timestamp()), transaction_id TEXT, update_type INTEGER NOT NULL DEFAULT 0, vid UUID, vendor_name TEXT, watch_type INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(pid))
+#SQLite format 3
+app_updates8
+app_updates
+9tableapp_updatesapp_updates
+CREATE TABLE app_updates (pid INTEGER, bundle_id TEXT, current_version_release_date DATETIME, device_families INTEGER, install_date DATETIME, is_background INTEGER NOT NULL DEFAULT 0, is_code_signature_update INTEGER NOT NULL DEFAULT 0, is_offloaded INTEGER NOT NULL DEFAULT 0, is_per_device INTEGER NOT NULL DEFAULT 0, is_profile_validated INTEGER NOT NULL DEFAULT 0, metrics_data JSON, purchase_id INTEGER DEFAULT 0, release_date DATETIME, software_platform INTEGER NOT NULL DEFAULT 0, store_item_data JSON, store_item_id INTEGER NOT NULL DEFAULT 0, store_software_version_id INTEGER, timestamp DATETIME DEFAULT (timestamp()), update_state INTEGER NOT NULL DEFAULT 0, UNIQUE(bundle_id) ON CONFLICT REPLACE,PRIMARY KEY (pid))5
+indexsqlite_autoindex_app_updates_1app_updates
+ISQLite format 3
+testflight_feedback6
+testflight_feedback
+ 
+w
+
+
+F
+J
+
+tablebeta_app_feedbackbeta_app_feedback
+CREATE TABLE beta_app_feedback (pid INTEGER PRIMARY KEY, account_dsid INTEGER NOT NULL, attempt_count INTEGER DEFAULT 0, app_version BLOB, feedback BLOB, is_app_clip INTEGER DEFAULT 0, log_key TEXT, next_retry_date DATETIME, pending_image_uploads BLOB, state INTEGER, successful_image_uploads BLOB, item_id INTEGER DEFAULT 0)
+tablebeta_app_infobeta_app_info
+CREATE TABLE beta_app_info (pid INTEGER PRIMARY KEY, bundle_id TEXT, bundle_version TEXT, bundle_short_version TEXT, email TEXT, expiration_date DATETIME,feedback_enabled INTEGER, has_shared_screenshot_feedback INTEGER, icon_url_template TEXT, last_seen_date DATETIME, launch_screen_enabled INTEGER, localized_display_names JSON, primary_locale TEXT, seen_count INTEGER, what_to_test JSON)5
+CREATE TABLE app_updates (pid INTEGER, bundle_id TEXT, current_version_release_date DATETIME, device_families INTEGER, install_date DATETIME, is_background INTEGER NOT NULL DEFAULT 0, is_code_signature_update INTEGER NOT NULL DEFAULT 0, is_offloaded INTEGER NOT NULL DEFAULT 0, is_per_device INTEGER NOT NULL DEFAULT 0, is_profile_validated INTEGER NOT NULL DEFAULT 0, metrics_data JSON, purchase_id INTEGER DEFAULT 0, release_date DATETIME, software_platform INTEGER NOT NULL DEFAULT 0, store_item_data JSON, store_item_id INTEGER NOT NULL DEFAULT 0, store_software_version_id INTEGER, timestamp DATETIME DEFAULT (timestamp()), update_state INTEGER NOT NULL DEFAULT 0, UNIQUE(bundle_id) ON CONFLICT REPLACE,PRIMARY KEY (pid))
+CREATE TABLE app_package (pid INTEGER, archive_type INTEGER NOT NULL DEFAULT 0, blocked INTEGER NOT NULL DEFAULT 0, bytes_offset INTEGER, bytes_remaining INTEGER, bytes_total INTEGER, clear_hash_array JSON, compression INTEGER NOT NULL DEFAULT 0, data_promise_id UUID, disk_usage INTEGER, dp_info BLOB, hash_array JSON, hash_size INTEGER, hash_type INTEGER, initial_odr_size INTEGER, locate_asset_cache INTEGER, odr_manifest_url URL, package_type INTEGER, package_url URL, parent_id UUID, provisioning_profiles JSON, request_count INTEGER DEFAULT 0, sinf BLOB, streaming_zip INTEGER, timestamp DATETIME DEFAULT (timestamp()), variant_id TEXT, PRIMARY KEY(pid))
+com.apple.calculatorCalculator1E2C8568-1A84-4650-AE64-FED3B2C3A3CB
+275B0174-0696-4792-B01E-DD8E31510DE8SYS
+
+com.apple.MobileAddressBookContacts7F543446-9982-4286-87E3-3A3D89C585E2
+B4C05D4A-9881-431E-B592-06CCDAB4C2ECSYS
+
+com.apple.tipsTips1E6386A0-BE53-47CC-AF50-42DEC04E03CC
+85F1C1EF-2229-4814-A914-D6140E9163ADSYS
+
+com.apple.weatherWeather851994A9-03FB-4E33-8D61-3429013834F4
+E297CA09-C1DF-458F-BB6C-CE5F8A2E3586SYS
+
+com.apple.VoiceMemosVoice MemosEB278902-6E68-42D8-948C-1D5EF894DE95
+80375E72-A525-4B1C-8FF3-94AAC29C4BDFSYS
+
+com.apple.podcastsPodcasts77EDBDFA-FC38-44B6-ADFD-1ED459BFFD1C
+654107D6-1847-47E3-BAEB-36967E9BC9D5SYS
+
+com.apple.DocumentsAppFiles7757E37C-9FFA-464A-8231-3A9DE62A0AB3
+81E60C5B-051D-4F00-AD95-BCA35F6177F8SYS
+
+A
+'
+com.apple.MapsMaps690EE8C7-7130-4056-8F0E-DA639706CE40
+D22524D4-360E-4D40-9AA0-A73D7F273911SYS
+
+:0q
+
+A
+'	j
+com.apple.TranslateTranslateCE8C897C-41E3-4FA2-9C81-178432AED7FA
+73695E2C-0212-4F73-AEBC-02093B350CFASYS
+
+com.apple.mobilecalCalendarDC7737BC-40CA-4BD7-9154-D866CE0375A7
+FFB7FCAB-E395-4667-8224-D8736368CB02SYS
+
+xq
+-B
+com.apple.iBooksBooksB2D31614-D794-42D7-B5B7-E781CDB7B787
+116614B5-8264-426B-A1FA-994E5EA0DB0BSYS
+
+com.apple.BridgeWatch6244CBD4-7132-470F-9C6A-B1B7E58F51F2
+7C95146C-28FF-425D-BC10-DE0F8C38ECF4SYS
+
+com.apple.MobileStoreiTunes Store5D40A026-E4A7-463C-83D4-2BCBF9545896
+DFDEB6F5-E5E1-4947-A761-2629BEEB9F41SYS
+
+com.apple.MusicMusic4C5F812C-8C6C-45BF-A818-16D089C48888
+C1F4975D-34D1-4E04-959D-E181A9E413D9SYS
+
+com.apple.facetimeFaceTime8B932435-87D1-4DD1-B403-2B5187E0D07D
+028D353F-19C5-47E9-B433-19A50B54D117SYS
+
+com.apple.HomeHome0FEDE807-3FF7-4F25-9FBC-87789BB14B92
+49BDC8AA-0496-4345-A283-7601CFB5F679SYS
+
+com.apple.measureMeasure174C8157-499A-4D78-B89E-1B86C53D3E01
+C48A0614-354F-4392-BE53-2657AC94E92ESYS
+
+com.apple.remindersRemindersCEF44C4D-BDF2-4E84-9FD4-E6FFC3F6E350
+4694880B-FE28-47B3-A206-1F83EA899C4BSYS
+
+com.apple.newsNewsA2F6A68E-6DD0-4101-A013-D84DDE919A28
+0AD90B39-43D9-4B1B-B1EE-3BFE657CED8CSYS
+
+com.apple.stocksStocks4C0A7B42-1F3B-461F-9DDD-35B2571996DF
+AD207240-140D-4A47-962E-58C1A0B77765SYS
+
+com.apple.compassCompass13F7C54E-A8D4-49D2-AF5B-B89E26B2B776
+CFBC0EAA-E714-4B4E-8653-879BBD63B8C6SYS
+
+
+'	j
+com.apple.mobilenotesNotesC840F63D-EA3D-459B-8E10-ABADA5392A52
+21D60E20-8E3E-4E9F-BB98-D60544FB2A3BSYS
+
+d
+C	
+com.apple.tvTV7F1C98CE-747C-4DAD-8F4C-B4320A7B933A
+637A613C-BD2A-459F-ABEC-D01ED3282FCFSYS
+
+x; |
+	j
+'
+com.apple.shortcutsShortcutsE7B580AC-BCD4-459F-ADF9-04909C06DBC0
+6CAF8117-5651-4419-9AFF-00DF04C0154ESYS
+
+com.apple.mobilemailMailF8A2364D-52B7-4663-B869-C290F275997E
+63FD9966-69E5-4FA2-A6EF-FBB9D0B244C3SYS
+
+SQLite format 3
+TSQLite format 3
+x}xS
+x5bp
+>SQLite format 3
+xpTt
+D
+	j
+com.apple.facetimeFaceTime
+8B932435-87D1-4DD1-B403-2B5187E0D07D
+028D353F-19C5-47E9-B433-19A50B54D117SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.MusicMusic
+4C5F812C-8C6C-45BF-A818-16D089C48888
+C1F4975D-34D1-4E04-959D-E181A9E413D9SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.MobileStoreiTunes Store
+5D40A026-E4A7-463C-83D4-2BCBF9545896
+DFDEB6F5-E5E1-4947-A761-2629BEEB9F41SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.BridgeWatch
+6244CBD4-7132-470F-9C6A-B1B7E58F51F2
+7C95146C-28FF-425D-BC10-DE0F8C38ECF4SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.mobilecalCalendar
+DC7737BC-40CA-4BD7-9154-D866CE0375A7
+FFB7FCAB-E395-4667-8224-D8736368CB02SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.shortcutsShortcuts
+E7B580AC-BCD4-459F-ADF9-04909C06DBC0
+6CAF8117-5651-4419-9AFF-00DF04C0154ESYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.MapsMaps
+690EE8C7-7130-4056-8F0E-DA639706CE40
+D22524D4-360E-4D40-9AA0-A73D7F273911SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.DocumentsAppFiles
+7757E37C-9FFA-464A-8231-3A9DE62A0AB3
+81E60C5B-051D-4F00-AD95-BCA35F6177F8SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.mobilenotesNotes
+C840F63D-EA3D-459B-8E10-ABADA5392A52
+21D60E20-8E3E-4E9F-BB98-D60544FB2A3BSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.remindersReminders
+CEF44C4D-BDF2-4E84-9FD4-E6FFC3F6E350
+4694880B-FE28-47B3-A206-1F83EA899C4BSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.VoiceMemosVoice Memos
+EB278902-6E68-42D8-948C-1D5EF894DE95
+80375E72-A525-4B1C-8FF3-94AAC29C4BDFSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.calculatorCalculator
+1E2C8568-1A84-4650-AE64-FED3B2C3A3CB
+275B0174-0696-4792-B01E-DD8E31510DE8SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.measureMeasure
+174C8157-499A-4D78-B89E-1B86C53D3E01
+C48A0614-354F-4392-BE53-2657AC94E92ESYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.TranslateTranslate
+CE8C897C-41E3-4FA2-9C81-178432AED7FA
+73695E2C-0212-4F73-AEBC-02093B350CFASYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.weatherWeather
+851994A9-03FB-4E33-8D61-3429013834F4
+E297CA09-C1DF-458F-BB6C-CE5F8A2E3586SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.tipsTips
+1E6386A0-BE53-47CC-AF50-42DEC04E03CC
+85F1C1EF-2229-4814-A914-D6140E9163ADSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.tvTV
+7F1C98CE-747C-4DAD-8F4C-B4320A7B933A
+637A613C-BD2A-459F-ABEC-D01ED3282FCFSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.newsNews
+A2F6A68E-6DD0-4101-A013-D84DDE919A28
+0AD90B39-43D9-4B1B-B1EE-3BFE657CED8CSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.compassCompass
+13F7C54E-A8D4-49D2-AF5B-B89E26B2B776
+CFBC0EAA-E714-4B4E-8653-879BBD63B8C6SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.MobileAddressBookContacts
+7F543446-9982-4286-87E3-3A3D89C585E2
+B4C05D4A-9881-431E-B592-06CCDAB4C2ECSYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.mobilemailMail
+F8A2364D-52B7-4663-B869-C290F275997E
+63FD9966-69E5-4FA2-A6EF-FBB9D0B244C3SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.stocksStocks
+4C0A7B42-1F3B-461F-9DDD-35B2571996DF
+AD207240-140D-4A47-962E-58C1A0B77765SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.HomeHome
+0FEDE807-3FF7-4F25-9FBC-87789BB14B92
+49BDC8AA-0496-4345-A283-7601CFB5F679SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.podcastsPodcasts
+77EDBDFA-FC38-44B6-ADFD-1ED459BFFD1C
+654107D6-1847-47E3-BAEB-36967E9BC9D5SYS
+{"ntwk":true,"cell":3,"conr":4}
+com.apple.iBooksBooks
+B2D31614-D794-42D7-B5B7-E781CDB7B787
+116614B5-8264-426B-A1FA-994E5EA0DB0BSYS
+{"ntwk":true,"cell":3,"conr":4}
+g>|["603fd7a16eae085b08b72673616e160b5643550a"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data
+ayZ*Z
+["e9d5d06a2e5a56a2815bd4947a5db6da6f8b737d"]
+["78cc6c4019487da3bc0214fd97ebf8fda6a2c1be"]:
+4
+["3c2e8da53b95d5c449ff31651d290ab1774edd11"]4
+
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataPN[fL3
+T["ff44c74c0688814ce4df9a7cf73f84b750515fcd"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataJN
+n["68710b5bd623cab1eefde02dd0ea89ba100d4a3e"]
+5["4eb6f092429e2c259b4719983fa6553c8a9b9c9c"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data'@
+ ["b8f8b2f6420bd44025dda07660e5fef465eb5054"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataqN
+["f9cc53e91378f8382d32ae3b5da065d7f1f2a46b"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data_B
+["3b4e4d9518b369ff3cd04f5188f5416e4cf0e05f"]
+["5d777935bcd89b9b827174532b00b860ed22e990"]2{
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.datawF
+W
+*Z
+vCUg!["129ce161668f0e78df82f77bf7ad6a1b778b68db"]g!
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataNE
+	|6["afe9352c87ba38070dca90dc56d914cabd112bf9"]	|6
+HIH*Z
+["1417a850cdc1c99ebf732f7505b531d7e883e338"]:
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataKI-
+["898438f7fc16ff17e1ce12f536a76235ceed8ff9"]
+M["f0c36c1c19176f21daa70418723861a98caf1bba"]c
+["9ef6192751996d17849fcf456d644daaf5fe00b2"]
+["d2e05c03d20e775cb47d03ad40347f6180013c6c"]'
+["2d83a3360c70d6779413e63f7507d625c7043578"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data8D
+n["aac9d09890b1ef55d62a6ae04e3517e21ee8a3a4"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.dataTD.
+H["373d56c30d1e7d5ee2075abde7ca96efcdb2e02b"]
+
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data,D8
+["e928a4155d97c1bab2842d12495a390f396e4b7b"]
+["f85e9758bc885e81a90284ce7e840b2ad404fe31"]
+DZ-7
+["0a093d5c96d75b9d995d817c9de966fa0599b922"]-5
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data~N
+["787315acae7f66695e867848e410a24d2fc5f20f"]
+https://updates.cdn-apple.com/2021SummerFCS/systemassets/071-74028/33E3C237-8D64-4A44-AE0D-2A13A8F13B6D/CA27968E-EA66-11EB-870E-74702A1F1E46/CC258D72-C378-49C4-8D5A-B2AE33EE62E7/com_apple_MobileAsset_SystemApp/35E2C212-18D8-43FD-A758-531D6B9D49D1.data2A
+AD207240-140D-4A47-962E-58C1A0B77765SYS
+{"ntwk":true,"cell":3,"conr":1}
+AD207240-140D-4A47-962E-58C1A0B77765A
+{"ntwk":true,"cell":3,"conr":1}
+vCUg!350A8F2E-A7A7-43D1-9FF3-C9B31691ECB7["129ce161668f0e78df82f77bf7ad6a1b778b68db"]g!
+SYS({"cell":3,"ntwk":false,"conr":1,"powr":false}
+637A613C-BD2A-459F-ABEC-D01ED3282FCFSYS
+{"ntwk":true,"cell":3,"conr":1}
+637A613C-BD2A-459F-ABEC-D01ED3282FCFA
+ZBSYS
+x&/e
++iG'
+
+{
+5
+n91121702-C3A8-400A-8C56-66328F6BDAB5["aac9d09890b1ef55d62a6ae04e3517e21ee8a3a4"]
+xHW.+
+SYS2{"cell":3,"ntwk":false,"conr":1,"powr":false}
+Ai
+
+-k1
+
+49BDC8AA-0496-4345-A283-7601CFB5F679SYS
+{"ntwk":true,"cell":3,"conr":1}
+49BDC8AA-0496-4345-A283-7601CFB5F679A
+l3SYS
+x+^0 
+T4CDD9665-2B7C-48EE-8781-D74BC5B47E0D["ff44c74c0688814ce4df9a7cf73f84b750515fcd"]
+ZBSYS({"cell":3,"ntwk":false,"conr":1,"powr":false}
+ZBSYS2{"cell":3,"ntwk":false,"conr":1,"powr":false}
+l3SYS({"cell":3,"ntwk":false,"conr":1,"powr":false}
+xH-^
+654107D6-1847-47E3-BAEB-36967E9BC9D5SYS
+{"ntwk":true,"cell":3,"conr":1}
+tq/
+
+654107D6-1847-47E3-BAEB-36967E9BC9D5A
+cSYS
+Iw"
+
+z
+5
+8E5E49CB-31D9-445A-8646-9BB5E68207B8["787315acae7f66695e867848e410a24d2fc5f20f"]
+,
+	j
+l3SYS2{"cell":3,"ntwk":false,"conr":1,"powr":false}
+
+k
+k
+4694880B-FE28-47B3-A206-1F83EA899C4BSYS
+{"ntwk":true,"cell":3,"conr":1}
+x{H5Q=
+x
+	j
+4694880B-FE28-47B3-A206-1F83EA899C4BA
+ADFE5613-6A73-4395-8891-26A6B28EF46A["78cc6c4019487da3bc0214fd97ebf8fda6a2c1be"]:
+B=Y-
+
+cSYS({"cell":3,"ntwk":false,"conr":1,"powr":false}
+21D60E20-8E3E-4E9F-BB98-D60544FB2A3BSYS
+{"ntwk":true,"cell":3,"conr":1}
+21D60E20-8E3E-4E9F-BB98-D60544FB2A3BA
+xy,
+4
+	j
+M6B7E53F4-AC99-4B15-B1B9-5D2F7F5EF1A6["f0c36c1c19176f21daa70418723861a98caf1bba"]c
+-3
+	j
+cSYS2{"cell":3,"ntwk":false,"conr":1,"powr":false}
+e
+	j
+
+k
+k
+k
+#2KK
+FFB7FCAB-E395-4667-8224-D8736368CB02A
+{"ntwk":true,"cell":3,"conr":4}
+DFDEB6F5-E5E1-4947-A761-2629BEEB9F41A
+028D353F-19C5-47E9-B433-19A50B54D117A
+x1G(
+	|6A328AC1F-4D5F-4770-AAEF-90F879443DC2["afe9352c87ba38070dca90dc56d914cabd112bf9"]	|6
+x1Z}
+F487B517-CF11-4F50-94A3-BBBF8F6C12A7["898438f7fc16ff17e1ce12f536a76235ceed8ff9"]
+n8E5149C9-0C2F-447A-AA6A-A15ACB23F529["68710b5bd623cab1eefde02dd0ea89ba100d4a3e"]
+x.
+mI
+SYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+<Kg
+<t
+
+SYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+QQ:
+
+
+k
+k
+k
+k
+80375E72-A525-4B1C-8FF3-94AAC29C4BDFA
+8h<SYS
+#ZVlzu
+9
+\u
+C1F4975D-34D1-4E04-959D-E181A9E413D9A
+EF612FFC-7AAF-4F61-BD7E-CE89CD1FD9FC["e928a4155d97c1bab2842d12495a390f396e4b7b"]
+1937515D-AC62-4BF3-B8E6-CB178B4F4C71["f85e9758bc885e81a90284ce7e840b2ad404fe31"]
+x8.:
+81E60C5B-051D-4F00-AD95-BCA35F6177F8A
+8DA95B56-8E2F-4159-8C22-7D65103A017B["d2e05c03d20e775cb47d03ad40347f6180013c6c"]'
+f
+\
+8h<SYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+}BpY
+
+8h<SYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+xE[]
+1
+R|
+@
+k
+k
+B4C05D4A-9881-431E-B592-06CCDAB4C2ECA
+ 5FF2D1B4-505D-469F-9C85-7CFAA1ECEAEF["b8f8b2f6420bd44025dda07660e5fef465eb5054"]
+
+Uu
+
+`|)l
+
+#
+R|
+xHu4
+<|
+275B0174-0696-4792-B01E-DD8E31510DE8A
+N
+
+	
+D4066BE3-9D4E-4870-A619-1025EF737134["3b4e4d9518b369ff3cd04f5188f5416e4cf0e05f"]
+fZa^
+
+xfOT
+7C95146C-28FF-425D-BC10-DE0F8C38ECF4A
+TSYS
+73695E2C-0212-4F73-AEBC-02093B350CFAA
+SYS
+{"ntwk":true,"cell":3,"conr":4}
+g>|93CD0115-1288-4AE3-BE19-A42FBC6B6264["603fd7a16eae085b08b72673616e160b5643550a"]
+xvQU
+H66998AC4-AFAC-431B-B77F-686ED2A39681["373d56c30d1e7d5ee2075abde7ca96efcdb2e02b"]
+
+Mr
+
+6CAF8117-5651-4419-9AFF-00DF04C0154EA
+CBAA1B0E-E2A8-4311-A8CD-11F14A05A502["e9d5d06a2e5a56a2815bd4947a5db6da6f8b737d"]
+8YQ
+
+'MR
+
+85F1C1EF-2229-4814-A914-D6140E9163ADA
+oSYS
+908D6A4C-92FF-492D-B734-8CEAD01ED5CC["f9cc53e91378f8382d32ae3b5da065d7f1f2a46b"]
+M
+I
+
+[vD
+	
+D22524D4-360E-4D40-9AA0-A73D7F273911A
+8540E5FC-0A6E-469F-97AF-17662245B7A9["9ef6192751996d17849fcf456d644daaf5fe00b2"]
+xNLT
+oSYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+oSYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+E297CA09-C1DF-458F-BB6C-CE5F8A2E3586A
+AWSYS
+CC024862-03C3-4939-9144-04F7D9B497A6["2d83a3360c70d6779413e63f7507d625c7043578"]
+AWSYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+TSYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+AWSYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+116614B5-8264-426B-A1FA-994E5EA0DB0BA
+3 *
+
+5484C6CD7-332E-4656-95CB-FA82D5AE9140["4eb6f092429e2c259b4719983fa6553c8a9b9c9c"]
+TSYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+x.Xg
+63FD9966-69E5-4FA2-A6EF-FBB9D0B244C3A
+-G W9~SYS
+18u
+
+xxgf
+8E6C4220-D4D8-46A9-BE87-CC35FF9AA074["1417a850cdc1c99ebf732f7505b531d7e883e338"]:
+63FD9966-69E5-4FA2-A6EF-FBB9D0B244C3SYS
+x#._
+>nU
+
+C48A0614-354F-4392-BE53-2657AC94E92EA
+-G#w
+SYS({"ntwk":true,"cell":3,"conr":4}
+xg\l
+4
+191FA447-4A92-4CF9-AB1C-3825C23BBD6B["3c2e8da53b95d5c449ff31651d290ab1774edd11"]4
+
+SYS2{"ntwk":true,"cell":3,"conr":4}
+CFBC0EAA-E714-4B4E-8653-879BBD63B8C6A
+RDSYS
+9F8B8711-36AB-4CC4-92B4-F23C75AC0908["5d777935bcd89b9b827174532b00b860ed22e990"]2{
+0AD90B39-43D9-4B1B-B1EE-3BFE657CED8CA
+-G$c(
+CBDA8612-EBAA-4F70-AAA3-381DB077DBDA["0a093d5c96d75b9d995d817c9de966fa0599b922"]-5
+RDSYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+RDSYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+VCe4
+xT|A
+HSYS
+HSYS({"cell":3,"ntwk":false,"conr":4,"powr":false}
+!U}"
+
+HSYS2{"cell":3,"ntwk":false,"conr":4,"powr":false}
+https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6d/f9/7b/6df97b30-4217-80e4-8e3a-b00eda4111f7/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-85-220.png/114x114bb.jpgcom.jdtech.CalculatorVaultCalculator+9
+https://p52-buy.itunes.apple.com/WebObjects/MZFastFinance.woa/wa/songDownloadDone?download-id=502590713544096240&cancel=1com.apple.AppStoreC3C5E642-9D4E-4E6F-ACBC-20EA8089C6D699C2D0FE-34AD-4DF8-947D-23D5C162380F0
+Is"wBUY
+{"ntwk":true}14346010|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+opqrstuvwxyz{|}~
+U$null
+ !"#$%&'()*+,-./0123456789:;<=>>@A>@@@@GHIJKLMNO@@@@@U>WXY@>>]>_`@b@@>f@hij>@@n_
+gameCenterEnabled^isAutoDownload[purchaserIDUgenre^factoryInstallZassetToken_
+enterpriseInstallURL_
+betaExternalVersionIdentifierUlabel_
+redownloadParams_
+softwareVersionBundleID[storeCohortZratingRankWappleID^iAdAttribution[releaseDate_
+!softwareVersionExternalIdentifierZDSPersonID_
+iAdImpressionDate_
+nameTranscriptions\downloaderIDYsubGenres[referrerAppV$class_
+launchProhibitedZartistNameWgenreID[ratingLabelYvariantID_
+sideLoadedDeviceBasedVPP^deviceBasedVPPTkind_
+hasMessagesExtensionWaltDSID_
+bundleShortVersionStringZcategoriesYsourceApp_
+iAdConversionDate^initialODRSize_
+purchasedRedownloadZstorefrontXfamilyIDXitemNameVitemID\purchaseDate_
+gameCenterEverEnabledSmd5[referrerURL]bundleVersion
+Q0^Janki PanchaniQ9S1.0_
+2023-07-09T06:46:11Z_
+tom.jonsey91@gmail.com
+.000284-08-7a1544ed-1edd-4546-bba9-0ac8e7d9cb73
+Is"w_
+Secrete Calculator Lock VaultXsoftwareS17+
+2019-11-30T08:00:00Z_
+com.jdtech.CalculatorVault
+com.apple.AppStore_
+|10|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1
+0dYUtilities
+GproductType=C&price=0&salableAdamId=1232282231&pricingParameters=STDRDL
+Z$classnameX$classes_
+MIStoreMetadata
+MIStoreMetadataXNSObject
+**Z4502590713544096240Janki Panchani
+["da790cc83c71054c1cf69063a39e6f65"]N
+hi32
+["18b6c0ad119a4d5b26ed5b0e50d983d2"]
+https://iosapps.itunes.apple.com/itunes-assets/Purple124/v4/0f/43/2a/0f432a1a-54b9-ac45-49bd-6d4b68f31935/pre-thinned10126204671217509052.thinned.signed.dpkg.ipa?accessKey=1689079571_7390889562062250595_uMO8TDZhUHn4AAIZutBJwl8flLjZt9S6Yhz3PsUJPVrq%2F%2FnTbMJydFyvqLWENmlN47mLFZPiQjEw0hZ1JtyHX8Te7bQmbnxmB3DkM02VPrd3gp7esVAiC%2Bkn9xuAMJt1kAXKvzDHpF%2Fo5mDGsaTYulYc9Wbjb%2F4SCqnfI6h0D3iWg%2BoQMf5pH71T3dgreKBN7FALHT%2BTPY6JawRYufAEeg%3D%3D C
+ sinf
+frmagame
+schm
+itun
+pschi
+user
+crdt
+asdt
+key 
+ivivYXe
+XrighveID
+dVplat
+aver
+tran
+3sing
+songIs"wtoolP609medi
+mode
+nameTom Jonsey
+priv
+&b8Rj
+JmgM8
+HOJX
+oZ@g
+jOm
+vi q
+HOq
+2X
+sign
+-Zv
+&{^\	
+*Z41:iPhone10,1:14
+Is"wBUY
+{"ntwk":true,"cell":3,"conr":4}14346010|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1bplist00
+Is"wA
+{"ntwk":true,"cell":3,"conr":4}14346010|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1bplist00
+;Vg
+["da790cc83c71054c1cf69063a39e6f65"]5860BB73-75D2-47E5-9462-F50789C8E5E6N
+BUY({"cell":3,"ntwk":false,"conr":4,"powr":false}14346010|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1bplist00
+x%PT4
+BUY2{"cell":3,"ntwk":false,"conr":4,"powr":false}14346010|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=1bplist00
+O}^
+
+Is"w502590713544096240
+4Yuk
+}~SQLite format 3
+rpoF
+6VSQLite format 3
+!z8
+
+vSQLite format 3
+zNe3eFSQLite format 3
++B6SQLite format 3
+x]/@
+:fSQLite format 3
+x'@V
+.SQLite format 3

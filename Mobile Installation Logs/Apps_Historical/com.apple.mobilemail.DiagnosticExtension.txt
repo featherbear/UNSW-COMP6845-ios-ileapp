@@ -1,0 +1,2 @@
+2023-07-09 14:46:06 Data container moved com.apple.mobilemail.DiagnosticExtension /private/var/mobile/Containers/Data/PluginKitPlugin/1DF36ABB-3F31-4947-9C3C-1F66E039B819
+2023-07-08 23:20:28 Made container live com.apple.mobilemail.DiagnosticExtension /private/var/mobile/Containers/Data/PluginKitPlugin/C43F7FDB-33D0-406F-BD8F-E2C4CA459D15

@@ -1,0 +1,17 @@
+[!uN
+uSQLite format 3
+	indexidx_creation_datemessage_hash
+CREATE INDEX idx_creation_date ON message_hash (creation_date)t
+indexidx_message_hash_datamessage_hash
+CREATE INDEX idx_message_hash_data ON message_hash (message_hash_data)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+qtablemessage_hashmessage_hash
+CREATE TABLE message_hash (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, message_hash_data BLOB, creation_date INTEGER)	
+!table_SqliteDatabaseProperties_SqliteDatabaseProperties
+CREATE TABLE _SqliteDatabaseProperties (key TEXT, value TEXT, UNIQUE(key))Q
+indexsqlite_autoindex__SqliteDatabaseProperties_1_SqliteDatabaseProperties
+_ClientVersion9002
+)	_ClientVersion
+R(Lj
+

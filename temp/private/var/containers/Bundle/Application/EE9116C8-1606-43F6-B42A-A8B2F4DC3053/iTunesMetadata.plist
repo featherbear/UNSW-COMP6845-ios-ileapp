@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceBasedVPP</key>
+	<false/>
+	<key>artistName</key>
+	<string>Janki Panchani</string>
+	<key>bundleShortVersionString</key>
+	<string>1.0</string>
+	<key>bundleVersion</key>
+	<string>9</string>
+	<key>com.apple.iTunesStore.downloadInfo</key>
+	<dict>
+		<key>accountInfo</key>
+		<dict>
+			<key>AltDSID</key>
+			<string>000284-08-7a1544ed-1edd-4546-bba9-0ac8e7d9cb73</string>
+			<key>AppleID</key>
+			<string>tom.jonsey91@gmail.com</string>
+			<key>DSPersonID</key>
+			<integer>20977765650</integer>
+			<key>DownloaderID</key>
+			<integer>0</integer>
+			<key>FamilyID</key>
+			<integer>0</integer>
+			<key>PurchaserID</key>
+			<integer>20977765650</integer>
+		</dict>
+		<key>purchaseDate</key>
+		<string>2023-07-09T06:46:11Z</string>
+	</dict>
+	<key>gameCenterEnabled</key>
+	<false/>
+	<key>gameCenterEverEnabled</key>
+	<false/>
+	<key>genre</key>
+	<string>Utilities</string>
+	<key>genreId</key>
+	<integer>6002</integer>
+	<key>hasMessagesExtension</key>
+	<false/>
+	<key>iad-attribution</key>
+	<string>0</string>
+	<key>is-auto-download</key>
+	<false/>
+	<key>is-purchased-redownload</key>
+	<false/>
+	<key>isFactoryInstall</key>
+	<false/>
+	<key>itemId</key>
+	<integer>1232282231</integer>
+	<key>itemName</key>
+	<string>Secrete Calculator Lock Vault</string>
+	<key>kind</key>
+	<string>software</string>
+	<key>launchProhibited</key>
+	<false/>
+	<key>rating</key>
+	<dict>
+		<key>label</key>
+		<string>17+</string>
+		<key>rank</key>
+		<integer>600</integer>
+	</dict>
+	<key>redownload-params</key>
+	<string>productType=C&amp;price=0&amp;salableAdamId=1232282231&amp;pricingParameters=STDRDL</string>
+	<key>releaseDate</key>
+	<string>2019-11-30T08:00:00Z</string>
+	<key>s</key>
+	<integer>143460</integer>
+	<key>sideLoadedDeviceBasedVPP</key>
+	<false/>
+	<key>softwareVersionBundleId</key>
+	<string>com.jdtech.CalculatorVault</string>
+	<key>softwareVersionExternalIdentifier</key>
+	<integer>821989589</integer>
+	<key>sourceApp</key>
+	<string>com.apple.AppStore</string>
+	<key>storeCohort</key>
+	<string>10|date=1688884200000&amp;sf=143460&amp;pgtp=Search&amp;pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&amp;prpg=Genre_179183&amp;ctxt=Search&amp;issrch=1</string>
+	<key>subgenres</key>
+	<array/>
+	<key>variantID</key>
+	<string>1:iPhone10,1:14</string>
+</dict>
+</plist>

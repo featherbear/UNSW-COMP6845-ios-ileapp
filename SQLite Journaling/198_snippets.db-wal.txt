@@ -1,0 +1,15 @@
+ZSQLite format 3
+utableintegrityCheckintegrityCheck
+CREATE TABLE integrityCheck (inconsequential STRING)x
+indexix_emailSnippets_emailIdemailSnippets
+CREATE UNIQUE INDEX ix_emailSnippets_emailId ON emailSnippets(emailId)T
+windexentityIdIdxsnippets
+CREATE UNIQUE INDEX entityIdIdx ON snippets(entityId)
+_tableemailSnippetsemailSnippets
+CREATE TABLE emailSnippets (id INTEGER PRIMARY KEY AUTOINCREMENT,emailId INTEGER,title TEXT,content TEXT)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+tablesnippetssnippets
+CREATE TABLE snippets (id INTEGER PRIMARY KEY AUTOINCREMENT,entityId INTEGER,title TEXT,content TEXT,contentRangeOfInterest TEXT)
+SQLite format 3
+~SQLite format 3

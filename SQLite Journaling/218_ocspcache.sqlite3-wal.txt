@@ -1,0 +1,1552 @@
+bSQLite format 3
+triggertocspdelresponsesCREATE TRIGGER tocspdel BEFORE DELETE ON responses FOR EACH ROW BEGIN DELETE FROM ocsp WHERE responseId=OLD.responseId; ENDH
+cindexiexpiresresponses
+CREATE INDEX iexpires ON responses(expires)3
+5tableresponsesresponses
+CREATE TABLE responses(responseId INTEGER PRIMARY KEY,ocspResponse BLOB NOT NULL,responderURI BLOB,expires DOUBLE NOT NULL,lastUsed DOUBLE NOT NULL)P
+{indexiSNumDAlgocsp
+CREATE INDEX iSNumDAlg ON ocsp(serialNum,hashAlgorithm)D
+aindexiserialNumocsp
+CREATE INDEX iserialNum ON ocsp(serialNum)G
+eindexiResponseIdocsp
+CREATE INDEX iResponseId ON ocsp(responseId)[
+tableocspocsp
+CREATE TABLE ocsp(issuerNameHash BLOB NOT NULL,issuerPubKeyHash BLOB NOT NULL,serialNum BLOB NOT NULL,hashAlgorithm BLOB NOT NULL,responseId INTEGER NOT NULL,certStatus INTEGER NOT NULL DEFAULT 255)
+8&6n
+20230707184112Z0s0q0I0	
+20230707184112Z
+20230714184112Z0
+
+bpYx
+j5s
+CBX 
+oH#F|
+)DFwsQ
+18v(
+<|q?
+	i'-M
+http://ocsp.digicert.com*a
+-Ep 
+vn
+E
+
+TPG0
+]@ULM]PA
+20230708231720Z0k0i0A0	
+20230708231720Z
+20230709111719Z0
+
+Qh(">
+NIeQZn
+9vc[
+Apple Root CA - G31&0$
+Apple Certification Authority1
+
+
+Apple Inc.10	
+
+230301222521Z
+
+230714222520Z0O1+0)
+"Apple Root - G3 OCSP Responder MG21
+US0Y0
+Br! Qt
+qj9Rv
+Cfhttp://ocsp.apple.com/ocsp03-applerootcag304*Z
+-E%x
+cib)
+ssmN
+(D-
+
+20230708184244Z0s0q0I0	
+20230708184244Z
+20230715184244Z0
+
+o
+#"&
+http://ocsp.digicert.com*c $A
+*c $
+,6m
+
+N"T 
+20230707184157Z0s0q0I0	
+20230707184157Z
+20230714184157Z0
+
++(L)
+9#PV
+dI$/
+G2&
+
+H"gWSQLite format 3
+d@j<
+kw~{
+1I5I
+'jyX
+20230708225816Z0s0q0I0	
+20230708225816Z
+20230709145815Z0
+
+AZ#PjS
+o:hz
+5s0
+
+0Q10	
+
+Apple Inc.1-0+
+$Apple Public EV Server RSA CA 1 - G10
+
+230629170424Z
+
+230810170423Z0m1I0G
+@Apple Public EV Server RSA CA 1 - G1 OCSP Responder RG2 202306291
+
+Apple Inc.10	
+/%Lb
+*dA 
+1rMc
+
+j`vS}
+mAG#S
+Nhttp://ocsp.apple.com/ocsp03-apevsrsa1g101*[
+M0BR
+VD5[
+^JJ~
+20230708222718Z0w0u0M0	
+20230708222718Z
+20230709102717Z0
+
+#X>R
+M+h_;
+)rt#
+O/W
+hggB
+0b10	
+
+Apple Inc.1&0$
+
+Apple Root CA0
+
+230301222316Z
+
+230714222315Z0J1&0$
+Apple Root OCSP Responder MG21
+61jZ_
+b\\;j
+Wy-o
+<Gj3{jF
+^JJ~0
+.?qH'
+=t3T3
+t<c
+Rc!q
+pPQ=
+om9h
+Ahttp://ocsp.apple.com/ocsp03-applerootca*Z
+4(z3
+SQLite format 3
+20230708125532Z0s0q0I0	
+20230708123902Z
+20230715115402Z0
+
+)3}8
+Grj>F[
+?|I-
+0Z10	
+	Baltimore1
+
+CyberTrust1"0 
+Baltimore CyberTrust Root0
+
+190507121335Z
+
+250512235859Z0U10	
+DigiCert, Inc.1-0+
+$Baltimore Cybertrust Validation 20250
+
+S~}
+R$gZ
+=jnS
+>"/r
+
+
+7}-QW@J
+
+=h8
+CzU#
+60402
+0*0(
+https://www.digicert.com/CPS0
+8^<J
+|d	F
+wLB;S
+yk/2\U
+[vN`pccK&T?wk
+H+98
+?http://ocsp.digicert.com*b
+5;D(
+20230708201251Z0s0q0I0	
+20230708201251Z
+20230709081250Z0
+
+0u1)0'
+ Apple Server Authentication CA 21&0$
+
+230629170349Z
+
+230810170348Z0i1E0C
+<Apple Server Authentication CA 2 OCSP Responder RG2 202306291
+^W
+
+h+d:
+&]t	
+)M] Q
+
+170105203958Z
+
+311021000000Z0u1)0'
+`-6x
+<0:08
+,http://ocsp.apple.com/ocsp03-applerootcag30407
+00.0,
+&http://crl.apple.com/applerootcag3.crl0
+http://ocsp.apple.com/ocsp03-appleserverauth201*Z
+<SQLite format 3
+]9p
+
+20230709015428Z0k0i0A0	
+20230709015428Z
+20230709135427Z0
+
+0z1.0,
+%Apple Application Integration CA - G31&0$
+
+230629170338Z
+
+230810170337Z0n1J0H
+AApple Application Integration CA - G3 OCSP Responder RG2 202306291
+it{s
+IWKS
+.1Hs
+
+140506234630Z
+
+290506234630Z0z1.0,
+v
+"N{
+:0806
+*http://ocsp.apple.com/ocsp04-applerootcag30
+|,!m
+http://ocsp.apple.com/ocsp03-aaicag307*Z
+*[.I
+20230709060458Z0k0i0A0	
+20230709060458Z
+20230709180457Z0
+
+8Qw.
+-x !j
+
+230301222534Z
+
+230714222533Z0O1+0)
+"Apple Root - G3 OCSP Responder PG11
+gS<
+_s'0
+$N-d
+LOlX
+http://ocsp.apple.com/ocsp04-applerootcag3*[.IA
+YpRh
+&+>fg
+20230708223139Z0s0q0I0	
+20230708223139Z
+20230709103138Z0
+
+@8?Dj
+fo7y
+0m1'0%
+Apple Server Authentication CA1 0
+Certification Authority1
+
+230810170348Z0g1C0A
+:Apple Server Authentication CA OCSP Responder RG2 202306291
+q5t{
+s<f|Th
+"yzx
+]o?T
+|	F$ b=mv
+
+140308015304Z
+
+290308015304Z0m1'0%
+0|	OW
+J
+wJ2
+Fx
+>$
+'0%0#
+http://crl.apple.com/root.crl0
+fz^
+zT}VOe
+EUd3>
+Sm\5
+http://ocsp.apple.com/ocsp03-appleserverauth01*Z
+z;
+tVcpLP
+$H"F
+*iPIauZi}
+PIauZi}
+20230709030019Z0k0i0A0	
+20230709030019Z
+20230709150018Z0
+
+0r1&0$
+Apple System Integration CA 41&0$
+
+230613220653Z
+
+230725220652Z0f1B0@
+9Apple System Integration CA 4 OCSP Responder RG1 202306131
+P.8K
+Lh.0
+
+
+170222222322Z
+
+320218000000Z0r1&0$
+T6dJ
+D|Z&
+oO|Z
+*http://ocsp.apple.com/ocsp03-applerootcag307
+0a3 
+d=v{Q
+http://ocsp.apple.com/ocsp03-asica403*[
+z;
+Lh.+
+20230709002946Z0k0i0A0	
+20230709002946Z
+20230709122945Z0
+
+j9O_
+vxxmb6%
+9/5Z
+
+230301222516Z
+
+230714222515Z0O1+0)
+"Apple Root - G3 OCSP Responder MG11
+:pNP
+$][;
+kdk@
+http://ocsp.apple.com/ocsp03-applerootcag3*Z
+9SQLite format 3
+pe'1
+$uYp1da
+
+*[?q
+20230709031810Z0s0q0I0	
+20230709031810Z
+20230709191809Z0
+
+gL%"
+4 !J
+fp6q
+$Apple Public EV Server RSA CA 2 - G10
+
+230613220728Z
+
+230725220727Z0m1I0G
+@Apple Public EV Server RSA CA 2 - G1 OCSP Responder RG1 202306131
+co49J
+k!4/D
+p:RK
+u]T-C4L
+
+http://ocsp.apple.com/ocsp03-apevsrsa2g101*[?qA
+lxr)\;kU
+!-ycj
+*[D
+
+20230708193750Z0k0i0A0	
+20230708193750Z
+20230709193749Z0
+
+u4{9f
+H 2Ks
+ Apple System Integration CA - G31&0$
+
+230613220641Z
+
+230725220640Z0i1E0C
+<Apple System Integration CA - G3 OCSP Responder RG1 202306131
+,?cH
+!-y0
+_Hx=
+
+140506234510Z
+
+290506234510Z0u1)0'
+6(T}
+z$b5
+r
+cO
+http://ocsp.apple.com/ocsp04-applesica301*[D
+A
+v7
+	2]
+
+20230709051028Z0k0i0A0	
+20230709051028Z
+20230709171027Z0
+
+=(~a
+http://ocsp.apple.com/ocsp04-applerootcag3*[!
+v7
+
+{YW`S
+
+*[2C
+20230709062156Z0s0q0I0	
+20230709062156Z
+20230709182155Z0
+
+sZV3
+:
+fh
+:HlM*
+G'"5]#
+
+230629170348Z
+
+230810170347Z0g1C0A
+:Apple Server Authentication CA OCSP Responder MG2 202306291
+#8:5
+@+ep*t
+ xVXB6
+Q=\v
+0$b
+hB6RM4
+X0QtB
+http://ocsp.apple.com/ocsp03-appleserverauth12*[2CA
+-F>6
+20230708234851Z0k0i0A0	
+20230708234851Z
+20230709114850Z0
+
+hosG8
+DVbuqQ
+
+230629170350Z
+
+230810170349Z0f1B0@
+9Apple System Integration CA 4 OCSP Responder RG2 202306291
+|`0sYXV2
+http://ocsp.apple.com/ocsp03-asica401*Z
+-F?,T
+ku3}
+20230709030956Z0s0q0I0	
+20230709030956Z
+20230709150955Z0
+
+_gorSFc
+0Y4P
+]	5 
+FF&Nq
+
+230613220652Z
+
+230725220651Z0g1C0A
+:Apple Server Authentication CA OCSP Responder RG1 202306131
+yBb$
+VAEPI
+ rm*
+^pHx
+http://ocsp.apple.com/ocsp03-appleserverauth17*[
+kgSQLite format 3
+
+j
+#
+20230708232115Z0s0q0I0	
+20230708232115Z
+20230709112114Z0
+
+
+m]A=\
+rk{{q
+s3gM
+]42{
+http://ocsp.apple.com/ocsp03-appleserverauth22*Z
+H"WA
+4SQLite format 3
+
+j
+#	
+N*R
+
+eSQLite format 3
+20230709055507Z0s0q0I0	
+20230709055507Z
+20230709175506Z0
+
+4TRV
+{9Lz1
+
+230613220700Z
+
+230725220659Z0g1C0A
+:Apple Server Authentication CA OCSP Responder MG1 202306131
+Rt"t
+6r_)k8
+B8~!Jy"
+(zqRj
+c	H%7QOoz
+9}l6g
+
+HA>
+ZyDy=
+http://ocsp.apple.com/ocsp03-appleserverauth22*[+
+\SQLite format 3
+6yh
+
+%BW!
+20230709054456Z0s0q0I0	
+20230709054456Z
+20230709214455Z0
+
+ABqO
+(0myL_
+1[0I9d
+
+230629170423Z
+
+230810170422Z0m1I0G
+@Apple Public EV Server RSA CA 2 - G1 OCSP Responder RG2 202306291
+:>PxV
+,HojB:!rO}
+?2Z!
+[Q':
+tkQ:0
+'tj'
+S
+ja
+[_j.
+http://ocsp.apple.com/ocsp03-apevsrsa2g101*[a
+-Fa;
+a;
+Q
+B'HI1
+
+V"x
+
+20230709063551Z0k0i0A0	
+B'HI
+20230709063551Z
+20230713063550Z0
+
+F,
+kI5N?@
+N<O!
+Tj=1
+(t2w
+10	
+
+
+Apple Inc.1&0$
+Apple Certification Authority1>0<
+5Apple Application Integration Certification Authority0
+
+230613220637Z
+
+230725220636Z0i1E0C
+<Apple Application Integration CA OCSP Responder PG1 202306131
+|r+%
+IGw(
+nlmS
+U(U7[
+ -}ax
+
+161214210825Z
+
+261021000000Z0
+?omL
+&o	/
+/0-0+
+%http://www.apple.com/appleca/root.crl0
+_O}+
+NvBO
+R>4
+60
+Yhttp://ocsp.apple.com/ocsp04-aaica02*_
+sfSQLite format 3
+zL?"
+
+20230709022601Z0k0i0A0	
+20230709022601Z
+20230710022600Z0
+
+Mf_2
+bHk5
+Gm1L
+@)9q
+1@0>
+7Apple Application Integration 2 Certification Authority1&0$
+
+230613220639Z
+
+230725220638Z0k1G0E
+>Apple Application Integration 2 CA OCSP Responder RG1 202306131
+Z/K:U
+^J/G^-
+x>:,
+a3"L7
+ge&eU
+_xg?]>
+H,_,
+;/3*
+n	ny
+%V''
+2GIwUf
+
+130524174337Z
+
+280524174337Z0
+`
+<YB
+=7E/
+?4ye6
+7	a1/
+`"`|
+@http://ocsp.apple.com/ocsp03-aai2ca02*[
+chzR
+20230708103152Z0s0q0I0	
+20230708103152Z
+20230715093151Z0
+
+9qXV
+2Q
+;
+_1[.>
+:C_
+l%http://ocsp.pki.goog/gts1c3*b
+-Fj	u:
+/Rf,
+SYk4
+)ol
+
+20221005101300Z0p0n0F0	
+20230401000000Z
+20231015000000Z0
+
+.%]{
+u,09
+>k&y@
+s3Sv
+W'zBF
+W`+=
+MUA#+rh
+}-^http://ocsp.pki.goog/gtsr1A
+	|A
+-Fj	|
+'SQLite format 3
+zgF<
+Vez?
+4
+&
+t
+20230709030939Z0s0q0I0	
+20230709030939Z
+20230709150938Z0
+
+7x\}
+J$S4}n
+
+230613220648Z
+
+230725220647Z0g1C0A
+:Apple Server Authentication CA OCSP Responder PG1 202306131
+~Hl	
+xr8Ue
+9.DD
+yrt
+O<&u=
+{49x}
+8hfIM
+LggiD
+http://ocsp.apple.com/ocsp03-appleserverauth22*[
+1NUI
+*c/q
+20230708204935Z0s0q0I0	
+20230708203301Z
+20230715194801Z0
+
+w"fM
+6qIlTK
+c?acf
+TSf"|
+Iapl
+!f1j
+|ZtP
+/I.EEB
+?http://ocsp.digicert.com*c/qA
+-G!.77
+=^3h
+Gx~S
+jw'!
+20230709004150Z0s0q0I0	
+20230709004150Z
+20230709164149Z0
+
+A
+jg
+$Apple Public EV Server ECC CA 1 - G10
+@Apple Public EV Server ECC CA 1 - G1 OCSP Responder RG2 202306291
+Sd_o
+http://ocsp.apple.com/ocsp03-apevsecc1g101*[
+n0n
+
+NQ5b
+=XKD
+
+
+20230709064005Z0w0u0M0	
+20230709064005Z
+20230709184004Z0
+
+A[j\F
+\SXa
+RzISxL
+5TAs	
+q\v~
+
+230301222329Z
+
+230714222328Z0J1&0$
+Apple Root OCSP Responder PG11
+gc{Q=
+8B!m5j
+U<
+_`jBlk+
+)?9|Zv
+5:FS
+-b.W
+5F.;
+":7b
+5@pg
+Whttp://ocsp.apple.com/ocsp03-applerootca*[6
+AL#&
+)y<D
+*[6~"
+20230709063959Z0s0q0I0	
+20230709063959Z
+20230709183958Z0
+
+j- m
+bXc
+lI{l
+kCS5p!
+YgvId
+0u10	
+G71D0B
+;Apple Worldwide Developer Relations Certification Authority0
+
+230613220735Z
+
+230725220734Z0
+1e0c
+\Apple Worldwide Developer Relations Certification Authority - G7 OCSP Responder PG1 202306131
+ek5%Qr
+s$Z(
+e/qSa"
+|
+gt
+W}'"
+A2N|T
+0MB&
+AF'v
+8ZV-
+e>9A
+R$(s
+9p *
+
+221117204053Z
+
+231117204052Z0u10	
+QQL?3
+qR2,
+UXCv<=
+|Z+.
+dO(r
+80604
+(http://ocsp.apple.com/ocsp03-applerootca0.
+}
+.+
+|DT$
+Wjyl@
+
+]>F*,
+\qbn
+\pWz
+http://ocsp.apple.com/ocsp03-wwdrg701*[6~A
+20230708110554Z0s0q0I0	
+20230708110554Z
+20230715100553Z0
+
+uv*V
+e8I(^DT
+2TE%
+http://ocsp.pki.goog/gts1c3*b
+20230708111258Z0s0q0I0	
+20230708111258Z
+20230715101257Z0
+
+i2s9
+38?^
+>p(\
+^[m6G
+
+w20D-ZN
+1BQ
+i487Lf
+ek
+O
+d
+A
+
+20230708111258Z0t0r0J0	
+<!3k
+WH_s
+nv 
+e
+	Rbhx
+hQ1&<
+Fhttp://ocsp.pki.goog/gts1c3*b
+B40Y
+xcOa
+iLhttp://ocsp.pki.goog/gts1c3*b
+GO9Y
+WJr{I
+t%=3
+(U#%5a
+h.{<
+C*aN
+)
+Yx
+20230708101502Z0s0q0I0	
+20230708101502Z
+20230715091501Z0
+
+8U*0
+?Y"-\n
+P7>u
+Kdhttp://ocsp.pki.goog/gts1c3*b
+3Cuk
+
+pSQLite format 3
+20230708101157Z0t0r0J0	
+20230708101157Z
+20230715091156Z0
+
+'2_F
+6&QW
+jhttp://ocsp.pki.goog/gts1c3*b
+Qm^8
+`8CO9+
+`8CO9-
+`8CO9
+Z8?t
+ZV^q
+5?X U
+*2LW
+w0*u
+Hhttp://ocsp.pki.goog/gts1c3*b
+,7S0
+
+@Dk2h 
+4
+&
+t
+t
+
+V&
+
+@'GW
+20230709084535Z0k0i0A0	
+20230709084535Z
+20230713084534Z0
+
+|9\ixu
+KILK
+
+230629170337Z
+
+230810170336Z0i1E0C
+<Apple Application Integration CA OCSP Responder RG2 202306291
+rev)
+_ND
+@f,1
+vL:j
+ByU+
+ByU0
+@
+A
+
+s&:
+'wL.
+T?.T
+jK;#
+gH&4P
+-Y!
+~9
+5R}w
+
+{a\^
+_Zu"@IPX
+>Q2,
+aR^
+{Qz-wt
+g"KN(\
+i
+*ku]
+1k1.b
+chttp://ocsp.pki.goog/gtsr1A
+Af:>Qul
+	Bj6(
+oG8+
+oG82
+;giI
+qLYo
+
+h>W
+QDLhttp://ocsp.pki.goog/gts1c3*b
+-Y(rW:
+~2MG3
+
+
+
+1hhm
+20230709020259Z0s0q0I0	
+20230709020259Z
+20230716020258Z0
+
+9)j0
+tvK{
+:Cg?
+lFTkMG
+http://ocsp.sectigo.com*c
+}[Q&
+4
+&
+
+*_94
+20230706014738Z0s0q0I0	
+20230706014738Z
+20230713014737Z0
+
+s#{X
+Ru&|
+RK
+AHYy
+~'RN0
+
+
+New Jersey1
+Jersey City1
+The USERTRUST Network1.0,
+%USERTrust RSA Certification Authority0
+
+220325000000Z
+
+380118235959Z0=10	
+Sectigo Limited1
+OCSP Signer0
+SN
+ZcF
+f
+@i2'
+lH27
+'1:Qa
+% H	
+d3\Y
+35^(
+hKDY
+rF#Ae
+V"oV
+6SD'wo
+Icyc
++s>u
+N-*n
+O(30
+~rjc
+^dpj
+MI6S
+a<n 
+9-Nk
+ 5(5
+http://ocsp.usertrust.com*_9A
+
+B
+20230708110554Z0t0r0J0	
+xB$/J
+3701
+[SQLite format 3
+*bm^6
+40210	
+
+Let's Encrypt10	
+20230708060000Z0u0s0K0	
+20230708060000Z
+20230715055958Z0
+
+j`l@
+V/?N
+%eX
+KVI>
+http://r3.o.lencr.org*bm^A
+-Y*G
+>3{*
+20230709020000Z0u0s0K0	
+20230709020000Z
+20230716015958Z0
+
+J:PG
+jIY[
+5#S@L
+~{GL%"|jc
+jhttp://r3.o.lencr.org*c
+-Y*O
+
+_lkv
+R34N@
+X0V10	
+GoDaddy.com, Inc.1+0)
+"Go Daddy Validation Authority - G2
+20230708205546Z0l0j0B0	
+R34N
+20230708205546Z
+20230710085546Z0
+
+!o!.9
+|(:'
+#~mTU
+%-it^
+'#LG
+[g&m}N
+Sk%0
+
+Arizona1
+
+Scottsdale1
+GoDaddy.com, Inc.1-0+
+$http://certs.godaddy.com/repository/1301
+*Go Daddy Secure Certificate Authority - G20
+
+230606120000Z
+
+240606120000Z0V10	
+"Go Daddy Validation Authority - G20
+/.8n
+K|Zd
+;S3D
+k$3sp
+QZE'
+j'kH
+?&K\V
+af|y
+.nn>$fAS
+http://ocsp.godaddy.com/*[
+TWla
+
+]0[10	
+GoDaddy.com, Inc.100.
+'Go Daddy Root Validation Authority - G2
+20230708171408Z0d0b0:0	
+20230708171408Z
+20230710051408Z0
+
+/bSF6
+iA)y
+<30
+WT#\YA2
+D@QP+c
+7Fy{
+0M=
+GoDaddy.com, Inc.110/
+(Go Daddy Root Certificate Authority - G20
+
+240606120000Z0[10	
+'Go Daddy Root Validation Authority - G20
+:pH'
+Z_b+
+6http://ocsp.godaddy.com/*[
+20230707010000Z0u0s0K0	
+20230707010000Z
+20230714005958Z0
+
+c*30k
+r.I
+/v	+
+Ohttp://r3.o.lencr.org*`
+hQVg1
+:UgYQ
+
+{
+;
+d
+
+Y
+A
+"&vl
+umdt
+eaD#
+"nhttp://ocsp.pki.goog/gts1c3*b
+d
+%
+
+20230706083806Z0t0r0J0	
+20230706083806Z
+20230713083805Z0
+
+http://ocsp.sectigo.com*_
+{qSQLite format 3
+0p
+"An
+.!\$&n
+be-'
+Y_\t
+vj[http://r3.o.lencr.org*`
+-
+n
+
+
+	
+*c#j>
+20230708185642Z0s0q0I0	
+20230708185642Z
+20230715185642Z0
+
+d?`V
+?KY)
+}vFW&,
+w|wZ
+jMqeP
+,http://ocsp.digicert.com*c#jA
+-Y66W
+t	8/O
+SCIA
+e7nHc
+20230709020912Z0s0q0I0	
+20230709020912Z
+20230716010911Z0
+
+`ZD4
+AF_m
+q?~*
+Q, q
+http://ocsp.pki.goog/s/gts1d4/ayEbJHZRufs*cz
+`4
+E~z(yC
+#,LZ
+4[]ZcvC\
+q<I8
+3$0r
+{0$3L
+http://ocsp.pki.goog/gtsr1A
+)iTt)
+Qhu9
+:fYr
+:RSB
+-YGW)E
+6PSQLite format 3
+Dnh
+
+
+m	
+
+t
+t
+t
+I
+VU
+
+0"Ta|
+hX
+D
+NlY"
+
+20230709075324Z0s0q0I0	
+20230709075324Z
+20230709235323Z0
+
+Q%?^
+LNH0
+)7% :_M
+
+http://ocsp.apple.com/ocsp03-apevsrsa2g101*[
+
+t
+t
+By[
+
+}Nd>
+20230709100632Z0s0q0I0	
+20230709100632Z
+20230710020631Z0
+
+n	ag
+oA|%
+
+230613220719Z
+
+230725220718Z0m1I0G
+@Apple Public EV Server RSA CA 2 - G1 OCSP Responder PG1 202306131
+Q8Z;
+7vng
+Y@c0
+D0	^"
+!#UA:
+*{i
+&0
+$;f{
+JWT#
+http://ocsp.apple.com/ocsp03-apevsrsa2g101*[
+LxSQLite format 3
+20230709092719Z0w0u0M0	
+20230709092719Z
+20230709212718Z0
+
+K
+C6
+n`*eegH
+%uWY
+`j0b
+wK^'
+
+}!	
+V$SFi
+0"6m
+Whttp://ocsp.apple.com/ocsp03-applerootca*[]
+JE--
+~Iy>
+20230709104413Z0s0q0I0	
+20230709104413Z
+20230710024412Z0
+
+:XGoz
+mdo`=
+LrDl
+nh
+G8)l
+HHoN
+Apple IST CA 2 - G11 0
+
+230613220650Z
+
+230725220649Z0\1806
+/Apple IST CA 2 - G1 OCSP Responder RG1 202306131
+VqI$ +
+dG|#Y
+5ct7b
+r	'
+AmH`
+(N;L
+lVJ
+pU&k
+R%"`_
+http://ocsp.apple.com/ocsp03-appleistca2g127*[
+*)[7
+	K
+\
+
+20230709060300Z0u0s0K0	
+20230709060000Z
+20230716055958Z0
+
+BH
+GDpm
+3
+P\
+!|[m
+lf~Z
+XChttp://r3.o.lencr.org*c
+-rd7
+=[Hle0
+
+
+F
+p)
+T
+
+
+~
+6	
+	h	$
+
+m
+X
+-v
+
+!!!!!!!!!!!
+I\	8o	
+
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+t
+2
+E%
+Idg}
+
+[9
+
+
+ff
+`d/'
+20230710081723Z0k0i0A0	
+20230710081723Z
+20230710201722Z0
+
+ fJHJ
+
+230301222539Z
+
+230714222538Z0O1+0)
+"Apple Root - G3 OCSP Responder PG21
+O2a0
+
+,'LH
+Y8ZA
+,4qM
+)gz
+shttp://ocsp.apple.com/ocsp03-applerootcag304*\
+cSQLite format 3
+!!!!!!!!!!
+20230710072721Z0w0u0M0	
+20230710072721Z
+20230710192720Z0
+
+~dLi'1
+*>+~
+
+230301222333Z
+
+230714222332Z0J1&0$
+Apple Root OCSP Responder PG21
+a&Wq
+"[h!@
+n`y9@
+M'2f
+w21d2
+JAZy
+J/t9*
+http://ocsp.apple.com/ocsp03-applerootca*\
+b#]VlSQLite format 3
+:\Nm
+qSQLite format 3
+!!!!!!!!!
+n
+	h
+%
+~
+20230710065819Z0s0q0I0	
+20230710065819Z
+20230710225818Z0
+
+zP1{S
+Zn`5
+l%",l
+dR(fS
+%Zo-@
+dExL
+#{<1}
+
+230629170419Z
+
+230810170418Z0m1I0G
+@Apple Public EV Server RSA CA 1 - G1 OCSP Responder PG2 202306291
+!2Pw
+Wb}0l [
+UyK
+st2/
+U+Mh)
+f[>V
+
+h@>p
+-6@d
+wSSK^7+ w
+c
+}|
+!http://ocsp.apple.com/ocsp03-apevsrsa1g101*\
+W[
+
+
+z;j
+
+
+!!!!!!!!
+20230710054459Z0s0q0I0	
+20230710054459Z
+20230710214458Z0
+
+sRfV
+]q)v
+http://ocsp.apple.com/ocsp03-apevsrsa2g101*\
+h55S
+"nET
+!!!!!!!
+By
+	h
+I\	l	8o	
+*\8dK
+{Z?S
+20230710010021Z0k0i0A0	
+20230710010021Z
+20230710130020Z0
+
+\W&<q
+http://ocsp.apple.com/ocsp03-asica403*\8dA
+
+m
+X
+-
+!!!!!!
+Lh.L
+\	l	8o	
+20230710092949Z0k0i0A0	
+20230710092949Z
+20230710212948Z0
+
+jFI)
+Cfhttp://ocsp.apple.com/ocsp03-applerootcag3*\
+q$SQLite format 3
+[[Gf
+kG_t
+!!!!!
+	K
+\
+20230708080300Z0u0s0K0	
+20230708080000Z
+20230715075958Z0
+
+http://r3.o.lencr.org*b
+!!!
+X
+	h
+20230710012602Z0k0i0A0	
+20230710012602Z
+20230711012601Z0
+
+W!?5b
+gq}[F
+Q3c_Sr
+
+230629170336Z
+
+230810170335Z0k1G0E
+>Apple Application Integration 2 CA OCSP Responder RG2 202306291
+
+,]+
+*}o
+E
+v0;m
+>1
+G
+j*\0
+(
+R
+!L[<x
+XG7'	t
+
+0>hd9f
+O]qd
+L
+x	
+^%<k
+@http://ocsp.apple.com/ocsp03-aai2ca02*\
+!!
+J
+	h
+
+t.
+20230710060840Z0k0i0A0	
+20230710060840Z
+20230710180839Z0
+
+\p|t"
+TFs{
+1;09
+2Apple System Integration 2 Certification Authority1&0$
+
+230613220647Z
+
+230725220646Z0{1W0U
+NApple System Integration 2 Certification Authority OCSP Responder MG1 202306131
+{)Mf
+[|l
+?%G}F
+8/(G
+h+6t
+88"S
+$t/b/
+Nz=w
+`%NV
+
+120913223537Z
+
+270913223537Z0
+*tKG[f5i
+<7M|
+lorE
+R]y:]{
+
+s:{cX
+
+3XQ
+'l~
+|\U
+lZ*{
+http://ocsp.apple.com/ocsp03-asi2ca02*\
+_4
+
+
+p
+	h
+\	l
+	8o	
+=k7
+
+20230710104416Z0s0q0I0	
+20230710104416Z
+20230711024415Z0
+
+n!g
+
+W{M&
+J,H
+I&%^
+
+230613220658Z
+
+230725220657Z0\1806
+/Apple IST CA 2 - G1 OCSP Responder MG1 202306131
+0;t%J
+]+}P
+z@0Z
+2|LI[
+ee
+Z6
+(t+?
+VYR e
+	Cx3
+http://ocsp.apple.com/ocsp03-appleistca2g127*\

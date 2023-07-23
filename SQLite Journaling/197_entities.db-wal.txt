@@ -1,0 +1,484 @@
+SQLite format 3
+emailMetadata
+-f3<
+IFY@
+rowIdWhenEventsEnabled
+rowIdWhenContactsEnabled
+>`[
+
+U;R9
++6A
+
+=	rowIdWhenContactsEnabled
+_s`
+
+u	-
+tablecnContactsToSgContactscnContactsToSgContacts
+CREATE TABLE cnContactsToSgConta
+tableidentityInterdictidentityInterdict
+CREATE TABLE identityInterdict (a TEXT NOT NULL, b TEXT NOT NULL)7
+indexsqlite_autoindex_identityLink_1identityLink
+{tableidentityLinkidentityLink
+CREATE TABLE identityLink (    recordId1 INTEGER NOT NULL,    recordId2 INTEGER NOT NULL,    type INT NOT NULL,    strength REAL NOT NULL,    PRIMARY KEY (recordId1, recordId2, type))
+atableidentityPersonidentityPerson
+CREATE TABLE identityPerson (    identityPersonId INTEGER PRIMARY KEY AUTOINCREMENT,    middlename VARCHAR(256),    surname VARCHAR(256),    fullname TEXT,    nameSketches TEXT NOT NULL,    phones TEXT NOT NULL,    email TEXT NOT NULL,    recordId INTEGER NOT NULL,    curated BOOLEAN NOT NULL, imAddresses TEXT NOT NULL DEFAULT "", isSent BOOLEAN DEFAULT false)
+OtableserializedContactsserializedContacts
+CREATE TABLE serializedContacts (id INTEGER PRIMARY KEY AUTOINCREMENT,entityId INTEGER,data BLOB)=
+
+indexsqlite_autoindex_entityParentage_1entityParentage
+]tableentityParentageentityParentage
+CREATE TABLE entityParentage (id INTEGER PRIMARY KEY AUTOINCREMENT,parentKey TEXT,childId INTEGER NOT NULL,duplicateKeyHash TEXT NOT NULL,extractionType INTEGER,sourceKey TEXT, duplicateKeyHashBlob BLOB, modelVersion INTEGER DEFAULT 0, modelConfidence REAL DEFAULT 0.5,UNIQUE(parentKey, childId))
+YtableconfirmedFieldValuesconfirmedFieldValuesCREATE TABLE confirmedFieldValues (entityId INTEGER PRIMARY KEY,fieldValues BLOB,maybeChanged BOOLEAN).
+
+'tableentityTagsentityTagsCREATE TABLE entityTags (tag TEXT,entityKey TEXT,entityType INTEGER,parentKey TEXT,duplicateKeyHash TEXT NOT NULL, duplicateKeyHashBlob BLOB)m	
+tableentity_fts_statentity_fts_stat
+CREATE TABLE 'entity_fts_stat'(id INTEGER PRIMARY KEY, value BLOB)x
+tableentity_fts_docsizeentity_fts_docsize	CREATE TABLE 'entity_fts_docsize'(docid INTEGER PRIMARY KEY, size BLOB)K
+Etableentity_fts_segdirentity_fts_segdir
+CREATE TABLE 'entity_fts_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))A
+indexsqlite_autoindex_entity_fts_segdir_1entity_fts_segdir
+#tableentity_fts_segmentsentity_fts_segments
+CREATE TABLE 'entity_fts_segments'(blockid INTEGER PRIMARY KEY, block BLOB)
+etableentity_fts_contententity_fts_content
+CREATE TABLE 'entity_fts_content'(docid INTEGER PRIMARY KEY, 'c0entityId', 'c1messagingTerms', 'c2ftsTerms')e
+tableentity_ftsentity_ftsCREATE VIRTUAL TABLE entity_fts USING fts4(tokenize=ab_cf_tokenizer language="en" collator="en@collation=search", entityId INTEGER, messagingTerms TEXT COLLATE NOCASE, ftsTerms TEXT COLLATE NOCASE)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+1tableentityentity
+CREATE TABLE entity (id INTEGER PRIMARY KEY AUTOINCREMENT,entityKey TEXT NOT NULL,entityType INTEGER NOT NULL,author TEXT,content TEXT,contentRangeOfInterest TEXT,title TEXT COLLATE NOCASE,timeRangeStart REAL,timeRangeEnd REAL,floatingRange INTEGER,timeRangeStartUTCOffsetSeconds INTEGER,timeRangeEndUTCOffsetSeconds INTEGER,creationTimestamp REAL,updateTimestamp REAL,indexTimestamp REAL,lastSeenTimestamp REAL,tags TEXT,structuredData BLOB,quality REAL,locations BLOB,masterEntityId INTEGER DEFAULT -1,groupId INTEGER DEFAULT -1,state INTEGER DEFAULT 0,contentHash TEXT,downloadState INTEGER DEFAULT 0, contentHashBlob BLOB, pendingGeocode BOOLEAN DEFAULT false, harvestedOnBuild TEXT, curatedDupe BOOLEAN DEFAULT false)
+ktablereimportItemsreimportItems"CREATE TABLE reimportItems (id INTEGER PRIMARY KEY AUTOINCREMENT,reimportRequestId INTEGER NOT NULL,bundleId TEXT NOT NULL,uniqueId TEXT NOT NULL,seenByReceiverTimestamp REAL)
+EtablereimportRequestsreimportRequests!CREATE TABLE reimportRequests (id INTEGER PRIMARY KEY AUTOINCREMENT,plugin TEXT NOT NULL,creationTimestamp REAL,queryTimestamp REAL,personHandle TEXT,startDateTimestamp REAL,endDateTimestamp REAL,executionTimestamp REAL)q
+1tableemailTagsemailTags CREATE TABLE emailTags (key TEXT NOT NULL,type INTEGER NOT NULL,tag TEXT NOT NULL)
+AtableemailMetadataemailMetadata
+CREATE TABLE emailMetadata (id INTEGER PRIMARY KEY AUTOINCREMENT,key TEXT NOT NULL,type INTEGER NOT NULL,sourceKey TEXT,author TEXT,creationTimestamp REAL,updateTimestamp REAL,indexTimestamp REAL,lastSeenTimestamp REAL,tags TEXT,state INTEGER DEFAULT 0,downloadState INTEGER DEFAULT 0,harvestedOnBuild TEXT, pendingVerification INTEGER DEFAULT 0)|
+tableidentityInterdictNextidentityInterdictNext
+CREATE TABLE identityInterdictNext (a TEXT NOT NULL, b TEXT NOT NULL)
+CtableidentityBlobAnalysisJobsidentityBlobAnalysisJobs
+CREATE TABLE identityBlobAnalysisJobs (id INTEGER PRIMARY KEY AUTOINCREMENT,mergeBlob BLOB)
+AtablemessageTracermessageTracer
+CREATE TABLE messageTracer (domain TEXT NOT NULL,key TEXT NOT NULL,value INTEGER NOT NULL)L
+mtablemetadatametadata
+CREATE TABLE metadata (key TEXT NOT NULL, value)
+)tableserializedContactCacheJobsserializedContactCacheJobs
+CREATE TABLE serializedContactCacheJobs (id INTEGER PRIMARY KEY AUTOINCREMENT)i
+tablestatsCountersstatsCounters
+CREATE TABLE statsCounters (key TEXT NOT NULL,value REAL NOT NULL)|
+3tableidentityPhonesidentityPhones
+CREATE TABLE identityPhones (    recordId INTEGER NOT NULL,    phone TEXT NOT NULL) 
+[tableharvestQueueTombstonesharvestQueueTombstones
+CREATE TABLE harvestQueueTombstones (bundleIdentifier TEXT,uniqueIdentifier TEXT,domainIdentifier TEXT))
+ItablecnContactsToSgContactsCacheJobscnContactsToSgContactsCacheJobs
+CREATE TABLE cnContactsToSgContactsCacheJobs (id INTEGER PRIMARY KEY AUTOINCREMENT,batch TEXT)
+oindexix_entityTags_tagentityTags'CREATE INDEX ix_entityTags_tag ON entityTags(tag)L%
+eindexentityStateIdxentity&CREATE INDEX entityStateIdx on entity(state)h$
+	indexentityMasterEntityIdIdxentity%CREATE INDEX entityMasterEntityIdIdx on entity(masterEntityId)J#
+gindexentityIdIdxentity$CREATE UNIQUE INDEX entityIdIdx on entity(id)
+
+tableurlsurls#CREATE TABLE urls (id INTEGER PRIMARY KEY AUTOINCREMENT,url TEXT NOT NULL,received_from_handle TEXT,bundle_id TEXT NOT NULL,group_id TEXT,doc_id TEXT NOT NULL,seconds_from_1970 REAL NOT NULL, title TEXT, document_title TEXT, document_seconds_from_1970 REAL, document_time_interval REAL, flags INTEGER NOT NULL DEFAULT 0)
+/indexserializedContactsEntityIdIdxserializedContacts*CREATE UNIQUE INDEX serializedContactsEntityIdIdx ON serializedContacts(entityId)s(
+
+indexentityParentageChildIdxentityParentage)CREATE INDEX entityParentageChildIdx on entityParentage(childId)A
+CREATE TABLE cnContactsToSgContacts (id INTEGER PRIMARY KEY AUTOINCREMENT,cnContactIdentifier TEXT,maxEntityId INTEGER,entityId INTEGER)D
+;tableentityReferencesentityReferences
+CREATE TABLE entityReferences (id INTEGER PRIMARY KEY AUTOINCREMENT,bundleIdentifier TEXT,uniqueIdentifier TEXT,entityId INTEGER,domainIdentifier TEXT)|'
+/indexix_entityTags_dupKeyentityTags(CREATE INDEX ix_entityTags_dupKey ON entityTags(entityKey, entityType, parentKey)
+	indexix_emailMetadata_keyemailMetadataFCREATE UNIQUE INDEX ix_emailMetadata_key ON emailMetadata(key)
+7indexentityPendingGeocodeIdxentityECREATE INDEX entityPendingGeocodeIdx ON entity(pendingGeocode) WHERE pendingGeocode=1kC
+indexix_entityTags_parentKeyentityTagsDCREATE INDEX ix_entityTags_parentKey ON entityTags(parentKey)lB
+indexmessageTracerIdxmessageTracerCCREATE UNIQUE INDEX messageTracerIdx ON messageTracer(domain, key)YA
+windexmetadataKeyIndexmetadataBCREATE UNIQUE INDEX metadataKeyIndex ON metadata(key)
+'indexix_entityTags_dupKeyHashBlobentityTagsACREATE INDEX ix_entityTags_dupKeyHashBlob ON entityTags(duplicateKeyHashBlob)s.
+indexix_identityLink_recordId2identityLink/CREATE INDEX ix_identityLink_recordId2 ON identityLink(recordId2)
+!indexix_identityPerson_recordIdidentityPerson.CREATE UNIQUE INDEX ix_identityPerson_recordId ON identityPerson(recordId)
+indexix_identityPerson_email_namelessidentityPerson-CREATE INDEX ix_identityPerson_email_nameless ON identityPerson(email)~+
+indexix_identityPerson_middlenameidentityPerson,CREATE INDEX ix_identityPerson_middlename ON identityPerson(middlename)u*
+indexix_identityPerson_surnameidentityPerson+CREATE INDEX ix_identityPerson_surname ON identityPerson(surname)
+sindexentityParentageDuplicateKeyHashBlobIdxentityParentage@CREATE UNIQUE INDEX entityParentageDuplicateKeyHashBlobIdx on entityParentage(duplicateKeyHashBlob, extractionType)r>
+indexentityContentHashBlobIdxentity?CREATE UNIQUE INDEX entityContentHashBlobIdx ON entity(contentHashBlob)G=
+indexix_harvestQueueTombstones_uniqueharvestQueueTombstones>CREATE UNIQUE INDEX ix_harvestQueueTombstones_unique ON harvestQueueTombstones(bundleIdentifier, uniqueIdentifier, domainIdentifier)
+9indexentityParentageParentKeyChildIdIdxentityParentage=CREATE INDEX entityParentageParentKeyChildIdIdx on entityParentage(parentKey, childId)
++indexix_identityPhones_uniqueidentityPhones<CREATE UNIQUE INDEX ix_identityPhones_unique ON identityPhones(recordId, phone)O:
+mindexentityTypeIdxentity;CREATE INDEX entityTypeIdx ON entity(entityType)_9
+indexentityDupKeyIdxentity:CREATE INDEX entityDupKeyIdx ON entity(entityKey, entityType)l8
+	indexix_statsCounters_keystatsCounters9CREATE UNIQUE INDEX ix_statsCounters_key ON statsCounters(key)o7
+indexix_identityPhones_phoneidentityPhones8CREATE INDEX ix_identityPhones_phone ON identityPhones(phone)x6
+indexix_identityPhones_recordIdidentityPhones7CREATE INDEX ix_identityPhones_recordId ON identityPhones(recordId)05
+gindexcnContactsToSgContactsUniqueJoincnContactsToSgContacts6CREATE UNIQUE INDEX cnContactsToSgContactsUniqueJoin ON cnContactsToSgContacts(cnContactIdentifier, entityId)
+-indexcnContactsToSgContactsEntityIdxcnContactsToSgContacts5CREATE INDEX cnContactsToSgContactsEntityIdx ON cnContactsToSgContacts(entityId)F3
+aindexgroupIdIdxentity4CREATE INDEX groupIdIdx on entity(groupId)e2
+indexentityDownloadStateIdxentity3CREATE INDEX entityDownloadStateIdx on entity(downloadState)~1
+indexentityReferencesEntityIdIdxentityReferences2CREATE INDEX entityReferencesEntityIdIdx ON entityReferences(entityId)
+IindexentityReferencesDomainIdxentityReferences1CREATE INDEX entityReferencesDomainIdx ON entityReferences(bundleIdentifier, domainIdentifier)
+WindexentityReferencesUniqueIdxentityReferences0CREATE UNIQUE INDEX entityReferencesUniqueIdx ON entityReferences(bundleIdentifier, uniqueIdentifier)
+%indexcontactDetails_duplicateKey_idxcontactDetailsXCREATE INDEX contactDetails_duplicateKey_idx ON contactDetails(duplicateKey)
+tablecontactDetailscontactDetailsWCREATE TABLE contactDetails (id INTEGER PRIMARY KEY AUTOINCREMENT,value TEXT NOT NULL,label TEXT,type INTEGER NOT NULL,entityId INTEGER NOT NULL,duplicateKey TEXT NOT NULL,sourceKey TEXT,context TEXT,extractionInfoId integer INTEGER NOT NULL,FOREIGN KEY(entityId) REFERENCES entity(id) ON DELETE NO ACTION,FOREIGN KEY(extractionInfoId) REFERENCES extractionInfos(id) ON DELETE RESTRICT)AU
+9tableextractionInfosextractionInfosVCREATE TABLE extractionInfos (id INTEGER PRIMARY KEY AUTOINCREMENT, extractionType INTEGER NOT NULL,modelVersion NUM NOT NULL,confidence NUM NOT NULL)rT
+indexreminders_duplicateKey_idxremindersUCREATE INDEX reminders_duplicateKey_idx ON reminders(duplicateKey)
+/tableremindersremindersTCREATE TABLE reminders (id INTEGER PRIMARY KEY AUTOINCREMENT,entityId INTEGER NOT NULL,duplicateKey TEXT NOT NULL,sourceKey TEXT,title TEXT NOT NULL,dueDateComponents TEXT,dueLocationId INTEGER,dueLocationType INTEGER NOT NULL,dueLocationTrigger INTEGER NOT NULL,sourceUrl TEXT NOT NULL,creationDate NUM NOT NULL,opaqueKey TEXT,uniqueKey TEXT,contactIdentifier TEXT,reminderStatus NUM NOT NULL,FOREIGN KEY(entityId) REFERENCES entity(id) ON DELETE NO ACTION,FOREIGN KEY(dueLocationId) REFERENCES locations(id) ON DELETE SET NULL)
+etablelocationslocationsSCREATE TABLE locations (id INTEGER PRIMARY KEY AUTOINCREMENT,locationType INTEGER NOT NULL,label TEXT,address TEXT,airportCode TEXT,latitude REAL NOT NULL,longitude REAL NOT NULL,accuracy REAL NOT NULL,quality REAL NOT NULL,handle BLOB)oQ
+indexix_urls_bundle_id_group_idurlsRCREATE INDEX ix_urls_bundle_id_group_id ON urls(bundle_id, group_id)kP
+indexix_urls_seconds_from_1970urlsQCREATE INDEX ix_urls_seconds_from_1970 ON urls(seconds_from_1970)GO
+eindexix_urls_urlurlsPCREATE UNIQUE INDEX ix_urls_url ON urls(url)
+)indexreimportItemsBundleUniqueIdxreimportItemsOCREATE INDEX reimportItemsBundleUniqueIdx ON reimportItems(bundleId, uniqueId)
+M
+7indexreimportItemsSeenByReceiverIdxreimportItemsNCREATE INDEX reimportItemsSeenByReceiverIdx ON reimportItems(seenByReceiverTimestamp)yL
+indexreimportItemsRequestIdxreimportItemsMCREATE INDEX reimportItemsRequestIdx ON reimportItems(reimportRequestId)
+K
+/indexreimportRequestsExecutionIdxreimportRequestsLCREATE INDEX reimportRequestsExecutionIdx ON reimportRequests(executionTimestamp)~J
+indexreimportRequestsQueryIdxreimportRequestsKCREATE INDEX reimportRequestsQueryIdx ON reimportRequests(queryTimestamp)TI
+kindexix_emailTags_keyemailTagsJCREATE INDEX ix_emailTags_key ON emailTags(key)TH
+kindexix_emailTags_tagemailTagsICREATE INDEX ix_emailTags_tag ON emailTags(tag)
+#indexix_emailMetadata_downloadStateemailMetadataHCREATE INDEX ix_emailMetadata_downloadState ON emailMetadata(downloadState)kF
+indexix_emailMetadata_stateemailMetadataGCREATE INDEX ix_emailMetadata_state ON emailMetadata(state)
+utablepostMigrationTaskspostMigrationTasks\CREATE TABLE postMigrationTasks (task TEXT NOT NULL)fZ
+indexreminders_entityId_idxreminders[CREATE INDEX reminders_entityId_idx ON reminders(entityId)zY
+indexcontactDetails_entityId_idxcontactDetailsZCREATE INDEX contactDetails_entityId_idx ON contactDetails(entityId)
+WindexpendingVerificationIdxemailMetadataYCREATE INDEX pendingVerificationIdx ON emailMetadata(pendingVerification) WHERE pendingVerification=1
+9cSQLite format 3
+~z
+
+utableintegrityCheckintegrityCheck]CREATE TABLE integrityCheck (inconsequential STRING)d[
+7	didDeleteEmailContext
+didDeleteEmailContext
+)	enqueued_items
+com.apple.Music
+	com.apple.Music
+Gcom.apple.mobilecalcom.apple.mobilecal.______NativeStorePersistentID_______.170DA8A8-0D37-4F60-B627-7E105C0D21FB
+com.apple.mobilecalcom.apple.mobilecal.______NativeStorePersistentID_______.170DA8A8-0D37-4F60-B627-7E105C0D21FB
+Zy9SQLite format 3
++SQLite format 3
+o
+'
+tableentity_fts_statentity_fts_statcCREATE TABLE 'entity_fts_stat'(id INTEGER PRIMARY KEY, value BLOB)
+indexreimportItemsRequestIdxreimportItemsMCREATE INDEX reimportItemsRequestIdx ON reimportItems(reimportRequestId)xb
+tableentity_fts_docsizeentity_fts_docsizebCREATE TABLE 'entity_fts_docsize'(docid INTEGER PRIMARY KEY, size BLOB)K`
+Etableentity_fts_segdirentity_fts_segdir`CREATE TABLE 'entity_fts_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))Aa
+indexsqlite_autoindex_entity_fts_segdir_1entity_fts_segdira~_
+#tableentity_fts_segmentsentity_fts_segments_CREATE TABLE 'entity_fts_segments'(blockid INTEGER PRIMARY KEY, block BLOB)
+etableentity_fts_contententity_fts_content^CREATE TABLE 'entity_fts_content'(docid INTEGER PRIMARY KEY, 'c0entityId', 'c1messagingTerms', 'c2ftsTerms')k]
+#tableentity_ftsentity_ftsCREATE VIRTUAL TABLE entity_fts USING fts4(tokenize=ab_cf_tokenizer language="en-AU" collator="en_AU@collation=search", entityId INTEGER, messagingTerms TEXT COLLATE NOCASE, ftsTerms TEXT COLLATE NOCASE)\\
+tablecnContactsZ
+Otableentity_fts_from_segdirentity_fts_from_segdir
+CREATE TABLE "entity_fts_from_segdir"(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))v
+%tableentity_fts_fromentity_fts_fromCREATE VIRTUAL TABLE "entity_fts_from" USING fts4(tokenize=ab_cf_tokenizer language="en" collator="en@collation=search", entityId INTEGER, messagingTerms TEXT COLLATE NOCASE, ftsTerms TEXT COLLATE NOCASE)p
+'tableentityTagsentityTagsCREATE TABLE entityTags (tag TEXT,entityKey TEXT,entityType INTEGER,parentKey TEXT,duplicateKeyHash TEXT NOT NULL, duplicateKeyHashBlob BLOB)	
+indexsqlite_autoindex_entity_fts_from_segdir_1entity_fts_from_segdir
+tableentity_fts_from_statentity_fts_from_stat
+CREATE TABLE "entity_fts_from_stat"(id INTEGER PRIMARY KEY, value BLOB)
+-tableentity_fts_from_segmentsentity_fts_from_segments
+CREATE TABLE "entity_fts_from_segments"(blockid INTEGER PRIMARY KEY, block BLOB)
+%tableentity_fts_from_docsizeentity_fts_from_docsize	CREATE TABLE "entity_fts_from_docsize"(docid INTEGER PRIMARY KEY, size BLOB),
+otableentity_fts_from_contententity_fts_from_content
+CREATE TABLE "entity_fts_from_content"(docid INTEGER PRIMARY KEY, 'c0entityId', 'c1messagingTerms', 'c2ftsTerms')P
+indexix_identityPerson_surnameidentityPerson+CREATE INDEX ix_identityPerson_surname ON identityPerson(surname)V!
+j"
+
+indexix_emailMetadata_stateemailMetadataGCREATE INDEX ix_emailMetadata_state ON emailMetadata(state)lE
+'indexix_entityTags_dupKeyHashBlobentityTagsACREATE INDEX ix_entityTags_dupKeyHashBlob ON entityTags(duplicateKeyHashBlob)5?
+WindexentityReferencesUniqueIdxentityReferences0CREATE UNIQUE INDEX entityReferencesUniqueIdx ON entityReferences(bundleIdentifier, uniqueIdentifier)s.
+indexix_identityPerson_email_namelessidentityPerson-CREATE INDEX ix_identityPerson_email_nameless ON identityPerson(email)
+tableentity_fts_statentity_fts_stat
+CREATE TABLE 'entity_fts_stat'(id INTEGER PRIMARY KEY, value BLOB)
+tableentity_fts_docsizeentity_fts_docsize
+CREATE TABLE 'entity_fts_docsize'(docid INTEGER PRIMARY KEY, size BLOB)K`
+Etableentity_fts_segdirentity_fts_segdir	CREATE TABLE 'entity_fts_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))Aa
+#tableentity_fts_segmentsentity_fts_segments
+CREATE TABLE 'entity_fts_segments'(blockid INTEGER PRIMARY KEY, block BLOB)
+CREATE TABLE 'entity_fts_content'(docid INTEGER PRIMARY KEY, 'c0entityId', 'c1messagingTerms', 'c2ftsTerms')k]
+tablecnContacts
+'tableentityTagsentityTagsCREATE TABLE entityTags (tag TEXT,entityKey TEXT,entityType INTEGER,parentKey TEXT,duplicateKeyHash TEXT NOT NULL, duplicateKeyHashBlob BLOB)
+enqueued_items
+Sf@?
+enqueued_items	
+enqueued_items
+
+enqueued_items
+enqueued_items
+F)f
+
+com.apple.remindersx-coredata://CEAE9C4B-5AC0-459E-A303-9C8C27BEA99E/REMCDList/p3u
+com.apple.remindersx-coredata://CEAE9C4B-5AC0-459E-A303-9C8C27BEA99E/REMCDList/p3
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.68772721-A1C3-4169-97AC-16E55D071E4D
+RTDb
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.405B1F15-DB9E-4AFA-BDAB-386DA24EC7E15
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0D916A62-8162-482F-86B7-C2E6C64F69C53
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3F0ED04C-9294-4C9F-A75B-7D5622FD169D
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2FE2DA70-1956-462C-8A65-55F1368B8688
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1D16DD73-4C8C-4FA0-A2B1-8E9FC54D5012
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5B95DE4E-25C4-44CA-B212-ABC7983AB2DF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.03991990-D7FC-4FF9-8837-85A4F669C088
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.450F3820-DF4D-420B-952A-83D5947F1FA0(
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.46456CDD-EEB7-4BDC-B1A1-A576734E2789 
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.60F79260-CC42-4AA2-881A-B57CD189D78E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3242F95D-669C-4729-881C-7079A045B82E,
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.14F85F8F-090D-4038-AA26-6E9617207B04+
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.291CAEDC-8CCC-48A2-8036-54E968A1D00F*
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2B397F28-B138-403E-A202-456535821A60
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.34BE3399-CAB0-40E9-A3B0-691EB8844CEF-
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.58F1614C-A2CC-412C-8B09-2B64849DA670
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2E3A44F7-431A-412E-8A78-05B737BD1894
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.11E7ECAF-EE4F-4E48-8FE7-85B2FB6906BF1
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.63F51DAD-E97E-4DDA-AD9B-BC4EC5F47753/
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.295ABD14-6C25-4462-8BDA-E8C6C7E8B32B
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.06BE9015-26FC-40D9-AD8D-E8BAE70AD26A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1CC281A8-14E1-47E9-AD4E-972915D57C9A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.36A4A2D8-6796-4C41-8665-32E77E6934B7
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.447B9021-321A-402C-8B75-F899A995BF31
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5A55FFA9-FE71-408C-94D6-9D40B1DBEA342
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D1C2D5E0-B0B3-4711-A85A-4928FC558EE34
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.9B17C20F-EFAD-4978-8C20-50D28C27A7840
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.70DC6C3F-FEFE-4D46-8804-02A0C5697540.
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.929283D0-752B-4025-8418-BF754D04BE40)
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.AE0312CE-D4D9-4BF5-BF1C-BE9ADC56A666'
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.852B63F5-8BCF-4BAF-AB62-FF056FEC6AC6&
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B28D3652-DC55-4B52-B46F-826AB93C6D60%
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BB99B713-07CD-40E2-B515-A3C5834B45D1$
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BA9E3E18-F849-4903-A909-DED1356DCD71#
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.DF2BDB85-70C9-4DC1-986D-8274B1B182A7"
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.7A40092C-6619-4FF5-B1AB-7DC39F321AE5!
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B9B949A1-59E2-4F0F-A677-19963D6493BF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C51F7D19-2F2B-4595-A8CC-D1A1592AAF26
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.FD61B0E7-9F19-46E7-8CCF-881D64B0E4E0
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ED110F70-3652-42E6-BDFC-0629F866954E
+
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E93AE267-AC0B-4E0A-A9BF-7CCA764D2F86	
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D92848CD-3EE2-4FAB-BD13-7AF917D222FB
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D0F94B7E-EDF2-4DF9-8686-CB023CD046D0
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BE426C80-8A66-4C93-8898-4AFC405955EE
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BE1833D1-BBAB-4BAA-A0AB-86B2ECC4D188
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B09E9E81-1285-4CDC-AF83-5CBB90D24B81
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A25E8229-5382-40DE-88C7-7A04569FA027
+
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.9898EDE6-5AAC-461C-8784-CADAB77D3B2E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.87C7B251-FFA1-4CCE-A94C-E011191D3F10
+n
+
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ED110F70-3652-42E6-BDFC-0629F866954E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.58F1614C-A2CC-412C-8B09-2B64849DA670
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2E3A44F7-431A-412E-8A78-05B737BD1894
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A25E8229-5382-40DE-88C7-7A04569FA027
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E93AE267-AC0B-4E0A-A9BF-7CCA764D2F86
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.447B9021-321A-402C-8B75-F899A995BF31V
+:?-
+
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.405B1F15-DB9E-4AFA-BDAB-386DA24EC7E1
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D1C2D5E0-B0B3-4711-A85A-4928FC558EE3
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0D916A62-8162-482F-86B7-C2E6C64F69C5
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5A55FFA9-FE71-408C-94D6-9D40B1DBEA34
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.11E7ECAF-EE4F-4E48-8FE7-85B2FB6906BF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.9B17C20F-EFAD-4978-8C20-50D28C27A784
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.63F51DAD-E97E-4DDA-AD9B-BC4EC5F47753
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.70DC6C3F-FEFE-4D46-8804-02A0C5697540
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.34BE3399-CAB0-40E9-A3B0-691EB8844CEF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3242F95D-669C-4729-881C-7079A045B82E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.14F85F8F-090D-4038-AA26-6E9617207B04
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.291CAEDC-8CCC-48A2-8036-54E968A1D00F
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.929283D0-752B-4025-8418-BF754D04BE40
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.450F3820-DF4D-420B-952A-83D5947F1FA0
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.AE0312CE-D4D9-4BF5-BF1C-BE9ADC56A666
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.852B63F5-8BCF-4BAF-AB62-FF056FEC6AC6
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B28D3652-DC55-4B52-B46F-826AB93C6D60
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BB99B713-07CD-40E2-B515-A3C5834B45D1
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BA9E3E18-F849-4903-A909-DED1356DCD71
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.DF2BDB85-70C9-4DC1-986D-8274B1B182A7
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.7A40092C-6619-4FF5-B1AB-7DC39F321AE5
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.46456CDD-EEB7-4BDC-B1A1-A576734E2789
+{USQLite format 3
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.CA263CF6-87AA-4087-AE38-30A585185436n
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A60C3FA4-E9AD-4980-B5EA-8735E58B8382^
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29A25534-0BA4-4EC4-BD1C-C691E81B0D97A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.02B28C86-E5D6-48B1-A874-FA9BA59183C6K
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1089BAD2-10FF-4527-BB12-789388AAECECP
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.13C8742E-2CCB-4757-8F53-803BDCD4A98Fg
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0EBE60E5-49EB-427D-901C-520975D7BB49y
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.005D4807-B62D-442A-A1C2-DE2442DC4F3CB
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1149CA33-0565-42B1-8B09-34D46A54A4A8b
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.085D2106-2290-4183-A2BD-C1DDFCDE7FD4:
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.204E5D9A-B812-4439-910E-09B52A9FAA3Ek
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.152A51EB-CFB5-4E8B-94F3-70EB5205B17A{
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0CB6F765-AEC2-44D1-A4DC-C48C34F9BF1Dt
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0640580F-3716-49CA-AF4C-257BDA5E7D78<
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.08A026BA-1AC1-43F3-97DC-6677C6E2BF76x
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1DE12AE5-2543-4833-B91A-030EBD127F97E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.129A9FB2-8E1A-44D4-A660-FFDF0AB14D0E]
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1047E691-E5AB-47A5-80D8-C904B14464A8
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.139E4B81-8104-4C36-B91E-07C923223CCC|
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.43CC4B9D-3643-4D48-8373-EC7991CC2E8FN
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.33460331-6E83-473D-A3E6-4CC42260179AG
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3BCFEB0A-9DB9-4A9F-B5E2-A6B40AB5B9AC8
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2ECF1396-B666-4E34-9065-EA5F52D39010l
+r
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29CD5E43-C309-4A1B-B42B-83B096C5941Bp
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29C158D6-920D-4F96-A8C5-9EBE71B12035R
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3811F1A3-70AB-4568-A9CE-60E2F33AB682;
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.34BE3399-CAB0-40E9-A3B0-691EB8844CEF-
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3E458168-1842-4EDF-9D7E-64E7061EAE42m
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3FBF0D9A-4896-4204-AC3B-BB9B34F6D97Bw
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.42CD88E2-95C8-4134-AC29-B481B333F066u
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.454A390A-1F4B-4FA6-A4C1-80BEAB2348B7S
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3FE18A10-5C0F-4DF3-B5BA-A3344189526E?
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C879E576-1488-4C78-B63F-4F94A74AD36B
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E0EB66DA-FF70-4DA2-A427-0421F154D742
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.02B28C86-E5D6-48B1-A874-FA9BA59183C6
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A9E8055C-B010-410F-A308-B95566B6EEBF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D1E734BC-595B-426E-B4D9-2C165AD94110
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C7EEF0B9-67C5-473F-A854-9D8BB347DCAD
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.33460331-6E83-473D-A3E6-4CC42260179A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.8D15FFB0-396E-4C75-8A9A-C269E41C3CD5
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1DE12AE5-2543-4833-B91A-030EBD127F97
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B00F06EC-B255-4B12-B7C0-18A573EE931E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.493B88B5-AAD0-4119-8A16-084B835D00CA
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.005D4807-B62D-442A-A1C2-DE2442DC4F3C
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29A25534-0BA4-4EC4-BD1C-C691E81B0D97
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F0729D78-288F-4782-B4E5-5A82CA5C2AFB
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3FE18A10-5C0F-4DF3-B5BA-A3344189526E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.818AC5A7-1279-4401-BE3C-A558A43404DF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C8BD8AA8-70A9-4DF9-A4C0-5F20DA6637DE
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0640580F-3716-49CA-AF4C-257BDA5E7D78
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3811F1A3-70AB-4568-A9CE-60E2F33AB682
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.085D2106-2290-4183-A2BD-C1DDFCDE7FD4
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5F117E9C-0741-4980-8BF1-58FDA3EE0F85
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3BCFEB0A-9DB9-4A9F-B5E2-A6B40AB5B9AC
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.592EFACC-FE84-49EA-BE6C-036EF06A5DB6
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.54C5C419-E13B-4AB3-AEC2-91CD97F37EF5
+w'FXX
+\L
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5CBFED98-7BE8-4873-A5C9-C966D674191Cf
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.551F9A61-352F-48C0-AFCB-7E7ACBAE4DBEh
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.54C5C419-E13B-4AB3-AEC2-91CD97F37EF56
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.493B88B5-AAD0-4119-8A16-084B835D00CAC
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.613D514D-96C5-42BC-85D6-4C201DE0E4B2U
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5FEEC632-35E8-46A5-9F25-75185B532A33Z
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.7683225B-0E46-4F72-8DFA-1E3BBA04B1F2z
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.592EFACC-FE84-49EA-BE6C-036EF06A5DB67
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.560AF1D9-EAF1-45F1-B3BF-CE73C25F1003Q
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.755398ED-2F7D-4583-9204-75EB9D39F0F5_
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5F117E9C-0741-4980-8BF1-58FDA3EE0F859
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.66759C53-B8B5-4BCE-9444-7FF538B592B9j
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5FE1109A-6F16-416F-AFF4-1B4683F70464i
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5CBFED98-7BE8-4873-A5C9-C966D674191C
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.987B1E9C-6DB9-418D-A941-7159A5EF095E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ABF2216F-FAAB-41FC-BBA6-CAE9E2FB27F7
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.FB7721E5-5CD7-4919-A4CF-C4014E3D674E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1149CA33-0565-42B1-8B09-34D46A54A4A8
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BC56D607-7119-4A72-9E86-8032B91A6569
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F497E29D-EC93-4ABF-936A-5A2BC05A1C30
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.755398ED-2F7D-4583-9204-75EB9D39F0F5
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A60C3FA4-E9AD-4980-B5EA-8735E58B8382
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.129A9FB2-8E1A-44D4-A660-FFDF0AB14D0E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.FDE98FC4-7CA7-4576-9644-E04868A671AF
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A0B738BE-44EB-4697-9802-58D9DACAF823
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5FEEC632-35E8-46A5-9F25-75185B532A33
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C11F73A3-53A2-460F-BB87-5CA931FCF005
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.9F3464DC-CD75-4265-8455-0C2C201D67E7
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BE89494E-BC23-4AF7-A391-9A8B49136D6A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ECBB2D0A-0431-4389-BA2F-F09AB72C45B3
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.613D514D-96C5-42BC-85D6-4C201DE0E4B2
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C9AF8D0C-74C8-4B1E-B982-E336332CABC4
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.454A390A-1F4B-4FA6-A4C1-80BEAB2348B7
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29C158D6-920D-4F96-A8C5-9EBE71B12035
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.560AF1D9-EAF1-45F1-B3BF-CE73C25F1003
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.1089BAD2-10FF-4527-BB12-789388AAECEC
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D15A5CA6-D481-4387-AAD0-0612000F242B
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.43CC4B9D-3643-4D48-8373-EC7991CC2E8F
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B2A135D2-D094-4949-BA29-5DA51A8CA9A3v
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C9AF8D0C-74C8-4B1E-B982-E336332CABC4T
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C8BD8AA8-70A9-4DF9-A4C0-5F20DA6637DE=
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C879E576-1488-4C78-B63F-4F94A74AD36BM
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C7EEF0B9-67C5-473F-A854-9D8BB347DCADH
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C5A09282-00B4-4CF0-A7C7-94C6B04FBD91q
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C3272AED-FAC8-42E5-A689-40232FD25AA6r
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C11F73A3-53A2-460F-BB87-5CA931FCF005Y
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BE89494E-BC23-4AF7-A391-9A8B49136D6AW
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.BC56D607-7119-4A72-9E86-8032B91A6569a
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B00F06EC-B255-4B12-B7C0-18A573EE931ED
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ABF2216F-FAAB-41FC-BBA6-CAE9E2FB27F7d
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A9E8055C-B010-410F-A308-B95566B6EEBFJ
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.FB7721E5-5CD7-4919-A4CF-C4014E3D674Ec
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.EE0F0E2A-D910-41DF-959C-CF6EE1A50D92~
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F0D0EE4E-EE90-49A1-A7E9-14A77F7D74A4}
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E55E75A3-6BDE-4F39-B2A1-B37A51BCF1FAs
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F497E29D-EC93-4ABF-936A-5A2BC05A1C30`
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.FDE98FC4-7CA7-4576-9644-E04868A671AF\
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.ECBB2D0A-0431-4389-BA2F-F09AB72C45B3V
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F0729D78-288F-4782-B4E5-5A82CA5C2AFB@
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E0EB66DA-FF70-4DA2-A427-0421F154D742L
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D1E734BC-595B-426E-B4D9-2C165AD94110I
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.D15A5CA6-D481-4387-AAD0-0612000F242BO
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.EE0F0E2A-D910-41DF-959C-CF6EE1A50D92
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.F0D0EE4E-EE90-49A1-A7E9-14A77F7D74A4
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.139E4B81-8104-4C36-B91E-07C923223CCC
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.152A51EB-CFB5-4E8B-94F3-70EB5205B17A
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.7683225B-0E46-4F72-8DFA-1E3BBA04B1F2
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0EBE60E5-49EB-427D-901C-520975D7BB49
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.08A026BA-1AC1-43F3-97DC-6677C6E2BF76
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3FBF0D9A-4896-4204-AC3B-BB9B34F6D97B
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.B2A135D2-D094-4949-BA29-5DA51A8CA9A3
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.42CD88E2-95C8-4134-AC29-B481B333F066
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.0CB6F765-AEC2-44D1-A4DC-C48C34F9BF1D
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.E55E75A3-6BDE-4F39-B2A1-B37A51BCF1FA
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C3272AED-FAC8-42E5-A689-40232FD25AA6
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.C5A09282-00B4-4CF0-A7C7-94C6B04FBD91
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.29CD5E43-C309-4A1B-B42B-83B096C5941B
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.8FAA2BBE-4CD6-459C-934A-E9992AEDEDAB
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.CA263CF6-87AA-4087-AE38-30A585185436
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.3E458168-1842-4EDF-9D7E-64E7061EAE42
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2ECF1396-B666-4E34-9065-EA5F52D39010
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.204E5D9A-B812-4439-910E-09B52A9FAA3E
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.66759C53-B8B5-4BCE-9444-7FF538B592B9
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.5FE1109A-6F16-416F-AFF4-1B4683F70464
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.551F9A61-352F-48C0-AFCB-7E7ACBAE4DBE
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.13C8742E-2CCB-4757-8F53-803BDCD4A98F
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.A0B738BE-44EB-4697-9802-58D9DACAF823[
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.9F3464DC-CD75-4265-8455-0C2C201D67E7X
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.987B1E9C-6DB9-418D-A941-7159A5EF095Ee
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.8FAA2BBE-4CD6-459C-934A-E9992AEDEDABo
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.8D15FFB0-396E-4C75-8A9A-C269E41C3CD5F
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.818AC5A7-1279-4401-BE3C-A558A43404DF>
+com.apple.Preferencescom.apple.Preferences
+7com.apple.Preferencescom.apple.Preferences
+com.apple.mobilenotes
+com.apple.mobilenotes.
+>'X;
+8ra2U
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.14F85F8F-090D-4038-AA26-6E9617207B04+
+com.apple.MobileAddressBook09774907-408E-4565-9392-7D85261658BE:ABPerson
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.2ECF1396-B666-4E34-9065-EA5F52D39010l
+Odw'
+
+com.apple.mobilephone0B1C44A1-7E5B-41DE-962E-3BD31A59A1CA:ABPerson
+WE_
+
+com.apple.mobilephone0B1C44A1-7E5B-41DE-962E-3BD31A59A1CA:ABPersonL
+{uNjz
+
+com.apple.MobileSMS4795710C-30F8-4212-A2CA-8D1DD649D42D
+com.apple.MobileSMS4795710C-30F8-4212-A2CA-8D1DD649D42DF
+com.apple.MobileSMS
+com.apple.mobilecalcom.apple.mobilecal.6CBBB6F8-60E0-46E1-A1DA-01194DA6E1BF.374F6C91-F454-4FE0-9447-98157077AE6D.42CD88E2-95C8-4134-AC29-B481B333F066F
+hSQLite format 3
+ AV)
+
+
+p&
+
+
+tln_
+ %6M
+	
+G2
+indexreimportItemsRequestIdxreimportItemsMCREATE INDEX reimportItemsRequestIdx ON reimportItems(reimportRequestId)
+
+7I
+)
+[
+
+tableidentityInterdictidentityInterdict]CREATE TABLE identityInterdict (a TEXT NOT NULL, b TEXT NOT NULL)mc
+CREATE TABLE 'entity_fts_stat'(id INTEGER PRIMARY KEY, value BLOB)xb
+CREATE TABLE 'entity_fts_docsize'(docid INTEGER PRIMARY KEY, size BLOB)Aa
+Etableentity_fts_segdirentity_fts_segdir	CREATE TABLE 'entity_fts_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))~_
+utableintegrityCheckintegrityCheck
+CREATE TABLE integrityCheck (inconsequential STRING)d[
+K	cnContactsToSgContactsCacheJobs
+}|31C74829-6837-45C5-A980-62106D899938:ABPerson|C031E512-4B7F-4ABF-8FA3-D09B193D8292:ABPerson|09774907-408E-4565-9392-7D85261658BE:ABPerson|0B1C44A1-7E5B-41DE-962E-3BD31A59A1CA:ABPerson
+hasFullCNtoSGSync

@@ -1,0 +1,2 @@
+2023-07-09 14:42:16 Data container moved com.apple.iBooks.BooksIntentHandler /private/var/mobile/Containers/Data/PluginKitPlugin/AD96D5EE-34E9-4C9E-BF17-2F78BB75DC33
+2023-07-08 23:20:25 Made container live com.apple.iBooks.BooksIntentHandler /private/var/mobile/Containers/Data/PluginKitPlugin/5E65ED47-7F75-42FF-A081-1359530C92AD

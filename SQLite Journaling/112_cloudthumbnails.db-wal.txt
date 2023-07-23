@@ -1,0 +1,11 @@
+onI~
+SQLite format 3
+Wtablethumbnailsthumbnails
+CREATE TABLE thumbnails( docid integer not null, vol_uuid blob not null, last_hit_date integer not null, last_seen_path text not null, PRIMARY KEY (docid, vol_uuid))3
+indexsqlite_autoindex_thumbnails_1thumbnails
+indexthumbnail_last_hit_datethumbnails
+CREATE INDEX thumbnail_last_hit_date ON thumbnails(last_hit_date)T
+stablethumbnailsthumbnails
+CREATE TABLE thumbnails( docid integer not null, vol_uuid blob not null, last_hit_date integer not null, last_seen_path text not null, size integer, PRIMARY KEY (docid, vol_uuid))3
+/private/var/mobile/Library/Mobile Documents/iCloud~is~workflow~my~workflows/Documents
+|Vgy?

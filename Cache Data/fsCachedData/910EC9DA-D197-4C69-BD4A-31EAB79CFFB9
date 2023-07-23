@@ -1,0 +1,2430 @@
+{
+  "SupportedRegions": {
+    "US": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 2, 3, 4, 113],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "Discover", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "PaymentSetupBrowsableProductTypes": ["transit"],
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "1": 1,
+        "3": 1,
+        "4": 1
+      },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "PeerPaymentSupported": true,
+      "UserCanResetCloudApplePayView": true,
+      "accountServiceEnabled" : true,
+      "applyServiceEnabled" : true,
+      "applyServiceFeatureIdentifiers": ["ccs", "fps", "asp"],
+      "applyServiceFeatures" : {
+        "ccs": {
+          "enablementThreshold": 1
+        },
+        "fps": {
+          "enablementThreshold": 1
+        },
+        "asp": {
+          "enablementThreshold": 1
+        }
+      },
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json"
+    },
+    "AZ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AM": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GB": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "1": 1,
+        "3": 1,
+        "4": 1
+      },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json"
+    },
+    "CA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 13],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa", "Interac"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AU": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 12],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa", "Eftpos"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SG": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MY": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CH": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 22],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa", "PostFinanceAG"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "FR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 9, 15],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa", "CartesBancaires", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MC": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 9],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "CartesBancaires"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MD": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MQ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GF": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "RE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "YT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MF": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BL": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PM": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "NC": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "WF": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PF": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CP": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "TF": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AQ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GP": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "HK": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 11],
+      "PaymentSetupFeaturedNetworksV3": ["Visa", "MasterCard", "Octopus", "AmEx", "ChinaUnionPay"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "PaymentSetupFeaturedNetworksV2": ["Visa", "MasterCard", "Octopus", "AmEx", "ChinaUnionPay"],
+      "PaymentSetupPrimaryFeaturedNetworkV2": "Octopus",
+      "PaymentSetupBrowsableProductTypes": ["transit"],
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentSetupImageManifestURLV2": "https://smp-device-content.apple.com/static/hero/v2/heroManifest-prod-34c9c532-1e7d-456b-8f1b-46cd1d00c4c6.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json"
+    },
+    "MO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [11],
+      "PaymentSetupFeaturedNetworksV3": ["ChinaUnionPay"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "ME": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "RU": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3,4,19],
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "3": 1,
+        "4": 1
+       },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa","Mir"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "NZ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "JP": {
+      "ProvisioningEnablementPercentage": 1.0,
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupPrimaryFeaturedNetwork": 103,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 6, 103],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa", "JCB", "Suica", "PASMO", "WAON", "nanaco"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "PaymentSetupFeaturedNetworksV2": ["AmEx", "MasterCard", "Visa", "JCB", "Suica", "PASMO"],
+      "PaymentSetupPrimaryFeaturedNetworkV2": "Suica",
+      "FindWithoutNumberEnabled": false,
+      "PaymentSetupBrowsableProductTypes": ["transit"],
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/JP_heroManifest-79445b3e-ab99-42d2-9002-edeed59a11d2.json",
+      "PaymentSetupImageManifestURLV2": "https://smp-device-content.apple.com/static/hero/v2/heroManifest-prod-34c9c532-1e7d-456b-8f1b-46cd1d00c4c6.json",
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json",
+      "accountServiceEnabled": true,
+      "applyServiceEnabled": true,
+      "applyServiceFeatures": {
+        "asp": {
+          "enablementThreshold": 1
+        }
+      },
+      "applyServiceFeatureIdentifiers": ["asp"]
+    },
+    "ES": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx","MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GG": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "JE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IM": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "TW": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 6],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "JCB"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx","MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "VA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SM": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "3": 1,
+        "4": 1
+      },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "FI": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "3": 1,
+        "4": 1
+      },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "DK": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 10],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Dankort"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BH": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PS": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AX": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IC": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 112],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "ELO"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "UA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "RS": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PL": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "NO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "QA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "KZ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx","MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15, 21],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro", "Bancontact"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CZ": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 14],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Mada"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GL": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [4],
+      "PaymentSetupFeaturedNetworksV3": ["Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IS": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "HU": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "LU": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "NL": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [15],
+      "PaymentSetupFeaturedNetworksV3": ["Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BG": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "HR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CY": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "EE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "LV": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "LI": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "LT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "MT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "RO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SK": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SI": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "FO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "BY": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "3": 1,
+        "4": 1
+      },
+      "MarketGeoRegionNotificationDisabledNetworks": [],
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CN": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "DeviceCheckInDisabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://cn-smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [11],
+      "PaymentSetupFeaturedNetworksV3": ["ChinaUnionPay", "MOT"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://cn-smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://cn-apple-pay-gateway.apple.com/paymentservices",
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentSetupSuppressCardholderName": true,
+      "PaymentSetupBrowsableProductTypes": ["transit"],
+      "BetaPaymentNetworks": [],
+      "MarketGeoRegionNotificationDisabledNetworks": [108, 109, 122],
+      "MarketGeoRegionNotificationHour": 10,
+      "MarketGeoRegionNotificationTimeRange": 300,
+      "MarketGeoRegionNotificationNetworkThresholds": {
+        "108": 1,
+        "109": 1,
+        "122": 1
+      },
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json",
+      "minimumOSVersion": {
+        "Mac": "99"
+      }
+    },
+    "DE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4, 15, 18],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa", "Maestro", "Girocard"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentSetupImageManifestURL": "https://smp-device-content.apple.com/static/hero/heroManifest-52782a36-44b8-479e-93bd-699f47fb40b9.json",
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json"
+    },
+    "MX": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "CR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PE": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "AR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "GT": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "SV": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "HN": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "PA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "ZA": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "IL": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [1, 3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["AmEx", "MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "KW": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "JO": {
+      "BuddyManualProvisioningEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": true,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices"
+    },
+    "KR": {
+      "BuddyManualProvisioningEnabled": true,
+      "BrowseProvisioningBankAppsEnabled": true,
+      "BuddyProvisioningEnabled": true,
+      "ManualProvisioningEnabled": true,
+      "serverURL": "https://smp-device.apple.com/broker",
+      "ServerControlledProvisioningEnabled": true,
+      "CameraFirstProvisioningEnabled": false,
+      "CameraFirstProvisioningEnabledV2": false,
+      "PaymentSetupFeaturedNetworks": [3, 4],
+      "PaymentSetupFeaturedNetworksV3": ["MasterCard", "Visa"],
+      "PaymentSetupImageManifestURLV3": "https://smp-device-content.apple.com/static/hero/v3/heroManifest_V3-3d11e8fa-170c-44aa-b51a-7d1b25561f97.json",
+      "FindWithoutNumberEnabled": false,
+      "SupportsV3": true,
+      "PaymentServicesURL": "https://smp-paymentservices.apple.com/paymentservices",
+      "PaymentServicesMerchantURL": "https://apple-pay-gateway.apple.com/paymentservices",
+      "DiscoveryManifestURL": "https://smp-device-content.apple.com/static/discovery/v1/manifest.json"
+    },
+    "paymentpass.com.apple.cn" : {
+      "DeviceCheckInDisabled": true
+    }
+  },
+  "UnsupportedWebPaymentConfigurations": [
+    {
+      "PaymentNetworks": [11],
+      "IssuingCountryCodes": ["CN"],
+      "DeviceClasses": ["Mac"],
+      "OSVersion": {
+        "Mac": "99",
+        "iOS": "11.2"
+      },
+      "HandoffMinOSVersion" : {
+        "Mac": "99",
+        "iOS": "99",
+        "watchOS": "99"
+      }
+    }
+  ],
+  "globalFeatures": {
+    "zion": {
+      "versionRange": {
+        "minimum": {
+          "iPhone": "16.0",
+          "WatchOS": {
+            "Watch": "9.0",
+            "iPhone": "16.0"
+          },
+          "Mac": "13.0"
+        }
+      },
+      "credentialTypesRequiringDPANNotifications": [4]
+    },
+    "mmor": {
+      "versionRange": {
+        "minimum": {
+          "iPhone": "16.0",
+          "WatchOS": {
+            "Watch": "9.0",
+            "iPhone": "16.0"
+          },
+          "Mac": "13.0"
+        }
+      },
+      "implicitFeatureSupportedNetworks": [2, 4]
+    },
+    "shastaLiveOn": {
+      "walletMerchantId": "com.apple.pay.tokens.merchant.id.wallet",
+      "implicitFeatureSupportedNetworks": [2],
+      "versionRange": {
+        "minimum": {
+          "iPhone": "16.2",
+          "iPad": "16.2",
+          "Mac": "13.1"
+        }
+      }
+    },
+    "pushProvisioning": {
+      "enablementThreshold": 1,
+      "automaticRegister": true,
+      "registrationType": "lightweight",
+      "versionRange": {
+        "minimum": {
+          "iPhone": "14.0",
+          "WatchOS": {
+            "Watch": "7.0",
+            "iPhone": "14.0"
+          }
+        }
+      }
+    },
+    "carAccess": {
+      "enablementThreshold": 1,
+      "automaticRegister": true,
+      "registrationType": "lightweight",
+      "brandIdentifiers": {
+        "002": "BMW1",
+        "0003": "MBCS",
+        "170": "GENE",
+        "171": "HYUN",
+        "172": "KIA1",
+        "073": "BYD1",
+        "129": "TS01",
+        "099": "LOT1"
+      },
+      "versionRange": {
+        "minimum": {
+          "iPhone": "13.6",
+          "WatchOS": {
+            "Watch": "6.2.8",
+            "iPhone": "13.6"
+          }
+        }
+      },
+      "supportedTerminals": [
+        {
+        "associatedApplicationIdentifiers": [
+          "1087277146",
+          "1099848339",
+          "1120208127",
+          "1522361512",
+          "1567587877",
+          "1519457734",
+          "1519034860",
+          "1527576076"
+        ],
+        "partnerIdentifier": "BMW1",
+        "manufacturerIdentifier": "BMW1",
+        "partnerName": "BMW",
+        "terminalCriteria": [{
+          "type": "ecp.2.tci",
+          "tcis": [
+            "010001",
+            "010002",
+            "010003"
+          ]
+        }]
+      },
+        {
+        "associatedApplicationIdentifier": "",
+        "manufacturerIdentifier": "MBAG",
+        "partnerIdentifier": "MBCS",
+        "partnerName": "Mercedes-Benz",
+        "terminalCriteria": [{
+          "type": "ecp.2.tci",
+          "tcis": [
+            "010201",
+            "010202",
+            "010203",
+            "010204",
+            "010205",
+            "010206"
+          ]
+        }] 
+      },
+        {
+          "associatedApplicationIdentifiers": [
+            "1272422144",
+            "867941329"
+          ],
+          "partnerIdentifier": "GENE",
+          "manufacturerIdentifier": "GENE",
+          "partnerName": "Genesis",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010051",
+                "010052",
+                "010053",
+                "010054",
+                "010055",
+                "010056",
+                "010057"
+              ]
+            }
+          ]
+        },
+        {
+          "associatedApplicationIdentifiers": [
+            "517642038"
+          ],
+          "partnerIdentifier": "KIA1",
+          "manufacturerIdentifier": "KIA1",
+          "partnerName": "KIA",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010041",
+                "010042",
+                "010043",
+                "010044",
+                "010045",
+                "010046"
+              ]
+            }
+          ]
+        },
+        {
+          "associatedApplicationIdentifiers": [
+            "517617572"
+          ],
+          "partnerIdentifier": "HYUN",
+          "manufacturerIdentifier": "HYUN",
+          "partnerName": "Hyundai",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010301",
+                "010302",
+                "010303",
+                "010304",
+                "010305",
+                "010306"
+              ]
+            }
+          ]
+        },
+        {
+          "associatedApplicationIdentifiers": [
+            "493482713"
+          ],
+          "partnerIdentifier": "BYD1",
+          "manufacturerIdentifier": "BYD1",
+          "partnerName": "BYD",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010701",
+                "010702",
+                "010703",
+                "010704",
+                "010705",
+                "010706"
+              ]
+            }
+          ]
+        },
+        {
+          "associatedApplicationIdentifiers": [
+            "1595046501"
+          ],
+          "partnerIdentifier": "TS01",
+          "manufacturerIdentifier": "TS01",
+          "partnerName": "DENZA",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010241",
+                "010242",
+                "010243",
+                "010244",
+                "010245",
+                "010246"
+              ]
+            }
+          ]
+        },
+        {
+          "associatedApplicationIdentifiers": [
+            "1585765064"
+          ],
+          "partnerIdentifier": "LOT1",
+          "manufacturerIdentifier": "LTUS",
+          "partnerName": "Lotus",
+          "terminalCriteria": [
+            {
+              "type": "ecp.2.tci",
+              "tcis": [
+                "010091",
+                "010092",
+                "010093",
+                "010094",
+                "010095",
+                "010096"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "sharing": {
+      "activationCodeConfigurations": [
+        {
+          "accessPassType": "car",
+          "channelBundleIdentifier": "com.apple.UIKit.activity.AirDrop",
+          "trustLevel": "blocked",
+          "channelRiskLevel": "medium"
+        },
+        {
+          "accessPassType": "car",
+          "channelBundleIdentifier": "com.apple.SMS",
+          "trustLevel": "blocked",
+          "channelRiskLevel": "high",
+          "versionRange": {
+            "maximum": {
+              "iPhone": "16.1"
+            }
+          }
+        },
+        {
+          "accessPassType": "car",
+          "channelBundleIdentifier": "com.apple.SMS",
+          "trustLevel": "blocked",
+          "channelRiskLevel": "medium",
+          "versionRange": {
+            "maximum": {
+              "iPhone": "16.1"
+            }
+          }
+        },
+        {
+          "accessPassType": "car",
+          "allowedSharingChannels": [
+            "com.apple.UIKit.activity.Message"
+          ],
+          "versionRange": {
+            "maximum": {
+              "iPhone": "16.1"
+            }
+          }
+        }
+      ],
+      "enabled": true,
+      "relayServerHostsToHandleUniversalLinks": [
+        "walletshare.googleapis.com",
+        "staging-walletshare.sandbox.googleapis.com"
+      ]
+    }
+  },
+  "credentialTypesRequiringMetadata": ["103", "105", "106", "107", "108", "109", "113", "114", "115", "116", "117", "122", "123", "127", "128","132"],
+  "MarketGeosURL": "https://smp-device-content.apple.com/static/region/v2/marketgeos-ad96b072-bd96-4d3c-aff6-6cc477f0d88a.json",
+  "version": "2.0",
+  "contactFormatConfiguration": {
+    "checkFormatOfPhoneNumber": true,
+    "checkFormatOfEmailAddress": true,
+    "regionalAddressFormatConfigurations": {
+      "US": {
+        "addressFormat": {
+          "street": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "subLocality": {
+            "type": "text",
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "city": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "postalCode": {
+            "type": "text",
+            "minLength": 1,
+            "validRegex": "^[0-9]{5}(-[0-9]{4})?$"
+          },
+          "state": {
+            "type": "picker",
+            "items": [
+              {
+                "displayName": "Alabama",
+                "submissionValue": "AL"
+              },
+              {
+                "displayName": "Alaska",
+                "submissionValue": "AK"
+              },
+              {
+                "displayName": "Arizona",
+                "submissionValue": "AZ"
+              },
+              {
+                "displayName": "Arkansas",
+                "submissionValue": "AR"
+              },
+              {
+                "displayName": "California",
+                "submissionValue": "CA"
+              },
+              {
+                "displayName": "Colorado",
+                "submissionValue": "CO"
+              },
+              {
+                "displayName": "Connecticut",
+                "submissionValue": "CT"
+              },
+              {
+                "displayName": "Delaware",
+                "submissionValue": "DE"
+              },
+              {
+                "displayName": "District of Columbia",
+                "submissionValue": "DC"
+              },
+              {
+                "displayName": "Florida",
+                "submissionValue": "FL"
+              },
+              {
+                "displayName": "Georgia",
+                "submissionValue": "GA"
+              },
+              {
+                "displayName": "Hawaii",
+                "submissionValue": "HI"
+              },
+              {
+                "displayName": "Idaho",
+                "submissionValue": "ID"
+              },
+              {
+                "displayName": "Illinois",
+                "submissionValue": "IL"
+              },
+              {
+                "displayName": "Indiana",
+                "submissionValue": "IN"
+              },
+              {
+                "displayName": "Iowa",
+                "submissionValue": "IA"
+              },
+              {
+                "displayName": "Kansas",
+                "submissionValue": "KS"
+              },
+              {
+                "displayName": "Kentucky",
+                "submissionValue": "KY"
+              },
+              {
+                "displayName": "Louisiana",
+                "submissionValue": "LA"
+              },
+              {
+                "displayName": "Maine",
+                "submissionValue": "ME"
+              },
+              {
+                "displayName": "Maryland",
+                "submissionValue": "MD"
+              },
+              {
+                "displayName": "Massachusetts",
+                "submissionValue": "MA"
+              },
+              {
+                "displayName": "Michigan",
+                "submissionValue": "MI"
+              },
+              {
+                "displayName": "Minnesota",
+                "submissionValue": "MN"
+              },
+              {
+                "displayName": "Mississippi",
+                "submissionValue": "MS"
+              },
+              {
+                "displayName": "Missouri",
+                "submissionValue": "MO"
+              },
+              {
+                "displayName": "Montana",
+                "submissionValue": "MT"
+              },
+              {
+                "displayName": "Nebraska",
+                "submissionValue": "NE"
+              },
+              {
+                "displayName": "Nevada",
+                "submissionValue": "NV"
+              },
+              {
+                "displayName": "New Hampshire",
+                "submissionValue": "NH"
+              },
+              {
+                "displayName": "New Jersey",
+                "submissionValue": "NJ"
+              },
+              {
+                "displayName": "New Mexico",
+                "submissionValue": "NM"
+              },
+              {
+                "displayName": "New York",
+                "submissionValue": "NY"
+              },
+              {
+                "displayName": "North Carolina",
+                "submissionValue": "NC"
+              },
+              {
+                "displayName": "North Dakota",
+                "submissionValue": "ND"
+              },
+              {
+                "displayName": "Ohio",
+                "submissionValue": "OH"
+              },
+              {
+                "displayName": "Oklahoma",
+                "submissionValue": "OK"
+              },
+              {
+                "displayName": "Oregon",
+                "submissionValue": "OR"
+              },
+              {
+                "displayName": "Pennsylvania",
+                "submissionValue": "PA"
+              },
+              {
+                "displayName": "Rhode Island",
+                "submissionValue": "RI"
+              },
+              {
+                "displayName": "South Carolina",
+                "submissionValue": "SC"
+              },
+              {
+                "displayName": "South Dakota",
+                "submissionValue": "SD"
+              },
+              {
+                "displayName": "Tennessee",
+                "submissionValue": "TN"
+              },
+              {
+                "displayName": "Texas",
+                "submissionValue": "TX"
+              },
+              {
+                "displayName": "Utah",
+                "submissionValue": "UT"
+              },
+              {
+                "displayName": "Vermont",
+                "submissionValue": "VT"
+              },
+              {
+                "displayName": "Virginia",
+                "submissionValue": "VA"
+              },
+              {
+                "displayName": "Washington",
+                "submissionValue": "WA"
+              },
+              {
+                "displayName": "West Virginia",
+                "submissionValue": "WV"
+              },
+              {
+                "displayName": "Wisconsin",
+                "submissionValue": "WI"
+              },
+              {
+                "displayName": "Wyoming",
+                "submissionValue": "WY"
+              },
+              {
+                "displayName": "American Samoa",
+                "submissionValue": "AS"
+              },
+              {
+                "displayName": "Guam",
+                "submissionValue": "GU"
+              },
+              {
+                "displayName": "Northern Mariana Islands",
+                "submissionValue": "MP"
+              },
+              {
+                "displayName": "Puerto Rico",
+                "submissionValue": "PR"
+              },
+              {
+                "displayName": "U.S. Virgin Islands",
+                "submissionValue": "VI"
+              },
+              {
+                "displayName": "U.S. Armed Forces – Americas",
+                "submissionValue": "AA"
+              },
+              {
+                "displayName": "U.S. Armed Forces – Europe",
+                "submissionValue": "AE"
+              },
+              {
+                "displayName": "U.S. Armed Forces – Pacific",
+                "submissionValue": "AP"
+              }
+            ]
+          }
+        }
+      },
+      "CA": {
+        "addressFormat": {
+          "street": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "subLocality": {
+            "type": "text",
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "city": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "postalCode": {
+            "type": "text",
+            "minLength": 1,
+            "validRegex": "^[a-zA-Z][0-9][a-zA-Z][ ]?[0-9a-zA-Z][0-9a-zA-Z][0-9a-zA-Z]$"
+          },
+          "state": {
+            "type": "picker",
+            "items": [
+              {
+                "displayName": "Alberta",
+                "submissionValue": "AB"
+              },
+              {
+                "displayName": "British Columbia",
+                "submissionValue": "BC"
+              },
+              {
+                "displayName": "Manitoba",
+                "submissionValue": "MB"
+              },
+              {
+                "displayName": "New Brunswick",
+                "submissionValue": "NB"
+              },
+              {
+                "displayName": "Newfoundland",
+                "submissionValue": "NL"
+              },
+              {
+                "displayName": "Northwest Territories",
+                "submissionValue": "NT"
+              },
+              {
+                "displayName": "Nova Scotia",
+                "submissionValue": "NS"
+              },
+              {
+                "displayName": "Nunavut",
+                "submissionValue": "NU"
+              },
+              {
+                "displayName": "Ontario",
+                "submissionValue": "ON"
+              },
+              {
+                "displayName": "Prince Edward Island",
+                "submissionValue": "PE"
+              },
+              {
+                "displayName": "Quebec",
+                "submissionValue": "QC"
+              },
+              {
+                "displayName": "Saskatchewan",
+                "submissionValue": "SK"
+              },
+              {
+                "displayName": "Yukon Territories",
+                "submissionValue": "YT"
+              },
+              {
+                "displayName": "Other",
+                "submissionValue": "ZZ"
+              }
+            ]
+          }
+        }
+      },
+      "AU": {
+        "addressFormat": {
+          "street": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "subLocality": {
+            "type": "text",
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "city": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "postalCode": {
+            "type": "text",
+            "minLength": 1,
+            "validRegex": "^[0-9]{3}[0-9]?$"
+          },
+          "state": {
+            "type": "picker",
+            "items": [
+              {
+                "displayName": "Australian Capital Territory",
+                "submissionValue": "ACT"
+              },
+              {
+                "displayName": "New South Wales",
+                "submissionValue": "NSW"
+              },
+              {
+                "displayName": "Northern Territory",
+                "submissionValue": "NT"
+              },
+              {
+                "displayName": "Queensland",
+                "submissionValue": "QLD"
+              },
+              {
+                "displayName": "South Australia",
+                "submissionValue": "SA"
+              },
+              {
+                "displayName": "Tasmania",
+                "submissionValue": "TAS"
+              },
+              {
+                "displayName": "Victoria",
+                "submissionValue": "VIC"
+              },
+              {
+                "displayName": "Western Australia",
+                "submissionValue": "WA"
+              }
+            ]
+          }
+        }
+      },
+      "GB": {
+        "addressFormat": {
+          "street": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "subLocality": {
+            "type": "text",
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "city": {
+            "type": "text",
+            "minLength": 1,
+            "characterSetDescriptions": [
+              "alphanumericCharacterSet",
+              "whitespaceAndNewlineCharacterSet",
+              "punctuationCharacterSet"
+            ],
+            "isValidCharacterSet": true
+          },
+          "postalCode": {
+            "type": "text",
+            "minLength": 1,
+            "validRegex": "(^[a-zA-Z][0-9]{1,2}[ ]?[0-9][a-zA-Z]{2}$)|(^[a-zA-Z][0-9][a-zA-Z][ ]?[0-9][a-zA-Z]{2}$)|(^[a-zA-Z]{2}[0-9]{1,2}[ ]?[0-9][a-zA-Z]{2}$)|(^[a-zA-Z]{2}[0-9]?[a-zA-Z][ ]?[0-9][a-zA-Z]{2}$)"
+          }
+        }
+      }
+    }
+  }
+}

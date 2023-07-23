@@ -1,0 +1,1 @@
+2023-07-08 23:19:54 Made container live com.apple.PowerlogCore.diagnosticextension /private/var/mobile/Containers/Data/PluginKitPlugin/707D96D1-383B-49A0-82E3-3E17D36BD0EE

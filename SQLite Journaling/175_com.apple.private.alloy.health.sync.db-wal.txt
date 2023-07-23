@@ -1,0 +1,23 @@
+"SQLite format 3
+Qtablekey_value_storekey_value_store
+CREATE TABLE key_value_store (key TEXT PRIMARY KEY, expiration REAL NOT NULL, value BLOB NOT NULL)=
+indexsqlite_autoindex_key_value_store_1key_value_store
+SQLite format 3
+indexkey_value_store_by_expirationkey_value_store
+CREATE INDEX key_value_store_by_expiration ON key_value_store(expiration)
+
+wSQLite format 3
+5tablemessage_recordsmessage_records
+CREATE TABLE message_records (uuid TEXT NOT NULL PRIMARY KEY, type INTEGER NOT NULL, timestamp DOUBLE NOT NULL, outgoing BOOLEAN NOT NULL, is_request BOOLEAN NOT NULL, length INTEGER NOT NULL, send_timestamp DOUBLE, device_id TEXT NOT NULL, canceled INTEGER NOT NULL DEFAULT 0, error_domain TEXT, error_code INTEGER, error_timestamp DOUBLE)=
+indexsqlite_autoindex_message_records_1message_records
+
+#J
+
+indexmessage_records_timestampmessage_records
+CREATE INDEX message_records_timestamp ON message_records(timestamp)
+eh
+
+ctablerequest_response_mappingsrequest_response_mappings
+CREATE TABLE request_response_mappings (request TEXT NOT NULL REFERENCES message_records(uuid) ON DELETE CASCADE, response TEXT NOT NULL REFERENCES message_records(uuid) ON DELETE CASCADE, UNIQUE (request, response) ON CONFLICT IGNORE)Q
+indexsqlite_autoindex_request_response_mappings_1request_response_mappings	y
+_PH

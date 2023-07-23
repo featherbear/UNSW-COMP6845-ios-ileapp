@@ -1,0 +1,1 @@
+2023-07-08 23:19:50 Made container live com.apple.contacts.ContactsCoreSpotlightExtension /private/var/mobile/Containers/Data/PluginKitPlugin/7E51C160-F05E-41F0-B0B6-3DCA34A3D210

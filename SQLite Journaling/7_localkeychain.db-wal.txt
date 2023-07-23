@@ -1,0 +1,152 @@
+
+IW *
+
+$-w`
+SQLite format 3
+SQLite format 3
+
+$P
+#tablesuccess_countsuccess_count
+CREATE TABLE success_count (
+event_type STRING PRIMARY KEY,
+success_count INTEGER,
+hard_failure_count INTEGER,
+soft_failure_count INTEGER
+)9
+
+indexsqlite_autoindex_success_count_1success_count3
+triggermaintain_ring_buffer_samples_v2samplesCREATE TRIGGER maintain_ring_buffer_samples_v2 AFTER INSERT ON samples
+BEGIN
+DELETE FROM samples WHERE id <= NEW.id - 1000;
+END
+Ytablesamplessamples	CREATE TABLE samples (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,
+name STRING,
+value REAL
+))	
+triggermaintain_ring_buffer_notes_v2notesCREATE TRIGGER maintain_ring_buffer_notes_v2 AFTER INSERT ON notes
+BEGIN
+DELETE FROM notes WHERE id <= NEW.id - 1000;
+ENDl
+7tablenotesnotes
+CREATE TABLE notes (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_soft_failures_v2soft_failuresCREATE TRIGGER maintain_ring_buffer_soft_failures_v2 AFTER INSERT ON soft_failures
+BEGIN
+DELETE FROM soft_failures WHERE id <= NEW.id - 1000;
+END
+Gtablesoft_failuressoft_failures
+CREATE TABLE soft_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_hard_failures_v2hard_failuresCREATE TRIGGER maintain_ring_buffer_hard_failures_v2 AFTER INSERT ON hard_failures
+BEGIN
+DELETE FROM hard_failures WHERE id <= NEW.id - 1000;
+ENDP
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Gtablehard_failureshard_failures
+CREATE TABLE hard_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)i
+tablePropertiesProperties
+CREATE TABLE Properties (
+    key    text primary key,
+    value  text
+)3
+indexsqlite_autoindex_Properties_1Properties
+-Created710576373.640792
+	Created
+Z4[R
+
+f<v`l
+'
+SchemaVersionE3BB7685C22335A3E3FC481B0D59A4F1B2F34031517BC31154745553BEA9C175
+SchemaVersion
+bplist00
+	
+
+
+YeventTimeUbuildYnewschemaWproductYeventTypeZeventClassWmodelidYoldschema^upgradeoutcome#Bx
+U18G82
+	YiPhone OS_
+LKAEventUpgrade
+ZiPhone10,1
+%+5=GRZds|
+'	hard_failures
++	LKAEventUpgrade
+	samples
+	LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T14:37:24.602GMT+08:00Q
+backupLastSuccess
+LKAEventBackup
+samples
+LKAMetricBackupDuration
+
+{ Gxe
+/MbackupLastSuccess2023-07-09T14:39:22.937GMT+08:00Q
+T2LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T14:50:47.474GMT+08:00Q
+/MbackupLastSuccess2023-07-09T16:38:13.710GMT+08:00Q
+
+4uG
+6LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T16:44:32.951GMT+08:00Q
+/MbackupLastSuccess2023-07-09T16:51:42.221GMT+08:00Q
+
+`O26
+/MbackupLastSuccess2023-07-09T16:56:31.937GMT+08:00Q
+backupLastSuccess	
+
+gd
+NH:|
+
+/MbackupLastSuccess2023-07-09T17:01:07.024GMT+08:00Q
+backupLastSuccess
+
+LKAEventBackup	
+samples	
+{\JLKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T17:19:13.927GMT+08:00Q
+backupLastSuccess
+K;.7
+
+LKAEventBackup
+
+[>i
+
+samples
+
+/MbackupLastSuccess2023-07-09T18:43:54.373GMT+08:00Q
+backupLastSuccess
+
+gL-A
+LKAEventBackup
+samples
+BLKAMetricBackupDuration
+7{p
+
+/MbackupLastSuccess2023-07-09T19:06:00.837GMT+08:00Q
+LKAEventBackup
+samples
+TLKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T19:06:07.453GMT+08:00Q
+EHZM
+
+00d
+/MbackupLastSuccess2023-07-09T19:09:36.412GMT+08:00Q
+M^LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-09T19:09:43.302GMT+08:00Q
+
+x{b9
+RvV!
+]LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-10T08:38:05.555GMT+08:00Q
+/~F ~
+~LKAMetricBackupDuration
+/MbackupLastSuccess2023-07-10T08:38:12.559GMT+08:00Q

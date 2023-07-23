@@ -1,0 +1,224 @@
+SQLite format 3
+
+#u
+indexreceiver_data_indexcfurl_cache_receiver_dataCREATE INDEX receiver_data_index ON cfurl_cache_receiver_data(entry_ID)t	
+indexproto_props_indexcfurl_cache_blob_dataCREATE INDEX proto_props_index ON cfurl_cache_blob_data(entry_ID)r
+indextime_stamp_indexcfurl_cache_response
+CREATE INDEX time_stamp_index ON cfurl_cache_response(time_stamp)u
+indexrequest_key_indexcfurl_cache_response	CREATE INDEX request_key_index ON cfurl_cache_response(request_key)+
+etablecfurl_cache_receiver_datacfurl_cache_receiver_data
+CREATE TABLE cfurl_cache_receiver_data(entry_ID INTEGER PRIMARY KEY, isDataOnFS INTEGER, receiver_data BLOB)I
+1tablecfurl_cache_blob_datacfurl_cache_blob_data
+CREATE TABLE cfurl_cache_blob_data(entry_ID INTEGER PRIMARY KEY, response_object BLOB, request_object BLOB, 			  proto_props BLOB, user_info BLOB)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+gtablecfurl_cache_responsecfurl_cache_response
+CREATE TABLE cfurl_cache_response(entry_ID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 	 version INTEGER, hash_value INTEGER, storage_policy INTEGER, request_key TEXT UNIQUE, 	 time_stamp NOT NULL DEFAULT CURRENT_TIMESTAMP, partition TEXT)G
+indexsqlite_autoindex_cfurl_cache_response_2cfurl_cache_response
+indexsqlite_autoindex_cfurl_cache_response_1cfurl_cache_response
+Ehttps://p24-sharedstreams.icloud.com:443/20977765650/sharedstreams/configuration2023-07-09 06:34:32
+-	https://p24-sharedstreams.icloud.com:443/20977765650/sharedstreams/configuration
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+,-
+_CFURLStringType\_CFURLString
+Phttps://p24-sharedstreams.icloud.com:443/20977765650/sharedstreams/configuration#A
+-F<"t~
+ !"#$%&'()*+\Content-Type_
+X-Apple-Request-UUIDSViaVServer_
+x-apple-user-partition_
+Content-Encoding_
+access-control-expose-headers_
+X-Responding-InstanceTDate_
+X-Apple-Edge-Response-Time_
+Strict-Transport-Security^Content-Length_
+(x-apple-mme-sharedstreams-config-versionZConnectionX__hhaa___
+text/plain; charset=UTF-8_
+$55999e18-14a0-48f1-9286-b77e14b3d64a_
+~xrail:mr47p00ic-qujn05091902.me.com:8301:23R167:grp20,631194250daa17e24277dea86cf30319:4ac7b535e37cb3bf919106ff6afa1170:ausyd2_
+AppleHttpServer/3faf4ee9434bR24Tgzip_
+X-Apple-Request-UUID,Via_
+Esharedstreams:32400301:mr11p24ic-ztav081530:8001:2319B85:6f93cee48fb0_
+Sun, 09 Jul 2023 06:34:32 GMTS219_
+$max-age=31536000; includeSubDomains;S876S1.8Zkeep-alive_
+
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHR8hIyUnKVxDb250ZW50LVR5cGVfEBRYLUFwcGxlLVJlcXVlc3QtVVVJRFNWaWFWU2VydmVyXxAWeC1hcHBsZS11c2VyLXBhcnRpdGlvbl8QEENvbnRlbnQtRW5jb2RpbmdfEB1hY2Nlc3MtY29udHJvbC1leHBvc2UtaGVhZGVyc18QFVgtUmVzcG9uZGlu
+d<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>com.apple.sharedstreams.config.maxNumDerivativesToPrefetchPerDay</key>
+		<string>50</string>
+
+		<key>com.apple.sharedstreams.config.maxNumInvites.daily</key>
+		<string>200</string>
+
+		<key>com.apple.sharedstreams.config.maxNumRetriesOnFailure.server</key>
+		<string>5</string>
+
+		<key>mme.basephotos.config.defaultRetryAfterInSeconds</key>
+		<string>60</string>
+
+		<key>com.apple.sharedstreams.config.maxNumPhotosToSendInShareAction</key>
+		<string>1</string>
+
+		<key>com.apple.sharedstreams.config.maxpixels.preview</key>
+		<string>3145728</string>
+
+		<key>com.apple.sharedstreams.config.maxNumPhotosToShare.hourly</key>
+		<string>1000</string>
+
+		<key>com.apple.sharedstreams.config.videoderivatives</key>
+		<array>
+			<dict>
+				<key>powerRequired</key>
+				<string>0</string>
+
+				<key>bitRate</key>
+				<string>0.84</string>
+
+				<key>videoType</key>
+				<string>PosterFrame</string>
+
+				<key>cellular</key>
+				<string>1</string>
+
+			</dict>
+			<dict>
+				<key>powerRequired</key>
+				<string>1</string>
+
+				<key>bitRate</key>
+				<string>2.8</string>
+
+				<key>videoType</key>
+				<string>720p</string>
+
+				<key>cellular</key>
+				<string>1</string>
+
+			</dict>
+			<dict>
+				<key>powerRequired</key>
+				<string>0</string>
+
+				<key>bitRate</key>
+				<string>0.84</string>
+
+				<key>videoType</key>
+				<string>360p</string>
+
+				<key>cellular</key>
+				<string>1</string>
+
+			</dict>
+		</array>
+
+		<key>com.apple.sharedstreams.config.maxNumRetriesOnFailure.network</key>
+		<string>10</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.photosPerAlbum</key>
+		<string>5000</string>
+
+		<key>com.apple.sharedstreams.config.maxActiveTimeAfterLossOfForeground</key>
+		<string>120</string>
+
+		<key>com.apple.sharedstreams.config.dimensions.thumbnail</key>
+		<string>256:332:455</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.subscribedAlbums</key>
+		<string>200</string>
+
+		<key>com.apple.sharedstreams.config.dimensions.invites</key>
+		<string>308:399:547:308:399:547:152:197:270:152:197:270:100:130:178:100:130:178</string>
+
+		<key>com.apple.sharedstreams.config.maxNumDerivativesToDownloadPerPush</key>
+		<string>15</string>
+
+		<key>com.apple.sharedstreams.config.maxVideoDurationInSeconds</key>
+		<string>900</string>
+
+		<key>com.apple.sharedstreams.config.maxpixels.thumbnail</key>
+		<string>172800</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.subscribersPerAlbum</key>
+		<string>100</string>
+
+		<key>com.apple.sharedstreams.config.minIntervalBetweenPollInSeconds</key>
+		<string>864000</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.ownedAlbums</key>
+		<string>200</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.charactersPerComment</key>
+		<string>1024</string>
+
+		<key>com.apple.sharedstreams.config.configVersion</key>
+		<string>1.8</string>
+
+		<key>com.apple.sharedstreams.config.maxActiveTimeAfterPush</key>
+		<string>60</string>
+
+		<key>com.apple.sharedstreams.config.maxActiveTimeAfterGlobalResetSync</key>
+		<string>600</string>
+
+		<key>com.apple.sharedstreams.config.maxNumPhotosToShare.daily</key>
+		<string>10000</string>
+
+		<key>com.apple.sharedstreams.config.maxnum.commentsPerPhoto</key>
+		<string>200</string>
+
+		<key>com.apple.sharedstreams.config.dimensions.preview</key>
+		<string>1536:2048:5400</string>
+
+		<key>com.apple.sharedstreams.config.maxUploadAssetBatchSize</key>
+		<string>5</string>
+
+		<key>com.apple.sharedstreams.config.maxNumRetriesOnFailure.content</key>
+		<string>5</string>
+
+		<key>com.apple.sharedstreams.config.dimensions.videoposterframe</key>
+		<string>1280:720</string>
+
+		<key>com.apple.sharedstreams.config.switch.comments</key>
+		<string>1</string>
+
+		<key>com.apple.sharedstreams.config.prevVersion</key>
+		<string>1.7</string>
+
+		<key>com.apple.sharedstreams.config.switch.3G</key>
+		<string>1</string>
+
+	</dict>
+</plist>
+3	2023-07-09 06:34:32
+Zy1JbnN0YW5jZVREYXRlXxAaWC1BcHBsZS1FZGdlLVJlc3BvbnNlLVRpbWVfEBlTdHJpY3QtVHJhbnNwb3J0LVNlY3VyaXR5XkNvbnRlbnQtTGVuZ3RoXxAoeC1hcHBsZS1tbWUtc2hhcmVkc3RyZWFtcy1jb25maWctdmVyc2lvblpDb25uZWN0aW9uoRBfEBl0ZXh0L3BsYWluOyBjaGFyc2V0PVVURi04oRJfECQ1NTk5OWUxOC0xNGEwLTQ4ZjEtOTI4Ni1iNzdlMTRiM2Q2NGGhFF8QfnhyYWlsOm1yNDdwMDBpYy1xdWpuMDUwOTE5MDIubWUuY29tOjgzMDE6MjNSMTY3OmdycDIwLDYzMTE5NDI1MGRhYTE3ZTI0Mjc3ZGVhODZjZjMwMzE5OjRhYzdiNTM1ZTM3Y2IzYmY5MTkxMDZmZjZhZmExMTcwOmF1c3lkMqEWXxAcQXBwbGVIdHRwU2VydmVyLzNmYWY0ZWU5NDM0YqEYUjI0oRpUZ3ppcKEcXxAYWC1BcHBsZS1SZXF1ZXN0LVVVSUQsVmlhoR5fEEVzaGFyZWRzdHJlYW1zOjMyNDAwMzAxOm1yMTFwMjRpYy16dGF2MDgxNTMwOjgwMDE6MjMxOUI4NTo2ZjkzY2VlNDhmYjChIF8QHVN1biwgMDkgSnVsIDIwMjMgMDY6MzQ6MzIgR01UoSJTMjE5oSRfECRtYXgtYWdlPTMxNTM2MDAwOyBpbmNsdWRlU3ViRG9tYWluczuhJlM4NzahKFMxLjihKlprZWVwLWFsaXZlAAgAJQAyAEkATQBUAG0AgACgALgAvQDaAPYBBQEwATsBPQFZAVsBggGEAgUCBwImAigCKwItAjICNAJPAlECmQKbArsCvQLBAsMC6gLsAvAC8gL2AvgAAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAADAw==
+Ztext/plain
+Rbplist00
+Phttps://p24-sharedstreams.icloud.com:443/20977765650/sharedstreams/configuration#@N
+__CFURLRequestNullTokenString__	
+SGET
+ !"#$%&'()*+,-./01234\Content-Type_
+X-Apple-I-MD-RINFO]AuthorizationVAccept_
+&x-apple-mme-sharedstreams-client-token_
+x-mme-client-info_
+Accept-Language_
+Accept-Encoding_
+X-Apple-I-TimeZone^X-Apple-I-MD-M\X-Apple-I-MD_
+X-Apple-I-Client-Time_
+!x-apple-mme-sharedstreams-versionX__hhaa___
+X-Apple-I-LocaleZtext/plistX84215040_
+5X-MobileMe-AuthToken MjA5Nzc3NjU2NTA6RUFBQ0FBQUFCTHdJQUFBQUFHU3FWTFlSRG1kekxtbGpiRzkxWkM1aGRYUm92UUJYYVJDVGtWdEZBK3ltNm1SR0xLc0R1Z0Fxa0FPY0p1ZGFrTjMzcUFmZWhSSjJTZFJSYjMyNTIyWTNIdlJacXloZUFPQ0VpbjQ0UVZCMmZRLzNteFVrTlkyMk5xRjlzcUZtWFdFY0xIRlhWYzFOd1crbW5UYmx0clhPT0ZET01JRmxtb250Y2RJN1BRUytEVzk5NWRPMzIyNlZDdz09S*/*_
+@5c161c9725e12834f238a6fe5ea6594f281908603e58d0545e8a4c2812165bfc_
+h<iPhone10,1><iPhone OS;14.7.1;18G82><com.apple.CoreMediaStream/1.0 (com.apple.mediastream.mstreamd/1.0)>Uen-au_
+gzip, deflate, brUGMT-7_
+PijIi8CPuz4aT9uJFgsHPxgWN8pV6VLIhHA8sbHzLX85Gx9MHzT4+5vB6E9ScpYij9lZwWEmXzHi0e/7c_
+(AAAABQAAABAVGywRGDaDWS4WH/uHTYXsAAAAAw==_
+2023-07-09T06:34:31Z\6oWcrYvjLx0f_
+$
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHR8hIyUnKVxDb250ZW50LVR5cGVfEBJYLUFwcGxlLUktTUQtUklORk9dQXV0aG9yaXphdGlvblZBY2NlcHRfECZ4LWFwcGxlLW1tZS1zaGFyZWRzdHJlYW1zLWNsaWVudC10b2tlbl8QEXgtbW1lLWNsaWVudC1pbmZvXxAPQWNjZXB0LUxhbmd1YWdlXxAPQWNjZXB0LUVuY29kaW5nXxASWC1BcHBsZS1JLVRpbWVab25lXlgtQXBwbGUtSS1NRC1NXFgtQXBwbGUtSS1NRF8QFVgtQXBwbGUtSS1DbGllbnQtVGltZV8QIXgtYXBwbGUtbW1lLXNoYXJlZHN0cmVhbXMtdmVyc2lvbl8QEFgtQXBwbGUtSS1Mb2NhbGWhEFp0ZXh0L3BsaXN0oRJYODQyMTUwNDChFF8RATVYLU1vYmlsZU1lLUF1dGhUb2tlbiBNakE1TnpjM05qVTJOVEE2UlVGQlEwRkJRVUZDVEhkSlFVRkJRVUZIVTNGV1RGbFNSRzFrZWt4dGJHcGlSemt4V2tNMWFHUllVbTkyVVVKWVlWSkRWR3RXZEVaQkszbHRObTFTUjB4TGMwUjFaMEZ4YTBGUFkwcDFaR0ZyVGpNemNVRm1aV2hTU2pKVFpGSlNZak15TlRJeVdUTklkbEphY1hsb1pVRlBRMFZwYmpRMFVWWkNNbVpSTHpOdGVGVnJUbGt5TWs1eFJqbHpjVVp0V0ZkRlkweElSbGhXWXpGT2QxY3JiVzVVWW14MGNsaFBUMFpFVDAxSlJteHRiMjUwWTJSSk4xQlJVeXRFVnprNU5XUlBNekl5TmxaRGR6MDmhFlMqLyqhGF8QQDVjMTYxYzk3MjVlMTI4MzRmMjM4YTZmZTVlYTY1OTRmMjgxOTA4NjAzZTU4ZDA1NDVlOGE0YzI4MTIxNjViZmOhGl8QaDxpUGhvbmUxMCwxPjxpUGhvbmUgT1M7MTQuNy4xOzE4RzgyPjxjb20uYXBwbGUuQ29yZU1lZGlhU3RyZWFtLzEuMCAoY29tLmFwcGxlLm1lZGlhc3RyZWFtLm1zdHJlYW1kLzEuMCk+oRxVZW4tYXWhHl8QEWd6aXAsIGRlZmxhdGUsIGJyoSBVR01ULTehIl8QUGlqSWk4Q1B1ejRhVDl1SkZnc0hQeGdXTjhwVjZWTEloSEE4c2JIekxYODVHeDlNSHpUNCs1dkI2RTlTY3BZaWo5bFp3V0VtWHpIaTBlLzdjoSRfEChBQUFBQlFBQUFCQVZHeXdSR0RhRFdTNFdIL3VIVFlYc0FBQUFBdz09oSZfEBQyMDIzLTA3LTA5VDA2OjM0OjMxWqEoXDZvV2NyWXZqTHgwZqEqVWVuX0FVAAgAJQAyAEcAVQBcAIUAmQCrAL0A0gDhAO4BBgEqAT0BPwFKAUwBVQFXApACkgKWApgC2wLdA0gDSgNQA1IDZgNoA24DcAPDA8UD8APyBAkECwQYBBoAAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAAEIA==Uen_AU

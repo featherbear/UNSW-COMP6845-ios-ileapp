@@ -1,0 +1,15 @@
+﻿Timestamp	Account Desc.	Username	Description	Identifier	Bundle ID
+2023-07-08 20:20:30	iTunes Store	local		9E302A87-787D-4022-B003-8014B7DAB8CD	itunesstored
+2023-07-08 20:33:18	IDMS	tom.jonsey91@gmail.com		824EC85B-77F2-47FB-AD54-BAF374FA2206	com.apple.AuthKit
+2023-07-08 20:33:18	Apple ID	tom.jonsey91@gmail.com		C4EE4BAA-CC9A-47B1-AF07-D61115440CF7	com.apple.AuthKit
+2023-07-08 20:33:26	Messages	tom.jonsey91@gmail.com		1BAEFC7C-5937-43D2-99F0-74048F02786A	com.apple.purplebuddy
+2023-07-08 20:33:26	Game Center	tom.jonsey91@gmail.com	tom.jonsey91@gmail.com	895E200E-E6EB-4563-9B6C-6B96D2A1D0C1	com.apple.purplebuddy
+2023-07-08 20:33:27	CloudKit	tom.jonsey91@gmail.com		4EDC2062-789E-4353-9BFA-58A088B82F06	com.apple.accounts.accountsd
+2023-07-08 20:33:27	iCloud	tom.jonsey91@gmail.com	iCloud	2757441C-D046-4C70-A8DC-D7FA5FD91FD5	com.apple.purplebuddy
+2023-07-08 20:34:26	CalDAV			552A5D6F-7138-49CC-B642-E7887C6C0A83	com.apple.accounts.accountsd
+2023-07-08 20:34:26	IMAPNotes			8E6B5C88-CB0E-48DF-9473-C483899880AE	com.apple.accounts.accountsd
+2023-07-08 20:34:26	CardDAV			5E245C7C-1573-4837-ABFC-C9F9E773D65C	com.apple.accounts.accountsd
+2023-07-08 20:34:27	Device Locator	tom.jonsey91@gmail.com	iCloud - Device Locator	BBE98130-23D0-4E82-B523-AE966AA7FB4F	com.apple.accountsd
+2023-07-08 20:34:28	Find My Friends	tom.jonsey91@gmail.com	iCloud - Find My Friends	5551C439-C8BE-4531-B443-BB1B739579EE	com.apple.accountsd
+	iTunes Store	tom.jonsey91@gmail.com		3CEB6D59-258B-47B3-AFB1-AD1B64C4C826	com.apple.purplebuddy
+2023-07-08 20:35:41	Holiday Calendar		Australian Holidays	0A6E102E-5434-4CB7-BADD-8993E859F30A	dataaccessd

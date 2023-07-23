@@ -1,0 +1,68 @@
+lS*C
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+?db.
+84*
+
+D?<
+
+/574: 
+
+TQUW
+trainingSignalLabels:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+VZ?H
+OWC1HWP
+c;!n6
+:	t(bZ
+qk;$.)
+BU*
+FdE{F0N
+)0'0%
+G5/Q{
+<R	(	2b
+(767F418CBCC93EB1B657EE6BE4D7FE38697BD38B
+"#$YNS.string
++591oCkX25wmauYn8oRWqxF2YcpTjpQjletlu9NI01to
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+trainingSignalLabels_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+com.apple.coreidv.service-messages2757441C-D046-4C70-A8DC-D7FA5FD91FD5trainingSignalLabels:__defaultOwner__A
+W	trainingSignalLabels:__defaultOwner__
+S2?
+
+	trainingSignalLabels:__defaultOwner__
+com.apple.coreidv.service-messages2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+WUQ	trainingSignalLabels:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.coreidv.service-messages
+UQ	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.coreidv.service-messages

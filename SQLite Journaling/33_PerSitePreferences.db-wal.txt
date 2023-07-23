@@ -1,0 +1,13 @@
+^SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)0
+tabledefault_preferencesdefault_preferences
+CREATE TABLE default_preferences (id INTEGER PRIMARY KEY AUTOINCREMENT,preference TEXT NOT NULL UNIQUE,default_value NUMERIC)E
+indexsqlite_autoindex_default_preferences_1default_preferences
+SQLite format 3
+[tablepreference_valuespreference_values
+CREATE TABLE preference_values (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL,preference TEXT NOT NULL,preference_value NUMERIC,UNIQUE(domain, preference))A
+indexsqlite_autoindex_preference_values_1preference_values
+4KpSQLite format 3
+{tablepreference_valuespreference_values
+CREATE TABLE preference_values (id INTEGER PRIMARY KEY AUTOINCREMENT,domain TEXT NOT NULL,preference TEXT NOT NULL,preference_value NUMERIC, timestamp TEXT,UNIQUE(domain, preference))A

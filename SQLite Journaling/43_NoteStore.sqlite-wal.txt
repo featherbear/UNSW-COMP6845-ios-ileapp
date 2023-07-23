@@ -1,0 +1,488 @@
+69E7E630E-A3A2-4CEE-B556-6AE82C472D70bplist00
+
+
+01_
+NSStoreModelVersionIdentifiers[NSStoreType_
+_NSAutoVacuumLevel_
+NSStoreModelVersionHashesDigest_
+NSStoreModelVersionHashes_
+NSPersistenceFrameworkVersion_
+ NSStoreModelVersionHashesVersion
+	PVSQLiteQ2_
+XOuhkdcTvT6JXzXE+gi2GryaHP9VCtmKOVMIJuUYcwJ2UluVBjNRryQvWIMGx2IxAoPLl6lgOO+u08pkoSGrtuw==
+ !"#$%&'()*+,-./_
+ICLegacyTombstone_
+ICServerChangeTokenXICFolderYICAccount]ICAccountData_
+ICAttachmentPreviewImage_
+ICDeviceMigrationState_
+ICInlineAttachmentZICLocation_
+ICNoteContainer\ICCloudStateVICNote\ICAttachmentZICNoteDataWICMedia_
+ICAttachmentLocation_
+ICCloudSyncingObjectO
+(ynw
+ZVM2
+Ca5W
+Fx8p
+0AvL$
+`CW`
+|q{&l
+EU0R
+`
+kP
+P;YO
+82?{
+ !~H
+?{~)
+>apO
+kG%
+
+	TRANSACTION
+TRANSACTIONSTRING
+ICCloudState
+ICServerChangeToken
+ICNoteData
+ICAttachmentLocation
+ICLocation
+ICFolder
+ICAccount
+ICNoteContainer
+ICNote
+ICMedia
+ICLegacyTombstone
+ICInlineAttachment
+ICDeviceMigrationState
+ICAttachmentPreviewImage
+ICAttachment
+ICAccountData
+CHANGE
+ICCloudSyncingObject
+-FAK,
+-FAK!h
+-FAQ
+-
+L	&u
+
+TrashFolder-LocalAccount3_On My iPhoneRecently Deleted
+
+DefaultFolder-LocalAccount3_On My iPhoneNotesI
+LocalAccount3_On My iPhoneOn My iPhoneF
+DefaultFolder-CloudKit1_iCloudNotes
+					
+2757441C-D046-4C70-A8DC-D7FA5FD91FD51_iCloudiCloud
+vDeviceMigrationState_2757441C-D046-4C70-A8DC-D7FA5FD91FD52757441C-D046-4C70-A8DC-D7FA5FD91FD5P
+TrashFolder-CloudKit1_iCloudRecently Deleted
+D'k
+
+k6fK
+k*KA
+iA-B
+
+kqq
+k(y
+jx)[
+DefaultFolder-LocalAccount
+LocalAccount
+TrashFolder-LocalAccount
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+	DeviceMigrationState_2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+TrashFolder-CloudKit
+DefaultFolder-CloudKit
+TRANSACTION
+lRP
+
+-FAR
+ViewContext
+MobileNotes
+com.apple.mobilenotes
+
+accountsd
+com.apple.accountsd
+com.apple.mobilenotes
+3	com.apple.accountsd
+^tcJl
+
+kZ0
+kL2d
+k2PO1
+kf
+RkWo
+
+TRANSACTIONSTRING
+
+k::}
+SQLite format 3
+-FAK!h
+	&u
+
+2757441C-D046-4C70-A8DC-D7FA5FD91FD51_iCloudiCloud_6feb1b88217985ff762dbe50e6cdf492bplist00
+VX$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	
+
+
+ !"#$%&'()*+,-./0/2//06/////<=/////C/E/0///K60/0/QR/0/_
+TombstonedPublicKeyIDs_
+HasUpdatedParentReference_
+ChainProtectionData]KnownToServer_
+DisplayedHostnameYBaseToken_
+WantsChainPCSKey[RecordCtimeZRoutingKey_
+ProtectionDataEtag_
+&PreviousProtectionDataEtagFromUnitTest_
+ConflictLoserEtags_
+PreviousProtectionDataEtagZRecordType_
+CreatorUserRecordID_
+ParentReferenceYShareEtagXPCSKeyID\ZoneishKeyID_
+ MutableEncryptedPublicSharingKeyTETag_
+PreviousShareReference_
+ModifiedByDevice^ProtectionData_
+UseLightweightPCS^ShareReferenceSURL_
+ChainParentPublicKeyID_
+LastModifiedUserRecordID[RecordMtime_
+WantsPublicSharingKey_
+ZoneProtectionDataEtagYWasCached_
+ChainPrivateKeyZPermissionXRecordID\AllPCSKeyIDs_
+HasUpdatedShareReference_
+PreviousParentReference
+WXY`aghiptx{
+U$nullUUsers
+Z[\]^_V$classZRecordNameVZoneID
+!_6feb1b88217985ff762dbe50e6cdf492
+bcZdefXZoneNameYownerName
+\_defaultZone_
+__defaultOwner__
+jklmZ$classnameX$classes^CKRecordZoneID
+no^CKRecordZoneIDXNSObject
+jkqrZCKRecordID
+soZCKRecordID
+uZvwWNS.time#A
+jkyzVNSDate
+Z[\]}_
+Z[\]
+__defaultOwner__VSystemXljv290f6
+TRANSACTIONSTRING
+-GX_
+Q
+W?
+kNpH
+k	,c
+	ICServerChangeToken
+XWI|
+-GXa
+kWzP
+k&z
+O=z
+
+-GXd
+kOs
+e<Dr
+
+9dIC
+;dC3p
+
+k_/=
+oB>
+
+"-m
+
+kErw
+kH?
+TRANSACTION	
+k-u
+=D-X
+
+	ICNoteData
+-GY/
+-GY,$A
+-GY,$C27B7FFC-3FE8-4956-82E6-C42FB39EA6BBNew Note
+
+&2$
+
+"integerValue"	UUIDIndex*
+com.apple.CRDT.NSNumber*
+com.apple.CRDT.NSString*
+com.apple.CRDT.NSUUID*
+com.apple.CRDT.CRTuple*(com.apple.CRDT.CRRegisterMultiValueLeast*#com.apple.CRDT.CRRegisterMultiValue*
+com.apple.CRDT.CRTree*
+com.apple.CRDT.CRTreeNode*1com.apple.notes.ICCloudSyncingObjectActivityEvent*
+com.apple.notes.CRTable*
+com.apple.notes.ICTable2
+#"!_6feb1b88217985ff762dbe50e6cdf492
+&"$0D264AD5-8EFF-47A1-8EE8-BFD797C06A3A
+&"$A6A8D3FC-9FF8-417C-ACF7-9B32374ADFE9"
+self*
+k,#
+kfe
+	2^m
+
+k9b
+}e*A
+7}2
+ksj
+kxk5
+^6oh
+kZ.
+C27B7FFC-3FE8-4956-82E6-C42FB39EA6BB
+TRANSACTION
+
+CHANGE"
+-GY1oJ	
+4GN
+
+-GY1o
+
+-GY@_
+-GY@0w
+
+-GY@.4
+-GY@+s
+kiU
+vDeviceMigrationState_2757441C-D046-4C70-A8DC-D7FA5FD91FD52757441C-D046-4C70-A8DC-D7FA5FD91FD5
+TRANSACTION
+CHANGE'
+$
+%	
+.:l1SQLite format 3
+TRANSACTION
+CHANGE)
+k_?+
+
+{
+l
+Y
+-GZ)
+&y6A
+k=L
+#lqH
+
+TrashFolder-CloudKit1_iCloudRecently DeletedG
+DefaultFolder-CloudKit1_iCloudNotesv
+vDeviceMigrationState_2757441C-D046-4C70-A8DC-D7FA5FD91FD52757441C-D046-4C70-A8DC-D7FA5FD91FD5bplist00
+ !"#$%&'()*+,-./0/23/06/////<=/////C/E/0///K60/0/QR/0/_
+U$null^MigrationState
+$2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+XMetadata_
+Z[\]}~
+__defaultOwner___
+@4DEE3B6FA2A0B6D9A5DF79BAA928F7475626DD84BAF11675CF906AC76F8461B6Q3^www.icloud.com
+k$m
+k9<4
+CHANGE+
+
+{
+l
+Y
+I
+3
+
+Y
+
+
+-GZ+
+kq`C
+O?]z
+5'?q
+
+k
+Xs
+kkd
+DefaultFolder-CloudKit1_iCloudNotesbplist00
+ !"#$%&'()*+,-./0/23/26/////<=/////C/E/0///K60/0/QR/0/_
+U$nullVFolder
+UNotes_
+CHANGE-
+
+{
+l
+Y
+I
+3
+
+
+Y
+
+
+-GZ-j{
+k,k
+*s?
+TrashFolder-CloudKit1_iCloudRecently Deletedbplist00
+@4DEE3B6FA2A0B6D9A5DF79BAA928F7475626DD84BAF11675CF906AC76F8461B6Q4^www.icloud.com
+HPSQLite format 3
+9.qU
+CHANGE.
+-GZ/XK
+dtKTc
+khC
+>g~
+
+k
+L9
+bplist00
+U$null_
+Folder_UserSpecific
+Folder_UserSpecific::_6feb1b88217985ff762dbe50e6cdf492/Private::Notes::_6feb1b88217985ff762dbe50e6cdf492::DefaultFolder-CloudKit
+@4DEE3B6FA2A0B6D9A5DF79BAA928F7475626DD84BAF11675CF906AC76F8461B6Q5^www.icloud.com
+kGV
+CHANGE/
+u)
+-GZ1
+k[,
+kmE
+~Folder_UserSpecific::_6feb1b88217985ff762dbe50e6cdf492/Private::Notes::_6feb1b88217985ff762dbe50e6cdf492::TrashFolder-CloudKit
+@4DEE3B6FA2A0B6D9A5DF79BAA928F7475626DD84BAF11675CF906AC76F8461B6Q6^www.icloud.com
+bV,L
+-GZ5
+LRb\
+pIq	,[q
+fJ0fl^
+CHANGE2
+kMgt
+o>2
+
+k1-
+u)
+-GZ7t
+kdFR,
+u{|
+
+C27B7FFC-3FE8-4956-82E6-C42FB39EA6BBBuy
+
+CHANGE4
+u)
+ !"#$%&'()*+,-./0/23/26/////<=/////C/E/0///KL0/0/QR/0/_
+WXY`aghiptx{~
+uZ|w#A
+-GZc33
+__defaultOwner__l
+eQ7^www.icloud.com
+CHANGE6
+n^
+1QS
+
+k;Vjen
+ 2(T"
+
+kTy
+-GZe
+eQ8^www.icloud.com
+}bplist00
+kfMs?
+}SQLite format 3
+kL7
+CHANGE8
+n^N7
+s'
+k(!
+01U
+
+j:bplist00
+ !"#$%&'()*+,-./0/23/06/////<=>////C/E/0//JK60/0/QR/0U_
+U$nullTNote
+$C27B7FFC-3FE8-4956-82E6-C42FB39EA6BB
+-GZe?}
+eQ9O
+referenceActionXrecordID
+[CKReference
+o[CKReference
+^www.icloud.com
+-GZs
+CHANGE:
+n^N7'
+s'	
+k
+J{
+k 8
+z/u
+
+CHANGE;
+s'	
+
+"Sf
+
+k\k
+kv_
+CHANGE=
+kexD
+HEy
+
+k!B~L3
+ !"#$%&'()*+,-./0/23/06/////<=/////C/E/0///KL0/0/QR/0/_
+-GZ_
+eQ4^www.icloud.com
+CHANGE?
+k(:
+k 1(
+1HG
+
+ !"#$%&'()*+,-./0/23/06/////<=>////C/E/0//JKL0/0/QR/0U_
+eQaO
+k[@
+-P>+
+CHANGEA
+
+S
+5
+k'e
+Vpu\hO
+
+_x.=
+
+"h\
+
+AKs
+
+CHANGEB
+
+S
+5
+
+kt<
+k?p
+kdZ
+C27B7FFC-3FE8-4956-82E6-C42FB39EA6BBBuy frui
+
+TH+*
+*6)1.
+CHANGEE
+iYI
+x*{W
+
+-G\^
+k;/W
+k:)
+C27B7FFC-3FE8-4956-82E6-C42FB39EA6BBBuy fruit
+
+CHANGEG
+iYI9"
+kK
+
+kSO6
+eQbO
+CHANGEJ
+RZ]
+
+iYI9"
+*SY	
+
+kWQ)X
+rCx
+
+C27B7FFC-3FE8-4956-82E6-C42FB39EA6BBApplesBuy fruit
+
+Yh<r
+CHANGEL
+kUE<
+k>H_[
+kQ{
+X19J
+eQcO
+CHANGEN
+k{e0
+I7J
+k#l]
+=
+_>
+k'@
+)| d
+s$R	
+eQdO
+k;2

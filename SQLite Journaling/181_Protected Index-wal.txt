@@ -1,0 +1,33 @@
+=SQLite format 3
+?tableprotected_message_dataprotected_message_data
+CREATE TABLE protected_message_data (ROWID INTEGER PRIMARY KEY,
+data TEXT COLLATE BINARY)
+{*SQLite format 3
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)W
+}tableaddressesaddresses
+CREATE TABLE addresses (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+address TEXT COLLATE NOCASE NOT NULL,
+comment TEXT COLLATE BINARY NOT NULL,
+UNIQUE(address, comment) ON CONFLICT ABORT)1
+indexsqlite_autoindex_addresses_1addresses
+SQLite format 3
+tablesummariessummaries
+CREATE TABLE summaries (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+summary TEXT COLLATE RTRIM NOT NULL,
+UNIQUE(summary) ON CONFLICT ABORT)1
+indexsqlite_autoindex_summaries_1summaries
+b9&}!
+b9!e
+tablesubjectssubjects
+CREATE TABLE subjects (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,
+subject TEXT COLLATE RTRIM NOT NULL,
+UNIQUE(subject) ON CONFLICT ABORT)/
+indexsqlite_autoindex_subjects_1subjects	'
+b9+i']
+b9D8
+b9qE
+subjects
+summaries
+addresses
+protected_message_data

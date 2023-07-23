@@ -1,0 +1,6 @@
+2023-07-09 14:41:57 Data container moved com.apple.MobileAddressBook /private/var/mobile/Containers/Data/Application/E2701F6D-9B61-4704-80D6-29633D8AAEE2
+2023-07-09 14:41:57 Made container live com.apple.MobileAddressBook /private/var/containers/Bundle/Application/6880A73B-C086-4F4D-A937-43CD3103F492
+2023-07-09 14:41:57 Install successful com.apple.MobileAddressBook 
+2023-07-08 23:20:23 Made container live com.apple.MobileAddressBook /private/var/mobile/Containers/Data/Application/64A81DBB-520E-463B-8100-ED2813154BA4
+2023-07-08 23:20:23 Made container live com.apple.MobileAddressBook /private/var/containers/Bundle/Application/118A4F83-EAA7-4DC0-A47C-9384FC99FF3E
+2023-07-08 23:20:23 Install successful com.apple.MobileAddressBook 

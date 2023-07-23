@@ -1,0 +1,136 @@
+3%SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+SQLite format 3
+com.apple.assistant.backedup:__defaultOwner__
+com.apple.assistant.multiuser.shared:__defaultOwner__
+s	com.apple.assistant.account.status:__defaultOwner__
+com.apple.siri.profile22757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+	com.apple.assistant.account.status:__defaultOwner__
+com.apple.assistant.backedup:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.siri.profile2
+com.apple.assistant.multiuser.shared:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.siri.profile2
+sU;	com.apple.assistant.account.status:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.siri.profile2
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.siri.profile2
+U;	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.siri.profile2
+*;Us
+com.apple.assistant.account.status:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459=BCU$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+M[va
+]xon
+u4R9
+)0'0%
+lY6>K
+Tl_kY
+ ,85
+(436FD4814FCEDB1196FCCCC3E9F51B1DFABEFAAC
+"#$YNS.string
++_neH1Hh1yxZYHkLGqO97HozVpptHqkYvTIED4E_p5o0
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+"com.apple.assistant.account.status_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.dataO
+s4V2
+A<0N
+#wi\m
+:[4O
+&'>?]NSMutableData
+@A,]NSMutableDataVNSDataD
+&'DE^CKDZonePCSData
+FG,^CKDZonePCSDataZCKDPCSData
+_com.apple.siri.profile22757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.assistant.account.status:__defaultOwner__A
+2;Uw
+!g(=
+\
+9KKy
+yD?P
+121Jo
+q?T{1
+
+J(oj
+yx?{
+{Iv~
+(B164FC3DEB338FBD63AF35136D21A539B1E41B6E
++814mezT1hqWnIGVMaAuCTOkzuk8KVELJgG5r5bl_KG0
+$com.apple.assistant.multiuser.shared_
+000\
+4NZ9F
+?HFd
+e%0N
+;/G7
+ZO_g
+ccom.apple.siri.profile22757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.assistant.multiuser.shared:__defaultOwner__A
+ ;Ug
+ UY1
+RF78
+_c0j
+q#v_
+(7B7E21C4DAFC365B719BB9A445452F22622D0D7C
++Qi5ALZ7MGdUhzYif9ntXoZlu4m3LpWYa5tMWx5cvRXo
+com.apple.assistant.backedup_
+w;nV
+wO}L
+%y U`
+@%x
+.
+<M:
+Zcom.apple.siri.profile22757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.assistant.backedup:__defaultOwner__A
+Logging User Identifier:com.apple.assistant.backedup:__defaultOwner__
+User Identifier:com.apple.assistant.backedup:__defaultOwner__
+]-
+
+aDL?
+
+#'/56<=>BFGKLMU$null
+ !"XParentID]RecordShareID_
+ChainParentPublicKeyID_
+ZoneishPublicKeyIDUKeyIDXRecordIDXChainPCS_
+PublicSharingKeyV$classZRecordType\RecordZoneID
+$%&YNS.string
++M_4-DGEQQcAjTA_UV22BJo5CE-Fi9vPQcBlOKAF4-k4
+()*+Z$classnameX$classes_
+,-._
+01234ZRecordNameVZoneID
+User Identifier
+9:;XZoneNameYownerName
+()?@^CKRecordZoneID
+A.^CKRecordZoneID
+()CDZCKRecordID
+E.ZCKRecordID_
+AssistantKeyValueRecord
+__defaultOwner__D
+()NO_
+CKDRecordPCSData
+PQ._
+CKDRecordPCSDataZCKDPCSData
+com.apple.siri.profile22757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.assistant.backedup:__defaultOwner__A
+Logging User Identifier
+G1SQLite format 3
+z?;i

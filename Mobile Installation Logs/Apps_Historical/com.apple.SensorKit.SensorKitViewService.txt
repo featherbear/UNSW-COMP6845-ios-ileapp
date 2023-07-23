@@ -1,0 +1,1 @@
+2023-07-08 23:19:49 Made container live com.apple.SensorKit.SensorKitViewService /private/var/mobile/Containers/Data/PluginKitPlugin/A2A183B4-AC3E-45B0-9F9D-266F10DD230C

@@ -1,0 +1,483 @@
+SQLite format 3
+1[`LastWidgetUpdateDate+
+LargestWidgetSizeDate
+LargestWidgetPixelSize2
+ImportedFileSystemAssetsDate%
+"ImportedFileSystemAssets
+LocaleIdentifieren_AU)
+IRebuildCompleteDate
+
+w
+_
+K
+6
+(
+
+xaTC6 
+
+udH.
+
+GlobalKeyValue
+TRANSACTION
+CHANGEa
+TRANSACTIONSTRING%
+GenericAlbum'
+AlbumList
+UnmanagedAdjustment
+UniformTypeIdentifier
+Suggestion
+ShareParticipant
+MomentShare3
+LibraryScope3
+3
+Share
+SearchData
+Sceneprint
+SceneClassification
+/
+Question
+PhotosHighlight
+PersonReference,
+Person
+MomentList*
+Moment
+	MigrationHistory(
+Memory!'
+MediaAnalysisAssetAttributes
+LimitedLibraryFetchFilter
+LegacyFace$
+Keyword
+InternalResource
+
+ImportSession
+Folder
+FetchingAlbum
+ProjectAlbum
+PhotoStreamAlbum
+LegacyFaceAlbum
+CloudSharedAlbum
+Album
+FileSystemVolume
+FileSystemBookmark
+
+FaceCrop
+ExtendedAttributes
+EditedIPTCAttributes
+DetectedFaceprint
+DetectedFaceGroup
+DetectedFace
+DeferredRebuildFace
+ComputedAssetAttributes
+
+Codec
+CloudSharedComment%
+CloudSharedAlbumInvitationRecord
+CloudResource
+CloudMasterMediaMetadata
+CloudMaster
+CloudFeedCommentsEntry
+CloudFeedAssetsEntry
+CloudFeedEntry
+AssetDescription
+AssetAnalysisState
+
+Asset
+AdditionalAssetAttributes
+
+
+|
+i
+V
+C
+0
+
+fM4
+mT<#
+
+
+
+
+v
+^
+E
+,
+
+	l	X	D	0	
+-F`H
+-F`
+high priority transient library (fs=16777222/file=88)(
+CPL library (fs=16777219/file=88)
+[1,1]<
+high priority transient library (fs=16777219/file=88)<
+-[PLModelMigrator photoLibrary] (fs=16777219/file=88)I	
+-[PLLibraryServicesManager newPhotoLibrary] (fs=16777219/file=88)
+[0,0]o
+-[PLModelMigrator managedObjectContextForMigrationWithName:persistentStoreCoordinator:concurrencyType:]
+-[PLModelMigrator _repairMetadataAndSingletonsForMigrationType:forceRebuildReason:journalRebuildRequired:]_block_invoke_2 (/var/mobile/Media)
+assetsd
+com.apple.assetsd
+[0,1]
+2Biv
+8Zn
+
+S{)7
+
+high priority transient library (fs=16777222/file=88)%%
+CPL library (fs=16777219/file=88)
+[1,1]
+high priority transient library (fs=16777219/file=88)
+-[PLModelMigrator photoLibrary] (fs=16777219/file=88)F
+-[PLLibraryServicesManager newPhotoLibrary] (fs=16777219/file=88)		
+[0,0]
+com.apple.assetsd
+	[0,1]
+	UniformTypeIdentifier
+#8public.jpeg
+#	public.jpeg
+CHANGEb
+TRANSACTIONSTRING&
+'LIn
+-[PLManagedObjectLookupItemCache createObjectIfNecessaryForKey:withManagedObjectContext:createBlock:]<%
+-[PLManagedObjectLookupItemCache createObjectIfNecessaryForKey:withManagedObjectContext:createBlock:]&9
+n
+H
+ud
+
+UnmanagedAdjustment
+#8public.heic
+public.heic
+'X	R+
+CHANGEc
+d>
+H
+a8com.apple.photos.apple-adjustment-envelope
+com.apple.photos.apple-adjustment-envelope
+O{
+H
+CHANGEd
+8kU+2
+
+#8public.data3
+public.data
+CHANGEe
+	InternalResource
+
+	Asset
+	AdditionalAssetAttributes
+2023:07:10 18:58:49IMG_0001.HEICGMT+0800
+U!#U`
+DCIM/100APPLEIMG_0001.HEIC467E68D3-8524-48FF-8115-15606DCE00B2Display P3public.heic9E6387E7-2287-4D83-9C35-C4163C105D54
+hqR
+.|b
+
+PM|i
+PY~
+
+B~J
+
+<!!hX
+
+'dw(,=
+4hc
+'wi{h
+'!pY
+Z(YJ
+
+'
+|
+'.)|
+U	467E68D3-8524-48FF-8115-15606DCE00B2
+52+/d
+#	public.heic
+U	9E6387E7-2287-4D83-9C35-C4163C105D54
+''	DCIM/100APPLEIMG_0001.HEIC
+'}cQ
+Q.yF
+
+DZA
+
+'_qx
+CHANGEh
+TRANSACTIONSTRING(
+-[PLLibraryServicesManager newPhotoLibrary] (fs=16777222/file=88)m&
+'8,
+sh|_
+-[PLLibraryServicesManager newPhotoLibrary] (fs=16777222/file=88)(j
+	Codec
+hvc1
+	hvc1
+CHANGEi
+TRANSACTIONSTRING+
+'
+@;"
+:z(
+
+?8com.apple.quicktime-movie
+com.apple.quicktime-movie
+O
+H
+CHANGEj
+
+v
+Y
+8A
+
+InternalResource
+Keyword
+
+mFrU
+O'J
+
+'dF:
+jWvf
+
+fN@P
+
+\
+H
+CHANGEm
+TRANSACTIONSTRING-
+}5%G`
+
+
+v
+Y
+<
+i2M
+
+2
+H
+xaT
+6 
+UnmanagedAdjustment
+
+QuestionC
+MomentList
+Person
+	Moment
+	InternalResour
+@
+}
+
+9CE80FEE-E842-4DF8-A268-18825B8538AB
+CB83DA75-9F6D-40ED-824F-88A7A9B16F76K
+B749CFDB-378B-46F0-B1F0-05FC6146E6D5
+333333A
+July
+ 202381A6AEBC-D9F3-4390-BA21-8EADF7F16453j
+Today7A758514-B17F-43F5-B004-F147F0A05931e
+202337A383DA-0DD2-46A5-862B-67ACB4BFDFBA
+' ?
+M$S
+
+U	9CE80FEE-E842-4DF8-A268-18825B8538AB
+CB83DA75-9F6D-40ED-824F-88A7A9B16F76
+U	B749CFDB-378B-46F0-B1F0-05FC6146E6D5
+'dpv
+81A6AEBC-D9F3-4390-BA21-8EADF7F16453
+7A758514-B17F-43F5-B004-F147F0A05931
+U	37A383DA-0DD2-46A5-862B-67ACB4BFDFBA
+P
+H
+CHANGEu
+TRANSACTIONSTRING/
+
+v
+Y
+<
+
+moment library (fs=16777222/file=88).
+[1,0]I(
+
+}
+w
+q
+moment library (fs=16777222/file=88)/	
+[1,0].F
+
+V2023:07:10 18:58:49IMG_0001.HEICGMT+0800
+'+t^
+CHANGEv
+TRANSACTIONSTRING0
+CPL library (fs=16777222/file=88)+/
+
+}
+w
+q
+k
+CPL library (fs=16777222/file=88)0(
+	CloudMasterMediaMetadata
+	CloudMaster
+
+V2023:07:10 18:58:49AeEG2lcu8uwb0TBXgYcfqcL3iZ3LIMG_0001.HEICGMT+0800
+9E6387E7-2287-4D83-9C35-C4163C105D54DCIM/100APPLEIMG_0001.HEIC467E68D3-8524-48FF-8115-15606DCE00B2Display P3public.heic9E6387E7-2287-4D83-9C35-C4163C105D54
+6eAeEG2lcu8uwb0TBXgYcfqcL3iZ3LCGImagePropertiesIMG_0001.HEICpublic.heic
+|
+bplist00
+	
+
+ g
+V{TIFF}V{Exif}\{MakerApple}[PixelHeightUDepth\PrimaryImage[ProfileNameXDPIWidthYDPIHeightZColorModel[OrientationZPixelWidth
+\HostComputer^ResolutionUnitXSoftwareZTileLengthXDateTime[XResolutionYTileWidth[YResolutionUModelTMakeXiPhone 8
+V14.7.1
+2023:07:10 18:58:49#@R
+UApple
+"!"#$%&'()*+,-./0123456789:;<=>?@ABCEFGHIN
+OGPQRSTVNWXYZ[\abHG
+cdeNf
+[ExifVersionUFlashYLensModel_
+OffsetTimeDigitized_
+SubsecTimeOriginal_
+LensSpecification\ExposureModeXLensMakeWFNumber_
+OffsetTimeOriginal_
+PixelYDimension]ApertureValue_
+ExposureBiasValue\MeteringMode_
+ISOSpeedRatings_
+ShutterSpeedValue_
+SceneCaptureType[FocalLength_
+DateTimeOriginalYSceneType_
+FlashPixVersionZColorSpace[SubjectArea_
+PixelXDimension_
+FocalLenIn35mmFilm_
+SubsecTimeDigitizedZOffsetTime]SensingMethod_
+BrightnessValue_
+DateTimeDigitized_
+ComponentsConfiguration\WhiteBalance\ExposureTime_
+ExposureProgram
+!iPhone 8 back camera 3.99mm f/1.8V+08:00S245
+JKLM"@
+\)"@
+\)"?
+ff"?
+2023:07:10 18:58:49
+]^_`
+DN#?
+ hijklmnopqrstuvwxyz{|}~
+NNYN
+NNNYY
+bQ8R32R25R55R17R46R33R26R12Q1R20Q2R13R43Q3R59R14Q4R37Q5R15R45Q6R38R60R23R16Q7R39R31R54R47
+?q8_
+$2F0FE293-6C32-41A5-930D-8FC7C58FAD74_
+$467E68D3-8524-48FF-8115-15606DCE00B2"
+Uq825s
+$5B41D456-4A3B-47EB-92D2-3331FD64F3AE
+UflagsUvalueYtimescaleUepoch
+	ZDisplay P3"B
+SRGB
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+AXKEYdaVrfsTzhqXXaatLhnzlQbw
+E	AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+	9E6387E7-2287-4D83-9C35-C4163C105D54
+/dbt
+l1D
+|yG#
+
+'&2	D
+5
+)
+
+'NDz
+				
+CHANGE|
+TRANSACTIONSTRING1
+
+}
+w
+q
+k
+e
+_
+Y
+S
+M
+G
+TE;
+
+'(bE,n6~
+2023:07:10 18:58:49AeEG2lcu8uwb0TBXgYcfqcL3iZ3LIMG_0001.HEICGMT+0800
+^g%
+
+.D
+
+Question
+Person
+
+CHANGE
+
+}
+w
+q
+k
+e
+_
+Y
+S
+M
+G
+A
+;
+5
+.
+'
+'cI#
+'uk;5	"n
+RNu	$H
+TRANSACTIONSTRING5
+
+}
+w
+q
+k
+e
+_
+Y
+S
+M
+G
+A
+;
+5
+.
+'
+ 
+'%%1
+)k-
+
+
+}
+w
+q
+k
+e
+_
+Y
+S
+M
+G
+A
+;
+5
+.
+'
+ 
+
+%QoK{
+d=(
+
+AaOwQeDWZI1v/7nmMAIxtO+cntC+
+AbPVrhOdX2TscumG7NUOLjpDfkVaa
+AaOsUZer/+fgkIQQfBdm8AXLHCNJd
+ATKSWigpcnu2wW0VQsDzZh1lWqxv
+P
+C/{2
+$N
+
+
+AaOsUZer/+fgkIQQfBdm8AXLHCNJ
+6B:
+
+']\<
+TRANSACTION H
+jL
+uk
+

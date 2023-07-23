@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <open>1</open>
+        <Placemark id="3">
+            <name>2023-07-09 16:45:42</name>
+            <description>Timestamp: 2023-07-09 16:45:42 - MapsSync</description>
+            <Point id="2">
+                <coordinates>115.8394018,-31.9213264,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,1 @@
+2023-07-08 23:19:42 Made container live com.apple.sidecar.extension.camera /private/var/mobile/Containers/Data/PluginKitPlugin/FDF6FC11-7EFD-40B0-A0BF-63F11453256B

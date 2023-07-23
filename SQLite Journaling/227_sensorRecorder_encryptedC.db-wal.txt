@@ -1,0 +1,77 @@
+GtS8
+tSQLite format 3
+EtableTableInfoTableInfo
+CREATE TABLE TableInfo (TableName TEXT PRIMARY KEY, SoftwareVersion TEXT, SerialNumber TEXT)1
+indexsqlite_autoindex_TableInfo_1TableInfo
+1!%DatabaseIdentifier2420.16.34C7CVD2RXJC6F
+1	DatabaseIdentifier
+SQLite format 3
+tableDatabaseIdentifierDatabaseIdentifier
+CREATE TABLE DatabaseIdentifier (id INTEGER PRIMARY KEY, uuid TEXT){
+1m~
+
+indexDatabaseIdentifierIndexDatabaseIdentifier
+CREATE INDEX DatabaseIdentifierIndex ON DatabaseIdentifier (uuid)t
+DatabaseIdentifier
+U628FDFD7-B5D2-495C-9A89-F9F3A0B30BE2
+U	628FDFD7-B5D2-495C-9A89-F9F3A0B30BE2
+;!%SensorRecorderAccelData2420.16.34C7CVD2RXJC6F,
+SensorRecorderAccelData
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+9tableSensorRecorderAccelDataSensorRecorderAccelData
+CREATE TABLE SensorRecorderAccelData (id INTEGER PRIMARY KEY AUTOINCREMENT, data BLOB)w
+`Jd
+
+;!%SensorRecorderAccelMeta2420.16.34C7CVD2RXJC6F1
+SensorRecorderAccelMeta
+ktableSensorRecorderAccelMetaSensorRecorderAccelMeta	CREATE TABLE SensorRecorderAccelMeta (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, timestamp INTEGER, dataId INTEGER, offset INTEGER, size INTEGER, movement INTEGER)P
+3 Mg*
+*SQLite format 3
+-indexSensorRecorderAccelMetaIndexSensorRecorderAccelMeta
+CREATE INDEX SensorRecorderAccelMetaIndex ON SensorRecorderAccelMeta (startTime)j
+9!%SensorRecorderGyroData2420.16.34C7CVD2RXJC6F1
+SensorRecorderGyroData
+7tableSensorRecorderGyroDataSensorRecorderGyroDataCREATE TABLE SensorRecorderGyroData (id INTEGER PRIMARY KEY AUTOINCREMENT, data BLOB)
+9!%SensorRecorderGyroMeta2420.16.34C7CVD2RXJC6F0
+SensorRecorderGyroMeta	
+
+P.MSQLite format 3
+b
+x
+itableSensorRecorderGyroMetaSensorRecorderGyroMetaCREATE TABLE SensorRecorderGyroMeta (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, timestamp INTEGER, dataId INTEGER, offset INTEGER, size INTEGER, movement INTEGER)
+iX9}
+
+b
+x	
+)indexSensorRecorderGyroMetaIndexSensorRecorderGyroMeta
+CREATE INDEX SensorRecorderGyroMetaIndex ON SensorRecorderGyroMeta (startTime)g
+
+/06Mh
+SensorRecorderGyroMeta
+
+tTp@z
+A!%SensorRecorderPressureData2420.16.34C7CVD2RXJC6F0
+
+SensorRecorderPressureData
+?tableSensorRecorderPressureDataSensorRecorderPressureData
+CREATE TABLE SensorRecorderPressureData (id INTEGER PRIMARY KEY AUTOINCREMENT, data BLOB)
+SensorRecorderPressureData
+A!%SensorRecorderPressureMeta2420.16.34C7CVD2RXJC6F4
+SensorRecorderPressureMeta
+
+~SQLite format 3
+qtableSensorRecorderPressureMetaSensorRecorderPressureMeta
+CREATE TABLE SensorRecorderPressureMeta (id INTEGER PRIMARY KEY AUTOINCREMENT, startTime FLOAT, timestamp INTEGER, dataId INTEGER, offset INTEGER, size INTEGER, movement INTEGER)
+R+S
+^SQLite format 3
+9indexSensorRecorderPressureMetaIndexSensorRecorderPressureMeta
+CREATE INDEX SensorRecorderPressureMetaIndex ON SensorRecorderPressureMeta (startTime)s
+
+SensorRecorderPressureMeta
+
+G
+R-
+\SQLite format 3
+LSQLite format 3
+dSQLite format 3

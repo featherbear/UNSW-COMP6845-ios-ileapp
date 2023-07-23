@@ -1,0 +1,140 @@
++N"y
+
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
++N"yf
++N"y`
++N"yc"
+v;U}
+com.accessibility.voiceover.punctuation:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+=4pR
+GT0M
+DGe=|#
+
+[:(A
+yuv]
+)0'0%
+(8E102C5C9079F29EEFA7F65D24F11F8B300614CC
+"#$YNS.string
++nBCSWlF7zH2PvT86sz7knzgZU_Hfs6kUrWRg5VkLB-0
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+'com.accessibility.voiceover.punctuation_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.accessibility.voiceover.punctuation:__defaultOwner__A
++N"y
+}	com.accessibility.voiceover.punctuation:__defaultOwner__
+	com.accessibility.voiceover.punctuation:__defaultOwner__
+com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
++N"y_EA
+}U;	com.accessibility.voiceover.punctuation:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Accessibility
+U;	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Accessibility
+@;UG
+_defaultZone:__defaultOwner__
+{X|q
+w|Eg
+boiy
+$o?_^T.
+k%K<y
+NT~f
+[Svoj:
+(0D7DCF793D4D462AE7B85C0BFC4D1E65C7B51156
++wfRDk93qca-OA8BJLg7jQX8aGFXmKJVD1ksbzOieqEM
+	\_defaultZone_
+com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5_defaultZone:__defaultOwner__A
+_defaultZone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Accessibility
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Accessibility
++N"y=(
++N"y5
+SQLite format 3
++N"y1
++N"yn[
++N"y<
+00000000-0000-0000-0000-000000000003:com.accessibility.voiceover.punctuation:__defaultOwner__
+00000000-0000-0000-0000-000000000002:com.accessibility.voiceover.punctuation:__defaultOwner__
+00000000-0000-0000-0000-000000000001:com.accessibility.voiceover.punctuation:__defaultOwner__
+,3)
+
+com.accessibility.voiceover.punctuation:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.Accessibility
++N"y,
++N"yt
+6! m
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+L~Gd,
+T"t!;
+{	I^Pi	
+(F9C34C93633B2EE305582036F0C0A25CBD62F5D5
+*+,YNS.string
++Zwm-2kuFlhGCQNvxYy3gIozPCJDL_ycBoYJENzVm1Vs
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+$00000000-0000-0000-0000-000000000002
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordID_
+AXPunctuationGroup
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+7com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.accessibility.voiceover.punctuation:__defaultOwner__A
+`fo8
+?IQe
+#ZN\M!
+ 3o,Z
+U~4O
+0;Ic
+ z)W.
+(6BDF8F0F6968F8BDDE62C5D8D770E334B6A70A7C
++70hS8aLqz5quJUf_6MO7jqgC9D3Y6Q7FERwf-JAnmeI
+$00000000-0000-0000-0000-000000000001
+6com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.accessibility.voiceover.punctuation:__defaultOwner__A
++N"yq
+6suO
+_k^
+jbfJH
+N
+BCVh
+0FB!C9(wI
+[IZyP
+(6CCA7D8CE01DAA9E55C5EEF2ECD22F1DE30F1383
++TdltTtZKN0bhgrA3HFOf_fxKZiThcXL05RCrND1KRTQ
+$00000000-0000-0000-0000-000000000003
+8com.apple.Accessibility2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.accessibility.voiceover.punctuation:__defaultOwner__A

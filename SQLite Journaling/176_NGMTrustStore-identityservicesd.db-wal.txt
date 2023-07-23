@@ -1,0 +1,18 @@
+	SendingDestination
+SenderPublicIdentity
+RegisteredPreKey
++hFMgNtBzdfEywOSi3j0+ewoll/61ggRx0xVJidFoVo=
+SendingDestination
+MunhP4vVgwEJgSwfwpK3IUDYh8xLHuOzlNk+RLOC5Ns=<
+	SenderPublicIdentity
+	RegisteredPreKey
+		eco29AoOBPIl64Uqi09F07iBewqhggeyDAXuGxA1dbnE=
+^(-WF
+Hp/AaeERwgCWJt1e+kYay8hUdIV+6WBdI7Q6djX7s6k=
++hFMgNtBzdfEywOSi3j0+ewoll/61ggRx0xVJidFoVo=<
+MunhP4vVgwEJgSwfwpK3IUDYh8xLHuOzlNk+RLOC5Ns=
+Nma
+
+7V,i
+WT5
+

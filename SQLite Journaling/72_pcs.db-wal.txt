@@ -1,0 +1,91 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+X
+UU
+com.apple.CloudDocs:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459=@U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+]>6r
+Ic``
+iebY
+)0'0%
+ B`7
+khC|
+(BAB79F4D5CDAE150BD42308572B9A6298B4B2854
+"#$YNS.string
++69wGVLiiobhAViAm_j41Zo2BZMhxYib-wmNsVluFaiU
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+com.apple.CloudDocs_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.CloudDocs:__defaultOwner__A
+U	com.apple.CloudDocs:__defaultOwner__
+6}};
+
+	com.apple.CloudDocs:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+UU
+	com.apple.CloudDocs:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+Uy#^
+
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+0
+UU
+directory/root:com.apple.CloudDocs:__defaultOwner__
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+B(l`H
+:zrZ+
+e	S*
+(34625DC182F4CF5069E6FDBD68AAACDB4CB1D4C0
+*+,YNS.string
++7Ipu_UU0qwhk_YIIKjFnSjwMygFY6K83i3nBYh3BUgE
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+^directory/root
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDYstructure
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+com.apple.CloudDocs:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5

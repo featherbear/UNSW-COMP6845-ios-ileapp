@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Calendar Items report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Calendar Items report</h1>
+                    <h6 class="animated fadeIn mb-3"></h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 124</h6><p class="lead">Calendar Items located at: R:\temp\private\var\mobile\Library\Calendar\Calendar.sqlitedb</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Start Date</th><th class="th-sm">Start Timezone</th><th class="th-sm">End Date</th><th class="th-sm">End Timezone</th><th class="th-sm">All Day?</th><th class="th-sm">Summary</th><th class="th-sm">Calendar ID</th><th class="th-sm">Last Modified</th></tr></thead><tbody><tr><td>2022-01-01 00:00:00</td><td>_float</td><td>2022-01-01 23:59:59</td><td>_float</td><td>1</td><td>New Year’s Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-01-03 00:00:00</td><td>_float</td><td>2022-01-03 23:59:59</td><td>_float</td><td>1</td><td>New Year’s Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-01-26 00:00:00</td><td>_float</td><td>2022-01-26 23:59:59</td><td>_float</td><td>1</td><td>Australia Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-02-12 00:00:00</td><td>_float</td><td>2022-02-12 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-02-14 00:00:00</td><td>_float</td><td>2022-02-14 23:59:59</td><td>_float</td><td>1</td><td>Valentine’s Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-03-07 00:00:00</td><td>_float</td><td>2022-03-07 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-03-14 00:00:00</td><td>_float</td><td>2022-03-14 23:59:59</td><td>_float</td><td>1</td><td>Canberra Day (ACT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-03-14 00:00:00</td><td>_float</td><td>2022-03-14 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-03-14 00:00:00</td><td>_float</td><td>2022-03-14 23:59:59</td><td>_float</td><td>1</td><td>Adelaide Cup (SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-03-14 00:00:00</td><td>_float</td><td>2022-03-14 23:59:59</td><td>_float</td><td>1</td><td>Eight Hours Day (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-03 00:00:00</td><td>_float</td><td>2022-04-03 23:59:59</td><td>_float</td><td>1</td><td>Daylight Saving Time ends (ACT, NSW, SA, TAS, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-15 00:00:00</td><td>_float</td><td>2022-04-15 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-16 00:00:00</td><td>_float</td><td>2022-04-16 23:59:59</td><td>_float</td><td>1</td><td>Saturday before Easter Sunday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-17 00:00:00</td><td>_float</td><td>2022-04-17 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, QLD, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-18 00:00:00</td><td>_float</td><td>2022-04-18 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-19 00:00:00</td><td>_float</td><td>2022-04-19 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-04-25 00:00:00</td><td>_float</td><td>2022-04-25 23:59:59</td><td>_float</td><td>1</td><td>ANZAC Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-05-02 00:00:00</td><td>_float</td><td>2022-05-02 23:59:59</td><td>_float</td><td>1</td><td>May Day (NT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-05-02 00:00:00</td><td>_float</td><td>2022-05-02 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-05-08 00:00:00</td><td>_float</td><td>2022-05-08 23:59:59</td><td>_float</td><td>1</td><td>Mother’s Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-05-30 00:00:00</td><td>_float</td><td>2022-05-30 23:59:59</td><td>_float</td><td>1</td><td>Reconciliation Day (ACT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-06-06 00:00:00</td><td>_float</td><td>2022-06-06 23:59:59</td><td>_float</td><td>1</td><td>Western Australia Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-06-13 00:00:00</td><td>_float</td><td>2022-06-13 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (ACT, NSW, NT, SA, TAS, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-08-01 00:00:00</td><td>_float</td><td>2022-08-01 23:59:59</td><td>_float</td><td>1</td><td>Picnic Day (NT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-08-01 00:00:00</td><td>_float</td><td>2022-08-01 23:59:59</td><td>_float</td><td>1</td><td>Bank Holiday (NSW)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-08-17 00:00:00</td><td>_float</td><td>2022-08-17 23:59:59</td><td>_float</td><td>1</td><td>Royal Queensland Show (QLD, Brisbane area only)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-09-04 00:00:00</td><td>_float</td><td>2022-09-04 23:59:59</td><td>_float</td><td>1</td><td>Father’s Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-09-22 00:00:00</td><td>_float</td><td>2022-09-22 23:59:59</td><td>_float</td><td>1</td><td>National day of mourning for Queen Elizabeth II</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-09-23 00:00:00</td><td>_float</td><td>2022-09-23 23:59:59</td><td>_float</td><td>1</td><td>Grand Final Friday (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-09-26 00:00:00</td><td>_float</td><td>2022-09-26 23:59:59</td><td>_float</td><td>1</td><td>Queen’s Birthday (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-10-02 00:00:00</td><td>_float</td><td>2022-10-02 23:59:59</td><td>_float</td><td>1</td><td>Daylight Saving Time begins (ACT, NSW, SA, TAS, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-10-03 00:00:00</td><td>_float</td><td>2022-10-03 23:59:59</td><td>_float</td><td>1</td><td>Queen’s Birthday (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-10-03 00:00:00</td><td>_float</td><td>2022-10-03 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (ACT, NSW, SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-11-01 00:00:00</td><td>_float</td><td>2022-11-01 23:59:59</td><td>_float</td><td>1</td><td>Melbourne Cup (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-11-07 00:00:00</td><td>_float</td><td>2022-11-07 23:59:59</td><td>_float</td><td>1</td><td>Recreation Day (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-11-11 00:00:00</td><td>_float</td><td>2022-11-11 23:59:59</td><td>_float</td><td>1</td><td>Remembrance Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-24 00:00:00</td><td>_float</td><td>2022-12-24 23:59:59</td><td>_float</td><td>1</td><td>Christmas Eve (NT, QLD, SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-25 00:00:00</td><td>_float</td><td>2022-12-25 23:59:59</td><td>_float</td><td>1</td><td>Christmas Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-26 00:00:00</td><td>_float</td><td>2022-12-26 23:59:59</td><td>_float</td><td>1</td><td>Boxing Day</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-27 00:00:00</td><td>_float</td><td>2022-12-27 23:59:59</td><td>_float</td><td>1</td><td>Proclamation Day (SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-27 00:00:00</td><td>_float</td><td>2022-12-27 23:59:59</td><td>_float</td><td>1</td><td>Christmas holiday (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2022-12-31 00:00:00</td><td>_float</td><td>2022-12-31 23:59:59</td><td>_float</td><td>1</td><td>New Year’s Eve (NT, SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-01-02 00:00:00</td><td>_float</td><td>2023-01-02 23:59:59</td><td>_float</td><td>1</td><td>New Year’s Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-02-11 00:00:00</td><td>_float</td><td>2023-02-11 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-02-12 00:00:00</td><td>_float</td><td>2023-02-12 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-02-13 00:00:00</td><td>_float</td><td>2023-02-13 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-03-06 00:00:00</td><td>_float</td><td>2023-03-06 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-03-13 00:00:00</td><td>_float</td><td>2023-03-13 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-04-07 00:00:00</td><td>_float</td><td>2023-04-07 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-04-08 00:00:00</td><td>_float</td><td>2023-04-08 23:59:59</td><td>_float</td><td>1</td><td>Saturday before Easter Sunday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-04-09 00:00:00</td><td>_float</td><td>2023-04-09 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, QLD, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-04-10 00:00:00</td><td>_float</td><td>2023-04-10 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-04-11 00:00:00</td><td>_float</td><td>2023-04-11 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-05-01 00:00:00</td><td>_float</td><td>2023-05-01 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-05-29 00:00:00</td><td>_float</td><td>2023-05-29 23:59:59</td><td>_float</td><td>1</td><td>Reconciliation Day (ACT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-08-16 00:00:00</td><td>_float</td><td>2023-08-16 23:59:59</td><td>_float</td><td>1</td><td>Royal Queensland Show (QLD, Brisbane area only)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-09-25 00:00:00</td><td>_float</td><td>2023-09-25 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-09-29 00:00:00</td><td>_float</td><td>2023-09-29 23:59:59</td><td>_float</td><td>1</td><td>Grand Final Friday (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-10-02 00:00:00</td><td>_float</td><td>2023-10-02 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2023-12-26 00:00:00</td><td>_float</td><td>2023-12-26 23:59:59</td><td>_float</td><td>1</td><td>Proclamation Day (SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-02-10 00:00:00</td><td>_float</td><td>2024-02-10 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-02-11 00:00:00</td><td>_float</td><td>2024-02-11 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-02-12 00:00:00</td><td>_float</td><td>2024-02-12 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-03-04 00:00:00</td><td>_float</td><td>2024-03-04 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-03-11 00:00:00</td><td>_float</td><td>2024-03-11 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-03-29 00:00:00</td><td>_float</td><td>2024-03-29 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-03-30 00:00:00</td><td>_float</td><td>2024-03-30 23:59:59</td><td>_float</td><td>1</td><td>Saturday before Easter Sunday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-03-31 00:00:00</td><td>_float</td><td>2024-03-31 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, QLD, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-04-01 00:00:00</td><td>_float</td><td>2024-04-01 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-04-02 00:00:00</td><td>_float</td><td>2024-04-02 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-05-06 00:00:00</td><td>_float</td><td>2024-05-06 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-05-27 00:00:00</td><td>_float</td><td>2024-05-27 23:59:59</td><td>_float</td><td>1</td><td>Reconciliation Day (ACT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-08-14 00:00:00</td><td>_float</td><td>2024-08-14 23:59:59</td><td>_float</td><td>1</td><td>Royal Queensland Show (QLD, Brisbane area only)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-09-23 00:00:00</td><td>_float</td><td>2024-09-23 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-09-27 00:00:00</td><td>_float</td><td>2024-09-27 23:59:59</td><td>_float</td><td>1</td><td>Grand Final Friday (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2024-10-07 00:00:00</td><td>_float</td><td>2024-10-07 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-01-27 00:00:00</td><td>_float</td><td>2025-01-27 23:59:59</td><td>_float</td><td>1</td><td>Australia Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-02-08 00:00:00</td><td>_float</td><td>2025-02-08 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-02-09 00:00:00</td><td>_float</td><td>2025-02-09 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-02-10 00:00:00</td><td>_float</td><td>2025-02-10 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-03-03 00:00:00</td><td>_float</td><td>2025-03-03 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-03-10 00:00:00</td><td>_float</td><td>2025-03-10 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-04-18 00:00:00</td><td>_float</td><td>2025-04-18 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-04-19 00:00:00</td><td>_float</td><td>2025-04-19 23:59:59</td><td>_float</td><td>1</td><td>Saturday before Easter Sunday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-04-20 00:00:00</td><td>_float</td><td>2025-04-20 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, QLD, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-04-21 00:00:00</td><td>_float</td><td>2025-04-21 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-04-22 00:00:00</td><td>_float</td><td>2025-04-22 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-05-05 00:00:00</td><td>_float</td><td>2025-05-05 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-06-02 00:00:00</td><td>_float</td><td>2025-06-02 23:59:59</td><td>_float</td><td>1</td><td>Reconciliation Day (ACT)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-08-13 00:00:00</td><td>_float</td><td>2025-08-13 23:59:59</td><td>_float</td><td>1</td><td>Royal Queensland Show (QLD, Brisbane area only)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-09-26 00:00:00</td><td>_float</td><td>2025-09-26 23:59:59</td><td>_float</td><td>1</td><td>Grand Final Friday (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-09-29 00:00:00</td><td>_float</td><td>2025-09-29 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2025-10-06 00:00:00</td><td>_float</td><td>2025-10-06 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-02-07 00:00:00</td><td>_float</td><td>2026-02-07 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-02-08 00:00:00</td><td>_float</td><td>2026-02-08 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-02-09 00:00:00</td><td>_float</td><td>2026-02-09 23:59:59</td><td>_float</td><td>1</td><td>Royal Hobart Regatta (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-03-02 00:00:00</td><td>_float</td><td>2026-03-02 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-03-09 00:00:00</td><td>_float</td><td>2026-03-09 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-03 00:00:00</td><td>_float</td><td>2026-04-03 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-04 00:00:00</td><td>_float</td><td>2026-04-04 23:59:59</td><td>_float</td><td>1</td><td>Easter Saturday (ACT, NSW, NT, QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-05 00:00:00</td><td>_float</td><td>2026-04-05 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-06 00:00:00</td><td>_float</td><td>2026-04-06 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-07 00:00:00</td><td>_float</td><td>2026-04-07 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-04-27 00:00:00</td><td>_float</td><td>2026-04-27 23:59:59</td><td>_float</td><td>1</td><td>ANZAC Day Holiday (ACT, WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-05-04 00:00:00</td><td>_float</td><td>2026-05-04 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-06-08 00:00:00</td><td>_float</td><td>2026-06-08 23:59:59</td><td>_float</td><td>1</td><td>Volunteers Day (SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-08-12 00:00:00</td><td>_float</td><td>2026-08-12 23:59:59</td><td>_float</td><td>1</td><td>Royal Queensland Show (QLD, Brisbane area only)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-09-28 00:00:00</td><td>_float</td><td>2026-09-28 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-10-05 00:00:00</td><td>_float</td><td>2026-10-05 23:59:59</td><td>_float</td><td>1</td><td>King&#x27;s Birthday (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-12-28 00:00:00</td><td>_float</td><td>2026-12-28 23:59:59</td><td>_float</td><td>1</td><td>Proclamation Day (SA) (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2026-12-28 00:00:00</td><td>_float</td><td>2026-12-28 23:59:59</td><td>_float</td><td>1</td><td>Boxing Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-01 00:00:00</td><td>_float</td><td>2027-03-01 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-08 00:00:00</td><td>_float</td><td>2027-03-08 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-26 00:00:00</td><td>_float</td><td>2027-03-26 23:59:59</td><td>_float</td><td>1</td><td>Good Friday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-27 00:00:00</td><td>_float</td><td>2027-03-27 23:59:59</td><td>_float</td><td>1</td><td>Easter Saturday (ACT, NSW, NT, QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-28 00:00:00</td><td>_float</td><td>2027-03-28 23:59:59</td><td>_float</td><td>1</td><td>Easter Sunday (ACT, NSW, VIC)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-29 00:00:00</td><td>_float</td><td>2027-03-29 23:59:59</td><td>_float</td><td>1</td><td>Easter Monday</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-03-30 00:00:00</td><td>_float</td><td>2027-03-30 23:59:59</td><td>_float</td><td>1</td><td>Easter Tuesday (TAS)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-04-26 00:00:00</td><td>_float</td><td>2027-04-26 23:59:59</td><td>_float</td><td>1</td><td>ANZAC Day Holiday (ACT, WA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-05-03 00:00:00</td><td>_float</td><td>2027-05-03 23:59:59</td><td>_float</td><td>1</td><td>Labour Day (QLD)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-06-14 00:00:00</td><td>_float</td><td>2027-06-14 23:59:59</td><td>_float</td><td>1</td><td>Volunteers Day (SA)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-12-27 00:00:00</td><td>_float</td><td>2027-12-27 23:59:59</td><td>_float</td><td>1</td><td>Christmas Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-12-27 00:00:00</td><td>_float</td><td>2027-12-27 23:59:59</td><td>_float</td><td>1</td><td>Boxing Day (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr><tr><td>2027-12-27 00:00:00</td><td>_float</td><td>2027-12-27 23:59:59</td><td>_float</td><td>1</td><td>Proclamation Day (SA) (day in lieu)</td><td>15</td><td>1976-04-01 00:00:00</td></tr></tbody><tfoot><tr><th>Start Date</th><th>Start Timezone</th><th>End Date</th><th>End Timezone</th><th>All Day?</th><th>Summary</th><th>Calendar ID</th><th>Last Modified</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

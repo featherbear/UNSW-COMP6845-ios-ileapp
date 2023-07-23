@@ -1,0 +1,126 @@
+SQLite format 3
+ASQLite format 3
+
+$P
+#tablesuccess_countsuccess_count
+CREATE TABLE success_count (
+event_type STRING PRIMARY KEY,
+success_count INTEGER,
+hard_failure_count INTEGER,
+soft_failure_count INTEGER
+)9
+
+indexsqlite_autoindex_success_count_1success_count3
+triggermaintain_ring_buffer_samples_v2samplesCREATE TRIGGER maintain_ring_buffer_samples_v2 AFTER INSERT ON samples
+BEGIN
+DELETE FROM samples WHERE id <= NEW.id - 1000;
+END
+Ytablesamplessamples	CREATE TABLE samples (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,
+name STRING,
+value REAL
+))	
+triggermaintain_ring_buffer_notes_v2notesCREATE TRIGGER maintain_ring_buffer_notes_v2 AFTER INSERT ON notes
+BEGIN
+DELETE FROM notes WHERE id <= NEW.id - 1000;
+ENDl
+7tablenotesnotes
+CREATE TABLE notes (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_soft_failures_v2soft_failuresCREATE TRIGGER maintain_ring_buffer_soft_failures_v2 AFTER INSERT ON soft_failures
+BEGIN
+DELETE FROM soft_failures WHERE id <= NEW.id - 1000;
+END
+Gtablesoft_failuressoft_failures
+CREATE TABLE soft_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_hard_failures_v2hard_failuresCREATE TRIGGER maintain_ring_buffer_hard_failures_v2 AFTER INSERT ON hard_failures
+BEGIN
+DELETE FROM hard_failures WHERE id <= NEW.id - 1000;
+ENDP
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Gtablehard_failureshard_failures
+CREATE TABLE hard_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)i
+tablePropertiesProperties
+CREATE TABLE Properties (
+    key    text primary key,
+    value  text
+)3
+indexsqlite_autoindex_Properties_1Properties
+-Created710576430.367574
+	Created
+'
+SchemaVersionE3BB7685C22335A3E3FC481B0D59A4F1B2F34031517BC31154745553BEA9C175
+SchemaVersion
+PCSEventKeyCreation
+3	PCSEventKeyCreation
+MMlast_success_PCSEventKeyCreation2023-07-09T14:34:59.413GMT+08:00Q
+last_success_PCSEventKeyCreation
+MMlast_success_PCSEventKeyCreation2023-07-09T14:34:59.440GMT+08:00Q
+- XI
+MMlast_success_PCSEventKeyCreation2023-07-09T14:35:59.679GMT+08:00Q
+[x%
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:35:59.682GMT+08:00Q
+lH"w
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:00.149GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:00.535GMT+08:00Q
+D_m
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:00.950GMT+08:00Q
+;(~$
+last_success_PCSEventKeyCreation	
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:01.322GMT+08:00Q
+6'|u
+last_success_PCSEventKeyCreation
+
+PCSEventKeyCreation	
+AQZ6v
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:01.706GMT+08:00Q
+last_success_PCSEventKeyCreation
+PCSEventKeyCreation
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:02.081GMT+08:00Q
+last_success_PCSEventKeyCreation
+!MR
+
+PCSEventKeyCreation
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:02.440GMT+08:00Q
+PCSEventKeyCreation
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:02.817GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:29.378GMT+08:00Q
+3i*
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:29.426GMT+08:00Q
+IK}
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:29.756GMT+08:00Q
+v2w.
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:30.143GMT+08:00Q
+5)OU
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:31.159GMT+08:00Q
+H&S_
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:31.556GMT+08:00Q
+KUKs
+
+MMlast_success_PCSEventKeyCreation2023-07-09T14:36:59.470GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:37:47.713GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:42:06.326GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:45:30.076GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T14:46:49.357GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T18:42:28.803GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-09T19:04:08.789GMT+08:00Q
+vc]bI5
+MMlast_success_PCSEventKeyCreation2023-07-10T18:50:26.099GMT+08:00Q
+MMlast_success_PCSEventKeyCreation2023-07-10T18:53:25.421GMT+08:00Q

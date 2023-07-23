@@ -1,0 +1,37 @@
+https://configuration.apple.com/configurations/internetservices/safari/PasswordBreachAwarenessConfigurationBag-1.plist2023-07-09 06:29:31
+y	https://configuration.apple.com/configurations/internetservices/safari/PasswordBreachAwarenessConfigurationBag-1.plist
+5	cfurl_cache_response
+`9':
+bplist00
+WVersionUArray
+
+
+"#
+_CFURLStringType\_CFURLString
+vhttps://configuration.apple.com/configurations/internetservices/safari/PasswordBreachAwarenessConfigurationBag-1.plist#A
+ !VServer\Content-TypeTEtag]Last-Modified_
+Content-LanguageX__hhaa__]Accept-RangesTDate^Content-LengthZConnectionVApacheYtext/html_
+"67-597bc9b8e66c0"_
+Wed, 20 Nov 2019 00:53:23 GMTUen-us_
+
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXxAQQ29udGVudC1MYW5ndWFnZV1BY2NlcHQtUmFuZ2VzVERhdGVeQ29udGVudC1MZW5ndGhURXRhZ6ELVkFwYWNoZaENWXRleHQvaHRtbKEPWmtlZXAtYWxpdmWhEV8QHVdlZCwgMjAgTm92IDIwMTkgMDA6NTM6MjMgR01UoRNVZW4tdXOhFVVieXRlc6EXXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjoyOTozMiBHTVShGVMxMDOhG18QEiI2Ny01OTdiYzliOGU2NmMwIgAIABsAIgAvADoASABbAGkAbgB9AIIAhACLAI0AlwCZAKQApgDGAMgAzgDQANYA2AD4APoA/gEAAAAAAAAAAgEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAARU=Ubytes_
+Sun, 09 Jul 2023 06:29:32 GMTS103Zkeep-alive_
+ __CFURLResponseNullTokenString__Ytext/html
+vhttps://configuration.apple.com/configurations/internetservices/safari/PasswordBreachAwarenessConfigurationBag-1.plist#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+Z<!doctype html>
+
+<font size="24">Not Found</font>
+<br>
+The requested URL was not found on this server.
+
+3	2023-07-09 06:29:31

@@ -1,0 +1,92 @@
+
+q`SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+
+B%XK0$|
+}'g
+
+TD?R
+`SY
+
+Z
+UG
+remoteAssets:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+?	H3`K
+9,
+S
+E)N|
+mU)b
+*HOt
+3*5r!=
+fGM't>O1
+
+VE{50N
+ )avMe\jkUW
+)0'0%
+(F7D1FD11CFD93997DB0B64BABE5E34685E72E629
+"#$YNS.string
++366hFjGgYfdm0LMx9U7Xxf4_AYl8vBlVEc6j6hco7oE
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	\remoteAssets_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5remoteAssets:__defaultOwner__A
+L
+U;
+passes:__defaultOwner__
+#/:@
+9Ucp
+\ULJI
+K~u}5
+  ZH
+ 66S/5
+h;[x@
+(5F55281DFB0E280F8BE7814333DAC61D9CE6E345
++5jXr8nhskN_lgCNrdOzbffaIjKAfhYQFrHlvP3SUsXI
+	Vpasses_
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5passes:__defaultOwner__A
+;	passes:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+	passes:__defaultOwner__
+
+BG[
+
+1;:
+
+remoteAssets:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+;U
+	passes:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5

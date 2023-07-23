@@ -1,0 +1,235 @@
+KSQLite format 3
+cT7SQLite format 3
+
+$P
+#tablesuccess_countsuccess_count
+CREATE TABLE success_count (
+event_type STRING PRIMARY KEY,
+success_count INTEGER,
+hard_failure_count INTEGER,
+soft_failure_count INTEGER
+)9
+
+indexsqlite_autoindex_success_count_1success_count3
+triggermaintain_ring_buffer_samples_v2samplesCREATE TRIGGER maintain_ring_buffer_samples_v2 AFTER INSERT ON samples
+BEGIN
+DELETE FROM samples WHERE id <= NEW.id - 1000;
+END
+Ytablesamplessamples	CREATE TABLE samples (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,
+name STRING,
+value REAL
+))	
+triggermaintain_ring_buffer_notes_v2notesCREATE TRIGGER maintain_ring_buffer_notes_v2 AFTER INSERT ON notes
+BEGIN
+DELETE FROM notes WHERE id <= NEW.id - 1000;
+ENDl
+7tablenotesnotes
+CREATE TABLE notes (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_soft_failures_v2soft_failuresCREATE TRIGGER maintain_ring_buffer_soft_failures_v2 AFTER INSERT ON soft_failures
+BEGIN
+DELETE FROM soft_failures WHERE id <= NEW.id - 1000;
+END
+Gtablesoft_failuressoft_failures
+CREATE TABLE soft_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_hard_failures_v2hard_failuresCREATE TRIGGER maintain_ring_buffer_hard_failures_v2 AFTER INSERT ON hard_failures
+BEGIN
+DELETE FROM hard_failures WHERE id <= NEW.id - 1000;
+ENDP
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Gtablehard_failureshard_failures
+CREATE TABLE hard_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)i
+tablePropertiesProperties
+CREATE TABLE Properties (
+    key    text primary key,
+    value  text
+)3
+indexsqlite_autoindex_Properties_1Properties
+-Created710577392.124969
+;?ZaJ
+	Created
+;?9T
+;?dz
+;?#h
+x_9
+
+;?S|d
+'
+SchemaVersionE3BB7685C22335A3E3FC481B0D59A4F1B2F34031517BC31154745553BEA9C175
+SchemaVersion
+bplist00
+	
+
+
+YeventTimeUbuildUwriteWproductYeventTypeZerrorChain[errorDomainZeventClass_
+transparencyVersionWmodelidYerrorCode#Bx
+[U18G82
+YiPhone OS_
+ktDiskPublicKeyStoreEvent_
+NSPOSIXErrorDomain-2:_
+NSCocoaErrorDomain
+ZiPhone10,1
+;?f#c*r 
+'	hard_failures
+ktDiskPublicKeyStoreEvent
+?	ktDiskPublicKeyStoreEvent
+'	soft_failures
+</d]
+
+YKTVersionYeventTypeYCKSuccess[AKErrorCode^CKTimeInterval_
+AKUnderlyingErrorDomainZeventClass_
+CKUnderlyingErrorCode]CKErrorDomainWmodelid[CKErrorCode]AKErrorDomainUbuildYeventTime_
+AKUnderlyingErrorCode_
+transparencyVersion_
+CKUnderlyingErrorDomainWproduct^AKTimeIntervalYAKSuccess
+&KeyTransparencyTrustedDeviceEnrollment	
+ZiPhone10,1U18G82#Bx
+YiPhone OS
+	KeyTransparencyTrustedDeviceEnrollment
+KeyTransparencyTrustedDeviceEnrollment
+soft_failures
+;?<oJvf
+^bplist00
+YiPhone OS	
+_q
+*
+;?W9
+]kllC
+
+;?.h
+
+Q7bplist00
+PZiPhone10,1U18G82#Bx
+;?vy
+(bplist00
+U18G82
+hard_failures
+;?V$
+$Jbplist00
+7LI'
+;?
+EDtd
+KeyTransparencyTrustedDeviceEnrollment	
+;?CM
+FMSQLite format 3
+;?4K
+KeyTransparencyTrustedDeviceEnrollment
+
+%YKTVersionYeventTypeYCKSuccess[AKErrorCode^CKTimeInterval_
+&KeyTransparencyTrustedDeviceEnrollment
+*IDSCloudKitKeyTransparencyStoreErrorDomainZiPhone10,1
+U18G82#Bx
+]CKErrorDomainYiPhone OS	
+	notes
+)!S 
+	
+YeventTimeWmodelidWproductZeventClassYeventTypeUbuild#Bx
+'uZiPhone10,1YiPhone OS
+^ktRunDutyCycleU18G82
+'/:DJS^hjy
+(:	
+
+ktRunDutyCycle,
+
+ktRunDutyCycle*
+notes
+ZiPhone10,1YiPhone OS
+ktDutyCycleEventU18G82
+'/:DJS^hj}
+ktDutyCycleEvent
+ktDutyCycleEvent
+wbplist00
+>U18G82
+ktDiskConfigStoreEvent_
+;?;([
+F1~)
+ktDiskConfigStoreEvent
+;?,k
+ktDiskConfigStoreEvent
+
+zbplist00
+pU18G82
+Px`'
+YCbplist00
+YeventTimeUbuildWproductYeventTypeZerrorChain[errorDomainZeventClass_
+U18G82YiPhone OS_
+ktNetworkBagEvent_
+5NSURLErrorDomain--1009:kCFErrorDomainCFNetwork--1009:_
+TransparencyErrorNetwork
+ktNetworkBagEvent
+OvKt
+ 2/
+
+	samples
+YuktNetworkBagTime-Failed?
+soft_failures	
+;?go
+	ktIDSDutyCycleCompleteEvent
+ktIDSDutyCycleCompleteEvent
+;?(B@
+ktIDSDutyCycleCompleteEvent_
+;?iU
+samples
+]ktNetworkBagTime-Failed?
+soft_failures
+
+	ktMPDutyCycleCompleteEvent
+;?[B<
+ktMPDutyCycleCompleteEvent
+ktMPDutyCycleCompleteEvent_
+nU18G82YiPhone OS_
+;?*Y
+0)
+
+ktNetworkBagTime-Failed?
+soft_failures
+	ktFTDutyCycleCompleteEvent
+ktFTDutyCycleCompleteEvent
+ktFTDutyCycleCompleteEvent_
+ktRunDutyCycle
+;9`bplist00
+$%
+:
+;a bplist00
+;?ni
+hard_failures	
+;??J^]
+BS~mV
+J*ZU18G82
+hard_failures
+
+W;z5!
+;?1wZ
+hard_failures
+;?k}
+SQLite format 3
+hard_failures
+9WI{0
+
+'U18G82YiPhone OS_
+;*ktNetworkBagTime-Failed?
+soft_failures
+;?LC
+cq7JN
+
+Ts1
+
+=fEbplist00
+=}Vbplist00
+L5U18G82YiPhone OS_
+;?D
+Y
+ktIDSDutyCycleCompleteEvent 
+8bplist00
+L*^U18G82YiPhone OS_

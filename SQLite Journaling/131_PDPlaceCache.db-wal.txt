@@ -1,0 +1,105 @@
+SQLite format 3
+?tablelocalelocale
+CREATE TABLE locale (    rowid INTEGER PRIMARY KEY NOT NULL,    locale TEXT NOT NULL    )
+UY_
+
+ESQLite format 3
+gtablepdplacespdplaces
+CREATE TABLE pdplaces (pdplacehash TEXT PRIMARY KEY NOT NULL, expiretime INT NOT NULL, pdplace BLOB NOT NULL)/
+indexsqlite_autoindex_pdplaces_1pdplaces
+?!O_wA
+tablepdplacelookuppdplacelookup
+CREATE TABLE pdplacelookup (requestkey TEXT PRIMARY KEY NOT NULL, pdplacehash TEXT NOT NULL, lastaccesstime INT NOT NULL)9
+indexsqlite_autoindex_pdplacelookup_1pdplacelookup
+?!Ot
+?!O@
+<r5(g
+#en-AU:en_AU
+?!O*
+^B6082201-08D7-43FA-8340-F067D98478C2*[7
++6189201180826https://bws.com.au/storelocator/wa-mount-hawthorn-4159R
+
+en-AU
+BWSZ
+
+BWSb!
+Food & Grocery"
+foodb0
+Beer, Wine & Spirits"
+beer_and_wineb0
+Beer, Wine & Spirits"
+beer_and_wine
+
+fooddrinks
+food.beer_and_wine
+$f395cc84-7968-43f2-b598-837c5c35590e
+
+1688681097041`
+com.apple.Maps"
+com.apple.Maps
+Beer, Wine & Spirits*
+Mount Hawthorn0
+
+Woolworths`
+"
+ d41d8cd98f00b204e9800998ecf8427e
+
+images/jpeg
+Australia/Perth:
+
+au.lga.wa310J
+appleJ
+placesJ
+poiJ
+AWSTP
+11.0.3
+en"#
+
+places2
+
+fromLegacy"
+The Mezz Shopping CentreZ
+7/146-148 Scarborough Beach RdZ
+Mount Hawthorn WA 6016Z	Australiaz
+
+	Australia
+Western Australia"
+Vincent2
+Mount Hawthorn:
+6016B
+City of VincentR
+Scarborough Beach RdZ
+146-148b
+7/146-148 Scarborough Beach Rdr
+The Mezz Shopping Centre
+City of Vincent
+Northern Suburbs
+
+North Ward
+\tn=address\ 148 
+\tn=normal\ Scarborough Beach Road*
+	Australia
+State of Western Australia"
+State of Western Australia*
+City Of Vincent2
+Mount HawthornB
+Scarborough Beach RoadZ
+\tn=normal\b5
+\tn=normal\ Scarborough Beach Roadr
+Hawaiian's Mezz
+
+North Ward:
+BU"S
+$)9
+&)uz
+\@9y
+xAZ8
+M:&
+$
+$B6082201-08D7-43FA-8340-F067D98478C2
+U	B6082201-08D7-43FA-8340-F067D98478C2
+?!O{
+phNo-+61892011808B6082201-08D7-43FA-8340-F067D98478C2*Z
+?!O:
+/	phNo-+61892011808
+?!O3

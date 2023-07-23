@@ -1,0 +1,159 @@
+https://cdsassets.apple.com/library/APPLE/asset/ndoV2.plist2023-07-09 10:46:25
+	https://cdsassets.apple.com/library/APPLE/asset/ndoV2.plist
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+89
+_CFURLStringType\_CFURLString
+;https://cdsassets.apple.com/library/APPLE/asset/ndoV2.plist#A
+ !"#$%&'()*+,-./01234567VServer]Cache-Control_
+Strict-Transport-SecurityTHost]Accept-Ranges_
+Access-Control-Allow-Origin_
+Access-Control-Allow-Headers^Content-LengthSVia_
+X-XSS-ProtectionTDateZConnection_
+Access-Control-Expose-HeadersSAgeWCDNUUIDWX-CacheTEtag_
+X-Frame-OptionsX__hhaa___
+X-Content-Type-Options]Last-ModifiedUApple_
+max-age=1800, public_
+#max-age=31536000; includeSubdomains_
+cdsassets.apple.comUbytesQ*URangeS291_
+rhttp/1.1 aupor1-edge-lx-001.ts.apple.com (acdn/87.14301), http/1.1 aupor1-edge-bx-008.ts.apple.com (acdn/87.14301)]1; mode=block_
+Sun, 09 Jul 2023 10:29:38 GMTZkeep-alive_
+,Content-Range, Content-Length, Accept-RangesT1007_
+0ca247427-3020-4325-b1c2-12078de46bb8-14131038890_
+hit-fresh, hit-fresh_
+"123-5d000dd2f5f40"ZSAMEORIGIN_
+X
+
+YnBsaXN0MDDfEBQBAgMEBQYHCAkKCwwNDg8QERITFBUXGRsdHyEjJScpKy0vMTM1Nzk7VlNlcnZlcl1DYWNoZS1Db250cm9sXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eVRIb3N0XUFjY2VwdC1SYW5nZXNfEBtBY2Nlc3MtQ29udHJvbC1BbGxvdy1PcmlnaW5fEBxBY2Nlc3MtQ29udHJvbC1BbGxvdy1IZWFkZXJzXkNvbnRlbnQtTGVuZ3RoU1ZpYV8QEFgtWFNTLVByb3RlY3Rpb25URGF0ZVpDb25uZWN0aW9uXxAdQWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnNTQWdlV0NETlVVSURXWC1DYWNoZVRFdGFnXxAPWC1GcmFtZS1PcHRpb25zXxAWWC1Db250ZW50LVR5cGUtT3B0aW9uc11MYXN0LU1vZGlmaWVkoRZVQXBwbGWhGF8QFG1heC1hZ2U9MTgwMCwgcHVibGljoRpfECNtYXgtYWdlPTMxNTM2MDAwOyBpbmNsdWRlU3ViZG9tYWluc6EcXxATY2RzYXNzZXRzLmFwcGxlLmNvbaEeVWJ5dGVzoSBRKqEiVVJhbmdloSRTMjkxoSZfEHJodHRwLzEuMSBhdXBvcjEtZWRnZS1seC0wMDEudHMuYXBwbGUuY29tIChhY2RuLzg3LjE0MzAxKSwgaHR0cC8xLjEgYXVwb3IxLWVkZ2UtYngtMDA4LnRzLmFwcGxlLmNvbSAoYWNkbi84Ny4xNDMwMSmhKF0xOyBtb2RlPWJsb2NroSpfEB1TdW4sIDA5IEp1bCAyMDIzIDEwOjI5OjM4IEdNVKEsWmtlZXAtYWxpdmWhLl8QLENvbnRlbnQtUmFuZ2UsIENvbnRlbnQtTGVuZ3RoLCBBY2NlcHQtUmFuZ2VzoTBUMTAwN6EyXxAwY2EyNDc0MjctMzAyMC00MzI1LWIxYzItMTIwNzhkZTQ2YmI4LTE0MTMxMDM4ODkwoTRfEBRoaXQtZnJlc2gsIGhpdC1mcmVzaKE2XxATIjEyMy01ZDAwMGRkMmY1ZjQwIqE4WlNBTUVPUklHSU6hOldub3NuaWZmoTxfEB1GcmksIDA1IE5vdiAyMDIxIDAxOjUwOjEzIEdNVAAIADMAOgBIAGQAaQB3AJUAtADDAMcA2gDfAOoBCgEOARYBHgEjATUBTgFcAV4BZAFmAX0BfwGlAacBvQG/AcUBxwHJAcsB0QHTAdcB2QJOAlACXgJgAoACggKNAo8CvgLAAsUCxwL6AvwDEwMVAysDLQM4AzoDQgNEAAAAAAAAAgEAAAAAAAAAPQAAAAAAAAAAAAAAAAAAA2Q=Wnosniff_
+Fri, 05 Nov 2021 01:50:13 GMT
+ __CFURLResponseNullTokenString__
+	2	5
+	Xbplist00
+;https://cdsassets.apple.com/library/APPLE/asset/ndoV2.plist#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+R<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LowServerVersion</key>
+	<integer>2</integer>
+	<key>HighServerVersion</key>
+	<integer>3</integer>
+</dict>
+</plist>
+
+3	2023-07-09 10:46:25
+rhttp/1.1 aupor1-edge-lx-001.ts.apple.com (acdn/87.14301), http/1.1 aupor1-edge-bx-002.ts.apple.com (acdn/87.14301)]1; mode=block_
+,Content-Range, Content-Length, Accept-RangesT1008_
+0fdd56f18-95bc-4702-a373-978e1ee8a0ed-14134540508_
+X
+
+YnBsaXN0MDDfEBQBAgMEBQYHCAkKCwwNDg8QERITFBUXGRsdHyEjJScpKy0vMTM1Nzk7VlNlcnZlcl1DYWNoZS1Db250cm9sXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eVRIb3N0XUFjY2VwdC1SYW5nZXNfEBtBY2Nlc3MtQ29udHJvbC1BbGxvdy1PcmlnaW5fEBxBY2Nlc3MtQ29udHJvbC1BbGxvdy1IZWFkZXJzXkNvbnRlbnQtTGVuZ3RoU1ZpYV8QEFgtWFNTLVByb3RlY3Rpb25URGF0ZVpDb25uZWN0aW9uXxAdQWNjZXNzLUNvbnRyb2wtRXhwb3NlLUhlYWRlcnNTQWdlV0NETlVVSURXWC1DYWNoZVRFdGFnXxAPWC1GcmFtZS1PcHRpb25zXxAWWC1Db250ZW50LVR5cGUtT3B0aW9uc11MYXN0LU1vZGlmaWVkoRZVQXBwbGWhGF8QFG1heC1hZ2U9MTgwMCwgcHVibGljoRpfECNtYXgtYWdlPTMxNTM2MDAwOyBpbmNsdWRlU3ViZG9tYWluc6EcXxATY2RzYXNzZXRzLmFwcGxlLmNvbaEeVWJ5dGVzoSBRKqEiVVJhbmdloSRTMjkxoSZfEHJodHRwLzEuMSBhdXBvcjEtZWRnZS1seC0wMDEudHMuYXBwbGUuY29tIChhY2RuLzg3LjE0MzAxKSwgaHR0cC8xLjEgYXVwb3IxLWVkZ2UtYngtMDAyLnRzLmFwcGxlLmNvbSAoYWNkbi84Ny4xNDMwMSmhKF0xOyBtb2RlPWJsb2NroSpfEB1TdW4sIDA5IEp1bCAyMDIzIDEwOjI5OjM4IEdNVKEsWmtlZXAtYWxpdmWhLl8QLENvbnRlbnQtUmFuZ2UsIENvbnRlbnQtTGVuZ3RoLCBBY2NlcHQtUmFuZ2VzoTBUMTAwOKEyXxAwZmRkNTZmMTgtOTViYy00NzAyLWEzNzMtOTc4ZTFlZThhMGVkLTE0MTM0NTQwNTA4oTRfEBRoaXQtZnJlc2gsIGhpdC1mcmVzaKE2XxATIjEyMy01ZDAwMGRkMmY1ZjQwIqE4WlNBTUVPUklHSU6hOldub3NuaWZmoTxfEB1GcmksIDA1IE5vdiAyMDIxIDAxOjUwOjEzIEdNVAAIADMAOgBIAGQAaQB3AJUAtADDAMcA2gDfAOoBCgEOARYBHgEjATUBTgFcAV4BZAFmAX0BfwGlAacBvQG/AcUBxwHJAcsB0QHTAdcB2QJOAlACXgJgAoACggKNAo8CvgLAAsUCxwL6AvwDEwMVAysDLQM4AzoDQgNEAAAAAAAAAgEAAAAAAAAAPQAAAAAAAAAAAAAAAAAAA2Q=Wnosniff_
+SQLite format 3
+
+#u
+indexreceiver_data_indexcfurl_cache_receiver_dataCREATE INDEX receiver_data_index ON cfurl_cache_receiver_data(entry_ID)t	
+indexproto_props_indexcfurl_cache_blob_dataCREATE INDEX proto_props_index ON cfurl_cache_blob_data(entry_ID)r
+indextime_stamp_indexcfurl_cache_response
+CREATE INDEX time_stamp_index ON cfurl_cache_response(time_stamp)u
+indexrequest_key_indexcfurl_cache_response	CREATE INDEX request_key_index ON cfurl_cache_response(request_key)+
+etablecfurl_cache_receiver_datacfurl_cache_receiver_data
+CREATE TABLE cfurl_cache_receiver_data(entry_ID INTEGER PRIMARY KEY, isDataOnFS INTEGER, receiver_data BLOB)I
+1tablecfurl_cache_blob_datacfurl_cache_blob_data
+CREATE TABLE cfurl_cache_blob_data(entry_ID INTEGER PRIMARY KEY, response_object BLOB, request_object BLOB, 			  proto_props BLOB, user_info BLOB)P
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+gtablecfurl_cache_responsecfurl_cache_response
+CREATE TABLE cfurl_cache_response(entry_ID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 	 version INTEGER, hash_value INTEGER, storage_policy INTEGER, request_key TEXT UNIQUE, 	 time_stamp NOT NULL DEFAULT CURRENT_TIMESTAMP, partition TEXT)G
+indexsqlite_autoindex_cfurl_cache_response_2cfurl_cache_response
+indexsqlite_autoindex_cfurl_cache_response_1cfurl_cache_response
+Fhttps://sse-ws-p189.apple.com/api/v2/coverage/summary2023-07-09 10:46:27[
+https://sse-ws-p189.apple.com/api/v2/coverage/summary
+cfurl_cache_response
+2023-07-09 10:46:27
+:%KRF
+DAtZWUyZS00MWY2LTk3ODktYWFhNTM5NWI3YmNioRRfEEdKU0VTU0lPTklEPW5vZGUwMTFrYmR1MGNnaGY5OTFxZDY5cXdlbndzdW4yMzQwMjQ0Lm5vZGUwOyBQYXRoPS87IFNlY3VyZaEWVUFwcGxloRhdMTsgbW9kZT1ibG9ja6EaXxAdVGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVShHF8QJGE2YTRmNmQwLWVlMmUtNDFmNi05Nzg5LWFhYTUzOTViN2JjYqEeXxAdU3VuLCAwOSBKdWwgMjAyMyAxMDo0NjoyNyBHTVShIF8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSJfECZub2RlMDExa2JkdTBjZ2hmOTkxcWQ2OXF3ZW53c3VuMjM0MDI0NKEkVDM3ODGhJlprZWVwLWFsaXZloShXbm9zbmlmZqEqWlNBTUVPUklHSU4ACAAlADIANAA/AEYAWQBhAHAAdQCRAKYAtQDAANkA6wDtAQABAgEpASsBdQF3AX0BfwGNAY8BrwGxAdgB2gH6AfwCIgIkAk0CTwJUAlYCYQJjAmsCbQAAAAAAAAIBAAAAAAAAACsAAAAAAAAAAAAAAAAAAAJ4ZSAMEORIGIN_
+ __CFURLResponseNullTokenString___
+application/json
+5https://sse-ws-p189.apple.com/api/v2/coverage/summary#@>
+TPOST
+ !"#$%&'()*+,-./0123456789:_
+X-Apple-I-MD-RINFO\Content-Type_
+X-Apple-I-LocaleVAcceptX__hhaa___
+storefrontLocale_
+Accept-Encoding_
+X-MMe-Client-Info_
+X-Mme-Device-Id_
+X-Apple-I-TimeZone^X-Apple-I-MD-MWaltDSID_
+X-Apple-I-Client-Time\X-Apple-I-MD_
+X-Apple-GS-TokenZUser-Agent^Content-LengthX84215040_
+application/jsonUen_AUS*/*_
+
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXxASWC1BcHBsZS1JLU1ELVJJTkZPXENvbnRlbnQtVHlwZV8QD0FjY2VwdC1FbmNvZGluZ1ZBY2NlcHRfEBBzdG9yZWZyb250TG9jYWxlXxARWC1NTWUtQ2xpZW50LUluZm9fEA9YLU1tZS1EZXZpY2UtSWRfEA9BY2NlcHQtTGFuZ3VhZ2VfEBJYLUFwcGxlLUktVGltZVpvbmVeWC1BcHBsZS1JLU1ELU1XYWx0RFNJRF8QFVgtQXBwbGUtSS1DbGllbnQtVGltZVxYLUFwcGxlLUktTURfEBBYLUFwcGxlLUdTLVRva2VuWlVzZXItQWdlbnReQ29udGVudC1MZW5ndGhfEBBYLUFwcGxlLUktTG9jYWxloRNYODQyMTUwNDChFV8QEGFwcGxpY2F0aW9uL2pzb26hF18QEWd6aXAsIGRlZmxhdGUsIGJyoRlTKi8qoRtcMTQzNDYwLTI3LDI5oR1fEFs8aVBob25lMTAsMT4gPGlQaG9uZSBPUzsxNC43LjE7MThHODI+IDxjb20uYXBwbGUuQXV0aEtpdC8xIChjb20uYXBwbGUuTmV3RGV2aWNlT3V0cmVhY2gvMSk+oR9fECg5ODI0NWMzNTUyNGY5YTgxZDY2MGIxZTBhMDRkYmFhNzFjNWI4OTkzoSFVZW4tYXWhI1RBV1NUoSVfEFBpaklpOENQdXo0YVQ5dUpGZ3NIUHhnV044cFY2VkxJaEhBOHNiSHpMWDg1R3g5TUh6VDQrNXZCNkU5U2NwWWlqOWxad1dFbVh6SGkwZS83Y6EnXxAuMDAwMjg0LTA4LTdhMTU0NGVkLTFlZGQtNDU0Ni1iYmE5LTBhYzhlN2Q5Y2I3M6EpXxAUMjAyMy0wNy0wOVQxMDo0NjoyNVqhK18QKEFBQUFCUUFBQUJBdDYvcXpHajBUSWxzZGFxdW4vNHpBQUFBQUF3PT2hLV8RASBBQUFBQkx3SUFBQUFBR1NxV0xnUkVtZHpMbk4xY0hCdmNuUmhjSEF1WVhWMGFMMEFaMUZHa1lnKzIyYjN2RlJaTmJZT2tKZW1FVVl2Y0VTcEpOMTBDOGlzMk91NmpFRnp5RlArNlBuNXZvcUQzdVM2YzZIanRNWFE0cnJXN2ZQbko5UnNQdU5TS3lLMkJicWFwMWxYcnRKSGRSYUVrVTV1QkxXOUcvOTRMbVQ4SjE1SG9VNmJSVU1iYmRlUC9qRFdDM0RkT09NWnJhNVBsaTc1ei9qYVoxMVR0eGpvZ09kSnU5NUVhVjZSUmR3WDd3Y1ZiV21jWDFsS0VjK1JCa290ejhFeENUK1VCU2tsSVhIUG5lTnFLem9kTTNHYzA2T2yhL18QLzxjb20uYXBwbGUuTmV3RGV2aWNlT3V0cmVhY2gvMTQuNy4xL2lQaG9uZTEwLDE+oTFTMTAxoTNVZW5fQVUACAAtAEIATwBhAGgAewCPAKEAswDIANcA3wD3AQQBFwEiATEBRAFGAU8BUQFkAWYBegF8AYABggGPAZEB7wHxAhwCHgIkAiYCKwItAoACggKzArUCzALOAvkC+wQfBCEEUwRVBFkEWwAAAAAAAAIBAAAAAAAAADQAAAAAAAAAAAAAAAAAAARh\143460-27,29_
+[<iPhone10,1> <iPhone OS;14.7.1;18G82> <com.apple.AuthKit/1 (com.apple.NewDeviceOutreach/1)>_
+(98245c35524f9a81d660b1e0a04dbaa71c5b8993Uen-auTAWST_
+PijIi8CPuz4aT9uJFgsHPxgWN8pV6VLIhHA8sbHzLX85Gx9MHzT4+5vB6E9ScpYij9lZwWEmXzHi0e/7c_
+.000284-08-7a1544ed-1edd-4546-bba9-0ac8e7d9cb73_
+2023-07-09T10:46:25Z_
+(AAAABQAAABAt6/qzGj0TIlsdaqun/4zAAAAAAw==_
+ AAAABLwIAAAAAGSqWLgREmdzLnN1cHBvcnRhcHAuYXV0aL0AZ1FGkYg+22b3vFRZNbYOkJemEUYvcESpJN10C8is2Ou6jEFzyFP+6Pn5voqD3uS6c6HjtMXQ4rrW7fPnJ9RsPuNSKyK2Bbqap1lXrtJHdRaEkU5uBLW9G/94LmT8J15HoU6bRUMbbdeP/jDWC3DdOOMZra5Pli75z/jaZ11TtxjogOdJu95EaV6RRdwX7wcVbWmcX1lKEc+RBkotz8ExCT+UBSklIXHPneNqKzodM3Gc06Ol_
+/<com.apple.NewDeviceOutreach/14.7.1/iPhone10,1>S101
+e{"serialNumber":"C7CVD2RXJC6F","locale":"en_AU","requestTimestamp":1688899585974,"requestTimezone":8}
+	b		
+
+3
+^
+
+
+,-
+5https://sse-ws-p189.apple.com/api/v2/coverage/summary#A
+ !"#$%&'()*+\Content-TypeQHZSet-CookieVServer_
+X-XSS-ProtectionWExpires^X-Apple-Txn-IDTDate_
+Strict-Transport-Security_
+X-Apple-Session-ID^Content-LengthZConnection_
+X-Content-Type-OptionsX__hhaa___
+X-Frame-Options_
+application/json_
+$a6a4f6d0-ee2e-41f6-9789-aaa5395b7bcb_
+GJSESSIONID=node011kbdu0cghf991qd69qwenwsun2340244.node0; Path=/; SecureUApple]1; mode=block_
+Thu, 01 Jan 1970 00:00:00 GMT_
+Sun, 09 Jul 2023 10:46:27 GMT_
+&node011kbdu0cghf991qd69qwenwsun2340244T3781Zkeep-aliveWnosniff_
+
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHR8hIyUnKVxDb250ZW50LVR5cGVRSFpTZXQtQ29va2llVlNlcnZlcl8QEFgtWFNTLVByb3RlY3Rpb25XRXhwaXJlc15YLUFwcGxlLVR4bi1JRFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QElgtQXBwbGUtU2Vzc2lvbi1JRF5Db250ZW50LUxlbmd0aFpDb25uZWN0aW9uXxAWWC1Db250ZW50LVR5cGUtT3B0aW9uc18QD1gtRnJhbWUtT3B0aW9uc6EQXxAQYXBwbGljYXRpb24vanNvbqESXxAkYTZhNGY2Z
+{"covered":false,"coverageLocalizedLabel":"Coverage Expired","coverageLocalizedDesc":"Coverage Expired","coverageLocalizedDescLong":"Our records indicate that your product isn
+t covered under Apple
+s Limited Warranty or an AppleCare product for hardware repairs and service based on the estimated expiration date.","footer1FormatString":"Service is governed by specific AppleCare Terms and Conditions and is limited to the service options available in the country where service is requested. Service options, parts availability and response times may vary. Coverage status and expiration date are estimated. Your warranty is the same whether or not you register. %@","footer1LinkLabel":"Learn about Apple
+s coverage information for your product...","footer1LinkURL":"https://support.apple.com/en-us/HT202696","footer2FormatString":"Important: Apple
+s Limited Warranty and AppleCare product benefits are in addition to rights provided by consumer law. If you believe you have a valid consumer law claim, please contact us. %@","footer2LinkLabel":"See details...","footer2LinkURL":"http://www.apple.com/legal/warranty","acOfferEligible":false,"acOfferIdentifier":"OC1","featureToggleParameters":{"acOfferDisplay":false,"acOfferSettingsAppBadge":false,"acOfferDurationDaysBeforeEndDate":1000,"acOfferToggle":["1111"]},"responseUUID":"a6a4f6d0-ee2e-41f6-9789-aaa5395b7bcb","acLogoToggle":false,"coverage":{"localizedCoverageTitle":"Service Options","coverageDetails":[{"localizedCoverageLabel":"Paid Repairs & Service","localizedCoverageValue":"Available","localizedCoverageSubText":"Paid Apple-certified repairs and service at the Apple Store or with one of our Apple Authorized Service Providers"},{"localizedCoverageLabel":"Phone Support","localizedCoverageValue":"Available","localizedCoverageSubText":"Contact us for expert technical support from the people who know your product best"}],"localizedCoverageFooterFormatString":"Our records indicate that your product is not covered under Apple
+s Limited Warranty or an AppleCare product for hardware repairs and service based on the estimated expiration date. %@","localizedCoverageFooterLinkLabel":"Learn more about your support options
+","benefitsCard":{"localizedBenefitsCardTitle":"Coverage Expired","localizedBenefitsCardSubTitle":"These service options are available to you:","benefitDetails":[{"localizedBenefitLabel":"Paid Repairs & Service","localizedBenefitValue":"Your coverage has expired, but you can still pay for Apple-certified repairs and service at the Apple Store or with one of our Apple Authorized Service Providers. You can also send your device to an Apple Repair Center."},{"localizedBenefitLabel":"Phone Support","localizedBenefitValue":"Contact us for expert technical support from the people who know your product best."}],"localizedBenefitsCardFooter":"Service is governed by specific AppleCare Terms and Conditions and is limited to the service options available in the country where service is requested. Service options, parts availability and response times may vary."}},"localizedSupportAppLabel":"GET REPAIR OR SUPPORT","displayRepairAndSupport":true,"showNotificationToggle":false,"showNotificationBeforeEndDate":15,"agsURL":"https://agreements.apple.com/acsales","coverageTypeCode":"OO","localizedSupportAppFooter":"Schedule a visit at the Apple Store or an Apple Authorized Service Provider, call or chat with an Advisor, troubleshoot issues, and more.","deviceInfo":{"deviceDesc":"iPhone 8","deviceImageUrl":"https://support.apple.com/content/dam/edam/applecare/images/en_US/applecare/ios/PGF31008_3x.png","sgId":"SG003","pfcId":"PFC3001","pgfId":"PGF31008","parentId":"504266"},"acOfferConversionDate":0,"isAcServicesPartner":false,"isAcSubscription":false,"isAPSSupported":false}
+4E@ SQLite format 3
+WUyZS00MWY2LTk3ODktYWFhNTM5NWI3YmNioRRfEEdKU0VTU0lPTklEPW5vZGUwMTFrYmR1MGNnaGY5OTFxZDY5cXdlbndzdW4yMzQwMjQ0Lm5vZGUwOyBQYXRoPS87IFNlY3VyZaEWVUFwcGxloRhdMTsgbW9kZT1ibG9ja6EaXxAdVGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVShHF8QJGE2YTRmNmQwLWVlMmUtNDFmNi05Nzg5LWFhYTUzOTViN2JjYqEeXxAdU3VuLCAwOSBKdWwgMjAyMyAxMDo0NjoyNyBHTVShIF8QI21heC1hZ2U9MzE1MzYwMDA7IGluY2x1ZGVTdWJkb21haW5zoSJfECZub2RlMDExa2JkdTBjZ2hmOTkxcWQ2OXF3ZW53c3VuMjM0MDI0NKEkVDM3ODGhJlprZWVwLWFsaXZloShXbm9zbmlmZqEqWlNBTUVPUklHSU4ACAAlADIANAA/AEYAWQBhAHAAdQCRAKYAtQDAANkA6wDtAQABAgEpASsBdQF3AX0BfwGNAY8BrwGxAdgB2gH6AfwCIgIkAk0CTwJUAlYCYQJjAmsCbQAAAAAAAAIBAAAAAAAAACsAAAAAAAAAAAAAAAAAAAJ4ZSAMEORIGIN_
+$0b32e2e4-79bb-4f90-98c8-b6a34453eaa1_
+FJSESSIONID=node0xv1cm5uh2adk1qxy10rhl7bc42335728.node0; Path=/; SecureUApple]1; mode=block_
+Sun, 09 Jul 2023 10:46:28 GMT_
+%node0xv1cm5uh2adk1qxy10rhl7bc42335728T3781Zkeep-aliveWnosniff_
+
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHR8hIyUnKVxDb250ZW50LVR5cGVRSFpTZXQtQ29va2llVlNlcnZlcl8QEFgtWFNTLVByb3RlY3Rpb25XRXhwaXJlc15YLUFwcGxlLVR4bi1JRFREYXRlXxAZU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eV8QElgtQXBwbGUtU2Vzc2lvbi1JRF5Db250ZW50LUxlbmd0aFpDb25uZWN0aW9uXxAWWC1Db250ZW50LVR5cGUtT3B0aW9uc18QD1gtRnJhbWUtT3B0aW9uc6EQXxAQYXBwbGljYXRpb24vanNvbqESXxAkMGIzMmUyZ
+s Limited Warranty and AppleCare product benefits are in addition to rights provided by consumer law. If you believe you have a valid consumer law claim, please contact us. %@","footer2LinkLabel":"See details...","footer2LinkURL":"http://www.apple.com/legal/warranty","acOfferEligible":false,"acOfferIdentifier":"OC1","featureToggleParameters":{"acOfferDisplay":false,"acOfferSettingsAppBadge":false,"acOfferDurationDaysBeforeEndDate":1000,"acOfferToggle":["1111"]},"responseUUID":"0b32e2e4-79bb-4f90-98c8-b6a34453eaa1","acLogoToggle":false,"coverage":{"localizedCoverageTitle":"Service Options","coverageDetails":[{"localizedCoverageLabel":"Paid Repairs & Service","localizedCoverageValue":"Available","localizedCoverageSubText":"Paid Apple-certified repairs and service at the Apple Store or with one of our Apple Authorized Service Providers"},{"localizedCoverageLabel":"Phone Support","localizedCoverageValue":"Available","localizedCoverageSubText":"Contact us for expert technical support from the people who know your product best"}],"localizedCoverageFooterFormatString":"Our records indicate that your product is not covered under Apple
+TQtNzliYi00ZjkwLTk4YzgtYjZhMzQ0NTNlYWExoRRfEEZKU0VTU0lPTklEPW5vZGUweHYxY201dWgyYWRrMXF4eTEwcmhsN2JjNDIzMzU3Mjgubm9kZTA7IFBhdGg9LzsgU2VjdXJloRZVQXBwbGWhGF0xOyBtb2RlPWJsb2NroRpfEB1UaHUsIDAxIEphbiAxOTcwIDAwOjAwOjAwIEdNVKEcXxAkMGIzMmUyZTQtNzliYi00ZjkwLTk4YzgtYjZhMzQ0NTNlYWExoR5fEB1TdW4sIDA5IEp1bCAyMDIzIDEwOjQ2OjI4IEdNVKEgXxAjbWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnOhIl8QJW5vZGUweHYxY201dWgyYWRrMXF4eTEwcmhsN2JjNDIzMzU3MjihJFQzNzgxoSZaa2VlcC1hbGl2ZaEoV25vc25pZmahKlpTQU1FT1JJR0lOAAgAJQAyADQAPwBGAFkAYQBwAHUAkQCmALUAwADZAOsA7QEAAQIBKQErAXQBdgF8AX4BjAGOAa4BsAHXAdkB+QH7AiECIwJLAk0CUgJUAl8CYQJpAmsAAAAAAAACAQAAAAAAAAArAAAAAAAAAAAAAAAAAAACdg==ZSAMEORIGIN_
+
+
+YnBsaXN0MDDfEBEBAgMEBQYHCAkKCwwNDg8QERIUFhgaHB4gIiQmKCosLjAyXxASWC1BcHBsZS1JLU1ELVJJTkZPXENvbnRlbnQtVHlwZV8QD0FjY2VwdC1FbmNvZGluZ1ZBY2NlcHRfEBBzdG9yZWZyb250TG9jYWxlXxARWC1NTWUtQ2xpZW50LUluZm9fEA9YLU1tZS1EZXZpY2UtSWRfEA9BY2NlcHQtTGFuZ3VhZ2VfEBJYLUFwcGxlLUktVGltZVpvbmVeWC1BcHBsZS1JLU1ELU1XYWx0RFNJRF8QFVgtQXBwbGUtSS1DbGllbnQtVGltZVxYLUFwcGxlLUktTURfEBBYLUFwcGxlLUdTLVRva2VuWlVzZXItQWdlbnReQ29udGVudC1MZW5ndGhfEBBYLUFwcGxlLUktTG9jYWxloRNYODQyMTUwNDChFV8QEGFwcGxpY2F0aW9uL2pzb26hF18QEWd6aXAsIGRlZmxhdGUsIGJyoRlTKi8qoRtcMTQzNDYwLTI3LDI5oR1fEFs8aVBob25lMTAsMT4gPGlQaG9uZSBPUzsxNC43LjE7MThHODI+IDxjb20uYXBwbGUuQXV0aEtpdC8xIChjb20uYXBwbGUuTmV3RGV2aWNlT3V0cmVhY2gvMSk+oR9fECg5ODI0NWMzNTUyNGY5YTgxZDY2MGIxZTBhMDRkYmFhNzFjNWI4OTkzoSFVZW4tYXWhI1RBV1NUoSVfEFBpaklpOENQdXo0YVQ5dUpGZ3NIUHhnV044cFY2VkxJaEhBOHNiSHpMWDg1R3g5TUh6VDQrNXZCNkU5U2NwWWlqOWxad1dFbVh6SGkwZS83Y6EnXxAuMDAwMjg0LTA4LTdhMTU0NGVkLTFlZGQtNDU0Ni1iYmE5LTBhYzhlN2Q5Y2I3M6EpXxAUMjAyMy0wNy0wOVQxMDo0NjoyNlqhK18QKEFBQUFCUUFBQUJBdDYvcXpHajBUSWxzZGFxdW4vNHpBQUFBQUF3PT2hLV8RASBBQUFBQkx3SUFBQUFBR1NxV0xnUkVtZHpMbk4xY0hCdmNuUmhjSEF1WVhWMGFMMEFaMUZHa1lnKzIyYjN2RlJaTmJZT2tKZW1FVVl2Y0VTcEpOMTBDOGlzMk91NmpFRnp5RlArNlBuNXZvcUQzdVM2YzZIanRNWFE0cnJXN2ZQbko5UnNQdU5TS3lLMkJicWFwMWxYcnRKSGRSYUVrVTV1QkxXOUcvOTRMbVQ4SjE1SG9VNmJSVU1iYmRlUC9qRFdDM0RkT09NWnJhNVBsaTc1ei9qYVoxMVR0eGpvZ09kSnU5NUVhVjZSUmR3WDd3Y1ZiV21jWDFsS0VjK1JCa290ejhFeENUK1VCU2tsSVhIUG5lTnFLem9kTTNHYzA2T2yhL18QLzxjb20uYXBwbGUuTmV3RGV2aWNlT3V0cmVhY2gvMTQuNy4xL2lQaG9uZTEwLDE+oTFTMTAxoTNVZW5fQVUACAAtAEIATwBhAGgAewCPAKEAswDIANcA3wD3AQQBFwEiATEBRAFGAU8BUQFkAWYBegF8AYABggGPAZEB7wHxAhwCHgIkAiYCKwItAoACggKzArUCzALOAvkC+wQfBCEEUwRVBFkEWwAAAAAAAAIBAAAAAAAAADQAAAAAAAAAAAAAAAAAAARh\143460-27,29_
+2023-07-09T10:46:26Z_
+e{"serialNumber":"C7CVD2RXJC6F","locale":"en_AU","requestTimestamp":1688899586438,"requestTimezone":8}

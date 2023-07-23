@@ -1,0 +1,16 @@
+SQLite format 3
+tableeventsevents
+CREATE TABLE events (pid INTEGER, report_url TEXT,eventBody BLOB, timestampInserted REAL, timestampReported INTEGER, PRIMARY KEY (pid))
+windexevents_report_urlevents
+CREATE INDEX events_report_url ON events (report_url) 
+indexevents_timestampInsertedevents
+CREATE INDEX events_timestampInserted ON events (timestampInserted)X
+indexevents_timestampReportedevents
+CREATE INDEX events_timestampReported ON events (timestampReported)n
+Ytableeventsevents
+CREATE TABLE events (pid INTEGER, report_url TEXT,eventBody BLOB, timestampInserted REAL, timestampReported INTEGER, supressDsid INTEGER DEFAULT 0, PRIMARY KEY (pid))n
+CREATE INDEX events_report_url ON events (report_url)
+_BSu
+WUsSQLite format 3
+}mSQLite format 3
+LO(SQLite format 3

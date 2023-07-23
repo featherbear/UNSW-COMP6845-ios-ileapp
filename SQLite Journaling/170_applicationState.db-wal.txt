@@ -1,0 +1,217 @@
+SQLite format 3
+B%
+viewkvs_debugkvs_debugCREATE VIEW kvs_debug AS     SELECT application_identifier_tab.application_identifier, key_tab.key, value FROM application_identifier_tab, key_tab, kvs WHERE         kvs.application_identifier=application_identifier_tab.id         AND kvs.key=key_tab.idr	
+indexkvs_application_identifierskvs
+CREATE INDEX kvs_application_identifiers ON kvs(application_identifier)8
+Oindexkvs_keyskvs	CREATE INDEX kvs_keys ON kvs(key)c
+-tablekvskvs
+CREATE TABLE kvs (    id INTEGER PRIMARY KEY,    application_identifier INT REFERENCES application_identifier_tab(id),    key INT REFERENCES key_tab(id),    value BLOB,    UNIQUE(application_identifier, key))%
+indexsqlite_autoindex_kvs_1kvs
+tableapplication_identifier_tabapplication_identifier_tab
+CREATE TABLE application_identifier_tab (id INTEGER PRIMARY KEY, application_identifier TEXT NOT NULL, UNIQUE(application_identifier))S
+indexsqlite_autoindex_application_identifier_tab_1application_identifier_tab
+'tablekey_tabkey_tab
+CREATE TABLE key_tab (id INTEGER PRIMARY KEY, key TEXT NOT NULL, UNIQUE(key))-
+indexsqlite_autoindex_key_tab_1key_tab
+_tableschemaschema
+CREATE TABLE schema(version INT NOT NULL)
+bplist00O
+wbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+qU$null
+WversionYsnapshotsV$class
+WNS.keysZNS.objects
+"com.apple.camera - {DEFAULT GROUP}_
+ sceneID:com.apple.camera-default
+Zidentifier
+launchInterfaceIdentifier\relativePathVscheme^expirationDate_
+compatibilityModeWgroupID_
+ilityModeWgroupID_
+customSafeAreaInsetsZimageScale_
+statusBarSettingsZfullScreenTname_
+interfaceOrientation\fileLocation[classicMode_
+backgroundStyle_
+userInterfaceStyleYvariantID\lastUsedDate]referenceSize[contentType\extendedData[imageOpaque\creationDate_
+requiredOSVersion
+$DB09699B-C693-4F4F-9F90-34AED2AB3788_
+__from_UILaunchStoryboardName___
++DB09699B-C693-4F4F-9F90-34AED2AB3788@2x.ktx
+`WNS.time#A
+eZ$classnameX$classesVNSDate
+fXNSObjectZ{375, 667}
+isBackgroundActivityEnabledUstyleVhidden
+XBStatusBarSettings
+XBStatusBarSettingsTnone_
+UIBackgroundStyleDefault
+XBApplicationSnapshot
+$BB077F6C-465D-4F65-A190-98B4D3D112F1_
++BB077F6C-465D-4F65-A190-98B4D3D112F1@2x.ktx
+$AA310037-51A4-4AED-9494-CF7D92DD10AAVcamera_
++AA310037-51A4-4AED-9494-CF7D92DD10AA@2x.ktx
+-Ur;
+^NSMutableArray
+fWNSArray
+XBApplicationSnapshotGroup
+E\contentFrame
+$DB1FD017-5671-4A2A-A680-3BFF822BDE03Zdownscaled_
+ sceneID:com.apple.camera-default_
++DB1FD017-5671-4A2A-A680-3BFF822BDE03@2x.ktx
+-Uws)_
+{{0, 0}, {375, 667}}
+XtopInsetYleftInset[bottomInsetZrightInset#
+XBDisplayEdgeInsetsWrapper
+$87311649-8E60-4ECD-A61F-C21C394E275A_
++87311649-8E60-4ECD-A61F-C21C394E275A@2x.ktx
+-Uwm
+[bottomInset
+EXvariants
+$297C716B-E286-4E69-8BC6-DE71603AAB04_
++297C716B-E286-4E69-8BC6-DE71603AAB04@2x.ktx
+-Uwi@
+NSMutableDictionary
+f\NSDictionary
+$6A53236A-D233-46CE-96AF-CC13D2D6251C_
++6A53236A-D233-46CE-96AF-CC13D2D6251C@2x.ktx
+-Uwn
+!XBApplicationSnapshotManifestImpl
+!XBApplicationSnapshotManifestImpl_
+XBApplicationSnapshotManifest
+	,	.	0	2	4	6	8	:	<	>	?	A	C	E	G	I	K	M	O	P	R	T	V	}	
+
+"
+,
+8
+C
+L
+N
+W
+t
+y
+
+#%')+-/13568:<>@BDFGIKMt
+$-/1
+
+.
+7
+@
+B
+Y
+f
+i
+k
+n
+p
+r
+{
+
+stomSafeAreaInsetsZimageScale_
+fXNSObject
+Z{375, 667}
+$66A26380-9E87-4CCA-B607-A1EABE0156BEZdownscaled_
++66A26380-9E87-4CCA-B607-A1EABE0156BE@2x.ktx
+$41B9AF1C-C78F-46E5-A93A-305EC1E01FE2_
++41B9AF1C-C78F-46E5-A93A-305EC1E01FE2@2x.ktx
+$B4486AE0-8A4E-48EC-A76F-93D3C1DD57C9_
++B4486AE0-8A4E-48EC-A76F-93D3C1DD57C9@2x.ktx
+$16768126-7A60-4BA0-B321-6191DE1129C2_
++16768126-7A60-4BA0-B321-6191DE1129C2@2x.ktx
+	5	B	D	F	H	J	L	N	P	R	T	U	W	Y	[	]	_	a	c	e	f	h	j	l	
+
+/
+8
+B
+N
+Y
+b
+d
+m
+
+=FHJLNPRTVXY[]_acegijlnpr
+	
+*1>
+
+'
+U
+^
+g
+i
+
+?SQLite format 3
+<bplist00
+U$null
++com.apple.mobileslideshow - {DEFAULT GROUP}_
+)sceneID:com.apple.mobileslideshow-default
+$70792442-B2FF-4B8E-B3EB-E097862C1017_
++70792442-B2FF-4B8E-B3EB-E097862
+C1017@2x.ktx
+aWNS.time#A
+fZ$classnameX$classesVNSDate
+gXNSObject
+$05F9F740-F886-454F-B3C8-38FC852C1AC0_
++05F9F740-F886-454F-B3C8-38FC852C1AC0@2x.ktx
+$5139008B-C20F-4CB9-B642-5A307FA3393C_
++5139008B-C20F-4CB9-B642-5A307FA3393C@2x.ktx
+$2E0897E0-8CB2-4F4D-BE96-630990A8495F_
++2E0897E0-8CB2-4F4D-BE96-630990A8495F@2x.ktx
+gWNSArray
+F\contentFrame
+$C436F61F-12BD-47A6-8343-83153D07DDC8Zdownscaled_
+)sceneID:com.apple.mobileslideshow-default_
++C436F61F-12BD-47A6-8343-83153D07DDC8@2x.ktx
+FXvariants
+$277F32ED-6F69-4F05-B768-049A40BF1C69_
++277F32ED-6F69-4F05-B768-049A40BF1C69@2x.ktx
+FZdownscaled
+$E43535CF-D2EF-4874-B610-504BB0A1F15A_
++E43535CF-D2EF-4874-B610-504BB0A1F15A@2x.ktx
+g\NSDictionary
+$D9B04B64-F2A9-4F81-945B-6D11DDE56365_
++D9B04B64-F2A9-4F81-945B-6D11DDE56365@2x.ktx
+	3	a	j	s	u	
+
+
+
+
+
+
+ 
+"
+$
+&
+(
+
+,Zcln
+(135
+
+0
+^
+g
+p
+r
+
+B-E097862C1017@2x.ktx
+-G'{Y
+$4B434498-9595-4D04-9B88-ED765AB6BC5E_
++4B434498-9595-4D04-9B88-ED765AB6BC5E@2x.ktx
+$E3F8A632-1EA9-4B1D-A796-6A9B458BA47E_
++E3F8A632-1EA9-4B1D-A796-6A9B458BA47E@2x.ktx
+	1	_	h	q	s	
+
+ 
+"
+$
+&
+
+*Xajl
+&/13
+
+M
+V
+_
+a
+x
+
+

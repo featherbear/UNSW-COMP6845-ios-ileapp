@@ -1,0 +1,12 @@
+﻿Value	Key
+2023-07-09 18:23:58.527064	XPCActivityLastCompleteDate.com.apple.routined.metrics.daily
+2023-07-10 11:13:11.637455	XPCActivityLastAttemptDate.com.apple.routined.locationAwareness.heartbeat
+1688900603	CKStartupTime
+2023-07-09 18:27:30.895200	XPCActivityLastCompleteDate.com.apple.routined.purge
+2023-07-09 11:03:36.113798	LastLaunchDate.routined
+2023-07-09 08:45:16.894218	LastExitDate.CoreRoutineHelperService
+2023-07-10 11:13:12.139845	XPCActivityLastCompleteDate.com.apple.routined.locationAwareness.heartbeat
+['CKAcccountInfoCacheReset']	CKPerBootTasks
+2023-07-09 18:23:58.522774	XPCActivityLastAttemptDate.com.apple.routined.metrics.daily
+2023-07-09 18:27:30.585229	XPCActivityLastAttemptDate.com.apple.routined.purge
+2023-07-09 08:42:43.393591	LastLaunchDate.CoreRoutineHelperService

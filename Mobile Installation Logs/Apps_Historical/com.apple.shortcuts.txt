@@ -1,0 +1,6 @@
+2023-07-09 14:42:02 Data container moved com.apple.shortcuts /private/var/mobile/Containers/Data/Application/ECF1A608-30C0-4380-B6C8-D0B7414BC402
+2023-07-09 14:42:02 Made container live com.apple.shortcuts /private/var/containers/Bundle/Application/A7C404B9-FE3B-4E2E-9B6C-8DF94425CAFB
+2023-07-09 14:42:02 Install successful com.apple.shortcuts 
+2023-07-08 23:20:28 Made container live com.apple.shortcuts /private/var/mobile/Containers/Data/Application/9EF74F12-7F5E-4093-B329-F62F893B3507
+2023-07-08 23:20:28 Made container live com.apple.shortcuts /private/var/containers/Bundle/Application/09CDE4AE-6F1C-4276-AAC9-A1EEF4AC8B79
+2023-07-08 23:20:28 Install successful com.apple.shortcuts 

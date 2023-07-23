@@ -1,0 +1,1 @@
+2023-07-08 23:19:42 Made container live com.apple.sidecar.extension.signature /private/var/mobile/Containers/Data/PluginKitPlugin/98B5EA96-8BCB-4D28-92BC-AA30D3B44975

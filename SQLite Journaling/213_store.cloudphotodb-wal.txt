@@ -1,0 +1,835 @@
+8u*'!SQLite format 3
+7748FDB3-9A5B-430E-B625-50B583E96878
+42441640-A45E-467B-BF7B-800AC782090EA
+-F\O[-
++.)
+
+~;
+
+y"fi
+ubRC
+Xpp8
+^Y=&
+xVXR
+~~TN@
+%E(
+
+(jz@
+Ctableglobalsglobals
+CREATE TABLE globals (libraryVersion TEXT, "libraryOptions" INTEGER, "resources.totalSize" INTEGER, "resources.totalOriginalSize" INTEGER, "pullQueue.pullMarker" INTEGER, "pullQueue.pushMarker" INTEGER, "scopes.nextIndex" INTEGER, "scopes.scopeListSyncAnchor" DATA, "pushRepository.extractedBatch" DATA, "statusCenter.generation" INTEGER, "downloadQueue.nextTaskIdentifier" INTEGER, "downloadQueue.nextPosition" INTEGER, "userIdentifier" DATA, "lastQuarantineCountReportDate" TIMESTAMP, "clientCacheIdentifier" TEXT, "clientCacheIdentifierClientSide" TEXT, "libraryCreationDate" TIMESTAMP, "changeSessionUpdate" DATA, "shouldUpdateDisabledFeatures" INTEGER, "disabledFeatures" DATA, "derivativesFilter" DATA, "deactivated" INTEGER)	
+7indexpullQueue.scopedIdentifier.idxpullQueue
+CREATE INDEX "pullQueue.scopedIdentifier.idx" ON "pullQueue" (identifier, scopeIndex)
+'indexpullQueue.library_version.idxpullQueue
+CREATE INDEX "pullQueue.library_version.idx" ON "pullQueue" (library_version)I
+atablepullQueuepullQueue
+CREATE TABLE "pullQueue" (library_version TEXT NOT NULL,batch_marker INTEGER NOT NULL,scopeIndex INTEGER NOT NULL,identifier TEXT NOT NULL,serializedRecord DATA NOT NULL)]
+atableinitialQueryTrackerinitialQueryTracker
+CREATE TABLE "initialQueryTracker" (scopeIndex INTEGER NOT NULL,date TIMESTAMP NOT NULL,event INTEGER NOT NULL,class TEXT,count INTEGER,cursor BLOB,finishedState INTEGER)
++indexcloudCache.localScopeIndex.idxcloudCache
+CREATE INDEX "cloudCache.localScopeIndex.idx" ON "cloudCache" (localScopeIndex)u
+indexcloudCache.scopeIndex.idxcloudCache
+CREATE INDEX "cloudCache.scopeIndex.idx" ON "cloudCache" (scopeIndex)f
+indexcloudCache.class.idxcloudCache
+CREATE INDEX "cloudCache.class.idx" ON "cloudCache" (class)r
+
+indexcloudCache.confirmed.idxcloudCache
+CREATE INDEX "cloudCache.confirmed.idx" ON "cloudCache" (confirmed)~
+'indexcloudCache.scopedState.idxcloudCache
+CREATE INDEX "cloudCache.scopedState.idx" ON "cloudCache" (state, scopeIndex):
+windexcloudCache.stagedSecondaryScopedIdentifier.idxcloudCache
+CREATE INDEX "cloudCache.stagedSecondaryScopedIdentifier.idx" ON "cloudCache" (stagedSecondaryIdentifier, scopeIndex)4
+
+oindexcloudCache.stagedRelatedScopedIdentifier.idxcloudCacheCREATE INDEX "cloudCache.stagedRelatedScopedIdentifier.idx" ON "cloudCache" (stagedRelatedIdentifier, scopeIndex)(	
+_indexcloudCache.secondaryScopedIdentifier.idxcloudCacheCREATE INDEX "cloudCache.secondaryScopedIdentifier.idx" ON "cloudCache" (secondaryIdentifier, scopeIndex)"
+WindexcloudCache.relatedScopedIdentifier.idxcloudCache
+CREATE INDEX "cloudCache.relatedScopedIdentifier.idx" ON "cloudCache" (relatedIdentifier, scopeIndex)
+
+;indexcloudCache.scopedIdentifier.idxcloudCache	CREATE INDEX "cloudCache.scopedIdentifier.idx" ON "cloudCache" (identifier, scopeIndex)
+tablecloudCachecloudCache
+CREATE TABLE "cloudCache" (state INTEGER DEFAULT 0,scopeIndex INTEGER NOT NULL,identifier TEXT NOT NULL,class TEXT NOT NULL,relatedIdentifier TEXT,secondaryIdentifier TEXT,serializedRecord DATA DEFAULT NULL,stagedRelatedIdentifier TEXT,stagedSecondaryIdentifier TEXT,stagedSerializedRecord DATA DEFAULT NULL,localScopeIndex INTEGER DEFAULT 0,confirmed INTEGER NOT NULL DEFAULT 1)
+;indexresources.identifierForStorage.idxresources
+CREATE INDEX "resources.identifierForStorage.idx" ON "resources" (identifierForStorage)1
+indexsqlite_autoindex_resources_1resources
+}tableresourcesresources
+CREATE TABLE "resources" (identifierForStorage TEXT UNIQUE NOT NULL,retainCount INTEGER NOT NULL,CHECK(retainCount > 0))
+utablecleanupTaskscleanupTasks
+CREATE TABLE "cleanupTasks" (scopeIndex INTEGER NOT NULL,scopeType INTEGER NOT NULL,scopeIdentifier STRING NOT NULL)
+indexpullQueue.scopeIndex.idxpullQueue
+CREATE INDEX "pullQueue.scopeIndex.idx" ON "pullQueue" (scopeIndex)w
+indexpullQueue.batch_marker.idxpullQueue
+CREATE INDEX "pullQueue.batch_marker.idx" ON "pullQueue" (batch_marker)!"
+OindexoutgoingResources.resourceType.idxoutgoingResources$CREATE INDEX "outgoingResources.resourceType.idx" ON "outgoingResources" (resourceType, fileKind)
+tableoutgoingResourcesoutgoingResources#CREATE TABLE "outgoingResources" (scopeIndex INTEGER NOT NULL,itemIdentifier TEXT NOT NULL,resourceType INTEGER NOT NULL,fingerPrint TEXT NOT NULL,fileUTI TEXT NOT NULL,fileKind INTEGER NOT NULL,fileSize INTEGER NOT NULL,uploadIdentifier TEXT NOT NULL)v 
+indexscopes.scopeIdentifier.idxscopes"CREATE INDEX "scopes.scopeIdentifier.idx" ON "scopes" ("scopeIdentifier")+
+indexsqlite_autoindex_scopes_4scopes!+
+indexsqlite_autoindex_scopes_3scopes +
+indexsqlite_autoindex_scopes_2scopes
+indexsqlite_autoindex_scopes_1scopes
+ctablescopesscopes
+CREATE TABLE "scopes" ("scopeIdentifier" TEXT UNIQUE NOT NULL, "scopeType" INTEGER NOT NULL DEFAULT 0, "localIndex" INTEGER UNIQUE NOT NULL, "cloudIndex" INTEGER UNIQUE NOT NULL, "stableIndex" INTEGER UNIQUE NOT NULL, "creationDate" TIMESTAMP NOT NULL, "flags" INTEGER NOT NULL DEFAULT 0, "disabledDate" TIMESTAMP, "deleteDate" TIMESTAMP, "libraryInfo" DATA, "scopeChange" DATA, "lastLibraryInfoUpdate" TIMESTAMP, "transportScope" DATA, "featureVersion" INTEGER NOT NULL DEFAULT 15, "droppedSomeRecords" INTEGER NOT NULL DEFAULT 0, "transientSyncAnchor" DATA, "syncAnchor" DATA, "stagedSyncAnchor" DATA, "hasFetchedInitialSyncAnchor" INTEGER NOT NULL DEFAULT 0, "initialSyncAnchor" DATA, "classForInitialQuery" TEXT, "uploadTransportGroup" DATA, "downloadTransportGroup" DATA, "lastClearedPush" TIMESTAMP, "estimatedSize" INTEGER, "estimatedAssetCount" INTEGER, "initialSyncDate" TIMESTAMP, "pushToTransportCurrentGeneration" INTEGER NOT NULL DEFAULT 0, "pushToTransportTargetGeneration" INTEGER NOT NULL DEFAULT 0, "pullFromTransportCurrentGeneration" INTEGER NOT NULL DEFAULT 0, "pullFromTransportTargetGeneration" INTEGER NOT NULL DEFAULT 0, "pullFromTransportLastCompletionDate" TIMESTAMP, "pullFromTransportExpirationInterval" INTEGER NOT NULL DEFAULT 600, "clientNeedsToPullCurrentGeneration" INTEGER NOT NULL DEFAULT 0, "clientNeedsToPullTargetGeneration" INTEGER NOT NULL DEFAULT 0, "updateTransportCurrentGeneration" INTEGER NOT NULL DEFAULT 0, "updateTransportTargetGeneration" INTEGER NOT NULL DEFAULT 0)w
+indexidMapping.mappingState.idxidMapping
+CREATE INDEX "idMapping.mappingState.idx" ON "idMapping" (mappingState)%
+eindexidMapping.scopedLocalIdentifier.idxidMapping
+CREATE UNIQUE INDEX "idMapping.scopedLocalIdentifier.idx" ON "idMapping" (stableScopeIndex, localIdentifier)%
+eindexidMapping.scopedCloudIdentifier.idxidMapping
+CREATE UNIQUE INDEX "idMapping.scopedCloudIdentifier.idx" ON "idMapping" (stableScopeIndex, cloudIdentifier)
+tableidMappingidMapping
+CREATE TABLE "idMapping" (stableScopeIndex INTEGER NOT NULL,cloudIdentifier TEXT NOT NULL,localIdentifier TEXT NOT NULL,mappingState INTEGER NOT NULL,addTimestamp TIMESTAMP NOT NULL,addDirection INTEGER NOT NULL,deleteTimestamp TIMESTAMP,deleteDirection INTEGER)
+__
+
+}indexquarantinedRecords.localScopedIdentifier.idxquarantinedRecords5CREATE UNIQUE INDEX "quarantinedRecords.localScopedIdentifier.idx" ON "quarantinedRecords" (localIdentifier, scopeIndex)P2
+KtablequarantinedRecordsquarantinedRecords4CREATE TABLE "quarantinedRecords" (scopeIndex INTEGER NOT NULL,localIdentifier TEXT NOT NULL,quarantineDate TIMESTAMP NOT NULL,class TEXT,reason TEXT NOT NULL)}1
+indexstatusCenter.scopeIndex.idxstatusCenter3CREATE INDEX "statusCenter.scopeIndex.idx" ON "statusCenter" (scopeIndex)n0
+indexstatusCenter.class.idxstatusCenter2CREATE INDEX "statusCenter.class.idx" ON "statusCenter" (class)
+QindexstatusCenter.scopedIdentifier.idxstatusCenter1CREATE UNIQUE INDEX "statusCenter.scopedIdentifier.idx" ON "statusCenter" (identifier, scopeIndex)'.
+tablestatusCenterstatusCenter0CREATE TABLE "statusCenter" (scopeIndex INTEGER NOT NULL,identifier TEXT NOT NULL,class TEXT NOT NULL,generation INTEGER NOT NULL)7-
+indexpushRepository.class.changeType.idxpushRepository/CREATE INDEX "pushRepository.class.changeType.idx" ON "pushRepository" (scopeIndex, class, changeType, dequeueOrder DESC).,
+sindexpushRepository.class.trashed.idxpushRepository.CREATE INDEX "pushRepository.class.trashed.idx" ON "pushRepository" (scopeIndex, class, trashed, dequeueOrder DESC)
+QindexpushRepository.dequeueOrder.idxpushRepository-CREATE INDEX "pushRepository.dequeueOrder.idx" ON "pushRepository" (scopeIndex, dequeueOrder DESC)
+QindexpushRepository.class.idxpushRepository,CREATE INDEX "pushRepository.class.idx" ON "pushRepository" (scopeIndex, class, dequeueOrder DESC)3)
+qindexpushRepository.secondaryIdentifier.idxpushRepository+CREATE INDEX "pushRepository.secondaryIdentifier.idx" ON "pushRepository" (class, scopeIndex, secondaryIdentifier)-(
+iindexpushRepository.relatedIdentifier.idxpushRepository*CREATE INDEX "pushRepository.relatedIdentifier.idx" ON "pushRepository" (class, scopeIndex, relatedIdentifier)
+KindexpushRepository.scopedIdentifier.idxpushRepository)CREATE INDEX "pushRepository.scopedIdentifier.idx" ON "pushRepository" (scopeIndex, identifier)
+stablepushRepositorypushRepository(CREATE TABLE "pushRepository" (class TEXT NOT NULL,scopeIndex INTEGER NOT NULL,identifier TEXT NOT NULL,changeType INTEGER NOT NULL,relatedIdentifier TEXT,secondaryIdentifier TEXT,dequeueOrder INTEGER NOT NULL,trashed INTEGER NOT NULL,uploadIdentifier TEXT,trustLevel INTEGER NOT NULL,serializedRecord DATA)
+3indexoutgoingResources.scopeIndex.idxoutgoingResources'CREATE INDEX "outgoingResources.scopeIndex.idx" ON "outgoingResources" (scopeIndex)#$
+KindexoutgoingResources.uploadIdentifier.idxoutgoingResources&CREATE INDEX "outgoingResources.uploadIdentifier.idx" ON "outgoingResources" (uploadIdentifier),#
+mindexoutgoingResources.resource.idxoutgoingResources%CREATE INDEX "outgoingResources.resource.idx" ON "outgoingResources" (itemIdentifier, resourceType, fingerPrint)
+
+#	J
+_indexremappedDeletes.scopedRealIdentifier.idxremappedDeletesBCREATE INDEX "remappedDeletes.scopedRealIdentifier.idx" ON "remappedDeletes" (scopeIndex, realIdentifier)7?
+qindexremappedDeletes.scopedCloudIdentifier.idxremappedDeletesACREATE UNIQUE INDEX "remappedDeletes.scopedCloudIdentifier.idx" ON "remappedDeletes" (scopeIndex, cloudIdentifier)@>
+7tableremappedDeletesremappedDeletes@CREATE TABLE "remappedDeletes" (scopeIndex INTEGER NOT NULL,cloudIdentifier TEXT NOT NULL,realIdentifier TEXT NOT NULL,deleteDate TIMESTAMP NOT NULL),=
+WindextransientPullRepository.mingled.idxtransientPullRepository?CREATE INDEX "transientPullRepository.mingled.idx" ON "transientPullRepository" (mingled, scopeIndex):<
+{indextransientPullRepository.pop.idxtransientPullRepository>CREATE INDEX "transientPullRepository.pop.idx" ON "transientPullRepository" (transientType, mingled, class, scopeIndex)V;
+indextransientPullRepository.relatedScopedIdentifier.idxtransientPullRepository=CREATE INDEX "transientPullRepository.relatedScopedIdentifier.idx" ON "transientPullRepository" (scopeIndex, relatedIdentifier)H:
+}indextransientPullRepository.scopedIdentifier.idxtransientPullRepository<CREATE UNIQUE INDEX "transientPullRepository.scopedIdentifier.idx" ON "transientPullRepository" (scopeIndex, identifier)
+	tabletransientPullRepositorytransientPullRepository;CREATE TABLE "transientPullRepository" (transientType INTEGER NOT NULL,class TEXT NOT NULL,scopeIndex INTEGER NOT NULL,identifier TEXT NOT NULL,relatedIdentifier TEXT,mingled INTEGER NOT NULL,dequeueOrder INTEGER DEFAULT 0,serializedRecord DATA NOT NULL)
+#indexdownloadQueue.scopeIndex.idxdownloadQueue:CREATE INDEX "downloadQueue.scopeIndex.idx" ON "downloadQueue" (scopeIndex)7
+AindexdownloadQueue.status.idxdownloadQueue9CREATE INDEX "downloadQueue.status.idx" ON "downloadQueue" (status, intent, position DESC)46
+windexdownloadQueue.resourceType.status.idxdownloadQueue8CREATE INDEX "downloadQueue.resourceType.status.idx" ON "downloadQueue" (resourceType, status, intent, position DESC)"5
+iindexdownloadQueue.resource.idxdownloadQueue7CREATE UNIQUE INDEX "downloadQueue.resource.idx" ON "downloadQueue" (itemIdentifier, scopeIndex, resourceType)
+tabledownloadQueuedownloadQueue6CREATE TABLE "downloadQueue" (position INTEGER NOT NULL,scopeIndex INTEGER NOT NULL,itemIdentifier TEXT NOT NULL,resourceType INTEGER NOT NULL,fingerPrint TEXT NOT NULL,fileUTI TEXT,fileSize INTEGER NOT NULL,taskIdentifier INTEGER NOT NULL,retryCount INTEGER NOT NULL,status INTEGER NOT NULL, intent INTEGER NOT NULL)
+&#		
+PrimarySync
+#	PrimarySync
+-F\O[-bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+!"&,06JMUVW[aimnosw|
+U$null
+ VnotifyV$classQuQdRul^libraryVersionTdateQnQqQb
+$7F3213F8-2A09-4CF2-8859-783B6D74BDEE
+$%WNS.time#A
+'()*Z$classnameX$classesVNSDate
+)+XNSObject
+./Wrecords
+25ZNS.objects
+789:
+;<=>?@ABCCDEFGEECYalbumType_
+recordModificationDateXposition]albumSortType_
+serverRecordIsCorrupted_
+albumSortAscending_
+scopedIdentifierZinExpungedWinTrashZchangeType
+K%#A
+QRSTQiQ#Qs
+----Root-Folder----[PrimarySync
+'(XY_
+CPLScopedIdentifier
+'(\]^CPLAlbumChange
+^_`+^CPLAlbumChange_
+CPLContainerChange_
+CPLRecordChange
+;<=>?@ABCCDEFfEEC
+jRkT
+----Project-Root-Folder----[PrimarySync
+'(pq^NSMutableArray
+pr+WNSArray
+'(tu^CPLChangeBatch
+v+^CPLChangeBatch
+\NSMutableSet
++\NSMutableSetUNSSet
+CPLPushSessionUpdate
+CPLPushSessionUpdate_
+CPLChangeSessionUpdate
+7F3213F8-2A09-4CF2-8859-783B6D74BDEE
+42441640-A45E-467B-BF7B-800AC782090E42441640-A45E-467B-BF7B-800AC782090EA
+
+)	C
+RCPLAlbumChange----Project-Root-Folder----*Z
+bplist00
+QcQpUAlbum
+	
+SmodTabTyTabSA#A
+"',57
+
+)	3
+RCPLAlbumChange----Root-Folder----*Z
+----Project-Root-Folder----
+	3	----Root-Folder----
+CPLAlbumChange
+	CPLAlbumChange
+CPLAlbumChange*Z
+	CPLAlbumChange*Z
+#U$null
+V$classZRecordNameVZoneID
+!_a98d5b62de6367c6ee656dd4501d3974
+XZoneNameYownerName
+\_defaultZone_
+__defaultOwner__
+ Z$classnameX$classes^CKRecordZoneID
+!"^CKRecordZoneIDXNSObject
+$%ZCKRecordID
+&"ZCKRecordID
+M42441640-A45E-467B-BF7B-800AC782090E42441640-A45E-467B-BF7B-800AC782090EA
+"#U$null
+WprivateVsharedV$class
+ChangeTokenData
+Z$classnameX$classes_
+CKServerChangeToken
+CKServerChangeTokenXNSObject
+CPLCloudKitScopeListSyncAnchor
+Xbplist00
+)#		
+3bplist00
+-345<=AU$null
+QzQoV$class
+ !!!!%
+!()*!!XPCSKeyID\ZoneishKeyID_
+ClientChangeToken^ShareReference[DeviceCount_
+AssetQuotaUsage_
+PCSModificationDate_
+MetadataQuotaUsage_
+PreviousProtectionEtagVZoneID\Capabilities_
+InvitedKeysToRemove_
+CurrentServerChangeToken
+012XZoneNameYownerName
+[PrimarySync_
+6789Z$classnameX$classes^CKRecordZoneID
+:;^CKRecordZoneIDXNSObject
+67>?\CKRecordZone
+@;\CKRecordZone
+67BC_
+CPLCloudKitScope
+"*678<=U$null
+V$class_
+ExpectedSendSize_
+ExpectedReceiveSize_
+OperationGroupIDXQuantity_
+DefaultConfiguration_
+AuthPromptReasonTName_
+SystemImposedInfo
+ !YNS.string
+50DE520485791BB7
+#$%&Z$classnameX$classes_
+NSMutableString
+'()_
+NSMutableStringXNSStringXNSObject
+
++,-./012342_
+AllowsCellularAccess_
+5applicationBundleIdentifierOverrideForContainerAccess_
+DiscretionaryNetworkBehavior_
+$SourceApplicationSecondaryIdentifier_
+8applicationBundleIdentifierOverrideForNetworkAttribution
++com.apple.mobileslideshow.PhotosMessagesApp_
+com.apple.mobileslideshow
+#$9:_
+CKOperationConfiguration
+CKOperationConfiguration^Initial Upload
+#$>?_
+CKOperationGroup
+:bplist00
+9C167AA40A6F8B9A
+CKOperationConfiguration_
+Initial Download
+SQLite format 3
++#		
+!"#$*0-67:>?U$null
+UflagsV$classVcounts[momentShareWhistory
+ WNS.keysZNS.objects
+\public.movie\public.image
+%&'(Z$classnameX$classes\NSDictionary
+')XNSObject
+,-./WcurrentXversions
+.bplist00
+$)27ILQSX^cj|~
+%&89_
+NSMutableDictionary
+%&;<_
+CPLFeatureVersionHistory
+CPLFeatureVersionHistoryF
+%&@A^CPLLibraryInfo
+B)^CPLLibraryInfo
+bplist00
+ &'(/U$null
+ZchangeTypeV$classYactivated_
+serverRecordIsCorrupted\pullTaskItemWinTrashYscopeTypeZinExpungedXdisabled_
+scopedIdentifier
+#$%QiQs
+[PrimarySyncY__SCOPE__
+)*+,Z$classnameX$classes_
+CPLScopedIdentifierXNSObject
+)*01^CPLScopeChange
+23.^CPLScopeChange_
+-G"iu
+!59?GHIMS[_`dhiU$null
+uploadIdentifiersUbatch_
+untrustableIdentifiers_
+clientCacheIdentifierV$class
+Wrecords
+ ZNS.objects
+"#$%
+&'()*+,-../01200.YalbumType_
+78WNS.time#A
+:;<=Z$classnameX$classesVNSDate
+<>XNSObject
+CDEFQiQ#Qs
+:;JK_
+:;NO^CPLAlbumChange
+PQR>^CPLAlbumChange_
+&'()*+,-../01X00.
+\DEF
+:;ab^NSMutableArray
+ac>WNSArray
+:;ef^CPLChangeBatch
+g>^CPLChangeBatch_
+$42441640-A45E-467B-BF7B-800AC782090E
+:;jk_
+CPLExtractedBatch
+----Project-Root-Folder--------Project-Root-Folder----*Z
+----Root-Folder--------Root-Folder----*Z
+----Root-Folder----
+i
+8k
+&q~Q/[
+
+----Project-Root-Folder----CPLAlbumChangebplist00
+----Root-Folder----CPLAlbumChangebplist00
+	----Root-Folder----
+)	CPLAlbumChange
+null
+CPLPersonChange
+-G$@
+CPLPersonChange 
+
+SQLite format 3
+Ff)g
+,#		
+h)DL
+Z$classnameX
+CPLAssetChangebplist00
+$classes_
+-G$D@[bplist00
+-G$GJ
+CPLAssetChange!
+CPLAssetChange
+CPLAlbumChangebplist00
+CPLAlbumChange 
+wCPLAlbumChange
+CPLAlbumChange----Root-Folder----*Z
+SSIdTabTyTanchTabSASmod
+QiQs_
+QcQpXCKRecord
+	
+
+
+"%TckrtTckksTETagTckidTckpiTckmtTckmdTckluTckuiTckctXCPLAlbum	Q4
+ZrecordNameVzoneID_
+YownerNameXzoneName_
+__defaultOwner__[PrimarySync
+!\_defaultZone
+E	#A
+CPLAlbumChange----Project-Root-Folder----*Z
+"%TckrtTckksTETagTckidTckpiTckmtTckmdTckluTckuiTckctXCPLAlbum	Q5
+M	#A
+	C	----Project-Root-Folder----
+hADL
+KServerChangeToken
+CPLContainerRelationChangebplist00
+sses_
+-G%*4
+CPLContainerRelationChange 
+CPLContainerRelationChange+
+A{<T
+h+DL
+Z$classnameX$
+verChangeToken
+classes_
+CPLMemoryChangebplist00
+CPLMemoryChange,	
+CPLMemoryChange 
+
+8JTSQLite format 3
+h3DL
+Z$classnameX$clas
+ses_
+CPLSuggestionChangebplist00
+CPLSuggestionChange!
+7``T
+CPLSuggestionChange$
+V%an
+h/DL
+Z$classnameX$cl
+asses_
+CPLFaceCropChangebplist00
+'CPLFaceCropChange%
+
+-G&-U
+CPLFaceCropChange"
+0SQLite format 3
+-#		
+h
+DL
+classnameX$classes_
+2SQLite format 3
+				
+-G&ZK
+8bplist00
+	
+TabTyTanchTabSASmod
+Glc^
+y*b
+
+djm
+
+O%p)
+	)		
+N@SQLite format 3
+5H{?
+.#		
+serverRecordIsCorrupted\
+pullTaskItemWinTrashYscopeTypeZinExpungedXdisabled_
+-G&\
+o42441640-A45E-467B-BF7B-800AC782090E42441640-A45E-467B-BF7B-800AC782090EA
+.C\+p
+-G&`i'A
+X73
+
+Rt2 
+-G&`i'
+jbplist00
+-G(jH8
+7yeV
+,!g~
+.
+/
+Ubplist00
+.
+/EPv
+.
+/H`
+:U$null
+$4C09C879-4BAD-442F-A6B8-5BE893BCD81D
+%WNS.time#A
+*Z$classnameX$classesVNSDate
++XNSObject
+5WNS.keysZNS.objects
+;QiQs
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L[PrimarySync
+$9E6387E7-2287-4D83-9C35-C4163C105D54[PrimarySync_
+$C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AE_
+$1339D6C7-22CF-4A05-ADE7-A48238EC7B21
++\NSDictionary
+QWrecords
+recordModificationDateXitemType]mediaMetaData_
+serverRecordIsCorruptedXfilenameZimportDateZchangeTypeWinTrashZimportedByYresources_
+fullSizeJPEGSourceZinExpunged^videoFrameRate_
+scopedIdentifier_
+mediaMetaDataType\creationDate_
+originalOrientation
+[public.heic
+CGImageProperties]IMG_0001.HEICO
+	
+
+ g
+V{TIFF}V{Exif}\{MakerApple}[PixelHeightUDepth\PrimaryImage[ProfileNameXDPIWidthYDPIHeightZColorModel[OrientationZPixelWidth
+\HostComputer^ResolutionUnitXSoftwareZTileLengthXDateTime[XResolutionYTileWidth[YResolutionUModelTMakeXiPhone 8
+V14.7.1
+2023:07:10 18:58:49#@R
+UApple
+"!"#$%&'()*+,-./0123456789:;<=>?@ABCEFGHIN
+OGPQRSTVNWXYZ[\abHG
+cdeNf
+[ExifVersionUFlashYLensModel_
+OffsetTimeDigitized_
+SubsecTimeOriginal_
+LensSpecification\ExposureModeXLensMakeWFNumber_
+OffsetTimeOriginal_
+PixelYDimension]ApertureValue_
+ExposureBiasValue\MeteringMode_
+ISOSpeedRatings_
+ShutterSpeedValue_
+SceneCaptureType[FocalLength_
+DateTimeOriginalYSceneType_
+FlashPixVersionZColorSpace[SubjectArea_
+PixelXDimension_
+FocalLenIn35mmFilm_
+SubsecTimeDigitizedZOffsetTime]SensingMethod_
+BrightnessValue_
+DateTimeDigitized_
+ComponentsConfiguration\WhiteBalance\ExposureTime_
+ExposureProgram
+!iPhone 8 back camera 3.99mm f/1.8V+08:00S245
+JKLM"@
+\)"@
+\)"?
+ff"?
+y	AXKEYdaVrfsTzhqXXaatLhnzlQbw.com_apple_quicktime-movie+
+]	AeEG2lcu8uwb0TBXgYcfqcL3iZ3L.public_heic
+AXKEYdaVrfsTzhqXXaatLhnzlQbw.com_apple_quicktime-movie
+JJ}
+
+UAeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+AXKEYdaVrfsTzhqXXaatLhnzlQbwcom.apple.quicktime-movie
+C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AEs
+		E	E#
+UAeEG2lcu8uwb0TBXgYcfqcL3iZ3LAeEG2lcu8uwb0TBXgYcfqcL3iZ3Lpublic.heic
+:C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AE
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+AXKEYdaVrfsTzhqXXaatLhnzlQbw
+E	E	AeEG2lcu8uwb0TBXgYcfqcL3iZ3LAeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AE
+U	C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AE
+2023:07:10 18:58:49
+]^_`
+DN#?
+ hijklmnopqrstuvwxyz{|}~
+NNYN
+NNNYY
+bQ8R32R25R55R17R46R33R26R12Q1R20Q2R13R43Q3R59R14Q4R37Q5R15R45Q6R38R60R23R16Q7R39R31R54R47
+?q8_
+$2F0FE293-6C32-41A5-930D-8FC7C58FAD74_
+$467E68D3-8524-48FF-8115-15606DCE00B2"
+Uq825s
+$5B41D456-4A3B-47EB-92D2-3331FD64F3AE
+UflagsUvalueYtimescaleUepoch
+	ZDisplay P3"B
+SRGB
+Xidentity\resourceType_
+itemScopedIdentifier_
+sourceResourceType_
+canGenerateDerivative
+WfileUTI[fingerPrint_
+imageDimensionsYavailableXfileSize
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L[public.heic\{4032, 3024}
+!CPLResourceIdentityImplementation
+!CPLResourceIdentityImplementation_
+CPLResourceIdentity
+[CPLResource
++[CPLResource
+AXKEYdaVrfsTzhqXXaatLhnzlQbw_
+com.apple.quicktime-movie[{980, 1308}
+WNSArray
+CPLMasterChange
+CPLMasterChange]CPLItemChange_
+
+^originalChoiceZchangeType\facesVersion_
+recordModificationDateYplayCountVpeople_
+$videoComplementImageDisplayTimescale_
+mediaGroupIdentifier_
+videoComplementDurationValueVhiddenXdurationYaddedDate\assetHDRType_
+ videoComplementImageDisplayValue[orientationYassetDateZburstFlags\timeZoneName\assetSubtype_
+ videoComplementDurationTimescale^timeZoneOffsetYviewCountZshareCountXfavorite_
+serverRecordIsCorruptedZinExpunged_
+customRenderedValueXkeywords_
+videoComplementVisibilityState_
+masterIdentifierYfacesData
+mFrU
+'XGMT+0800_
+$467E68D3-8524-48FF-8115-15606DCE00B2
+^CPLAssetChange
++^CPLAssetChange]CPLItemChange_
+"^NSMutableArray
+%^CPLChangeBatch
++^CPLChangeBatch
+7\NSMutableSet
+0JR.
+G fSQLite format 3
+4C09C879-4BAD-442F-A6B8-5BE893BCD81D
+
+)	U
+bCPLAssetChange9E6387E7-2287-4D83-9C35-C4163C105D54AeEG2lcu8uwb0TBXgYcfqcL3iZ3L*\
+1339D6C7-22CF-4A05-ADE7-A48238EC7B21bplist00
+QcQpUAsset
+ !  TvcITTtzofSaddTfDatTvcDTTmGIDTasdtTtznaSmodTvcIVSoriTvcDVRppTsbtyRkwSres
+6e@_
+$467E68D3-8524-48FF-8115-15606DCE00B2#A
+XGMT+0800#A
+:?DHMRW\aejnsv{~
+
++	E
+NCPLMasterChangeAeEG2lcu8uwb0TBXgYcfqcL3iZ3L*\
+C4361FD3-A8F5-45B2-B1B4-8F15E5DE33AEbplist00
+QcQpVMaster
+./0123456TfJPSSresSiByTfNamTmmdtTidatTcreaTittySmodTororTmemd
+SIdyRrt
+"#TfUTITavaiSdimRszSfgp[public.heic	
+ !QwQh#@
+(+,_
+com.apple.quicktime-movie	
+)*#@
+]IMG_0001.HEIC_
+CGImageProperties#A
+6e#A
+[public.heic#A
+9E6387E7-2287-4D83-9C35-C4163C105D54
+	E	AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+CPLAssetChangeAeEG2lcu8uwb0TBXgYcfqcL3iZ3L
+	CPLMasterChange
+CPLAssetChange*\
+	CPLMasterChange*\
+{Uk>
+IWNS.time#A
+NZ$classnameX$classesVNSDate
+OXNSObject_
+9E6387E7-2287-4D83-9C35-C4163C105D549E6387E7-2287-4D83-9C35-C4163C105D54*\
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3LAeEG2lcu8uwb0TBXgYcfqcL3iZ3L*\
+8p\wX
+#'@{lB
+aXidentity\resourceType_
+mWfileUTI[fingerPrint_
+|QiQ#Qs
+O[CPLResource
+^originalChoiceZchangeType\facesVersion_
+$9E6387E7-2287-4D83-9C35-C4163C105D54_
+XGMT+0800_
+O^CPLAssetChange]CPLItemChange_
+^NSMutableArray
+^CPLChangeBatch
+O^CPLChangeBatch
+WNS.keys
+O\NSDictionary_
+
+!
+&
+(
+*
+,
+E
+N
+[
+r
+
+.-<
+hSQLite format 3
+IG4 R
+I79
+
+tn+
+
+	U)	9E6387E7-2287-4D83-9C35-C4163C105D54CPLAssetChange0
+	E+	AeEG2lcu8uwb0TBXgYcfqcL3iZ3LCPLMasterChange
+E		AeEG2lcu8uwb0TBXgYcfqcL3iZ3L
++	CPLMasterChange
+9E6387E7-2287-4D83-9C35-C4163C105D54CPLAssetChangeAeEG2lcu8uwb0TBXgYcfqcL3iZ3Lbplist00
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3LCPLMasterChangebplist00
+4I
+
+
++K#SQLite format 3
+^XOc
+!"#$%+1IJ.KLMNOPQRSTUVWXYZ[^bcU$null
+&'()Z$classnameX$classes\NSDictionary
+(*XNSObject
+-./0WcurrentXversions
+6789:;<
+>?@ABCDEFG
+)	UE
+CPLAssetChange9E6387E7-2287-4D83-9C35-C4163C105D54AeEG2lcu8uwb0TBXgYcfqcL3iZ3L*\
+!"#$%&'()*+**TvcITTtzofSaddTfDatSSIdTvcDTTasdtTanchTtznaTmaIdTmGIDTvcIVSmodSoriTvcDVRppTsbtyRkwSres
+ QiQs_
+$9E6387E7-2287-4D83-9C35-C4163C105D54[PrimarySync#A
+#&TckrtTckksTETagTckidTckpiTckmtTckmdTckluTckuiTckctXCPLAsset	Q9
+$9E6387E7-2287-4D83-9C35-C4163C105D54
+__defaultOwner__\_defaultZone
+!"#A
+iXGMT+0800_
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3L_
+CPLMasterChangeAeEG2lcu8uwb0TBXgYcfqcL3iZ3L*\
+ !"TmmdtTcreaTmemdTfNamSSIdSiByTanchSmodTidatTfJPSTittyTororSres_
+\HostComputer^ResolutionUnitXSoftwareZTileLengthXDateTime[XResolutionYTileWidth[YResolutionUModelTMakeXiPho
+J5
+U=2
+
+TokenData
+&'\]_
+&'_`_
+&'de^CPLLibraryInfo
+f*^CPLLibraryInfo
+9k
+
+
+'bplist00
+Cbplist00
+ne 8
+B]IMG_0001.HEIC
+#&TckrtTckksTETagTckidTckpiTckmtTckmdTckluTckuiTckctYCPLMaster	Q8
+I8#A
+#7BLVa
+$%&'6
+SIdyTitSIRrt
+()*+,-./45TfUTITavaiSdimRszSfgp[public.heic	
+0123QwQh#@
+$%&8@A
+()*+,9.;>?[public.jpeg	
+01<=#@
+ATKSWigpcnu2wW0VQsDzZh1lWqxv
+$%&CJK
+()*+,9.EHI	
+01FG#@v
+AbPVrhOdX2TscumG7NUOLjpDfkVa
+$%&MU!
+()*+,N.PST_
+01QR#@
+AaOwQeDWZI1v/7nmMAIxtO+cntC+
+$%&W_`
+()*+,X.Z]^_
+01[\#@{@
+AaOsUZer/+fgkIQQfBdm8AXLHCNJ
+$%&bjk
+()*+,c.ehi_
+01fg#@
+
+I
+W
+\
+^
+`
+
+
+ajsu
+
+ 
+,
+-
+2
+;
+D
+I
+h
+m
+o
+v
+
+
+rdNameVZoneID
+H4C09C879-4BAD-442F-A6B8-5BE893BCD81DAeEG2lcu8uwb0TBXgYcfqcL3iZ3Lbplist00
+	
+
+aTittySSIdTanchRctSresSmod\public.image
+QiQsQ#_
++6@KV
+)*SIdyTitSIRrt
+ !"'(TfUTITavaiSdimRszSfgp[public.heic	
+#$%&QwQh#@
+-!/23[public.jpeg	
+#$01#@
+-!9<=	
+#$:;#@v
+B!DGH_
+#$EF#@
+M!ORS_
+#$PQ#@{@
+X!Z]^_
+#$[\#@
+U	4C09C879-4BAD-442F-A6B8-5BE893BCD81D
+)	UE	
+	+		
+AeEG2lcu8uwb0TBXgYcfqcL3iZ3Lbplist00
+ !"#""TvcITTtzofSaddTfDatTvcDTTmGIDTanchTtznaTasdtTvcIVSmodSoriTvcDVRppTsbtyRkwSres
+$467E68D3-8524-48FF-8115-15606DCE00B2O
+iXGMT+0800#A
+Sbplist00
+TmmdtTcreaTmemdTfNamSiByTanchSmodTidatTfJPSTittyTororSres_
+/9BKU
+!"#$%&'(-.TfUTITavaiSdimRszSfgp[public.heic	
+)*+,QwQh#@
+!"#$%1'367[public.jpeg	
+)*45#@
+!"#$%1'<?@	
+)*=>#@v
+!"#$%D'FIJ_
+)*GH#@
+!"#$%M'ORS_
+)*PQ#@{@
+!"#$%W'Y\]_
+)*Z[#@
+
+C
+Q
+S'09;GIPUY\glqux|
+
+ 
+"
+'
+2
+3
+8
+A
+J
+O
+n
+p
+u
+
+wVSQLite format 3
+)I4
+
+V$cl
+angeTokenData
+ass_
+$SQLite format 3
+v&e?Fh
+
+424416
+N40-A45E-467B-BF7B-800AC782090E42441640-A45E-467B-BF7B-800AC782090EA
+V$class^libraryVersionScloScliTdate
+$74F3923D-B9D1-4DBA-82EA-B7D153B096B1
+WNS.time#A
+ Z$classnameX$classesVNSDate
+!XNSObject
+'Wrecords_
+additionalRecords
+,ZNS.objects
+recordModificationDateXitemType_
+serverRecordIsCorruptedZchangeTypeZimportedByWinTrashYresources_
+\public.image
+\Xidentity\resourceType_
+hWfileUTI[fingerPrint_
+vQiQs
+![CPLResource
+ATKSWigpcnu2wW0VQsDzZh1lWqxv[public.jpeg\{1536, 2048}
+AbPVrhOdX2TscumG7NUOLjpDfkVaZ{360, 480}
+AaOwQeDWZI1v/7nmMAIxtO+cntC+_
+com.apple.quicktime-movieZ{653, 872}
+AaOsUZer/+fgkIQQfBdm8AXLHCNJ_
+com.apple.quicktime-movieZ{436, 581}
+]mediaMetaDataXfilenameZimportDate_
+mediaMetaDataType\creationDate
+Q[public.heic_
+$	^h
+:	\{4032, 3024}
+>	\{1536, 2048}
+B	Z{360, 480}
+F	Z{653, 872}
+J	Z{436, 581}
+N	[{980, 1308}
+m^CPLChangeBatch
+!^CPLChangeBatch
+recordChangeData
+[	\{4032, 3024}
+`	\{1536, 2048}
+d	Z{360, 480}
+h	Z{653, 872}
+l	Z{436, 581}
+p	[{980, 1308}
+CPLPullSessionUpdate
+CPLPullSessionUpdate_
+	D	R	[	f	z	
+74F3923D-B9D1-4DBA-82EA-B7D153B096B1
+ySQLite format 3
+?bhZ
++,R9
+1lZ}

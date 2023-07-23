@@ -1,0 +1,2 @@
+2023-07-09 14:42:00 Data container moved com.apple.Translate.CacheDeleteExtension /private/var/mobile/Containers/Data/PluginKitPlugin/01EBA9EE-5A05-4882-BD0C-C89141D26240
+2023-07-08 23:20:24 Made container live com.apple.Translate.CacheDeleteExtension /private/var/mobile/Containers/Data/PluginKitPlugin/5817CEA2-17CA-459B-AE92-7A52198BCEAD

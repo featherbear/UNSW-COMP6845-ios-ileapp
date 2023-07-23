@@ -1,0 +1,6 @@
+2023-07-09 14:41:44 Data container moved com.apple.reminders /private/var/mobile/Containers/Data/Application/82642679-08CE-4E41-A48F-F4FDE60738BA
+2023-07-09 14:41:44 Made container live com.apple.reminders /private/var/containers/Bundle/Application/48C7F1AA-79FC-4369-B878-4ACB824A07C0
+2023-07-09 14:41:44 Install successful com.apple.reminders 
+2023-07-08 23:20:26 Made container live com.apple.reminders /private/var/mobile/Containers/Data/Application/DF37C75E-D211-4616-9AB3-DAA605F7C0A1
+2023-07-08 23:20:26 Made container live com.apple.reminders /private/var/containers/Bundle/Application/59BA71E9-CE6E-4711-A34D-6A6181C578C6
+2023-07-08 23:20:26 Install successful com.apple.reminders 

@@ -1,0 +1,1 @@
+2023-07-08 23:19:57 Made container live com.apple.GameCenterUI.GameCenterAuthenticateExtension /private/var/mobile/Containers/Data/PluginKitPlugin/8A2D5793-2750-4A19-8D5A-CE0142F96137

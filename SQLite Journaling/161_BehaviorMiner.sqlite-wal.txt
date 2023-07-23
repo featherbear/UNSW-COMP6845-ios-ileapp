@@ -1,0 +1,60 @@
+Item
+Rule
+'+4HourOfDaySlotHourOfDaySlot:4q
+K7wiMessage%3B%2D%3B%2B61448804154InteractionRecipientsInteractionRecipients:iMessage%3B%2D%3B%2B61448804154
+#1IsWeekendIsWeekend:1i
+;?ocom%2Eapple%2EMobileSMSInteractionTargetBundleIDInteractionTargetBundleID:com%2Eapple%2EMobileSMS
+				
+UUUUUU
+IsWeekend:1
+InteractionTargetBundleID:com%2Eapple%2EMobileSMS
+InteractionRecipients:iMessage%3B%2D%3B%2B61448804154
++	HourOfDaySlot:4
+'	HourOfDaySlot
+
+IsWeekend
+InteractionTargetBundleID
+InteractionRecipients
+4}"
+
+36e
+
+UUUUUU
+@166C38AE-F586-4759-AF0C-2F63E0AB6E5Bbplist00
+	)+,-.34_
+BMBehaviorDatabaseMetadata_
+NSStoreModelVersionIdentifiers[NSStoreType_
+_NSAutoVacuumLevel_
+NSStoreModelVersionHashesDigest_
+NSStoreModelVersionHashes_
+NSPersistenceFrameworkVersion_
+ NSStoreModelVersionHashesVersion
+
+
+
+%&'(ZminingDate_
+eventIntervalStart_
+minimumConfidence_
+samplingInterval_
+itemTypeIdentifiers_
+eventIntervalEnd_
+minimumAbsoluteSupport_
+numberOfBaskets_
+targetTypeIdentifiers3A
+Mb3A
+ !"#$_
+'InteractionExtractedTopicFromAttachment_
+ShareExtensionOpened_
+InteractionContentURL_
+InteractionRecipients_
+InteractionPhotoContact_
+ InteractionSharingSourceBundleID_
+InteractionTargetBundleIDYIsWeekend]HourOfDaySlot_
+InteractionPhotoScene_
+InteractionUTIType_
+AppHostOpenedShareExtension_
+CoreRoutineLocationIdentifier3A
+-WDH_[
+*PVSQLiteQ2_
+XkJ33KQGP1bcjRI89Gg6ShM6TOtdXCPr+0rFRKsN0KYg+KEED8eqE14syrKGC0KPhi1H41+WVxE0ngITdGhakPg==
+/012TItemTRuleO

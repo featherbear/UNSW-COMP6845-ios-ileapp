@@ -1,0 +1,6 @@
+2023-07-09 14:41:33 Data container moved com.apple.stocks /private/var/mobile/Containers/Data/Application/F9C9E3D1-A6E9-47A7-8AF6-474B59027756
+2023-07-09 14:41:33 Made container live com.apple.stocks /private/var/containers/Bundle/Application/CC3D4417-E2A0-4D61-8D4F-3E82A54C32C3
+2023-07-09 14:41:33 Install successful com.apple.stocks 
+2023-07-08 23:20:27 Made container live com.apple.stocks /private/var/mobile/Containers/Data/Application/348577F1-0FDE-47C1-8F8D-5772A4A03EF6
+2023-07-08 23:20:27 Made container live com.apple.stocks /private/var/containers/Bundle/Application/BA948C41-9917-4065-9A0B-352B589803E4
+2023-07-08 23:20:27 Install successful com.apple.stocks 

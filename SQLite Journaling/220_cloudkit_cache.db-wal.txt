@@ -1,0 +1,330 @@
+.DLw
+DSQLite format 3
+SQLite format 3
+E
+s
+
+<Z
+
+'
+:	
+indexRestoreDomainsAgentIdxRestoreDomains
+CREATE INDEX RestoreDomainsAgentIdx ON RestoreDomains(agent)m
+indexRestoreDomainsStateIdxRestoreDomains
+CREATE INDEX RestoreDomainsStateIdx ON RestoreDomains(state)
+mtableRestoreDomainsRestoreDomains
+CREATE TABLE RestoreDomains (domain TEXT PRIMARY KEY, state INTEGER NOT NULL DEFAULT 0, agent TEXT DEFAULT NULL);
+indexsqlite_autoindex_RestoreDomains_1RestoreDomains
+indexRestoreFilesRestoreStateIdxRestoreFiles
+CREATE INDEX RestoreFilesRestoreStateIdx ON RestoreFiles(restoreState)z
+indexRestoreFilesAbsolutePathIdxRestoreFiles
+CREATE INDEX RestoreFilesAbsolutePathIdx ON RestoreFiles(absolutePath)h
+indexRestoreFilesDomainIdxRestoreFiles
+CREATE INDEX RestoreFilesDomainIdx ON RestoreFiles(domain)
+	tableRestoreFilesRestoreFiles
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))7
+indexsqlite_autoindex_RestoreFiles_1RestoreFiles
+indexFilesDomainRelativePathIdxFiles
+CREATE INDEX FilesDomainRelativePathIdx ON Files(domain, relativePath)W
+uindexFilesManifestIDIdxFiles
+CREATE INDEX FilesManifestIDIdx ON Files(manifestID)Y
+tableFilesFiles
+CREATE TABLE Files (fileID TEXT, manifestID TEXT, domain TEXT, modified INTEGER, relativePath TEXT, deleted INTEGER, fileType INTEGER, file BLOB, PRIMARY KEY (manifestID, relativePath, domain) ))
+indexsqlite_autoindex_Files_1Files
+triggerDeleteManifestFilesManifestsCREATE TRIGGER DeleteManifestFiles AFTER DELETE ON Manifests BEGIN DELETE FROM Files WHERE manifestID = OLD.manifestID;END[
+uindexManifestsDomainIdxManifests
+CREATE INDEX ManifestsDomainIdx ON Manifests(domain)h
+indexManifestsSnapshotIDIdxManifests
+CREATE INDEX ManifestsSnapshotIDIdx ON Manifests(snapshotID)
+OtableManifestsManifests
+CREATE TABLE Manifests (manifestID TEXT PRIMARY KEY, snapshotID TEXT, domain TEXT, manifest BLOB)1
+
+indexsqlite_autoindex_Manifests_1Manifests
+uindexSnapshotsIDIdxSnapshots
+CREATE INDEX SnapshotsIDIdx ON Snapshots(snapshotID)
+[tableSnapshotsSnapshotsCREATE TABLE Snapshots (snapshotID TEXT PRIMARY KEY, committed INTEGER, created INTEGER, snapshot BLOB)1
+
+indexsqlite_autoindex_Snapshots_1Snapshots~
+indexFoundEncryptionKeysPathIdxFoundEncryptionKeys
+CREATE INDEX FoundEncryptionKeysPathIdx ON FoundEncryptionKeys(path)
+indexFoundEncryptionKeysInodeIdxFoundEncryptionKeys	CREATE INDEX FoundEncryptionKeysInodeIdx ON FoundEncryptionKeys(inode)
+7tableFoundEncryptionKeysFoundEncryptionKeys
+CREATE TABLE FoundEncryptionKeys (inode INTEGER, path TEXT NOT NULL UNIQUE, key BLOB)E
+indexsqlite_autoindex_FoundEncryptionKeys_1FoundEncryptionKeys
+
+indexFileChangesChangeTypeIdxFileChanges
+CREATE INDEX FileChangesChangeTypeIdx ON FileChanges(changeType)c
+}indexFileChangesDomainIdxFileChanges
+CREATE INDEX FileChangesDomainIdx ON FileChanges(domain)"
+tableFileChangesFileChanges
+CREATE TABLE FileChanges (domain TEXT, relativePath TEXT, size INTEGER, changeType INTEGER, PRIMARY KEY (domain, relativePath))5
+indexsqlite_autoindex_FileChanges_1FileChanges
+M{\
+
+fd61I
+/jB
+
+NSQLite format 3
+-tableFilesFiles
+CREATE TABLE Files (fileID TEXT, manifestID TEXT, domain TEXT, modified INTEGER, relativePath TEXT, deleted INTEGER, fileType INTEGER, file BLOB, size INTEGER, PRIMARY KEY (manifestID, relativePath, domain) )m
+CREATE INDEX FilesManifestIDIdx ON Files(manifestID)
+9tableRestoresRestores
+CREATE TABLE Restores (deviceUUID TEXT NOT NULL, snapshotUUID TEXT NOT NULL, state INTEGER NOT NULL DEFAULT 1, PRIMARY KEY (deviceUUID, snapshotUUID))g
+CREATE INDEX FilesManifestIDIdx ON Files(manifestID)	
+mindexRestoresStateIdxRestores!CREATE INDEX RestoresStateIdx ON Restores(state)/
+indexsqlite_autoindex_Restores_1Restores 
+/y0F
+}SQLite format 3
+tableRestoreDomainsRestoreDomains
+CREATE TABLE RestoreDomains (domain TEXT PRIMARY KEY, state INTEGER NOT NULL DEFAULT 0, agent TEXT DEFAULT NULL, safeHarbor BOOL)T 
+indexsqlite_autoindex_Restores_1Restores 3
+CREATE TABLE Restores (deviceUUID TEXT NOT NULL, snapshotUUID TEXT NOT NULL, state INTEGER NOT NULL DEFAULT 1, PRIMARY KEY (deviceUUID, snapshotUUID))m
+CREATE INDEX RestoreDomainsStateIdx ON RestoreDomains(state);
+CREATE INDEX RestoreFilesDomainIdx ON RestoreFiles(domain)7
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))r
+CREATE INDEX FilesManifestIDIdx ON Files(manifestID))
+CREATE TABLE Files (fileID TEXT, manifestID TEXT, domain TEXT, modified INTEGER, relativePath TEXT, deleted INTEGER, fileType INTEGER, file BLOB, size INTEGER, PRIMARY KEY (manifestID, relativePath, domain) )$
+CREATE INDEX ManifestsSnapshotIDIdx ON Manifests(snapshotID)1
+
+CREATE TABLE Manifests (manifestID TEXT PRIMARY KEY, snapshotID TEXT, domain TEXT, manifest BLOB)W
+uindexSnapshotsIDIdxSnapshots
+CREATE INDEX SnapshotsIDIdx ON Snapshots(snapshotID)1
+
+indexsqlite_autoindex_Snapshots_1Snapshots
+[tableSnapshotsSnapshotsCREATE TABLE Snapshots (snapshotID TEXT PRIMARY KEY, committed INTEGER, created INTEGER, snapshot BLOB)~
+indexFoundEncryptionKeysInodeIdxFoundEncryptionKeys	CREATE INDEX FoundEncryptionKeysInodeIdx ON FoundEncryptionKeys(inode)E
+CREATE TABLE FoundEncryptionKeys (inode INTEGER, path TEXT NOT NULL UNIQUE, key BLOB)p
+CREATE INDEX FileChangesDomainIdx ON FileChanges(domain)5
+CREATE TABLE FileChanges (domain TEXT, relativePath TEXT, size INTEGER, changeType INTEGER, PRIMARY KEY (domain, relativePath))
+:SQLite format 3
+eindexFilesFileIDIdxFiles"CREATE INDEX FilesFileIDIdx ON Files(fileID)*
+?SQLite format 3
+tablePropertiesProperties#CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)3#
+indexsqlite_autoindex_Properties_1Properties$K!
+|a)v
+BD&>SQLite format 3
+tablePropertiesProperties#CREATE TABLE Properties (key TEXT PRIMARY KEY, 
+
+;
+
+	
+	g	
+
+	indexRestoreFilesPriorityIdxRestoreFiles%CREATE INDEX RestoreFilesPriorityIdx ON RestoreFiles(priority)3#
+indexsqlite_autoindex_Properties_1Properties$["
+tablePropertiesProperties#CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)K!
+eindexFilesFileIDIdxFiles"CREATE INDEX FilesFileIDIdx ON Files(fileID)T 
+CREATE TABLE RestoreDomains (domain TEXT PRIMARY KEY, state INTEGER NOT NULL DEFAULT 0, agent TEXT DEFAULT NULL, safeHarbor BOOL)z
+-tableRestoreFilesRestoreFiles
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, priority INTEGER, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))r
+CREATE INDEX FilesDomainRelativePathIdx ON Files(domain, relativePath)
+3J4d
+tableDisabledDomainsDisabledDomains&CREATE TABLE DisabledDomains (name TEXT PRIMARY KEY, restricted INTEGER)=&
+indexsqlite_autoindex_DisabledDomains_1DisabledDomains'
+tableDevicesDevices(CREATE TABLE Devices (deviceUUID TEXT PRIMARY KEY, device BLOB)-(
+indexsqlite_autoindex_Devices_1Devices)s%
+<SQLite format 3
+i/&
+
+sindexRestoreFileIDsRestoreFiles/CREATE INDEX RestoreFileIDs on RestoreFiles(fileID)-
+?indexFilesDomainManifestIDRelativePathFiles.CREATE INDEX FilesDomainManifestIDRelativePath on Files(domain, manifestID, relativePath)
+#indexPendingDeleteManifestIDCloudFilesPendingDelete-CREATE INDEX PendingDeleteManifestID on CloudFilesPendingDelete(manifestID)
+?indexPendingDeleteFileIDManifestIDCloudFilesPendingDelete,CREATE INDEX PendingDeleteFileIDManifestID on CloudFilesPendingDelete(fileID, manifestID)2)
+{tableCloudFilesPendingDeleteCloudFilesPendingDelete*CREATE TABLE CloudFilesPendingDelete (fileID TEXT NOT NULL, manifestID TEXT NOT NULL, PRIMARY KEY (fileID, manifestID))M*
+indexsqlite_autoindex_CloudFilesPendingDelete_1CloudFilesPendingDelete+Z'
+7indexManifestPagesManifestIDPageIndexManifestPages3CREATE INDEX ManifestPagesManifestIDPageIndex on ManifestPages(manifestID, pageIndex)r1
+indexManifestPagesManifestIDManifestPages2CREATE INDEX ManifestPagesManifestID on ManifestPages(manifestID)'/
+
+tableManifestPagesManifestPages0CREATE TABLE ManifestPages (manifestID TEXT NOT NULL, pageIndex INTEGER, manifestPage BLOB, PRIMARY KEY (manifestID, pageIndex))90
+indexsqlite_autoindex_ManifestPages_1ManifestPages1Y.
+?df1Y
+windexFilesFileIDSizeIdxFiles4CREATE INDEX FilesFileIDSizeIdx ON Files(fileID,size)
+rSQLite format 3
+RlSQLite format 3
+U(mb
+
+M@diNM
+
+4e1:
+
+nTXx
+RBGD
+~!n
+
+`C8
+
+triggerDeleteManifestFilesManifestsCREATE TRIGGER DeleteManifestFiles AFTER DELETE ON Manifests BEGIN DELETE FROM Files WHERE manifestID = OLD.manifestID;ENDX2
+7indexManifestPagesManifestIDPageIndexManifestPages3CREATE INDEX ManifestPagesManifestIDPageIndex on ManifestPages(manifestID, pageIndex)r0
+indexManifestPagesManifestIDManifestPages2CREATE INDEX ManifestPagesManifestID on ManifestPages(manifestID)Y/
+sindexRestoreFileIDsRestoreFiles1CREATE INDEX RestoreFileIDs on RestoreFiles(fileID).
+?indexFilesDomainManifestIDRelativePathFiles0CREATE INDEX FilesDomainManifestIDRelativePath on Files(domain, manifestID, relativePath)
+#indexPendingDeleteManifestIDCloudFilesPendingDelete/CREATE INDEX PendingDeleteManifestID on CloudFilesPendingDelete(manifestID)
+?indexPendingDeleteFileIDManifestIDCloudFilesPendingDelete.CREATE INDEX PendingDeleteFileIDManifestID on CloudFilesPendingDelete(fileID, manifestID)n+
+	indexRestoreFilesPriorityIdxRestoreFiles-CREATE INDEX RestoreFilesPriorityIdx ON RestoreFiles(priority)K*
+eindexFilesFileIDIdxFiles,CREATE INDEX FilesFileIDIdx ON Files(fileID)T)
+mindexRestoresStateIdxRestores+CREATE INDEX RestoresStateIdx ON Restores(state)m(
+indexRestoreDomainsAgentIdxRestoreDomains*CREATE INDEX RestoreDomainsAgentIdx ON RestoreDomains(agent)m'
+indexRestoreDomainsStateIdxRestoreDomains)CREATE INDEX RestoreDomainsStateIdx ON RestoreDomains(state)z&
+indexRestoreFilesRestoreStateIdxRestoreFiles(CREATE INDEX RestoreFilesRestoreStateIdx ON RestoreFiles(restoreState)z%
+indexRestoreFilesAbsolutePathIdxRestoreFiles'CREATE INDEX RestoreFilesAbsolutePathIdx ON RestoreFiles(absolutePath)h$
+indexRestoreFilesDomainIdxRestoreFiles&CREATE INDEX RestoreFilesDomainIdx ON RestoreFiles(domain)r#
+indexFilesDomainRelativePathIdxFiles%CREATE INDEX FilesDomainRelativePathIdx ON Files(domain, relativePath)W"
+uindexFilesManifestIDIdxFiles$CREATE INDEX FilesManifestIDIdx ON Files(manifestID)[!
+uindexManifestsDomainIdxManifests#CREATE INDEX ManifestsDomainIdx ON Manifests(domain)h 
+indexManifestsSnapshotIDIdxManifests"CREATE INDEX ManifestsSnapshotIDIdx ON Manifests(snapshotID)W
+uindexSnapshotsIDIdxSnapshots!CREATE INDEX SnapshotsIDIdx ON Snapshots(snapshotID)~
+indexFoundEncryptionKeysPathIdxFoundEncryptionKeys CREATE INDEX FoundEncryptionKeysPathIdx ON FoundEncryptionKeys(path)
+indexFoundEncryptionKeysInodeIdxFoundEncryptionKeys
+CREATE INDEX FoundEncryptionKeysInodeIdx ON FoundEncryptionKeys(inode)p
+CREATE INDEX FileChangesDomainIdx ON FileChanges(domain)9
+indexsqlite_autoindex_ManifestPages_1ManifestPages
+
+tableManifestPagesManifestPages
+CREATE TABLE ManifestPages (manifestID TEXT NOT NULL, pageIndex INTEGER, manifestPage BLOB, PRIMARY KEY (manifestID, pageIndex))M
+indexsqlite_autoindex_CloudFilesPendingDelete_1CloudFilesPendingDelete
+{tableCloudFilesPendingDeleteCloudFilesPendingDelete
+CREATE TABLE CloudFilesPendingDelete (fileID TEXT NOT NULL, manifestID TEXT NOT NULL, PRIMARY KEY (fileID, manifestID))-
+indexsqlite_autoindex_Devices_1Devices
+tableDevicesDevices
+CREATE TABLE Devices (deviceUUID TEXT PRIMARY KEY, device BLOB)=
+indexsqlite_autoindex_DisabledDomains_1DisabledDomains
+tableDisabledDomainsDisabledDomains
+CREATE TABLE DisabledDomains (name TEXT PRIMARY KEY, restricted INTEGER)
+tablePropertiesProperties
+CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)3
+indexsqlite_autoindex_Properties_1Properties
+CREATE TABLE Restores (deviceUUID TEXT NOT NULL, snapshotUUID TEXT NOT NULL, state INTEGER NOT NULL DEFAULT 1, PRIMARY KEY (deviceUUID, snapshotUUID))/
+indexsqlite_autoindex_Restores_1Restores
+CREATE TABLE RestoreDomains (domain TEXT PRIMARY KEY, state INTEGER NOT NULL DEFAULT 0, agent TEXT DEFAULT NULL, safeHarbor BOOL);
+-tableRestoreFilesRestoreFiles
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, priority INTEGER, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))7
+-tableFilesFilesCREATE TABLE Files (fileID TEXT, manifestID TEXT, domain TEXT, modified INTEGER, relativePath TEXT, deleted INTEGER, fileType INTEGER, file BLOB, size INTEGER, PRIMARY KEY (manifestID, relativePath, domain) ))
+
+indexsqlite_autoindex_Files_1Files
+OtableManifestsManifests	CREATE TABLE Manifests (manifestID TEXT PRIMARY KEY, snapshotID TEXT, domain TEXT, manifest BLOB)1
+indexsqlite_autoindex_Manifests_1Manifests
+
+[tableSnapshotsSnapshots
+CREATE TABLE Snapshots (snapshotID TEXT PRIMARY KEY, committed INTEGER, created INTEGER, snapshot BLOB)1
+indexsqlite_autoindex_Snapshots_1Snapshots
+fESQLite format 3
+tableScannedDomainsScannedDomains5CREATE TABLE ScannedDomains (domain TEXT PRIMARY KEY, size INTEGER);5
+indexsqlite_autoindex_ScannedDomains_1ScannedDomains6
+4sB
+
+mqSQLite format 3
+[yz6}a
+-tableFileChangesFileChanges
+CREATE TABLE FileChanges (domain TEXT, relativePath TEXT, size INTEGER, changeType INTEGER, shouldCopy BOOL, PRIMARY KEY (domain, relativePath))[
+eSQLite format 3
+!Y}
+ERH$>
+mG5
+
+tableRestoreAppsRestoreApps7CREATE TABLE RestoreApps (domain TEXT PRIMARY KEY, dependentDomains BLOB)57
+indexsqlite_autoindex_RestoreApps_1RestoreApps8l4
+indexsqlite_autoindex_ScannedDomains_1ScannedDomains6$3
+
+SQLite format 3
+C1YSQLite format 3
+1tableCloudFilesPendingDeleteCloudFilesPendingDelete
+CREATE TABLE CloudFilesPendingDelete (fileID TEXT NOT NULL, manifestID TEXT NOT NULL, file BLOB, duplicate BOOL, PRIMARY KEY (fileID, manifestID))p
+CREATE TABLE DisabledDomains (name TEXT PRIMARY KEY, restricted INTEGER)5
+CREATE INDEX FoundEncryptionKeysInodeIdx ON FoundEncryptionKeys(inode)
+;z-e
+vSQLite format 3
+ejn
+Z8\m:7
+CREATE TABLE Devices (deviceUUID TEXT PRIMARY KEY, device BLOB)
+tableRestoreAppsRestoreApps
+CREATE TABLE RestoreApps (domain TEXT PRIMARY KEY, dependentDomains BLOB)57
+indexsqlite_autoindex_RestoreApps_1RestoreApps
+
+>;jzZ
+
+Ks9
+_Rc
+
+=h 
+
+{]yV
+K'b#
+
+!
+w
+<
+triggerDeleteManifestFilesManifestsCREATE TRIGGER DeleteManifestFiles AFTER DELETE ON Manifests BEGIN DELETE FROM Files WHERE manifestID = OLD.manifestID;ENDX4
+windexFilesFileIDSizeIdxFiles6CREATE INDEX FilesFileIDSizeIdx ON Files(fileID,size)
+7indexManifestPagesManifestIDPageIndexManifestPages5CREATE INDEX ManifestPagesManifestIDPageIndex on ManifestPages(manifestID, pageIndex)r2
+indexManifestPagesManifestIDManifestPages4CREATE INDEX ManifestPagesManifestID on ManifestPages(manifestID)Y1
+sindexRestoreFileIDsRestoreFiles3CREATE INDEX RestoreFileIDs on RestoreFiles(fileID)0
+?indexFilesDomainManifestIDRelativePathFiles2CREATE INDEX FilesDomainManifestIDRelativePath on Files(domain, manifestID, relativePath)
+#indexPendingDeleteManifestIDCloudFilesPendingDelete1CREATE INDEX PendingDeleteManifestID on CloudFilesPendingDelete(manifestID)
+?indexPendingDeleteFileIDManifestIDCloudFilesPendingDelete0CREATE INDEX PendingDeleteFileIDManifestID on CloudFilesPendingDelete(fileID, manifestID)n-
+	indexRestoreFilesPriorityIdxRestoreFiles/CREATE INDEX RestoreFilesPriorityIdx ON RestoreFiles(priority)K,
+eindexFilesFileIDIdxFiles.CREATE INDEX FilesFileIDIdx ON Files(fileID)T+
+mindexRestoresStateIdxRestores-CREATE INDEX RestoresStateIdx ON Restores(state)m*
+indexRestoreDomainsAgentIdxRestoreDomains,CREATE INDEX RestoreDomainsAgentIdx ON RestoreDomains(agent)m)
+indexRestoreDomainsStateIdxRestoreDomains+CREATE INDEX RestoreDomainsStateIdx ON RestoreDomains(state)z(
+indexRestoreFilesRestoreStateIdxRestoreFiles*CREATE INDEX RestoreFilesRestoreStateIdx ON RestoreFiles(restoreState)z'
+indexRestoreFilesAbsolutePathIdxRestoreFiles)CREATE INDEX RestoreFilesAbsolutePathIdx ON RestoreFiles(absolutePath)h&
+indexRestoreFilesDomainIdxRestoreFiles(CREATE INDEX RestoreFilesDomainIdx ON RestoreFiles(domain)r%
+indexFilesDomainRelativePathIdxFiles'CREATE INDEX FilesDomainRelativePathIdx ON Files(domain, relativePath)W$
+uindexFilesManifestIDIdxFiles&CREATE INDEX FilesManifestIDIdx ON Files(manifestID)[#
+uindexManifestsDomainIdxManifests%CREATE INDEX ManifestsDomainIdx ON Manifests(domain)h"
+indexManifestsSnapshotIDIdxManifests$CREATE INDEX ManifestsSnapshotIDIdx ON Manifests(snapshotID)W!
+uindexSnapshotsIDIdxSnapshots#CREATE INDEX SnapshotsIDIdx ON Snapshots(snapshotID)~ 
+indexFoundEncryptionKeysPathIdxFoundEncryptionKeys"CREATE INDEX FoundEncryptionKeysPathIdx ON FoundEncryptionKeys(path)
+indexFoundEncryptionKeysInodeIdxFoundEncryptionKeys!CREATE INDEX FoundEncryptionKeysInodeIdx ON FoundEncryptionKeys(inode)p
+
+indexFileChangesChangeTypeIdxFileChanges CREATE INDEX FileChangesChangeTypeIdx ON FileChanges(changeType)c
+CREATE TABLE RestoreApps (domain TEXT PRIMARY KEY, dependentDomains BLOB);
+indexsqlite_autoindex_ScannedDomains_1ScannedDomains
+tableScannedDomainsScannedDomains
+CREATE TABLE ScannedDomains (domain TEXT PRIMARY KEY, size INTEGER)9
+CREATE TABLE CloudFilesPendingDelete (fileID TEXT NOT NULL, manifestID TEXT NOT NULL, file BLOB, duplicate BOOL, PRIMARY KEY (fileID, manifestID))-
+CREATE TABLE Devices (deviceUUID TEXT PRIMARY KEY, device BLOB)3
+
+Ay	W
+
+uind
+CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)
+CREATE TABLE FileChanges (domain TEXT, relativePath TEXT, size INTEGER, changeType INTEGER, shouldCopy BOOL, PRIMARY KEY (domain, relativePath))5
+'L0h
+?y[SQLite format 3
+y	W
+
+WtableRestoreFilesRestoreFiles
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, priority INTEGER, restoreType INTEGER, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))[
+CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)
+A
+windexFilesFileIDSizeIdxFiles.CREATE INDEX FilesFileIDSizeIdx ON Files(fileID,size)
+7indexManifestPagesManifestIDPageIndexManifestPages4CREATE INDEX ManifestPagesManifestIDPageIndex on ManifestPages(manifestID, pageIndex)
+	indexRestoreFilesPriorityIdxRestoreFiles/CREATE INDEX RestoreFilesPriorityIdx ON RestoreFiles(priority)
+l/9
+
+_3X/];x
+
+k^3.Z
+:bp!s
+
+0?V/
+
+^:;
+
+7indexManifestPagesManifestIDPageIndexManifestPages3CREATE INDEX ManifestPagesManifestIDPageIndex on ManifestPages(manifestID, pageIndex)Y0
+sindexRestoreFileIDsRestoreFiles2CREATE INDEX RestoreFileIDs on RestoreFiles(fileID)/
+?indexFilesDomainManifestIDRelativePathFiles1CREATE INDEX FilesDomainManifestIDRelativePath on Files(domain, manifestID, relativePath)
+#indexPendingDeleteManifestIDCloudFilesPendingDelete0CREATE INDEX PendingDeleteManifestID on CloudFilesPendingDelete(manifestID)
+?indexPendingDeleteFileIDManifestIDCloudFilesPendingDelete/CREATE INDEX PendingDeleteFileIDManifestID on CloudFilesPendingDelete(fileID, manifestID)n,
+	indexRestoreFilesPriorityIdxRestoreFiles.CREATE INDEX RestoreFilesPriorityIdx ON RestoreFiles(priority)T+
+
+,y	B	
+WtableRestoreFilesRestoreFiles
+CREATE TABLE RestoreFiles (domain TEXT NOT NULL, fileID TEXT NOT NULL, relativePath TEXT NOT NULL, absolutePath TEXT DEFAULT NULL, restoreState INTEGER NOT NULL DEFAULT 0, priority INTEGER, restoreType INTEGER, FOREIGN KEY (fileID) REFERENCES Files(fileID), PRIMARY KEY (domain, relativePath))7
+!tableEncryptionKeysEncryptionKeys6CREATE TABLE EncryptionKeys (inode INTEGER PRIMARY KEY, key BLOB NOT NULL)g4
+	indexFilesProtectionClassIdxFiles5CREATE INDEX FilesProtectionClassIdx ON Files(protectionClass)$3
+_tableFilesFilesCREATE TABLE Files (fileID TEXT, manifestID TEXT, domain TEXT, modified INTEGER, relativePath TEXT, deleted INTEGER, fileType INTEGER, file BLOB, size INTEGER, protectionClass INTEGER, PRIMARY KEY (manifestID, relativePath, domain) )[
+CREATE TABLE Properties (key TEXT PRIMARY KEY, value TEXT)
+4^Pk7PESQLite format 3
+`SQLite format 3

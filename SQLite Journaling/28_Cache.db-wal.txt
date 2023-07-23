@@ -1,0 +1,38 @@
+https://configuration.apple.com/configurations/internetservices/safari/AutoFillQuirks-1.plist2023-07-09 06:46:44
+G	https://configuration.apple.com/configurations/internetservices/safari/AutoFillQuirks-1.plist
+5	cfurl_cache_response
+bplist00
+WVersionUArray
+
+
+*+
+_CFURLStringType\_CFURLString
+]https://configuration.apple.com/configurations/internetservices/safari/AutoFillQuirks-1.plist#A
+ !"#$%&'()\Content-Type]Last-Modified_
+Content-EncodingVServer_
+Content-LanguageWExpires]Cache-ControlTDate^Content-LengthZConnectionX__hhaa__TEtag]Accept-RangesTVaryXtext/xml_
+Wed, 31 May 2023 04:37:49 GMTTgzipVApacheUen-us_
+Sun, 09 Jul 2023 06:47:22 GMTZmax-age=38_
+Sun, 09 Jul 2023 06:46:44 GMTU15637Zkeep-alive_
+
+
+YnBsaXN0MDDdAQIDBAUGBwgJCgsMDQ4QEhQWGBocHiAiJCZcQ29udGVudC1UeXBlVEV0YWdfEBBDb250ZW50LUVuY29kaW5nVlNlcnZlcl8QEENvbnRlbnQtTGFuZ3VhZ2VXRXhwaXJlc11DYWNoZS1Db250cm9sVERhdGVeQ29udGVudC1MZW5ndGhaQ29ubmVjdGlvbl1BY2NlcHQtUmFuZ2VzVFZhcnldTGFzdC1Nb2RpZmllZKEPWHRleHQveG1soRFfEBUiMjRjMDYtNWZjZjVlMWQ5MzliYyKhE1RnemlwoRVWQXBhY2hloRdVZW4tdXOhGV8QHVN1biwgMDkgSnVsIDIwMjMgMDY6NDc6MjIgR01UoRtabWF4LWFnZT0zOKEdXxAdU3VuLCAwOSBKdWwgMjAyMyAwNjo0Njo0NCBHTVShH1UxNTYzN6EhWmtlZXAtYWxpdmWhI1VieXRlc6ElXxAPQWNjZXB0LUVuY29kaW5noSdfEB1XZWQsIDMxIE1heSAyMDIzIDA0OjM3OjQ5IEdNVAAIACMAMAA1AEgATwBiAGoAeAB9AIwAlwClAKoAuAC6AMMAxQDdAN8A5ADmAO0A7wD1APcBFwEZASQBJgFGAUgBTgFQAVsBXQFjAWUBdwF5AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAZk=_
+"24c06-5fcf5e1d939bc"Ubytes_
+Accept-Encoding
+Xtext/xml
+	bplist00
+]https://configuration.apple.com/configurations/internetservices/safari/AutoFillQuirks-1.plist#@N
+__CFURLRequestNullTokenString__	
+SGET
+VAccept_
+Accept-Language_
+Accept-EncodingX__hhaa__S*/*Uen-au_
+gzip, deflate, br_
+
+
+YnBsaXN0MDDTAQIDBAYIXxAPQWNjZXB0LUVuY29kaW5nVkFjY2VwdF8QD0FjY2VwdC1MYW5ndWFnZaEFXxARZ3ppcCwgZGVmbGF0ZSwgYnKhB1MqLyqhCVVlbi1hdQgPISg6PFBSVlgAAAAAAAABAQAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAXg==
+"bplist00
+Accept-Encoding_
+gzip, deflate, br
+	U61C90DCE-6B08-4C25-ACE5-546F3E8722F2
+3	2023-07-09 06:46:44

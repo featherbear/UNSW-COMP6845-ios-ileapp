@@ -1,0 +1,68 @@
+!SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+.8CgV
+gH"t3"
+
+r~c
+
+R
+UA
+Shortcuts:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+?	H3`K
+@LcLr
+OHf`
+U?j7
+~,^,
+O|
+
+
+)0'0%
+$Qh5
+(194115635B75DB2C1BBA307FF336A3F061C4CBEC
+"#$YNS.string
++UoE6JjmcawxNlPB-yUKRFW_pe60FvKvaKWjWYJOfRNM
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	YShortcuts_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5Shortcuts:__defaultOwner__A
+A	Shortcuts:__defaultOwner__
+	Shortcuts:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+AU
+	Shortcuts:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+#?\
+
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5

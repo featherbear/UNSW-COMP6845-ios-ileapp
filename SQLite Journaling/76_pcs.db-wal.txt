@@ -1,0 +1,180 @@
+B(=SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+Y"4}
+'j`T
+
+n
+UU
+com.apple.TextInput:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+]>6r
+9DF7']ZMw>p
+Lkx/
+yh2b
+/'I 
+yn{B
+d|.3-
+`2S
+T
+5+TDN
+)0'0%
+1?RG
+(1C62AF967329CB4C7E30CD4D62FFB0E06507B247
+"#$YNS.string
++FFedPvI7jiqO3EOo7_SdwFfqtVyfk2VUibqJDvgAoJA
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+com.apple.TextInput_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.TextInput:__defaultOwner__A
+U	com.apple.TextInput:__defaultOwner__
+	com.apple.TextInput:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+UU
+	com.apple.TextInput:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+SQLite format 3
+directory/32B44CFB-B3BA-4B13-8FBD-64057932F29B:com.apple.TextInput:__defaultOwner__
+directory/5017D8DA-091E-4E1D-B27F-958E6600AB33:com.apple.TextInput:__defaultOwner__
+directory/36782995-C4A2-4C82-9653-E73C946F6977:com.apple.TextInput:__defaultOwner__
+directory/4BC7A624-2CB4-493B-838A-E8877D169462:com.apple.TextInput:__defaultOwner__
+directory/root:com.apple.TextInput:__defaultOwner__
+com.apple.TextInput:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+0
+UU
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+tT?l2
+:>SX1q
+1=Al
+(6BB523A2E4FD77D4EA6E9ACD69E87F06A35EB54F
+*+,YNS.string
++TgOAMjiNEimCFwoC4NwsodlPfNMhGGCm2QOlzhRY7S4
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+^directory/root
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDYstructure
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+r
+UU
+sv$'Jp
+jP(quUK
+R
+~R
+ xdx
+u@8	
+z
+(643D52DA075BD0171D24D4F2C33A111E2E39A265
++SByr3PRzQMEzc1K_6HPf1y_yg0P-wDnSanJ74zzCNSA
+.directory/36782995-C4A2-4C82-9653-E73C946F6977
+t
+UU
+.X>0
+Bt:z2
+(86B3923452C5488A4D04B1CDF49FEC04F6DF47D6
++1Q2OzatwSu2grZsPMO73vbzGScUwhD77HNjmVegPLPk
+.directory/4BC7A624-2CB4-493B-838A-E8877D169462
+v
+UU
+wVW1u
+=m}O0
+	AEA0
+53|3z
+(611190DE27CA0AA68F3E57F2F43E7AEF5D7E3A9C
++Zba7l5u8NltEubeGW-iWJkjcOiB1GTLZJUqNQZKwexY
+.directory/32B44CFB-B3BA-4B13-8FBD-64057932F29B
+|o*?9
+6<ii
+9BCt
+xE|@h
+G6LW=
+$~=_
+(5F8C84B2FA4236EFCD339018E89AA0AF55127731
++Cbp22i06RCxVmAPc7KqQPsmUbp7L2ZaOGICmRhgslFI
+.directory/5017D8DA-091E-4E1D-B27F-958E6600AB33
+&{fY
+directory/32B44CFB-B3BA-4B13-8FBD-64057932F29B:com.apple.TextInput:__defaultOwner__X
+directory/4BC7A624-2CB4-493B-838A-E8877D169462:com.apple.TextInput:__defaultOwner__
+7
+directory/root:com.apple.TextInput:__defaultOwner__	'
+0>G
+
+x	3
+com.apple.TextInput:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5N
+com.apple.TextInput:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+N
+com.apple.TextInput:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5	M
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5*
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+*
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5	)
+'
+3
+&
+
+3
+c	s
+iSQLite format 3
+documentStructure/9FCE8204-02BF-4C08-813C-AFD1F222BA78:com.apple.TextInput:__defaultOwner__
+documentContent/9FCE8204-02BF-4C08-813C-AFD1F222BA78:com.apple.TextInput:__defaultOwner__
+;t
+mm?m:Y|i
+0ZK0
+I,P0?
+r0Pd
+(02265BA5604B42D03A2FB73E45A80EA036125C91
++bWWsl_q9poNCzxZ9AlcS2VUxu4lMJ66xsqNOmqtFVOM
+6documentStructure/9FCE8204-02BF-4C08-813C-AFD1F222BA78
+|
+UU
+Q*3!0
+80G|v
+ TVA
+jb{I
+ ^7?=
+(E4A6EB5657CEEB5E42B2B8D3B6892C9F9FBBF038
++adlNgzX-iI8F1h6KDpPA6w8wWa5kCXDgZl0kZNFXdqo
+4documentContent/9FCE8204-02BF-4C08-813C-AFD1F222BA78
+K4ZCKRecordIDWcontent

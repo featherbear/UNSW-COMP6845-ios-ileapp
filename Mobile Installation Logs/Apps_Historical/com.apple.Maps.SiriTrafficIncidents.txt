@@ -1,0 +1,2 @@
+2023-07-09 14:42:14 Data container moved com.apple.Maps.SiriTrafficIncidents /private/var/mobile/Containers/Data/PluginKitPlugin/7EDD6B7F-8A5C-471E-A9CA-EAF2DEE0FA2A
+2023-07-08 23:20:24 Made container live com.apple.Maps.SiriTrafficIncidents /private/var/mobile/Containers/Data/PluginKitPlugin/1C2474A6-EE88-42B8-90D2-7BBAB8ED5079

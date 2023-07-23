@@ -1,0 +1,89 @@
+jIW[5
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+M};y?
+Fence-DUMMY-BOOT-STRAP:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459=BCU$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+J6D^
+IFA=j
+W~8$=
+-
+p^
+6	q|
+)0'0%
+CM#d
+$vN,+
+5${_
+(51EE5689960241F4945A1F3BCDF311ADA571046C
+"#$YNS.string
++v80HRKgfoxHbNbngpxP3DhRdBChy3lSCF4eviOxOIFc
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+Fence-DUMMY-BOOT-STRAP_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+;<WNS.dataO
+L}gr
++?1-
+1qHkQ
+'9oT]IW
+|g;1G
+4a/H
+HHk^o@
+
+#N"}-
+O0F'
+`
+f'
+&'>?]NSMutableData
+@A,]NSMutableDataVNSDataDo
+&'DE^CKDZonePCSData
+FG,^CKDZonePCSDataZCKDPCSData
+Ucom.apple.findmy2757441C-D046-4C70-A8DC-D7FA5FD91FD5Fence-DUMMY-BOOT-STRAP:__defaultOwner__A
+[	Fence-DUMMY-BOOT-STRAP:__defaultOwner__
+D
+`%
+	Fence-DUMMY-BOOT-STRAP:__defaultOwner__
+com.apple.findmy2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+[U-	Fence-DUMMY-BOOT-STRAP:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.findmy
+U-	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.findmy
+ND[	W
+
+p-U[
+ !%-3459:;?BU$null
+8,^CKRecordZoneIDO
+=>WNS.time#A
+&'@AVNSDate
+&'CD^CKDZonePCSData
+EF,^CKDZonePCSDataZCKDPCSData
+Dcom.apple.findmy2757441C-D046-4C70-A8DC-D7FA5FD91FD5Fence-DUMMY-BOOT-STRAP:__defaultOwner__A
+Fence-DUMMY-BOOT-STRAP:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.findmy
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.findmy
+8SQLite format 3

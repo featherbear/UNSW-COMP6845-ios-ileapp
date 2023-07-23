@@ -1,0 +1,24 @@
+SQLite format 3
+[tablesqlite_stat1sqlite_stat1
+CREATE TABLE sqlite_stat1(tbl,idx,stat)m
+indexNextActivityByDateNextActivity
+CREATE INDEX NextActivityByDate on NextActivity (nextActivity asc)
+gtableNextActivityNextActivity
+CREATE TABLE NextActivity(
+   personID              text unique primary key,
+   nextActivity          float
+)7
+indexsqlite_autoindex_NextActivity_1NextActivity
+ItablePropertiesProperties
+CREATE TABLE Properties(
+   key             text unique primary key,
+   value           blob
+)3
+indexsqlite_autoindex_Properties_1Properties
+version2
+	version
+{iO
+Propertiessqlite_autoindex_Properties_11 1
+20977765650
+{0$Mk
+#	20977765650

@@ -1,0 +1,23 @@
+
+doneSubscriptiondone
+-	doneSubscription
+<
+MBserverChangeTokenbplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+MBserverChangeToken
+U$null
+V$class_
+ChangeTokenData
+Z$classnameX$classes_
+CKServerChangeToken
+CKServerChangeTokenXNSObject
+d
+UserRegistryStatsbplist00
+UserRegistryStats
+pushNotificationsYzoneReset[recordFetch_
+!lastfetchRecordZoneChangesAtStart\recordModify_
+fetchRecordZoneChanges
+UserRegistryStatsXNSObject
+Mi6D

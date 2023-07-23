@@ -1,0 +1,1 @@
+2023-07-08 23:20:03 Made container live com.apple.DiagnosticExtensions.WirelessCharging /private/var/mobile/Containers/Data/PluginKitPlugin/EC33AE34-E34D-4EF5-A1A2-480BA6D291A5

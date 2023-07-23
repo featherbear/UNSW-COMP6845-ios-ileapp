@@ -1,0 +1,9 @@
+﻿Datetime	Event	Log Name
+2023-07-09 19:00:13	Mobile Activation Startup at line: 23	mobileactivationd.log.0
+2023-07-09 19:00:54	Mobile Activation Startup at line: 41	mobileactivationd.log.0
+2023-07-09 19:01:35	Mobile Activation Startup at line: 59	mobileactivationd.log.0
+2023-07-09 19:03:38	Mobile Activation Startup at line: 77	mobileactivationd.log.0
+2023-07-08 23:19:38	Mobile Activation Startup at line: 1	mobileactivationd.log.1
+﻿Mobile Activation	Upgrade
+Found 4 Mobile Activation entries in mobileactivationd.log.0	Found 0 Upgrade entries in mobileactivationd.log.0
+Found 1 Mobile Activation entries in mobileactivationd.log.1	Found 1 Upgrade entries in mobileactivationd.log.1

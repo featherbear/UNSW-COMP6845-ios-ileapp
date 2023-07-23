@@ -1,0 +1,100 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+f-UO
+TextReplacements:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+60%V
+m:9B
+]GO}
+cO^
+
+$<Dx
+)0'0%
+eGlea
+N18Y
+Da'R
+(32585D00FDF76A54E72C8142E05DD2C91A30F4FF
+"#$YNS.string
++Ta0Towb6waHwkcpuR1r8wlDy_pTzQAjbCqmmLebOBL4
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+TextReplacements_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+KeyboardServices2757441C-D046-4C70-A8DC-D7FA5FD91FD5TextReplacements:__defaultOwner__A
+O	TextReplacements:__defaultOwner__
+	TextReplacements:__defaultOwner__
+KeyboardServices2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+OU-	TextReplacements:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5KeyboardServices
+U-	2757441C-D046-4C70-A8DC-D7FA5FD91FD5KeyboardServices
+t-UO
+F092AFE8-8A05-465A-A1CD-97A22E246A8B:TextReplacements:__defaultOwner__
+'()-5;<BCDHLMU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+{]:3
+RFxd{
+
+Ljz<Di>
+(952D42E09CA01AB9D39016E850F9846D8DDFA90A
+*+,YNS.string
++o4lC62XXfrdJtnRD61xylUG4RSyXy36Bi902wtQylXA
+./01Z$classnameX$classes_
+234_
+6789$ZRecordNameVZoneID
+$F092AFE8-8A05-465A-A1CD-97A22E246A8B
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordID_
+TextReplacementEntry
+./NO_
+CKDRecordPCSData
+PQ4_
+CKDRecordPCSDataZCKDPCSData
+TextReplacements:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5KeyboardServices
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5KeyboardServices
+T-UO
+ !%-3459=@U$null
+;<WNS.time#A
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+x-UO
+'()-5;<BCDHLMQRSU$null
+6789:ZRecordNameVZoneID
+./TU_
+VW4_
+x;P
+

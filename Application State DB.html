@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Application State report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Application State report</h1>
+                    <h6 class="animated fadeIn mb-3"></h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 68</h6><p class="lead">Application State located at: R:\temp\private\var\mobile\Library\FrontBoard\applicationState.db</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Bundle ID</th><th class="th-sm">Bundle Path</th><th class="th-sm">Sandbox Path</th></tr></thead><tbody><tr><td>com.apple.MobileSMS</td><td>/Applications/MobileSMS.app</td><td>/private/var/mobile/Containers/Data/Application/CE05C4F4-51EA-49D6-A824-96E40BFBEA33</td></tr><tr><td>com.apple.purplebuddy</td><td>/Applications/Setup.app</td><td></td></tr><tr><td>com.apple.Diagnostics</td><td>/Applications/Diagnostics.app</td><td>/private/var/mobile/Containers/Data/Application/FBCA9097-2A98-4CB2-B3A4-ACFAAF636E03</td></tr><tr><td>com.apple.Photos.PhotosUIService</td><td>/Applications/PhotosUIService.app</td><td>/private/var/mobile/Containers/Data/Application/1F3394EA-DE32-49CE-961E-3AD075A62454</td></tr><tr><td>com.apple.dt.XcodePreviews</td><td>/Applications/Xcode Previews.app</td><td>/private/var/mobile/Containers/Data/Application/5FCF42D4-3664-42F5-9611-E109CFF76269</td></tr><tr><td>com.apple.Health</td><td>/Applications/Health.app</td><td>/private/var/mobile/Containers/Data/Application/094D161F-1DE9-4F6B-A727-3EF57A4A86EA</td></tr><tr><td>com.apple.datadetectors.DDActionsService</td><td>/Applications/DDActionsService.app</td><td>/private/var/mobile/Containers/Data/Application/E963857F-1AD9-46C6-957D-E8EBB3190784</td></tr><tr><td>com.apple.TVRemoteUIService</td><td>/Applications/Apple TV Remote.app</td><td>/private/var/mobile/Containers/Data/Application/B7D75B1F-58BE-4986-AEE7-212CC017CCC0</td></tr><tr><td>com.apple.Preferences</td><td>/Applications/Preferences.app</td><td></td></tr><tr><td>com.apple.CarPlaySettings</td><td>/Applications/CarPlaySettings.app</td><td>/private/var/mobile/Containers/Data/Application/2DB91F9B-384C-4016-9CCD-35343077ABE5</td></tr><tr><td>com.apple.Home.HomeUIService</td><td>/Applications/HomeUIService.app</td><td></td></tr><tr><td>com.apple.Magnifier</td><td>/Applications/Magnifier.app</td><td>/private/var/mobile/Containers/Data/Application/45599739-E896-4DDF-B609-F3203AA79F6E</td></tr><tr><td>com.apple.HealthENLauncher</td><td>/Applications/HealthENLauncher.app</td><td>/private/var/mobile/Containers/Data/Application/757D77EC-25E7-4B44-98DA-1F2AEF800B0E</td></tr><tr><td>com.apple.BarcodeScanner</td><td>/Applications/BarcodeScanner.app</td><td>/private/var/mobile/Containers/Data/Application/771EAE89-2782-4A40-A7E4-C1B7DDC97F6B</td></tr><tr><td>com.apple.Passbook</td><td>/Applications/Passbook.app</td><td>/private/var/mobile/Containers/Data/Application/D665EC75-BBC7-4D81-A5BB-2BAC507F1511</td></tr><tr><td>com.apple.AMSEngagementViewService</td><td>/Applications/AMSEngagementViewService.app</td><td>/private/var/mobile/Containers/Data/Application/3DB150A3-467C-413C-9360-DCCABD46FCE5</td></tr><tr><td>com.apple.siri</td><td>/Applications/Siri.app</td><td>/private/var/mobile/Containers/Data/Application/A2CA1F5E-85BE-48FF-A1FB-8595D0369E22</td></tr><tr><td>com.apple.FTMInternal</td><td>/Applications/FTMInternal-4.app</td><td>/private/var/mobile/Containers/Data/Application/FD4B080D-8D7A-48C6-B0F4-15E8CC2C2136</td></tr><tr><td>com.apple.AppStore</td><td>/Applications/AppStore.app</td><td>/private/var/mobile/Containers/Data/Application/00BC1A50-697E-48A1-A057-B48D3FB65912</td></tr><tr><td>com.apple.social.SLYahooAuth</td><td>/Applications/SLYahooAuth.app</td><td></td></tr><tr><td>com.apple.ScreenTimeUnlock</td><td>/Applications/ScreenTimeUnlock.app</td><td>/private/var/mobile/Containers/Data/Application/1E771A53-8FD3-40D5-9414-E76193B7C388</td></tr><tr><td>com.apple.mobiletimer</td><td>/Applications/MobileTimer.app</td><td></td></tr><tr><td>com.apple.iad.iAdOptOut</td><td>/Applications/iAdOptOut.app</td><td>/private/var/mobile/Containers/Data/Application/05841EA5-8B6A-448F-AB65-4E7F1E9A8A6D</td></tr><tr><td>com.apple.shortcuts.runtime</td><td>/Applications/ShortcutsViewService.app</td><td>/private/var/mobile/Containers/Data/Application/098C9454-4CE5-4939-8454-4F4FD457C14B</td></tr><tr><td>com.apple.mobilephone</td><td>/Applications/MobilePhone.app</td><td>/private/var/mobile/Containers/Data/Application/7F488647-23B7-465A-88BA-043C659863A3</td></tr><tr><td>com.apple.findmy</td><td>/Applications/FindMy.app</td><td>/private/var/mobile/Containers/Data/Application/7F4855B9-3FBA-4DA9-8C35-95B242CA3B7F</td></tr><tr><td>com.apple.mobilesafari</td><td>/Applications/MobileSafari.app</td><td>/private/var/mobile/Containers/Data/Application/EF9AB533-69C0-482E-9E0B-9C90E37EE377</td></tr><tr><td>com.apple.WebSheet</td><td>/Applications/WebSheet.app</td><td>/private/var/mobile/Containers/Data/Application/B4E80190-D228-4090-95C2-4D1D724C7721</td></tr><tr><td>com.apple.StoreDemoViewService</td><td>/Applications/StoreDemoViewService.app</td><td>/private/var/mobile/Containers/Data/Application/F0C0EB52-70E8-4580-AE88-84C32CBF2266</td></tr><tr><td>com.apple.carkit.DNDBuddy</td><td>/Applications/DNDBuddy.app</td><td>/private/var/mobile/Containers/Data/Application/6836551A-1462-48FC-9A56-6761B1954B04</td></tr><tr><td>com.apple.appleseed.FeedbackAssistant</td><td>/Applications/Feedback Assistant iOS.app</td><td>/private/var/mobile/Containers/Data/Application/76BFB677-CFC5-4AFE-8D59-64B76B8B548B</td></tr><tr><td>com.apple.Home.HomeControlService</td><td>/Applications/HomeControlService.app</td><td>/private/var/mobile/Containers/Data/Application/8E1D44D8-C07D-4539-959C-0ABFC5454DF5</td></tr><tr><td>com.apple.icq</td><td>/Applications/icq.app</td><td>/private/var/mobile/Containers/Data/Application/EC75E686-593D-4E75-B042-05A93C281C27</td></tr><tr><td>com.apple.ScreenSharingViewService</td><td>/Applications/ScreenSharingViewService.app</td><td>/private/var/mobile/Containers/Data/Application/22C8E17D-1558-4489-AC52-1D7495A181EB</td></tr><tr><td>com.apple.mobileslideshow</td><td>/Applications/MobileSlideShow.app</td><td></td></tr><tr><td>com.apple.ClipViewService</td><td>/Applications/ClipViewService.app</td><td>/private/var/mobile/Containers/Data/Application/47A30B1C-9210-4928-B634-C01F204D973A</td></tr><tr><td>com.apple.HealthENBuddy</td><td>/Applications/HealthENBuddy.app</td><td>/private/var/mobile/Containers/Data/Application/7D373B86-DA3A-4037-ACF2-B0B567699B0E</td></tr><tr><td>com.apple.BusinessChatViewService</td><td>/Applications/BusinessChatViewService.app</td><td>/private/var/mobile/Containers/Data/Application/0F4997C0-9A03-4ABC-85F7-9F01971419BF</td></tr><tr><td>com.apple.camera</td><td>/Applications/Camera.app</td><td></td></tr><tr><td>com.apple.webapp</td><td>/Applications/Web.app</td><td>/private/var/mobile/Containers/Data/Application/D3ADAC5A-F94E-4D33-80C1-ACBDDCB6E1EF</td></tr><tr><td>com.apple.stocks</td><td>/private/var/containers/Bundle/Application/CC3D4417-E2A0-4D61-8D4F-3E82A54C32C3/Stocks.app</td><td>/private/var/mobile/Containers/Data/Application/F9C9E3D1-A6E9-47A7-8AF6-474B59027756</td></tr><tr><td>com.apple.tv</td><td>/private/var/containers/Bundle/Application/B017F728-5E6C-4842-99AE-07FEC406CF1B/AppleTV.app</td><td>/private/var/mobile/Containers/Data/Application/93254656-641B-45ED-A929-279EE3B73A8A</td></tr><tr><td>com.apple.Home</td><td>/private/var/containers/Bundle/Application/05DCC0B0-2E53-4326-91D6-C0D776A17D89/Home.app</td><td>/private/var/mobile/Containers/Data/Application/ACC03A5C-2A31-4958-9167-43237813C9F9</td></tr><tr><td>com.apple.podcasts</td><td>/private/var/containers/Bundle/Application/FE321B00-25F5-4621-AD3F-D3AE4A8E3D94/Podcasts.app</td><td>/private/var/mobile/Containers/Data/Application/6903CEF4-1E64-42C2-ACAC-7B1A5A080EDC</td></tr><tr><td>com.apple.reminders</td><td>/private/var/containers/Bundle/Application/48C7F1AA-79FC-4369-B878-4ACB824A07C0/Reminders.app</td><td>/private/var/mobile/Containers/Data/Application/82642679-08CE-4E41-A48F-F4FDE60738BA</td></tr><tr><td>com.apple.mobilenotes</td><td>/private/var/containers/Bundle/Application/B76800DC-E690-4195-AA5C-FF6AFF3601EB/MobileNotes.app</td><td>/private/var/mobile/Containers/Data/Application/C66B36C2-65CF-49B4-93AD-646476311AA9</td></tr><tr><td>com.apple.facetime</td><td>/private/var/containers/Bundle/Application/5958A65C-7FC2-4246-82AC-C4861F60F262/FaceTime.app</td><td>/private/var/mobile/Containers/Data/Application/E80CD3BD-F005-4FA5-B94B-C96BB4A2C0BF</td></tr><tr><td>com.apple.MobileStore</td><td>/private/var/containers/Bundle/Application/4A5E7C19-D3BC-4045-8A27-A21CB9B33009/MobileStore.app</td><td>/private/var/mobile/Containers/Data/Application/BF82AB5A-AF92-4FAA-8267-D1263246E26D</td></tr><tr><td>com.apple.mobilecal</td><td>/private/var/containers/Bundle/Application/2C446020-076E-41D9-9FC5-BFA086263658/MobileCal.app</td><td>/private/var/mobile/Containers/Data/Application/4FD0FC36-A480-478D-A4A2-1C0B302375FA</td></tr><tr><td>com.apple.VoiceMemos</td><td>/private/var/containers/Bundle/Application/317A047B-A980-4F3D-BF8B-B92207C1CB92/VoiceMemos.app</td><td>/private/var/mobile/Containers/Data/Application/4ABF0F08-5BD0-4D42-9B6D-935A82D6A135</td></tr><tr><td>com.apple.DocumentsApp</td><td>/private/var/containers/Bundle/Application/F5290BB0-814D-41AA-AFF5-A8EA6D66E5C4/Files.app</td><td>/private/var/mobile/Containers/Data/Application/8F5551D7-B46E-4DDA-AD6D-25C6414E6495</td></tr><tr><td>com.apple.MobileAddressBook</td><td>/private/var/containers/Bundle/Application/6880A73B-C086-4F4D-A937-43CD3103F492/Contacts.app</td><td>/private/var/mobile/Containers/Data/Application/E2701F6D-9B61-4704-80D6-29633D8AAEE2</td></tr><tr><td>com.apple.Music</td><td>/private/var/containers/Bundle/Application/FCF115D7-A4B9-4CDF-B666-533DCF629BBC/Music.app</td><td>/private/var/mobile/Containers/Data/Application/FE8AA5F4-B9FE-429C-8304-86BC2C13EC49</td></tr><tr><td>com.apple.Translate</td><td>/private/var/containers/Bundle/Application/8AA3F726-A607-4EFE-8E41-7EDA6873A10A/SequoiaTranslator.app</td><td>/private/var/mobile/Containers/Data/Application/582C525A-61E3-48C4-83CE-FD83F80E7CB2</td></tr><tr><td>com.apple.shortcuts</td><td>/private/var/containers/Bundle/Application/A7C404B9-FE3B-4E2E-9B6C-8DF94425CAFB/Shortcuts.app</td><td>/private/var/mobile/Containers/Data/Application/ECF1A608-30C0-4380-B6C8-D0B7414BC402</td></tr><tr><td>com.apple.tips</td><td>/private/var/containers/Bundle/Application/33F8D232-DF55-4302-8B2D-1AC708298D67/Tips.app</td><td>/private/var/mobile/Containers/Data/Application/C8230ACB-4DBF-4322-8C3D-DC2385F16754</td></tr><tr><td>com.apple.weather</td><td>/private/var/containers/Bundle/Application/9D90FBD3-8F83-4B0F-A613-EA3F68A6F3A3/Weather.app</td><td>/private/var/mobile/Containers/Data/Application/775A6E5E-9026-4C6E-B32D-B229E27B9771</td></tr><tr><td>com.apple.Bridge</td><td>/private/var/containers/Bundle/Application/FD55EF9C-B3EF-4E7F-A392-808B19760B95/Bridge.app</td><td></td></tr><tr><td>com.apple.Maps</td><td>/private/var/containers/Bundle/Application/84A0F136-FECF-4B0F-9A2B-D07B4C9432A4/Maps.app</td><td>/private/var/mobile/Containers/Data/Application/96F29E82-BE24-4873-A3EE-7BB8DBD04FA9</td></tr><tr><td>com.apple.calculator</td><td>/private/var/containers/Bundle/Application/086C0E1D-3994-4C3C-A4EC-DDEF5A1ACB40/Calculator.app</td><td>/private/var/mobile/Containers/Data/Application/A9C30210-CFD2-4DD5-92D7-2F62EF979D22</td></tr><tr><td>com.apple.iBooks</td><td>/private/var/containers/Bundle/Application/442EADB9-DFC0-4525-8B70-076DF9EF39DF/Books.app</td><td>/private/var/mobile/Containers/Data/Application/BD833737-FB38-47FC-A98D-C74F75DE976A</td></tr><tr><td>com.apple.measure</td><td>/private/var/containers/Bundle/Application/D3E6524B-FB71-4E9A-8E99-E93A2EF52EA6/Measure.app</td><td>/private/var/mobile/Containers/Data/Application/DF9A2BE6-15E3-4A65-9C4D-5D695EDEC9BE</td></tr><tr><td>com.apple.compass</td><td>/private/var/containers/Bundle/Application/2C34BBF4-2D5B-482F-A84B-6776B788E995/Compass.app</td><td>/private/var/mobile/Containers/Data/Application/308BA953-CA4D-47A7-839E-053D5CA2A513</td></tr><tr><td>com.apple.news</td><td>/private/var/containers/Bundle/Application/DD865346-E529-4629-98D0-4D9175480A79/News.app</td><td>/private/var/mobile/Containers/Data/Application/CD316017-2F3B-43F1-A917-2557A71B9DD4</td></tr><tr><td>com.apple.mobilemail</td><td>/private/var/containers/Bundle/Application/8718E9BD-F088-4549-97B8-4DF3F9C9DAAE/MobileMail.app</td><td>/private/var/mobile/Containers/Data/Application/F0A54488-2B30-4720-8314-A9F0010E71AB</td></tr><tr><td>com.jdtech.CalculatorVault</td><td>/private/var/containers/Bundle/Application/EE9116C8-1606-43F6-B42A-A8B2F4DC3053/Calculator.app</td><td>/private/var/mobile/Containers/Data/Application/CAA7293C-3F46-41A3-8048-456903DC2B0F</td></tr><tr><td>kjc.loader</td><td>/private/var/binpack/Applications/loader.app</td><td></td></tr><tr><td>com.saurik.Cydia</td><td>/Applications/Cydia.app</td><td></td></tr></tbody><tfoot><tr><th>Bundle ID</th><th>Bundle Path</th><th>Sandbox Path</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,593 @@
+zJ7F
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+VpidentUptypeV$class
+\NS.uuidbytesO
+Z$classnameX$classesVNSUUID
+XNSObject
+HKProfileIdentifier
+com.apple.health.HighlightAlerts
+com.apple.health.Snippets
+00000000-0000-0000-0000-000000000000{}
+00000000-0000-0000-0000-000000000000{"codableAnchor":{"data":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0ODxBVcm93aWRWJGNsYXNzEBuAAtISExQVWiRjbGFzc25hbWVYJGNsYXNzZXNdSEtRdWVyeUFuY2hvcqIWF11IS1F1ZXJ5QW5jaG9yWE5TT2JqZWN0CBEaJCkyN0lMUVNXXWJob3FzeIOMmp2rAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ="},"codableAvailability":{"CardioFitness":false}}
+8
+xU;
+PluginData
+DataType
+CHANGE
+TRANSACTION 
+Plugin
+FeedItem
+Keyword
+Feed
+TRANSACTIONSTRING
+	Profile
+FeedSection
+EncodedFeatureTag
+Eu
+
+
+K
+ 
+HKDisplayCategoryIdentifierReproductiveHealth.
+HKDisplayCategoryIdentifierRespiratory-
+HKDisplayCategoryIdentifierVitalSigns'
+HKDisplayCategoryIdentifierSleep'
+HKDisplayCategoryIdentifierOther
+name
+SuggestedActions'
+FeatureStatusIdentifierInactive
+
+HKDisplayCategoryIdentifierHearing)
+HKDisplayCategoryIdentifierFitness-
+FeatureStatusIdentifierCategorySafety'
+HKDisplayCategoryIdentifierHeart*
+HKDisplayCategoryIdentifierMobility
+profile
+skin type
+wheelchair
+health profile
+cardio fitness
+birthdate
+medications that affect heart rate
+beta blocker
+calcium channel blocker
+last name
+date of birth
+blood type$
+FeatureStatusIdentifierActive
+first name
+7
+~
+
+hK
+R7
+F
+
+ap
+
+[
+L
+}"
+
+
+ag
+8
+"
+w
+
+
+ZL
+
+
+E
+?
+L
+
+
+w
+`
+~Y
+
+7(
+
+
+T0
+
+
+!0
+
+(S
+-
+
+wn
+h
+
+o
+0h
+
+#v=
+?
+p
+
+
+=E
+/
+M
+(
+
+hw		
+J	
+
+
+	Lj
+
+?
+w5	
+]%	?
+
+
+3	g
+e
+B
+
+
+P
+]
+j
+w
+
+csG
+
+4]`
+tdj
+hQ6
+x!d
+?hO
+
+_g@
+
+VGS
+
+0wq
+Gk 
+?l	
+;q
+TRANSACTION!
+85:N
+
+x
+]
+B
+'
+
+-fc 
+-fbL
+:. 
+$-
+
+r.	
+)?
+
+]
+navigationHealth Detailscom.apple.health.ProfilesProfileSearch_healthDetails_00000000-0000-0000-0000-000000000000Profiles.ProfileSearchTileViewController{"destination":"healthDetails","localizedTitle":"Health Details","profileIdentifier":{"data":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwTFx1VJG51bGzTDQ4PEBESVnBpZGVudFVwdHlwZVYkY2xhc3OAAhABgATSFA8VFlxOUy51dWlkYnl0ZXNPEBAAAAAAAAAAAAAAAAAAAAAAgAPSGBkaG1okY2xhc3NuYW1lWCRjbGFzc2VzVk5TVVVJRKIaHFhOU09iamVjdNIYGR4fXxATSEtQcm9maWxlSWRlbnRpZmllcqIgHF8QE0hLUHJvZmlsZUlkZW50aWZpZXIACAARABoAJAApADIANwBJAEwAUQBTAFkAXwBmAG0AcwB6AHwAfgCAAIUAkgClAKcArAC3AMAAxwDKANMA2ADuAPEAAAAAAAACAQAAAAAAAAAhAAAAAAAAAAAAAAAAAAABBw=="}}
+!C
+5[n
+categoryOther Datacom.apple.health.CategoriesCategoriesTileViewController_Other Data_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierOther"}
+C
+-[x
+categoryVitalscom.apple.health.CategoriesCategoriesTileViewController_Vitals_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierVitalSigns"}
+C
+/[r
+IcategoryHearingcom.apple.health.CategoriesCategoriesTileViewController_Hearing_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierHearing"}
+)M
+7
+
+categoryCycle Trackingcom.apple.health.MenstrualCyclesMenstrualCyclesBrowseTileViewController_HKDisplayCategoryIdentifierReproductiveHealthMenstrualCyclesAppPlugin.MenstrualCyclesBrowseTileViewController{"identifier":"HKDisplayCategoryIdentifierReproductiveHealth"}
+9
+;y
+promotioncom.apple.health.SleepSleepOnboardingFeedItemSleepHealthAppPlugin.SleepOnboardingTileViewController
+
+?
+eY
+/profilecom.apple.health.ProfilesProfile_00000000-0000-0000-0000-000000000000Profiles.ProfileItemTileViewController{"firstName":"","profileImageInformation":{"firstName":"","monogramImage":{"imageData":null},"lastName":"","photoImage":{"imageData":null},"reuseIdentifier":"ProfileAvatarImageCell"},"lastName":"","activityMoveModeState":{"hasDataInOtherActivityMoveMode":false,"activityMoveMode":1},"profileIdentifier":{"data":"YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGlCwwTFx1VJG51bGzTDQ4PEBESVnBpZGVudFVwdHlwZVYkY2xhc3OAAhABgATSFA8VFlxOUy51dWlkYnl0ZXNPEBAAAAAAAAAAAAAAAAAAAAAAgAPSGBkaG1okY2xhc3NuYW1lWCRjbGFzc2VzVk5TVVVJRKIaHFhOU09iamVjdNIYGR4fXxATSEtQcm9maWxlSWRlbnRpZmllcqIgHF8QE0hLUHJvZmlsZUlkZW50aWZpZXIACAARABoAJAApADIANwBJAEwAUQBTAFkAXwBmAG0AcwB6AHwAfgCAAIUAkgClAKcArAC3AMAAxwDKANMA2ADuAPEAAAAAAAACAQAAAAAAAAAhAAAAAAAAAAAAAAAAAAABBw=="},"reuseIdentifier":"ProfileNameCell"}
+u
+E
+
+lA
+g;
+
+7
+	
+'	/	
+ProminenceFeatureTag{"value":5}(^
+7ProminenceFeatureTag{"value":5})d
+ProminenceFeatureTag{"value":5})[
+ProminenceFeatureTag{"value":0})=
+ProminenceFeatureTag{"value":5}(N
+~ProminenceFeatureTag{"value":5})
+ProminenceFeatureTag{"value":5}(
+\ProminenceFeatureTag{"value":5}(
+=ProminenceFeatureTag{"value":5}(
+ProminenceFeatureTag{"value":5}(X
+mProminenceFeatureTag{"value":5})$
+ProminenceFeatureTag{"value":5}(.
+@ProminenceFeatureTag{"value":5}(C
+LProminenceFeatureTag{"value":5})8
+ProminenceFeatureTag{"value":5})M
+WProminenceFeatureTag{"value":5}(W
+EProminenceFeatureTag{"value":5})#
+ProminenceFeatureTag{"value":5}(-
+uProminenceFeatureTag{"value":5}(7
+AProminenceFeatureTag{"value":5})H
+ProminenceFeatureTag{"value":5}(R
+fProminenceFeatureTag{"value":5}(
+`ProminenceFeatureTag{"value":5})(
+ProminenceFeatureTag{"value":5})2
+ProminenceFeatureTag{"value":5}(G
+nProminenceFeatureTag{"value":5}(]
+TProminenceFeatureTag{"value":5})Q
+ProminenceFeatureTag{"value":5}(Z
+{ProminenceFeatureTag{"value":5}(Y
+]ProminenceFeatureTag{"value":5}(V
+iProminenceFeatureTag{"value":5})U
+ProminenceFeatureTag{"value":5}(T
+KProminenceFeatureTag{"value":5})S
+ProminenceFeatureTag{"value":5})P
+ProminenceFeatureTag{"value":5})O
+ProminenceFeatureTag{"value":5})L
+ProminenceFeatureTag{"value":5})K
+ProminenceFeatureTag{"value":5})J
+ProminenceFeatureTag{"value":5})I
+ProminenceFeatureTag{"value":5})F
+ProminenceFeatureTag{"value":5}(E
+kProminenceFeatureTag{"value":5}(D
+:ProminenceFeatureTag{"value":5}(B
+lProminenceFeatureTag{"value":5}(A
+UProminenceFeatureTag{"value":5})@
+ProminenceFeatureTag{"value":5})?
+ProminenceFeatureTag{"value":5})>
+ProminenceFeatureTag{"value":5}(;
+GProminenceFeatureTag{"value":5})`
+ProminenceFeatureTag{"value":5}(9
+cProminenceFeatureTag{"value":5}(6
+xProminenceFeatureTag{"value":5}(5
+6ProminenceFeatureTag{"value":5}(4
+tProminenceFeatureTag{"value":5}(3
+NProminenceFeatureTag{"value":5})1
+ProminenceFeatureTag{"value":5})0
+ProminenceFeatureTag{"value":5})/
+ProminenceFeatureTag{"value":5}),
+ProminenceFeatureTag{"value":5}(c
+eProminenceFeatureTag{"value":5})*
+ProminenceFeatureTag{"value":5}))
+ProminenceFeatureTag{"value":5})'
+ProminenceFeatureTag{"value":5})&
+ProminenceFeatureTag{"value":5}(%
+DProminenceFeatureTag{"value":5}("
+[ProminenceFeatureTag{"value":5}(!
+YProminenceFeatureTag{"value":5}) 
+ProminenceFeatureTag{"value":5})
+oProminenceFeatureTag{"value":5})
+ProminenceFeatureTag{"value":5}
+LE>70)"
+
+
+z
+s
+l
+e
+^
+W
+P
+I
+B
+;
+4
+-
+&
+
+	~	w	p	i	b	[	T	M	F	?	8	1	*	#	
+
+|
+u
+n
+g
+`
+Y
+R
+K
+D
+=
+6
+/
+(
+!
+
+
+{
+j
+Y
+H
+7
+&
+
+weSA0
+zhWF6%
+
+q
+[
+F
+1
+
+	y	h	S	>	(	
+FeedSection
+
+highlights 
+sgetMoreFromHealth
+xappsForHealth
+Pjnotices
+getMoreFromHealth
+notices
+
+OR
+7
+?
+R
+Z
+
+n
+v
+#&
+
+
+:=
+
+
+JM
+
+eh
+L
+T
+
+h
+p
+
+
+47
+
+DG
+
+_b
+
+
+
+
+{x+
+&
+(
+b
+j
+
+y
+
+.1
+I0
+
+	m
+J
+
+{
+}
+
+r
+
+P
+
+w
+]
+
+(j
+
+	?
+Bw	
+
+2	u
+3
+v
+t
+
+O	
+
+$	g
+sN
+%
+h
+TRANSACTION"
+
+g;N
+
+8G/h'
+[promotionSet Up Your Medical IDcom.apple.health.SafetyMedicalIDCallToAction_00000000-0000-0000-0000-000000000000Safety.MedicalIDSuggestedActionViewController{"viewControllerConfiguration":{"title":"Set Up Your Medical ID","actionTitle":"Get Started","body":"In an emergency, first responders can look at your Medical ID to get life-saving information."}}-
+9
+Gq
+categorySleepcom.apple.health.SleepSleepBrowseTileViewControllerSleepHealthAppPlugin.SleepBrowseTileViewController
+';
+Aq
+KfeatureStatusEmergency SOScom.apple.health.SafetyEmergencySOSFeatureStatusGenerator.Type_FeatureStatus_00000000-0000-0000-0000-000000000000Safety.EmergencySOSFeatureStatusTileViewController{"imageData":{"name":"emergency_sos","bundleIdentifier":"com.apple.health.Safety"},"titleName":"Emergency SOS","featureStatusKind":"active","accessoryTitle":"Turn On","primaryDescriptionContent":["Your iPhone can quickly call emergency services and message your emergency contacts. This feature is always active."]}
+C
+eX
+highlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierDietaryCaffeineHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierDietaryCaffeine","generationDate":710592440.16801095}
+{highlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierActiveEnergyBurnedHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierActiveEnergyBurned","generationDate":710592440.16801095}
+)_highlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierDistanceWalkingRunningHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierDistanceWalkingRunning","generationDate":710592440.16801095}
+C
+!en
+ahighlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierEnvironmentalAudioExposureHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierEnvironmentalAudioExposure","generationDate":710592440.16801095}
+highlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierHeadphoneAudioExposureHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierHeadphoneAudioExposure","generationDate":710592440.16801095}
+highlightSearchcom.apple.health.HighlightsHighlightSearchFeedItem_HKQuantityTypeIdentifierHeartRateHighlights.HighlightSearchTileViewController{"objectTypeIdentifier":"HKQuantityTypeIdentifierHeartRate","generationDate":710592440.16801095}
+}
+f	F
+S;
+Sc
+articleHandwashing Can Protect Your Healthcom.apple.health.Safetycom.apple.health.safety.handwashingSafety.HandwashingArticleTileViewController{"articleIdentifier":"com.apple.health.safety.handwashing"}
+;O
+U
+featureStatusHeadphone Notificationscom.apple.health.HearingAppPluginHeadphoneNotificationsFeatureStatusGenerator.Type_FeatureStatus_00000000-0000-0000-0000-000000000000HearingAppPlugin.HeadphoneNotificationsFeatureStatusTileViewController{"imageData":{"name":"headphone-notifications-feature-status","bundleIdentifier":"com.apple.health.HearingAppPlugin"},"titleName":"Headphone Notifications","featureStatusKind":"inactive","accessoryTitle":"Enable","primaryDescriptionContent":["Receive a notification if you
+ve been listening to loud headphone audio for long enough to affect your hearing."]}
+G9
+U]
+articleUnderstanding Your Heart Ratecom.apple.health.Heartcom.apple.health.Education.HeartRateHeart.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.HeartRate"}
+c9
+c]
+articleWhat it Means if Your Cardio Fitness Is Lowcom.apple.health.Heartcom.apple.health.Education.LowCardioFitnessHeart.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.LowCardioFitness"}
+A9
+m]
+MarticleLearn About Cardio Fitnesscom.apple.health.Heartcom.apple.health.Education.CardioFitnessOverviewHeart.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.CardioFitnessOverview"}
+C
+1[r
+categoryActivitycom.apple.health.CategoriesCategoriesTileViewController_Activity_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierFitness"}
+C
++[n
+categoryHeartcom.apple.health.CategoriesCategoriesTileViewController_Heart_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierHeart"}
+#C
+7[z
+categoryMindfulnesscom.apple.health.CategoriesCategoriesTileViewController_Mindfulness_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierMindfulness"}
+C
+1[t
+categoryMobilitycom.apple.health.CategoriesCategoriesTileViewController_Mobility_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierMobility"}
+C
+3[v
+categoryNutritioncom.apple.health.CategoriesCategoriesTileViewController_Nutrition_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierNutrition"}
+/C
+C[
+GkcategoryBody Measurementscom.apple.health.CategoriesCategoriesTileViewController_Body Measurements_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierBodyMeasurements"}
+categorySymptomscom.apple.health.CategoriesCategoriesTileViewController_Symptoms_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierSymptoms"}
+categoryRespiratorycom.apple.health.CategoriesCategoriesTileViewController_Respiratory_profile_00000000-0000-0000-0000-000000000000Categories.CategoriesTileViewController{"identifier":"HKDisplayCategoryIdentifierRespiratory"}
+
+j	V
+promotioncom.apple.health.MenstrualCyclesMenstrualCyclesOnboardingTileViewControllerMenstrualCyclesOnboardingFeedItembplist00
+,?FJ&MQRU$null
+AvailabilityStateXAnalysis\AvailabilityV$class
+shownWithLowPriority
+ !"#$!&!(((!VCyclesZStatisticsVAnchor_
+MenstruationProjections^RecentSymptoms_
+OngoingCycleFactors_
+LastLoggedDayIndex_
+LastMenstrualFlowDayIndex_
+RecentBasalBodyTemperature_
+FertileWindowProjections
+-./0123456(((&(((((_
+LastMenstruationStartDayIndex_
+CycleLengthMedian_
+!MenstruationLengthUpperPercentile^NumberOfCycles_
+CycleLengthLowerPercentile_
+FirstMenstruationStartDayIndex_
+!MenstruationLengthLowerPercentile_
+MenstruationLengthMedian_
+CycleLengthUpperPercentile
+@ABCZ$classnameX$classes^HKMCStatistics
+DE^HKMCStatisticsXNSObject
+HIZNS.objects
+@AKLWNSArray
+@ANO\HKMCAnalysis
+PE\HKMCAnalysis_
+onboardingAvailable
+@AST_
+:MenstrualCyclesAppPlugin.MenstrualCyclesOnboardingUserData
+_M
+g
+"articleFactors That Can Impact a Menstrual Cyclecom.apple.health.MenstrualCyclescom.apple.health.MenstrualCycles.CycleFactorsMenstrualCyclesAppPlugin.MenstrualCyclesArticleTileViewController{"articleIdentifier":"com.apple.health.MenstrualCycles.CycleFactors"}
+5M
+_
+articleLearn About Spottingcom.apple.health.MenstrualCyclescom.apple.health.MenstrualCycles.SpottingMenstrualCyclesAppPlugin.MenstrualCyclesArticleTileViewController{"articleIdentifier":"com.apple.health.MenstrualCycles.Spotting"}
+EM
+a
+articleLearn About Menstrual Cyclescom.apple.health.MenstrualCyclescom.apple.health.MenstrualCycles.Period101MenstrualCyclesAppPlugin.MenstrualCyclesArticleTileViewController{"articleIdentifier":"com.apple.health.MenstrualCycles.Period101"}
+AO
+Us
+articleUnderstanding Hearing Losscom.apple.health.HearingAppPlugincom.apple.health.Education.AudiogramHearingAppPlugin.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.Audiogram"}
+AO
+]s
+articleWhy Hearing Health Matterscom.apple.health.HearingAppPlugincom.apple.health.Education.HearingHealthHearingAppPlugin.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.HearingHealth"}
+GO
+gs
+articleHeadphones and Hearing Healthcom.apple.health.HearingAppPlugincom.apple.health.Education.HeadphoneListeningHearingAppPlugin.EducationArticleTileViewController{"articleIdentifier":"com.apple.health.Education.HeadphoneListening"}
+KE
+k
+articleLearn About Blood Oxygen Levelscom.apple.health.Respiratorycom.apple.health.RespiratoryHealth.introductionRespiratoryHealthAppPlugin.RespiratoryHealthArticleTileViewController{"articleIdentifier":"com.apple.health.RespiratoryHealth.introduction"}
+I9
+Ss
+articleGetting a Good Night
+s Sleepcom.apple.health.Sleepcom.apple.health.Sleep.sleepHygieneSleepHealthAppPlugin.SleepArticleTileViewController{"articleIdentifier":"com.apple.health.Sleep.sleepHygiene"}
+?9
+Ys
+articleWhy Sleep is so Importantcom.apple.health.Sleepcom.apple.health.Sleep.sleepImportanceSleepHealthAppPlugin.SleepArticleTileViewController{"articleIdentifier":"com.apple.health.Sleep.sleepImportance"}
+Q1?
++S:
+noDataYour resting heart rate is the average heart beats per minute measured when you
+ve been inactive or relaxed for several minutes. A lower resting heart rate typically indicates better heart health and cardiovasc
+@
+Dpromotioncom.apple.health.HearingAppPluginHeadphoneNotificationsPromotionGenerator.Type_Promotion_00000000-0000-0000-0000-000000000000HearingAppPlugin.HeadphoneNotificationsPromotionTileViewController
+3?
+=SL
+noDataMonounsaturated fat is found in olive, canola and peanut oils, as well as nuts and avocados. Studies show that eating foods rich in monounsaturated fats (MUFAs) improves blood cholesterol levels, which can decrease your risk of heart disease. Research also shows that MUFAs may benefit insulin levels and blood sugar control, which can be especially helpful if you have type 2 diabetes.Monounsaturated Fatcom.apple.health.SnippetsHKQuantityTypeIdentifierDietaryFatMonounsaturated:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKQuantityTypeIdentifierDietaryFatMonounsaturated"}
+i'?
+#S
+adataWalking speed represents how quickly you walk on flat ground. Walking speeds may be associated with how well you move overall and your physical abilities.
+
+Walking requires strength, coordination and aerobic fitness. Changes in any of these can affect your walking speed. Walking speed tends to slow down as you get older but sudden decreases may indicate a change in your health.
+
+Your iPhone can record walking speed automatically when you carry your phone near your waist 
+ such as in a pocket 
+ and walk steadily on flat ground. To ensure accuracy, check that your height is up to date in Body Measurements.
+
+Walking Speed is not recorded if your Wheelchair status is set to on.Walking Speedcom.apple.health.SnippetsHKQuantityTypeIdentifierWalkingSpeed:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"statistic","value":{"unitString":"m\/s","value":0.91000000000000003,"timestamp":710591784.25837338,"showDefaultSupplementaryLabel":false,"forceDayGranularity":false,"statisticsOption":"mostRecent"}},"typeIdentifier":"HKQuantityTypeIdentifierWalkingSpeed"}
+ve been inactive or relaxed for several minutes. A lower resting heart rate typically indicates better heart health and cardiovascular fitness.
+
+You may be able to lower your resting heart rate over time by staying active, managing your weight and reducing everyday stress. Resting heart rate does not include your heart rate while you
+re asleep and is validated for users over the age of 18 years.Resting Heart Ratecom.apple.health.SnippetsHKQuantityTypeIdentifierRestingHeartRate:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKQuantityTypeIdentifierRestingHeartRate"}
+!;
+9k
+featureStatusMedical IDcom.apple.health.SafetyMedicalIDFeatureStatusSafety.MedicalIDFeatureStatusTileViewController{"imageData":{"name":"medical_id","bundleIdentifier":"com.apple.health.Safety"},"titleName":"Medical ID","featureStatusKind":"inactive","accessoryTitle":"Set Up","primaryDescriptionContent":["Medical ID gives first responders vital information in an emergency."]}
+updatesafety_features_update_titlecom.apple.health.SafetySafetyUpdateFeedItem_00000000-0000-0000-0000-000000000000Safety.SafetyUpdateViewController
+'?
+#S2
+noDataSugar is a simple carbohydrate that gives the body energy. The white granulated table sugar you put in your coffee
+sucrose from sugar beets or sugar cane
+is only one type of sugar. There are many other types, including fructose, found in fruits and honey and lactose, found in milk. The type of sugar found in our blood, called glucose, is often referred to as 
+blood sugar.
+
+
+Sugar cane was first cultivated in New Guinea about 10,000 years ago.Dietary Sugarcom.apple.health.SnippetsHKQuantityTypeIdentifierDietarySugar:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKQuantityTypeIdentifierDietarySugar"}
+i#?
+
+noDataHot flushes are sudden feelings of warmth in the upper body not caused by external factors like weather, spicy food or fever. They
+re often accompanied by flushed skin, an increase in heart rate and sweating. Hot flushes don
+t actually change the body
+s temperature and are not associated with fever.
+
+A common effect of hormonal changes, hot flushes are considered a key indicator of menopause. However, not everyone who
+s in menopause experiences them.
+
+The effects are usually mild, but can be intense enough to disrupt sleep and daily activities.Hot Flushescom.apple.health.SnippetsHKCategoryTypeIdentifierHotFlashes:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKCategoryTypeIdentifierHotFlashes"}
+m9?
+3SB
+noDataCervical secretions change during your menstrual cycle. By monitoring the changing
+characteristics of your cervical mucus, along with indicators such as basal body temperature, you can gain a better understanding of when you are ovulating.Cervical Mucus Qualitycom.apple.health.SnippetsHKCategoryTypeIdentifierCervicalMucusQuality:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKCategoryTypeIdentifierCervicalMucusQuality"}
+=/?
+-S<
+noDataThis is a measurement of how fast you walk down the stairs.
+
+Descending stairs safely is an important indicator of your overall mobility.
+
+Descending stairs requires strength and coordination. Changes in these factors, or pain, can affect your speed.
+
+Apple Watch records your vertical speed when you go down a flight that is at least 3 metres.Stair Speed: Downcom.apple.health.SnippetsHKQuantityTypeIdentifierStairDescentSpeed:::00000000-0000-0000-0000-000000000000Snippets.SnippetsTileViewController{"value":{"type":"noData"},"typeIdentifier":"HKQuantityTypeIdentifierStairDescentSpeed"}
+`
+S
+yrkd]VOHA:3,%
+[+*.

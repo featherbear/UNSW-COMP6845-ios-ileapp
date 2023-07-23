@@ -1,0 +1,34 @@
+00uQ
+SQLite format 3
+indexevents_timestampInsertedevents
+CREATE INDEX events_timestampInserted ON events (timestampInserted)X
+windexevents_report_urlevents
+CREATE INDEX events_report_url ON events (report_url)[
+{indexevents_locked_timeevents
+CREATE INDEX events_locked_time ON events (locked_time)U
+sindexevents_locked_byevents
+CREATE INDEX events_locked_by ON events (locked_by)2
+?tableeventsevents
+CREATE TABLE events (pid INTEGER, report_url TEXT, eventBody TEXT, locked_by TEXT, locked_time REAL DEFAULT 0, timestampInserted REAL, PRIMARY KEY (pid))
+3A3[:
+
+!MD)(
+
+[tableeventsevents
+CREATE TABLE events (pid INTEGER, report_url TEXT, eventBody TEXT, locked_by TEXT, locked_time REAL DEFAULT 0, timestampInserted REAL, account TEXT, PRIMARY KEY (pid))n
+CREATE INDEX events_locked_by ON events (locked_by)
+U7Fv
+wtableeventsevents
+CREATE TABLE events (pid INTEGER, report_url TEXT, eventBody TEXT, locked_by TEXT, locked_time REAL DEFAULT 0, timestampInserted REAL, account TEXT, batchId TEXT, PRIMARY KEY (pid))n
+>SQLite format 3
+indexidentifiers_store_uuididentifiersCREATE INDEX identifiers_store_uuid ON identifiers (store_uuid)m	
+!tableidentifiersidentifiers
+CREATE TABLE identifiers (identifier_key TEXT PRIMARY KEY, store_uuid TEXT, name TEXT, value TEXT, cross_device INTEGER, expires REAL, modified REAL, last_sync REAL DEFAULT 0, deleted INTEGER DEFAULT 0)5
+
+indexsqlite_autoindex_identifiers_1identifiers
+=tableidentifier_storesidentifier_stores
+CREATE TABLE identifier_stores (store_key TEXT PRIMARY KEY, store_uuid TEXT UNIQUE, account TEXT, interval REAL, cross_device INTEGER, started REAL, modified REAL, last_sync REAL DEFAULT 0, deleted INTEGER DEFAULT 0)N
+indexsqlite_autoindex_identifier_stores_2identifier_stores	A
+indexsqlite_autoindex_identifier_stores_1identifier_stores
+iy&AZ
+

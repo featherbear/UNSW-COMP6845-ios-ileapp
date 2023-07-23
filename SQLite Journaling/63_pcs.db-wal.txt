@@ -1,0 +1,127 @@
+X!SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+Q	]/^
+HCUQ
+DevicePlansZoneV2:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+EW'&
+>:0
+
+:e	
+R
+{d
+R?~z^
+ !"O
+)0'0%
+l>L4
+6fj6
+oT--DC
+(9BCD7FE4AC19650F52C2154EF54A02051C6D9EF1
+"#$YNS.string
++mxfqgZjdFPDgRZyoiG9cIXLDKHd-tOHkgx2Lz2zr9rY
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+DevicePlansZoneV2_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+com.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5DevicePlansZoneV2:__defaultOwner__A
+Q	DevicePlansZoneV2:__defaultOwner__
+	DevicePlansZoneV2:__defaultOwner__
+com.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+QUC	DevicePlansZoneV2:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.iCloud.CommCenter
+UC	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.iCloud.CommCenter
+LCUQ
+426787DD-34B9-4DD0-9042-257CB3DD60F6:DevicePlansZoneV2:__defaultOwner__
+'()-5;<BCDHLMQRSU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+DHM
+Sn}s
+C0;$,
+$K 
+
+]i%%
+{$4UIba
+}lW9
+(17A8994F5EA77BAC1B5DC91E60D9B1032291EA27
+*+,YNS.string
++pOp3tioQfa8M2tL9RPM9NuENoXhZeZcXrmo4l87Qv4E
+./01Z$classnameX$classes_
+234_
+6789:ZRecordNameVZoneID
+$426787DD-34B9-4DD0-9042-257CB3DD60F6
+?@AXZoneNameYownerName
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordID\CellularPlan
+./TU_
+CKDRecordPCSData
+VW4_
+CKDRecordPCSDataZCKDPCSData
+Pcom.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5DevicePlansZoneV2:__defaultOwner__A
+DevicePlansZoneV2:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.iCloud.CommCenter
+.(h
+
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.iCloud.CommCenter
+Ii
+	
+6CUQ
+ !%-3459=@U$null
+;<WNS.time#A
+-Fkj~
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
++com.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5DevicePlansZoneV2:__defaultOwner__A
+ CUQ
+'()-5;<BCDHLMQRU$null
+DevicePlansZoneV2
+./ST_
+UV4_
+<com.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5DevicePlansZoneV2:__defaultOwner__A
+kVt
+
+0fH^
+ nLP035
+;C6r
+Pm2wH
+=0Wf
+(79197347E45157E5833F36482811E5F092818280
+:com.apple.iCloud.CommCenter2757441C-D046-4C70-A8DC-D7FA5FD91FD5DevicePlansZoneV2:__defaultOwner__A
+{w0A(
+`
+	6
+Zv2o
+
+)MD9

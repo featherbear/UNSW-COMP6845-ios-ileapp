@@ -1,0 +1,100 @@
+Sat Jul  8 23:29:46 2023 [169] <notice> (0x16f24f000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by CommCenter
+Sun Jul  9 14:35:47 2023 [169] <notice> (0x16f137000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by FindMyDeviceIdentityXPCService
+Sun Jul  9 14:36:32 2023 [169] <notice> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by transparencyd
+Sun Jul  9 14:36:33 2023 [169] <notice> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by identityservicesd
+Sun Jul  9 14:36:33 2023 [169] <debug> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client is missing required entitlement: {
+    "com.apple.mobileactivationd.device-identifiers" = 1;
+}
+Sun Jul  9 14:50:44 2023 [169] <notice> (0x16f137000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by identityservicesd
+Sun Jul  9 14:50:44 2023 [169] <debug> (0x16f137000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client is missing required entitlement: {
+    "com.apple.mobileactivationd.device-identifiers" = 1;
+}
+Sun Jul  9 16:44:03 2023 [169] <notice> (0x16f137000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 16:44:03 2023 [169] <notice> (0x16f137000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 16:44:08 2023 [169] <notice> (0x16f0ab000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 16:44:39 2023 [169] <notice> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by identityservicesd
+Sun Jul  9 16:44:39 2023 [169] <debug> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client is missing required entitlement: {
+    "com.apple.mobileactivationd.device-identifiers" = 1;
+}
+Sun Jul  9 16:55:02 2023 [169] <notice> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by identityservicesd
+Sun Jul  9 16:55:02 2023 [169] <debug> (0x16f0ab000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client is missing required entitlement: {
+    "com.apple.mobileactivationd.device-identifiers" = 1;
+}
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: ____________________ Mobile Activation Startup _____________________
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: build_version: 18G82
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: internal_build: false
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: uid: 501
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: user_name: mobile
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: system_container_path: /private/var/containers/Data/System/3727E114-1371-47F5-8C1D-E120FE9AF7E6
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: regulatory_images_path: /private/var/containers/Shared/SystemGroup/C8B905EB-B432-4787-BA38-310BC9B7A79F
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: hardware_model: D20AP
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: product_type: iPhone10,1
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: device_class: iPhone
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: has_telephony: true
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: should_hactivate: false
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: is_fpga: false
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: is_devfused_undemoted: false
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: is_prodfused_demoted: false
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b7e3000) MA: main: ____________________________________________________________________
+Sun Jul  9 19:00:13 2023 [155] <debug> (0x16b757000) MA: dealwith_activation: Activation State: Activated
+Sun Jul  9 19:00:16 2023 [155] <notice> (0x16b86f000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: ____________________ Mobile Activation Startup _____________________
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: build_version: 18G82
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: internal_build: false
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: uid: 501
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: user_name: mobile
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: system_container_path: /private/var/containers/Data/System/3727E114-1371-47F5-8C1D-E120FE9AF7E6
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: regulatory_images_path: /private/var/containers/Shared/SystemGroup/C8B905EB-B432-4787-BA38-310BC9B7A79F
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: hardware_model: D20AP
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: product_type: iPhone10,1
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: device_class: iPhone
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: has_telephony: true
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: should_hactivate: false
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: is_fpga: false
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: is_devfused_undemoted: false
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: is_prodfused_demoted: false
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d727000) MA: main: ____________________________________________________________________
+Sun Jul  9 19:00:54 2023 [154] <debug> (0x16d7b3000) MA: dealwith_activation: Activation State: Activated
+Sun Jul  9 19:00:57 2023 [154] <notice> (0x16d8cb000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: ____________________ Mobile Activation Startup _____________________
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: build_version: 18G82
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: internal_build: false
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: uid: 501
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: user_name: mobile
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: system_container_path: /private/var/containers/Data/System/3727E114-1371-47F5-8C1D-E120FE9AF7E6
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: regulatory_images_path: /private/var/containers/Shared/SystemGroup/C8B905EB-B432-4787-BA38-310BC9B7A79F
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: hardware_model: D20AP
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: product_type: iPhone10,1
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: device_class: iPhone
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: has_telephony: true
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: should_hactivate: false
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: is_fpga: false
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: is_devfused_undemoted: false
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: is_prodfused_demoted: false
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16bdaf000) MA: main: ____________________________________________________________________
+Sun Jul  9 19:01:35 2023 [158] <debug> (0x16be3b000) MA: dealwith_activation: Activation State: Activated
+Sun Jul  9 19:01:38 2023 [158] <notice> (0x16bec7000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: ____________________ Mobile Activation Startup _____________________
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: build_version: 18G82
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: internal_build: false
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: uid: 501
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: user_name: mobile
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: system_container_path: /private/var/containers/Data/System/3727E114-1371-47F5-8C1D-E120FE9AF7E6
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: regulatory_images_path: /private/var/containers/Shared/SystemGroup/C8B905EB-B432-4787-BA38-310BC9B7A79F
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: hardware_model: D20AP
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: product_type: iPhone10,1
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: device_class: iPhone
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: has_telephony: true
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: should_hactivate: false
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: is_fpga: false
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: is_devfused_undemoted: false
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: is_prodfused_demoted: false
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bd1b000) MA: main: ____________________________________________________________________
+Sun Jul  9 19:03:38 2023 [162] <debug> (0x16bda7000) MA: dealwith_activation: Activation State: Activated
+Sun Jul  9 19:03:41 2023 [162] <notice> (0x16bfd7000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 19:04:54 2023 [162] <notice> (0x16bd1b000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client certification requested by identityservicesd
+Sun Jul  9 19:04:54 2023 [162] <debug> (0x16bd1b000) MA: -[MobileActivationDaemon issueClientCertificateWithReferenceKey:options:completion:]: Client is missing required entitlement: {
+    "com.apple.mobileactivationd.device-identifiers" = 1;
+}
+Sun Jul  9 19:11:46 2023 [162] <notice> (0x16bda7000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter
+Sun Jul  9 19:11:46 2023 [162] <notice> (0x16bda7000) MA: -[MobileActivationDaemon unbrickDeviceWithCompletionBlock:]: Unbrick requested by CommCenter

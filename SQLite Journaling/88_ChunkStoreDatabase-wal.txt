@@ -1,0 +1,39 @@
+ElDkK
+SQLite format 3
+
+0O
+indexCSChunkTable_ftrowid_inxCSChunkTable	CREATE INDEX CSChunkTable_ftrowid_inx ON CSChunkTable(ft_rowid)e
+indexCSChunkTable_iid_inxCSChunkTable
+CREATE INDEX CSChunkTable_iid_inx ON CSChunkTable(ct_iid)b
+yindexCSChunkTable_cid_inxCSChunkTable
+CREATE INDEX CSChunkTable_cid_inx ON CSChunkTable(cid)^
+tableCSChunkTableCSChunkTable
+CREATE TABLE CSChunkTable (ct_rowid INTEGER PRIMARY KEY,cid BLOB,ct_iid BIGINT,ft_rowid BIGINT,offset BIGINT,dataLen INTEGER,refCount INTEGER,timeStamp BIGINT,location INTEGER,key BLOB)
+;indexCSRegisteredFileTable_crt_iid_inxCSRegisteredFileTable
+CREATE UNIQUE INDEX CSRegisteredFileTable_crt_iid_inx ON CSRegisteredFileTable(crt_iid)
+)indexCSRegisteredFileTable_crt_id_inxCSRegisteredFileTable
+CREATE INDEX CSRegisteredFileTable_crt_id_inx ON CSRegisteredFileTable(crt_id)
+tableCSRegisteredFileTableCSRegisteredFileTable
+CREATE TABLE CSRegisteredFileTable (crt_rowid INTEGER PRIMARY KEY,crt_id	BLOB,crt_iid BIGINT,crt_filekey BLOB,crt_filesize BIGINT,crt_profileType INTEGER,crt_profileTypeIsDefault INTEGER,crt_profileConfigurationVersion TEXT,crt_profileResolvedFileExtension TEXT)^
+mtableCSDatabaseVersionCSDatabaseVersion
+CREATE TABLE CSDatabaseVersion (version INTEGER)
+ElDkK=T
+ElDkK2$5s
+ElDkKK
+ElDkKJ
+ElDkKxq5
+2022-08-11
+.
+:c
+6	
+:c
+ElDkK<
+ElDkK	
+ElDkK^
+.V]@dt
+V]@dt
+ElDkK*
+ElDkK8
+ElDkK}
+ElDkKD
+ElDkK9

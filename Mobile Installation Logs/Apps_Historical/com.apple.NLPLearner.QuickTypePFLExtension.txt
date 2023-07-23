@@ -1,0 +1,1 @@
+2023-07-08 23:20:06 Made container live com.apple.NLPLearner.QuickTypePFLExtension /private/var/mobile/Containers/Data/PluginKitPlugin/81C50BF2-0062-4D5E-B307-8292A924BE2C

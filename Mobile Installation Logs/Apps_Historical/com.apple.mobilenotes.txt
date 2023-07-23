@@ -1,0 +1,6 @@
+2023-07-09 14:41:46 Data container moved com.apple.mobilenotes /private/var/mobile/Containers/Data/Application/C66B36C2-65CF-49B4-93AD-646476311AA9
+2023-07-09 14:41:46 Made container live com.apple.mobilenotes /private/var/containers/Bundle/Application/B76800DC-E690-4195-AA5C-FF6AFF3601EB
+2023-07-09 14:41:46 Install successful com.apple.mobilenotes 
+2023-07-08 23:20:28 Made container live com.apple.mobilenotes /private/var/mobile/Containers/Data/Application/C7CBDE93-AF25-45B9-A26F-1B476298F31D
+2023-07-08 23:20:28 Made container live com.apple.mobilenotes /private/var/containers/Bundle/Application/C6EE4590-EE7A-4379-AEEC-9D7B122CFECD
+2023-07-08 23:20:28 Install successful com.apple.mobilenotes 

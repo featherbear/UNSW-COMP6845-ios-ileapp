@@ -1,0 +1,731 @@
+SQLite format 3
+<*@P
+
+$P
+#tablesuccess_countsuccess_count
+CREATE TABLE success_count (
+event_type STRING PRIMARY KEY,
+success_count INTEGER,
+hard_failure_count INTEGER,
+soft_failure_count INTEGER
+)9
+
+indexsqlite_autoindex_success_count_1success_count3
+triggermaintain_ring_buffer_samples_v2samplesCREATE TRIGGER maintain_ring_buffer_samples_v2 AFTER INSERT ON samples
+BEGIN
+DELETE FROM samples WHERE id <= NEW.id - 1000;
+END
+Ytablesamplessamples	CREATE TABLE samples (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,
+name STRING,
+value REAL
+))	
+triggermaintain_ring_buffer_notes_v2notesCREATE TRIGGER maintain_ring_buffer_notes_v2 AFTER INSERT ON notes
+BEGIN
+DELETE FROM notes WHERE id <= NEW.id - 1000;
+ENDl
+7tablenotesnotes
+CREATE TABLE notes (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_soft_failures_v2soft_failuresCREATE TRIGGER maintain_ring_buffer_soft_failures_v2 AFTER INSERT ON soft_failures
+BEGIN
+DELETE FROM soft_failures WHERE id <= NEW.id - 1000;
+END
+Gtablesoft_failuressoft_failures
+CREATE TABLE soft_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_hard_failures_v2hard_failuresCREATE TRIGGER maintain_ring_buffer_hard_failures_v2 AFTER INSERT ON hard_failures
+BEGIN
+DELETE FROM hard_failures WHERE id <= NEW.id - 1000;
+ENDP
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Gtablehard_failureshard_failures
+CREATE TABLE hard_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)i
+tablePropertiesProperties
+CREATE TABLE Properties (
+    key    text primary key,
+    value  text
+)3
+indexsqlite_autoindex_Properties_1Properties
+-Created710576954.101554
+	Created
+=$%Tp
+'
+SchemaVersionE3BB7685C22335A3E3FC481B0D59A4F1B2F34031517BC31154745553BEA9C175
+SchemaVersion
+474C
+'	soft_failures
+bplist00
+	
+
+
+YeventTimeWproductUbuildYeventTypeZeventClass[errorDomainWmodelidYerrorCode#Bx
+3YiPhone OSU18G82[OTAPKIEvent
+NSOSStatusErrorDomainZiPhone10,1
+#+1;FRZdmw}
+	OTAPKIEvent
+#	OTAPKIEvent
+soft_failures
+'Zbplist00
+q.|1YiPhone OSU18G82[OTAPKIEvent
+OTAPKIEvent
+YeventTimeUbuildTRootVPolicyVCallerYeventTypeZeventClassWproductWmodelid#Bx
+U18G82
+SystemRootUsageEvent
+YiPhone OSZiPhone10,1
+%+07>HS[clrwy{
+'	hard_failures
+YeventTimeVPolicyVCaller\SerialNumberYeventTypeZeventClassUbuildWproductWmodelidXHostnameZIssuerName#Bx
+YsslServer^com.apple.geod_
+ 43AB3A0CAD4476C7BFE359507FC2E7B3\PinningEvent
+U18G82YiPhone OSZiPhone10,1_
+gspe21-ssl.ls.apple.com_
+"Apple Public Server ECC CA 12 - G1
+hard_failures
+PinningEvent
+#wa{
+Lbplist00
+qYsslServer_
+com.apple.mDNSResponder_
+ 79DD676DE24FF6C4EA097FB0A9B1209A\PinningEvent
+U18G82YiPhone OSZiPhone10,1Zicloud.com_
+NsYiPhone OSU18G82[OTAPKIEvent
+'_bplist00
+ZFYiPhone OSU18G82[OTAPKIEvent
+^HL3
+fbplist00
+ !"#$%&'()*+,-./0123456789:;<=>??AB?DE?GH???LMNMO?M?RBDTU?WBBZ[\D]??M?aBcMdBBg??jkMlB???\q??t_
+cert_compression_enabled_
+cert_compression_used]connection_id_
+challenge_block_usedXpsk_used[async_calls^handshake_time_
+session_resumedYeventTimeYeventType_
+fallback_attempted_
+false_start_used_
+certificate_requested[min_version_
+ats_minimum_signature_algorithm[cipher_name_
+ats_minimum_ecdsa_key_size_
+peer_public_key_type\sct_received_
+ats_minimum_rsa_key_size_
+ticket_received^address_family_
+verify_block_usedZeventClass_
+outgoing_byte_count]handshake_rtt_
+session_renewed_
+experiment_identifier[client_mode\ocsp_enabledZgroup_name_
+configured_ciphersuites[max_version^ems_negotiatedUbuild_
+handshake_cancelled_
+unknown_negotiated_protocol_
+cert_compression_algorithm\ats_enforcedZbyte_countYalpn_used_
+incoming_byte_count_
+handshake_timer_fires_
+ticket_lifetime[sct_enabled^grease_enabledWproductXis_probeTdtls[read_stalls_
+signature_algorithm\write_stallsWprocess]ocsp_received^ticket_enabled_
+resumption_attempted^ticket_offeredWversion_
+negotiated_protocol_
+false_start_enabled^psk_configuredWmodelid
+$E2E54152-EBC8-47CD-9DC3-B47C39D71886	
+TLSConnectionEvent
+Secc
+Tnone		VX25519
+		YiPhone OS
+^com.apple.geod	
+Xhttp/1.1
+ZiPhone10,1
+R8g7
+PinningEvent	
+_SQLite format 3
+qpL 
+TLSConnectionEvent
+
+2bplist00
+$35735741-44D8-4D8E-A864-08F3CD41B982	
+com.apple.nsurlsessiond	
+@bKu
+TrustEvaluationEvent
+TrustEvaluationEvent
+;6bplist00
+' ()
+NumberTrustedSCTsYeventType\AnchorSource]IsCTValidated_
+LeafIssuanceDateZNumberSCTsZeventClassWmodelid[ValidStatus\LeafLifetime[AppleDomainVCaller[TrustResult_
+NumberCertsInChainZSCTSourcesYeventTime^AfterCTFlagDayUbuildVPolicyWproduct^EvaluationTimeZOCSPCached[OCSPStapled_
+NumberChainsBuilt
+	#Bxs
+	U18G82YiPhone OS"K
+TLSConnectionEvent
+ZHDw
+$37EEA876-9D5C-4431-A365-262A49C590E0	
+ SQLite format 3
+hard_failures	
+PinningEvent
+
+nbplist00
+9?YsslServer^com.apple.geod_
+hard_failures
+
+\W K
+u9TJYsslServer^com.apple.geod_
+hard_failures
+	U18G82YiPhone OS"J
+hard_failures
+.bplist00
+y	U18G82YiPhone OS"J
+YeventTimeUbuildWproduct\overallScoreYeventType_
+timeSinceLastResetZrootUsages[errorDomainZeventClassWmodelidYerrorCode#Bx
+U18G82YiPhone OS
+MitmDetectionEvent
+!%)-1
+ZuserAnchor[pinningMitmUscoreZnumDomainsYpriorMitm
+MITMErrorDomain
+Qbr
+
+	MitmDetectionEvent
+$x$>
+Ubplist00
+YeventTimeUbuildWproductYeventTypeZerrorChain[errorDomainZeventClassWmodelidYerrorCode#Bx
+XU18G82YiPhone OS[OTAPKIEvent_
+,NSCocoaErrorDomain-260:NSPOSIXErrorDomain-2:_
+NSOSStatusErrorDomain
+%+3=HT_gqz
+Bj@cb
+\YiPhone OSU18G82[OTAPKIEvent
+Te6*bplist00
+YiPhone OSU18G82[OTAPKIEvent
+0+`u*
+_oD
+
+TMMCS_
+com.apple.cloudd_
+ 2E03437CA0B86D88EB1565DD4586C686\PinningEvent
+gateway.icloud.com_
+Apple IST CA 2 - G1
+wBbplist00
+|-TMMCS_
+com.apple.nsurlsessiond_
+vz#
+
+-5
+
+
+M-b]p
+
+SAMP_
+com.apple.Preferences_
+ 297A4D82252350E86DDADB9451A74E6B\PinningEvent
+bag.itunes.apple.com_
+$Apple Public EV Server RSA CA 2 - G1
+sCC[}
+$355B1911-55F3-4078-8053-41B28011EEE0	
+Srsa
+com.apple.appstored	
+soft_failures	
+,_A8YiPhone OSU18G82[OTAPKIEvent
+soft_failures
+
+installedVersionYeventTimeUbuildWproduct\assetVersionYeventType[errorDomainZeventClass]systemVersionWmodelidYerrorCode
+SU18G82YiPhone OS[OTAPKIEvent_
+
+ZiPhone10,1
+2<BJWamx
+Zm7
+
+ fWB05
+~bplist00
+$E6A596C2-2CE0-4463-9A22-998FB4E70F51	
+42%`0
+x}bplist00
+pYsslServer^com.apple.geod_
+BSQLite format 3
+TrustEvaluationEvent 
+)*+,-
+LeafIssuanceDateZNumberSCTsZeventClassWmodelid[ValidStatus\LeafLifetime[AppleDomainTIsEVVCaller[TrustResult_
+NumberCertsInChainZSCTSources\OptionallyEV^AfterCTFlagDayYeventTimeUbuildVPolicyWproduct^EvaluationTimeZOCSPCached_
+	#Bx}I
+		#Bx
+	YiPhone OS"K=
+PinningEvent
+PinningEvent!
+com.apple.amsengagementd_
+ 1C3FCDF9361F512E0E9FA295123F1E85\PinningEvent
+amp-api.media.apple.com_
+TLSConnectionEvent"
+ !"#$%&'()*+,-./0123456789:;<=>??AB?DE?GH???LMNMO?M?RBDTUBWBBZ[\D]??M?aBcMdBBg??jkMlB???\q??t_
+$87B32C53-FA40-4727-B548-F4B85FA4F518	
+	Tnone		VX25519
+com.apple.AppStore	
+AHJ
+
+PinningEvent
+/WGh4Ff
+
+PinningEvent#
+{S- 
+:`bplist00
+VSIDS_
+1com.apple.imfoundation.IMRemoteURLConnectionAgent_
+ 0BA4EA06E68B9B467795FCF0F3DEB2C4\PinningEvent
+pds.ess.apple.com_
+Apple Server Authentication CA
+C_jE
+TrustEvaluationEvent$
+}Ou
+
+ bplist00
+ZeventClass_
+NumberChainsBuiltUbuildVCallerYeventTypeVPolicyWproduct[OCSPNoCheckYNoNetwork[TrustResultYeventTime_
+NumberCertsInChain^EvaluationTime_
+MissingOCSPResponderWmodelid^AfterCTFlagDay\AnchorSource_
+LeafIssuanceDate\LeafLifetime
+YiPhone OS		
+	ZiPhone10,1	#Bx
+ySQLite format 3
+TLSConnectionEvent%
+pbplist00
+$AE81CA73-DA84-4E99-803E-F38D8F522200	
+
+Z(O
+
+&VS87%
+TrustEvaluationEvent&
+z6P
+
+TrustEvaluationEvent'
+qL4{
+A	U18G82YiPhone OS"K
+TrustEvaluationEvent(
+8bplist00
+"bfEm
+
+TrustEvaluationEvent	
+TrustEvaluationEvent)
+ !"#$
+&#'(
+NumberTrustedSCTsYeventType\AnchorSource]IsCTValidatedZeventClassZNumberSCTs_
+LeafIssuanceDate_
+ValidOCSPTriggeredWmodelid[ValidStatus\LeafLifetimeVCaller[TrustResult_
+NumberCertsInChainZSCTSourcesYeventTime^AfterCTFlagDayUbuildVPolicyWproduct^EvaluationTimeZOCSPCached_
+	ZiPhone10,1
+\_ml
+SystemRootUsageEvent*
+nU18G82
+qTW*
+hard_failures 
+O\B.^
+TLSConnectionEvent+
+$D4E9091D-FCD7-40CA-B061-98FEC8B1832E	
+com.apple.WebKit.Networking	
+hard_failures!
+TrustEvaluationEvent
+
+TrustEvaluationEvent,
+	U18G82YiPhone OS"KZV
+hard_failures"
+PinningEvent-
+D bplist00
+9=SAMP_
+com.apple.itunescloudd_
+init.itunes.apple.com_
+]SQLite format 3
+5^'M
+hard_failures#
+E^Qh
+TLSConnectionEvent	
+TLSConnectionEvent.
+!bplist00
+$61930C1F-E8CC-4D07-809B-065866CB8AE9	
+hard_failures$
+TrustEvaluationEvent/
+O4U8
+
+3bplist00
+H	ZiPhone10,1	#Bx
+Ya8
+
+hard_failures%
+KI#F
+PinningEvent0
+>[N7
+z:bplist00
+SIDS_
+ 20656D5BBD3DDC6ACF01B3B4AC411C5A\PinningEvent
+profile.ess.apple.com_
+hard_failures&
+PinningEvent1
+ com.apple.dataaccess.dataaccessd_
+ 79382749EDA2B7EF9AA2856DDC8A43A7\PinningEvent
+p101-contacts.icloud.com_
+soft_failures
+VkU18G82YiPhone OS
+!%)-
+MitmDetectionEvent2
+soft_failures
+
+4bplist00
+MitmDetectionEvent3
+)Jt&
+7yV,
+MitmDetectionEvent4
+)/7DNcnz
+hard_failures'
+TrustEvaluationEvent
+TrustEvaluationEvent5
+dAbplist00
+"Ii4
+hard_failures(
+TLSConnectionEvent6
+$AB483CD6-F646-4BB1-8412-C0B063B835F7	
+com.apple.syncdefaultsd	
+hard_failures)
+PinningEvent7
+Tbplist00
+jTMMCS_
+hard_failures*
+PinningEvent8
+hard_failures+
+PinningEvent9
+hard_failures,
+PinningEvent:
+Sbplist00
+hard_failures-
+
+"7hg
+
+TLSConnectionEvent
+TLSConnectionEvent;
++k0w
+$15C1C332-64DD-4F13-A951-8E1226BA1A84	
+com.apple.cloudd	
+hard_failures.
+TrustEvaluationEvent<
+g{2@bplist00
+Nv"I
+\f	ZiPhone10,1	#Bx
+hard_failures/
+TLSConnectionEvent=
+u\bplist00
+ !"#$%&'()*+,-./0123456789:;<=>??AB?DE?GH???LMNMO?M?RBDTUBWBBZ[\D]??M?aBcMdBBg??jkMlB?B?qr??u_
+$EA3318E4-9458-4241-9434-0A2327169EC6	
+,Secc
+W	Tnone		VX25519
+.'SQLite format 3
+hard_failures0
+0?~D
+TrustEvaluationEvent>
+!"#!$
+&!'(
+hard_failures1
+TLSConnectionEvent?
+$695E8F76-4316-43A4-887C-28B429A4816D	
+hard_failures2
+TLSConnectionEvent@
+ !"#$%&'()*+,-./0123456789:;<=>??AB?DE?GH???LMNMO?M?RBDTU?WBBZ[\D]??M?aBcMdBBg??jkMl????\q??t_
+$2BB1F059-8D6D-4B3C-9224-800DFC61358C	
+d-P_
+com.apple.WebKit.Networking
+hard_failures3
+SystemRootUsageEventA
+	
+
+
+
+
+c2U18G82
+%+07>HS[clrwy
+hard_failures4
+1	p
+
+y qp
+SystemRootUsageEventB
+gbplist00
+<U18G82
+hard_failures5
+TLSConnectionEventC
+$1F9C158A-3069-4596-A9AE-AEA23F5B46DA	
+hard_failures6
+TrustEvaluationEventD
+ebplist00
+LeafIssuanceDateWmodelid[ValidStatus\LeafLifetimeVCaller[TrustResult_
+NumberCertsInChainZSCTSourcesYeventTimeUbuild^AfterCTFlagDayVPolicyWproduct^EvaluationTime_
+#Bx}I
+c3U18G82	YiPhone OS"J
+hard_failures7
+TLSConnectionEventE
+$F21D6645-4684-44EF-8A54-D179DE650A96	
+com.apple.healthappd	
+hard_failures8
+	_t
+
+TrustEvaluationEventF
+NumberChainsBuiltUbuildVCallerYeventTypeVPolicyWproduct[TrustResultYeventTime_
+
+YiPhone OS
+v	ZiPhone10,1	#Bx
+7vi8i
+
+hard_failures9
+TrustEvaluationEventG
+xW5
+
+^bplist00
+!"#ZeventClass_
+NumberChainsBuiltUbuildVCaller[ValidStatusVPolicyYeventTypeWproductYNoNetwork[TrustResultYeventTime_
+NumberCertsInChain^EvaluationTimeWmodelid^AfterCTFlagDay\AnchorSource_
+TrustEvaluationEventYiPhone OS	
+AZiPhone10,1	
+hard_failures:
+TrustFailureEvent
+TrustFailureEventH
+VPolicyUErrorVCallerUIndexYeventTypeYeventTimeZeventClassUbuildWproductWmodelid[TrustResult
+TrustFailureEvent#Bx
+U18G82YiPhone OSZiPhone10,1
+&,39CMX^fnz|
+hard_failures;
+:+U
+
+TrustFailureEventI
+*VS;
+^u8rbplist00
+OTAPKIEvent	
+OTAPKIEventJ
+DYiPhone OSU18G82[OTAPKIEvent
+OTAPKIEvent
+
+OTAPKIEventK
+(9bplist00
+OTAPKIEvent
+
+h(
+
+OTAPKIEventL
+4]bplist00
+Y7YiPhone OSU18G82[OTAPKIEvent
+OTAPKIEvent
+OTAPKIEventM
+OTAPKIEventN
+VYiPhone OSU18G82[OTAPKIEvent
+OTAPKIEventO
+Ybplist00
+;Q-K$
+W61LD
+
+OTAPKIEventP
+JZbplist00
+]$YiPhone OSU18G82[OTAPKIEvent
+9O7
+
+OTAPKIEventQ
+t>YiPhone OSU18G82[OTAPKIEvent
+7Nl
+
+hard_failures<
+@/G
+
+TrustEvaluationEventR
+ ! #$ \LeafLifetime_
+NumberChainsBuiltZeventClassVCaller[ValidStatusVPolicyYeventTypeUbuildWproduct[TrustResultYeventTime_
+LeafIssuanceDate[AppleDomain
+TrustEvaluationEventU18G82YiPhone OS
+'#	ZiPhone10,1	
+hard_failures=
+TLSConnectionEventS
+Bbplist00
+$CAAAE39E-6D80-4589-AA59-2370EAB2990E	
+^(a_
+com.apple.itunescloudd	
+uFL
+
+hard_failures>
+TLSConnectionEventT
+P8qbplist00
+$D3A45121-4A4C-498B-AAAC-F769A287B3FA	
+hard_failures?
+PinningEventU
+LYsslServer_
+com.apple.ap.promotedcontentd_
+ 5FEB3BA17515B29387BF3ADA56C3FBB9\PinningEvent
+iadsdk.apple.com_
+hard_failures@
+QwJ
+
+ATSConnectionExceptionEvent
+ATSConnectionExceptionEventV
+YeventTimeUbuildWproductYExceptionYeventTypeZeventClassXBundleIDWmodelid#Bx
+^!YDU18G82YiPhone OS_
+ATSExceptionDomains_
+1com.apple.imfoundation.IMRemoteURLConnectionAgentZiPhone10,1
+#)1;EPYajpz
+U6
+
+MitmDetectionEventW
+3ESQLite format 3
+hard_failuresA
+TrustEvaluationEventX
+hard_failuresB
+TrustEvaluationEventY
+#$ZeventClass_
+NumberChainsBuiltUbuildVCallerYeventTypeVPolicyWproduct[TrustResultXWeakHashUErrorYeventTime_
+MissingOCSPResponderWmodelid\AnchorSource^AfterCTFlagDay_
+YiPhone OS
+	#Bx
+hard_failuresC
+1Kgrbg
+TrustFailureEventZ
+4?3
+hard_failuresD
+PinningEvent[
+4?3	
+'hbplist00
+-TMMCS_
+hard_failuresE
+TrustEvaluationEvent\
+
+6W
+
+'()*
+4=	U18G82
+	YiPhone OS"K
+ iC
+
+MitmDetectionEvent]
+
+S}g
+^U18G82YiPhone OS
+hard_failuresF
+OTAPKIEvent^
+jbplist00
+MADownLoadResultZiPhone10,1
+hard_failuresG
+OTAPKIEvent_
+hard_failuresH
+TrustEvaluationEvent`
+Nc	ZiPhone10,1	#Bx
+hard_failuresI
+TrustFailureEventa
+hard_failuresJ
+TrustEvaluationEventb
+Wdbplist00
+"Jy'
+hard_failuresK
+TrustFailureEventc
+39;$
+
+hard_failuresL
+TrustEvaluationEventd
+{8	ZiPhone10,1	#Bx
+K$
+
+hard_failuresM
+TrustEvaluationEvente
+
+(3
+k	ZiPhone10,1
+hard_failuresN
+TrustEvaluationEventf
+
+(3	g
+<bplist00
+hard_failuresO
+TrustFailureEventg
+hard_failuresP
+TrustEvaluationEventh
+-H="I
+>	ZiPhone10,1	#Bx
+hard_failuresQ
+TrustEvaluationEventi
+%[bplist00
+?dU
+
+hard_failuresR
+TrustFailureEventj
+{l<bplist00
+hard_failuresS
+TrustFailureEventk
+7bplist00
+hard_failuresT
+TrustEvaluationEventl
+w	ZiPhone10,1
+hard_failuresU
+TrustEvaluationEventm
+6	ZiPhone10,1	#Bx
+hard_failuresV
+TrustFailureEvent	
+TrustFailureEventn
+8."!
+
+hard_failuresW
+TrustEvaluationEvento
+4
+(3
+vbplist00
+hard_failuresX
+TrustEvaluationEventp
+4
+(3	>
+MitmDetectionEventq
+y!\&
+tbplist00
+hard_failuresY
+. S
+TrustEvaluationEvent!
+TrustEvaluationEventr
+'e"I+
+P	ZiPhone10,1	#Bx
+hard_failuresZ
+TLSConnectionEvents
+OHbplist00
+$60286290-0AC6-4449-B31C-AFEA8D23E63E	
+com.apple.itunesstored	
+y[SQLite format 3
+R!hXe
+hard_failures[
+TLSConnectionEventt
+ !"#$%&'()*+,-./0123456789:;<=>??AB?DE?GH???LMNMO?M?RBDTU?WBBZ[\D]??M?aBcMdBBg??jkMl????qr??u_
+$D625C3DD-DF7C-4AD9-B4E8-CA6829676961	
+/Srsa
+redacted_bundle_id
+hard_failures\
+PinningEventu
+
+APYsslServer_
+com.saurik.Cydia_
+$031EF1E368B35C1C19435FA4E6497E8860D0\PinningEvent
+repo.dynastic.coRR3
+hard_failures]
+TrustEvaluationEvent"
+TrustEvaluationEventv
+
+='"I
+hard_failures^
+TrustEvaluationEvent#
+TrustEvaluationEventw
+"I
+} 	ZiPhone10,1	#Bx
+hard_failures_
+R5R
+
+TrustFailureEvent
+
+Ob3
+
+TrustFailureEventx
+3rbplist00
+hard_failures`
+PinningEventy
+com.apple.appstored_
+su.itunes.apple.com_
+ValidUpdateEvent V
+ValidUpdateEventz
+c#^j
+hard_failuresa
+TrustEvaluationEvent{
+_bplist00
+	#BxV
+h=	U18G82YiPhone OS"K
+B]		

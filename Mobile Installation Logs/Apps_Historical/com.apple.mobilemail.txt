@@ -1,0 +1,6 @@
+2023-07-09 14:46:07 Install successful com.apple.mobilemail 
+2023-07-09 14:46:06 Data container moved com.apple.mobilemail /private/var/mobile/Containers/Data/Application/F0A54488-2B30-4720-8314-A9F0010E71AB
+2023-07-09 14:46:06 Made container live com.apple.mobilemail /private/var/containers/Bundle/Application/8718E9BD-F088-4549-97B8-4DF3F9C9DAAE
+2023-07-08 23:20:29 Made container live com.apple.mobilemail /private/var/containers/Bundle/Application/9E1497AE-E7E1-45B4-928E-478798D9A5DE
+2023-07-08 23:20:29 Install successful com.apple.mobilemail 
+2023-07-08 23:20:28 Made container live com.apple.mobilemail /private/var/mobile/Containers/Data/Application/9B325D5B-E156-40C9-8D25-E6F6AB8F536D

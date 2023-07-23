@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP - Geolocation report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+        
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+     
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.18.7</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar"> 
+                <div class="sidebar-sticky"  id="sidebar_id">
+                    <ul class="nav flex-column">
+                   
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Accounts
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Configuration.html">
+            <span data-feather="user"></span> Account Configuration
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Account Data.html">
+            <span data-feather="user"></span> Account Data
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Address Book
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Address Book Contacts.html">
+            <span data-feather="book-open"></span> Address Book Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        App Permissions
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="TCC - Permissions.html">
+            <span data-feather="key"></span> TCC - Permissions
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Biome Intents
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Intents - 710577852089396.html">
+            <span data-feather="eye"></span> Intents - 710577852089396
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Bluetooth
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Other LE.html">
+            <span data-feather="bluetooth"></span> Other LE
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cache Data
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="fsChachedData.html">
+            <span data-feather="box"></span> fsChachedData
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Calendar
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Identity.html">
+            <span data-feather="calendar"></span> Identity
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Items.html">
+            <span data-feather="calendar"></span> Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="List.html">
+            <span data-feather="calendar"></span> List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Call History
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Call History.html">
+            <span data-feather="phone-call"></span> Call History
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cellular Wireless
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Cellular Wireless.html">
+            <span data-feather="bar-chart"></span> Cellular Wireless
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Cloudkit
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Note Sharing.html">
+            <span data-feather="share-2"></span> Note Sharing
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Control Center
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Control Center - Active Controls.html">
+            <span data-feather="sliders"></span> Control Center - Active Controls
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        DHCP
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Received List.html">
+            <span data-feather="settings"></span> Received List
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Files App
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Client Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Client Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Server Items.html">
+            <span data-feather="file-text"></span> Files App - iCloud Server Items
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Files App - iCloud Sync Names.html">
+            <span data-feather="file-text"></span> Files App - iCloud Sync Names
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Geolocation
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="Map Tile Cache.html">
+            <span data-feather="map"></span> Map Tile Cache
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="MapsSync.html">
+            <span data-feather="map"></span> MapsSync
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="PD Place Cache.html">
+            <span data-feather="map-pin"></span> PD Place Cache
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Health
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Health - Provenances.html">
+            <span data-feather="heart"></span> Health - Provenances
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Build Information.html">
+            <span data-feather="git-commit"></span> Build Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        IOS Build (iTunes Backup)
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iTunes Backup Information.html">
+            <span data-feather="alert-triangle"></span> iTunes Backup Information
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Installed Apps
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="App Snapshots.html">
+            <span data-feather="package"></span> App Snapshots
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Application State DB.html">
+            <span data-feather="package"></span> Application State DB
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Itunes Metadata.html">
+            <span data-feather="package"></span> Apps - Itunes Metadata
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bundle ID by AppGroup & PluginKit IDs.html">
+            <span data-feather="package"></span> Bundle ID by AppGroup & PluginKit IDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        InteractionC
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Contacts.html">
+            <span data-feather="user"></span> Contacts
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Keyboard
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Application Usage.html">
+            <span data-feather="type"></span> Keyboard Application Usage
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Keyboard Dynamic Lexicon.html">
+            <span data-feather="type"></span> Keyboard Dynamic Lexicon
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Location Services Configurations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - clients.plist.html">
+            <span data-feather="settings"></span> LSC - clients.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.locationd.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.locationd.plist
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="LSC - com.apple.routined.plist.html">
+            <span data-feather="settings"></span> LSC - com.apple.routined.plist
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Locations
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Weather App Locations.html">
+            <span data-feather="map-pin"></span> Weather App Locations
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Activation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Activation Logs.html">
+            <span data-feather="clipboard"></span> Mobile Activation Logs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Backup
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Backup.html">
+            <span data-feather="save"></span> Mobile Backup
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Container Manager
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Mobile Container Manager.html">
+            <span data-feather="save"></span> Mobile Container Manager
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Mobile Installation Logs
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical Combined.html">
+            <span data-feather="clipboard"></span> Apps - Historical Combined
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Historical.html">
+            <span data-feather="clipboard"></span> Apps - Historical
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Installed.html">
+            <span data-feather="clipboard"></span> Apps - Installed
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps - Uninstalled.html">
+            <span data-feather="clipboard"></span> Apps - Uninstalled
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="State - Reboots.html">
+            <span data-feather="clipboard"></span> State - Reboots
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Network Usage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (DataUsage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (DataUsage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - App Data.html">
+            <span data-feather="activity"></span> Network Usage (netusage) - App Data
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Network Usage (netusage) - Connections.html">
+            <span data-feather="bar-chart"></span> Network Usage (netusage) - Connections
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Notifications
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="iOS Notifications.html">
+            <span data-feather="bell"></span> iOS Notifications
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Photos
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Metadata.html">
+            <span data-feather="image"></span> Metadata
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SIM Info
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - Unique Label Store.html">
+            <span data-feather="info"></span> SIM - Unique Label Store
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SIM - UUID.html">
+            <span data-feather="info"></span> SIM - UUID
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SMS & iMessage
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages (Threaded).html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages (Threaded)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS & iMessage - Messages.html">
+            <span data-feather="message-square"></span> SMS & iMessage - Messages
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="SMS - Missing ROWIDs.html">
+            <span data-feather="message-square"></span> SMS - Missing ROWIDs
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        SQLite Journaling
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Strings - SQLite Journal & WAL.html">
+            <span data-feather="book-open"></span> Strings - SQLite Journal & WAL
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Safari Browser
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Bookmarks.html">
+            <span data-feather="compass"></span> Bookmarks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Favicons.html">
+            <span data-feather="compass"></span> Favicons
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Recent WebSearches.html">
+            <span data-feather="compass"></span> Recent WebSearches
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - History.html">
+            <span data-feather="compass"></span> Safari Browser - History
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Safari Browser - Tabs (BrowserState).html">
+            <span data-feather="compass"></span> Safari Browser - Tabs (BrowserState)
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Search Terms.html">
+            <span data-feather="compass"></span> Search Terms
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Wifi Connections
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Known Networks.html">
+            <span data-feather="wifi"></span> WiFi Known Networks
+        </a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="WiFi Networks Scanned (private).html">
+            <span data-feather="wifi"></span> WiFi Networks Scanned (private)
+        </a>
+    </li>
+    <h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        iOS Screens
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link " href="Apps per screen.html">
+            <span data-feather="maximize"></span> Apps per screen
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" > 
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Geolocation report</h1>
+                    <h6 class="animated fadeIn mb-3"></h6>
+                </div>
+
+                <div id="mySpinner" class="spinner-border text-info float-right" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+<h6>Total number of entries: 91</h6><p class="lead">Geolocation located at: R:\temp\private\var\mobile\Library\Caches\com.apple.geod\MapTiles\MapTiles.sqlitedb</p><br /><div class='table-responsive'><table id="dtBasicExample" class="table table-striped table-bordered table-xsm" cellspacing="0" ><thead><tr><th class="th-sm">Timestamp</th><th class="th-sm">Places_from_VLOC</th><th class="th-sm">Labels_in_tile</th><th class="th-sm">Image</th><th class="th-sm">Tileset</th><th class="th-sm">Key A</th><th class="th-sm">Key B</th><th class="th-sm">Key C</th><th class="th-sm">Key D</th></tr></thead><tbody><tr><td>2023-07-09 06:43:13</td><td></td><td></td><td></td><td>0XD2014</td><td>0X14</td><td>0X410000</td><td>0X10000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:43:13</td><td></td><td></td><td></td><td>0X142014</td><td>0X14</td><td>0X410000</td><td>0X10000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:43:13</td><td></td><td>Antarctica, Australia, Indian Ocean, Oceania, Southern Ocean, Southern Ocean</td><td></td><td>0X12014</td><td>0X14</td><td>0X410000</td><td>0X10000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:43:14</td><td></td><td></td><td></td><td>0X412015</td><td>0X74E10815</td><td></td><td>0X104000</td><td></td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>1, 2, 3, B1, B2, Basement 1, Basement 2, Level 1, Level 2, Level 3, Westfield Booragoon, Westfield Carousel, Booragoon, Carousel, David Jones, Hoyts, Kmart, Kmart - Booragoon, MYER, MYER, Target, Westfield Booragoon, Westfield Carousel</td><td></td><td>0X1E2014</td><td>0X14</td><td>-0X2DB60000</td><td>0X2600000</td><td>0X2007800</td></tr><tr><td>2023-07-09 06:45:24</td><td></td><td>Becher Point, Point Peron, Robert Point, Woodman Point, Shoalwater Islands Marine Park</td><td></td><td>0XD2014</td><td>0X14</td><td>0X69090000</td><td>0X1300000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:24</td><td></td><td>Helena National Park, Jarrahdale State Forest, Mount Cooke, Wandoo National Park, Midgegooroo National Park, Monadnocks Conservation Park, Serpentine National Park</td><td></td><td>0XD2014</td><td>0X14</td><td>0X69490000</td><td>0X1300000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:24</td><td></td><td>14, 20, 30, 40</td><td></td><td>0X142014</td><td>0X14</td><td>0X69490000</td><td>0X1300000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:24</td><td></td><td>1, 13, 14, 14, 18, 2, 20, 202, 204, 22, 3, 30, 4, 5, 51, 53, 6, 61, 65, 7, 71, 8, 94, Penguin Island Ferry, Rottnest Express, Rottnest Fast Ferries, Transperth</td><td></td><td>0X142014</td><td>0X14</td><td>0X69090000</td><td>0X1300000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:24</td><td></td><td>Armadale, Baldivis, Bannister, Bannister River, Bell Brook, Beraking Brook, Big Brook, Boddington, Boddington, Byford, Canning River, Canning Vale, Cockburn Central, Cockburn Sound, Cookernup, Coolup, Cottesloe, Crossman, Crossman River, Dale River, Dandalup River, Darkin River, Dawesville, Dwellingup, Endeavour Island, Fairbridge, Falcon, Flint, Forrestfield, Fourteen Mile Brook, Fremantle, Garden Island, Geographe Bay, Hamilton Hill, Harvey, Harvey Estuary, Harvey River, Helena River, Herron, Hoffman, Hopeland, Hotham River, Jarrahdale, Jelcobine, Kalamunda, Keysbrook, Lake Clifton, Lake Clifton, Lake Preston, Lesmurdie, Maddington, Mandurah, Marradong, Marrinup, Mosman Park, Mount Cooke, Mount Observation, Mundaring Weir, Mundijong, Murray River, Myara, Nambeelup, Nanga Brook, Nirimba, North Bannister, North Dandalup, North Dandalup River, Peel Inlet, Perth, Pinjarra, Point Grey, Port Kennedy, Preston Beach, Quindanning, Rockingham, Rottnest, Secret Harbour, Serpentine, Serpentine River, South Dandalup River, South Yunderup, Southern River, Success, Swan River, Talbot, Talbot Brook, Thornlie, Uduc, Wandering, Wandering Brook, Waroona, Wellard, West Coolup, Westdale, Whittaker, Williams River, Wungong Brook, Yarloop</td><td></td><td>0X12014</td><td>0X14</td><td>0X34880000</td><td>0X980000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td></td><td></td><td>0X142014</td><td>0X14</td><td>0XC20000</td><td>0X20000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td></td><td></td><td>0X142014</td><td>0X14</td><td>0XC20000</td><td>0X10000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>Cape Johnson Depth, Challenger Deep, Ramapo Deep, Vityaz Depth, 贡嘎山</td><td></td><td>0XD2014</td><td>0X14</td><td>0XC20000</td><td>0X10000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>Aoraki / Mount Cook, Mount Kosciuszko, Mount Wilhelm, Puncak Jaya</td><td></td><td>0XD2014</td><td>0X14</td><td>0XC20000</td><td>0X20000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>Australia, Australia, Barwon River, Coral Sea, Darling River, Lachlan River, Macintyre River, Melanesia, Melbourne, Murray River, Murray River, Murray River, Murray River, Murrumbidgee River, New Zealand, Oceania, Papua New Guinea, Solomon Islands, Southern Ocean, Southern Ocean, Sydney, Tasman Sea, Daerah Khusus Ibukota Jakarta, Indonesia</td><td></td><td>0X12014</td><td>0X14</td><td>0XC20000</td><td>0X20000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>গঙ্গা নদী, འབྲུག་ཡུལ་, Bangladesh, Brahmaputra, Brahmaputra, Dihang, Gobi Desert, Guam, Guam (U.S.), Himalaya, Manila, Melanesia, Micronesia, Myanmar, Myanmar (Burma), Philippine Sea, Philippines, Taiwan Strait, Laos, 日本, 東京, ព្រះរាជាណាចក្រកម្ពុជា, មេគង្គ, មេគង្គ, 대한민국, 대한민국, 북한, 북한, 서울특별시, 서울특별시, ແມ່ນ້ຳຂອງ, ແມ່ນ້ຳຂອງ, ແມ່ນ້ຳຂອງ, ແມ່ນ້ຳຂອງ, ແມ່ນ້ຳຂອງ, ແມ່ນ້ຳຂອງ, Монгол улс, Сэлэнгэ, Malaysia, แม่น้ำรวก, မေခမြစ်, မေခမြစ်, မေခမြစ်, မဲခေါင်မြစ်, မဲခေါင်မြစ်, မဲခောင္‌မ္ရစ္, သံလြင္, ဧရာဝတီမြစ်, ဧရာဝတီမြစ်, ဧရာဝတီမြစ်, ဧရာဝတီမြစ်, Lesser Yenisei, Алдан, Амур, Амур, Ангара, Аргунь, Аргунь, Енисей, Енисей, Енисей, Енисей, Колыма, Кызыл Хем, Лена, Лена, Лена, Лена, Малый Енисей, Нижняя Тунгуска, Нижняя Тунгуска, Россия, Селенга, Селенга, Селенга, Шишхид гол, กรุงเทพมหานคร, กรุงเทพมหานคร, ประเทศไทย, Hồ Chí Minh, Mê Kông, Việt Nam, Việt Nam, Zanaqu, 上海市, 东海水道, 中华人民共和国, 中国, 北京, 喀拉额尔齐斯河, 容桂水道, 扎曲, 横门水道, 沱沱河, 沱沱河, 澜沧江, 澜沧江, 澜沧江, 澜沧江, 澜沧江, 磨刀门水道, 西江, 西江, 西江, 西江, 通天河, 重庆市, 金沙江, 长江, 长江, 雅鲁藏布江, 雅鲁藏布江, 額爾古納河, 額爾古納河, 額爾古納河, 鸡鸦水道, 黄河, 黄河, 黑龙江, 北京市, 台灣, 香港, རྒྱལ་མོ་རྔུལ་ཆུ།</td><td></td><td>0X12014</td><td>0X14</td><td>0XC20000</td><td>0X10000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>JANDAKOT REGIONAL PARK, Jervoise Bay Boat Harbour, Swan Estuary Marine Park, Woodman Point, Beeliar Regional Park, Byford, Canning River Regional Park, Curtin University, Jandakot Airport (JAD), Kings Park and Botanic Garden, Manning Park, Murdoch University, Woodman Point Regional Park</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X2DB60000</td><td>0X2600000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:26</td><td></td><td>13, 13, 14, 14, 2, 20, 21, 30, 4, 11th Rd, Abbey Rd, Abernethy Rd, Albany Highway, Anketell Rd, Armadale Rd, Armadale Rd, Beeliar Dr, Beenyup Rd, Berrigan Dr, Bombay Bvd, Casuarina Rd, Champion Dr, Church Ave, De Haer Rd, Eighth Rd, Fifth Rd, Forrest Rd, Frankland Ave, Gibbs Rd E, Gillam Dr, Green Ave, Hammond Rd, Hopkinson Rd, Johnson Rd, Kargotich Rd, Kentucky Ct, King Rd, Kwinana Freeway, Lake Rd, Liddelow Rd, Lyon Rd, Mandogalup Rd, Midgegooroo Ave, Nicholson Rd, North Lake Rd, Orton Rd, Pilatus St, Railway Ave, Railway Ave, Ranford Rd, Ranford Rd, Rowley Rd, Russell Rd, Soldiers Rd, South Western Highway, Southern River Rd, Tapper Rd, Thomas Rd, Tonkin Hwy, Warton Rd, Wattleup Rd, Williams Rd, Wollaston Ave, Wright Rd, Wungong Rd</td><td></td><td>0X142014</td><td>0X14</td><td>-0X5B350000</td><td>0X4C10001</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Atwell, Aubin Grove, Banjup, Cockburn Central, Copulup Lake, Hammond Park, Jandakot, Piara Waters, Success, Treeby</td><td></td><td>0X12014</td><td>0X14</td><td>0X498C0000</td><td>0X9820003</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>14, 14, 2, 31, Armadale Rd, Armadale Rd, Beeliar Dr, Beenyup Rd, Berrigan Dr, Gibbs Rd E, Hammond Rd, Kentucky Ct, Kwinana Freeway, Liddelow Rd, Lyon Rd, Midgegooroo Ave, Nicholson Rd, North Lake Rd, Pilatus St, Russell Rd, Tapper Rd, Warton Rd, Wright Rd</td><td></td><td>0X142014</td><td>0X14</td><td>0X498C0000</td><td>0X9820003</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Armadale Shopping City, Ampol, Armadale, Kelmscott, The Springs Club</td><td></td><td>0XD2014</td><td>0X14</td><td>0X49CC0000</td><td>0X9820003</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>13, 13, 14, 20, 30, 4, 11th Rd, Abbey Rd, Albany Highway, Armadale Rd, Champion Dr, Church Ave, Eighth Rd, Fifth Rd, Forrest Rd, Gillam Dr, Green Ave, Lake Rd, Railway Ave, Railway Ave, Ranford Rd, Ranford Rd, South Western Highway, Southern River Rd, Tonkin Hwy, Warton Rd, Williams Rd, Wollaston Ave, Wungong Rd</td><td></td><td>0X142014</td><td>0X14</td><td>0X49CC0000</td><td>0X9820003</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Brookdale, Camillo, Canning River, Champion Lakes, Forrestdale, Forrestdale Lake, Harrisdale, Haynes, Seville Grove, Southern River, Southern River, Wright Lake, Wungong Brook</td><td></td><td>0X12014</td><td>0X14</td><td>0X49CC0000</td><td>0X9820003</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Banksia Eucalypt Woodland Park, Piara Nature Reserve, Cockburn Central, Cockburn Gateway Shopping City</td><td></td><td>0XD2014</td><td>0X14</td><td>0X498C0000</td><td>0X9820003</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X270E0000</td><td>0X260A000D</td><td>0X2002C00</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>14, Albi Link, Aleria Way, Allen Rd, Anstey Rd, Aquitaine Bvd, Aquitaine Bvd, Armadale Rd, Babiana Link, Banken Ct, Boudicca Dr, Broome St, Calamocha Way, Calvera Gardens, Commercial Rd, Cygnet Pl, Dartmoor St, Dew St, Dinard Way, Dod Way, Drafthorse App, Dumsday Dr, Dynasty Way, Ederle St, Fisher St, Flemming Ct, Forrest Rd, Gelderland La, Hurston St, Hypatia Bvd, Jutland Ent, Keane Rd, Leake St, Lofties St, Medici Way, Messina Way, Metz Link, Miramar Way, Mistral Cr, Modena Rd, Monticello Parkway, Moore St, Noriker Way, Oldenburg Way, Orlov La, Paraka Way, Passendale Cr, Percheron Cct, Petrona Cr, Riva Ent, Riviera Turn, St Pierre Turn, Stopes La, Street Tropez Gdn, Swamp Rd, Terracina Parkway, Tobin St, Tordera Parkway, Varazze Way, Verona Rd, Vichy Cl, Villatella Gardens, Weld St, Whiffler Rd, Wirin Rd</td><td></td><td>0X142014</td><td>0X14</td><td>0X270E0000</td><td>0X260A000D</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>14, 31, Albavale Rd, Anzio Rd, Appleton Rd, Aquila Loop, Armadale Rd, Aspiri Promenade, Barcelona Rd, Bartram Rd, Bellas Cct, Berkshire App, Beukers Way, Boas La, Breccia Grove, Bulb Way, Calais La, Calella Loop, Calvera Gardens, Camberwell Vista, Clause Way, Claystone Loop, Cloutt La, Coquina Ch, Dempsey Rd, Dunite Rd, Dwall La, Epping La, Ethridge St, Fairweather Dr, Fanshawe Bvd, Ficus Way, Flindell Way, Gabbro La, Gibbs Rd E, Girona St, Gladalan Way, Gossan Ch, Grapestone Rd, Greywacke Ent, Hames Way, Hawter Way, Hickman Dr, Hurlingham Way, Hyacinth Dr, Interdominion View, Kenyta St, Kitley Way, Laming Way, Lignite Ave, Livorno Bvd, Marl Way, Menner Way, Messina Way, Minette Rd, Modena Rd, Monticello Parkway, Moraba Way, Nicholson Rd, Norite Rd, Novelli Pde, Oliva App, Parma La, Pegus Way, Pyke Way, Rhone Way, Ritter App, Riva Ent, Riviera Turn, Rossiter Ave, Ruffle App, Schonell Way, Shale Ct, Siena App, Skeet Rd, Sorrento Rd, Sovite Rd, Summer Rd, Sunray Ave, Swamp Rd, Taylor Rd, Terracina Parkway, Topiary Ave, Torridge App, Toulon Mews, Trusty Way, Tuff Way, Wildflower View, Wright Rd</td><td></td><td>0X142014</td><td>0X14</td><td>0X26CE0000</td><td>0X260A000D</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Alfred Skeet Oval, Forrestdale Primary School, Forrestdale Sporting Association, St John Bosco College, William Skeet Oval</td><td></td><td>0XD2014</td><td>0X14</td><td>0X270E0000</td><td>0X260A000D</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X26CE0000</td><td>0X260A000D</td><td>0X2002C00</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td></td><td></td><td>0X12014</td><td>0X14</td><td>0X26CE0000</td><td>0X260A000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Forrestdale Lake</td><td></td><td>0X12014</td><td>0X14</td><td>0X270E0000</td><td>0X260A000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:27</td><td></td><td>Piara Nature Reserve, Aspiri Primary School, Vibe Petroleum</td><td></td><td>0XD2014</td><td>0X14</td><td>0X26CE0000</td><td>0X260A000D</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td></td><td></td><td>0X142014</td><td>0X14</td><td>0X1830000</td><td>0X50000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td></td><td></td><td>0X142014</td><td>0X14</td><td>0X1830000</td><td>0X40000</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Australian-Antarctic Basin, Indian-Antarctic Ridge, Southeast Indian Ridge, Southern Ocean, Southern Ocean</td><td></td><td>0X12014</td><td>0X14</td><td>0X1830000</td><td>0X50000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Australia, Christmas Island, Christmas Island (Aus.), Cocos (Keeling) Islands, Cocos Islands (Aus.), Darwin, Great Australian Bight, Great Australian Bight, Greater Sunda Islands, Northern Territory, Perth, South Australian Basin, Sunda Trench, Western Australia, Wharton Basin, Daerah Khusus Ibukota Jakarta, Indonesia, Kepulauan Nusa Tenggara, Kota Bandung, Kota Palembang, Kota Semarang, Kota Surabaya, Makassar, Tangerang, Timor-Leste, Timor-Leste</td><td></td><td>0X12014</td><td>0X14</td><td>0X1830000</td><td>0X40000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Abrolhos Marine Park, Cape Leeuwin, Depth, Hood Point, Point D’Entrecasteaux, Western Eyre Marine Park, Cape Arid National Park, Fitzgerald River National Park, Great Australian Bight Marine Park, Karijini National Park, Karlamilyi National Park, Mamungari Conservation Park, Nullarbor National Park, South-West Corner Marine Park, Yellabinna Regional Reserve</td><td></td><td>0XD2014</td><td>0X14</td><td>0X3440000</td><td>0X90000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Caversham Airfield, Marmion Marine Park, Neerabup National Park, Bold Park, Carine Regional Open Space, Herdsman Lake Regional Park, Joondalup Resort, Lake Gnangara Park, Lake Gwelup Reserve, Lake Monger Reserve, Perth, Perth Airport (PER), Whiteman Park, Yellagonga Regional Park</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X2DB60000</td><td>0X25F0000</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Alexander Heights, Ascot, Ashby, Ashfield, Aveley, Balcatta, Balga, Ballajura, Banksia Grove, Bassendean, Bayswater, Bedford, Beechboro, Beldon, Belhus, Bennett Brook, Bennett Springs, Brabham, Bullsbrook-West, Burns Beach, Carine, Carramar, Caversham, City Beach, Clarkson, Connolly, Craigie, Cullacabardee, Currambine, Daglish, Darch, Dayton, Dianella, Doubleview, Duncraig, Eden Hill, Edgewater, Ellen Brook, Ellenbrook, Embleton, Floreat, Geographe Bay, Girrawheen, Glendalough, Gnangara, Greenwood, Guildford, Gwelup, Hamersley, Hazelmere, Heathridge, Helena River, Henley Brook, Herdsman, High Wycombe, Highgate, Hillarys, Hocking, Iluka, Inglewood, Innaloo, Jandabup, Jane Brook, Jolimont, Joondalup, Joondanna, Kallaroo, Karrinyup, Kiara, Kingsley, Kinross, Koondoola, Lake Joondalup, Lake Monger, Landsdale, Leederville, Lexia, Lockridge, Madeley, Malaga, Marangaroo, Mariginiup, Mariginiup Lake, Marmion, Maylands, Melaleuca, Menora, Merriwa, Middle Swan, Midland, Mindarie, Mirrabooka, Morley, Mount Hawthorn, Mount Lawley, Mullaloo, Neerabup, Nollamara, Noranda, North Beach, North Perth, Ocean Reef, Osborne Park, Padbury, Pearsall, Perth Airport, Pinjar, Quinns Rocks, Redcliffe, Sawpit Gully, Scarborough, Sinagra, Sorrento, South Guildford, Stirling, Susannah Brook, Swan River, Tamala Park, Tapping, The Vines, Trigg, Tuart Hill, Viveash, Wangara, Wanneroo, Warwick, Watermans Bay, Wembley, Wembley Downs, West Perth, West Swan, Westminster, Whiteman, Woodbridge, Woodlands, Woodvale, Yokine</td><td></td><td>0X12014</td><td>0X14</td><td>-0X2DB60000</td><td>0X25F0000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:35</td><td></td><td>Applecross, Ardross, Attadale, Atwell, Aubin Grove, Bateman, Beaconsfield, Beckenham, Beeliar, Beenyup Brook, Belmont, Bentley, Bertram, Bibra Lake, Bickley Brook, Bicton, Booragoon, Brookdale, Bull Creek, Byford, Calista, Camillo, Canning River, Canning Vale, Cannington, Cardup Brook, Carlisle, Casuarina, Claremont, Cloverdale, Cockburn Central, Cockburn Sound, Como, Coogee, Coolbellup, Cottesloe, Crawley, Dalkeith, Darling Downs, East Fremantle, East Perth, East Victoria Park, Ferndale, Forrestdale, Forrestdale Lake, Fremantle, Garden Island, Geographe Bay, Gosnells, Hamilton Hill, Hammond Park, Harrisdale, Haynes, Henderson, Hilbert, Hope Valley, Huntingdale, Jandakot, Karawara, Kardinya, Karrakatta, Kensington, Kenwick, Kings Park, Kwinana Beach, Kwinana Town Centre, Lake Coogee, Langford, Leeming, Lynwood, Maddington, Manning, Medina, Melville, Mosman Park, Mount Claremont, Munster, Murdoch, Myaree, Naval Base, Nedlands, North Coogee, North Fremantle, North Lake, O'Connor, Oakford, Orelia, Palmyra, Parkwood, Parmelia, Peppermint Grove, Perth, Piara Waters, Postans, Queens Park, Riverton, Rivervale, Rossmoyne, Samson, Seville Grove, Shenton Park, South Fremantle, South Lake, South Perth, Southern River, Southern River, Spearwood, Subiaco, Success, Swan River, Swanbourne, The Spectacles, Thomsons Lake, Thornlie, Treeby, Victoria Park, Wandi, Waterford, Wattle Grove, Wattleup, Welshpool, Willagee, Willetton, Wilson, Winthrop, Woodman Channel, Wungong, Wungong Brook, Yangebup, Yangebup Lake</td><td></td><td>0X12014</td><td>0X14</td><td>-0X2DB60000</td><td>0X2600000</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td>1, 12, 13, 204, 5, 6, 61, 64, 65, 7, 71,  , Alfred Rd, Beach St, Beatrice Rd, Bibra Dr, Birdwood Pde, Broadway, Brockway Rd, Canning Highway, Carrington St, Cliff St, Clontarf Rd, Cockburn Rd, Curtin Ave, Davies Rd, Derby Rd, Doolette St, Douro Rd, East St, Elder Pl, Eric St, Farrington Rd, Finnerty St, Forrest Rd, Gugeri St, Hackett Dr, Hamilton Rd, Hampton Rd, High St, James St, Jutland Pde, Kings Park Rd, Kintail Rd, Kitchener Rd, Leach Highway, Leura Ave, Macleod Rd, Marine Pde, Marine Tce, Market St, Marmion St, Montgomery Ave, Mounts Bay Rd, Nash St, Nicholson Rd, North Lake Rd, North St, Ord St, Parry St, Petra St, Phillimore St, Pier St, Point Walter Rd, Port Beach Rd, Preston Point Rd, Queen Victoria St, Queenslea Dr, Railway Rd, Riseley St, Riverside Rd, Rochdale Rd, Rockingham Rd, Rokeby Rd, Rottnest Express, Selby St, Servetus St, Shenton Rd, South St, South Tce, Spearwood Ave, Stephenson Ave, Stirling Bridge, Stirling Highway, Stirling Rd, Stock Rd, The Avenue, Thomas St, Tydeman Rd, Vale St, Victoria Ave, Walter Pl, Wauhop Rd, West Coast Highway, Winterfold Rd, Winthrop Ave</td><td></td><td>0X142014</td><td>0X14</td><td>-0X5B750000</td><td>0X4C00001</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td>2, 204, 3, 60, 61, 64, 65, 71, 72, 75, 76, 81, 82, 83,  , All Saints Way, Anzac Rd, Arkana Rd, Bagot Rd, Balcatta Rd, Balga Ave, Barnes St, Beach Rd, Bishop Hale Way, Brady St, Brighton Rd, Brockway Rd, Brookdale Rd, Brookdale St, Cambridge St, Cedric St, Centro Ave, Challenger Pde, Cockman Rd, Davallia Rd, Duffy Rd, Duke St, Durston Rd, Elliott Rd, Empire Ave, Erindale Rd, Ewen St, Flynn St, Frobisher St, Gibson Ave, Girrawheen Ave, Gnangara Rd, Grantham St, Green St, Hale Rd, Harborne St, Hartman Dr, Hartman Dr, Hay St, Hector St W, Hepburn Av, Highclere Bvd, Howtree Pl, Jeanes Rd, Jon Sanders Drive, Karrinyup Rd, King Edward Rd, Kings Park Rd, Kingsway, Lake Monger Dr, Main St, Main St, Marangaroo Dr, Marmion Av, Mitchell Fwy, Morley Dr, Nollamara Ave, North Beach Rd, Oceanic Dr, Odin Rd, Okely Rd, Pearson St, Powis St, Princess Rd, Railway Rd, Reid Highway, Roberts Rd, Rottnest Fast Ferries, Sackville Tce, Scarborough Beach Rd, Selby St, Selby St N, Stephenson Ave, The Boulevard, Thomas St, Underwood Ave, Vincent St, Wanneroo Rd, Warwick Rd, Weaponess Rd, Wellington St, West Coast Dr, West Coast Highway, Whitfords Av</td><td></td><td>0X142014</td><td>0X14</td><td>-0X5B750000</td><td>0X4BF0001</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td>1, 13, 2, 26, 3, 30, 4, 5, 51, 53, 55, 6, 65, 7, 8, 94,  , Abernethy Rd, Adelaide Tce, Airport Dr, Albany Highway, Astley St, Austin Ave, Bannister Rd, Barbican St E, Barrack St, Beaufort St, Belmont Ave, Belmont Rd, Bennett St, Berrigan Dr, Berwick St, Bickley Rd, Brook Rd, Brook St, Bull Creek Rd, Burrendah Bvd, Burslem Dr, Canning Beach Rd, Canning Highway, Carden Dr, Challenger Ave, Chamberlain St, Chapman Rd, Clydesdale St, Corbel St, Corfield St, Dean Rd, Djarlgarra Bridge, Dorothy St, Douglas Ave, Elderfield Rd, Epsom Ave, Eucalyptus Bvd, Fairbrother St, Farrington Rd, Fern Rd, Fleming Ave, Forbes Rd, Fremantle Rd, Gabriel St, Galaxy Way, Garden St, Gosnells Rd W, Great Eastern Hwy, Griffin Cr, Grove Rd, Hale Rd, Hardey Rd, Hawke Pass, Hayman Rd, Hicks St, High Rd, Hill St, Hill View Tce, Holmes St, Hope Ave, Horrie Miller Dr, Karel Ave, Kelvin Rd, Kent St, Kenwick Link, Kewdale Rd, Kings Park Rd, Kintail Rd, Kwinana Freeway, Labouchere Rd, Lake Rd, Lawson St, Leach Highway, Lewis Rd, Logistics Bvd, Lord St, Malcolm St, Manning Rd, Marjorie Ave, Marquis St, Metcalfe Rd, Mill Point Rd, Miller St, Mills Rd W, Mitchell Fwy, Moreau Mews, Mount Henry Bridge, Mount Henry Rd, Mounts Bay Rd, Murdoch Dr, Nicholson Rd, Oats St, Olga Rd, Orpington St, Orrong Rd, Paltridge Rd, Parry Ave, Paterson St, Perth Causeway Bridge, Plain St, Railway Ave, Ranford Rd, Riley Rd, Riverside Dr, Riverton Dr E, Riverton Dr N, Riverton Dr W, Roberts Rd, Roe Highway, Rottnest Express, Royal St, Sevenoaks St, Shelley Bridge, Shepperton Rd, South St, South Tce, Southern River Rd, Spencer Rd, Spring Rd, St Georges Tce, Station St, The Esplanade, Tonkin Hwy, Transperth, Tudor Ave N, Vahland Ave, Verna St, Wanaping Rd, Warton Rd, Way Rd, Webb St, Wellington St, Welshpool Rd, Welshpool Rd E, Wharf St, Wilfred Rd, Willeri Dr, William St, Wittenoom St, Wyong Rd, Yale Rd</td><td></td><td>0X142014</td><td>0X14</td><td>-0X5B350000</td><td>0X4C00001</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td>1, 2, 3, 4, 41, 50, 51, 52, 53, 55, 56, 60, 61, 65, 72, 75, 76, 8, 94, 95,  , Abernethy Rd, Airport Dr, Alexander Dr, Altone Rd, Angove St, Anzac Rd, Balga Ave, Beach Rd, Beaufort St, Beechboro Rd N, Belgravia St, Bellefin Dr, Benara Rd, Bennett St, Boud Ave, Bourke St, Boyare Ave, Brook St, Broun Av, Bulwer St, Bushmead Rd, Camboon Rd, Cambridge St, Central Ave, Charles St, Collier Rd, Crimea St, Daviot Rd, Dianella Dr, Drumpellier Dr, Dunreath Dr, East Pde, East St, Epsom Ave, Fairbrother St, Fauntleroy Ave, Fitzgerald St, Flinders St, Garratt Rd, Girrawheen Ave, Grand Promenade, Grandstand Rd, Great Eastern Highway Bypass, Great Eastern Hwy, Great Northern Highway, Green St, Grogan Rd, Guildford Rd, Hamer Pde, Helena Valley Rd, Hepburn Av, Highclere Bvd, Horrie Miller Dr, James St, Johnson St, Kalamunda Rd, Kelvin St, Kingsway, Leederville Pde, Loftus St, London St, Longroyd St, Lord St, Maida Vale Rd, Malaga Dr, Marangaroo Dr, Marshall Rd, Meadow St, Mirrabooka Ave, Mitchell Fwy, Morley Dr, Morrison Rd, Newburn Rd, Newcastle St, Newton St, Nollamara Ave, North St, Northbridge Tunl, Northwood Dr, Orrong Rd, Oxford St, Peninsula Rd, Percy Rd, Plain St, Queen St, Railway Pde, Redcliffe Bridge, Reid Highway, Resolution Dr, Roe Highway, Roe St, Ross Dr, Scarborough Beach Rd, Second St, Snook Rd, Stanton Rd, Stone St, Stoneham St, Sugarbird Lady Rd, Swan St, Swan View Tce, Thomas St, Tonkin Hwy, Toodyay Rd, Victoria St, Vincent St, Walcott St, Wall St, Walter Rd E, Walter Rd W, Wanneroo Rd, Water St, Wellington St, West Rd, West Swan Rd, Whatley Cr, Whiteman Bridge, Widgee Rd, William St, Wiluna St, Windan Bridge, Wordsworth Ave, Yirrigan Dr, Youle-Dean Rd</td><td></td><td>0X142014</td><td>0X14</td><td>-0X5B350000</td><td>0X4BF0001</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>-0X5B750000</td><td>0X4C00001</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:45:36</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>-0X5B750000</td><td>0X4BF0001</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:45:54</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>-0X5B350000</td><td>0X4C00001</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:45:54</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>-0X5B350000</td><td>0X4BF0001</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td>53, 56, 65, 8,  , Aberdeen St, Antonas Rd, Beaufort St, Brisbane Tce, Brookman St, Church St, Churchview Alley, Davies St, Errichetti Pl, Fitzgerald St, Forbes La, Forbes Rd, Forrest Pl, Francis St, Grigoroff St, Hay St, Hoy Poy St, James St, John St, Joondia La, Kakulas Cr, Karak Walk, King St, Lake St, Lipfert St, Little Shenton La, Market St, Melbourne St, Michael Cl, Milligan St, Moir St, Mountain Tce, Murray St, Museum St, Newcastle St, Nicks La, Northbridge Tunl, Orange Ave, Oriental La, Palmerston St, Parker St, Parry St, Pendal La, Prince La, Queen St, Robinson Ave, Roe St, Serich La, Shafto La, Shenton St, Stuart St, Telethon Ave, Via Torre, Vita Loop, Washing La, Weld Ave, Wellington St, Wellman St, William St, Zempilas Rd</td><td></td><td>0X142014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4BFF001A</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4BFF001A</td><td>0X2002C00</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4C00001A</td><td>0X2002C00</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td>Geographe Bay</td><td></td><td>0X12014</td><td>0X14</td><td>0X260E0000</td><td>0X2600000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td></td><td></td><td>0X1E2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4BFF001A</td><td>0X2007800</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td>Body Care, Elite Euro, Gemstone Western Australia Jewellery, NC Company, Perth Institute of Contemporary Arts, Shafto Lane, Stuart Street Reserve, Wildcats Basketball Stadium, Acknowledge Education, Alex Hotel, Angel Falls Grill, Art Gallery of Western Australia, Art Series Hotels, BamBamBoo, Bangkok Brothers, Best Western, Bivouac, Britannia on William, Butterfly 73, Central City Medical Centre, Citiplace Rest Centre, City Perth Backpackers Hostel, City of Perth Parking, Coles, Connections Nightclub, Double Rainbow, DoubleTree by Hilton Perth Northbridge, Durty Nelly’s, Flight Club, Fortune Five Chinese Restaurant, Four Points by Sheraton Perth, Francoforte Spaghetti Bar, Good Fortune Roast Duck House, Grow Your Own, Henry Summer, Holey Moley Golf Club, Hong Kong BBQ House, Hunter & Barrel, Italian Street Kitchen Perth, Jack Rabbit Slim's, Kings Square, La Cholita, La Veen Coffee, Lucky Chans Laundry and Noodlebar, Magnet House, Market Grounds, Mechanics Institute, Metro City, Murray Convenience Store, Mustang Bar, My Bayon, No Mafia, North Metropolitan TAFE, North Metropolitan TAFE - Perth, Northbridge Brewing Company, Northbridge Chinese Restaurant, Northbridge Plaza, Novotel, Old Faithful Bar & BBQ, Outback Jacks Bar & Grill, Paramount Nightclub, Perth, Perth Police Station, Perth Underground, Planet Royale, Plaza Arcade Lottery, Pot Black Family Pool & Snooker Centre, Quest West End, RAC Arena, Raine Square, Ribs & Burgers, SAE Perth, San Churro Chocolateria, Sauma, Secure Parking - QV1 Car Park, Simple Italian, Skills Institute Australia, Spinners Hostel, Stables, State Library of Western Australia, Stott’s College, TSG, Tak Chee House, The Brass Monkey, The Flour Factory, The Generous Squire, The Globe, The Margaret River Chocolate, The Melbourne Hotel, The Moon, The Standard, Tony Roma's, Uncle Billy's Chinese Restaurant, United, Varnish on King, Varsity, Viet Hoa Restaurant, WA Museum Boola Bardip, Wilson Parking, ibis</td><td></td><td>0XD2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4BFF001A</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td>100 St Georges Terrace, 160 Central Arcade, Alexander Technology Institute, Australian Institute of Massage, Central City Place, Central Government Buildings, Douglas Shopping Center Francis, Elizabeth Quay Jetty, Fishing Charters Perth, Old Perth Boys School, Prime G.P, Spectrum Diamond Sales, Super Saver Mama, Trinity Church Chambers, WEGEL WHS & Management Services, 7-Eleven, Alexander Education Group, Alfred's Pizzeria, Amano Restaurant, Apple Perth City, Arirang Korean BBQ, Atrium, Australia Post, BHP Billiton Water Park, Balthazar, Barrack Street Jetty, Betty's Burgers, Braddock Gillian Shopping Center, Brookfield Place, Burt Memorial Hall, C Restaurant, COMO The Treasury, Perth AU, CQUniversity, Carillon City, Cathedral Square, Central Park, Chemist Warehouse, City of Perth Library, City of Perth Parking, City of Perth Parking, Cloisters, Commonwealth Bank, Criterion Hotel Perth, Culture Kings, Curtin University, David Jones, DoubleTree by Hilton Perth Waterfront, Elizabeth Quay, Endota Spa, Enex, Forrest Chase, Foxtrot Unicorn, Government House Western Australia, Hay Street Mall, Heno & Rey, Hilton, His Majesty’s Theatre, Holiday Inn, Ivy & Jack, Jaws Restaurant, Kangaroo Inn, Kmart, Lalla Rookh Bar & Eating House, Lamont’s, Le Vietnam, London Court, Long Chim Perth, MYER, Mantra on Murray Perth, McDonald's, Mecca, Milky Lane, Murray Street Mall, Murray Street and Hay Street, Museum of Perth, Nao Ramen, Officeworks, One Forty ST Georges, Oyster Bar, Palace Cinemas, Paramount Training and Development, Perth Convention and Exhibition Centre, Petition, Piccadilly Arcade, Plaza Arcade, Porsche Destination Charging, Post, QT, Quay Perth Hotel, Riverside Cafe, SHP Hay Street, Santini Bar & Grill, Sentinel Bar and Grill, Six Senses Thai Restaurant, St George's Anglican Grammar School, St George's Cathedral, Stirling Gardens, Strike Bowling Perth, Supreme Court of Western Australia, Swan Jet Adventures, TSG, Taka's Kitchen, The Aviary, The George, The Island at Elizabeth Quay, The Lucky Shag Waterfront Bar, The Meat & Wine Co, The Reveley, The Ritz-Carlton, Perth, Took Bae Kee Korean Restaurant, Uniqlo, Wesley Church, Wesley Medical, Wildflower, Wilson Parking, Woolworths, Zara</td><td></td><td>0XD2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4C00001A</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:45:55</td><td></td><td></td><td></td><td>0X1E2014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4C00001A</td><td>0X2007800</td></tr><tr><td>2023-07-09 06:49:31</td><td></td><td>Bunning Lake</td><td></td><td>0X12014</td><td>0X14</td><td>0X260E0000</td><td>0X25FF000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:49:31</td><td></td><td>5, 53, 65, Barrack Sq, Barrack St, Beaufort St, Cathedral Ave, Duchess Way, Enchantress Way, Forrest Pl, Geoffrey Bolton Avenue, Governors Ave, Grand La, Hay St, Howard St, King St, Mercantile La, Mill St, Milligan St, Mount St, Mounts Bay Rd, Murray St, Murray St Mall, Pier St, Riverside Dr, Rottnest Express, Shafto La, Sherwood Ct, Spring St, St Georges Tce, Terrace Rd, The Esplanade, Transperth, Valdura Pl, Wellington St, William St, Wolf La</td><td></td><td>0X142014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4C00001A</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:49:31</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4BFF001A</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:49:31</td><td></td><td></td><td></td><td>0X162014</td><td>0X14</td><td>0X4C4F0000</td><td>0X4C00001A</td><td>0X2005800</td></tr><tr><td>2023-07-09 06:50:46</td><td></td><td>Australian Cartridge Company, Piara Nature Reserve</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6CB30000</td><td>0X13050006</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:50:47</td><td></td><td>Ampol, Forrestdale Sporting Association, St John Bosco College, The Springs Club</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6C730000</td><td>0X13050006</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td>60, 61, 75, Auckland St, Axford La, Bedford St, Begley La, Carrington St, Charles St, Clieveden St, Docket La, Doris St, Dunedin St, Edinboro St, Ellesmere St, Elma St, Eton St, Fairfield St, Faraday St, Gill St, Harrow St, Highlands Rd, Hilda St, Hobart St, Ilma La, Keats La, Lawler St, Loch St, Loftus St, London St, Oxford St, Paddington St, Paisley La, Pembroke La, Redfern St, Ritz La, Scarborough Beach Rd, Selden St, Selkirk St, Shakespeare St, Sydney St, Walcott St, Whittingham La, Woodstock St</td><td></td><td>0X142014</td><td>0X14</td><td>0X4C0F0000</td><td>0X4BFC001A</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td>Lake Monger</td><td></td><td>0X12014</td><td>0X14</td><td>0X25CE0000</td><td>0X25FE000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td></td><td></td><td>0X1E2014</td><td>0X14</td><td>0X4C0F0000</td><td>0X4BFC001A</td><td>0X2007800</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td></td><td></td><td>0X12014</td><td>0X14</td><td>0X260E0000</td><td>0X25FE000D</td><td>0X2000400</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X4C0F0000</td><td>0X4BFC001A</td><td>0X2002C00</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td></td><td></td><td>0X1E2014</td><td>0X14</td><td>0X4BCF0000</td><td>0X4BFC001A</td><td>0X2007800</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td>ANZAC Cottage, Ada Bosich Salon, Artifact 20th Century Collectables, BM Serv, Balcatta Bins, Beaufort Lodge, Bellissimo Deli E Cucina, Braithwaite Park, Browse Book Exchange, Chairo Cafe, Cheeky Kids Wear, Cigar Cool! at Paddington Fine Wines, Compass Rose, Golden Lotus Yoga School, Gwarda Sports, International Hair Elegance, JS Stationery & Office Supplies, Kannis-Pitsikas & Jones, Lotus Accessories, Lucy Luu, Lush Garden Cafe, MT Hawthorn Plaza Newsagency, Matlock Lodge, Megabus, Need Full Nostalgia, Ola Hair Design, Perth Pastas, Poppies Gifts & Accessories, Racquet & Graphite Repairs, Redboxx Fashion, Riche Fine Belgian Chocolates, Sonia Exclusive, Taste 32 Irish Gourmet Deli, Total Tune & Gas, Your House of Beauty, A Touch of Brow, Absolutely Beautiful, Affogato, Akasha Wellness Clinic, Australia Post, Australian Formal Wear, Australian School Of Shotokan Karate, BIT STORM COMMUNICATIONS, BLOSSOM TREE TOYS, BWS, Barrett's Bakery & Cafe, Bee Chiropractic, Binoculars and Telescopes, Bites By D, Bo's Barbershop, Body Wisdom, Bona Fide Beauty, Bonnie & Clyde Clothing & Accessories, Carina's Kitchen Perth, Casa Blanca, Casa D’Arte, Casablanca Cafe, Cassi Lee Clothing, Catalyst Mind And Body Performance, Christos Jewellery, Clarity Jewellers, Code Bloom, Cookie Loaded, Curves, Cushion Factory, Dental Excellence, Diabolik Books & Records, Drasko's Hot Chicken, EVELEE Boutique, Flight Centre, Fumi Sushi, Gita Jewellers, Gourmet Seafood, Hair It Is, Hairlarious Kidz, Hawaiian's Mezz, Highlight Hair Studio, Homewares Emporium, Humblebee Coffee, Hummus., IGA, In Good Hands, JP's Bakehouse, Juliette Davina Box, Kaos Hair Studio, Khanna Indian Restaurant, Kin Tae Kwon Do, Kyrana Skin and Body, La Madonna Nera, Lawleys Bakery Cafe, Leaf & Bean, Lil Mica Gelato & Waffle House, Liquorice Gourmet Foods, Little C's, LookSmart Alterations, Luna Nail Bar, Lupolab, Lush, MICA Creamery, Mandarin Top-Class Massage, Marotta's Supermarket, Max & Me Corner Store, Maya’s Kitchen, Meat & Mains, Medaesthetics, Mezz News, Mobile Kafe, Mokaffe, Mount Hawthorn Family Practice, Mount Hawthorn Fish and Chips, Move Forward Physiotherapy, Move Health & Fitness, Mt Hawthorn Community Pharmacy, Mt Hawthorn Health Foods, Munchies 2 Go, Neighborhood Pizza, New City Drycleaners, Noble House Chinese, Nol-Si Restaurant, OPSM, PSD, Passion Lash and Brow, Pears on Pottery, Pepper Hair, Perth Nail Studio, Pharmacy 777, Pogo Restaurant, Polished nail and lash bar, Porters Liquor, Record Store Day - Diabolik Books and Records, Rusty Dolphin, Salon Express, Samantha Wynne, Shockwaves Hair Design, Small Batch Hair, Smile Time Orthodontics, Spritz Spizzicheria Italian, St Vincent De Paul Society, Stanford Barbers, Stelios Jewellers, Stella Rose Fashion, Studio Red Dust, Sunshine Munchies, Tamarind Restaurant, The Art Garage 191, The Cabin Small Bar, The Paddington Ale House, The Skiin Boutique, The Source Bulk Foods, Torso, Total Waste Disposal, Tredways Shoes, Tsukaya, Vietnamese Fusion, Vinnies, Willis & Elliott, Woolworths, Woolworths Mount Hawthorn Parcel Locker, Yogahub</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X68300000</td><td>-0X6806FFCC</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td>Allans La, Ambleside Ave, Anvil La, Ashby St, Berryman St, Blackford St, Boobook La, Buxton St, Coogee St, Dover St, East St, Egina St, Ellesmere St, Eucla St, Federation St, Flinders St, Glyde St, Hawthorn St, Kalgoorlie St, Killarney St, Larne St, Masterson La, Matlock St, Merredin St, Milton St, Purslowe St, Sasse Ave, Scarborough Beach Rd, Tasman St, The Boulevarde, Unity La, Woodstock St</td><td></td><td>0X142014</td><td>0X14</td><td>0X4BCF0000</td><td>0X4BFC001A</td><td>0X2005000</td></tr><tr><td>2023-07-09 06:50:56</td><td></td><td>Bomboniere Gift Shop, Bravo Pumps Australia, Bridal Affair, Diff & Trans R Us, Fhsi Cafe, Figaro Salon International, Goldwell Cosmetics, Jujuberry+Co, Manifis Station Provincial Interiors, Mt Hawthorn Hawker Markets, Oxford Gallery & Framing, Oxford Streatz Lunch Bar, Perugia Hair Studio, Purely Australian Clothing Co., Rechichi Shoes, THE Wedding List Company, Absolute Smiles, Absolutely Automatics, Ace Health & Performance, Aspen Coaching, Axford Park, Baptist Churches Of WA, Birraz Ristobar, Blush by Keari, Bodhi Tree Bookstore Cafe, Bona Fide Beauty, Brows by Racheal, Casa, Chiropractic on Oxford, Dragicevich Chiropractic Clinic, Fields of Vincent, Fitstop, Golf Sales Australia, HER on Oxford, Ha-Lu, Hair Freedom, Harley and Soo, Honeylashes, International Golf Specialists, Leederville Dental, Life Live It, Mount Hawthorn, Mount Hawthorn Medical Centre, Mounty Church, Mt Hawthorn Chiropractic Clinic, Mt Hawthorn TAB, My Skin Centre, Niche Physio & Pilates, Oxford Day Surgery, Oxford Street Physiotherapy, Oxford Street Podiatry, Peachy Skin Clinic, Perth Medispa, Pets Meat Suppliers, Pio's Cafe, Pisconeri Wholesalers, Primavera Quality Meats, Restoration Clinic - Cosmetic Clinic Perth, Revital Health, Revive Day Spa, Revolution Pilates Studio, SKINFUSION ON OXFORD, SPEQS, Scouts WA, Sharp Icon Office Technology, Skin Fairy, Snap Fitness, Sonny's Bar, Soul Vida Fit, Suat & Co Hair, Tara Health Centre, The Rensburg Medical Clinic, The Store Room Fashion Sales and Marketing, Top Guys Barber Shop, Totally Workwear, Travel Key, Villains Tattoo Co, Western Diagonstic Pathology, Yelo</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X67F00000</td><td>-0X6806FFCC</td><td>0X2003400</td></tr><tr><td>2023-07-09 06:50:57</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>0X4BCF0000</td><td>0X4BFC001A</td><td>0X2002C00</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>2, 51, 53, 56, 60, 61, 65, 72, 75, 8,  , Aberdeen St, Acacia Ct, Adair Pde, Aft La, Albert St, Alexander Dr, Alfonso St, Alma Rd, Almondbury Rd, Altona St, Alvan St, Amy St, Angove St, Antonas Rd, Anzac Rd, Ardross Cr, Arthur St, Astor La, Auckland St, Austen La, Baker Ave, Bakery La, Barlee St, Barnet Pl, Barnet St, Beacon Tce, Beatty Walk, Beaucott La, Beaufort St, Bedford St, Bennelong Pl, Bermondsey St, Blake St, Bluegum Ave, Boans La, Bold Ct, Bottlebrush Bvd, Bourke St, Bouverie Pl, Bradford St, Braeside Rd, Braid St, Bramall St, Bream Cove, Brewer St, Brisbane Pl, Brisbane St, Brisbane Tce, Britannia Rd, Brook St, Brookman St, Broome St, Brown St, Bruce St, Bulwer Ave, Bulwer St, Bunbury Cr, Burgess St, Burt St, Byron St, Cambridge St, Camelia Cl, Camelia St, Campbell St, Campsie St, Cantle St, Carnarvon Cr, Carr Pl, Carr St, Carrington St, Cavendish St, Caversham St, Caythorpe La, Central Ave, Chamberlain St, Chapman St, Charles St, Chatham St, Chatsworth Rd, Chelmsford Rd, Cheriton St, Chertsey St, Church St, City Farm Pl, Claisebrook Rd, Clarence St, Claverton St, Cleaver St, Clieveden St, Clifton Cr, Clive Rd, Clive St, Clotilde St, Clyde Rd, Colin Grove, Colin Pl, Colin St, College St, Commonwealth Ave, Cone Pl, Coode St, Cook St, Coolgardie St, Coolgardie Tce, Coronation St, Court St, Cowle St, Curtis St, Dalmeny St, Dangan St, Daphne St, Davies St, Deague Ct, Delhi St, Dene St, Donley La, Doris St, Douglas St, Douro Pl, Drummond Pl, Dumbarton Cr, Dundas Rd, Dunedin St, Earl St, East Pde, Ebsworth St, Eden St, Edinboro St, Edith St, Edward St, Eighth Ave, Elder St, Elizabeth St, Ellesmere Rd, Ellesmere St, Elma St, Elovalis La, Elstree Ave, Elven St, Emerald Tce, Emmerson St, Ensign La, Errichetti Pl, Ethel St, Eton St, Fairfield St, Faraday St, Farmer St, Farnley St, Farr Ave, Ferrar St, Field St, Fielder St, Fifth Ave, Fiore La, First Ave, Fitzgerald St, Fitzroy St, Flagstaff La, Fleet St, Flintoff La, Florence Pl, Florence St, Forbes La, Forbes Rd, Fore St, Forrest St, Fourth Ave, Frame Ct, Frances St, Francis St, Franklin St, Freedman Rd, Gallop St, Galwey St, Gardiner St, George St, Gerald St, Gill St, Gladstone St, Glebe St, Glendower St, Glenroyd St, Glick Rd, Glyde St, Golding St, Gordon St, Graham Rd, Grant St, Grasso St, Greenway St, Gregson St, Grigoroff St, Grosvenor Rd, Guildford Rd, Guy La, Haley Ave, Hamer Pde, Hammond St, Hanover Pl, Hardy St, Harley St, Harold St, Harrogate St, Harrow St, Harvest Tce, Harwood Pl, Havelock St, Hay St, Haynes St, Henry Lawson Walk, Henry St, Highlands Rd, Highroyd St, Hilda St, Hill St, Hill View Rd, Hobart St, Holmfirth St, Hope St, Howlett St, Hoy Poy St, Hunter St, Hutt St, Hyde St, Ingleton La, Inglewood La, Inverness Cr, Irene St, James St, Janet St, Jewell La, Joel Tce, John St, Joinery Mews, Joondia La, Kadina St, Kakulas Cr, Kayle St, Keats La, Kensington St, Kimpton La, King St, Kingston Ave, Knebworth Ave, Knutsford St, Koorda St, Lacey St, Lake St, Lanark St, Lane St, Lavender Cl, Lawler St, Lawley Cr, Lawley Pl, Lawley St, Lawrence Ave, Lawry La, Leadlight La, Leake St, Learoyd St, Leederville Pde, Leslie St, Lime St, Lincoln St, Lindsay St, Lipfert St, Little Russell St, Little Walcott St, Loch St, Loftus St, London St, Longroyd St, Lord St, Luce La, Lucknow Pl, Mabel St, Macedonia Pl, Macewan St, Magnolia St, Mardella St, Marian St, Market St, Marlborough St, Marmion St, Mary St, Masel La, Masque Pl, Mayfair St, McCarthy St, McPherson St, Melbourne St, Melrose Cr, Melrose St, Memorial La, Menzies St, Michael Cl, Mignonette St, Milligan St, Mitchell Fwy, Mitchell St, Moir St, Money St, Monger St, Monmouth St, Morriston St, Moselle La, Mountain Tce, Murchison Tce, Muriel Pl, Murray St, Myrtle St, Namatjira Pl, Namur St, Nanhob St, Nash St, Newcastle St, Ninth Ave, Norbert St, Norfolk St, Norham St, Normanby Rd, North St, Northbridge Tunl, Nova La, Oak La, Old Aberdeen Pl, Old Belvidere Promenade, Old Butchers La, Olive St, Orange Ave, Ord St, Outram St, Oxford Cl, Oxford St, Paddington St, Pakenham St, Palmerston St, Pansy St, Park Ave, Park Rd, Parker St, Parliament Pl, Parry St, Patula Pl, Peach St, Pennant St, Persimmon St, Phelps La, Pier St, Pinaster St, Pine St, Pisconeri St, Plain St, Plaistowe Mews, Plunkett St, Premier La, Prospect Pl, Prowse St, Queen St, Queens Cr, Rae St, Raglan Rd, Railway Pde, Railway St, Randell St, Redfern St, Redmile La, Regent St E, Regent St W, Renaissance Ave, Richardson St, Richmond St, Robin St, Robinson Ave, Roe St, Rookwood St, Rothsay Cr, Roy St, Royal St, Ruby St, Russell Ave, Ruth St, Saint Albans Ave, Saint Monica La, Salas La, Salisbury St, Saunders St, Scarborough Beach Rd, Scott St, Second Ave, Sekem St, Selden St, Selkirk St, Serich La, Seventh Ave, Shakespeare St, Shenton St, Sheridan La, Sholl La, Simpson St, Sixth Ave, Slyth Way, Smith St, Somerville St, South View Rd, Southport St, Spinoza St, Stancliffe St, Stanley St, Stirling St, Stokes Way, Storthes St, Strathcona St, Stuart St, Subiaco Rd, Summers St, Sunbeam Way, Sutherland St, Swimming La, Sydney St, Tandy St, Tay Pl, Telethon Ave, Tennivale Pl, Tennyson St, Tenth Ave, Thelma St, Third Ave, Thirlmere Rd, Thomas St, Thompson St, Thongsbridge St, Thorley St, Throssell St, Thurston St, Tiverton St, Tolcon Pl, Toorak Rise, Troode St, Tudori St, Tully Rd, Turner St, Tweed Cr, Union St, Vale St, Venn St, Victoria St, Victory Tce, View St, Vincent St, Vine St, Violet St, Vita Loop, Wade St, Walcott St, Walter Rd W, Washing La, Wasley St, Waugh St, Wavertree Pl, Weld Ave, Wellington Pl, Wellington St, Wellman St, Wenberi La, West Pde, West St, Westralia St, Whatley Cr, Wilberforce St, William St, Willow Ct, Windan Bridge, Windsor St, Woodlands St, Woodroyd St, Woodsome St, Woodstock St, Woodville St, Wright St, Wylie Pl, York St, Zebina St, Zempilas Rd</td><td></td><td>0X142014</td><td>0X14</td><td>-0X6CF30000</td><td>0X12FF0006</td><td>0X2005000</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>2, 61, 64, 65, 72,  , Abbotsford St, Agnew Way, Alderbury St, Alexander St, All Saints Way, Allison Dr, Allora Ave, Altona St, Alvan St, Ambleside Ave, Anderson St, Anther La, Antrim St, Anzac Rd, Aranda Pl, Argyle St, Ashby St, Atkinson Rd, Axon St, Bagot Rd, Barker Rd, Barney St, Barrett St, Barrington St, Bath St, Bedford Ave, Berkeley Cr, Bernard St, Berryman St, Birkdale St, Birrell St, Bishop St, Blackford St, Blencowe St, Bonnievale St, Bootle La, Bourke St, Bournville St, Brady St, Brentham St, Brighton St, Brigid Rd, Britannia Rd, Bronzewing Loop, Brooks La, Bruce St, Buxton St, Caddy Ave, Cale La, Callaghan St, Cambridge St, Cammilis Rise, Cardigan Tce, Carlton St, Carter La, Cashel La, Catherine St, Cato St, Caulson Ct, Cayley St, Centro Ave, Chandler Ave E, Churchill Ave, Clare La, Clune Ave, Cobble La, Coghlan Rd, Coldstream St, Collier St, Comrie St, Connaught St, Connolly St, Coogee St, Cook St, Coral Tree Ave, Corboy St, Costello Rd, Court Pl, Crail St, Cromarty Rd, Crosby St, Cunningham Tce, Currie St, Cygnus Cl, D'Arcy La, Dacelo Cl, Daglish St, Dakin St, Darbon Cr, Deanery Mews, Denis St, Denton St, Dodd St, Douglas Ave, Dover St, Draper St, Drew St, Dublin Cl, Dumfries Rd, Dunblane Rd, Eakins La, East Lorne St, East St, Edenderry Tce, Egina St, Ellen St, Ellerby St, Ellesmere St, Erith Ct, Essex St, Eucla St, Evandale St, Everton St, Falcon Ave, Federal St, Federation St, Flinders St, Flynn St, Forrest St, Fox Grn, Francis St, Frewer Pl, Gibney Ave, Gibney Vista, Glen St, Glenelg St, Glyde St, Goldfinch Ave, Goody Cl, Gould St, Grantham St, Grasby St, Gregory St, Halcyon Way, Halesworth Rd, Hamilton St, Hann St, Harborne St, Hasler Rd, Hasluck Ct, Hawthorn St, Hay St, Hay St Dakin St, Haydn Bunton Dr, Heard Way, Hennerty La, Hensman Rd, Herdsman Pde, Heron Pl, Hickey Ave, Highbury St, Holland St, Holyrood St, Honeyeater Circle, Hood St, Hortus Way, Jasmine Ave, Jersey St, Johnson St, Jon Sanders Drive, Joseph St, Jugan St, Jukes Way, Juniper Bank Way, Kalgoorlie St, Kavanagh St, Keane St, Kerr St, Killarney St, Kimberley St, Kings Park Rd, Kings Rd, Kirwan St, Kneebone La, Kulunga Grove, Lake Monger Dr, Lakeside Rd, Lansdowne St, Larne St, Laurino Tce, Lawler St, Leeder St, Leederville Pde, Leicester St, Lesser St, Linden Gardens, Lissadell St, Loretto St, Lutey Ave, Lynton St, Mallen View, Marlow St, Matlock St, May Ave, McCallum Ave, McCourt St, McKenzie St, Mead Grove, Melrose St, Mercy Pl, Mere View Way, Merredin St, Metters La, Milton St, Minn La, Mitchell Fwy, Monteath Rd, Moondine Dr, Moray Ave, Moss Vale, Mouritzen Way, Munsie Ave, Murray St, Namatjira Pl, Nanson St, Neston La, Newnham St, Newry St, Nicholson St, North Banff Rd, Northmore St, Northwood St, Old Jacaranda Way, Olga Pl, Olive St, Ord St, Orrel Ave, Outram St, Pangbourne St, Parish La, Park St, Parkland Rd, Patterson Dr, Pearson Pl, Pearson St, Peebles Rd, Peel St, Pelican Ct, Penzance Cct, Pioneer Ct, Pollard St, Pollen Grove, Powis St, Pownall Gardens, Price St, Proclamation St, Purslowe St, Railway Pde, Railway Rd, Raphael St, Rason St, Rawlins St, Red Wattle Pl, Redcar La, Regent St, Reserve St, Rheola St, Richardson St, Richardson Tce, Richmond St, Roberta St, Roberts Rd, Robinson St, Robinson Tce, Rokeby Rd, Rokeby Walk, Rosebery St, Rosmunde Ct, Rossello La, Rosslyn St, Rowland St, Roydhouse St, Ruislip St, Rupert St, Saint Davids Rise, Saint Leonards Ave, Saint Oswalds Rise, Salisbury St, Salvado Rd, Sasse Ave, Scaddan St, Scarborough Beach Rd, Seabrook St, Selby St, Selsted Pl, Seymour Ave, Shann St, Sheen St, Simper St, South Banff Rd, Southport St, St Columbas Ave, St Vincents Ave, Stamford St, Station St, Stevens St, Stubbs Tce, Subiaco Rd, Subiaco Square Rd, Swallow Ct, Tallow Tree Cr, Tara Vista, Tasman St, Tate St, Telopea La, The Boulevard, The Boulevarde, The Foreshore, The Grove, Thomas St, Thornbill Way, Tighe St, Tiller La, Tipperary Mews, Tipton Walk, Tower St, Townshend Rd, Trillo Rd, Troy Tce, Turriff Rd, Underwood Ave, Upham St, Ventnor Ave, Veryard Tce, Village Mews, Vincent St, Vincent St W, Walker Ave, Walker St, Walters Dr, Warwick St, Waterway Ct, Wellington St, Wexford St, White Pl, Whitfeld St, Willcock Ave, Wilsmore St, Windich Pl, Winmarley St, Wise St, Woodstock St, Woolnough St, Woolwich St, Wunderlich Rd, Yarm Alley, York St</td><td></td><td>0X142014</td><td>0X14</td><td>-0X6D330000</td><td>0X12FF0006</td><td>0X2005000</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>1, 2, 5, 51, 53, 6, 65,  , Addison St, Adelaide Tce, Albert St, Alexandra St, Allen St, Angelo St, Anstey St, Anthony St, Arden St, Arlington Ave, Arundel St, Banksia Tce, Baron-Hay Ct, Barrack St, Beaufort St, Bellevue Tce, Bennett St, Berwick St, Bishops Row, Blamey Pl, Bland St, Bourke St, Bowman St, Braithwaite St, Brandon St, Bremer Promenade, Bright St, Broad St, Bronte St, Brook St, Brookside Ave, Broome St, Burch St, Burt Way, Campbell Ave, Campbell St, Canning Highway, Carey St, Carr St, Cathedral Ave, Charles St, Clarence St, Cliff St, Cliffe St, Clotilde St, Colin Grove, Colin St, Collins St, Constitution St, Coode St, Darley St, Darling St, Darlot Cr, David St, De Vlamingh Ave, Delamere Ave, Douglas Ave, Duchess Way, Dyson St, Eastbrook Tce, Edinburgh St, Elder St, Elizabeth St, Ellam St, Enchantress Way, Erskine Link, Ferry St, Finchaven St, First Ave, Forrest Ave, Forrest St, Fortune St, Fourth Ave, Fraser Ave, Frasers La, Garden St, Garland St, Geoffrey Bolton Avenue, George St, Gibraltar Way, Gladstone Ave, Glyde St, Goderich St, Governors Ave, Gwenyfred Rd, Haig Park Circle, Hale St, Hampden St, Hardy St, Harper Tce, Harvest Tce, Havelock St, Hay St, Hayman Rd, Hazel St, Hensman St, Heppingstone St, Hibernian La, High St, Hill St, Hopetoun St, Horatio St, Hovia Tce, Howard St, Hurlingham Rd, Irwin St, Jameson St, Jubilee St, Judd St, Karoo St, King Edward St, King St, Kings Park Rd, Kwinana Freeway, Labouchere Rd, Lamb St, Lansdowne Rd, Lawler St, Leahy Walk, Leane St, Lord St, Lovekin Dr, Lyall St, Mabel St, Macey St, Malcolm St, Manning Tce, Market St, May Dr, McDonald St, Meadowvale Ave, Melville Pde, Melville Pl, Mends St, Mill Point Cl, Mill Point Rd, Mill St, Milligan St, Milson St, Mitchell Fwy, Monk Ave, Monk St, Moore St, Moreau Pde, Moresby St, Mount St, Mounts Bay Rd, Murray St, Nelson Cr, Nile St, Norbert St, Norfolk St, Norton St, Onslow St, Orchard Way, Oxford St, Parker St, Pennington St, Penny La, Pepper St, Pier St, Pilgrim St, Pitt St, Plain St, Queen St, Ranelagh Cr, Ray St, Rea St, Regal Pl, Renwick St, Richardson St, Ridge St, River View St, Riverside Dr, Rose Ave, Roseberry Ave, Rottnest Express, Royal St, Sailani Av, Salisbury Ave, Sandgate St, Scenic Cr, Scott St, Second Ave, Shaftesbury St, Sherwood Ct, Shilling La, Sixth Ave, South Perth Esplanade, South Tce, Spring St, St Georges Tce, Stirling St, Stone St, Strickland St, Swan St, Swanview Tce, Tate St, Taylor St, Terrace Rd, The Esplanade, Third Ave, Thomas St, Trafalgar Rd, Transperth, Trinity Ave, Vanguard Tce, Victoria Ave, Victoria Sq, Victoria St, View St, Vista St, Wadjuk Way, Walters St, Warrego St, Waterloo Cr, Wattle St, Waverley St, Way Rd, Wellington St, Westbury Rd, Weston Ave, Wickham Pl, Wickham St, William St, Witcomb Pl, Wittenoom St, York St</td><td></td><td>0X142014</td><td>0X14</td><td>-0X6CF30000</td><td>0X13000006</td><td>0X2005000</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>5, 61, 64, Aberdare Rd, Ada St, Adelma Rd, Altona St, Ambrose La, Archdeacon St, Arthur St, Austin St, Australia II Dr, Baird Ave, Barcoo Ave, Bedbrook Pl, Bedford St, Betty St, Boronia Ave, Bowman St, Broadway, Broome St, Browne St, Bruce St, Burwood St, Campbell St, Campsie St, Caporn St, Carrington St, Centre St, Charles St, Chester St, Clark St, Clifton St, Clubb Ave, Coleraine St, Colin St, Commercial Rd, Cook St, Coolgardie St, Cooper St, Coventry La, Crawley Ave, Cross St, Croydon St, Cullen St, Cunningham Tce, Cuthbert St, Dalkeith Rd, Darbyshire Dr, Davies Rd, Dawes View, Derby Rd, Doonan Rd, Douglas Ave, Duke St, Edward St, Elizabeth St, Evans St, Everett St, Excelsior St, Fairway, Federal St, Finlayson St, Florence Rd, Forrest Dr, Fortune St, Francis St, Gairdner Dr, Gloster St, Gordon St, Government Rd, Granby Cr, Gray St, Guttmann App, Hackett Dr, Hackett Rd, Hamersley Rd, Hampden La, Hampden Rd, Hardy Rd, Harvey Rd, Henry St, Hensman Rd, Herbert Rd, Heytesbury Rd, Hibbertia La, Hickey Ave, Hilda St, Hillway, Hook Rd, Hopetoun Tce, Hospital Ave, James St, Jenkins Ave, John St, Kanimbla Rd, Kapyong Rd, Karella St, Keightley Rd E, Keightley Rd W, Keightley Road Cn, Kershaw St, King St, Kings Park Ave, Kings Park Rd, Kings Rd, Kingston St, Kingsway, Kinninmont Ave, Kitchener St, Kulunga Grove, Lake Ave, Langham St, Lemnos St, Leura St, Little Gibraltar Rd, Loneragan St, Lonnie St, Louise St, Lovekin Dr, Lupin Hill Grove, Luth Ave, Lyall St, Marita Rd, Marri Walk, Martin Ave, May Dr, Megalong St, Melvista Ave, Meriwa St, Millington Ave, Monash Ave, Morgan St, Mountjoy Rd, Mounts Bay Rd, Muecke Way, Munsie Ave, Murchison St, Myers St, Nagal Pass, Nash St, Nicholl St, Nicholson Rd, Northmore St, Onslow Rd, Orton Rd, Parallel Rd, Park Ave, Park Rd, Parkway, Poole Ave, Portland St, Princess Rd, Proclamation St, Quadrangle Pl, Quintilian Rd, Railway Rd, Rankin Rd, Rawson St, Redfern St, Robinson St, Rokeby Rd, Rosalie St, Rottnest Express, Rupert St, Sadka La, Sadlier St, Salisbury St, Samichon Rd, Saw Ave, Selby St, Seymour Ave, Smyth Rd, Stanley St, Stanmore St, Stirling Highway, Stubbs Tce, Sutcliffe St, Tareena St, The Avenue, Thomas St, Thorburn Way, Townshend Rd, Troy Tce, Tyrell St, Union St, Verdun St, View St, Viewway, Vincent St, Violet Grove, Waverley St, Waylen Rd, Webster St, Weld St, William St, Williams Rd, Wingfield Ave, Winthrop Ave, Yilgarn St</td><td></td><td>0X142014</td><td>0X14</td><td>-0X6D330000</td><td>0X13000006</td><td>0X2005000</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Bentley, Burswood, Canning River, Carlisle, Como, East Perth, East Victoria Park, Heirisson Island, Karawara, Kensington, Lathlain, Manning, Perth, Rivervale, Salter Point, South Perth, St James, Swan River, Victoria Park, Waterford, Wilson</td><td></td><td>0X12014</td><td>0X14</td><td>0X498C0000</td><td>0X9800003</td><td>0X2000400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Churchlands, City Beach, Daglish, Doubleview, Floreat, Glendalough, Herdsman, Herdsman Lake, Innaloo, Jackadder Lake, Jolimont, Joondanna, Lake Monger, Osborne Park, Scarborough, Stirling, Tuart Hill, Wembley, Wembley Downs, West Leederville, Woodlands</td><td></td><td>0X12014</td><td>0X14</td><td>0X494C0000</td><td>0X97F0003</td><td>0X2000400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Applecross, Ardross, Claremont, Cottesloe, Crawley, Dalkeith, Freshwater Bay, Karrakatta, Kings Park, Lake Claremont, Lucky Bay, Matilda Bay, Mosman Bay, Mosman Park, Mount Claremont, Nedlands, Peppermint Grove, Shenton Park, Subiaco, Swanbourne, Waylen Bay</td><td></td><td>0X12014</td><td>0X14</td><td>0X494C0000</td><td>0X9800003</td><td>0X2000400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Bayswater, Bedford, Coolbinia, Embleton, Highgate, Inglewood, Lake Brearley, Lake Bungana, Leederville, Maylands, Menora, Morley, Mount Hawthorn, Mount Lawley, Nollamara, North Perth, Northbridge, Swan River, West Perth, Yokine</td><td></td><td>0X12014</td><td>0X14</td><td>0X498C0000</td><td>0X97F0003</td><td>0X2000400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0X482015</td><td>-0X7BE272EB</td><td>0X1D3</td><td>0X120000</td><td></td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0X482015</td><td>-0X7BE332EB</td><td>0X1D3</td><td>0X120000</td><td></td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>-0X6D330000</td><td>0X13000006</td><td>0X2002C00</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>-0X6CF30000</td><td>0X12FF0006</td><td>0X2002C00</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>-0X6D330000</td><td>0X12FF0006</td><td>0X2002C00</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td></td><td></td><td>0XB2014</td><td>0X14</td><td>-0X6CF30000</td><td>0X13000006</td><td>0X2002C00</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Richardson Park, South Perth Foreshore, Apple Perth City, BP, C Restaurant, City of South Perth, City of South Perth Historical Society, East Perth Cemeteries, Elizabeth Quay, Ernest Johnson Reserve, Gloucester Park, Hyatt Regency, John Oldham Park, Langley Park, Milky Lane, Mister Walker, Old Mill, Ozone Reserve, Perth Convention and Exhibition Centre, Perth Zoo, Point Fraser, Royal Perth Golf Club, Royal Perth Hospital, The Meat & Wine Co, Trinity College, WA Cricket, Wellington Square</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6CF30000</td><td>0X13000006</td><td>0X2003400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>Hamer Park, 2 Fat Indians, Ampol, Art Gallery of Western Australia, BP, Barracks Arch, Brika, Charles Veryard Reserve, DoubleTree by Hilton Perth Northbridge, East Perth, Edith Cowan University - Mount Lawley Campus, Forrest Park Croquet, Great Southern Hotel, HBF Park, Hyde Park, Inglewood Oval, Leederville Oval, McDonald's, Mount Lawley Senior High School, Parliament House, Perth, Puma Energy, RAC Arena, Robertson Park, Sonic Charge, The Beaufort, Tony Roma's, United, WA Museum Boola Bardip, Watertown Brand Outlet Centre</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6CF30000</td><td>0X12FF0006</td><td>0X2003400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>ANZAC Cottage, Cliff Sadlier VC Memorial Park, Ampol, BP, Britannia Road Reserve, Bunnings Warehouse, Chargefox, Gold Netball Centre, Henderson Park, Herdsman Lake Regional Park, Holiday Inn West Perth, King Edward Memorial Hospital, Lake Monger Reserve, Leederville Town Hall, Maurice Hamer Park, Mueller Park, Pat Goodridge Park, Perth Modern School, Shell, Six Senses Thai Restaurant, Squires Loft , St John of God Subiaco Hospital, Subiaco, The Herdsman Market, The Woodpeckers</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6D330000</td><td>0X12FF0006</td><td>0X2003400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>J H Abrahams Reserve, Rosalie Park, Ampol, BP, Broadway Fair Shopping Centre, Chez Jean-Claude Patisserie, Hollywood Private Hospital, Karrakatta Cemetery, Kings Park Motel, Kings Park and Botanic Garden, Matilda Bay Reserve, May Drive Parkland, Next Gen Health & Lifestyle Clubs, Rio Tinto Naturescape Kings Park, Shenton College, Shenton Park, Sir Charles Gairdner Hospital, University of Western Australia - Car Park 3, Vibe Petroleum, Zamia Cafe</td><td></td><td>0XD2014</td><td>0X14</td><td>-0X6D330000</td><td>0X13000006</td><td>0X2003400</td></tr><tr><td>2023-07-10 10:50:31</td><td></td><td>1, 2, B, Basement, Level 1, Level 2, Westfield Innaloo, Westfield Whitford City, Innaloo, Whitford City, Big W, Coles, Hungry Jack's, Kmart, McDonald's, Target, Westfield Innaloo, Westfield Whitford City, Whitfords Dental Centre, Woolworths</td><td></td><td>0X1E2014</td><td>0X14</td><td>-0X2DB60000</td><td>0X25F0000</td><td>0X2007800</td></tr></tbody><tfoot><tr><th>Timestamp</th><th>Places_from_VLOC</th><th>Labels_in_tile</th><th>Image</th><th>Tileset</th><th>Key A</th><th>Key B</th><th>Key C</th><th>Key D</th></tr></tfoot></table></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.table').DataTable({
+                //"scrollY": "60vh",
+                //"scrollX": "10%",
+                //"scrollCollapse": true,
+                "aLengthMenu": [[ 15, 50, 100, -1 ], [ 15, 50, 100, "All" ]],
+            });
+            $('.dataTables_length').addClass('bs-select');
+            $('#mySpinner').remove();
+            //$('#infiniteLoading').remove();
+        });
+    </script>
+    
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

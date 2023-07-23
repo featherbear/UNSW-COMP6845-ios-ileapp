@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ClientIdentifier</key>
+	<data>
+	AS4AINuncA==
+	</data>
+	<key>IPAddress</key>
+	<string>172.20.10.9</string>
+	<key>LeaseLength</key>
+	<integer>86400</integer>
+	<key>LeaseStartDate</key>
+	<date>2023-07-10T10:46:54Z</date>
+	<key>PacketData</key>
+	<data>
+	AgEGANoDYV4AAAAAAAAAAKwUCgmsFAoBAAAAAC4AINuncAAAAAAAAAAAAAB3ZXNzLWlQ
+	aG9uZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABjglNjNQEFNgSsFAoBMwQAAVGA
+	AQT////wAwSsFAoBBgSsFAoB/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	</data>
+	<key>RouterHardwareAddress</key>
+	<data>
+	VuvpV8lk
+	</data>
+	<key>RouterIPAddress</key>
+	<string>172.20.10.1</string>
+	<key>SSID</key>
+	<string>wes’s iPhone</string>
+</dict>
+</plist>

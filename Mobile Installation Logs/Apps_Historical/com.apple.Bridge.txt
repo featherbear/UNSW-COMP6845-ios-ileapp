@@ -1,0 +1,4 @@
+2023-07-09 14:42:08 Made container live com.apple.Bridge /private/var/containers/Bundle/Application/FD55EF9C-B3EF-4E7F-A392-808B19760B95
+2023-07-09 14:42:08 Install successful com.apple.Bridge 
+2023-07-08 23:20:24 Made container live com.apple.Bridge /private/var/containers/Bundle/Application/11EE2E5F-3FA7-4242-8E58-1B71B24CB25F
+2023-07-08 23:20:24 Install successful com.apple.Bridge 

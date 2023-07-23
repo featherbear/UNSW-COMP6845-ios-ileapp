@@ -1,0 +1,6 @@
+2023-07-09 14:41:56 Data container moved com.apple.DocumentsApp /private/var/mobile/Containers/Data/Application/8F5551D7-B46E-4DDA-AD6D-25C6414E6495
+2023-07-09 14:41:56 Made container live com.apple.DocumentsApp /private/var/containers/Bundle/Application/F5290BB0-814D-41AA-AFF5-A8EA6D66E5C4
+2023-07-09 14:41:56 Install successful com.apple.DocumentsApp 
+2023-07-08 23:20:23 Made container live com.apple.DocumentsApp /private/var/mobile/Containers/Data/Application/F8A6F518-3672-4364-A81D-3821D607262F
+2023-07-08 23:20:23 Made container live com.apple.DocumentsApp /private/var/containers/Bundle/Application/9933D027-A0DF-41A6-A16A-9DD5664F7399
+2023-07-08 23:20:23 Install successful com.apple.DocumentsApp 

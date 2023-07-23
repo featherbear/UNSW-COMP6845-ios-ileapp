@@ -1,0 +1,215 @@
+gSQLite format 3
+>E
+[tablesqlite_stat1sqlite_stat1
+CREATE TABLE sqlite_stat1(tbl,idx,stat)i
+indexDownloadQueueByGUIDDownloadQueue
+CREATE INDEX DownloadQueueByGUID on DownloadQueue (GUID asc)`
+}indexUploadQueueByGUIDUploadQueue
+CREATE INDEX UploadQueueByGUID on UploadQueue (GUID asc)a
+
+}indexUploadQueueByOrderUploadQueue
+CREATE INDEX UploadQueueByOrder on UploadQueue (ord asc)
+tableUploadQueueUploadQueue
+CREATE TABLE UploadQueue (
+  ord                  integer,
+  uploadPriority       integer default 0,
+  GUID                 text,
+  albumGUID            text,
+  errorCount           integer default 0,
+  album                blob,
+  object               blob
+)H
+)indexDownloadQueueGeneralReverseOrderDownloadQueueCREATE INDEX DownloadQueueGeneralReverseOrder on DownloadQueue (isThumbnail asc, albumGUID asc, batchCreationDate desc, photoCreationDate asc)9
+
+indexDownloadQueueGeneralOrderDownloadQueueCREATE INDEX DownloadQueueGeneralOrder on DownloadQueue (isThumbnail asc, albumGUID asc, batchCreationDate asc, photoCreationDate asc)
+tableDownloadQueueDownloadQueue
+CREATE TABLE DownloadQueue (
+  ord                  integer,
+  isThumbnail          integer default 0,
+  isInflight           integer default 0,
+  GUID                 text,
+  albumGUID            text,
+  assetCollectionGUID  text,
+  batchCreationDate    real,
+  photoCreationDate    real,
+  errorCount           integer default 0,
+  album                blob,
+  object               blob
+)'
+etablePendingAssetCollectionsPendingAssetCollections
+CREATE TABLE PendingAssetCollections (
+   assetCollectionGUID   text unique,
+   albumGUID             text
+)M
+indexsqlite_autoindex_PendingAssetCollections_1PendingAssetCollections	
+indexPendingCommandQueueByOrderPendingCommandQueue
+CREATE INDEX PendingCommandQueueByOrder on PendingCommandQueue (ord asc)
+MtablePendingCommandQueuePendingCommandQueue
+CREATE TABLE PendingCommandQueue (
+   ord                   integer,
+   command               text,
+   params                blob,
+   personID              text,
+   albumGUID             text,
+   assetCollectionGUID   text
+)f
+indexCommandQueueByOrderCommandQueue
+CREATE INDEX CommandQueueByOrder on CommandQueue (ord asc)~
+?tableCommandQueueCommandQueue
+CREATE TABLE CommandQueue (
+   ord                   integer,
+   command               text,
+   params                blob,
+   personID              text,
+   albumGUID             text,
+   assetCollectionGUID   text
+)
+ItablePropertiesProperties
+CREATE TABLE Properties(
+   key             text unique primary key,
+   value           blob
+)3
+indexsqlite_autoindex_Properties_1Properties
+version8
+	version
+vGa-
+*`uSl
+Var
+
+Propertiessqlite_autoindex_Properties_11 1
+_sendGetServerSideConfigurationDisposition:params:bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+U$null
+$)27ILQSU
+[20977765650
+_checkForChangesDisposition:params:bplist00
+U$null
+WNS.keysZNS.objectsV$class
+YresetSync
+Z$classnameX$classes_
+NSMutableDictionary
+\NSDictionaryXNSObject
+$)27ILQSY_fny
+20977765650L
+JserverSideConfigbplist00
+KUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+2TWNS.keysZNS.objectsV$class
+ !"#$%&'()*+,-./01
+!3436689:;3=>?@ABCDE?C6IJKLCNOPQ3S
+1com.apple.sharedstreams.config.maxnum.ownedAlbums_
+9com.apple.sharedstreams.config.maxNumPhotosToShare.hourly_
+6com.apple.sharedstreams.config.maxnum.subscribedAlbums_
+.com.apple.sharedstreams.config.switch.comments_
+(com.apple.sharedstreams.config.switch.3G_
+Acom.apple.sharedstreams.config.maxActiveTimeAfterLossOfForeground_
+8com.apple.sharedstreams.config.maxNumPhotosToShare.daily_
+9com.apple.sharedstreams.config.maxnum.subscribersPerAlbum_
+4com.apple.sharedstreams.config.maxnum.photosPerAlbum_
+6com.apple.sharedstreams.config.maxnum.commentsPerPhoto_
+3com.apple.sharedstreams.config.dimensions.thumbnail_
+2com.apple.sharedstreams.config.maxpixels.thumbnail_
+5com.apple.sharedstreams.config.maxActiveTimeAfterPush_
+*com.apple.sharedstreams.config.prevVersion_
+Acom.apple.sharedstreams.config.maxNumDerivativesToDownloadPerPush_
+:com.apple.sharedstreams.config.maxnum.charactersPerComment_
+=com.apple.sharedstreams.config.maxNumRetriesOnFailure.content_
+,com.apple.sharedstreams.config.configVersion_
+:com.apple.sharedstreams.config.dimensions.videoposterframe_
+0mme.basephotos.config.defaultRetryAfterInSeconds_
+<com.apple.sharedstreams.config.maxNumRetriesOnFailure.server_
+>com.apple.sharedstreams.config.maxNumPhotosToSendInShareAction_
+1com.apple.sharedstreams.config.dimensions.preview_
+8com.apple.sharedstreams.config.maxVideoDurationInSeconds_
+>com.apple.sharedstreams.config.minIntervalBetweenPollInSeconds_
+0com.apple.sharedstreams.config.maxpixels.preview_
+6com.apple.sharedstreams.config.maxUploadAssetBatchSize_
+/com.apple.sharedstreams.config.videoderivatives_
+=com.apple.sharedstreams.config.maxNumRetriesOnFailure.network_
+1com.apple.sharedstreams.config.dimensions.invites_
+@com.apple.sharedstreams.config.maxActiveTimeAfterGlobalResetSync_
+2com.apple.sharedstreams.config.maxNumInvites.daily_
+@com.apple.sharedstreams.config.maxNumDerivativesToPrefetchPerDayS200T1000Q1S120U10000S100T5000[256:332:455V172800R60S1.7R15T1024Q5S1.8X1280:720^1536:2048:5400S900V864000W3145728
+@WbitRateYvideoType]powerRequiredXcellularT0.84[PosterFrameQ0
+@S2.8T720p
+@T360p
+^NSMutableArray
+WNSArrayR10_
+G308:399:547:308:399:547:152:197:270:152:197:270:100:130:178:100:130:178S600R50
+	$	'	+	.	3	5	9	B	Q	U	\	d	i	m	o	q	s	u	|		
+
+$
+)
++
+-
+/
+1
+6
+8
+:
+<
+>
+@
+D
+I
+P
+U
+W
+Y
+[
+]
+b
+d
+f
+h
+j
+l
+q
+v
+
+serverSideConfigVersion1.8
+serverSideConfig
+serverSideConfigVersion
+20977765650
+metadataBackoffManagerbplist00
+V$class_
+initialInterval_
+maxBackoffInterval_
+currentInterval]backoffFactor_
+randomizeFactor^nextExpiryDate
+333333#
+MSBackoffManager
+MSBackoffManagerXNSObject
+metadataBackoffManager
+commandRetryCountYresetSync
+ !\NSDictionaryXNSObject
+$)27ILQS[ahp{
+pendingRootCtagbplist00
+U$null_
+0FT=-@RU=b98378ee-1ab1-48b4-a437-744d4e584cb8@S=2
+$)27ILQSV\
+pendingRootCtag
+>HSQLite format 3
+rootCtagRetries
+"rootCtagRetriesbplist00
+U$null
+rootCtag
+lrootCtagFT=-@RU=b98378ee-1ab1-48b4-a437-744d4e584cb8@S=2
+~SQLite format 3
+90.
+
+GSQLite format 3
+rootCtagRetries	
+metadataBackoffManager
+
+rootCtag
+VoIS&
+c$2 
+
+SQLite format 3
+'l	`
+
+C
+C

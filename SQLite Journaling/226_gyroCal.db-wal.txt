@@ -1,0 +1,214 @@
+SQLite format 3
+EtableTableInfoTableInfo
+CREATE TABLE TableInfo (TableName TEXT PRIMARY KEY, SoftwareVersion TEXT, SerialNumber TEXT)1
+indexsqlite_autoindex_TableInfo_1TableInfo
+1!%DatabaseIdentifier2420.16.34C7CVD2RXJC6F
+1	DatabaseIdentifier
+HLmSQLite format 3
+tableDatabaseIdentifierDatabaseIdentifier
+CREATE TABLE DatabaseIdentifier (id INTEGER PRIMARY KEY, uuid TEXT){
+indexDatabaseIdentifierIndexDatabaseIdentifier
+CREATE INDEX DatabaseIdentifierIndex ON DatabaseIdentifier (uuid)t
+ _7b
+DatabaseIdentifier
+UC3B707F8-CBE0-4508-8591-7D637C08E461
+U	C3B707F8-CBE0-4508-8591-7D637C08E461
+=!%GyroNonlinearCalibration2420.16.34C7CVD2RXJC6F,
+GyroNonlinearCalibration
+RLMSQLite format 3
+Y
+r
+ 
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)d
+[tableGyroNonlinearCalibrationGyroNonlinearCalibration
+CREATE TABLE GyroNonlinearCalibration (Id INTEGER PRIMARY KEY AUTOINCREMENT, Active INTEGER, Timestamp FLOAT, Temperature FLOAT, BiasX FLOAT, BiasY FLOAT, BiasZ FLOAT)w
+V$
+-Fp"b
+?"%o@
+V$
+Yz@>l
+@%@?
+\*
+
+-Ug<
+-Tp?4
+
+b
+0	
+	h	6	
+W%j@;
+42@<
+GyroNonlinearCalibration&
+UB:M
+-XHSy
+eU@9
+?|c^
+-X%h
+?|eP 
+]K68+
+GyroNonlinearCalibration,
+_@@*
+&@@6
+GyroNonlinearCalibration1
+,j@>W
+GyroNonlinearCalibration2
+<SQLite format 3
+{<?
+
+$
+P
+
+@@=C
+
+F@=;
+?|.
+E_@@D
+GyroNonlinearCalibration>
+-l)`
+kc@85
+GyroNonlinearCalibrationA
+GyroNonlinearCalibrationB
+~&
+\
+V*
+
+?4XB/
+?6XQ`
+]@6T
+:k2@
+
+S0J@5
+GyroNonlinearCalibrationM
+f@7S
+O<@7V
+GyroNonlinearCalibrationO
+s=AV	
+GyroNonlinearCalibrationQ
+U+4:$
+GyroNonlinearCalibrationR
+7|nY@;P
+GyroNonlinearCalibrationT
+?xwW
+GyroNonlinearCalibrationV
+XO:i
+
+GyroNonlinearCalibrationW
+a
+@<
+GyroNonlinearCalibrationX
+GyroNonlinearCalibrationY
+[dr@<
+GyroNonlinearCalibration[
+N?wCt
+
+GyroNonlinearCalibration\
+
+	h*
+~^r
+
+GyroNonlinearCalibration_
+V	6	
+
+	h*****
+**
+92@;
+GyroNonlinearCalibrationa
+K`@;
+GyroNonlinearCalibrationd
+&Lt@;W
+?~f  
+GyroNonlinearCalibratione
+
+b
+0
+?ok<
+GyroNonlinearCalibrationg
+
+b
+0
+0
+0
+0
+0
+
+0
+0
+0
+w@=E
+GyroNonlinearCalibrationh
+	6
+0
+0
+GyroNonlinearCalibrationi
+CE@<
+n@=*
+GyroNonlinearCalibrationo
+S;SQLite format 3
+( fr 
+
+GyroNonlinearCalibrationt
+c@;U
+UF)P(
+GyroNonlinearCalibrationz
+u*	J
+
+mk"@9
+R~@;Y
+
+v
+C
+
+wD
+M8+@8
+WUn@8
+Vw@8
+9O@8
+QI@8
+_DzG@9
+
+;@9!
+}@9O
+H,U@8
+xE
+b@80
+
+y
+F
+
+	z	G	
+eO@8l
+UcqE
+UJE"
+
+c<L
+[nn@9
+x[@8
+
+i
+6
+?}
+v
+?nxg
+U77|
+
+i
+6
+
+j7
+k8
+e@:0
+L@:0
+X@:$
+y@9k
+
+l
+9
+
+7@<O
+U@:
+
+{hri
+
+	m	:	
+E@>O

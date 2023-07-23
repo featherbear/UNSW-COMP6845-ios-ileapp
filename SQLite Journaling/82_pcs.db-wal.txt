@@ -1,0 +1,98 @@
+YSQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+
+
+Us
+EncryptedMasterKeyBlob:MagicCloudPairingCustomKeyBlobZone:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+'()-5;<BCDHLMQRSU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+1~0|0%
+ gtL
+[1tP
+Xv1|
+NfwP
+(40E58D83B50CF26994E2A0DA97ECD3A1401990D5
+*+,YNS.string
++zV0dILtevFkgRiGI85sYZlXehR7kpDhyeePRdhRbYZs
+./01Z$classnameX$classes_
+NSMutableString
+234_
+NSMutableStringXNSStringXNSObject
+6789:ZRecordNameVZoneID
+EncryptedMasterKeyBlob
+?@AXZoneNameYownerName
+"MagicCloudPairingCustomKeyBlobZone_
+__defaultOwner__
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordIDYMasterKey
+./TU_
+CKDRecordPCSData
+VW4_
+CKDRecordPCSDataZCKDPCSData
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5MagicCloudPairingCustomKeyBlobZone:__defaultOwner__A
+WL&
+MagicCloudPairingCustomKeyBlobZone:__defaultOwner__
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+=)[x
+vMdr
+&KL0O
+pvxzT
+hNV&
+_'Df{ko
+r`kx;
+CQ?#
+k7x0
+*Fd	FL
+<&(6
+)0'0%
+ISrq
+(8F66AF2364C9F3C1AA73C50E32726B628E85B1D0
+"#$YNS.string
++z4hZxzS14jTSLj-Dim8ssA5yHUupkDN_RFch8egu0bM
+&'()Z$classnameX$classes_
+*+,_
+012XZoneNameYownerName
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+s	MagicCloudPairingCustomKeyBlobZone:__defaultOwner__
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+	MagicCloudPairingCustomKeyBlobZone:__defaultOwner__
+6r	F
+MagicCloudPairingCustomKeyBlobZone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+sU
+	MagicCloudPairingCustomKeyBlobZone:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+U
+	2757441C-D046-4C70-A8DC-D7FA5FD91FD5
+odwDT
+	fF
+
+SQLite format 3

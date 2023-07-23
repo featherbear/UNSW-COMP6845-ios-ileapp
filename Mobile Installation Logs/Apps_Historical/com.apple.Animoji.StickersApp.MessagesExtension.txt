@@ -1,0 +1,1 @@
+2023-07-08 23:19:41 Made container live com.apple.Animoji.StickersApp.MessagesExtension /private/var/mobile/Containers/Data/PluginKitPlugin/9DA217C3-7A1A-4361-A9CC-40F585AABB27

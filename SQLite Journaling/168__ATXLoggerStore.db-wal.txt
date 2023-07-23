@@ -1,0 +1,16 @@
+FiOi8g
+SQLite format 3
+{tablemetameta
+CREATE TABLE meta (id INTEGER PRIMARY KEY, version INT)~
+Otablelauncheslaunches
+CREATE TABLE launches (ts INTEGER, launchType INTEGER, PRIMARY KEY(ts, launchType)) WITHOUT ROWID
+Fy'$
+9g3B
+w"/
+
+Fv@s
+F(G
+k
+
+*yE
+

@@ -1,0 +1,6 @@
+2023-07-09 14:42:00 Data container moved com.apple.Translate /private/var/mobile/Containers/Data/Application/582C525A-61E3-48C4-83CE-FD83F80E7CB2
+2023-07-09 14:42:00 Made container live com.apple.Translate /private/var/containers/Bundle/Application/8AA3F726-A607-4EFE-8E41-7EDA6873A10A
+2023-07-09 14:42:00 Install successful com.apple.Translate 
+2023-07-08 23:20:24 Made container live com.apple.Translate /private/var/mobile/Containers/Data/Application/7884DD7D-4437-45A4-BC5C-4C1F67999685
+2023-07-08 23:20:24 Made container live com.apple.Translate /private/var/containers/Bundle/Application/E370FD93-8194-40B6-89C0-DB1626C93127
+2023-07-08 23:20:24 Install successful com.apple.Translate 

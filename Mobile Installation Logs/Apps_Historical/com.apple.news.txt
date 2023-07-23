@@ -1,0 +1,6 @@
+2023-07-09 14:42:21 Data container moved com.apple.news /private/var/mobile/Containers/Data/Application/CD316017-2F3B-43F1-A917-2557A71B9DD4
+2023-07-09 14:42:21 Made container live com.apple.news /private/var/containers/Bundle/Application/DD865346-E529-4629-98D0-4D9175480A79
+2023-07-09 14:42:21 Install successful com.apple.news 
+2023-07-08 23:20:27 Made container live com.apple.news /private/var/mobile/Containers/Data/Application/8C965AD7-C0AE-4D82-9316-EE64BB2DDDBA
+2023-07-08 23:20:27 Made container live com.apple.news /private/var/containers/Bundle/Application/8348A76D-6389-4255-84D4-EC09D46008BE
+2023-07-08 23:20:27 Install successful com.apple.news 

@@ -1,0 +1,34 @@
+>{5
+
+com.apple.locationd.bundle-/System/Library/LocationBundles/Routine.bundleRTVisitMonitor.RealtimeHighConfidence
+ExitFenceForCurrentVisitA
+	
+	com.apple.locationd.bundle-/System/Library/LocationBundles/Routine.bundleRTVisitMonitor.RealtimeHighConfidence
+ExitFenceForCurrentVisit
+SQLite format 3
+o
+/
+}tableBeaconFencesBeaconFencesCREATE TABLE BeaconFences (BundleIdentifier TEXT, Identifier TEXT, ProximityUUID TEXT, Major INTEGER, Minor INTEGER, DefinitionMask INTEGER, Options INTEGER, OnBehalfBundleIdentifier TEXT, PRIMARY KEY (BundleIdentifier, Identifier, ProximityUUID, Major, Minor, DefinitionMask, Options, OnBehalfBundleIdentifier))7
+indexsqlite_autoindex_BeaconFences_1BeaconFences
+
+	tableClusterCompassCalibrationClusterCompassCalibrationCREATE TABLE ClusterCompassCalibration (Timestamp FLOAT, MagneticX FLOAT, MagneticY FLOAT, MagneticZ FLOAT, BiasX FLOAT, BiasY FLOAT, BiasZ FLOAT, Level INTEGER, Magnitude FLOAT, Inclination FLOAT, MagnitudeStd FLOAT, InclinationStd FLOAT, Count INTEGER)o
+	tableCompassCalibrationCompassCalibration
+CREATE TABLE CompassCalibration (Timestamp FLOAT, MagneticX FLOAT, MagneticY FLOAT, MagneticZ FLOAT, BiasX FLOAT, BiasY FLOAT, BiasZ FLOAT, Level INTEGER, Magnitude FLOAT, Inclination FLOAT)
+
+tableFencesFences
+CREATE TABLE Fences (BundleId TEXT, Name TEXT, Timestamp FLOAT, Latitude FLOAT, Longitude FLOAT, Distance FLOAT, DesiredAccuracy FLOAT, SetupComplete INTEGER, LastStatus INTEGER, MonitorFlags INTEGER, OnBehalfBundleId TEXT, ReferenceFrame INTEGER, FenceForeignKey INTEGER, PRIMARY KEY (BundleId, Name, OnBehalfBundleId))+
+indexsqlite_autoindex_Fences_1Fences	m
+-tableVerticesVertices
+CREATE TABLE Vertices (Latitude FLOAT, Longitude FLOAT, FenceForeignKey INTEGER)w
+indexDatabaseIdentifierIndexDatabaseIdentifier
+CREATE INDEX DatabaseIdentifierIndex ON DatabaseIdentifier (uuid)t
+tableDatabaseIdentifierDatabaseIdentifier
+CREATE TABLE DatabaseIdentifier (id INTEGER PRIMARY KEY, uuid TEXT){
+EtableTableInfoTableInfo
+CREATE TABLE TableInfo (TableName TEXT PRIMARY KEY, SoftwareVersion TEXT, SerialNumber TEXT)1
+indexsqlite_autoindex_TableInfo_1TableInfo
+EntryFenceForNextPredictedLocationOfInterestA
+1
+	com.apple.locationd.bundle-/System/Library/LocationBundles/Routine.bundleRTVisitMonitor.RealtimeHighConfidence
+EntryFenceForNextPredictedLocationOfInterest
+:Uq>;x

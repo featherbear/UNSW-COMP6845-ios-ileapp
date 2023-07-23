@@ -1,0 +1,290 @@
+VCVoiceShortcutSyncStateManagedObject/
+
+VCVoiceShortcutSuggestionListManagedObject!
+VCVoiceShortcutManagedObject
+TrustedDomain
+TriggerEvent	
+Trigger
+ShortcutRunEvent
+ShortcutQuarantine
+ShortcutIcon
+ShortcutActions
+
+Shortcut
+Collection
+	CloudKitSyncToken
+AccessResourcePermission
+-G%e
+FProduction:_defaultZone:_aea24137b6e80c4ea26460425558079390279B1B-8DDE-418F-85E7-E54CDE655F74
+U	90279B1B-8DDE-418F-85E7-E54CDE655F74
+(crUe
+
+>-Production:_defaultZone:_aea24137b6e80c4ea264604255580793C9E0842E-58AC-4BA9-B227-F9CCBA20A00Ebplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+!'.16:<ACEU$null
+ V$class_
+needsToSaveDatabaseSubscription_
+inFlightRecordModifications[zonesToSave_
+serverChangeTokensByZoneID_
+pendingRecordModifications_
+zoneIDsNeedingToFetchChanges_
+zoneIDsToDelete_
+needsToFetchDatabaseChanges_
+serverChangeTokenForDatabase
+"#
+$%&WNS.keysZNS.objects
+()*+Z$classnameX$classes_
+NSMutableDictionary
+*,-\NSDictionaryXNSObject
+#
+/0
+()23\NSMutableSet
+45-\NSMutableSetUNSSet
+"#
+78&
+()=>_
+NSMutableOrderedSet
+?@-_
+NSMutableOrderedSet\NSOrderedSet
+()FG_
+CKSyncEngineMetadata
+U	C9E0842E-58AC-4BA9-B227-F9CCBA20A00E
+-G&'eVProduction:_defaultZone:_aea24137b6e80c4ea264604255580793C5257A0D-AC49-4D7D-BFC7-40638ABA203Cbplist00
+!'.16<BCDH[cginrw|}
+U$null
+"#
+79&
+=>
+?@AXZoneNameYownerName
+
+YShortcuts_
+__defaultOwner__
+()EF^CKRecordZoneID
+G-^CKRecordZoneID
+IJKLMNOPQR
+STU    Z[ [ 8_`  XPCSKeyID\ZoneishKeyID_
+ClientChangeToken^ShareReference[DeviceCount_
+AssetQuotaUsage_
+PCSModificationDate_
+MetadataQuotaUsage_
+PreviousProtectionEtagVZoneID\Capabilities_
+InvitedKeysToRemove_
+CurrentServerChangeToken
+()de\CKRecordZone
+f-\CKRecordZone
+()jk_
+lm-_
+
+ohq[NS.object.0
+s
+t[uvTtypeXrecordID
+
+xRyz8ZRecordName
+]ShortcutFlags
+ZCKRecordID
+-ZCKRecordID
+CKSyncEngineRecordModification
+U	C5257A0D-AC49-4D7D-BFC7-40638ABA203C
+-G&7>
+Production:_defaultZone:_aea24137b6e80c4ea26460425558079391340DD5-4E27-479F-9B5A-BAB658611785bplist00
+tm#`
+U	91340DD5-4E27-479F-9B5A-BAB658611785
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793F6414478-5804-4C09-93A8-FD1DCB37646Fbplist00
+!'.16:<AEKQRXYZ^bfhU$null
+
+B;D[NS.object.0
+F
+GHIJTtypeXrecordID
+
+LMNOPZRecordNameVZoneID
+
+]ShortcutFlags
+ST
+UVWXZoneNameYownerName
+YShortcuts_
+()[\^CKRecordZoneID
+]-^CKRecordZoneID
+()_`ZCKRecordID
+a-ZCKRecordID
+()cd_
+()ij_
+U	F6414478-5804-4C09-93A8-FD1DCB37646F
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793F40B96DE-1149-4405-B1A0-8B3F834ACA40bplist00
+bplist00
+VX$versionY$archiverT$topX$objects
+	
+
+
+ !"#$%&'()*+,-./0/23/06/////<=/////C/E/0///K60/0/QR/0/_
+TombstonedPublicKeyIDs_
+HasUpdatedParentReference_
+ChainProtectionData]KnownToServer_
+DisplayedHostnameYBaseToken_
+WantsChainPCSKey[RecordCtimeZRoutingKey_
+ProtectionDataEtag_
+&PreviousProtectionDataEtagFromUnitTest_
+ConflictLoserEtags_
+PreviousProtectionDataEtagZRecordType_
+CreatorUserRecordID_
+ParentReferenceYShareEtagXPCSKeyID\ZoneishKeyID_
+ MutableEncryptedPublicSharingKeyTETag_
+PreviousShareReference_
+ModifiedByDevice^ProtectionData_
+UseLightweightPCS^ShareReferenceSURL_
+ChainParentPublicKeyID_
+LastModifiedUserRecordID[RecordMtime_
+WantsPublicSharingKey_
+ZoneProtectionDataEtagYWasCached_
+ChainPrivateKeyZPermissionXRecordID\AllPCSKeyIDs_
+HasUpdatedShareReference_
+PreviousParentReference
+WXY`fghoswz~
+U$null]ShortcutFlags
+Z[\]<_V$classZRecordNameVZoneID
+abZcdeXZoneNameYownerName
+ijklZ$classnameX$classes^CKRecordZoneID
+mn^CKRecordZoneIDXNSObject
+ijpqZCKRecordID
+rnZCKRecordID
+tZuvWNS.time#A
+ijxyVNSDate
+Z[\]|}
+\_defaultZone
+Z[\]
+__defaultOwner__l
+eXljv2hl4i^www.icloud.com
+U	F40B96DE-1149-4405-B1A0-8B3F834ACA40
+ Gn
+
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793B6027241-B63B-42A4-9D52-AE1E6F91CE94bplist00
+N'Z
+
+U	B6027241-B63B-42A4-9D52-AE1E6F91CE94
+-G'n\
+Production:_defaultZone:_aea24137b6e80c4ea2646042555807930012ADE4-49EF-4F74-9970-8636D77AE78Fbplist00
+!%&-37;ABCGLPRWY[U$null
+
+"#$_
+ChangeTokenData
+'()*Z$classnameX$classes_
+CKServerChangeToken
+CKServerChangeTokenXNSObject
+./
+012WNS.keysZNS.objects
+'(45_
+46,\NSDictionary
+/
+8:
+<=
+>?@XZoneNameYownerName
+YShortcuts_
+'(DE^CKRecordZoneID
+F,^CKRecordZoneID
+'(HI\NSMutableSet
+JK,\NSMutableSetUNSSet
+./
+MN2
+'(ST_
+UV,_
+'(\]_
+U	0012ADE4-49EF-4F74-9970-8636D77AE78F
+-G'o
+eProduction:_defaultZone:_aea24137b6e80c4ea264604255580793B198A5F4-EE97-4E9A-9775-855D521EC5F1bplist00
+U	B198A5F4-EE97-4E9A-9775-855D521EC5F1
+Production:_defaultZone:_aea24137b6e80c4ea2646042555807932DB6534A-A0CC-407D-9B24-7AD4192D6C50bplist00
+ !"#$%&'()*+,-./0/2//06/////<=/////C/E/0///K60/0/QR/0/_
+WXY`aghiptx{
+Z[\]^_V$classZRecordNameVZoneID
+bcZdefXZoneNameYownerName
+jklmZ$classnameX$classes^CKRecordZoneID
+no^CKRecordZoneIDXNSObject
+jkqrZCKRecordID
+soZCKRecordID
+uZvwWNS.time#A
+jkyzVNSDate
+Z[\]}~
+bcZef
+eXljv2hl4i
+z<#=
+U	2DB6534A-A0CC-407D-9B24-7AD4192D6C50
+hj#
+Production:_defaultZone:_aea24137b6e80c4ea2646042555807931D655508-338B-45CE-8109-DF7BDB18693Cbplist00
+!%&-5;<=ADEILQUW\^`U$null
+./
+024WNS.keysZNS.objects
+67
+89:XZoneNameYownerName
+	YShortcuts_
+'(>?^CKRecordZoneID
+@,^CKRecordZoneID
+
+"#C
+'(FG_
+FH,\NSDictionary
+/
+JK
+'(MN\NSMutableSet
+OP,\NSMutableSetUNSSet
+./
+RS4
+'(XY_
+Z[,_
+'(ab_
+U	1D655508-338B-45CE-8109-DF7BDB18693C
+OrmSQLite format 3
+SQLite format 3
+BSQLite format 3
+CloudKitSyncToken
+-Production:_defaultZone:_aea24137b6e80c4ea26460425558079391AC7FB8-0705-42F5-8E61-5A7080C47102
+91AC7FB8-0705-42F5-8E61-5A7080C47102
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793BCA179CA-94DA-44D5-BF40-F54CD49D392Abplist00
+BCA179CA-94DA-44D5-BF40-F54CD49D392A
+Production:_defaultZone:_aea24137b6e80c4ea2646042555807937ED4AC5E-FD27-4458-B1F2-84593E1EF9EAbplist00
+!)/018<=AEHMQSXZ\U$null
+"#
+$&(WNS.keysZNS.objects
+*+
+,-.XZoneNameYownerName
+2345Z$classnameX$classes^CKRecordZoneID
+67^CKRecordZoneIDXNSObject
+
+9:;_
+23>?_
+23BC_
+BD7\NSDictionary
+#
+FG
+23IJ\NSMutableSet
+KL7\NSMutableSetUNSSet
+"#
+NO(
+23TU_
+VW7_
+23]^_
+LO`E
+
+7ED4AC5E-FD27-4458-B1F2-84593E1EF9EA
+Production:_defaultZone:_aea24137b6e80c4ea26460425558079311ED8E26-43B0-479D-AA06-04C80CBD8A09bplist00
+11ED8E26-43B0-479D-AA06-04C80CBD8A09
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793C8E02AC9-35C4-41B5-9407-6617E8C48269bplist00
+!%&-5;<=ADEIMRVX]_aU$null
+/
+JL
+'(NO\NSMutableSet
+PQ,\NSMutableSetUNSSet
+./
+ST4
+'(YZ_
+[\,_
+'(bc_
+C8E02AC9-35C4-41B5-9407-6617E8C48269
+r;Production:_defaultZone:_aea24137b6e80c4ea2646042555807934C5FDB78-FD6F-4AF9-899C-192D45D0E68Bbplist00
+4C5FDB78-FD6F-4AF9-899C-192D45D0E68B
+
++\i
+
+Production:_defaultZone:_aea24137b6e80c4ea264604255580793C6230235-B3E1-41FC-8334-3B7BE1C13E47bplist00
+C6230235-B3E1-41FC-8334-3B7BE1C13E47

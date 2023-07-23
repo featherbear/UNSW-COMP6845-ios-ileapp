@@ -1,0 +1,23 @@
+?MVSQLite format 3
+[tablesqlite_stat1sqlite_stat1
+CREATE TABLE sqlite_stat1(tbl,idx,stat)
+atabledelegation_uuiddelegation_uuid
+CREATE TABLE delegation_uuid(user_identity TEXT,uuid TEXT,insertion_date REAL,UNIQUE(user_identity, uuid))=
+indexsqlite_autoindex_delegation_uuid_1delegation_uuid	
+itabletokentoken
+CREATE TABLE token(account_identity TEXT UNIQUE,type INTEGER NOT NULL,expiration_date REAL,data BLOB NOT NULL))
+indexsqlite_autoindex_token_1token
+ytablemetadatametadata
+CREATE TABLE metadata(key TEXT PRIMARY KEY,value TEXT)/
+indexsqlite_autoindex_metadata_1metadata
+tableaccountaccount
+CREATE TABLE account(identity TEXT PRIMARY KEY,storefront TEXT)-
+indexsqlite_autoindex_account_1account
+-+expiration_prune710577337.63167
+-	expiration_prune
+P"p:
+--expiration_prune710593221.257119
+expiration_prune
+--expiration_prune710593261.773104
+--expiration_prune710593303.187923
+--expiration_prune710593425.338304

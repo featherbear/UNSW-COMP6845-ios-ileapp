@@ -1,0 +1,516 @@
+SQLite format 3
+\SQLite format 3
+
+$P
+#tablesuccess_countsuccess_count
+CREATE TABLE success_count (
+event_type STRING PRIMARY KEY,
+success_count INTEGER,
+hard_failure_count INTEGER,
+soft_failure_count INTEGER
+)9
+
+indexsqlite_autoindex_success_count_1success_count3
+triggermaintain_ring_buffer_samples_v2samplesCREATE TRIGGER maintain_ring_buffer_samples_v2 AFTER INSERT ON samples
+BEGIN
+DELETE FROM samples WHERE id <= NEW.id - 1000;
+END
+Ytablesamplessamples	CREATE TABLE samples (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,
+name STRING,
+value REAL
+))	
+triggermaintain_ring_buffer_notes_v2notesCREATE TRIGGER maintain_ring_buffer_notes_v2 AFTER INSERT ON notes
+BEGIN
+DELETE FROM notes WHERE id <= NEW.id - 1000;
+ENDl
+7tablenotesnotes
+CREATE TABLE notes (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_soft_failures_v2soft_failuresCREATE TRIGGER maintain_ring_buffer_soft_failures_v2 AFTER INSERT ON soft_failures
+BEGIN
+DELETE FROM soft_failures WHERE id <= NEW.id - 1000;
+END
+Gtablesoft_failuressoft_failures
+CREATE TABLE soft_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)Q
+/triggermaintain_ring_buffer_hard_failures_v2hard_failuresCREATE TRIGGER maintain_ring_buffer_hard_failures_v2 AFTER INSERT ON hard_failures
+BEGIN
+DELETE FROM hard_failures WHERE id <= NEW.id - 1000;
+ENDP
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+Gtablehard_failureshard_failures
+CREATE TABLE hard_failures (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+timestamp REAL,data BLOB
+)i
+tablePropertiesProperties
+CREATE TABLE Properties (
+    key    text primary key,
+    value  text
+)3
+indexsqlite_autoindex_Properties_1Properties
+-Created710577211.148760
+	Created
+'
+SchemaVersionE3BB7685C22335A3E3FC481B0D59A4F1B2F34031517BC31154745553BEA9C175
+SchemaVersion
+CloudServicesAnalyticsRecoverRequest
+U	CloudServicesAnalyticsRecoverRequest
+bplist00
+	
+
+
+YeventTimeUbuildWproductYeventTypeZerrorChain[errorDomainZeventClassWmodelidYerrorCode#Bx
+fU18G82YiPhone OS_
+'CloudServicesAnalyticsDoubleRecoveryPCS_
+EscrowServiceErrorDomain--2003:_
+EscrowServiceErrorDomain
+ZiPhone10,1
+.,9
+'	hard_failures
+N
+
+
+CloudServicesAnalyticsDoubleRecoveryPCS)
+CloudServicesAnalyticsDoubleRecoveryPCS
+CloudServicesAnalyticsiCDPKeybag,
+CloudServicesAnalyticsiCDPKeybag
+?hx
+
+CloudServicesiCloudIdentity%
+CloudServicesiCloudIdentity
+CloudServicesAnalyticsiCDPKeybagRecoveryKey 
+CloudServicesAnalyticsiCDPKeybagRecoveryKey
+Z2bplist00
+U18G82YiPhone OS_
+%CloudServicesRecoverEscrowWithRequest_
+EscrowProxyErrorDomain-409:_
+hard_failures
+CloudServicesRecoverEscrowWithRequest0
+CloudServicesRecoverEscrowWithRequest
+q[9t
+
+y'_
+
+CloudServicesAnalyticsiCDPKeybagRecoveryKey	
+CloudServicesRecoverEscrowWithRequest1	
+CloudServicesRecoverEscrowWithRequest
+/
+CloudServicesRestoreBackupName*
+
+CloudServicesRestoreBackupName)
+CloudServicesRestoreBackupName
+CloudServicesRestoreBackupName)
+CloudServicesAnalyticsRestoreKeychainWithBackupBag$
+CloudServicesAnalyticsRestoreKeychainWithBackupBag
+"
+CloudServicesAnalyticsRestoreKeychainWithBackupBag$
+\Z-
+
+3U18G82YiPhone OS_
+'CloudServicesAnalyticsDoubleGetClubCert_
+EscrowProxyErrorDomain-412:_
+CloudServicesAnalyticsDoubleGetClubCert7
+
+CloudServicesAnalyticsDoubleGetClubCert
+CloudServicesRestoreBackupName	&
+CloudServicesRestoreBackupName
+&
+CloudServicesRestoreBackupName&
+CloudServicesRestoreBackupName&
+-YoW
+xWdn
+,bplist00
+&CloudServicesAnalyticsDoubleEnrollment_
+:EscrowServiceErrorDomain--1003:EscrowProxyErrorDomain-412:_
+5F1H
+CloudServicesAnalyticsDoubleEnrollment,
+ZGK
+
+CloudServicesAnalyticsDoubleEnrollment
+CloudServicesRecoverEscrowWithRequest1
+CloudServicesBackupForViewName*
+
+CloudServicesBackupForViewName
+CloudServicesSetConfirmedManifest+
+CloudServicesSetConfirmedManifest
+{I
+
+
+CloudServicesBackupForViewName *
+CloudServicesSetConfirmedManifest!"
+bLNE
+CloudServicesBackupForViewName"*
+CloudServicesSetConfirmedManifest#"
+U\uT
+CloudServicesBackupForViewName$*
+CloudServicesBackupForViewName%*
+CloudServicesSetConfirmedManifest&"
+CloudServicesBackupForViewName'*
+CloudServicesSetConfirmedManifest("
+CloudServicesBackupForViewName)*
+CloudServicesSetConfirmedManifest*"
+CloudServicesBackupForViewName	+
+fMx5
+CloudServicesBackupForViewName+*
+CloudServicesSetConfirmedManifest,"
+CloudServicesBackupForViewName
++
+CloudServicesBackupForViewName-*
+or+kT
+
+CloudServicesSetConfirmedManifest	$-
+CloudServicesSetConfirmedManifest."
+CloudServicesSetConfirmedManifest	$/
+CloudServicesBackupForViewName+
+CloudServicesBackupForViewName/*
+CloudServicesSetConfirmedManifest
+$/
+CloudServicesSetConfirmedManifest0"
+CloudServicesSetConfirmedManifest
+$1
+CloudServicesBackupForViewName+
+CloudServicesBackupForViewName1*
+CloudServicesSetConfirmedManifest$1
+CloudServicesSetConfirmedManifest2"
+CloudServicesSetConfirmedManifest$3
+CloudServicesBackupForViewName3*
+CloudServicesSetConfirmedManifest$3
+9VxR
+
+CloudServicesSetConfirmedManifest4"
+CloudServicesSetConfirmedManifest$5
+CloudServicesBackupForViewName5*
+CloudServicesSetConfirmedManifest
+$5
+CloudServicesSetConfirmedManifest6"
+CloudServicesSetConfirmedManifest
+$7
+CloudServicesBackupForViewName7*
+CloudServicesSetConfirmedManifest8"
+Rj,
+
+CloudServicesBackupForViewName9*
+:a\
+
+CloudServicesSetConfirmedManifest:"
+CloudServicesBackupForViewName;*
+!x&Nb
+CloudServicesSetConfirmedManifest<"
+d:Lx4vr
+CloudServicesBackupForViewName=*
+CloudServicesSetConfirmedManifest>"
+s%x
+
+CloudServicesBackupForViewName?*
+|8t$C
+CloudServicesSetConfirmedManifest@"
+CloudServicesBackupForViewNameA*
+CloudServicesSetConfirmedManifestB"
+CloudServicesBackupForViewNameC*
+CloudServicesSetConfirmedManifestD"
+CloudServicesBackupForViewNameE*
+CloudServicesSetConfirmedManifestF"
+CloudServicesBackupForViewNameG*
+CloudServicesSetConfirmedManifestH"
+dV#P
+CloudServicesBackupForViewNameI*
+CloudServicesSetConfirmedManifestJ"
+CloudServicesBackupForViewNameK*
+CloudServicesSetConfirmedManifestL"
+CloudServicesBackupForViewNameM*
+CloudServicesSetConfirmedManifestN"
+CloudServicesBackupForViewNameO*
+CloudServicesSetConfirmedManifestP"
+CloudServicesBackupWithChangesFull'P
+CloudServicesBackupWithChangesFullQ%
+CloudServicesBackupWithChangesIncremental'Q
+CloudServicesBackupWithChangesIncrementalR&
+CloudServicesBackupWithChangesIncremental
+CloudServicesBackupWithChangesIncrementalS&
+CloudServicesBackupWithChangesIncrementalT&
+CloudServicesBackupWithChangesIncrementalU&
+;,Y~
+CloudServicesBackupWithChangesIncrementalV&
+zi7*
+CloudServicesBackupWithChangesIncrementalW&
+CloudServicesBackupWithChangesIncrementalX&
+CloudServicesBackupWithChangesIncrementalY&
+CloudServicesBackupWithChangesIncremental	'Q
+CloudServicesBackupWithChangesIncrementalZ&
+CloudServicesBackupWithChangesIncremental
+'Q
+CloudServicesBackupWithChangesIncremental[&
+CloudServicesBackupWithChangesIncremental'Q
+CloudServicesBackupWithChangesIncremental\&
+CloudServicesBackupWithChangesIncremental'Q
+CloudServicesBackupWithChangesIncremental]&
+NQG,@L
+CloudServicesBackupWithChangesIncremental^&
+CloudServicesBackupWithChangesIncremental_&
+Nh/
+
+CloudServicesBackupWithChangesIncremental`&
+CloudServicesBackupWithChangesIncrementala&
+CloudServicesBackupWithChangesIncrementalb&
+CloudServicesBackupWithChangesIncrementalc&
+CloudServicesBackupWithChangesIncrementald&
+wfbU18G82YiPhone OS_
+
+u
+G
+CloudServicesAnalyticsDoubleEnrollmente+
+uU18G82YiPhone OS_
+CloudServicesAnalyticsDoubleEnrollmentf+
+CloudServicesBackupForViewNameg*
+CloudServicesBackupWithChangesFull
+CloudServicesSetConfirmedManifesth"
+
+u
+G
+
+CloudServicesBackupForViewNamei*
+CloudServicesBackupWithChangesFull
+
+CloudServicesSetConfirmedManifestj"
+CloudServicesBackupForViewNamek*
+p[~
+
+CloudServicesSetConfirmedManifestl"
+s8f.
+CloudServicesBackupForViewNamem*
+CloudServicesSetConfirmedManifestn"
+CloudServicesBackupForViewName 'n
+CloudServicesBackupForViewNameo*
+CloudServicesBackupForViewName 
+CloudServicesSetConfirmedManifestp"
+F9)
+
+
+CloudServicesBackupForViewName!'p
+CloudServicesBackupForViewNameq*
+CloudServicesSetConfirmedManifest $q
+CloudServicesBackupForViewName!
+CloudServicesSetConfirmedManifestr"
+CloudServicesSetConfirmedManifest 
+CloudServicesBackupForViewName",
+CloudServicesBackupForViewNames*
+CloudServicesBackupForViewName#,
+CloudServicesBackupForViewNamet*
+CloudServicesSetConfirmedManifest!$t
+CloudServicesSetConfirmedManifestu"
+CloudServicesBackupForViewName$'u
+CloudServicesSetConfirmedManifest!
+CloudServicesBackupForViewNamev*
+CloudServicesBackupForViewName$
+CloudServicesSetConfirmedManifest",
+CloudServicesSetConfirmedManifestw"
+CloudServicesBackupForViewName%'w
+CloudServicesBackupForViewNamex*
+CloudServicesSetConfirmedManifest#$x
+CloudServicesBackupForViewName%
+CloudServicesSetConfirmedManifesty"
+CloudServicesSetConfirmedManifest#
+CloudServicesBackupForViewName&,
+CloudServicesBackupForViewNamez*
+CloudServicesSetConfirmedManifest$$z
+CloudServicesSetConfirmedManifest{"
+CloudServicesBackupForViewName''{
+CloudServicesSetConfirmedManifest$
++6m
+
+CloudServicesBackupForViewName|*
+J_e;9
+
+
+CloudServicesBackupForViewName'
+CloudServicesSetConfirmedManifest%,
+QG=
+
+CloudServicesSetConfirmedManifest}"
+CloudServicesBackupForViewName('}
+CloudServicesBackupForViewName~*
+CloudServicesSetConfirmedManifest&$~
+CloudServicesBackupForViewName(
+CloudServicesSetConfirmedManifest&
+CloudServicesBackupForViewName),
+MKp4
+CloudServicesSetConfirmedManifest'$
+CloudServicesBackupWithChangesFullQ
+*H3D
+
+
+CloudServicesBackupForViewName*'
+CloudServicesSetConfirmedManifest'
+CloudServicesBackupForViewName*
+CloudServicesSetConfirmedManifest(,
+76{
+
+
+CloudServicesBackupForViewName+'
+CloudServicesSetConfirmedManifest)$
+CloudServicesBackupForViewName+
+;|RR
+
+O<h
+
+
+CloudServicesSetConfirmedManifest)
+CloudServicesBackupForViewName,,
+CloudServicesSetConfirmedManifest*$
+CloudServicesBackupForViewName-'
+CloudServicesSetConfirmedManifest*
+CloudServicesBackupForViewName-
+CloudServicesSetConfirmedManifest+,
+Fk$J
+
+i^0z$l%
+
+
+CloudServicesBackupForViewName.'	
+_fW
+
+W8`D
+CloudServicesBackupForViewName.'
+CloudServicesSetConfirmedManifest,,
+.5axV
+CloudServicesBackupForViewName/'
+CloudServicesBackupForViewName/'
+
+CloudServicesSetConfirmedManifest-,
+CloudServicesBackupForViewName0'
+
+&^y
+
+VC
+
+
+CloudServicesBackupForViewName0'
+CloudServicesSetConfirmedManifest.,
+>`
+
+
+CloudServicesBackupForViewName1'
+6P
+
+
+CloudServicesSetConfirmedManifest/,
+CloudServicesBackupForViewName2'
+CloudServicesSetConfirmedManifest0,
+yLFJ
+CloudServicesBackupForViewName3'
+Y8VMX
+0p	4
+CloudServicesSetConfirmedManifest1,
+CloudServicesBackupForViewName4'
+CloudServicesSetConfirmedManifest2,
+}i:V
+CloudServicesBackupForViewName5'
+
+9r
+
+CloudServicesSetConfirmedManifest3,
+CloudServicesBackupForViewName6'
+CloudServicesSetConfirmedManifest4,
+CloudServicesBackupForViewName7'
+CloudServicesSetConfirmedManifest5,
+CloudServicesBackupForViewName8'
+*	u@c
+CloudServicesSetConfirmedManifest6,
+28]
+
+CloudServicesBackupForViewName9'
+CloudServicesBackupForViewName9'!
+CloudServicesSetConfirmedManifest7,
+CloudServicesBackupForViewName:'!
+CloudServicesBackupForViewName:'#
+CloudServicesSetConfirmedManifest8,
+
+b
+
+
+CloudServicesBackupForViewName;'#
+s`p;
+CloudServicesBackupForViewName;'%
+CloudServicesSetConfirmedManifest9,
+CloudServicesBackupForViewName<'%
+CloudServicesBackupForViewName<''
+CloudServicesSetConfirmedManifest:,
+LA
+
+
+Q
+u
+G
+
+v]y
+
+
+CloudServicesBackupWithChangesIncrementald
+N
+
+u
+Q
+G
+
+X
+
+
+WawE
+
+
+Dc
+
+
+P
+
+u
+~lv
+
+
+$fwXb
+b
+
+u
+M
+
+u
+]v
+
+u
+n'
+
+
+CloudServicesBackupWithChangesIncremental 
+CloudServicesBackupWithChangesIncremental!
+{
+
+u
+CloudServicesBackupWithChangesIncremental"
+CloudServicesBackupWithChangesIncremental#
+CloudServicesBackupWithChangesIncremental$
+np
+
+
+xI
+
+u
+CloudServicesBackupWithChangesIncremental%
+Eu
+
+u
+CloudServicesBackupWithChangesIncremental&
+CloudServicesBackupWithChangesIncremental'
+CloudServicesBackupWithChangesIncremental(
+CloudServicesBackupWithChangesIncremental)
+CloudServicesBackupWithChangesIncremental*
+"tb(
+
+

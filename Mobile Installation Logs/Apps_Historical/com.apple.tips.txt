@@ -1,0 +1,6 @@
+2023-07-09 14:42:03 Data container moved com.apple.tips /private/var/mobile/Containers/Data/Application/C8230ACB-4DBF-4322-8C3D-DC2385F16754
+2023-07-09 14:42:03 Made container live com.apple.tips /private/var/containers/Bundle/Application/33F8D232-DF55-4302-8B2D-1AC708298D67
+2023-07-09 14:42:03 Install successful com.apple.tips 
+2023-07-08 23:20:24 Made container live com.apple.tips /private/var/mobile/Containers/Data/Application/817E7C4E-FA2A-41BE-BB38-A1C3E7E21911
+2023-07-08 23:20:24 Made container live com.apple.tips /private/var/containers/Bundle/Application/7A63272F-D677-4521-8821-E4D12F88A1B7
+2023-07-08 23:20:24 Install successful com.apple.tips 

@@ -1,0 +1,175 @@
+raSQLite format 3
+atableschema_versionschema_version
+CREATE TABLE schema_version (schema_name TEXT, schema_version INTEGER DEFAULT 0, PRIMARY KEY(schema_name));
+indexsqlite_autoindex_schema_version_1schema_version
+ySQLite format 3
+app_usage6
+	app_usage
+?qAI
+Etableapp_events_ocelotapp_events_ocelot
+CREATE TABLE app_events_ocelot (pid INTEGER, account_id INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, count INTEGER, cumulative_user_count INTEGER, device_vendor_id TEXT, device_vendor_id_repaired INTEGER, event_type INTEGER, event_subtype INTEGER, evid INTEGER, has_been_posted INTEGER DEFAULT 0, is_beta INTEGER, is_clip INTEGER, is_temporary INTEGER DEFAULT 0, item_id INTEGER, item_name TEXT, launch_time DATETIME, launch_end_time DATETIME, week_start_time DATETIME, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), usage_time INTEGER, PRIMARY KEY (pid))
+}tablecurrent_app_installscurrent_app_installs
+CREATE TABLE current_app_installs (pid INTEGER, bundle_id TEXT, clip_affiliate_token TEXT, clip_campaign TEXT, clip_campaign_token TEXT, clip_provider_token TEXT, clip_ref_source TEXT, clip_ref_type TEXT, clip_third_party_with_no_app_referrer INTEGER, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))
+ktableapp_events_crossfireapp_events_crossfire
+CREATE TABLE app_events_crossfire (pid INTEGER, account_id INTEGER, bundle_id TEXT, bundle_version TEXT, clip_affiliate_token TEXT, clip_app_type TEXT, clip_campaign TEXT, clip_campaign_token TEXT, clip_provider_token TEXT, clip_ref_source TEXT, clip_ref_type TEXT, clip_third_party_with_no_app_referrer INTEGER, cohort TEXT, count INTEGER, cumulative_user_count INTEGER, device_vendor_id TEXT, device_vendor_id_repaired INTEGER, event_type INTEGER, event_subtype INTEGER, evid INTEGER, has_been_posted INTEGER DEFAULT 0, is_beta INTEGER, is_clip INTEGER, is_temporary INTEGER DEFAULT 0, item_id INTEGER, item_name TEXT, launch_time DATETIME, launch_end_time DATETIME, week_start_time DATETIME, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), usage_time INTEGER, PRIMARY KEY (pid))
+Qtableaccount_eventsaccount_events
+CREATE TABLE account_events (pid INTEGER, active_start_time DATETIME, active_end_time DATETIME, account_id INTEGER, apple_id TEXT, alt_dsid TEXT, event_type INTEGER, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))
+!^%Z
+tableapp_usage_session_reporter_keysapp_usage_session_reporter_keys
+CREATE TABLE app_usage_session_reporter_keys (pid INTEGER, bundle_id TEXT, session_reporter_key TEXT, last_refresh DATETIME, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))
+_tableapp_cluster_mappingsapp_cluster_mappings
+CREATE TABLE app_cluster_mappings (pid INTEGER, bundle_id TEXT, cluster_id INTEGER, cluster_version INTEGER, launches_weight INTEGER, item_id INTEGER, timestamp DATETIME DEFAULT (timestamp()), usage_weight INTEGER, PRIMARY KEY (pid))
+Atablecurrent_apps_personalizationcurrent_apps_personalization
+CREATE TABLE current_apps_personalization (pid INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, device_vendor_id TEXT, evid INTEGER, is_beta INTEGER, is_clip INTEGER, is_prior INTEGER, item_id INTEGER, item_name TEXT, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), vendor_name TEXT, PRIMARY KEY (pid))
+=tablecurrent_apps_ocelot_payoutcurrent_apps_ocelot_payout
+CREATE TABLE current_apps_ocelot_payout (pid INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, device_vendor_id TEXT, evid INTEGER, is_beta INTEGER, is_clip INTEGER, is_prior INTEGER, item_id INTEGER, item_name TEXT, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), vendor_name TEXT, PRIMARY KEY (pid))
+/tablecurrent_apps_ocelotcurrent_apps_ocelot
+CREATE TABLE current_apps_ocelot (pid INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, device_vendor_id TEXT, evid INTEGER, is_beta INTEGER, is_clip INTEGER, is_prior INTEGER, item_id INTEGER, item_name TEXT, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), vendor_name TEXT, PRIMARY KEY (pid))
+5tablecurrent_apps_crossfirecurrent_apps_crossfire
+CREATE TABLE current_apps_crossfire (pid INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, device_vendor_id TEXT, evid INTEGER, is_beta INTEGER, is_clip INTEGER, is_prior INTEGER, item_id INTEGER, item_name TEXT, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), vendor_name TEXT, PRIMARY KEY (pid))
+gtablelaunch_eventslaunch_eventsCREATE TABLE launch_events (pid INTEGER, bundle_id TEXT, containing_bundle_id, event_source INTEGER, is_extension INTEGER, launch_end_time DATETIME, launch_start_time DATETIME, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))n	
+gtablelaunch_event_sync_metadatalaunch_event_sync_metadata
+CREATE TABLE launch_event_sync_metadata (pid INTEGER, last_duet_sync DATETIME, spotlight_migrated_date DATETIME, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))
+Wtableapp_events_personalizationapp_events_personalization	CREATE TABLE app_events_personalization (pid INTEGER, account_id INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, count INTEGER, cumulative_user_count INTEGER, device_vendor_id TEXT, device_vendor_id_repaired INTEGER, event_type INTEGER, event_subtype INTEGER, evid INTEGER, has_been_posted INTEGER DEFAULT 0, is_beta INTEGER, is_clip INTEGER, is_temporary INTEGER DEFAULT 0, item_id INTEGER, item_name TEXT, launch_time DATETIME, launch_end_time DATETIME, week_start_time DATETIME, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), usage_time INTEGER, PRIMARY KEY (pid))
+Stableapp_events_ocelot_payoutapp_events_ocelot_payout
+CREATE TABLE app_events_ocelot_payout (pid INTEGER, account_id INTEGER, bundle_id TEXT, bundle_version TEXT, cohort TEXT, count INTEGER, cumulative_user_count INTEGER, device_vendor_id TEXT, device_vendor_id_repaired INTEGER, event_type INTEGER, event_subtype INTEGER, evid INTEGER, has_been_posted INTEGER DEFAULT 0, is_beta INTEGER, is_clip INTEGER, is_temporary INTEGER DEFAULT 0, item_id INTEGER, item_name TEXT, launch_time DATETIME, launch_end_time DATETIME, week_start_time DATETIME, short_version TEXT, storefront INTEGER, timestamp DATETIME DEFAULT (timestamp()), usage_time INTEGER, PRIMARY KEY (pid))
+4J4E
+
+SQLite format 3
+install_attribution6
+dT@+
+
+install_attribution
+`t9
+
+
+z
+%
+
+Otableinstall_attribution_pingback_fetch_infoinstall_attribution_pingback_fetch_info
+CREATE TABLE install_attribution_pingback_fetch_info (app_adam_id INTEGER, fetch_pingback_url TEXT, retry_count INTEGER, UNIQUE(app_adam_id) ON CONFLICT REPLACE)n
+indexsqlite_autoindex_install_attribution_pingback_fetch_info_1install_attribution_pingback_fetch_info
+indexsqlite_autoindex_install_attribution_impression_1install_attribution_impression
+wtableinstall_attribution_impressioninstall_attribution_impression
+CREATE TABLE install_attribution_impression (app_adam_id INTEGER, ad_network_id TEXT, campaign_id INTEGER, impression_id TEXT, source_app_adam_id INTEGER, timestamp INTEGER, attribution_signature TEXT, version TEXT, local_timestamp INTEGER, fidelity_type INTEGER, source_app_bundle_id INTEGER, process_name TEXT, UNIQUE(app_adam_id, source_app_adam_id) ON CONFLICT REPLACE)Y
+indexsqlite_autoindex_install_attribution_pingbacks_1install_attribution_pingbacks
+5tableinstall_attribution_pingbacksinstall_attribution_pingbacks
+CREATE TABLE install_attribution_pingbacks (app_adam_id INTEGER, ad_network_id TEXT, campaign_id INTEGER, transaction_id TEXT, attribution_signature TEXT, source_app_adam_id INTEGER, conversion_value INTEGER, conversion_value_timestamp INTEGER, should_send_conversion_value INTEGER, pingback_url TEXT, redownload INTEGER, registered INTEGER, retry_count INTEGER, retry_timestamp INTEGER, version TEXT, local_timestamp INTEGER, fidelity_type INTEGER, is_winning_pingback INTEGER DEFAULT 1, UNIQUE(transaction_id) ON CONFLICT REPLACE)S
+indexsqlite_autoindex_install_attribution_params_1install_attribution_params
+tableinstall_attribution_paramsinstall_attribution_params
+CREATE TABLE install_attribution_params (app_adam_id INTEGER, ad_network_id TEXT, campaign_id INTEGER, impression_id TEXT, timestamp INTEGER, attribution_signature TEXT, source_app_adam_id INTEGER, version TEXT, local_timestamp INTEGER, fidelity_type INTEGER, UNIQUE(app_adam_id, ad_network_id) ON CONFLICT REPLACE)
+QvSQLite format 3
+&SQLite format 3
+com.apple.purplebuddy*Z
+n[f#
+tom.jonsey91@gmail.com000284-08-7a1544ed-1edd-4546-bba9-0ac8e7d9cb73*Z
+6ySQLite format 3
+purchase_history7z
+_L[C
+
+purchase_history
+)tablepurchase_history_db_propertiespurchase_history_db_properties
+CREATE TABLE purchase_history_db_properties (key TEXT PRIMARY KEY, value TEXT)[
+indexsqlite_autoindex_purchase_history_db_properties_1purchase_history_db_properties 
+Otablepurchase_history_appspurchase_history_apps
+CREATE TABLE purchase_history_apps (pid INTEGER PRIMARY KEY, bundle_id TEXT, content_rating_flags INTEGER, date_purchased DATETIME, developer_name TEXT, family_shared INTEGER, first_party INTEGER, is_ios_binary_macos_available INTEGER, is_ios_binary_macos_compatible INTEGER, has_messages_extension INTEGER, hidden INTEGER, hidden_from_springboard INTEGER, icon_url_template TEXT, is_32_bit_only INTEGER, is_preorder INTEGER, is_verified_for_macos INTEGER, long_title TEXT, mac_app_required_capabilities JSON, media_kind INTEGER, oval_icon_url_template TEXT, preflight_package_url URL, product_url URL, purchaser_dsid INTEGER, redownload_params TEXT, required_capabilities JSON, requires_rosetta INTEGER, runs_on_apple_silicon INTEGER, runs_on_intel INTEGER, store_item_id INTEGER, supports_ipad INTEGER, supports_iphone INTEGER, supports_mac INTEGER, purchase_token INTEGER, locker_item_id INTEGER, genre_id INTEGER, genre_name TEXT, watch_app_delivered_in_ios_app INTEGER, watch_app_runs_independently INTEGER, watch_app_watch_only INTEGER, supports_layered_image INTEGER, has_p3 INTEGER, title TEXT, circular_icon_url TEXT, UNIQUE(purchaser_dsid, store_item_id) ON CONFLICT REPLACE)I
+indexsqlite_autoindex_purchase_history_apps_1purchase_history_apps
+iap_info2
+iap_info
+gtablelaunch_eventslaunch_eventsCREATE TABLE launch_events (pid INTEGER, bundle_id TEXT, containing_bundle_id, event_source INTEGER, is_extension INTEGER, launch_end_time DATETIME, launch_start_time DATETIME, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (pid))
+indexsqlite_autoindex_iap_info_iaps_1iap_info_iaps"
+tableiap_info_db_propertiesiap_info_db_properties#CREATE TABLE iap_info_db_properties (key TEXT PRIMARY KEY, value TEXT)K 
+indexsqlite_autoindex_iap_info_db_properties_1iap_info_db_properties$
+tableiap_info_iapsiap_info_iaps!CREATE TABLE iap_info_iaps (adam_id INTEGER, app_adam_id INTEGER, purchase_date DATETIME, last_modified_date DATETIME, expiration_date DATETIME, type INTEGER, dsid INTEGER, pid INTEGER PRIMARY KEY, intro_offer_status INTEGER, sub_family_id TEXT, auto_renew_status INTEGER, UNIQUE(dsid, adam_id) ON CONFLICT REPLACE)
+a-LastUpdatedTimestampPropertyKey209777656501688884475.03925(
+ServerRevisionPropertyKey209777656502
+LastUpdatedTimestampPropertyKey20977765650
+U	ServerRevisionPropertyKey20977765650
+r`V
+storekit_purchase_intents6
+storekit_purchase_intents
+tableiap_purchase_intentsiap_purchase_intents%CREATE TABLE iap_purchase_intents (bundle_id TEXT, product_id TEXT, app_name TEXT, product_name TEXT, timestamp DATETIME DEFAULT (timestamp()), PRIMARY KEY (product_id, bundle_id) ON CONFLICT REPLACE)G"
+indexsqlite_autoindex_iap_purchase_intents_1iap_purchase_intents&
+com.apple.springboard.app-library*Z]*Z[*Z
+com.apple.springboard.today-view*ZQ*ZO*Z
+a-LastUpdatedTimestampPropertyKey209777656501688884992.15011(
+k[1~
+com.apple.advpRe
+bf261f77-e779-4721-bf4a-e5c43703b7b8
+9d)oMDYCGQDo9uhC3RXCCdCtkrg6i0u9RzK+tMObDGcCGQCSYwB1sTmjKdM/4WhNQgeAbBhNwbBxAKs=
+9d2:
+com.apple.advp
+9d2>
+@ZD]&n
+pD<I
+U!ServerRevisionPropertyKey209777656501688885171=
+a-LastUpdatedTimestampPropertyKey209777656501688884992.15011
+ServerRevisionPropertyKey20977765650
+com.jdtech.CalculatorVault
+X*Z3Janki Panchanihttps://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6d/f9/7b/6df97b30-4217-80e4-8e3a-b00eda4111f7/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-85-220.png/{w}x{h}bb.{f}Secrete Calculator Lock Vault
+https://apps.apple.com/au/app/secrete-calculator-lock-vault/id1232282231
+productType=C&price=0&salableAdamId=1232282231&pricingParameters=STDRDL&pg=default&appExtVrsId=821989589&ownerDsid=20977765650["armv7"]Is"wd
+rUtilitiesCalculator+
+Is"w8A
+U!ServerRevisionPropertyKey209777656501688885171
+a-LastUpdatedTimestampPropertyKey209777656501688885173.14368
+` "
+
+)com.jdtech.CalculatorVault910|date=1688884200000&sf=143460&pgtp=Search&pgid=65e00ada-eaee-454d-ab9c-902efc2a090d&prpg=Genre_179183&ctxt=Search&issrch=16074FB35-7069-48DB-8457-98231BC624BC0
+Is"wCalculator+1.0
+0d*Z8Janki Panchani
+ZSQLite format 3
+storekit_messages6
+storekit_messages
+!tablestorekit_revocationsstorekit_revocations)CREATE TABLE storekit_revocations (dsid INTEGER, bundle_id TEXT, product_id TEXT, UNIQUE(dsid, bundle_id, product_id) ON CONFLICT REPLACE)9
+indexsqlite_autoindex_storekit_revocations_1storekit_revocations*)#
+tablestorekit_messagesstorekit_messages'CREATE TABLE storekit_messages (dsid INTEGER, bundle_id TEXT, status INTEGER, UNIQUE(dsid, bundle_id) ON CONFLICT REPLACE)A$
+indexsqlite_autoindex_storekit_messages_1storekit_messages(}!
+Tt#
+
+a-LastUpdatedTimestampPropertyKey209777656501688894148.09709(
+a-LastUpdatedTimestampPropertyKey209777656501688894148.48081
+-c@SQLite format 3
+HPSQLite format 3
+
+xSQLite format 3
+pSQLite format 3
+AXSQLite format 3
+(SQLite format 3
+`SQLite format 3
+
+^
+com.apple.CoreAuthUI*Z
+com.apple.InCallService*Z
+com.apple.MobileSMS*Z
+com.apple.facetime*Z
+com.apple.mobilephone*Z
+com.apple.camera*Z
+com.apple.Preferences*Z:*Z
+com.apple.Passbook*Z
+com.apple.mobilesafari*ZU*ZS*Z
+com.jdtech.CalculatorVault*ZS*Z8*Z
+com.apple.corelocation.CoreLocationVanillaWhenInUseAuthPromptPlugin*Z
+com.apple.Maps*Z&*Z
+com.apple.springboard.home-screen-open-folder*Z
+com.apple.MobileAddressBook*Z
+com.apple.mobilenotes*Z
+com.apple.PassbookUIService*Z
+com.apple.corelocation.CoreLocationTemporaryPreciseAuthPromptPlugin*Z
+com.apple.AppStore*Z
+com.apple.mobileslideshow*Z
+com.apple.springboard.app-library*ZF*ZD*Z
+com.apple.springboard.today-view*Z
+com.apple.MobileStore*Z
+kjc.loader*Z
+com.apple.springboard.app-library*Z
+D
+4`
+
+kjc.loader*\
+com.apple.Preferences*\
+com.apple.mobilesafari*\
+com.apple.springboard.today-view*\
+!RBr
+0d*\
+[Janki Panchani

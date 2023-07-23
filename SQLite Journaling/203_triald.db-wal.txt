@@ -1,0 +1,78 @@
+SQLite format 3
+WtabletaskDependenciestaskDependencies
+CREATE TABLE taskDependencies (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     taskId INTEGER NOT NULL,     dependentTaskId INTEGER NOT NULL,     UNIQUE (taskId, dependentTaskId),     FOREIGN KEY (taskId) REFERENCES tasks (rowid),     FOREIGN KEY (dependentTaskId) REFERENCES tasks (rowid) )?
+indexsqlite_autoindex_taskDependencies_1taskDependencies
+iindexix_taskTags_tagtaskTags
+CREATE INDEX ix_taskTags_tag ON taskTags (tag)c
+tabletaskTagstaskTags
+CREATE TABLE taskTags (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     taskId INTEGER NOT NULL,     tag TEXT NOT NULL,     UNIQUE (taskId, tag),     FOREIGN KEY (taskId) REFERENCES tasks (rowid) )/
+
+indexsqlite_autoindex_taskTags_1taskTags
+aindexix_tasks_hashtasksCREATE INDEX ix_tasks_hash ON tasks (hash)U
+
+	tabletaskstasksCREATE TABLE tasks (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     taskType INTEGER NOT NULL,     serializedTask BLOB NOT NULL,     startSecondsFromEpoch REAL,     hash INTEGER NOT NULL )s	
+=tablekvstorekvstore
+CREATE TABLE kvstore (     key TEXT PRIMARY KEY,     bytes BLOB NOT NULL ) WITHOUT ROWID@
+sindexix_dynamicNamespaces_teamId_cloudKitContainerIddynamicNamespaces	CREATE INDEX ix_dynamicNamespaces_teamId_cloudKitContainerId ON     dynamicNamespaces (teamId, cloudKitContainerId)
+ytabledynamicNamespacesdynamicNamespaces
+CREATE TABLE dynamicNamespaces (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     teamId TEXT NOT NULL,     appContainerId TEXT NOT NULL,     appContainerType INTEGER NOT NULL,     cloudKitContainerId INTEGER NOT NULL,     compatibilityVersion INTEGER NOT NULL,     defaultsFileURL TEXT,     hasFetched INTEGER NOT NULL DEFAULT 0,     UNIQUE (name) )A
+indexsqlite_autoindex_dynamicNamespaces_1dynamicNamespaces
+utablenamespacesnamespaces
+CREATE TABLE namespaces (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     experiments_rowid INTEGER NOT NULL,     name TEXT NOT NULL,     compatibilityVersion INTEGER NOT NULL,     treatmentPath TEXT,     UNIQUE (experiments_rowid, name),     FOREIGN KEY (experiments_rowid) REFERENCES experiments (rowid) )3
+indexsqlite_autoindex_namespaces_1namespaces
+Ytablesqlite_sequencesqlite_sequence
+CREATE TABLE sqlite_sequence(name,seq)
+tableexperimentsexperiments
+CREATE TABLE experiments (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     experimentId TEXT NOT NULL,     deploymentId INTEGER NOT NULL,     type INTEGER NOT NULL,     status INTEGER NOT NULL,     startSecondsFromEpoch REAL,     endSecondsFromEpoch REAL,     treatmentId TEXT,     UNIQUE (experimentId, deploymentId),     CHECK (startSecondsFromEpoch IS NULL         OR endSecondsFromEpoch IS NULL         OR startSecondsFromEpoch < endSecondsFromEpoch) )5
+indexsqlite_autoindex_experiments_1experiments
+ ya
+
+F+r
+
+bSQLite format 3
+QtablecontentReferencescontentReferences
+CREATE TABLE contentReferences (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     contentId TEXT NOT NULL,     refCount INTEGER NOT NULL,     UNIQUE (contentId) )A
+indexsqlite_autoindex_contentReferences_1contentReferences
+T
+Q?
+sindexix_dynamicNamespaces_teamId_cloudKitContainerIddynamicNamespaces	CREATE INDEX ix_dynamicNamespaces_teamId_cloudKitContainerId ON     dynamicNamespaces (teamId, cloudKitContainerId)A
+CREATE TABLE dynamicNamespaces (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     name TEXT NOT NULL,     teamId TEXT NOT NULL,     appContainerId TEXT NOT NULL,     appContainerType INTEGER NOT NULL,     cloudKitContainerId INTEGER NOT NULL,     compatibilityVersion INTEGER NOT NULL,     defaultsFileURL TEXT,     hasFetched INTEGER NOT NULL DEFAULT 0,     UNIQUE (name) )3
+CREATE TABLE namespaces (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     experiments_rowid INTEGER NOT NULL,     name TEXT NOT NULL,     compatibilityVersion INTEGER NOT NULL,     treatmentPath TEXT,     UNIQUE (experiments_rowid, name),     FOREIGN KEY (experiments_rowid) REFERENCES experiments (rowid) )P
+CREATE TABLE sqlite_sequence(name,seq)5
+CREATE TABLE experiments (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     experimentId TEXT NOT NULL,     deploymentId INTEGER NOT NULL,     type INTEGER NOT NULL,     status INTEGER NOT NULL,     startSecondsFromEpoch REAL,     endSecondsFromEpoch REAL,     treatmentId TEXT, deploymentEnvironment INTEGER NOT NULL DEFAULT 0,     UNIQUE (experimentId, deploymentId),     CHECK (startSecondsFromEpoch IS NULL         OR endSecondsFromEpoch IS NULL         OR startSecondsFromEpoch < endSecondsFromEpoch) )
+Sindexix_experimentHistory_eventSecondsFromEpochexperimentHistory
+CREATE INDEX ix_experimentHistory_eventSecondsFromEpoch ON experimentHistory(eventSecondsFromEpoch)U
+indexsqlite_autoindex_experimentHistoryNamespaces_1experimentHistoryNamespaces
+tableexperimentHistoryNamespacesexperimentHistoryNamespaces
+CREATE TABLE experimentHistoryNamespaces (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     experimentHistory_rowid INTEGER NOT NULL,     name TEXT NOT NULL,     compatibilityVersion INTEGER NOT NULL,     UNIQUE (experimentHistory_rowid, name),     FOREIGN KEY (experimentHistory_rowid) REFERENCES experimentHistory (rowid) )
+WtableexperimentHistoryexperimentHistory
+CREATE TABLE experimentHistory (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     eventSecondsFromEpoch REAL NOT NULL,     eventType INTEGER NOT NULL,     deploymentEnvironment INTEGER NOT NULL,     experimentId TEXT NOT NULL,     deploymentId INTEGER NOT NULL,     treatmentId TEXT NOT NULL )A
+CREATE TABLE contentReferences (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     contentId TEXT NOT NULL,     refCount INTEGER NOT NULL,     UNIQUE (contentId) )?
+CREATE TABLE taskDependencies (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     taskId INTEGER NOT NULL,     dependentTaskId INTEGER NOT NULL,     UNIQUE (taskId, dependentTaskId),     FOREIGN KEY (taskId) REFERENCES tasks (rowid),     FOREIGN KEY (dependentTaskId) REFERENCES tasks (rowid) )Q
+CREATE INDEX ix_taskTags_tag ON taskTags (tag)/
+
+tabletaskTagstaskTags
+CREATE TABLE taskTags (     rowid INTEGER PRIMARY KEY AUTOINCREMENT,     taskId INTEGER NOT NULL,     tag TEXT NOT NULL,     UNIQUE (taskId, tag),     FOREIGN KEY (taskId) REFERENCES tasks (rowid) )
+]+aSQLite format 3
+C#)5X
+/tableactivationEventsactivationEvents
+CREATE TABLE activationEvents (     experimentId TEXT NOT NULL,     treatmentId TEXT NOT NULL,     deploymentId INTEGER NOT NULL,     osBuild TEXT NOT NULL,     languageCode TEXT NOT NULL,     regionCode TEXT NOT NULL,     UNIQUE (experimentId, treatmentId, deploymentId) )?
+indexsqlite_autoindex_activationEvents_1activationEvents
+H%64
+
+	tasks
+!2wx
+tasks
+{D;z
+:tV
+
+Rnx1J(*
+taskTags
+com.apple.triald
+Si0p
+netopt.discretion=2
+netopt.cellular=0
+rollbacksOnly
+'	rollbacksOnly
+@j{
+

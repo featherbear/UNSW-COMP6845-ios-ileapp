@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>disabled-module-identifiers</key>
+	<array/>
+	<key>module-identifiers</key>
+	<array>
+		<string>com.apple.control-center.MuteModule</string>
+		<string>com.apple.control-center.FlashlightModule</string>
+		<string>com.apple.mobiletimer.controlcenter.timer</string>
+		<string>com.apple.control-center.CalculatorModule</string>
+		<string>com.apple.control-center.CameraModule</string>
+		<string>com.apple.BarcodeSupport.NFCControlCenterModule</string>
+	</array>
+	<key>userenabled-fixed-module-identifiers</key>
+	<array/>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

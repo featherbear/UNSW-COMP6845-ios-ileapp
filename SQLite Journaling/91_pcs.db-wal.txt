@@ -1,0 +1,124 @@
+SQLite format 3
+
+t
+/
+[indexDateIndexPCSData
+CREATE INDEX DateIndex ON PCSData(date)i
+indexShareItemIndexPCSData
+CREATE INDEX ShareItemIndex ON PCSData(shareID, accountID, serviceName)f
+indexZoneItemIndexPCSData
+CREATE INDEX ZoneItemIndex ON PCSData(zoneID, accountID, serviceName)
+
+aindexIdentifierIndexPCSData
+CREATE INDEX IdentifierIndex ON PCSData(identifier, databaseScope, itemType, serviceName, accountID, date)o
+5tablePCSDataPCSData
+CREATE TABLE PCSData (identifier TEXT, databaseScope INTEGER, itemType INTEGER, CKDPCSData BLOB, serviceName TEXT, accountID TEXT, zoneID TEXT, shareID TEXT, parentID TEXT, date INTEGER, PRIMARY KEY (identifier))-
+indexsqlite_autoindex_PCSData_1PCSData
+:EUE
+BeaconStore:__defaultOwner__
+bplist00
+
+X$versionY$archiverT$topX$objects
+NSKeyedArchiver
+	Troot
+ !%-3459U$null
+VZoneID]RecordShareID_
+ZonePCSModificationDateWPCSDataUKeyIDV$classTEtag^ZoneishPCSData_
+ZoneishPublicKeyID
+1~0|0%
+D{HJe
+:*:c
+m;%S
+)0'0%
+
+iSW
+*rX_
+(EDEE1BE9AE62530D8E52A82F5B6910CFF79B99BC
+"#$YNS.string
++9pl6_Z7c1FFh423Ms_SKfyoGicuH_TdK0DuPb20KcvI
+&'()Z$classnameX$classes_
+NSMutableString
+*+,_
+NSMutableStringXNSStringXNSObject
+012XZoneNameYownerName
+	[BeaconStore_
+__defaultOwner__
+&'67^CKRecordZoneID
+8,^CKRecordZoneID
+&':;^CKDZonePCSData
+<=,^CKDZonePCSDataZCKDPCSData
+com.apple.icloud.searchparty2757441C-D046-4C70-A8DC-D7FA5FD91FD5BeaconStore:__defaultOwner__A
+#J
+
+E	BeaconStore:__defaultOwner__
+	BeaconStore:__defaultOwner__
+com.apple.icloud.searchparty2757441C-D046-4C70-A8DC-D7FA5FD91FD5A
+EUE	BeaconStore:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.icloud.searchparty
+UE	2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.icloud.searchparty
+>EUE
+9316F47B-0387-494E-B4DF-182F1FB83DE8:BeaconStore:__defaultOwner__
+'()-5;<BCDHLMQRSU$null
+ChainParentPublicKeyID_
+PublicSharingKeyTEtagXParentIDUKeyIDWPCSDataZRecordTypeV$class]RecordShareIDXChainPCS\RecordZoneID_
+ZoneishPublicKeyIDXRecordID
+hsaZs
+Ia.0e
+kYj.W
+
+n"'
+
+R9x?
+0erA
+kt0N
+`jE
+7P!
+(95E38600723A63459B16F50049DA67ADC66C2A0E
+*+,YNS.string
++LHumTMbM5f3ThOg89HdEx7LZk6KWvKf7CPPEmiCR57o
+./01Z$classnameX$classes_
+234_
+6789:ZRecordNameVZoneID
+$9316F47B-0387-494E-B4DF-182F1FB83DE8
+?@AXZoneNameYownerName
+[BeaconStore_
+./EF^CKRecordZoneID
+G4^CKRecordZoneID
+./IJZCKRecordID
+K4ZCKRecordID_
+MasterBeaconRecord
+./TU_
+CKDRecordPCSData
+VW4_
+CKDRecordPCSDataZCKDPCSData
+Icom.apple.icloud.searchparty2757441C-D046-4C70-A8DC-D7FA5FD91FD5BeaconStore:__defaultOwner__A
+9$!s
+BeaconStore:__defaultOwner__2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.icloud.searchparty
+2757441C-D046-4C70-A8DC-D7FA5FD91FD5com.apple.icloud.searchparty
+BC9AD030-580C-4F4F-BF41-6DCF6A46190D:BeaconStore:__defaultOwner__
+DXV^
+
+<EUE
+/yIy
+OU	M
+-%9e
+{d
+W.,
+(C026AC096D183BD9740084565696A7BE5538D74D
++_HWiLQhZfqPwwJr6MReP13ImOhckkx2G2QeB1RmDjKE
+$BC9AD030-580C-4F4F-BF41-6DCF6A46190D
+BeaconNamingRecord
+Hcom.apple.icloud.searchparty2757441C-D046-4C70-A8DC-D7FA5FD91FD5BeaconStore:__defaultOwner__A
+uhspd
+(EUE
+ !%-3459=@U$null
+;<WNS.time#A
+-Fw<
+&'>?VNSDate
+&'AB^CKDZonePCSData
+CD,^CKDZonePCSDataZCKDPCSData
+$com.apple.icloud.searchparty2757441C-D046-4C70-A8DC-D7FA5FD91FD5BeaconStore:__defaultOwner__A
+FEUE
+'()-5;<BCDHLMU$null
+6789$ZRecordNameVZoneID
+./NO_
+PQ4_

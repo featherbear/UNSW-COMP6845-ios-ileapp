@@ -1,0 +1,36 @@
+SQLite format 3
+)indexABFullSizeImageRecordIDIndexABFullSizeImage
+CREATE UNIQUE INDEX ABFullSizeImageRecordIDIndex ON ABFullSizeImage(record_id)
+7indexABImageRecordIDFormatIndexABThumbnailImage
+CREATE UNIQUE INDEX ABImageRecordIDFormatIndex ON ABThumbnailImage(record_id, format)5
+!tableABFullSizeImageABFullSizeImage
+CREATE TABLE ABFullSizeImage (ROWID INTEGER PRIMARY KEY, record_id INTEGER, crop_x INTEGER, crop_y INTEGER, crop_width INTEGER, data BLOB)1
+tableABThumbnailImageABThumbnailImage
+CREATE TABLE ABThumbnailImage (ROWID INTEGER PRIMARY KEY, record_id INTEGER, format INTEGER, derived_from_format INTEGER, data BLOB)	
+!table_SqliteDatabaseProperties_SqliteDatabaseProperties
+CREATE TABLE _SqliteDatabaseProperties (key TEXT, value TEXT, UNIQUE(key))Q
+indexsqlite_autoindex__SqliteDatabaseProperties_1_SqliteDatabaseProperties
+/U_UniqueIdentifier999BC7D3-5CDF-484D-965F-A04C5DBF6798
+_ClientVersion8
+Y-J
+
+_UniqueIdentifier
+)	_ClientVersion
+__CPRecordSequenceNumber18
+__CPRecordSequenceNumber
+__CPRecordSequenceNumber28
+__CPRecordSequenceNumber38
+__CPRecordSequenceNumber48
+__CPRecordSequenceNumber58
+__CPRecordSequenceNumber68
+__CPRecordSequenceNumber78
+__CPRecordSequenceNumber	
+__CPRecordSequenceNumber88
+__CPRecordSequenceNumber
+
+__CPRecordSequenceNumber98
+__CPRecordSequenceNumber
+__CPRecordSequenceNumber108
+__CPRecordSequenceNumber
+__CPRecordSequenceNumber118
+__CPRecordSequenceNumber128
