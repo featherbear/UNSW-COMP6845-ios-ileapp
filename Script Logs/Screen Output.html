@@ -160,11 +160,6 @@ mediaLibrary [mediaLibrary] artifact started<br>
 Error executing SQLite query<br>
 Reading mediaLibrary artifact had errors!<br>
 Error was no such table: _MLDATABASEPROPERTIES<br>
-Exception Traceback: Traceback (most recent call last):
-  File "ileapp.py", line 191, in crunch_artifacts
-  File "C:\Users\Andrew\AppData\Local\Temp\_MEI70722\scripts\artifacts\mediaLibrary.py", line 78, in get_mediaLibrary
-    cursor.execute(
-sqlite3.OperationalError: no such table: _MLDATABASEPROPERTIES
 <br>
 mobileActivationLogs [mobileActivationLogs] artifact started<br>
 mobileActivationLogs [mobileActivationLogs] artifact completed<br>
@@ -196,11 +191,6 @@ netusage [netusage] artifact completed<br>
 notes [notes] artifact started<br>
 Reading notes artifact had errors!<br>
 Error was no such column: TabA.ZCREATIONDATE3<br>
-Exception Traceback: Traceback (most recent call last):
-  File "ileapp.py", line 191, in crunch_artifacts
-  File "C:\Users\Andrew\AppData\Local\Temp\_MEI70722\scripts\artifacts\notes.py", line 26, in get_notes
-    cursor.execute('''
-sqlite3.OperationalError: no such column: TabA.ZCREATIONDATE3
 <br>
 notificationsXII [notificationsXII] artifact started<br>
 Total notifications processed:1<br>
@@ -211,13 +201,6 @@ photosMetadata [photosMetadata] artifact completed<br>
 <br>
 protonMail [protonMail] artifact started<br>
 Reading protonMail artifact had errors!<br>
-Error was [WinError 3] The system cannot find the path specified: 'C:\\Users\\Andrew\\AppData\\Local\\Temp\\_MEI70722\\scripts\\keychain'<br>
-Exception Traceback: Traceback (most recent call last):
-  File "ileapp.py", line 191, in crunch_artifacts
-  File "C:\Users\Andrew\AppData\Local\Temp\_MEI70722\scripts\artifacts\protonMail.py", line 30, in get_protonMail
-    if len(os.listdir(my_path)) == 1:
-           ^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\Andrew\\AppData\\Local\\Temp\\_MEI70722\\scripts\\keychain'
 <br>
 reminders [reminders] artifact started<br>
 No Reminders available<br>
